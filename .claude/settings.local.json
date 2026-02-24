@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run build:*)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(lsof:*)",
+      "Bash(xargs kill:*)",
+      "Bash(__NEW_LINE_f728efeb68ad8c72__ echo \"\")",
+      "Bash(find:*)",
+      "Bash(__NEW_LINE_a9412737fb3309c4__ find /Users/me/Desktop/hidden-potential-site/src/app -name \"*.tsx\" -exec sed -i '' 's/className=\"\"px-3 py-1 text-\\\\[11px\\\\] font-bold uppercase tracking-widest text-primary-gold rounded-full\"\"/className=\"\"inline-flex items-center px-3 py-1 text-[11px] font-bold uppercase tracking-widest text-primary-gold rounded-full\"\"/g' {} ;)",
+      "Bash(done)",
+      "Bash(python3:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}

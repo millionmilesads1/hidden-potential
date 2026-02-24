@@ -1,0 +1,65 @@
+/* ─────────────────────────────────────────────
+   GOOGLE FONTS — must come before @import "tailwindcss"
+   ───────────────────────────────────────────── */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;700&family=Lora:ital,wght@1,400;1,600&display=swap");
+
+@import "tailwindcss";
+
+/* ─────────────────────────────────────────────
+   TAILWIND v4 THEME — Brand Tokens
+   ───────────────────────────────────────────── */
+@theme {
+  /* ── Colors ── */
+  --color-primary-navy:   #2D1B69;
+  --color-primary-teal:   #7C3AED;
+  --color-primary-gold:   #C8A951;
+  --color-off-white:      #F8F6F2;
+  --color-charcoal:       #2D2D2D;
+
+  --color-navy-light:     #F3F0FF;
+  --color-teal-light:     #EDE9FE;
+  --color-teal-dark:      #6D28D9;
+  --color-gold-light:     #FBF7EE;
+  --color-gold-dark:      #A68B3E;
+
+  --color-success:        #2D8F5E;
+  --color-warning:        #E07A5F;
+
+  --color-gray-100:       #F5F5F5;
+  --color-gray-200:       #E8E8E8;
+  --color-gray-400:       #9B9B9B;
+  --color-gray-600:       #6B6B6B;
+
+  /* ── Font Families ── */
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  --font-body:    "DM Sans", sans-serif;
+  --font-accent:  "Lora", serif;
+
+}
+
+/* ─────────────────────────────────────────────
+   BASE STYLES
+   ───────────────────────────────────────────── */
+@layer base {
+  html {
+    font-family: var(--font-body);
+    color: var(--color-charcoal);
+    background-color: var(--color-off-white);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    color: var(--color-primary-navy);
+  }
+
+  a {
+    color: var(--color-primary-teal);
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--color-teal-dark);
+  }
+}

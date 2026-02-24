@@ -1,0 +1,177 @@
+"use client";
+
+/**
+ * ContactForm — Client Component
+ * Handles the frontend contact form on /contact.
+ * TODO: Wire the handleSubmit function to a server action or POST /api/contact
+ *       to process and deliver the form data.
+ */
+
+export default function ContactForm() {
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    // TODO: Connect to server action or POST /api/contact
+    // const formData = new FormData(e.currentTarget);
+    // await fetch('/api/contact', { method: 'POST', body: formData });
+  }
+
+  return (
+    <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-8 md:p-10">
+      <form className="space-y-6" onSubmit={handleSubmit}>
+        {/* Row 1: Name + Phone */}
+        <div className="grid md:grid-cols-2 gap-6">
+          <div>
+            <label
+              htmlFor="fullName"
+              className="block text-sm font-semibold text-primary-navy mb-1.5"
+            >
+              Full Name <span className="text-primary-teal">*</span>
+            </label>
+            <input
+              id="fullName"
+              name="fullName"
+              type="text"
+              required
+              placeholder="Your full name"
+              className="w-full px-4 py-3 text-sm text-charcoal bg-white border border-gray-200 rounded-md placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-teal/30 focus:border-primary-teal transition-colors"
+            />
+          </div>
+          <div>
+            <label
+              htmlFor="phone"
+              className="block text-sm font-semibold text-primary-navy mb-1.5"
+            >
+              Phone Number <span className="text-primary-teal">*</span>
+            </label>
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              required
+              placeholder="+91 XXXXX XXXXX"
+              className="w-full px-4 py-3 text-sm text-charcoal bg-white border border-gray-200 rounded-md placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-teal/30 focus:border-primary-teal transition-colors"
+            />
+          </div>
+        </div>
+
+        {/* Row 2: Email + Location */}
+        <div className="grid md:grid-cols-2 gap-6">
+          <div>
+            <label
+              htmlFor="email"
+              className="block text-sm font-semibold text-primary-navy mb-1.5"
+            >
+              Email Address <span className="text-primary-teal">*</span>
+            </label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              required
+              placeholder="you@example.com"
+              className="w-full px-4 py-3 text-sm text-charcoal bg-white border border-gray-200 rounded-md placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-teal/30 focus:border-primary-teal transition-colors"
+            />
+          </div>
+          <div>
+            <label
+              htmlFor="location"
+              className="block text-sm font-semibold text-primary-navy mb-1.5"
+            >
+              Your Location <span className="text-primary-teal">*</span>
+            </label>
+            <select
+              id="location"
+              name="location"
+              required
+              defaultValue=""
+              className="w-full px-4 py-3 text-sm text-charcoal bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-teal/30 focus:border-primary-teal transition-colors appearance-none"
+            >
+              <option value="" disabled>
+                Select your city
+              </option>
+              <option value="Delhi">Delhi</option>
+              <option value="Dwarka">Dwarka</option>
+              <option value="Noida">Noida</option>
+              <option value="Gurgaon">Gurgaon</option>
+              <option value="Faridabad">Faridabad</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+
+        {/* Row 3: Interested In (full width) */}
+        <div>
+          <label
+            htmlFor="interest"
+            className="block text-sm font-semibold text-primary-navy mb-1.5"
+          >
+            I Am Interested In <span className="text-primary-teal">*</span>
+          </label>
+          <select
+            id="interest"
+            name="interest"
+            required
+            defaultValue=""
+            className="w-full px-4 py-3 text-sm text-charcoal bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-teal/30 focus:border-primary-teal transition-colors appearance-none"
+          >
+            <option value="" disabled>
+              Select a program
+            </option>
+            <option value="Life Skills for My Child">Life Skills for My Child</option>
+            <option value="School Program">School Program</option>
+            <option value="Corporate Workshop">Corporate Workshop</option>
+            <option value="NLP Coaching">NLP Coaching</option>
+            <option value="Train the Trainer">Train the Trainer</option>
+            <option value="Self Mastery for Women">Self Mastery for Women</option>
+            <option value="Art Therapy">Art Therapy</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        {/* Row 4: Message (full width, optional) */}
+        <div>
+          <label
+            htmlFor="message"
+            className="block text-sm font-semibold text-primary-navy mb-1.5"
+          >
+            Your Message{" "}
+            <span className="text-charcoal/40 font-normal text-xs">(optional)</span>
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            rows={4}
+            placeholder="Tell us a little about your goals, challenges, or any questions you have. The more context you share, the more helpful our response will be."
+            className="w-full px-4 py-3 text-sm text-charcoal bg-white border border-gray-200 rounded-md placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-teal/30 focus:border-primary-teal transition-colors resize-none"
+          />
+        </div>
+
+        {/* Submit */}
+        <button
+          type="submit"
+          className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-10 py-4 text-sm font-bold text-white bg-primary-teal hover:bg-teal-dark rounded-md transition-colors"
+        >
+          Start My Transformation Journey
+          <svg
+            className="w-4 h-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2.5}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+
+        {/* Privacy note */}
+        <p className="text-xs text-charcoal/40 leading-relaxed">
+          Your information is kept strictly confidential and will never be shared with third
+          parties. By submitting this form you consent to being contacted by Hidden Potential
+          regarding your inquiry.
+        </p>
+      </form>
+    </div>
+  );
+}
