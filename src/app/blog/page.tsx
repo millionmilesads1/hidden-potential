@@ -339,7 +339,7 @@ export default function BlogPage() {
                 Reading Inspires. Structure Transforms.
               </h2>
               <p className="text-charcoal/65 text-sm leading-relaxed mb-6">
-                Articles give you awareness. Hidden Potential's structured programmes give you a personalised, step-by-step pathway from where you are to where you want to be — supported by assessment, practice, and real accountability.
+                Articles give you awareness. Hidden Potential&apos;s structured programmes give you a personalised, step-by-step pathway from where you are to where you want to be — supported by assessment, practice, and real accountability.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Link
