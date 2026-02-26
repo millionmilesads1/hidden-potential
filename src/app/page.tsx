@@ -658,16 +658,16 @@ export default function HomePage() {
         }}
       >
         <div className="max-w-6xl mx-auto px-6 py-16">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-y-8 gap-x-4 md:gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-y-8 gap-x-6 lg:gap-x-3">
             {stats.map((s) => (
               <div
                 key={s.value}
                 className="flex flex-col items-center text-center"
               >
-                <span className="text-3xl md:text-4xl font-extrabold text-white mb-1 leading-none whitespace-nowrap">
+                <span className="text-3xl md:text-4xl lg:text-2xl font-extrabold text-white mb-1 leading-tight">
                   {s.value}
                 </span>
-                <span className="text-xs font-semibold uppercase tracking-wider text-white/60 mt-1 whitespace-nowrap">
+                <span className="text-xs font-semibold uppercase tracking-wide text-white/60 mt-1 leading-snug">
                   {s.label}
                 </span>
               </div>
@@ -802,7 +802,78 @@ export default function HomePage() {
       </section>
 
       {/* ═══════════════════════════════════════════
-          9. FINAL CTA
+          9. FAQ
+      ═══════════════════════════════════════════ */}
+      <section id="faq" className="bg-white py-20">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <SectionLabel>Frequently Asked Questions</SectionLabel>
+            <SectionHeading>Common Questions About Our Programs</SectionHeading>
+            <p className="text-lg text-charcoal max-w-2xl mx-auto leading-relaxed">
+              Everything you need to know before taking the next step.
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-4">
+            {[
+              {
+                q: "What age groups do Hidden Potential's programs cater to?",
+                a: "Our programs are designed for a wide range of ages. An Enlightened Learner (AEL) serves students aged 8–21 across three sub-groups. Communication Mastery is open to ages 8–65. Self Mastery for Women is designed for women aged 28 and above. Train the Trainer and Art Therapy welcome all adult age groups. Every program is structured by developmental stage, not just age.",
+              },
+              {
+                q: "How do I know which program is the right fit for me?",
+                a: "We recommend starting with our Life Skills Assessment. It identifies your current strengths, developmental gaps, and the most appropriate starting point within our program range. You'll receive a personalised pathway recommendation — no guesswork, no generic advice.",
+              },
+              {
+                q: "Are your programs available online, offline, or both?",
+                a: "Most programs are offered in hybrid format — you can choose offline sessions at our Dwarka centre or fully online participation from anywhere in India. School and corporate programs are delivered on-site at the client's premises across Delhi, Noida, Gurgaon, and Faridabad.",
+              },
+              {
+                q: "What makes Hidden Potential different from other coaching institutes?",
+                a: "Three things: System, Science, and Structure. We use NLP-based frameworks, emotional intelligence research, and behavioural psychology — not motivation-only sessions. Every student is assessed before and after, progress is documented, and programs follow a clear Foundation → Growth → Mastery pathway. Our founder holds a Masters in Psychology, NLP Practitioner certification, and IGNOU's NEP 2020 Implementation credential.",
+              },
+              {
+                q: "How long do the programs run, and what is the time commitment?",
+                a: "Program duration depends on the level: Foundation is typically 3 months, Growth is 6 months, and Mastery is 12 months. Session frequency ranges from once to twice per week depending on the program. Short-format workshops (1–3 days) are also available for schools and corporate groups.",
+              },
+              {
+                q: "Do you offer programs for schools and organisations?",
+                a: "Yes. Hidden Potential has structured institutional partnerships for schools and corporate teams. School programs include student life skills curriculum, teacher training, and parent engagement sessions — all NEP 2020 aligned. Corporate offerings include group workshops, communication training, and emotional intelligence sessions. Contact us to discuss a customised annual program.",
+              },
+            ].map(({ q, a }) => (
+              <div
+                key={q}
+                className="rounded-lg border border-gray-200 shadow-sm overflow-hidden"
+              >
+                <div
+                  className="px-6 py-4 border-l-4 border-primary-teal"
+                  style={{ background: "#F8F6F2" }}
+                >
+                  <p className="text-[15px] font-bold text-primary-navy leading-snug">
+                    {q}
+                  </p>
+                </div>
+                <div className="px-6 py-4 bg-white">
+                  <p className="text-sm text-charcoal leading-relaxed">{a}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-center text-sm text-charcoal/55 mt-10">
+            Have a different question?{" "}
+            <Link
+              href="/contact"
+              className="font-semibold text-primary-teal hover:underline"
+            >
+              Contact us directly →
+            </Link>
+          </p>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════
+          10. FINAL CTA
       ═══════════════════════════════════════════ */}
       <section
         className="py-24"
