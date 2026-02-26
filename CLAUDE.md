@@ -1,3 +1,5 @@
+> **Before building any page, always read: SITE-ARCHITECTURE.md and SEO.md**
+
 # HIDDEN POTENTIAL — Next.js Build Plan for Claude Code
 
 ## PROJECT OVERVIEW

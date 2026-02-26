@@ -96,7 +96,7 @@ const faqSchema = {
       name: "Are your school programs aligned with NEP 2020 requirements?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Our life skills programs for schools are designed to align with the National Education Policy 2020 mandate for holistic, experiential, and competency-based learning. We integrate social emotional learning, critical thinking, communication skills, and self-awareness development as outlined in the NEP 2020 framework. Schools receive NEP-compliant documentation that supports accreditation, inspection readiness, and compliance reporting. Supreet Kaur's curriculum draws on her NLP certification, Harvard-affiliated Life Skills training, and Graphology expertise to create programs that go well beyond what NEP 2020 requires.",
+        text: "Yes. Our founder, Supreet Kaur, has formally completed IGNOU's UGC-approved Professional Development Programme on NEP 2020 Implementation with an A Grade — making Hidden Potential one of the few life skills providers in Delhi NCR with formal NEP 2020 training credentials. Our life skills programs for schools are designed to align with the National Education Policy 2020 mandate for holistic, experiential, and competency-based learning. We integrate social emotional learning, critical thinking, communication skills, and self-awareness development as outlined in the NEP 2020 framework. Schools receive NEP-compliant documentation that supports accreditation, inspection readiness, and compliance reporting. Supreet Kaur's curriculum draws on her NLP certification, Harvard-affiliated Life Skills training, and Graphology expertise to create programs that go well beyond what NEP 2020 requires.",
       },
     },
     {
@@ -286,7 +286,7 @@ const faqs = [
   },
   {
     q: "Are your school programs aligned with NEP 2020 requirements?",
-    a: "Yes. Our life skills programs for schools are designed to align with the National Education Policy 2020 mandate for holistic, experiential, and competency-based learning. We integrate social emotional learning, critical thinking, communication skills, and self-awareness development as outlined in the NEP 2020 framework. Schools receive NEP-compliant documentation that supports accreditation, inspection readiness, and compliance reporting. Supreet Kaur\u2019s curriculum draws on her NLP certification, Harvard-affiliated Life Skills training, and Graphology expertise to create programs that go well beyond what NEP 2020 requires.",
+    a: "Yes. Our founder, Supreet Kaur, has formally completed IGNOU\u2019s UGC-approved Professional Development Programme on NEP 2020 Implementation with an A Grade \u2014 making Hidden Potential one of the few life skills providers in Delhi NCR with formal NEP 2020 training credentials. Our life skills programs for schools are designed to align with the National Education Policy 2020 mandate for holistic, experiential, and competency-based learning. We integrate social emotional learning, critical thinking, communication skills, and self-awareness development as outlined in the NEP 2020 framework. Schools receive NEP-compliant documentation that supports accreditation, inspection readiness, and compliance reporting. Supreet Kaur\u2019s curriculum draws on her NLP certification, Harvard-affiliated Life Skills training, and Graphology expertise to create programs that go well beyond what NEP 2020 requires.",
   },
   {
     q: "What is the cost of life skills programs for schools in Delhi?",
@@ -436,7 +436,7 @@ export default function ForSchoolsPage() {
             </Link>
           </div>
 
-          {/* Trust signals — 5 items */}
+          {/* Trust signals — 6 items */}
           <div className="flex flex-wrap justify-center gap-x-5 gap-y-2 text-xs text-white/40">
             {[
               "14+ Years Experience",
@@ -444,6 +444,7 @@ export default function ForSchoolsPage() {
               "200+ Trainers Certified",
               "NEP 2020 Aligned",
               "MSME Registered",
+              "NEP 2020 Certified (IGNOU)",
             ].map((item) => (
               <span key={item} className="flex items-center gap-1.5">
                 <span className="w-1 h-1 rounded-full bg-primary-teal inline-block" />
@@ -627,9 +628,91 @@ export default function ForSchoolsPage() {
             </p>
           </div>
 
-          {/* 6 differentiator cards — 3-column grid */}
+          {/* ── Featured: NEP 2020 differentiator (full width) + IGNOU callout ── */}
+          <div className="mb-5 bg-white rounded-lg border border-gray-200 shadow-sm p-6">
+            <div className="flex items-center gap-3 mb-3">
+              <div
+                className="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0"
+                style={{ background: "#7C3AED" }}
+              >
+                <svg
+                  className="w-3.5 h-3.5 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={3}
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <h3 className="font-bold text-primary-navy text-[15px] leading-snug">
+                NEP 2020 Aligned with Documentation
+              </h3>
+            </div>
+            <p className="text-sm text-charcoal/70 leading-relaxed mb-5">
+              Programs designed to meet National Education Policy 2020 requirements for holistic
+              and experiential learning. Schools receive NEP-aligned documentation supporting
+              accreditation, inspections, and compliance reporting. This makes it straightforward
+              for administrators to demonstrate life skills integration to boards, parents, and
+              regulatory bodies.
+            </p>
+
+            {/* ── IGNOU Callout Box ─────────────────────────────── */}
+            <div
+              className="rounded-lg p-5 flex items-start gap-4"
+              style={{
+                background: "#F5F2FA",
+                borderLeft: "4px solid #0D9488",
+              }}
+            >
+              {/* Graduation cap icon */}
+              <div
+                className="w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"
+                style={{ background: "rgba(13,148,136,0.12)" }}
+              >
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={1.75}
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  style={{ color: "#0D9488" }}
+                >
+                  <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                  <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                  <path d="M12 14l-4-2.222V15" />
+                </svg>
+              </div>
+
+              <div>
+                <p className="text-sm text-charcoal/85 leading-relaxed mb-3">
+                  Our founder, Supreet Kaur, has formally completed the UGC-approved
+                  Professional Development Programme on{" "}
+                  <em>&lsquo;Implementation of NEP 2020&rsquo;</em> from Indira Gandhi
+                  National Open University (IGNOU) with an{" "}
+                  <strong className="text-primary-navy">A Grade.</strong> This is not just
+                  alignment by claim. It is alignment by qualification.
+                </p>
+                <a
+                  href="/certificates/nep-2020-ignou.jpeg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[13px] font-semibold hover:underline transition-colors"
+                  style={{ color: "#0D9488" }}
+                >
+                  View Certificate →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* ── Remaining 5 differentiator cards — 3-column grid ── */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {differentiators.map((d) => (
+            {differentiators.filter((_, i) => i !== 1).map((d) => (
               <div
                 key={d.title}
                 className="bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow p-6"

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import CertificateLightbox from "@/components/ui/CertificateLightbox";
 
 // ── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -39,8 +40,18 @@ const schema = {
     "Train the Trainer",
     "Behavioural Psychology",
     "Graphology",
+    "NEP 2020 Implementation",
   ],
   hasCredential: [
+    {
+      "@type": "EducationalOccupationalCredential",
+      credentialCategory: "certificate",
+      name: "NEP 2020 Implementation — IGNOU UGC Approved",
+      recognizedBy: {
+        "@type": "Organization",
+        name: "Indira Gandhi National Open University (IGNOU)",
+      },
+    },
     {
       "@type": "EducationalOccupationalCredential",
       credentialCategory: "degree",
@@ -303,12 +314,19 @@ export default function AboutPage() {
                 right pathway, the right science, and someone who walks every stage with you.&rdquo;
               </p>
 
-              <p className="text-base text-charcoal/80 leading-relaxed mb-8">
+              <p className="text-base text-charcoal/80 leading-relaxed mb-4">
                 With a Master&rsquo;s degree in Psychology and certifications spanning NLP, Art
                 Therapy, Graphology, and Train-the-Trainer facilitation, Supreet has built one
                 of Delhi&rsquo;s most methodical approaches to personal development — grounded
                 in science, guided by system, and made measurable through structured pre and
                 post assessments.
+              </p>
+
+              <p className="text-base text-charcoal/80 leading-relaxed mb-8">
+                Supreet is one of the few life skills trainers in Delhi NCR who has formally
+                completed IGNOU&rsquo;s UGC-approved Professional Development Programme on NEP
+                2020 Implementation, earning an{" "}
+                <strong className="text-primary-navy">A Grade.</strong>
               </p>
 
               {/* Credential pills */}
@@ -567,6 +585,92 @@ export default function AboutPage() {
             </p>
           </div>
 
+          {/* ── Featured: NEP 2020 credential ──────────────────────── */}
+          <div
+            className="mb-6 rounded-lg p-6 md:p-8 flex flex-col md:flex-row gap-6 md:gap-10 items-start"
+            style={{
+              background: "linear-gradient(135deg, #EDE9FE 0%, #F3F0FF 100%)",
+              border: "2px solid rgba(45,27,105,0.22)",
+            }}
+          >
+            {/* Left — Credential info */}
+            <div className="flex-1 min-w-0">
+              {/* Badges row */}
+              <div className="flex flex-wrap items-center gap-2 mb-4">
+                <span
+                  className="inline-flex items-center gap-1 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider rounded-full text-white"
+                  style={{ backgroundColor: "#0D9488" }}
+                >
+                  {/* Checkmark icon */}
+                  <svg
+                    className="w-3 h-3 flex-shrink-0"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2.5}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  UGC Approved
+                </span>
+
+                {/* Grade A badge */}
+                <span
+                  className="inline-flex items-center justify-center w-7 h-7 rounded-full text-[12px] font-extrabold flex-shrink-0"
+                  style={{ backgroundColor: "#D4A843", color: "#2D1B69" }}
+                >
+                  A
+                </span>
+                <span className="text-[11px] text-charcoal/50 font-semibold">Grade A</span>
+
+                <span
+                  className="ml-auto text-[11px] font-medium text-charcoal/45"
+                >
+                  November 2022
+                </span>
+              </div>
+
+              {/* Title */}
+              <h3
+                className="text-lg md:text-xl font-extrabold text-primary-navy mb-1 leading-snug"
+                style={{ fontFamily: "var(--font-display)" }}
+              >
+                NEP 2020 Implementation Certified
+              </h3>
+
+              {/* Issuer */}
+              <p className="text-sm font-semibold text-primary-teal mb-4">
+                Indira Gandhi National Open University (IGNOU)
+              </p>
+
+              {/* Programme detail */}
+              <p className="text-sm text-charcoal/75 leading-relaxed mb-2">
+                <span className="font-semibold text-charcoal/90">Programme:</span>{" "}
+                UGC Approved Professional Development Programme on{" "}
+                <em>
+                  &ldquo;Implementation of NEP 2020 for University and College Teachers&rdquo;
+                </em>
+              </p>
+
+              {/* Under */}
+              <p className="text-sm text-charcoal/75 leading-relaxed">
+                <span className="font-semibold text-charcoal/90">Under:</span>{" "}
+                Pandit Madan Mohan Malaviya National Mission on Teachers and Teaching
+              </p>
+            </div>
+
+            {/* Right — Certificate thumbnail + lightbox link */}
+            <div className="flex flex-col items-center md:items-center flex-shrink-0">
+              <CertificateLightbox
+                imageSrc="/certificates/nep-2020-ignou.jpeg"
+                imageAlt="NEP 2020 Implementation Certificate — Supreet Kaur, IGNOU, November 2022"
+              />
+            </div>
+          </div>
+
+          {/* ── Regular credentials grid ────────────────────────────── */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {credentials.map((c) => (
               <div

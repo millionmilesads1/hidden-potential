@@ -206,6 +206,7 @@ const stats = [
   { value: "200+", label: "Trainers Developed" },
   { value: "Josh Talks", label: "Speaker" },
   { value: "Award-Winning", label: "Educator" },
+  { value: "NEP 2020", label: "Certified · IGNOU" },
 ];
 
 const testimonials = [
@@ -657,13 +658,11 @@ export default function HomePage() {
         }}
       >
         <div className="max-w-6xl mx-auto px-6 py-16">
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-y-8 gap-x-4 md:gap-8">
-            {stats.map((s, i) => (
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-y-8 gap-x-4 md:gap-8">
+            {stats.map((s) => (
               <div
                 key={s.value}
-                className={`flex flex-col items-center text-center${
-                  i === stats.length - 1 ? " col-span-2 md:col-span-1" : ""
-                }`}
+                className="flex flex-col items-center text-center"
               >
                 <span className="text-3xl md:text-4xl font-extrabold text-white mb-1 leading-none whitespace-nowrap">
                   {s.value}
@@ -849,6 +848,7 @@ export default function HomePage() {
               "MSME Registered",
               "Skill India Certified",
               "Published Author",
+              "NEP 2020 Certified (IGNOU)",
             ].map((badge) => (
               <span
                 key={badge}

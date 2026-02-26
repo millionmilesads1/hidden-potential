@@ -31,7 +31,26 @@ export default function RootLayout({
             md:pb-0 removes the extra padding on desktop. */}
         {/* pt-20 = 80px — clears the floating pill navbar (top:16px + ~56px height).
             pb-24 md:pb-0 clears the mobile tubelight bottom bar. */}
-        <main className="flex-1 pt-20 pb-24 md:pb-0">{children}</main>
+        <main className="flex-1 pt-20 pb-24 md:pb-0">
+          {/* ── Tagline banner — scrolls with page, appears on every page ── */}
+          <div
+            style={{
+              backgroundColor: "#2D1B4E",
+              borderBottom: "1px solid rgba(13, 148, 136, 0.3)",
+              letterSpacing: "0.5px",
+            }}
+            className="w-full py-[10px] px-4 text-center text-[13px]"
+          >
+            <span style={{ color: "#FFFFFF", fontWeight: 400 }}>
+              Our Core Strategy:&nbsp;
+            </span>
+            <span style={{ color: "#D4A843", fontStyle: "italic" }}>
+              &ldquo;Deeper the Roots, Stronger the Branches&rdquo;
+            </span>
+          </div>
+
+          {children}
+        </main>
 
         <Footer />
 

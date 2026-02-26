@@ -11,12 +11,17 @@ const programs = [
   { label: "Art Therapy for Healing",              href: "/programs/art-therapy" },
 ];
 
+const forLinks = [
+  { label: "Schools",       href: "/for/schools" },
+  { label: "Professionals", href: "/for/professionals" },
+  { label: "Young Adults",  href: "/for/young-adults" },
+];
+
 const navLinks = [
-  { label: "Home",        href: "/" },
-  { label: "Assessment",  href: "/assessment" },
-  { label: "For Schools", href: "/for/schools" },
-  { label: "About",       href: "/about" },
-  { label: "Blog",        href: "/blog" },
+  { label: "Home",       href: "/" },
+  { label: "Assessment", href: "/assessment" },
+  { label: "About",      href: "/about" },
+  { label: "Blog",       href: "/blog" },
 ];
 
 export default function Navbar() {
@@ -144,6 +149,56 @@ export default function Navbar() {
                 </div>
               </div>
             </li>
+
+            {/* For dropdown */}
+            <li className="relative group">
+              <button
+                aria-haspopup="true"
+                className="flex items-center gap-1 text-sm font-semibold text-primary-navy/70 hover:text-primary-navy hover:bg-gray-100 transition-colors px-3 py-1.5 rounded-full"
+              >
+                For
+                <svg
+                  className="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180"
+                  fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+
+              <div
+                className="
+                  absolute top-full left-1/2 -translate-x-1/2
+                  pt-2 w-56
+                  invisible opacity-0
+                  group-hover:visible group-hover:opacity-100
+                  transition-all duration-200
+                  delay-[150ms] group-hover:delay-[0ms]
+                "
+              >
+                <div
+                  className="py-2"
+                  style={{
+                    background:           "rgba(255,255,255,0.98)",
+                    backdropFilter:       "blur(12px)",
+                    WebkitBackdropFilter: "blur(12px)",
+                    borderRadius:         "18px",
+                    boxShadow:            "0 8px 32px rgba(0,0,0,0.12)",
+                    border:               "1px solid rgba(0,0,0,0.06)",
+                  }}
+                >
+                  {forLinks.map((f) => (
+                    <Link
+                      key={f.href}
+                      href={f.href}
+                      className="block px-4 py-2.5 text-sm font-medium text-primary-navy hover:bg-teal-light hover:text-primary-teal transition-colors rounded-lg mx-1"
+                      style={{ fontFamily: "var(--font-display)" }}
+                    >
+                      {f.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </li>
           </ul>
 
           {/* Right side: CTA + hamburger */}
@@ -214,6 +269,25 @@ export default function Navbar() {
                       className="py-2 px-3 text-sm font-medium text-charcoal hover:text-primary-teal hover:bg-teal-light rounded-lg transition-colors"
                     >
                       {p.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+
+              {/* For section */}
+              <div className="px-4 pt-2 pb-1">
+                <p className="text-xs font-bold text-primary-navy/40 uppercase tracking-widest mb-2 pl-1">
+                  For
+                </p>
+                <div className="flex flex-col gap-0.5">
+                  {forLinks.map((f) => (
+                    <Link
+                      key={f.href}
+                      href={f.href}
+                      onClick={() => setMobileOpen(false)}
+                      className="py-2 px-3 text-sm font-medium text-charcoal hover:text-primary-teal hover:bg-teal-light rounded-lg transition-colors"
+                    >
+                      {f.label}
                     </Link>
                   ))}
                 </div>
