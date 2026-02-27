@@ -20,7 +20,8 @@
       "Bash(npm --prefix /Users/me/Desktop/hidden-potential-site run dev)",
       "Bash(kill:*)",
       "Bash(pkill:*)",
-      "Bash(npx tsc:*)"
+      "Bash(npx tsc:*)",
+      "Bash(git push)"
     ]
   }
 }

@@ -12,6 +12,11 @@ export const metadata: Metadata = {
   description:
     "Structured life skills programs for students, women & professionals in Delhi. Assessment-based placement. 14+ years experience. 5000+ trained.",
   metadataBase: new URL("https://hiddenpotentialskills.com"),
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-icon.png",
+    shortcut: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
