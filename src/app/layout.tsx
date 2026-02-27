@@ -23,6 +23,17 @@ export default function RootLayout({
     <html lang="en">
       <body className="min-h-screen flex flex-col">
         {/* ── Desktop + tablet sticky header nav ──────────────────────── */}
+        {/* ── Skip navigation — keyboard accessibility (WCAG 2.4.1 SC) ─────
+            Visually hidden until focused; lets keyboard/screen-reader users
+            jump directly to main content, bypassing the repeated navbar.   */}
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[200] focus:px-4 focus:py-2 focus:rounded-md focus:text-sm focus:font-semibold focus:text-white focus:shadow-lg"
+          style={{ background: "#2D1B69" }}
+        >
+          Skip to main content
+        </a>
+
         <Navbar />
 
         {/* ── Page content ─────────────────────────────────────────────
@@ -31,7 +42,7 @@ export default function RootLayout({
             md:pb-0 removes the extra padding on desktop. */}
         {/* pt-20 = 80px — clears the floating pill navbar (top:16px + ~56px height).
             pb-24 md:pb-0 clears the mobile tubelight bottom bar. */}
-        <main className="flex-1 pt-20 pb-24 md:pb-0">
+        <main id="main-content" className="flex-1 pt-20 pb-24 md:pb-0">
           {/* ── Tagline banner — scrolls with page, appears on every page ── */}
           <div
             style={{

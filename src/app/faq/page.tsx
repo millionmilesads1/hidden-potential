@@ -1073,7 +1073,7 @@ export default function FaqPage() {
           </div>
 
           {/* Bottom nudge */}
-          <p className="text-center text-sm text-charcoal/50 mt-16">
+          <p className="text-center text-sm text-charcoal/70 mt-16">
             Still have questions?{" "}
             <Link
               href="/contact"

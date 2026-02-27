@@ -624,7 +624,7 @@ export default function AELPage() {
           </div>
 
           {/* Internal link — Communication Skills service page */}
-          <p className="text-center text-sm text-charcoal/55 mt-8">
+          <p className="text-center text-sm text-charcoal/70 mt-8">
             Looking for focused communication training?{" "}
             <Link
               href="/services/communication-skills"

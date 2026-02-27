@@ -89,7 +89,7 @@ export default function CertificateLightbox({ imageSrc, imageAlt }: Props) {
                 background: "rgba(255,255,255,0.18)",
                 backdropFilter: "blur(6px)",
               }}
-              aria-label="Close"
+              aria-label="Close certificate preview"
             >
               ✕
             </button>

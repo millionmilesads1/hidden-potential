@@ -54,15 +54,20 @@ export default function Footer() {
 
           {/* Social links placeholder */}
           <div className="flex items-center gap-4 mt-2">
-            {["FB", "IG", "LI", "YT"].map((social) => (
+            {[
+              { abbr: "FB", label: "Facebook" },
+              { abbr: "IG", label: "Instagram" },
+              { abbr: "LI", label: "LinkedIn" },
+              { abbr: "YT", label: "YouTube" },
+            ].map(({ abbr, label }) => (
               <a
-                key={social}
+                key={abbr}
                 href="#"
-                aria-label={social}
+                aria-label={`Hidden Potential on ${label}`}
                 className="text-xs font-semibold text-white/40 hover:text-white transition-colors"
                 style={{ fontFamily: "var(--font-display)" }}
               >
-                {social}
+                {abbr}
               </a>
             ))}
           </div>

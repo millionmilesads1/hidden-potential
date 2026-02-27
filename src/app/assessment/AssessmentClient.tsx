@@ -315,7 +315,7 @@ export default function AssessmentClient() {
   const recommendation = showResults ? getRecommendation(answers) : null;
 
   return (
-    <main>
+    <div>
       {/* ── SECTION 1: HERO ──────────────────────────────────────────────────── */}
       <section
         style={{ background: 'linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)' }}
@@ -616,6 +616,6 @@ export default function AssessmentClient() {
           </section>
         </>
       )}
-    </main>
+    </div>
   );
 }

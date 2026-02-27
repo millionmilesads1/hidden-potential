@@ -860,7 +860,7 @@ export default function HomePage() {
             ))}
           </div>
 
-          <p className="text-center text-sm text-charcoal/55 mt-10">
+          <p className="text-center text-sm text-charcoal/70 mt-10">
             Have a different question?{" "}
             <Link
               href="/contact"

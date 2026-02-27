@@ -747,7 +747,7 @@ export default function EnrollPage() {
           </div>
 
           {/* Internal link nudge */}
-          <p className="text-center text-sm text-charcoal/50 mt-10">
+          <p className="text-center text-sm text-charcoal/70 mt-10">
             Have more questions?{" "}
             <Link
               href="/faq"

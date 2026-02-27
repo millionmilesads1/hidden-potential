@@ -670,7 +670,7 @@ export default function TrainTheTrainerPage() {
           </div>
 
           {/* Internal links */}
-          <p className="text-center text-sm text-charcoal/55 mt-8">
+          <p className="text-center text-sm text-charcoal/70 mt-8">
             Want to experience the NLP approach first?{" "}
             <Link
               href="/services/nlp-coaching"

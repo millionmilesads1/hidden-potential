@@ -512,7 +512,7 @@ export default function ResourcesPage() {
           </div>
 
           {/* Nudge to contact for book enquiries */}
-          <p className="text-center text-sm text-charcoal/50 mt-10">
+          <p className="text-center text-sm text-charcoal/70 mt-10">
             For bulk orders or speaking enquiries related to publications,{" "}
             <Link
               href="/contact"

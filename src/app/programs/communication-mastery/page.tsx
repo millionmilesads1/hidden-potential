@@ -650,7 +650,7 @@ export default function CommunicationMasteryPage() {
           </div>
 
           {/* Internal links */}
-          <p className="text-center text-sm text-charcoal/55 mt-8">
+          <p className="text-center text-sm text-charcoal/70 mt-8">
             Looking for focused confidence training?{" "}
             <Link
               href="/services/confidence-building"

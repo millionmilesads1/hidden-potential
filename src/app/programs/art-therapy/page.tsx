@@ -519,7 +519,7 @@ export default function ArtTherapyPage() {
           </div>
 
           {/* Integration note */}
-          <p className="text-center text-sm text-charcoal/50 mb-12">
+          <p className="text-center text-sm text-charcoal/70 mb-12">
             Includes guided reflection tools and structured integration practices across all three
             healing pillars.
           </p>
@@ -662,7 +662,7 @@ export default function ArtTherapyPage() {
           </div>
 
           {/* Internal links */}
-          <p className="text-center text-sm text-charcoal/55 mt-8">
+          <p className="text-center text-sm text-charcoal/70 mt-8">
             Looking for deeper emotional work?{" "}
             <Link
               href="/services/emotional-intelligence"

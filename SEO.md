@@ -3,7 +3,7 @@
 # Drop this file into every project root alongside CLAUDE.md
 # AI code assistants MUST read and follow this for EVERY page built
 # No exceptions. No shortcuts. No "I'll add it later."
-# Version: 3.0 | Last Updated: February 2026
+# Version: 3.1 | Last Updated: February 2026
 
 ---
 
@@ -457,7 +457,64 @@ const nextConfig = {
 }
 ```
 
-## 2.6 404 and Error Pages
+## 2.6 Caching and Revalidation (Critical for Dynamic Content)
+Next.js App Router aggressively caches data fetches by default. If content is updated (blog post edited, service page changed), Googlebot may still be served the stale cached version. This is the biggest Next.js SEO trap.
+
+### For Static Sites (no CMS, content lives in code):
+No action needed. Content changes only when you redeploy. Vercel rebuilds everything on each push.
+
+### For Sites with CMS or Dynamic Data (blog from database, headless CMS):
+You MUST set a revalidation strategy so Google always crawls fresh content.
+
+**Option 1: Time-Based Revalidation (simplest)**
+Set how often Next.js should re-fetch data from the source:
+```ts
+// In any page.tsx or layout.tsx that fetches dynamic data
+export const revalidate = 3600 // Revalidate every 1 hour (in seconds)
+
+// For frequently updated content (blog index, news):
+export const revalidate = 600 // Every 10 minutes
+
+// For rarely updated content (about page, service pages):
+export const revalidate = 86400 // Every 24 hours
+```
+
+**Option 2: On-Demand Revalidation (most precise)**
+Trigger revalidation only when content actually changes:
+```ts
+// app/api/revalidate/route.ts
+import { revalidatePath, revalidateTag } from 'next/cache'
+import { NextRequest, NextResponse } from 'next/server'
+
+export async function POST(request: NextRequest) {
+  const secret = request.nextUrl.searchParams.get('secret')
+  
+  // Verify the request is from your CMS webhook
+  if (secret !== process.env.REVALIDATION_SECRET) {
+    return NextResponse.json({ message: 'Invalid secret' }, { status: 401 })
+  }
+  
+  const body = await request.json()
+  
+  // Revalidate a specific page
+  revalidatePath(body.path) // e.g., '/blog/my-post'
+  
+  // Or revalidate by tag
+  // revalidateTag('blog-posts')
+  
+  return NextResponse.json({ revalidated: true })
+}
+```
+Connect this API route to your CMS webhook so content updates trigger immediate revalidation.
+
+### Rules:
+- [ ] Every page that fetches external data MUST have a revalidation strategy
+- [ ] Static pages with no external data do NOT need revalidation (default behavior is correct)
+- [ ] Never use `export const dynamic = 'force-dynamic'` on pages that should be cached (kills performance)
+- [ ] Test by updating content in CMS and verifying the live page reflects changes within expected timeframe
+- [ ] If using ISR (Incremental Static Regeneration), verify Googlebot receives fresh content by checking the cached page timestamp
+
+## 2.7 404 and Error Pages
 - [ ] Custom 404 page (app/not-found.tsx) with:
   - Helpful message explaining page not found
   - Search functionality or popular page links
@@ -467,30 +524,33 @@ const nextConfig = {
 - [ ] Both pages return correct HTTP status codes
 - [ ] 404 page should have internal links to help users find what they need
 
-## 2.7 HTTPS
+## 2.8 HTTPS
 - [ ] Entire site served over HTTPS (enforced by hosting platform)
 - [ ] No mixed content (HTTP resources loaded on HTTPS pages)
 - [ ] HSTS header enabled (see headers config above)
 - [ ] SSL certificate valid and not expired
 
-## 2.8 WWW vs Non-WWW
+## 2.9 WWW vs Non-WWW
 - [ ] Pick one version and redirect the other with 301 redirect
 - [ ] Configure at hosting level (Vercel handles this with domain settings)
 - [ ] Canonical URLs must match the chosen version
 - [ ] All internal links use the chosen version
 
-## 2.9 Redirects
+## 2.10 Redirects
 - [ ] Always use 301 (permanent) for moved pages, not 302 (temporary)
 - [ ] Avoid redirect chains (A to B to C should be A to C directly)
 - [ ] Maximum 1 redirect hop
 - [ ] Redirect all old URLs during site migrations. Missed redirects equal lost rankings
 - [ ] Test all redirects after implementation
 
-## 2.10 Pagination
+## 2.11 Pagination
 - [ ] Use proper pagination handling for blog listings
 - [ ] Each paginated page should have unique meta title (e.g., "Blog - Page 2")
 - [ ] Implement "Load More" or numbered pagination with proper URL handling
 - [ ] Avoid infinite scroll without URL-based state management
+- [ ] Canonical URL rule: each paginated page gets a SELF-REFERENCING canonical. /blog?page=2 canonicals to /blog?page=2, NOT back to /blog. Pointing all paginated pages to the first page tells Google the other pages do not matter, which deindexes them
+- [ ] Each paginated page should have unique meta description (not duplicated across pages)
+- [ ] Use rel="next" and rel="prev" link elements where applicable (Google says they ignore these but Bing uses them)
 
 ---
 
@@ -1063,7 +1123,7 @@ export function SchemaMarkup({ data }: SchemaMarkupProps) {
 
 ## 5.2 Keyword Placement Rules
 - Primary keyword in: meta title, meta description, H1, first 100 words, last 100 words, at least 2 H2s, image alt text, URL slug
-- Primary keyword density: 0.5-1.5% (10+ mentions in 2000 words). Never forced
+- Primary keyword density: aim for 10+ natural mentions in 2000 words as a floor, not a formula. Google uses NLP and entity recognition now, not strict percentage counting. The goal is comprehensive topic coverage with natural keyword presence. If a keyword appears 8 times and the content reads perfectly, that is fine. If it appears 15 times and still sounds natural, also fine. The 0.5-1.5% range is a sanity check to prevent two extremes: mentioning it twice (too thin) or stuffing it 50 times (spam). Natural placement and LSI entity inclusion matter more than hitting an exact number
 - Secondary keywords: 3-5 mentions each, spread across the page
 - LSI keywords: woven naturally throughout. These tell Google you cover the topic comprehensively
 - Long-tail keywords: work into FAQ section, subheadings, and natural paragraph flow
@@ -1388,6 +1448,24 @@ Even small differences hurt rankings. "Street" vs "St." or "Inc." vs "Inc" or di
 - Include service area covering all cities and regions served
 - Service schema on all service pages with areaServed property
 
+### Use the Most Specific Schema Subtype
+Google prefers the most specific schema type over generic LocalBusiness. Always check https://schema.org/LocalBusiness for subtypes that match the client's business:
+
+| Business Type | Use This Schema Instead of LocalBusiness | Extra Properties to Include |
+|---------------|------------------------------------------|----------------------------|
+| Restaurant/Cafe | Restaurant | servesCuisine, hasMenu, acceptsReservations |
+| Fitness/Gym | HealthAndBeautyBusiness or SportsActivityLocation | N/A |
+| Law Firm | LegalService | N/A |
+| Medical Practice | MedicalBusiness or Physician | medicalSpecialty |
+| Real Estate | RealEstateAgent | N/A |
+| Auto Repair | AutoRepair | N/A |
+| School/Training | EducationalOrganization | educationalCredentialAwarded |
+| Salon/Spa | BeautySalon or DaySpa | N/A |
+| Dental | Dentist | medicalSpecialty |
+| Accounting | AccountingService | N/A |
+
+If no specific subtype exists, use LocalBusiness. The more specific the schema, the better Google understands the business and the higher the chance of appearing in relevant local map results.
+
 ## 9.6 Location Pages Strategy
 - Create a dedicated page for each city or area the business serves
 - Each location page must have UNIQUE content (not the same template with the city name swapped)
@@ -1536,6 +1614,104 @@ const lora = Lora({
 - If unique per page is not feasible, create a branded default OG image
 - Specify in metadata openGraph.images with full URL, width, height, and alt text
 - Test OG images with: https://www.opengraph.xyz/
+
+### Manual OG Images (for sites with under 30 pages):
+Create each OG image in Canva or Figma. Save as JPG at 1200x630px. Place in /public/og/ folder.
+
+### Dynamic OG Image Generation (for sites with blog or many pages):
+For sites where manually creating an OG image per page is not scalable (50+ blog posts), use Next.js built-in OG image generation with @vercel/og:
+
+```bash
+npm install @vercel/og
+```
+
+**Option 1: Per-route OG image (recommended for blogs)**
+```tsx
+// app/blog/[slug]/opengraph-image.tsx
+import { ImageResponse } from 'next/og'
+
+export const runtime = 'edge'
+export const alt = 'Blog post title'
+export const size = { width: 1200, height: 630 }
+export const contentType = 'image/png'
+
+export default async function Image({ params }: { params: { slug: string } }) {
+  // Fetch post data for the title
+  // const post = await getBlogPost(params.slug)
+  
+  return new ImageResponse(
+    (
+      <div
+        style={{
+          background: 'linear-gradient(135deg, #2D1B4E 0%, #0D9488 100%)',
+          width: '100%',
+          height: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          padding: '60px',
+        }}
+      >
+        <div style={{ color: 'white', fontSize: 48, fontWeight: 'bold', lineHeight: 1.3 }}>
+          {/* post.title */ 'Post Title Here'}
+        </div>
+        <div style={{ color: '#D4A843', fontSize: 24, marginTop: 20 }}>
+          [Brand Name]
+        </div>
+      </div>
+    ),
+    { ...size }
+  )
+}
+```
+
+**Option 2: Shared API route (for any page)**
+```tsx
+// app/api/og/route.tsx
+import { ImageResponse } from 'next/og'
+import { NextRequest } from 'next/server'
+
+export const runtime = 'edge'
+
+export async function GET(request: NextRequest) {
+  const { searchParams } = new URL(request.url)
+  const title = searchParams.get('title') || '[Brand Name]'
+  
+  return new ImageResponse(
+    (
+      <div
+        style={{
+          background: 'linear-gradient(135deg, #2D1B4E 0%, #0D9488 100%)',
+          width: '100%',
+          height: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          padding: '60px',
+        }}
+      >
+        <div style={{ color: 'white', fontSize: 48, fontWeight: 'bold' }}>
+          {title}
+        </div>
+        <div style={{ color: '#D4A843', fontSize: 24, marginTop: 20 }}>
+          [Brand Name]
+        </div>
+      </div>
+    ),
+    { width: 1200, height: 630 }
+  )
+}
+
+// Usage in metadata:
+// images: [{ url: '/api/og?title=Your+Page+Title', width: 1200, height: 630 }]
+```
+
+### Rules:
+- Replace brand colors and name in the templates above per project
+- Always test generated images at https://www.opengraph.xyz/
+- For small sites (under 30 pages), manual images are fine. Do not over-engineer
+- For blog-heavy sites, dynamic generation is mandatory to avoid missing OG images on new posts
+- The per-route opengraph-image.tsx approach is preferred because Next.js automatically includes it in metadata without extra configuration
 
 ## 11.4 Video SEO
 - Host videos on YouTube AND embed on the page (dual visibility in both platforms)
@@ -1835,15 +2011,131 @@ Security signals affect both SEO rankings and user trust.
 
 Only implement if the site serves multiple languages or countries. Skip for single-language, single-country sites.
 
+## 19.1 Core Requirements
 - [ ] Hreflang tags on every page specifying language and region
 - [ ] x-default hreflang for the primary version
-- [ ] Language-specific URLs: /en/, /hi/, or subdomain structure (en.domain.com)
+- [ ] Language-specific URLs: /en/, /nl/, /hi/, or subdomain structure (en.domain.com)
 - [ ] Content properly translated by humans (not auto-translated)
 - [ ] Localized content (currency, address formats, cultural references, examples)
 - [ ] Each language version has its own sitemap
 - [ ] Default language specified
 - [ ] Hreflang tags must be reciprocal (if page A points to page B, page B must point back)
 - [ ] Google Search Console geotargeting configured if using subdomains or subfolders
+
+## 19.2 Next.js i18n Implementation
+Next.js does NOT have built-in i18n routing in the App Router (it was removed after Pages Router). You must handle it yourself. Improper implementation causes redirect loops that block Googlebot from crawling secondary languages.
+
+### Recommended: next-intl Package
+```bash
+npm install next-intl
+```
+
+**Folder structure for bilingual site (e.g., English + Dutch):**
+```
+app/
+|-- [locale]/
+|   |-- layout.tsx
+|   |-- page.tsx          (homepage)
+|   |-- about/
+|   |   |-- page.tsx
+|   |-- menu/
+|   |   |-- page.tsx
+|   |-- contact/
+|   |   |-- page.tsx
+|-- middleware.ts          (handles locale detection and redirects)
+```
+
+**Middleware for language routing:**
+```ts
+// middleware.ts
+import createMiddleware from 'next-intl/middleware'
+
+export default createMiddleware({
+  // List all supported locales
+  locales: ['en', 'nl'],
+  
+  // Default locale (served at / without prefix)
+  defaultLocale: 'en',
+  
+  // Strategy: 'always' adds /en/ prefix to default locale too
+  // Strategy: 'as-needed' serves default at / and others at /nl/
+  localePrefix: 'as-needed'
+})
+
+export const config = {
+  // Match all paths except static files and API routes
+  matcher: ['/((?!api|_next|_vercel|.*\\..*).*)']
+}
+```
+
+**Hreflang implementation in layout.tsx:**
+```tsx
+// app/[locale]/layout.tsx
+import { Metadata } from 'next'
+
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+  const { locale } = params
+  const baseUrl = 'https://[DOMAIN]'
+  
+  return {
+    alternates: {
+      canonical: locale === 'en' ? `${baseUrl}/about` : `${baseUrl}/${locale}/about`,
+      languages: {
+        'en': `${baseUrl}/about`,
+        'nl': `${baseUrl}/nl/about`,
+        'x-default': `${baseUrl}/about`,
+      },
+    },
+  }
+}
+```
+
+**Sitemap for multilingual site:**
+```ts
+// app/sitemap.ts
+import { MetadataRoute } from 'next'
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = 'https://[DOMAIN]'
+  const locales = ['en', 'nl']
+  const pages = ['', '/about', '/menu', '/contact']
+  
+  const entries: MetadataRoute.Sitemap = []
+  
+  for (const page of pages) {
+    entries.push({
+      url: `${baseUrl}${page}`,
+      lastModified: new Date(),
+      alternates: {
+        languages: {
+          en: `${baseUrl}${page}`,
+          nl: `${baseUrl}/nl${page}`,
+        },
+      },
+    })
+  }
+  
+  return entries
+}
+```
+
+### i18n Rules:
+- [ ] NEVER use browser-based language detection to redirect without user consent (Google may only crawl one language)
+- [ ] Every page must be accessible via a direct URL without redirection (Googlebot must reach /nl/menu directly)
+- [ ] Each language version must have its own unique metadata (title, description in that language)
+- [ ] Schema markup should match the page language (Dutch schema on Dutch pages)
+- [ ] Do NOT use automatic translation. Hire a native speaker or use professional translation with human review
+- [ ] A language switcher must be visible on every page (usually in the navbar)
+- [ ] The language switcher must link to the SAME page in the other language, not to the homepage
+- [ ] robots.txt and sitemap.xml should be language-agnostic (one robots.txt, one sitemap covering all languages)
+- [ ] Test that Googlebot can access both language versions independently (use URL Inspection in Search Console)
+
+### Common i18n Mistakes That Kill SEO:
+- Redirect loops from misconfigured middleware (test thoroughly before launch)
+- Serving mixed languages on one page (Dutch menu titles with English descriptions)
+- Duplicate content across languages (same English text on /en/ and /nl/ pages)
+- Missing hreflang tags causing Google to pick the wrong language version for a query
+- Default locale redirect stripping the locale prefix and creating a loop
 
 ---
 

@@ -662,7 +662,7 @@ export default function SelfMasteryWomenPage() {
           </div>
 
           {/* Internal links */}
-          <p className="text-center text-sm text-charcoal/55 mt-8">
+          <p className="text-center text-sm text-charcoal/70 mt-8">
             Looking for focused emotional support?{" "}
             <Link
               href="/services/emotional-intelligence"

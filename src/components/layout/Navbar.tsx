@@ -73,10 +73,12 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop nav — centered via absolute trick */}
-          <ul
-            className="hidden md:flex items-center gap-0.5 absolute left-1/2 -translate-x-1/2"
+          <nav
+            aria-label="Main navigation"
+            className="hidden md:block absolute left-1/2 -translate-x-1/2"
             style={{ fontFamily: "var(--font-display)" }}
           >
+          <ul className="flex items-center gap-0.5">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <Link
@@ -201,6 +203,7 @@ export default function Navbar() {
               </div>
             </li>
           </ul>
+          </nav>
 
           {/* Right side: CTA + hamburger */}
           <div className="flex items-center gap-2 shrink-0">
