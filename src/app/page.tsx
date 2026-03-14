@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 // ── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -371,101 +372,124 @@ export default function HomePage() {
           aria-hidden="true"
         />
 
-        <div className="relative max-w-5xl mx-auto px-6 py-28 w-full">
-          {/* Pre-label */}
-          <p
-            className="text-[11px] font-bold uppercase tracking-[0.2em] mb-8"
-            style={{ color: "#D4A843", fontFamily: "var(--font-body)" }}
-          >
-            Transformational Life Skills Academy · Delhi NCR
-          </p>
+        <div className="relative max-w-6xl mx-auto px-6 py-24 w-full">
+          <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
 
-          {/* H1 — Playfair Display, editorial scale, NOT purple bg */}
-          <h1
-            className="font-bold text-white leading-[1.1] mb-4"
-            style={{
-              fontFamily: "var(--font-accent)",
-              fontStyle: "italic",
-              fontSize: "clamp(2rem, 4vw, 3.25rem)",
-              maxWidth: "820px",
-            }}
-          >
-            &ldquo;I have never let my{" "}
-            <span style={{ color: "#ffffff", textShadow: "0 0 24px rgba(255,255,255,0.9), 0 0 48px rgba(255,255,255,0.5)" }}>schooling</span>{" "}
-            interfere with my education.&rdquo;
-          </h1>
-          <p
-            className="mb-8 text-white/70 font-semibold tracking-widest uppercase"
-            style={{ fontFamily: "var(--font-display)", fontSize: "0.85rem" }}
-          >
-            — Mark Twain
-          </p>
+            {/* Left — Text content */}
+            <div>
+              {/* Pre-label */}
+              <p
+                className="text-[11px] font-bold uppercase tracking-[0.2em] mb-8"
+                style={{ color: "#D4A843", fontFamily: "var(--font-body)" }}
+              >
+                Transformational Life Skills Academy · Delhi NCR
+              </p>
 
-          {/* Subtitle */}
-          <p
-            className="mb-12 leading-relaxed"
-            style={{
-              color: "#ffffff",
-              fontSize: "1.125rem",
-              maxWidth: "540px",
-              fontFamily: "var(--font-body)",
-            }}
-          >
-            Structured transformational pathways for students, women,
-            professionals and future trainers. Assessment-based. Measurable.
-            Real.
-          </p>
+              {/* H1 */}
+              <h1
+                className="font-bold text-white leading-[1.1] mb-4"
+                style={{
+                  fontFamily: "var(--font-accent)",
+                  fontStyle: "italic",
+                  fontSize: "clamp(1.9rem, 3.5vw, 3rem)",
+                }}
+              >
+                &ldquo;I have never let my{" "}
+                <span style={{ color: "#ffffff", textShadow: "0 0 18px rgba(255,255,255,0.65), 0 0 36px rgba(255,255,255,0.3)" }}>schooling</span>{" "}
+                interfere with my{" "}
+                <span style={{ color: "#ffffff", textShadow: "0 0 18px rgba(255,255,255,0.65), 0 0 36px rgba(255,255,255,0.3)" }}>education</span>.&rdquo;
+              </h1>
+              <p
+                className="mb-8 text-white/70 font-semibold tracking-widest uppercase"
+                style={{ fontFamily: "var(--font-display)", fontSize: "0.85rem" }}
+              >
+                — Mark Twain
+              </p>
 
-          {/* CTAs — CSS hover classes, min 52px touch targets */}
-          <div className="flex flex-col sm:flex-row gap-4 mb-20">
-            <Link
-              href="/assessment"
-              className="btn-teal inline-flex items-center justify-center gap-2 rounded-xl font-semibold text-white"
-              style={{
-                padding: "14px 32px",
-                fontSize: "0.9375rem",
-                fontFamily: "var(--font-body)",
-                minHeight: "52px",
-              }}
-            >
-              Take the Assessment
-              <Chevron className="w-4 h-4" />
-            </Link>
-            <Link
-              href="#programs"
-              className="btn-outline-hero inline-flex items-center justify-center rounded-xl font-semibold"
-              style={{
-                padding: "14px 32px",
-                fontSize: "0.9375rem",
-                fontFamily: "var(--font-body)",
-                minHeight: "52px",
-              }}
-            >
-              Explore Pathways
-            </Link>
-          </div>
+              {/* Subtitle */}
+              <p
+                className="mb-10 leading-relaxed"
+                style={{
+                  color: "#ffffff",
+                  fontSize: "1.0625rem",
+                  fontFamily: "var(--font-body)",
+                }}
+              >
+                Structured transformational pathways for students, women,
+                professionals and future trainers. Assessment-based. Measurable.
+                Real.
+              </p>
 
-          {/* Stats row — Trust & Authority primary signal */}
-          <div
-            className="flex flex-wrap gap-x-10 gap-y-6 pt-8"
-            style={{ borderTop: "1px solid rgba(255,255,255,0.08)" }}
-          >
-            {heroStats.map((s) => (
-              <div key={s.value} className="flex flex-col">
-                <span
-                  className="font-bold leading-none text-white"
-                  style={{ fontFamily: "var(--font-display)", fontSize: "1.75rem" }}
+              {/* CTAs */}
+              <div className="flex flex-col sm:flex-row gap-4 mb-14">
+                <Link
+                  href="/assessment"
+                  className="btn-teal inline-flex items-center justify-center gap-2 rounded-xl font-semibold text-white"
+                  style={{
+                    padding: "14px 32px",
+                    fontSize: "0.9375rem",
+                    fontFamily: "var(--font-body)",
+                    minHeight: "52px",
+                  }}
                 >
-                  {s.value}
-                </span>
-                <span
-                  className="text-xs mt-1.5 uppercase tracking-wide"
-                  style={{ color: "rgba(255,255,255,0.75)", fontFamily: "var(--font-body)" }}
+                  Take the Assessment
+                  <Chevron className="w-4 h-4" />
+                </Link>
+                <Link
+                  href="#programs"
+                  className="btn-outline-hero inline-flex items-center justify-center rounded-xl font-semibold"
+                  style={{
+                    padding: "14px 32px",
+                    fontSize: "0.9375rem",
+                    fontFamily: "var(--font-body)",
+                    minHeight: "52px",
+                  }}
                 >
-                  {s.label}
-                </span>
+                  Explore Pathways
+                </Link>
               </div>
-            ))}
+
+              {/* Stats row */}
+              <div
+                className="flex flex-wrap gap-x-8 gap-y-5 pt-8"
+                style={{ borderTop: "1px solid rgba(255,255,255,0.08)" }}
+              >
+                {heroStats.map((s) => (
+                  <div key={s.value} className="flex flex-col">
+                    <span
+                      className="font-bold leading-none text-white"
+                      style={{ fontFamily: "var(--font-display)", fontSize: "1.6rem" }}
+                    >
+                      {s.value}
+                    </span>
+                    <span
+                      className="text-xs mt-1.5 uppercase tracking-wide"
+                      style={{ color: "rgba(255,255,255,0.75)", fontFamily: "var(--font-body)" }}
+                    >
+                      {s.label}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Right — Hero image */}
+            <div className="hidden md:block relative rounded-2xl overflow-hidden" style={{ height: "520px" }}>
+              <Image
+                src="/images/students/supreet-teaching.jpg"
+                alt="Supreet Kaur conducting a life skills session with students at Hidden Potential Delhi"
+                fill
+                className="object-cover object-center"
+                priority
+              />
+              {/* Subtle gradient overlay at bottom */}
+              <div
+                className="absolute bottom-0 left-0 right-0 h-24 pointer-events-none"
+                style={{ background: "linear-gradient(to top, rgba(26,15,60,0.4) 0%, transparent 100%)" }}
+                aria-hidden="true"
+              />
+            </div>
+
           </div>
         </div>
       </section>
@@ -474,73 +498,90 @@ export default function HomePage() {
           2. BRAND STORY — White, editorial quote
       ═══════════════════════════════════════════ */}
       <section className="bg-white py-24">
-        <div className="max-w-4xl mx-auto px-6">
-          <Label>Our Story</Label>
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
 
-          <blockquote
-            className="leading-relaxed mb-10"
-            style={{
-              fontFamily: "var(--font-display)",
-              fontStyle: "italic",
-              fontSize: "clamp(1.35rem, 2.5vw, 1.75rem)",
-              color: "#6F00FF",
-              borderLeft: "3px solid #6F00FF",
-              paddingLeft: "24px",
-            }}
-          >
-            &ldquo;For years, academic systems focused on grades, performance
-            and achievement. But something essential was missing.&rdquo;
-          </blockquote>
+            {/* Left — Story content */}
+            <div>
+              <Label>Our Story</Label>
 
-          <div className="flex flex-wrap gap-3 mb-10 pl-9">
-            {[
-              "Emotional Resilience",
-              "Self-Awareness",
-              "Communication Mastery",
-              "Clarity of Identity",
-            ].map((item) => (
-              <span
-                key={item}
-                className="px-4 py-2 text-sm font-medium rounded-full"
+              <blockquote
+                className="leading-relaxed mb-10"
                 style={{
-                  fontFamily: "var(--font-body)",
-                  background: "#F3E8FF",
+                  fontFamily: "var(--font-display)",
+                  fontStyle: "italic",
+                  fontSize: "clamp(1.25rem, 2.2vw, 1.6rem)",
                   color: "#6F00FF",
-                  border: "1px solid rgba(111,0,255,0.15)",
+                  borderLeft: "3px solid #6F00FF",
+                  paddingLeft: "24px",
                 }}
               >
-                {item}
-              </span>
-            ))}
-          </div>
+                &ldquo;For years, academic systems focused on grades, performance
+                and achievement. But something essential was missing.&rdquo;
+              </blockquote>
 
-          <div className="pl-9 max-w-2xl space-y-5">
-            <p
-              className="leading-relaxed"
-              style={{ color: "#1c1c2e", fontSize: "1.0625rem", fontFamily: "var(--font-body)" }}
-            >
-              <strong style={{ color: "#0D9488" }}>Hidden Potential</strong>{" "}
-              was created to bridge that gap — to give every learner the tools
-              that formal education never prioritised.
-            </p>
-            <p
-              className="leading-relaxed"
-              style={{ color: "#1c1c2e", fontSize: "1.0625rem", fontFamily: "var(--font-body)" }}
-            >
-              This is not a training institute. It is a{" "}
-              <strong>transformational academy</strong> — where structured
-              pathways meet real human development, and growth is never left to
-              chance.
-            </p>
-          </div>
+              <div className="flex flex-wrap gap-3 mb-10 pl-9">
+                {[
+                  "Emotional Resilience",
+                  "Self-Awareness",
+                  "Communication Mastery",
+                  "Clarity of Identity",
+                ].map((item) => (
+                  <span
+                    key={item}
+                    className="px-4 py-2 text-sm font-medium rounded-full"
+                    style={{
+                      fontFamily: "var(--font-body)",
+                      background: "#F3E8FF",
+                      color: "#6F00FF",
+                      border: "1px solid rgba(111,0,255,0.15)",
+                    }}
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
 
-          <div className="mt-9 pl-9">
-            <Link
-              href="/about"
-              className="text-link-teal inline-flex items-center gap-2 text-sm font-semibold"
-            >
-              Meet Supreet Kaur, Founder <Chevron />
-            </Link>
+              <div className="pl-9 space-y-5">
+                <p
+                  className="leading-relaxed"
+                  style={{ color: "#1c1c2e", fontSize: "1.0625rem", fontFamily: "var(--font-body)" }}
+                >
+                  <strong style={{ color: "#0D9488" }}>Hidden Potential</strong>{" "}
+                  was created to bridge that gap — to give every learner the tools
+                  that formal education never prioritised.
+                </p>
+                <p
+                  className="leading-relaxed"
+                  style={{ color: "#1c1c2e", fontSize: "1.0625rem", fontFamily: "var(--font-body)" }}
+                >
+                  This is not a training institute. It is a{" "}
+                  <strong>transformational academy</strong> — where structured
+                  pathways meet real human development, and growth is never left to
+                  chance.
+                </p>
+              </div>
+
+              <div className="mt-9 pl-9">
+                <Link
+                  href="/about"
+                  className="text-link-teal inline-flex items-center gap-2 text-sm font-semibold"
+                >
+                  Meet Supreet Kaur, Founder <Chevron />
+                </Link>
+              </div>
+            </div>
+
+            {/* Right — Full image */}
+            <div className="relative rounded-2xl overflow-hidden" style={{ height: "440px" }}>
+              <Image
+                src="/images/media/media-2.jpg"
+                alt="Hidden Potential life skills training session in Delhi — real transformation in action"
+                fill
+                className="object-cover object-center"
+              />
+            </div>
+
           </div>
         </div>
       </section>
@@ -588,7 +629,7 @@ export default function HomePage() {
                   style={{
                     fontFamily: "var(--font-display)",
                     color: pillarAccent[i],
-                    opacity: 0.12,
+                    opacity: 0.7,
                     lineHeight: 1,
                   }}
                 >
@@ -602,7 +643,7 @@ export default function HomePage() {
                 </h3>
                 <p
                   className="text-sm leading-relaxed"
-                  style={{ color: "#6b7280", fontFamily: "var(--font-body)" }}
+                  style={{ color: "#374151", fontFamily: "var(--font-body)" }}
                 >
                   {p.desc}
                 </p>
@@ -627,7 +668,7 @@ export default function HomePage() {
                       style={{
                         left: "calc(28px + 12px)",
                         right: "-16px",
-                        background: "rgba(255,255,255,0.08)",
+                        background: "rgba(255,255,255,0.6)",
                       }}
                       aria-hidden="true"
                     />
@@ -646,7 +687,7 @@ export default function HomePage() {
                   </p>
                   <p
                     className="text-xs leading-relaxed"
-                    style={{ color: "rgba(255,255,255,0.45)", fontFamily: "var(--font-body)" }}
+                    style={{ color: "#ffffff", fontFamily: "var(--font-body)" }}
                   >
                     {s.desc}
                   </p>
@@ -872,11 +913,11 @@ export default function HomePage() {
             >
               Most programs offer information.
               <br />
-              <span style={{ color: "#6F00FF" }}>We design transformation.</span>
+              <span style={{ color: "#ffffff" }}>We design transformation.</span>
             </h2>
             <p
               className="leading-relaxed"
-              style={{ color: "#6b7280", maxWidth: "500px", fontFamily: "var(--font-body)", fontSize: "1.0625rem" }}
+              style={{ color: "#ffffff", maxWidth: "500px", fontFamily: "var(--font-body)", fontSize: "1.0625rem" }}
             >
               Six principles that make every Hidden Potential program
               fundamentally different from what you have experienced before.
@@ -890,7 +931,7 @@ export default function HomePage() {
                 className="rounded-2xl p-6 card-hover-dark"
                 style={{
                   background: "rgba(255,255,255,0.04)",
-                  border: "1px solid rgba(255,255,255,0.07)",
+                  border: "1px solid rgba(255,255,255,0.3)",
                 }}
               >
                 <div className="flex items-start gap-4">
@@ -903,7 +944,7 @@ export default function HomePage() {
                   <div>
                     <span
                       className="text-[10px] font-bold tabular-nums block mb-2"
-                      style={{ color: "rgba(212,168,67,0.4)", fontFamily: "var(--font-body)" }}
+                      style={{ color: "#D4A843", fontFamily: "var(--font-body)" }}
                     >
                       {String(i + 1).padStart(2, "0")}
                     </span>
@@ -915,7 +956,7 @@ export default function HomePage() {
                     </h3>
                     <p
                       className="text-sm leading-relaxed"
-                      style={{ color: "rgba(255,255,255,0.45)", fontFamily: "var(--font-body)" }}
+                      style={{ color: "#ffffff", fontFamily: "var(--font-body)" }}
                     >
                       {d.desc}
                     </p>
@@ -1291,8 +1332,9 @@ export default function HomePage() {
                 className="px-3 py-1.5 text-[11px] font-semibold rounded-full"
                 style={{
                   fontFamily: "var(--font-body)",
-                  color: "rgba(212,168,67,0.7)",
-                  border: "1px solid rgba(212,168,67,0.2)",
+                  background: "white",
+                  color: "#7C3AED",
+                  border: "1px solid rgba(212,168,67,0.5)",
                 }}
               >
                 {badge}

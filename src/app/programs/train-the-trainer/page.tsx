@@ -15,6 +15,7 @@
  */
 
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import {
   type DomainCardData,
@@ -577,15 +578,26 @@ export default function TrainTheTrainerPage() {
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-white py-20">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-14">
-            <ProgramSectionLabel>Who It&rsquo;s For</ProgramSectionLabel>
-            <h2 className="text-3xl md:text-4xl font-bold text-primary-navy mb-4 leading-tight">
-              Is This Certification Right for You?
-            </h2>
-            <p className="text-lg text-charcoal max-w-2xl mx-auto leading-relaxed">
-              This program is built for individuals who believe life skills matter — and are ready
-              to make teaching them their professional identity.
-            </p>
+          {/* Section header: content left, image right */}
+          <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center mb-14">
+            <div>
+              <ProgramSectionLabel>Who It&rsquo;s For</ProgramSectionLabel>
+              <h2 className="text-3xl md:text-4xl font-bold text-primary-navy mb-4 leading-tight">
+                Is This Certification Right for You?
+              </h2>
+              <p className="text-lg text-charcoal leading-relaxed">
+                This program is built for individuals who believe life skills matter — and are ready
+                to make teaching them their professional identity.
+              </p>
+            </div>
+            <div className="relative rounded-2xl overflow-hidden" style={{ height: "420px" }}>
+              <Image
+                src="/images/training/training-1.jpg"
+                alt="Train the Trainer certification program session at Hidden Potential Delhi — participants in facilitation practice"
+                fill
+                className="object-cover object-center"
+              />
+            </div>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">

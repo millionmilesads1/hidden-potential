@@ -21,6 +21,7 @@
  */
 
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import {
   type DomainCardData,
@@ -569,15 +570,26 @@ export default function SelfMasteryWomenPage() {
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-white py-20">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-14">
-            <ProgramSectionLabel>Who It&rsquo;s For</ProgramSectionLabel>
-            <h2 className="text-3xl md:text-4xl font-bold text-primary-navy mb-4 leading-tight">
-              Is This Program Right for You?
-            </h2>
-            <p className="text-lg text-charcoal max-w-2xl mx-auto leading-relaxed">
-              Self Mastery for Women is designed for women 28+ who are ready to move beyond
-              surviving and begin building a life rooted in clarity, strength, and purpose.
-            </p>
+          {/* Section header: content left, image right */}
+          <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center mb-14">
+            <div>
+              <ProgramSectionLabel>Who It&rsquo;s For</ProgramSectionLabel>
+              <h2 className="text-3xl md:text-4xl font-bold text-primary-navy mb-4 leading-tight">
+                Is This Program Right for You?
+              </h2>
+              <p className="text-lg text-charcoal leading-relaxed">
+                Self Mastery for Women is designed for women 28+ who are ready to move beyond
+                surviving and begin building a life rooted in clarity, strength, and purpose.
+              </p>
+            </div>
+            <div className="relative rounded-2xl overflow-hidden" style={{ height: "420px" }}>
+              <Image
+                src="/images/counseling/counseling-1.jpg"
+                alt="One-on-one coaching session for women at Hidden Potential life skills program in Delhi"
+                fill
+                className="object-cover object-center"
+              />
+            </div>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">

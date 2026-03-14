@@ -16,6 +16,7 @@
  */
 
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 // ── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -514,16 +515,27 @@ export default function ForSchoolsPage() {
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-white py-20">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="mb-12">
-            <SectionLabel>What Your School Gets</SectionLabel>
-            <h2 className="text-3xl md:text-4xl font-bold text-primary-navy mb-4 leading-tight max-w-3xl">
-              Comprehensive Life Skills Curriculum for Schools in Delhi NCR
-            </h2>
-            <p className="text-base text-charcoal/75 leading-relaxed max-w-3xl">
-              Our school programs cover the full ecosystem — students, teachers, and parents —
-              because lasting transformation requires alignment across all three. Here is what your
-              school receives through a partnership with Hidden Potential.
-            </p>
+          {/* Section header: content left, image right */}
+          <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center mb-12">
+            <div>
+              <SectionLabel>What Your School Gets</SectionLabel>
+              <h2 className="text-3xl md:text-4xl font-bold text-primary-navy mb-4 leading-tight">
+                Comprehensive Life Skills Curriculum for Schools in Delhi NCR
+              </h2>
+              <p className="text-base text-charcoal/75 leading-relaxed">
+                Our school programs cover the full ecosystem — students, teachers, and parents —
+                because lasting transformation requires alignment across all three. Here is what your
+                school receives through a partnership with Hidden Potential.
+              </p>
+            </div>
+            <div className="relative rounded-2xl overflow-hidden" style={{ height: "400px" }}>
+              <Image
+                src="/images/students/supreet-teaching.jpg"
+                alt="Supreet Kaur conducting a life skills workshop for school students in Delhi, NEP 2020 aligned program"
+                fill
+                className="object-cover object-center"
+              />
+            </div>
           </div>
 
           {/* 8 offerings cards — 2-column grid */}

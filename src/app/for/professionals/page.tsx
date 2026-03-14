@@ -16,6 +16,7 @@
  */
 
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 // ── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -555,16 +556,27 @@ export default function ForProfessionalsPage() {
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-white py-20">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="mb-12">
-            <SectionLabel>Programs for Professionals</SectionLabel>
-            <h2 className="text-3xl md:text-4xl font-bold text-primary-navy mb-4 leading-tight max-w-3xl">
-              Life Skills Programs Designed for Working Professionals in Delhi NCR
-            </h2>
-            <p className="text-base text-charcoal/75 leading-relaxed max-w-3xl">
-              Based on 14+ years of working with professionals across Delhi, Noida, Gurgaon, and
-              Faridabad, these are the programs and services most relevant to your professional
-              development. Each can be taken independently or combined into a structured pathway.
-            </p>
+          {/* Section header: content left, image right */}
+          <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center mb-12">
+            <div>
+              <SectionLabel>Programs for Professionals</SectionLabel>
+              <h2 className="text-3xl md:text-4xl font-bold text-primary-navy mb-4 leading-tight">
+                Life Skills Programs Designed for Working Professionals in Delhi NCR
+              </h2>
+              <p className="text-base text-charcoal/75 leading-relaxed">
+                Based on 14+ years of working with professionals across Delhi, Noida, Gurgaon, and
+                Faridabad, these are the programs and services most relevant to your professional
+                development. Each can be taken independently or combined into a structured pathway.
+              </p>
+            </div>
+            <div className="relative rounded-2xl overflow-hidden" style={{ height: "400px" }}>
+              <Image
+                src="/images/counseling/group-session.jpg"
+                alt="Corporate soft skills and life skills training workshop by Hidden Potential Delhi"
+                fill
+                className="object-cover object-center"
+              />
+            </div>
           </div>
 
           {/* 8 program cards — 2-column grid, technique card style */}

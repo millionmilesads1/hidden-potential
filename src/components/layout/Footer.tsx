@@ -70,7 +70,7 @@ export default function Footer() {
         <div className="flex flex-col gap-5">
           <p
             className="text-sm leading-relaxed"
-            style={{ fontFamily: "var(--font-body)", color: "rgba(255,255,255,0.5)" }}
+            style={{ fontFamily: "var(--font-body)", color: "rgba(255,255,255,0.85)" }}
           >
             A structured transformational academy for students, women, professionals
             and future trainers. System. Science. Structure.
@@ -193,7 +193,7 @@ export default function Footer() {
             className="not-italic flex flex-col gap-2.5 text-sm"
             style={{ fontFamily: "var(--font-body)" }}
           >
-            <span className="leading-relaxed" style={{ color: "rgba(255,255,255,0.45)" }}>
+            <span className="leading-relaxed" style={{ color: "rgba(255,255,255,0.85)" }}>
               D-802, Palm Court Apartment, Sector 19B, Dwarka, Delhi 110075
             </span>
             <a

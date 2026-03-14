@@ -205,22 +205,22 @@
 
 /* Footer links */
 .footer-link {
-  color: rgba(255,255,255,0.55);
+  color: #ffffff;
   transition: color 0.2s ease;
 }
-.footer-link:hover { color: rgba(255,255,255,0.9); }
+.footer-link:hover { color: #D4A843; }
 
 .footer-social {
-  color: rgba(255,255,255,0.35);
+  color: rgba(255,255,255,0.8);
   transition: color 0.2s ease;
 }
 .footer-social:hover { color: #D4A843; }
 
 .footer-utility {
-  color: rgba(255,255,255,0.3);
+  color: rgba(255,255,255,0.8);
   transition: color 0.2s ease;
 }
-.footer-utility:hover { color: rgba(255,255,255,0.7); }
+.footer-utility:hover { color: #ffffff; }
 
 .footer-whatsapp {
   color: #0D9488;
@@ -229,10 +229,10 @@
 .footer-whatsapp:hover { color: #0f766e; }
 
 .footer-contact {
-  color: rgba(255,255,255,0.45);
+  color: #ffffff;
   transition: color 0.2s ease;
 }
-.footer-contact:hover { color: rgba(255,255,255,0.9); }
+.footer-contact:hover { color: #D4A843; }
 
 /* FAQ native <details> chevron rotation */
 details > summary { list-style: none; cursor: pointer; }

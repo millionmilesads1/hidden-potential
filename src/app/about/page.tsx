@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import CertificateLightbox from "@/components/ui/CertificateLightbox";
 
@@ -200,16 +201,18 @@ const impact = [
 
 const books = [
   {
-    title: "The Inner Edge",
-    subtitle: "A Structured Guide to Life Skills",
-    desc: "A comprehensive guide to developing the essential life skills that formal education overlooks — from emotional resilience and self-awareness to confident communication and purposeful living.",
+    title: "An Enlightened Learner",
+    subtitle: "A Toolkit To Become A Better Learner",
+    desc: "A structured guide to developing the essential learning skills that formal education overlooks — from emotional resilience and self-awareness to confident communication and purposeful growth.",
+    imageSrc: "/images/books/book-1.jpg",
     gradientFrom: "#6F00FF",
     gradientTo: "#1a1f2e",
   },
   {
-    title: "Designed to Grow",
-    subtitle: "Pathways to Structured Personal Mastery",
+    title: "Discover Your Hidden Potential",
+    subtitle: "Self Help Book",
     desc: "A practitioner's guide to lasting personal transformation through structured pathways, evidence-based assessment, and intentional daily practice — written for learners and educators alike.",
+    imageSrc: "/images/books/book-2.jpg",
     gradientFrom: "#6F00FF",
     gradientTo: "#0d1a1a",
   },
@@ -235,60 +238,58 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
 
-            {/* Left — Photo placeholder */}
+            {/* Left — Portrait photo */}
             <div
-              className="w-full rounded-lg flex flex-col justify-end p-6 flex-shrink-0"
+              className="relative w-full rounded-lg overflow-hidden flex-shrink-0"
               style={{
-                background: "linear-gradient(180deg, #1A0F3C 0%, #6F00FF 100%)",
                 aspectRatio: "3 / 4",
                 maxHeight: "520px",
               }}
-              aria-label="Photo of Supreet Kaur, Founder and Director of Hidden Potential"
             >
-              {/* Decorative inner frame */}
-              <div
-                className="absolute pointer-events-none"
-                style={{
-                  inset: "1.5rem",
-                  border: "1px solid rgba(255,255,255,0.06)",
-                  borderRadius: "8px",
-                }}
+              <Image
+                src="/images/founder/supreet-hp-banner.jpg"
+                alt="Supreet Kaur, founder and director of Hidden Potential, life skills coach in Delhi"
+                fill
+                className="object-cover object-center"
+                priority
               />
               {/* Floating name card at bottom */}
-              <div
-                className="rounded-md px-4 py-3 w-full"
-                style={{
-                  background: "rgba(255,255,255,0.08)",
-                  border: "1px solid rgba(255,255,255,0.14)",
-                  backdropFilter: "blur(6px)",
-                }}
-              >
-                <p
-                  className="text-white font-bold text-base leading-tight"
-                  style={{ fontFamily: "var(--font-display)" }}
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+                <div
+                  className="rounded-md px-4 py-3 w-full"
+                  style={{
+                    background: "rgba(0,0,0,0.52)",
+                    border: "1px solid rgba(255,255,255,0.14)",
+                    backdropFilter: "blur(6px)",
+                  }}
                 >
-                  Supreet Kaur
-                </p>
-                <p
-                  className="text-white/60 text-xs mt-1"
-                  style={{ fontFamily: "var(--font-body)" }}
-                >
-                  Founder & Director, Hidden Potential
-                </p>
-                <div className="flex flex-wrap gap-1.5 mt-2.5">
-                  {["NLP Practitioner", "Josh Talks Speaker"].map((tag) => (
-                    <span
-                      key={tag}
-                      className="text-[10px] font-semibold px-2 py-0.5 rounded-full"
-                      style={{
-                        background: "rgba(212,168,67,0.18)",
-                        color: "#D4A843",
-                        border: "1px solid rgba(212,168,67,0.25)",
-                      }}
-                    >
-                      {tag}
-                    </span>
-                  ))}
+                  <p
+                    className="text-white font-bold text-base leading-tight"
+                    style={{ fontFamily: "var(--font-display)" }}
+                  >
+                    Supreet Kaur
+                  </p>
+                  <p
+                    className="text-white/60 text-xs mt-1"
+                    style={{ fontFamily: "var(--font-body)" }}
+                  >
+                    Founder & Director, Hidden Potential
+                  </p>
+                  <div className="flex flex-wrap gap-1.5 mt-2.5">
+                    {["NLP Practitioner", "Josh Talks Speaker"].map((tag) => (
+                      <span
+                        key={tag}
+                        className="text-[10px] font-semibold px-2 py-0.5 rounded-full"
+                        style={{
+                          background: "rgba(212,168,67,0.18)",
+                          color: "#D4A843",
+                          border: "1px solid rgba(212,168,67,0.25)",
+                        }}
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
@@ -749,6 +750,32 @@ export default function AboutPage() {
               </div>
             ))}
           </div>
+
+          {/* Photo strip — Josh Talks + Media */}
+          <div className="grid grid-cols-2 gap-4 mt-14 max-w-2xl mx-auto">
+            <div className="relative h-52 rounded-xl overflow-hidden">
+              <Image
+                src="/images/founder/supreet-josh-talks.jpg"
+                alt="Supreet Kaur speaking at Josh Talks, a nationally recognised speaker platform in India"
+                fill
+                className="object-cover object-center"
+              />
+              <div className="absolute bottom-0 left-0 right-0 px-3 py-2" style={{ background: "rgba(0,0,0,0.5)" }}>
+                <p className="text-white text-[11px] font-semibold">Josh Talks Speaker</p>
+              </div>
+            </div>
+            <div className="relative h-52 rounded-xl overflow-hidden">
+              <Image
+                src="/images/media/media-1.jpg"
+                alt="Supreet Kaur featured in The Explore magazine as a life skills expert"
+                fill
+                className="object-cover object-top"
+              />
+              <div className="absolute bottom-0 left-0 right-0 px-3 py-2" style={{ background: "rgba(0,0,0,0.5)" }}>
+                <p className="text-white text-[11px] font-semibold">Media Recognition</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -771,59 +798,19 @@ export default function AboutPage() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {books.map((book, i) => (
+            {books.map((book) => (
               <div
                 key={book.title}
                 className="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden flex flex-col"
               >
                 {/* Book cover */}
-                <div
-                  className="w-full h-56 flex items-center justify-center relative overflow-hidden"
-                  style={{
-                    background: `linear-gradient(160deg, ${book.gradientFrom} 0%, ${book.gradientTo} 100%)`,
-                  }}
-                  aria-label={`Book cover: "${book.title}" by Supreet Kaur`}
-                >
-                  {/* Inner decorative frame */}
-                  <div
-                    className="absolute pointer-events-none"
-                    style={{
-                      inset: "1.25rem",
-                      border: "1px solid rgba(255,255,255,0.08)",
-                      borderRadius: "4px",
-                    }}
+                <div className="relative w-full h-56 overflow-hidden">
+                  <Image
+                    src={book.imageSrc}
+                    alt={`Cover of "${book.title}" by Supreet Kaur, published author and life skills educator`}
+                    fill
+                    className="object-cover object-top"
                   />
-                  {/* Spine accent */}
-                  <div
-                    className="absolute left-0 top-0 bottom-0 w-3"
-                    style={{
-                      background:
-                        i === 0
-                          ? "linear-gradient(to bottom, #D4A843, #b8882a)"
-                          : "linear-gradient(to bottom, #0D9488, #0f766e)",
-                    }}
-                  />
-                  <div className="text-center px-8 pl-10">
-                    <div
-                      className="w-6 h-0.5 mx-auto mb-3"
-                      style={{ backgroundColor: "#D4A843" }}
-                    />
-                    <p
-                      className="text-white font-bold text-base leading-snug mb-1"
-                      style={{ fontFamily: "var(--font-display)" }}
-                    >
-                      {book.title}
-                    </p>
-                    <p
-                      className="text-white/55 text-xs"
-                      style={{ fontFamily: "var(--font-accent)", fontStyle: "italic" }}
-                    >
-                      {book.subtitle}
-                    </p>
-                    <p className="text-white/35 text-[11px] mt-3 uppercase tracking-widest">
-                      Supreet Kaur
-                    </p>
-                  </div>
                 </div>
 
                 {/* Book info */}
@@ -862,12 +849,6 @@ export default function AboutPage() {
             ))}
           </div>
 
-          <p
-            className="text-xs text-gray-400 text-center mt-6"
-            style={{ fontStyle: "italic" }}
-          >
-            (Book titles and covers to be updated)
-          </p>
         </div>
       </section>
 

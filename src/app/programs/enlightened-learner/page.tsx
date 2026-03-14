@@ -20,6 +20,7 @@
  */
 
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import {
   type DomainCardData,
@@ -549,15 +550,26 @@ export default function AELPage() {
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-white py-20">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-14">
-            <ProgramSectionLabel>Who It&rsquo;s For</ProgramSectionLabel>
-            <h2 className="text-3xl md:text-4xl font-bold text-primary-navy mb-4 leading-tight">
-              Is This Program Right for Your Child or Student?
-            </h2>
-            <p className="text-lg text-charcoal max-w-2xl mx-auto leading-relaxed">
-              The An Enlightened Learner program is designed for students at any stage of
-              development — with age-specific sub-groups within each level.
-            </p>
+          {/* Section header: content left, image right */}
+          <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center mb-14">
+            <div>
+              <ProgramSectionLabel>Who It&rsquo;s For</ProgramSectionLabel>
+              <h2 className="text-3xl md:text-4xl font-bold text-primary-navy mb-4 leading-tight">
+                Is This Program Right for Your Child or Student?
+              </h2>
+              <p className="text-lg text-charcoal leading-relaxed">
+                The An Enlightened Learner program is designed for students at any stage of
+                development — with age-specific sub-groups within each level.
+              </p>
+            </div>
+            <div className="relative rounded-2xl overflow-hidden" style={{ height: "420px" }}>
+              <Image
+                src="/images/events/supreet-students-celebrate.jpg"
+                alt="Young students celebrating their achievements in Supreet Kaur's life skills program in Delhi"
+                fill
+                className="object-cover object-center"
+              />
+            </div>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
