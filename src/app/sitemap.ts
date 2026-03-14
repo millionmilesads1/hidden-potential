@@ -46,7 +46,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/services/stress-management",
     "/services/emotional-intelligence",
     "/services/goal-setting",
-    "/services/career-guidance",
+    "/services/career-transition",
     "/services/workshops",
   ].map((path) => ({
     url: `${BASE_URL}${path}`,
@@ -102,7 +102,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  // ── Blog index ────────────────────────────────────────────────────────────
+  // ── Blog index + posts ────────────────────────────────────────────────────
   const blog: MetadataRoute.Sitemap = [
     {
       url: `${BASE_URL}/blog`,
@@ -110,6 +110,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.7,
     },
+    ...[
+      "/blog/what-are-life-skills",
+      "/blog/how-to-improve-communication-skills",
+      "/blog/how-to-build-self-confidence",
+      "/blog/emotional-intelligence-for-students",
+      "/blog/stress-management-techniques-for-students",
+    ].map((path) => ({
+      url: `${BASE_URL}${path}`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.6,
+    })),
   ];
 
   // ── Medium-priority supporting pages ──────────────────────────────────────
