@@ -321,7 +321,7 @@ export default function TrainTheTrainerPage() {
       <section
         className="relative overflow-hidden"
         style={{
-          background: "#6F00FF",
+          background: "linear-gradient(180deg, #1A0F3C 0%, #6F00FF 100%)",
         }}
       >
         {/* Decorative glow */}
@@ -703,7 +703,7 @@ export default function TrainTheTrainerPage() {
       <section
         className="py-20"
         style={{
-          background: "#6F00FF",
+          background: "linear-gradient(180deg, #1A0F3C 0%, #6F00FF 100%)",
         }}
       >
         <div className="max-w-6xl mx-auto px-6">

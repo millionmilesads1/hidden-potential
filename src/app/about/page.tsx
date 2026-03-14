@@ -239,7 +239,7 @@ export default function AboutPage() {
             <div
               className="w-full rounded-lg flex flex-col justify-end p-6 flex-shrink-0"
               style={{
-                background: "#6F00FF",
+                background: "linear-gradient(180deg, #1A0F3C 0%, #6F00FF 100%)",
                 aspectRatio: "3 / 4",
                 maxHeight: "520px",
               }}
@@ -718,7 +718,7 @@ export default function AboutPage() {
       <section
         className="py-16"
         style={{
-          background: "#6F00FF",
+          background: "linear-gradient(180deg, #1A0F3C 0%, #6F00FF 100%)",
         }}
       >
         <div className="max-w-6xl mx-auto px-6">
@@ -877,7 +877,7 @@ export default function AboutPage() {
       <section
         className="relative overflow-hidden py-24"
         style={{
-          background: "#6F00FF",
+          background: "linear-gradient(180deg, #1A0F3C 0%, #6F00FF 100%)",
         }}
       >
         {/* Decorative radial glow */}

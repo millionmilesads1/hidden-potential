@@ -218,7 +218,7 @@ export default function BlogPage() {
 
       {/* ── SECTION 1: HERO ─────────────────────────────────────────────────── */}
       <section
-        style={{ background: '#6F00FF' }}
+        style={{ background: 'linear-gradient(180deg, #1A0F3C 0%, #6F00FF 100%)' }}
         className="relative pt-24 pb-20 text-center overflow-hidden"
       >
         <div className="absolute inset-0 pointer-events-none">
@@ -395,7 +395,7 @@ export default function BlogPage() {
 
       {/* ── SECTION 5: FINAL CTA ────────────────────────────────────────────── */}
       <section
-        style={{ background: '#6F00FF' }}
+        style={{ background: 'linear-gradient(180deg, #1A0F3C 0%, #6F00FF 100%)' }}
         className="relative py-20 text-center overflow-hidden"
       >
         <div className="absolute inset-0 pointer-events-none">

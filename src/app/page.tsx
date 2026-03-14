@@ -349,7 +349,7 @@ export default function HomePage() {
       ═══════════════════════════════════════════ */}
       <section
         className="relative overflow-hidden grain-overlay"
-        style={{ background: "linear-gradient(135deg, #6F00FF 0%, #3D00CC 100%)", minHeight: "90vh", display: "flex", alignItems: "center" }}
+        style={{ background: "linear-gradient(180deg, #1A0F3C 0%, #6F00FF 100%)", minHeight: "90vh", display: "flex", alignItems: "center" }}
       >
         {/* Ambient glows — accents, not gradient backgrounds */}
         <div
@@ -604,7 +604,7 @@ export default function HomePage() {
           </div>
 
           {/* 4 Growth Stages */}
-          <div className="rounded-2xl p-8" style={{ background: "#6F00FF" }}>
+          <div className="rounded-2xl p-8" style={{ background: "linear-gradient(180deg, #1A0F3C 0%, #6F00FF 100%)" }}>
             <p
               className="text-[11px] font-bold uppercase tracking-widest mb-8"
               style={{ color: "#D4A843", fontFamily: "var(--font-body)" }}
@@ -851,7 +851,7 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════
           5. DIFFERENTIATORS — Dark section
       ═══════════════════════════════════════════ */}
-      <section style={{ background: "#6F00FF" }} className="py-24">
+      <section style={{ background: "linear-gradient(180deg, #1A0F3C 0%, #6F00FF 100%)" }} className="py-24">
         <div className="max-w-6xl mx-auto px-6">
           <div className="mb-14">
             <Label dark>What Sets Us Apart</Label>
@@ -1004,7 +1004,7 @@ export default function HomePage() {
                 <div className="flex items-center gap-3">
                   <div
                     className="w-9 h-9 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 text-white"
-                    style={{ background: "#6F00FF", fontFamily: "var(--font-body)" }}
+                    style={{ background: "linear-gradient(180deg, #1A0F3C 0%, #6F00FF 100%)", fontFamily: "var(--font-body)" }}
                   >
                     {t.initial}
                   </div>
@@ -1081,7 +1081,7 @@ export default function HomePage() {
                 >
                   <div
                     className="w-14 h-14 rounded-2xl flex items-center justify-center mb-5"
-                    style={{ background: "#6F00FF" }}
+                    style={{ background: "linear-gradient(180deg, #1A0F3C 0%, #6F00FF 100%)" }}
                   >
                     <span
                       className="text-lg font-bold tabular-nums"
@@ -1220,7 +1220,7 @@ export default function HomePage() {
           10. FINAL CTA — Dark editorial
           Credentials grid = Trust & Authority's primary signal
       ═══════════════════════════════════════════ */}
-      <section style={{ background: "#6F00FF" }} className="py-28">
+      <section style={{ background: "linear-gradient(180deg, #1A0F3C 0%, #6F00FF 100%)" }} className="py-28">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <Label dark>Begin Your Journey</Label>
 

@@ -29,7 +29,7 @@ const locations = [
 
 export default function Footer() {
   return (
-    <footer style={{ background: "#6F00FF" }}>
+    <footer style={{ background: "linear-gradient(180deg, #1A0F3C 0%, #6F00FF 100%)" }}>
 
       {/* ── Top tagline strip ─────────────────────────────────────────── */}
       <div style={{ borderBottom: "1px solid rgba(255,255,255,0.06)" }}>

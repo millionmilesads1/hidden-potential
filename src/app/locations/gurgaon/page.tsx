@@ -409,7 +409,7 @@ export default function GurgaonLocationPage() {
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
         className="relative overflow-hidden"
-        style={{ background: "#6F00FF" }}
+        style={{ background: "linear-gradient(180deg, #1A0F3C 0%, #6F00FF 100%)" }}
       >
         {/* Glows */}
         <div
@@ -802,7 +802,7 @@ export default function GurgaonLocationPage() {
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
         className="relative overflow-hidden py-20"
-        style={{ background: "#6F00FF" }}
+        style={{ background: "linear-gradient(180deg, #1A0F3C 0%, #6F00FF 100%)" }}
       >
         {/* Glow */}
         <div

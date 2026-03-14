@@ -49,7 +49,7 @@ export default function RootLayout({
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[9999] focus:px-6 focus:py-3 focus:rounded-md focus:text-sm focus:font-semibold focus:text-white focus:shadow-lg"
-          style={{ background: "#6F00FF" }}
+          style={{ background: "linear-gradient(180deg, #1A0F3C 0%, #6F00FF 100%)" }}
         >
           Skip to main content
         </a>
@@ -66,7 +66,7 @@ export default function RootLayout({
           {/* ── Tagline banner — scrolls with page, appears on every page ── */}
           <div
             style={{
-              backgroundColor: "#6F00FF",
+              background: "linear-gradient(180deg, #1A0F3C 0%, #6F00FF 100%)",
               borderBottom: "1px solid rgba(13, 148, 136, 0.3)",
               letterSpacing: "0.5px",
             }}
