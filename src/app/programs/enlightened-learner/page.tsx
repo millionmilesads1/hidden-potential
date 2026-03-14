@@ -562,14 +562,16 @@ export default function AELPage() {
                 development — with age-specific sub-groups within each level.
               </p>
             </div>
-            <div className="relative w-full rounded-2xl overflow-hidden" style={{ height: "420px" }}>
-              <Image
-                src="/images/events/supreet-students-celebrate.jpg"
-                alt="Young students celebrating their achievements in Supreet Kaur's life skills program in Delhi"
-                fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover object-center"
-              />
+            <div className="relative w-full overflow-hidden rounded-2xl">
+              <div className="relative w-full" style={{ height: "420px" }}>
+                <Image
+                  src="/images/events/supreet-students-celebrate.jpg"
+                  alt="Young students celebrating their achievements in Supreet Kaur's life skills program in Delhi"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover object-center"
+                />
+              </div>
             </div>
           </div>
 

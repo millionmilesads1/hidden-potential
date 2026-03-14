@@ -44,13 +44,15 @@ export default function CertificateLightbox({ imageSrc, imageAlt }: Props) {
         }}
         aria-label="Click to view full-size certificate"
       >
-        <Image
-          src={imageSrc}
-          alt={imageAlt}
-          width={200}
-          height={280}
-          className="object-cover w-full h-auto"
-        />
+        <div className="relative block w-full overflow-hidden">
+          <Image
+            src={imageSrc}
+            alt={imageAlt}
+            width={200}
+            height={280}
+            className="object-cover w-full h-auto"
+          />
+        </div>
         {/* Hover overlay */}
         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors" />
         <span className="absolute inset-x-0 bottom-0 py-2 text-center text-[11px] font-bold text-white bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity">

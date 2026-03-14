@@ -177,8 +177,10 @@ function PostCard({ post, featured = false }: { post: (typeof posts)[0]; feature
           <div className="flex items-center justify-between flex-wrap gap-3 mt-auto">
             <div className="flex items-center gap-2">
               {/* Author avatar */}
-              <div className="relative w-7 h-7 rounded-full overflow-hidden flex-shrink-0">
-                <Image src="/images/founder/supreet-book-signing.jpg" alt="Supreet Kaur, author" fill className="object-cover object-top" />
+              <div className="relative w-7 h-7 flex-shrink-0 overflow-hidden rounded-full">
+                <div className="relative w-7 h-7">
+                  <Image src="/images/founder/supreet-book-signing.jpg" alt="Supreet Kaur, author" fill className="object-cover object-top" />
+                </div>
               </div>
               <span className="text-xs font-semibold text-charcoal/60">{post.author}</span>
             </div>

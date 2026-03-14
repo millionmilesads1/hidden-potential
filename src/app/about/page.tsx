@@ -239,8 +239,9 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
 
             {/* Left — Portrait photo */}
+            <div className="relative w-full flex-shrink-0 overflow-hidden rounded-lg">
             <div
-              className="relative w-full rounded-lg overflow-hidden flex-shrink-0"
+              className="relative w-full"
               style={{
                 aspectRatio: "3 / 4",
                 maxHeight: "520px",
@@ -292,6 +293,7 @@ export default function AboutPage() {
                   </div>
                 </div>
               </div>
+            </div>
             </div>
 
             {/* Right — Bio content */}
@@ -753,26 +755,30 @@ export default function AboutPage() {
 
           {/* Photo strip — Josh Talks + Media */}
           <div className="grid grid-cols-2 gap-4 mt-14 max-w-2xl mx-auto">
-            <div className="relative h-52 rounded-xl overflow-hidden">
-              <Image
-                src="/images/founder/supreet-josh-talks.jpg"
-                alt="Supreet Kaur speaking at Josh Talks, a nationally recognised speaker platform in India"
-                fill
-                className="object-cover object-center"
-              />
-              <div className="absolute bottom-0 left-0 right-0 px-3 py-2" style={{ background: "rgba(0,0,0,0.5)" }}>
-                <p className="text-white text-[11px] font-semibold">Josh Talks Speaker</p>
+            <div className="relative overflow-hidden rounded-xl">
+              <div className="relative h-52">
+                <Image
+                  src="/images/founder/supreet-josh-talks.jpg"
+                  alt="Supreet Kaur speaking at Josh Talks, a nationally recognised speaker platform in India"
+                  fill
+                  className="object-cover object-center"
+                />
+                <div className="absolute bottom-0 left-0 right-0 px-3 py-2" style={{ background: "rgba(0,0,0,0.5)" }}>
+                  <p className="text-white text-[11px] font-semibold">Josh Talks Speaker</p>
+                </div>
               </div>
             </div>
-            <div className="relative h-52 rounded-xl overflow-hidden">
-              <Image
-                src="/images/media/media-1.jpg"
-                alt="Supreet Kaur featured in The Explore magazine as a life skills expert"
-                fill
-                className="object-cover object-top"
-              />
-              <div className="absolute bottom-0 left-0 right-0 px-3 py-2" style={{ background: "rgba(0,0,0,0.5)" }}>
-                <p className="text-white text-[11px] font-semibold">Media Recognition</p>
+            <div className="relative overflow-hidden rounded-xl">
+              <div className="relative h-52">
+                <Image
+                  src="/images/media/media-1.jpg"
+                  alt="Supreet Kaur featured in The Explore magazine as a life skills expert"
+                  fill
+                  className="object-cover object-top"
+                />
+                <div className="absolute bottom-0 left-0 right-0 px-3 py-2" style={{ background: "rgba(0,0,0,0.5)" }}>
+                  <p className="text-white text-[11px] font-semibold">Media Recognition</p>
+                </div>
               </div>
             </div>
           </div>
@@ -804,13 +810,15 @@ export default function AboutPage() {
                 className="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden flex flex-col"
               >
                 {/* Book cover */}
-                <div className="relative w-full h-56 overflow-hidden">
-                  <Image
-                    src={book.imageSrc}
-                    alt={`Cover of "${book.title}" by Supreet Kaur, published author and life skills educator`}
-                    fill
-                    className="object-cover object-top"
-                  />
+                <div className="relative w-full overflow-hidden">
+                  <div className="relative w-full h-56">
+                    <Image
+                      src={book.imageSrc}
+                      alt={`Cover of "${book.title}" by Supreet Kaur, published author and life skills educator`}
+                      fill
+                      className="object-cover object-top"
+                    />
+                  </div>
                 </div>
 
                 {/* Book info */}

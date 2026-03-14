@@ -582,14 +582,16 @@ export default function SelfMasteryWomenPage() {
                 surviving and begin building a life rooted in clarity, strength, and purpose.
               </p>
             </div>
-            <div className="relative w-full rounded-2xl overflow-hidden" style={{ height: "420px" }}>
-              <Image
-                src="/images/counseling/counseling-1.jpg"
-                alt="One-on-one coaching session for women at Hidden Potential life skills program in Delhi"
-                fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover object-center"
-              />
+            <div className="relative w-full overflow-hidden rounded-2xl">
+              <div className="relative w-full" style={{ height: "420px" }}>
+                <Image
+                  src="/images/counseling/counseling-1.jpg"
+                  alt="One-on-one coaching session for women at Hidden Potential life skills program in Delhi"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover object-center"
+                />
+              </div>
             </div>
           </div>
 

@@ -569,14 +569,16 @@ export default function ForProfessionalsPage() {
                 development. Each can be taken independently or combined into a structured pathway.
               </p>
             </div>
-            <div className="relative w-full rounded-2xl overflow-hidden" style={{ height: "400px" }}>
-              <Image
-                src="/images/counseling/group-session.jpg"
-                alt="Corporate soft skills and life skills training workshop by Hidden Potential Delhi"
-                fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover object-center"
-              />
+            <div className="relative w-full overflow-hidden rounded-2xl">
+              <div className="relative w-full" style={{ height: "400px" }}>
+                <Image
+                  src="/images/counseling/group-session.jpg"
+                  alt="Corporate soft skills and life skills training workshop by Hidden Potential Delhi"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover object-center"
+                />
+              </div>
             </div>
           </div>
 

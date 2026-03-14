@@ -474,21 +474,23 @@ export default function HomePage() {
             </div>
 
             {/* Right — Hero image */}
-            <div className="hidden md:block relative w-full rounded-2xl overflow-hidden" style={{ height: "520px" }}>
-              <Image
-                src="/images/students/supreet-teaching.jpg"
-                alt="Supreet Kaur conducting a life skills session with students at Hidden Potential Delhi"
-                fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover object-center"
-                priority
-              />
-              {/* Subtle gradient overlay at bottom */}
-              <div
-                className="absolute bottom-0 left-0 right-0 h-24 pointer-events-none"
-                style={{ background: "linear-gradient(to top, rgba(26,15,60,0.4) 0%, transparent 100%)" }}
-                aria-hidden="true"
-              />
+            <div className="hidden md:block relative w-full overflow-hidden rounded-2xl">
+              <div className="relative w-full" style={{ height: "520px" }}>
+                <Image
+                  src="/images/students/supreet-teaching.jpg"
+                  alt="Supreet Kaur conducting a life skills session with students at Hidden Potential Delhi"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover object-center"
+                  priority
+                />
+                {/* Subtle gradient overlay at bottom */}
+                <div
+                  className="absolute bottom-0 left-0 right-0 h-24 pointer-events-none"
+                  style={{ background: "linear-gradient(to top, rgba(26,15,60,0.4) 0%, transparent 100%)" }}
+                  aria-hidden="true"
+                />
+              </div>
             </div>
 
           </div>
@@ -574,14 +576,16 @@ export default function HomePage() {
             </div>
 
             {/* Right — Full image */}
-            <div className="relative w-full rounded-2xl overflow-hidden" style={{ height: "440px" }}>
-              <Image
-                src="/images/media/media-2.jpg"
-                alt="Hidden Potential life skills training session in Delhi — real transformation in action"
-                fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover object-center"
-              />
+            <div className="relative w-full overflow-hidden rounded-2xl">
+              <div className="relative w-full" style={{ height: "440px" }}>
+                <Image
+                  src="/images/media/media-2.jpg"
+                  alt="Hidden Potential life skills training session in Delhi — real transformation in action"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover object-center"
+                />
+              </div>
             </div>
 
           </div>

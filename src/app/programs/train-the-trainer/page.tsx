@@ -590,14 +590,16 @@ export default function TrainTheTrainerPage() {
                 to make teaching them their professional identity.
               </p>
             </div>
-            <div className="relative w-full rounded-2xl overflow-hidden" style={{ height: "420px" }}>
-              <Image
-                src="/images/training/training-1.jpg"
-                alt="Train the Trainer certification program session at Hidden Potential Delhi — participants in facilitation practice"
-                fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover object-center"
-              />
+            <div className="relative w-full overflow-hidden rounded-2xl">
+              <div className="relative w-full" style={{ height: "420px" }}>
+                <Image
+                  src="/images/training/training-1.jpg"
+                  alt="Train the Trainer certification program session at Hidden Potential Delhi — participants in facilitation practice"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover object-center"
+                />
+              </div>
             </div>
           </div>
 

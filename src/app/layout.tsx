@@ -60,9 +60,9 @@ export default function RootLayout({
             pb-24 on mobile creates clearance so content is never hidden
             behind the fixed tubelight bottom bar.
             md:pb-0 removes the extra padding on desktop. */}
-        {/* pt-20 = 80px — clears the floating pill navbar (top:16px + ~56px height).
+        {/* pt-[92px] = 92px — clears the floating pill navbar (top:16px + ~60px height + 16px gap).
             pb-24 md:pb-0 clears the mobile tubelight bottom bar. */}
-        <main id="main-content" tabIndex={-1} className="flex-1 pt-20 pb-24 md:pb-0 outline-none">
+        <main id="main-content" tabIndex={-1} className="flex-1 pt-[92px] pb-24 md:pb-0 outline-none">
           {/* ── Tagline banner — scrolls with page, appears on every page ── */}
           <div
             style={{

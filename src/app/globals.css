@@ -10,6 +10,44 @@
 /* ─────────────────────────────────────────────
    TAILWIND v4 THEME — Brand Design Tokens
    ───────────────────────────────────────────── */
+/* ─────────────────────────────────────────────
+   SHINE BORDER ANIMATION
+   ───────────────────────────────────────────── */
+@keyframes shine {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 100% 100%; }
+  to { background-position: 0% 0%; }
+}
+
+@utility bg-shine-size {
+  background-size: 300% 300%;
+}
+
+@utility animate-shine {
+  animation: shine var(--duration) infinite linear;
+}
+
+/* Shine border overlay — ::before pseudo-element styles.
+   Uses CSS variables set via inline style on the parent div. */
+.shine-overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--border-radius);
+  padding: var(--border-width);
+  will-change: background-position;
+  background-image: var(--background-radial-gradient);
+  background-size: 300% 300%;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  animation: shine var(--duration) infinite linear;
+}
+
 @theme {
   /* ── Core Brand Palette ── */
   --color-brand-dark:         #3D00CC;   /* Deep purple — darkest gradient stop */

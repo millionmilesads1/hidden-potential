@@ -581,14 +581,16 @@ export default function ArtTherapyPage() {
                 any kind.
               </p>
             </div>
-            <div className="relative w-full rounded-2xl overflow-hidden" style={{ height: "420px" }}>
-              <Image
-                src="/images/workshops/school-craft.jpg"
-                alt="Students engaged in art therapy and creative activities at Hidden Potential Delhi"
-                fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover object-center"
-              />
+            <div className="relative w-full overflow-hidden rounded-2xl">
+              <div className="relative w-full" style={{ height: "420px" }}>
+                <Image
+                  src="/images/workshops/school-craft.jpg"
+                  alt="Students engaged in art therapy and creative activities at Hidden Potential Delhi"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover object-center"
+                />
+              </div>
             </div>
           </div>
 

@@ -528,14 +528,16 @@ export default function ForSchoolsPage() {
                 school receives through a partnership with Hidden Potential.
               </p>
             </div>
-            <div className="relative w-full rounded-2xl overflow-hidden" style={{ height: "400px" }}>
-              <Image
-                src="/images/students/supreet-teaching.jpg"
-                alt="Supreet Kaur conducting a life skills workshop for school students in Delhi, NEP 2020 aligned program"
-                fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover object-center"
-              />
+            <div className="relative w-full overflow-hidden rounded-2xl">
+              <div className="relative w-full" style={{ height: "400px" }}>
+                <Image
+                  src="/images/students/supreet-teaching.jpg"
+                  alt="Supreet Kaur conducting a life skills workshop for school students in Delhi, NEP 2020 aligned program"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover object-center"
+                />
+              </div>
             </div>
           </div>
 
