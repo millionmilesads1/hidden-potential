@@ -424,7 +424,7 @@ export default function AssessmentClient() {
       {/* ── Fixed Progress Bar ─────────────────────────────────────────────── */}
       <ProgressBar pct={progressPct} label={progressText} />
 
-      <div style={{ maxWidth: 720, margin: '0 auto', padding: '80px 20px 40px' }}>
+      <div style={{ maxWidth: 720, margin: '0 auto', padding: '40px 20px 100px' }}>
 
         {/* ── Header ────────────────────────────────────────────────────────── */}
         <div style={{ textAlign: 'center', marginBottom: 40 }}>
@@ -784,7 +784,7 @@ function ResultsView({ results, studentInfo, animatedBars, progressText }: {
           background: 'linear-gradient(135deg, #7C3AED, #2D1B69)',
           borderRadius: 20, padding: 36, textAlign: 'center', color: '#fff',
         }}>
-          <h3 style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 22, fontWeight: 700, marginBottom: 10 }}>
+          <h3 style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 22, fontWeight: 700, marginBottom: 10, color: '#ffffff' }}>
             Want to Develop These Skills?
           </h3>
           <p style={{ fontSize: 15, opacity: 0.9, marginBottom: 20, lineHeight: 1.5 }}>
@@ -813,23 +813,23 @@ function ResultsView({ results, studentInfo, animatedBars, progressText }: {
 function ProgressBar({ pct, label }: { pct: number; label: string }) {
   return (
     <div style={{
-      position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100,
+      position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 40,
       background: 'rgba(255,255,255,0.95)', backdropFilter: 'blur(12px)',
-      boxShadow: '0 2px 20px rgba(45,27,105,0.1)',
+      boxShadow: '0 -2px 20px rgba(45,27,105,0.1)',
     }}>
+      <div style={{
+        display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+        padding: '10px 24px 8px', maxWidth: 800, margin: '0 auto',
+      }}>
+        <span style={{ fontSize: 13, fontWeight: 600, color: '#2D1B69', fontFamily: "'Plus Jakarta Sans', sans-serif" }}>{label}</span>
+        <span style={{ fontSize: 13, fontWeight: 700, color: '#7C3AED' }}>{pct}%</span>
+      </div>
       <div style={{ height: 5, background: '#e5e7eb' }}>
         <div style={{
           height: '100%', background: 'linear-gradient(90deg, #7C3AED, #2D1B69, #C8A951)',
           backgroundSize: '200% 100%', width: `${pct}%`,
           transition: 'width 0.6s cubic-bezier(0.4,0,0.2,1)', borderRadius: '0 3px 3px 0',
         }} />
-      </div>
-      <div style={{
-        display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-        padding: '8px 24px 10px', maxWidth: 800, margin: '0 auto',
-      }}>
-        <span style={{ fontSize: 13, fontWeight: 600, color: '#2D1B69', fontFamily: "'Plus Jakarta Sans', sans-serif" }}>{label}</span>
-        <span style={{ fontSize: 13, fontWeight: 700, color: '#7C3AED' }}>{pct}%</span>
       </div>
     </div>
   );
