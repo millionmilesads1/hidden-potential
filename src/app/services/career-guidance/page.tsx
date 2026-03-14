@@ -159,7 +159,7 @@ export default function CareerGuidancePage() {
       <main>
 
         {/* ── SECTION 1: HERO ── */}
-        <section style={{ background: '#0f0f1a' }} className="relative overflow-hidden py-20 md:py-28 px-4">
+        <section style={{ background: '#6F00FF' }} className="relative overflow-hidden py-20 md:py-28 px-4">
           <div className="absolute inset-0 pointer-events-none" style={{ background: 'radial-gradient(circle at 85% 20%, rgba(109,40,217,0.08) 0%, transparent 60%)' }} />
           <div className="relative max-w-4xl mx-auto text-center">
             <div className="flex items-center justify-center mb-5">
@@ -323,7 +323,7 @@ export default function CareerGuidancePage() {
         </section>
 
         {/* ── SECTION 7: CTA ── */}
-        <section style={{ background: '#0f0f1a' }} className="py-20 px-4">
+        <section style={{ background: '#6F00FF' }} className="py-20 px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6" style={{ fontFamily: 'var(--font-display)' }}>
               Your Career Should Fit Who You Are — Not What Others Expect

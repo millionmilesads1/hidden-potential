@@ -152,7 +152,7 @@ export default function ConfidenceBuildingPage() {
         ═══════════════════════════════════════════════════════════════ */}
         <section
           className="relative overflow-hidden"
-          style={{ background: "#0f0f1a" }}
+          style={{ background: "#6F00FF" }}
         >
           {/* Decorative glows */}
           <div
@@ -283,7 +283,7 @@ export default function ConfidenceBuildingPage() {
             <SectionLabel>Why Confidence Matters</SectionLabel>
             <h2
               className="text-2xl md:text-3xl font-bold mb-8 leading-snug"
-              style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
+              style={{ color: "#6F00FF", fontFamily: "var(--font-display)" }}
             >
               Why Confidence Building Is the Foundation of Every Life Skill
             </h2>
@@ -324,7 +324,7 @@ export default function ConfidenceBuildingPage() {
             </div>
             <h2
               className="text-2xl md:text-3xl font-bold text-center mb-5 leading-snug max-w-3xl mx-auto"
-              style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
+              style={{ color: "#6F00FF", fontFamily: "var(--font-display)" }}
             >
               Six Dimensions of Confidence We Build at Hidden Potential in Delhi
             </h2>
@@ -538,7 +538,7 @@ export default function ConfidenceBuildingPage() {
             </div>
             <h2
               className="text-2xl md:text-3xl font-bold text-center mb-5 leading-snug max-w-3xl mx-auto"
-              style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
+              style={{ color: "#6F00FF", fontFamily: "var(--font-display)" }}
             >
               Who Benefits from Confidence Building Programs in Delhi?
             </h2>
@@ -564,7 +564,7 @@ export default function ConfidenceBuildingPage() {
                   </span>
                   <h3
                     className="text-sm font-bold leading-snug"
-                    style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
+                    style={{ color: "#6F00FF", fontFamily: "var(--font-display)" }}
                   >
                     Students with Low Confidence (Ages 8-21)
                   </h3>
@@ -597,7 +597,7 @@ export default function ConfidenceBuildingPage() {
                   </span>
                   <h3
                     className="text-sm font-bold leading-snug"
-                    style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
+                    style={{ color: "#6F00FF", fontFamily: "var(--font-display)" }}
                   >
                     Teenagers Facing Peer Pressure (Ages 13-18)
                   </h3>
@@ -625,7 +625,7 @@ export default function ConfidenceBuildingPage() {
                   </span>
                   <h3
                     className="text-sm font-bold leading-snug"
-                    style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
+                    style={{ color: "#6F00FF", fontFamily: "var(--font-display)" }}
                   >
                     Working Professionals Lacking Presence
                   </h3>
@@ -658,7 +658,7 @@ export default function ConfidenceBuildingPage() {
                   </span>
                   <h3
                     className="text-sm font-bold leading-snug"
-                    style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
+                    style={{ color: "#6F00FF", fontFamily: "var(--font-display)" }}
                   >
                     Women Rebuilding Self-Worth (Ages 28+)
                   </h3>
@@ -691,7 +691,7 @@ export default function ConfidenceBuildingPage() {
                   </span>
                   <h3
                     className="text-sm font-bold leading-snug"
-                    style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
+                    style={{ color: "#6F00FF", fontFamily: "var(--font-display)" }}
                   >
                     People Navigating Career or Life Transitions
                   </h3>
@@ -716,7 +716,7 @@ export default function ConfidenceBuildingPage() {
                   </span>
                   <h3
                     className="text-sm font-bold leading-snug"
-                    style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
+                    style={{ color: "#6F00FF", fontFamily: "var(--font-display)" }}
                   >
                     Parents Seeking Confidence Development for Their Children
                   </h3>
@@ -744,7 +744,7 @@ export default function ConfidenceBuildingPage() {
             </div>
             <h2
               className="text-2xl md:text-3xl font-bold text-center mb-5 leading-snug max-w-3xl mx-auto"
-              style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
+              style={{ color: "#6F00FF", fontFamily: "var(--font-display)" }}
             >
               Why Our Confidence Building Program in Delhi Produces Lasting Results
             </h2>
@@ -776,7 +776,7 @@ export default function ConfidenceBuildingPage() {
                 </div>
                 <h3
                   className="text-sm font-bold mb-2"
-                  style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
+                  style={{ color: "#6F00FF", fontFamily: "var(--font-display)" }}
                 >
                   Assessment-Based, Not Assumption-Based
                 </h3>
@@ -808,7 +808,7 @@ export default function ConfidenceBuildingPage() {
                 </div>
                 <h3
                   className="text-sm font-bold mb-2"
-                  style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
+                  style={{ color: "#6F00FF", fontFamily: "var(--font-display)" }}
                 >
                   Structured Progression Across Months
                 </h3>
@@ -839,7 +839,7 @@ export default function ConfidenceBuildingPage() {
                 </div>
                 <h3
                   className="text-sm font-bold mb-2"
-                  style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
+                  style={{ color: "#6F00FF", fontFamily: "var(--font-display)" }}
                 >
                   Pre-Assessment and Post-Assessment Documentation
                 </h3>
@@ -870,7 +870,7 @@ export default function ConfidenceBuildingPage() {
                 </div>
                 <h3
                   className="text-sm font-bold mb-2"
-                  style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
+                  style={{ color: "#6F00FF", fontFamily: "var(--font-display)" }}
                 >
                   NLP-Powered Behavioural Tools
                 </h3>
@@ -908,7 +908,7 @@ export default function ConfidenceBuildingPage() {
                 </div>
                 <h3
                   className="text-sm font-bold mb-2"
-                  style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
+                  style={{ color: "#6F00FF", fontFamily: "var(--font-display)" }}
                 >
                   Real Practice, Not Theory
                 </h3>
@@ -939,7 +939,7 @@ export default function ConfidenceBuildingPage() {
                 </div>
                 <h3
                   className="text-sm font-bold mb-2"
-                  style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
+                  style={{ color: "#6F00FF", fontFamily: "var(--font-display)" }}
                 >
                   14+ Years of Proven Results
                 </h3>
@@ -965,7 +965,7 @@ export default function ConfidenceBuildingPage() {
             </div>
             <h2
               className="text-2xl md:text-3xl font-bold text-center mb-12 leading-snug"
-              style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
+              style={{ color: "#6F00FF", fontFamily: "var(--font-display)" }}
             >
               Common Questions About Confidence Building Programs in Delhi
             </h2>
@@ -976,7 +976,7 @@ export default function ConfidenceBuildingPage() {
                 <div className="px-6 py-4 bg-[#F8F6F2] border-l-4 border-primary-teal">
                   <p
                     className="text-sm font-bold"
-                    style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
+                    style={{ color: "#6F00FF", fontFamily: "var(--font-display)" }}
                   >
                     What causes low confidence and can it really be changed?
                   </p>
@@ -1001,7 +1001,7 @@ export default function ConfidenceBuildingPage() {
                 <div className="px-6 py-4 bg-[#F8F6F2] border-l-4 border-primary-teal">
                   <p
                     className="text-sm font-bold"
-                    style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
+                    style={{ color: "#6F00FF", fontFamily: "var(--font-display)" }}
                   >
                     At what age should confidence building start?
                   </p>
@@ -1024,7 +1024,7 @@ export default function ConfidenceBuildingPage() {
                 <div className="px-6 py-4 bg-[#F8F6F2] border-l-4 border-primary-teal">
                   <p
                     className="text-sm font-bold"
-                    style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
+                    style={{ color: "#6F00FF", fontFamily: "var(--font-display)" }}
                   >
                     How long does it take to build genuine confidence?
                   </p>
@@ -1047,7 +1047,7 @@ export default function ConfidenceBuildingPage() {
                 <div className="px-6 py-4 bg-[#F8F6F2] border-l-4 border-primary-teal">
                   <p
                     className="text-sm font-bold"
-                    style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
+                    style={{ color: "#6F00FF", fontFamily: "var(--font-display)" }}
                   >
                     Is the confidence building program available online?
                   </p>
@@ -1069,7 +1069,7 @@ export default function ConfidenceBuildingPage() {
                 <div className="px-6 py-4 bg-[#F8F6F2] border-l-4 border-primary-teal">
                   <p
                     className="text-sm font-bold"
-                    style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
+                    style={{ color: "#6F00FF", fontFamily: "var(--font-display)" }}
                   >
                     How is this different from personality development classes in Delhi?
                   </p>
@@ -1094,7 +1094,7 @@ export default function ConfidenceBuildingPage() {
                 <div className="px-6 py-4 bg-[#F8F6F2] border-l-4 border-primary-teal">
                   <p
                     className="text-sm font-bold"
-                    style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
+                    style={{ color: "#6F00FF", fontFamily: "var(--font-display)" }}
                   >
                     How much does confidence building coaching cost in Delhi?
                   </p>
@@ -1119,7 +1119,7 @@ export default function ConfidenceBuildingPage() {
         ═══════════════════════════════════════════════════════════════ */}
         <section
           className="relative overflow-hidden py-24"
-          style={{ background: "#0f0f1a" }}
+          style={{ background: "#6F00FF" }}
         >
           <div
             className="absolute inset-0 pointer-events-none"

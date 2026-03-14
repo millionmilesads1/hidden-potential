@@ -319,7 +319,7 @@ export default function AssessmentClient() {
     <div>
       {/* ── SECTION 1: HERO ──────────────────────────────────────────────────── */}
       <section
-        style={{ background: '#0f0f1a' }}
+        style={{ background: '#6F00FF' }}
         className="relative pt-24 pb-20 text-center overflow-hidden"
       >
         {/* Decorative glows */}
@@ -469,7 +469,7 @@ export default function AssessmentClient() {
         <>
           {/* Result hero */}
           <section
-            style={{ background: '#0f0f1a' }}
+            style={{ background: '#6F00FF' }}
             className="relative py-20 overflow-hidden"
           >
             <div className="absolute inset-0 pointer-events-none">

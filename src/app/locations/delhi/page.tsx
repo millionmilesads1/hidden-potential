@@ -408,7 +408,7 @@ export default function DelhiLocationPage() {
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
         className="relative overflow-hidden"
-        style={{ background: "#0f0f1a" }}
+        style={{ background: "#6F00FF" }}
       >
         {/* Glows */}
         <div
@@ -802,7 +802,7 @@ export default function DelhiLocationPage() {
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
         className="relative overflow-hidden py-20"
-        style={{ background: "#0f0f1a" }}
+        style={{ background: "#6F00FF" }}
       >
         {/* Glow */}
         <div

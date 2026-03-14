@@ -203,14 +203,14 @@ const books = [
     title: "The Inner Edge",
     subtitle: "A Structured Guide to Life Skills",
     desc: "A comprehensive guide to developing the essential life skills that formal education overlooks — from emotional resilience and self-awareness to confident communication and purposeful living.",
-    gradientFrom: "#0f0f1a",
+    gradientFrom: "#6F00FF",
     gradientTo: "#1a1f2e",
   },
   {
     title: "Designed to Grow",
     subtitle: "Pathways to Structured Personal Mastery",
     desc: "A practitioner's guide to lasting personal transformation through structured pathways, evidence-based assessment, and intentional daily practice — written for learners and educators alike.",
-    gradientFrom: "#0f0f1a",
+    gradientFrom: "#6F00FF",
     gradientTo: "#0d1a1a",
   },
 ];
@@ -239,7 +239,7 @@ export default function AboutPage() {
             <div
               className="w-full rounded-lg flex flex-col justify-end p-6 flex-shrink-0"
               style={{
-                background: "#0f0f1a",
+                background: "#6F00FF",
                 aspectRatio: "3 / 4",
                 maxHeight: "520px",
               }}
@@ -632,7 +632,7 @@ export default function AboutPage() {
                 {/* Grade A badge */}
                 <span
                   className="inline-flex items-center justify-center w-7 h-7 rounded-full text-[12px] font-extrabold flex-shrink-0"
-                  style={{ backgroundColor: "#D4A843", color: "#0f0f1a" }}
+                  style={{ backgroundColor: "#D4A843", color: "#6F00FF" }}
                 >
                   A
                 </span>
@@ -718,7 +718,7 @@ export default function AboutPage() {
       <section
         className="py-16"
         style={{
-          background: "#0f0f1a",
+          background: "#6F00FF",
         }}
       >
         <div className="max-w-6xl mx-auto px-6">
@@ -877,7 +877,7 @@ export default function AboutPage() {
       <section
         className="relative overflow-hidden py-24"
         style={{
-          background: "#0f0f1a",
+          background: "#6F00FF",
         }}
       >
         {/* Decorative radial glow */}

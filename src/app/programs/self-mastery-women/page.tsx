@@ -324,7 +324,7 @@ export default function SelfMasteryWomenPage() {
       <section
         className="relative overflow-hidden"
         style={{
-          background: "#0f0f1a",
+          background: "#6F00FF",
         }}
       >
         {/* Decorative blobs */}
@@ -695,7 +695,7 @@ export default function SelfMasteryWomenPage() {
       <section
         className="py-20"
         style={{
-          background: "#0f0f1a",
+          background: "#6F00FF",
         }}
       >
         <div className="max-w-6xl mx-auto px-6">

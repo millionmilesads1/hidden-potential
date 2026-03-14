@@ -274,7 +274,7 @@ export function ProgramCTASection({ data }: { data: ProgramCtaData }) {
     <section
       className="relative overflow-hidden py-20"
       style={{
-        background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)",
+        background: "linear-gradient(180deg, #6F00FF 0%, #3D00CC 100%)",
       }}
     >
       {/* Glow */}

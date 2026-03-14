@@ -343,13 +343,13 @@ export default function HomePage() {
 
       {/* ═══════════════════════════════════════════
           1. HERO
-          Dark editorial (#0f0f1a) — NOT purple gradient.
+          Dark editorial (#6F00FF) — NOT purple gradient.
           Purple (#6F00FF) used as a spot accent on one word.
           Trust & Authority: stats as primary social proof.
       ═══════════════════════════════════════════ */}
       <section
         className="relative overflow-hidden grain-overlay"
-        style={{ background: "#0f0f1a", minHeight: "90vh", display: "flex", alignItems: "center" }}
+        style={{ background: "linear-gradient(135deg, #6F00FF 0%, #3D00CC 100%)", minHeight: "90vh", display: "flex", alignItems: "center" }}
       >
         {/* Ambient glows — accents, not gradient backgrounds */}
         <div
@@ -476,7 +476,7 @@ export default function HomePage() {
               fontFamily: "var(--font-display)",
               fontStyle: "italic",
               fontSize: "clamp(1.35rem, 2.5vw, 1.75rem)",
-              color: "#0f0f1a",
+              color: "#6F00FF",
               borderLeft: "3px solid #6F00FF",
               paddingLeft: "24px",
             }}
@@ -550,7 +550,7 @@ export default function HomePage() {
               style={{
                 fontFamily: "var(--font-display)",
                 fontSize: "clamp(1.75rem, 3vw, 2.5rem)",
-                color: "#0f0f1a",
+                color: "#6F00FF",
                 maxWidth: "480px",
               }}
             >
@@ -589,7 +589,7 @@ export default function HomePage() {
                 </p>
                 <h3
                   className="font-bold mb-3 text-xl"
-                  style={{ fontFamily: "var(--font-display)", color: "#0f0f1a" }}
+                  style={{ fontFamily: "var(--font-display)", color: "#6F00FF" }}
                 >
                   {p.title}
                 </h3>
@@ -604,7 +604,7 @@ export default function HomePage() {
           </div>
 
           {/* 4 Growth Stages */}
-          <div className="rounded-2xl p-8" style={{ background: "#0f0f1a" }}>
+          <div className="rounded-2xl p-8" style={{ background: "#6F00FF" }}>
             <p
               className="text-[11px] font-bold uppercase tracking-widest mb-8"
               style={{ color: "#D4A843", fontFamily: "var(--font-body)" }}
@@ -663,7 +663,7 @@ export default function HomePage() {
               style={{
                 fontFamily: "var(--font-display)",
                 fontSize: "clamp(1.75rem, 3vw, 2.5rem)",
-                color: "#0f0f1a",
+                color: "#6F00FF",
               }}
             >
               Choose Your Growth Pathway
@@ -707,7 +707,7 @@ export default function HomePage() {
                 </div>
                 <h3
                   className="font-bold mb-3 leading-tight"
-                  style={{ fontFamily: "var(--font-display)", fontSize: "1.5rem", color: "#0f0f1a" }}
+                  style={{ fontFamily: "var(--font-display)", fontSize: "1.5rem", color: "#6F00FF" }}
                 >
                   {programs[0].name}
                 </h3>
@@ -752,7 +752,7 @@ export default function HomePage() {
                 </span>
                 <h3
                   className="font-bold mb-2 leading-tight"
-                  style={{ fontFamily: "var(--font-display)", fontSize: "1.2rem", color: "#0f0f1a" }}
+                  style={{ fontFamily: "var(--font-display)", fontSize: "1.2rem", color: "#6F00FF" }}
                 >
                   {programs[1].name}
                 </h3>
@@ -792,7 +792,7 @@ export default function HomePage() {
                   </span>
                   <h3
                     className="font-bold mb-2 leading-snug"
-                    style={{ fontFamily: "var(--font-display)", fontSize: "1.1rem", color: "#0f0f1a" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "1.1rem", color: "#6F00FF" }}
                   >
                     {prog.name}
                   </h3>
@@ -821,7 +821,7 @@ export default function HomePage() {
             <div>
               <p
                 className="font-bold mb-1"
-                style={{ fontFamily: "var(--font-display)", color: "#0f0f1a", fontSize: "1.15rem" }}
+                style={{ fontFamily: "var(--font-display)", color: "#6F00FF", fontSize: "1.15rem" }}
               >
                 Not sure where to start?
               </p>
@@ -851,7 +851,7 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════
           5. DIFFERENTIATORS — Dark section
       ═══════════════════════════════════════════ */}
-      <section style={{ background: "#0f0f1a" }} className="py-24">
+      <section style={{ background: "#6F00FF" }} className="py-24">
         <div className="max-w-6xl mx-auto px-6">
           <div className="mb-14">
             <Label dark>What Sets Us Apart</Label>
@@ -940,7 +940,7 @@ export default function HomePage() {
                 style={{
                   fontFamily: "var(--font-body)",
                   background: "white",
-                  color: "#0f0f1a",
+                  color: "#6F00FF",
                   border: "1px solid rgba(212,168,67,0.3)",
                   boxShadow: "0 1px 4px rgba(0,0,0,0.04)",
                 }}
@@ -964,7 +964,7 @@ export default function HomePage() {
             style={{
               fontFamily: "var(--font-display)",
               fontSize: "clamp(1.75rem, 3vw, 2.5rem)",
-              color: "#0f0f1a",
+              color: "#6F00FF",
             }}
           >
             Transformations That Speak
@@ -1004,14 +1004,14 @@ export default function HomePage() {
                 <div className="flex items-center gap-3">
                   <div
                     className="w-9 h-9 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 text-white"
-                    style={{ background: "#0f0f1a", fontFamily: "var(--font-body)" }}
+                    style={{ background: "#6F00FF", fontFamily: "var(--font-body)" }}
                   >
                     {t.initial}
                   </div>
                   <div>
                     <p
                       className="text-sm font-bold leading-tight"
-                      style={{ fontFamily: "var(--font-display)", color: "#0f0f1a" }}
+                      style={{ fontFamily: "var(--font-display)", color: "#6F00FF" }}
                     >
                       {t.name}
                     </p>
@@ -1047,7 +1047,7 @@ export default function HomePage() {
               style={{
                 fontFamily: "var(--font-display)",
                 fontSize: "clamp(1.75rem, 3vw, 2.5rem)",
-                color: "#0f0f1a",
+                color: "#6F00FF",
               }}
             >
               Your Path to Transformation
@@ -1081,7 +1081,7 @@ export default function HomePage() {
                 >
                   <div
                     className="w-14 h-14 rounded-2xl flex items-center justify-center mb-5"
-                    style={{ background: "#0f0f1a" }}
+                    style={{ background: "#6F00FF" }}
                   >
                     <span
                       className="text-lg font-bold tabular-nums"
@@ -1092,7 +1092,7 @@ export default function HomePage() {
                   </div>
                   <h3
                     className="font-bold mb-2 leading-snug"
-                    style={{ fontFamily: "var(--font-display)", color: "#0f0f1a", fontSize: "1rem" }}
+                    style={{ fontFamily: "var(--font-display)", color: "#6F00FF", fontSize: "1rem" }}
                   >
                     {s.title}
                   </h3>
@@ -1129,7 +1129,7 @@ export default function HomePage() {
               style={{
                 fontFamily: "var(--font-display)",
                 fontSize: "clamp(1.75rem, 3vw, 2.25rem)",
-                color: "#0f0f1a",
+                color: "#6F00FF",
               }}
             >
               Common Questions About Our Programs
@@ -1174,7 +1174,7 @@ export default function HomePage() {
                 >
                   <span
                     className="font-semibold leading-snug"
-                    style={{ color: "#0f0f1a", fontSize: "0.9375rem" }}
+                    style={{ color: "#6F00FF", fontSize: "0.9375rem" }}
                   >
                     {q}
                   </span>
@@ -1220,7 +1220,7 @@ export default function HomePage() {
           10. FINAL CTA — Dark editorial
           Credentials grid = Trust & Authority's primary signal
       ═══════════════════════════════════════════ */}
-      <section style={{ background: "#0f0f1a" }} className="py-28">
+      <section style={{ background: "#6F00FF" }} className="py-28">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <Label dark>Begin Your Journey</Label>
 

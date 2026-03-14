@@ -298,7 +298,7 @@ export default function ResourcesPage() {
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
         className="relative overflow-hidden"
-        style={{ background: "#0f0f1a" }}
+        style={{ background: "#6F00FF" }}
       >
         {/* Top-right purple glow */}
         <div
@@ -657,7 +657,7 @@ export default function ResourcesPage() {
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
         className="relative overflow-hidden py-20"
-        style={{ background: "#0f0f1a" }}
+        style={{ background: "#6F00FF" }}
       >
         {/* Glow */}
         <div

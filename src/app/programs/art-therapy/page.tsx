@@ -324,7 +324,7 @@ export default function ArtTherapyPage() {
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
         className="relative overflow-hidden"
-        style={{ background: "#0f0f1a" }}
+        style={{ background: "#6F00FF" }}
       >
         {/* Decorative glows */}
         <div
@@ -693,7 +693,7 @@ export default function ArtTherapyPage() {
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
         className="py-20"
-        style={{ background: "#0f0f1a" }}
+        style={{ background: "#6F00FF" }}
       >
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-14">

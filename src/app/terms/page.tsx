@@ -18,7 +18,7 @@ export default function TermsPage() {
     <main>
       {/* ── HEADER ──────────────────────────────────────────────────────────── */}
       <section
-        style={{ background: '#0f0f1a' }}
+        style={{ background: '#6F00FF' }}
         className="pt-24 pb-16 text-center"
       >
         <div className="max-w-3xl mx-auto px-6">

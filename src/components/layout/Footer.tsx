@@ -29,7 +29,7 @@ const locations = [
 
 export default function Footer() {
   return (
-    <footer style={{ background: "#0f0f1a" }}>
+    <footer style={{ background: "#6F00FF" }}>
 
       {/* ── Top tagline strip ─────────────────────────────────────────── */}
       <div style={{ borderBottom: "1px solid rgba(255,255,255,0.06)" }}>

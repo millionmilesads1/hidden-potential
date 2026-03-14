@@ -16,7 +16,7 @@ export default function Image() {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          background: "#0f0f1a",
+          background: "#6F00FF",
           fontFamily: "sans-serif",
           position: "relative",
           overflow: "hidden",

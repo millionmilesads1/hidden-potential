@@ -12,8 +12,8 @@
    ───────────────────────────────────────────── */
 @theme {
   /* ── Core Brand Palette ── */
-  --color-brand-dark:         #0f0f1a;   /* Near-black — hero, footer, dark sections */
-  --color-brand-purple:       #6F00FF;   /* Electric purple — spot accent, NOT gradient bg */
+  --color-brand-dark:         #3D00CC;   /* Deep purple — darkest gradient stop */
+  --color-brand-purple:       #6F00FF;   /* Electric purple — primary brand color */
   --color-brand-teal:         #0D9488;   /* Teal — primary CTAs, links, action */
   --color-brand-teal-dark:    #0f766e;   /* Teal hover state */
   --color-brand-gold:         #D4A843;   /* Gold — credentials, labels, premium accent */
@@ -23,7 +23,7 @@
   --color-brand-muted:        #4b5563;   /* Secondary text — meets 5.9:1 contrast on white (WCAG AA) */
 
   /* ── Semantic aliases (cascade to all existing pages) ── */
-  --color-primary-navy:   #0f0f1a;
+  --color-primary-navy:   #6F00FF;
   --color-primary-teal:   #0D9488;
   --color-primary-gold:   #D4A843;
   --color-off-white:      #FAFAF9;
@@ -63,7 +63,7 @@
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
-    color: #0f0f1a;
+    color: #6F00FF;
   }
 
   a {

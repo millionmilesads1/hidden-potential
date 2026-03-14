@@ -98,7 +98,7 @@ export default function Navbar() {
             </span>
             <span
               className="text-[17px] font-bold tracking-tight"
-              style={{ color: "#0f0f1a" }}
+              style={{ color: "#6F00FF" }}
             >
               {" "}Potential
             </span>
@@ -266,11 +266,11 @@ export default function Navbar() {
               onClick={() => setMobileOpen(!mobileOpen)}
             >
               {mobileOpen ? (
-                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="#0f0f1a" strokeWidth={2.5} aria-hidden="true">
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="#6F00FF" strokeWidth={2.5} aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                 </svg>
               ) : (
-                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="#0f0f1a" strokeWidth={2} aria-hidden="true">
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="#6F00FF" strokeWidth={2} aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
               )}
@@ -299,7 +299,7 @@ export default function Navbar() {
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
                   className="py-3 px-4 text-base font-medium rounded-xl transition-colors min-h-[44px] flex items-center cursor-pointer"
-                  style={{ color: "#0f0f1a" }}
+                  style={{ color: "#6F00FF" }}
                 >
                   {link.label}
                 </Link>

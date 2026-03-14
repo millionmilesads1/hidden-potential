@@ -737,7 +737,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 
       {/* ── HERO ──────────────────────────────────────────────────────────── */}
       <section
-        style={{ background: '#0f0f1a' }}
+        style={{ background: '#6F00FF' }}
         className="relative pt-24 pb-16 overflow-hidden"
       >
         <div
@@ -879,7 +879,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 
       {/* ── FINAL CTA ─────────────────────────────────────────────────────── */}
       <section
-        style={{ background: '#0f0f1a' }}
+        style={{ background: '#6F00FF' }}
         className="relative py-20 text-center overflow-hidden"
       >
         <div
