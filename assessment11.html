@@ -1,0 +1,1462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Life Skills & Behavioral Readiness Screening | Hidden Potential Skills</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --deep-purple: #2D1B4E;
+  --teal: #0D9488;
+  --gold: #D4A843;
+  --light-purple: #F5F2FA;
+  --light-teal: #E6F7F5;
+  --white: #FFFFFF;
+  --dark: #1a1a2e;
+  --muted: #6b7280;
+  --section1: #3B82F6;
+  --section2: #8B5CF6;
+  --section3: #EC4899;
+  --section4: #F59E0B;
+  --section5: #10B981;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--light-purple);
+  color: var(--dark);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Animated background */
+body::before {
+  content: '';
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(ellipse at 20% 50%, rgba(13,148,136,0.06) 0%, transparent 50%),
+              radial-gradient(ellipse at 80% 20%, rgba(45,27,78,0.06) 0%, transparent 50%),
+              radial-gradient(ellipse at 50% 80%, rgba(212,168,67,0.04) 0%, transparent 50%);
+  animation: bgFloat 20s ease-in-out infinite;
+  z-index: -1;
+}
+
+@keyframes bgFloat {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-2%, -1%); }
+}
+
+/* Progress bar */
+.progress-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(12px);
+  padding: 0;
+  box-shadow: 0 2px 20px rgba(45,27,78,0.08);
+}
+
+.progress-bar-track {
+  height: 5px;
+  background: #e5e7eb;
+  width: 100%;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--teal), var(--deep-purple), var(--gold));
+  background-size: 200% 100%;
+  animation: shimmer 3s ease infinite;
+  transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 0 3px 3px 0;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 24px 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.progress-text {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--deep-purple);
+}
+
+.progress-percent {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--teal);
+}
+
+/* Main container */
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 80px 20px 40px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+  animation: fadeInDown 0.8s ease;
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.header-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, var(--deep-purple), #4a2d7a);
+  color: var(--gold);
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(28px, 5vw, 42px);
+  color: var(--deep-purple);
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+.header h1 span {
+  color: var(--teal);
+}
+
+.header p {
+  font-size: 16px;
+  color: var(--muted);
+  max-width: 540px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.disclaimer {
+  background: var(--light-teal);
+  border-left: 4px solid var(--teal);
+  padding: 14px 18px;
+  border-radius: 0 10px 10px 0;
+  margin-top: 20px;
+  font-size: 14px;
+  color: var(--dark);
+  line-height: 1.5;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.disclaimer strong { color: var(--teal); }
+
+/* Section pills */
+.section-nav {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+  animation: fadeIn 1s ease 0.3s both;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.section-pill {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+  background: var(--white);
+  color: var(--muted);
+  border: 2px solid #e5e7eb;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.section-pill.active {
+  color: var(--white);
+  border-color: transparent;
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.section-pill.completed {
+  background: var(--light-teal);
+  color: var(--teal);
+  border-color: var(--teal);
+}
+
+/* Cards */
+.card {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 36px;
+  box-shadow: 0 4px 30px rgba(45,27,78,0.06);
+  margin-bottom: 24px;
+  animation: slideUp 0.5s ease;
+  border: 1px solid rgba(45,27,78,0.04);
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.card-hidden { display: none; }
+
+/* Section header inside card */
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 8px;
+}
+
+.section-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  color: var(--deep-purple);
+}
+
+.section-desc {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 28px;
+  padding-left: 62px;
+}
+
+/* Form fields */
+.form-group {
+  margin-bottom: 22px;
+}
+
+.form-label {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--deep-purple);
+  margin-bottom: 8px;
+}
+
+.form-label .required {
+  color: #EF4444;
+  margin-left: 2px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 14px 18px;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  color: var(--dark);
+  transition: all 0.3s ease;
+  background: #fafafa;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--teal);
+  background: var(--white);
+  box-shadow: 0 0 0 4px rgba(13,148,136,0.1);
+}
+
+.form-input::placeholder { color: #9ca3af; }
+
+/* Question blocks */
+.question-block {
+  margin-bottom: 28px;
+  animation: fadeIn 0.4s ease;
+}
+
+.question-number {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.question-text {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--deep-purple);
+  margin-bottom: 14px;
+  line-height: 1.4;
+}
+
+/* Option cards */
+.options-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 20px;
+  border: 2px solid #e5e7eb;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background: #fafafa;
+  position: relative;
+  overflow: hidden;
+}
+
+.option-card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  transition: width 0.3s ease;
+  border-radius: 12px 0 0 12px;
+}
+
+.option-card:hover {
+  border-color: #d1d5db;
+  transform: translateX(4px);
+  background: var(--white);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.option-card.selected {
+  border-color: var(--teal);
+  background: var(--light-teal);
+  transform: translateX(4px);
+  box-shadow: 0 4px 20px rgba(13,148,136,0.12);
+}
+
+.option-card.selected::before {
+  width: 4px;
+  background: var(--teal);
+}
+
+.option-emoji {
+  font-size: 22px;
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.option-card.selected .option-emoji {
+  background: var(--white);
+  box-shadow: 0 2px 12px rgba(13,148,136,0.15);
+}
+
+.option-text {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--dark);
+  flex-grow: 1;
+}
+
+.option-check {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #d1d5db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.option-card.selected .option-check {
+  background: var(--teal);
+  border-color: var(--teal);
+}
+
+.option-card.selected .option-check::after {
+  content: '✓';
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* Reflection textarea */
+.reflection-textarea {
+  width: 100%;
+  padding: 16px 18px;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  color: var(--dark);
+  resize: vertical;
+  min-height: 80px;
+  transition: all 0.3s ease;
+  background: #fafafa;
+}
+
+.reflection-textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+  background: var(--white);
+  box-shadow: 0 0 0 4px rgba(212,168,67,0.1);
+}
+
+/* Buttons */
+.btn-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
+  gap: 12px;
+}
+
+.btn {
+  padding: 14px 32px;
+  border-radius: 12px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-back {
+  background: transparent;
+  color: var(--muted);
+  border: 2px solid #e5e7eb;
+}
+
+.btn-back:hover {
+  border-color: var(--deep-purple);
+  color: var(--deep-purple);
+  transform: translateX(-2px);
+}
+
+.btn-next {
+  background: linear-gradient(135deg, var(--deep-purple), #4a2d7a);
+  color: var(--white);
+  box-shadow: 0 4px 20px rgba(45,27,78,0.3);
+}
+
+.btn-next:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(45,27,78,0.4);
+}
+
+.btn-next:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.btn-submit {
+  background: linear-gradient(135deg, var(--teal), #0f766e);
+  color: var(--white);
+  box-shadow: 0 4px 20px rgba(13,148,136,0.3);
+  padding: 16px 40px;
+  font-size: 16px;
+}
+
+.btn-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(13,148,136,0.4);
+}
+
+/* Error message */
+.error-msg {
+  color: #EF4444;
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 6px;
+  display: none;
+}
+
+.error-msg.show { display: block; animation: shake 0.4s ease; }
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+/* Results */
+.results-container {
+  animation: fadeIn 0.8s ease;
+}
+
+.result-hero {
+  background: linear-gradient(135deg, var(--deep-purple) 0%, #4a2d7a 100%);
+  border-radius: 24px;
+  padding: 48px 36px;
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 28px;
+  position: relative;
+  overflow: hidden;
+}
+
+.result-hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(212,168,67,0.15) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.result-hero::after {
+  content: '';
+  position: absolute;
+  bottom: -30%;
+  left: -10%;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(13,148,136,0.15) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.result-hero > * { position: relative; z-index: 1; }
+
+.result-emoji {
+  font-size: 56px;
+  margin-bottom: 16px;
+  animation: bounceIn 0.6s ease;
+}
+
+@keyframes bounceIn {
+  0% { transform: scale(0); }
+  60% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.result-label {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  opacity: 0.8;
+}
+
+.result-score {
+  font-family: 'Playfair Display', serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.result-score span {
+  font-size: 28px;
+  opacity: 0.6;
+}
+
+.result-band {
+  display: inline-block;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 15px;
+  margin-top: 16px;
+}
+
+.result-desc {
+  font-size: 15px;
+  line-height: 1.6;
+  opacity: 0.85;
+  margin-top: 16px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Section scores */
+.section-scores {
+  display: grid;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.score-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 22px 24px;
+  box-shadow: 0 2px 20px rgba(45,27,78,0.05);
+  border: 1px solid rgba(45,27,78,0.04);
+  animation: slideUp 0.5s ease both;
+}
+
+.score-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.score-card-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--deep-purple);
+}
+
+.score-card-title span:first-child {
+  font-size: 20px;
+}
+
+.score-card-percent {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.score-bar-track {
+  height: 10px;
+  background: #f3f4f6;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.score-bar-fill {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 0;
+}
+
+.score-interpretation {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 8px;
+}
+
+/* Student info in results */
+.student-info-result {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 22px 24px;
+  box-shadow: 0 2px 20px rgba(45,27,78,0.05);
+  margin-bottom: 28px;
+  border: 1px solid rgba(45,27,78,0.04);
+}
+
+.student-info-result h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  color: var(--deep-purple);
+  margin-bottom: 14px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.info-item {
+  padding: 10px 14px;
+  background: var(--light-purple);
+  border-radius: 10px;
+}
+
+.info-item-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--muted);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.info-item-value {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--deep-purple);
+  margin-top: 2px;
+}
+
+/* CTA in results */
+.result-cta {
+  background: linear-gradient(135deg, var(--teal), #0f766e);
+  border-radius: 20px;
+  padding: 36px;
+  text-align: center;
+  color: var(--white);
+}
+
+.result-cta h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.result-cta p {
+  font-size: 15px;
+  opacity: 0.9;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.btn-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 32px;
+  background: var(--white);
+  color: var(--teal);
+  border: none;
+  border-radius: 12px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+/* Print styles */
+.btn-print {
+  background: var(--white);
+  color: var(--deep-purple);
+  border: 2px solid var(--deep-purple);
+  margin-bottom: 28px;
+  width: 100%;
+  justify-content: center;
+}
+
+.btn-print:hover {
+  background: var(--deep-purple);
+  color: var(--white);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container { padding: 72px 16px 32px; }
+  .card { padding: 24px 20px; }
+  .section-desc { padding-left: 0; }
+  .result-hero { padding: 36px 24px; }
+  .result-score { font-size: 48px; }
+  .info-grid { grid-template-columns: 1fr; }
+  .btn { padding: 12px 24px; font-size: 14px; }
+  .btn-row { flex-direction: column-reverse; }
+  .btn-row .btn { width: 100%; justify-content: center; }
+}
+
+@media print {
+  .progress-container, .btn-row, .btn-print, .result-cta, .section-nav { display: none !important; }
+  body { background: white; }
+  .card, .score-card, .student-info-result { box-shadow: none; border: 1px solid #ddd; }
+}
+</style>
+</head>
+<body>
+
+<!-- Progress Bar -->
+<div class="progress-container">
+  <div class="progress-bar-track">
+    <div class="progress-bar-fill" id="progressFill" style="width: 0%"></div>
+  </div>
+  <div class="progress-info">
+    <span class="progress-text" id="progressText">Getting Started</span>
+    <span class="progress-percent" id="progressPercent">0%</span>
+  </div>
+</div>
+
+<!-- Main Container -->
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-badge">⭐ Hidden Potential Skills</div>
+    <h1>Life Skills & Behavioral <span>Readiness Screening</span></h1>
+    <p>This assessment helps students reflect on their daily habits, learning behaviour, emotions, relationships, digital usage and decision-making.</p>
+    <div class="disclaimer">
+      <strong>Note:</strong> This is NOT a psychological test. It is a developmental life-skills screening tool designed to build self-awareness, identify behavioural patterns, and highlight growth areas for training and guidance.
+    </div>
+  </div>
+
+  <!-- Section Navigation Pills -->
+  <div class="section-nav" id="sectionNav"></div>
+
+  <!-- SECTION 0: Student Info -->
+  <div class="card" id="card-intro">
+    <div class="section-header">
+      <div class="section-icon" style="background: rgba(13,148,136,0.1)">📋</div>
+      <div class="section-title">Student Information</div>
+    </div>
+    <div class="section-desc" style="padding-left:0; margin-top:12px;">Please fill in your details before starting the screening.</div>
+
+    <div class="form-group">
+      <label class="form-label">Student Name <span class="required">*</span></label>
+      <input class="form-input" type="text" id="studentName" placeholder="Enter your full name" required>
+      <div class="error-msg" id="err-studentName">Please enter your name</div>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Age <span class="required">*</span></label>
+      <input class="form-input" type="number" id="studentAge" placeholder="Enter your age" min="5" max="25" required>
+      <div class="error-msg" id="err-studentAge">Please enter your age</div>
+    </div>
+    <div class="form-group">
+      <label class="form-label">School Name <span class="required">*</span></label>
+      <input class="form-input" type="text" id="schoolName" placeholder="Enter your school name" required>
+      <div class="error-msg" id="err-schoolName">Please enter your school name</div>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Class / Grade <span class="required">*</span></label>
+      <input class="form-input" type="text" id="studentClass" placeholder="e.g., 8th, 10th, 12th" required>
+      <div class="error-msg" id="err-studentClass">Please enter your class/grade</div>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Parent Name <span class="required">*</span></label>
+      <input class="form-input" type="text" id="parentName" placeholder="Enter parent/guardian name" required>
+      <div class="error-msg" id="err-parentName">Please enter parent name</div>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Parent Contact Number <span class="required">*</span></label>
+      <input class="form-input" type="tel" id="parentPhone" placeholder="Enter contact number" required>
+      <div class="error-msg" id="err-parentPhone">Please enter contact number</div>
+    </div>
+
+    <div class="btn-row" style="justify-content: flex-end">
+      <button class="btn btn-next" onclick="nextSection()">Begin Screening →</button>
+    </div>
+  </div>
+
+  <!-- SECTION 1: School & Study Readiness -->
+  <div class="card card-hidden" id="card-section1">
+    <div class="section-header">
+      <div class="section-icon" style="background: rgba(59,130,246,0.1)">📖</div>
+      <div class="section-title">School & Study Readiness</div>
+    </div>
+    <div class="section-desc">These questions look at how you manage studies, learning tasks, and classroom behaviour. Choose what feels <strong>closest to your usual behaviour</strong>, not what sounds ideal. 😊</div>
+    <div id="questions-section1"></div>
+    <div class="btn-row">
+      <button class="btn btn-back" onclick="prevSection()">← Back</button>
+      <button class="btn btn-next" onclick="nextSection()">Next Section →</button>
+    </div>
+  </div>
+
+  <!-- SECTION 2: Routine, Independence & Responsibility -->
+  <div class="card card-hidden" id="card-section2">
+    <div class="section-header">
+      <div class="section-icon" style="background: rgba(139,92,246,0.1)">🚀</div>
+      <div class="section-title">Routine, Independence & Responsibility</div>
+    </div>
+    <div class="section-desc">This section focuses on <strong>daily routines, responsibility, and self-management</strong> in everyday life.</div>
+    <div id="questions-section2"></div>
+    <div class="btn-row">
+      <button class="btn btn-back" onclick="prevSection()">← Back</button>
+      <button class="btn btn-next" onclick="nextSection()">Next Section →</button>
+    </div>
+  </div>
+
+  <!-- SECTION 3: Emotional Awareness & Behaviour -->
+  <div class="card card-hidden" id="card-section3">
+    <div class="section-header">
+      <div class="section-icon" style="background: rgba(236,72,153,0.1)">💖</div>
+      <div class="section-title">Emotional Awareness & Behaviour</div>
+    </div>
+    <div class="section-desc">These questions help understand how you <strong>experience, manage, and express emotions</strong> in daily situations.</div>
+    <div id="questions-section3"></div>
+    <div class="btn-row">
+      <button class="btn btn-back" onclick="prevSection()">← Back</button>
+      <button class="btn btn-next" onclick="nextSection()">Next Section →</button>
+    </div>
+  </div>
+
+  <!-- SECTION 4: Digital Awareness & Screen Discipline -->
+  <div class="card card-hidden" id="card-section4">
+    <div class="section-header">
+      <div class="section-icon" style="background: rgba(245,158,11,0.1)">📱</div>
+      <div class="section-title">Digital Awareness & Screen Discipline</div>
+    </div>
+    <div class="section-desc">This section looks at how you <strong>use screens, mobile devices, and the internet</strong> responsibly.</div>
+    <div id="questions-section4"></div>
+    <div class="btn-row">
+      <button class="btn btn-back" onclick="prevSection()">← Back</button>
+      <button class="btn btn-next" onclick="nextSection()">Next Section →</button>
+    </div>
+  </div>
+
+  <!-- SECTION 5: Social Skills, Friendship & Group Behaviour -->
+  <div class="card card-hidden" id="card-section5">
+    <div class="section-header">
+      <div class="section-icon" style="background: rgba(16,185,129,0.1)">🤝</div>
+      <div class="section-title">Social Skills, Friendship & Group Behaviour</div>
+    </div>
+    <div class="section-desc">These questions focus on <strong>relationships, communication, teamwork, and empathy</strong>.</div>
+    <div id="questions-section5"></div>
+    <div class="btn-row">
+      <button class="btn btn-back" onclick="prevSection()">← Back</button>
+      <button class="btn btn-next" onclick="nextSection()">Next Section →</button>
+    </div>
+  </div>
+
+  <!-- SECTION 6: Final Reflection -->
+  <div class="card card-hidden" id="card-reflection">
+    <div class="section-header">
+      <div class="section-icon" style="background: rgba(212,168,67,0.1)">✍️</div>
+      <div class="section-title">Final Reflection</div>
+    </div>
+    <div class="section-desc" style="padding-left:0; margin-top:12px;">Take a moment to reflect honestly. There are no right or wrong answers here.</div>
+
+    <div class="question-block">
+      <div class="question-text">One habit that is making my daily life difficult is...</div>
+      <textarea class="reflection-textarea" id="reflection1" placeholder="Write your honest answer here..."></textarea>
+    </div>
+    <div class="question-block">
+      <div class="question-text">One skill I genuinely want to improve is...</div>
+      <textarea class="reflection-textarea" id="reflection2" placeholder="Write your honest answer here..."></textarea>
+    </div>
+
+    <div class="btn-row">
+      <button class="btn btn-back" onclick="prevSection()">← Back</button>
+      <button class="btn btn-submit" onclick="submitAssessment()">Submit Screening ✨</button>
+    </div>
+  </div>
+
+  <!-- RESULTS -->
+  <div class="card-hidden" id="card-results">
+    <div class="results-container">
+      <button class="btn btn-print" onclick="window.print()">🖨️ Print / Save as PDF</button>
+
+      <div class="student-info-result" id="resultStudentInfo"></div>
+
+      <div class="result-hero" id="resultHero"></div>
+
+      <div class="section-scores" id="sectionScores"></div>
+
+      <div class="result-cta">
+        <h3>Want to Develop These Skills?</h3>
+        <p>Hidden Potential Skills offers NEP 2020 aligned life skills training programs for students, designed to build the exact competencies measured in this screening.</p>
+        <a href="https://hiddenpotentialskills.com/contact" class="btn-cta" target="_blank">Book a Free Consultation →</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// Questions data
+const questionsData = {
+  section1: [
+    { q: "When homework is given, I usually...", options: [
+      { emoji: "⏰", text: "Wait for reminders", score: 1 },
+      { emoji: "📝", text: "Do it late but somehow finish", score: 2 },
+      { emoji: "✅", text: "Plan and complete it on time", score: 3 }
+    ]},
+    { q: "Before starting my day (school / classes), I usually...", options: [
+      { emoji: "😰", text: "Forget things or rush", score: 1 },
+      { emoji: "😊", text: "Manage some things myself", score: 2 },
+      { emoji: "🎒", text: "Prepare materials properly", score: 3 }
+    ]},
+    { q: "When academic work is assigned...", options: [
+      { emoji: "😴", text: "I delay or avoid starting", score: 1 },
+      { emoji: "🌀", text: "I start but get distracted", score: 2 },
+      { emoji: "🚀", text: "I start and complete it in one go", score: 3 }
+    ]},
+    { q: "When I have multiple subjects or tasks...", options: [
+      { emoji: "🤯", text: "I feel confused", score: 1 },
+      { emoji: "🔄", text: "I switch between tasks", score: 2 },
+      { emoji: "🎯", text: "I prioritise and complete systematically", score: 3 }
+    ]},
+    { q: "When I don't understand something...", options: [
+      { emoji: "😶", text: "I stay silent", score: 1 },
+      { emoji: "👥", text: "I ask peers later", score: 2 },
+      { emoji: "🙋", text: "I ask confidently", score: 3 }
+    ]}
+  ],
+  section2: [
+    { q: "Managing daily responsibilities...", options: [
+      { emoji: "🔔", text: "I need frequent reminders", score: 1 },
+      { emoji: "📗", text: "I manage some tasks independently", score: 2 },
+      { emoji: "🌟", text: "I handle most responsibilities on my own", score: 3 }
+    ]},
+    { q: "When I make a mistake...", options: [
+      { emoji: "🙈", text: "I deny or defend it", score: 1 },
+      { emoji: "😔", text: "I accept but feel scared or guilty", score: 2 },
+      { emoji: "🔧", text: "I take responsibility and correct it", score: 3 }
+    ]},
+    { q: "When a task is clearly my responsibility...", options: [
+      { emoji: "🙄", text: "I avoid it", score: 1 },
+      { emoji: "🔁", text: "I do it after reminders", score: 2 },
+      { emoji: "🏆", text: "I complete it without reminders", score: 3 }
+    ]},
+    { q: "Balancing work, personal time and interests...", options: [
+      { emoji: "😩", text: "Feels tiring and confusing", score: 1 },
+      { emoji: "⚖️", text: "I somehow adjust", score: 2 },
+      { emoji: "📊", text: "I plan and balance effectively", score: 3 }
+    ]},
+    { q: "When I have to manage things on my own...", options: [
+      { emoji: "🧍", text: "I wait for instructions", score: 1 },
+      { emoji: "📦", text: "I manage basic tasks", score: 2 },
+      { emoji: "💪", text: "I handle routines confidently", score: 3 }
+    ]}
+  ],
+  section3: [
+    { q: "When I am corrected or scolded...", options: [
+      { emoji: "😤", text: "I react strongly or shut down", score: 1 },
+      { emoji: "😢", text: "I stay upset for long", score: 2 },
+      { emoji: "🌱", text: "I try to improve myself", score: 3 }
+    ]},
+    { q: "When I fail or lose...", options: [
+      { emoji: "🛑", text: "I give up easily", score: 1 },
+      { emoji: "😞", text: "I feel discouraged", score: 2 },
+      { emoji: "🔄", text: "I practise and try again", score: 3 }
+    ]},
+    { q: "When someone speaks rudely to me...", options: [
+      { emoji: "😡", text: "I react aggressively", score: 1 },
+      { emoji: "🚶", text: "I avoid the situation", score: 2 },
+      { emoji: "💬", text: "I respond calmly", score: 3 }
+    ]},
+    { q: "When plans change suddenly...", options: [
+      { emoji: "😣", text: "I get very upset", score: 1 },
+      { emoji: "🤐", text: "I withdraw", score: 2 },
+      { emoji: "🔄", text: "I adjust and move on", score: 3 }
+    ]},
+    { q: "When I feel angry or overwhelmed...", options: [
+      { emoji: "💥", text: "I react immediately", score: 1 },
+      { emoji: "😶", text: "I suppress my feelings", score: 2 },
+      { emoji: "🧘", text: "I try to calm myself first", score: 3 }
+    ]}
+  ],
+  section4: [
+    { q: "When studying and tempted by screens...", options: [
+      { emoji: "🖥️", text: "I stop studying", score: 1 },
+      { emoji: "⚠️", text: "I try but get distracted", score: 2 },
+      { emoji: "🎯", text: "I stay focused till I finish", score: 3 }
+    ]},
+    { q: "When asked to stop screen usage...", options: [
+      { emoji: "😤", text: "I argue or resist", score: 1 },
+      { emoji: "😒", text: "I stop but feel irritated", score: 2 },
+      { emoji: "👍", text: "I stop and return to routine", score: 3 }
+    ]},
+    { q: "When I see disturbing or confusing content online...", options: [
+      { emoji: "👀", text: "I continue watching", score: 1 },
+      { emoji: "😟", text: "I feel worried but don't tell anyone", score: 2 },
+      { emoji: "🛡️", text: "I inform a trusted adult / authority", score: 3 }
+    ]},
+    { q: "When using devices for work or study...", options: [
+      { emoji: "🎮", text: "I switch to entertainment", score: 1 },
+      { emoji: "🌀", text: "I multitask poorly", score: 2 },
+      { emoji: "📚", text: "I use it only for the intended purpose", score: 3 }
+    ]},
+    { q: "When screen time is limited...", options: [
+      { emoji: "😠", text: "I complain", score: 1 },
+      { emoji: "😐", text: "I feel upset but comply", score: 2 },
+      { emoji: "🤝", text: "I understand and follow limits", score: 3 }
+    ]}
+  ],
+  section5: [
+    { q: "In group situations...", options: [
+      { emoji: "😶", text: "I avoid participating", score: 1 },
+      { emoji: "😊", text: "I participate but hesitate", score: 2 },
+      { emoji: "💡", text: "I share ideas and listen", score: 3 }
+    ]},
+    { q: "When someone hurts my feelings...", options: [
+      { emoji: "⚔️", text: "I fight or cut off", score: 1 },
+      { emoji: "🚪", text: "I avoid the situation", score: 2 },
+      { emoji: "🗣️", text: "I express myself calmly", score: 3 }
+    ]},
+    { q: "When someone needs help...", options: [
+      { emoji: "🚫", text: "I ignore it", score: 1 },
+      { emoji: "🤔", text: "I think about helping", score: 2 },
+      { emoji: "🤲", text: "I support them", score: 3 }
+    ]},
+    { q: "When I meet people different from me...", options: [
+      { emoji: "😒", text: "I judge or tease", score: 1 },
+      { emoji: "🧱", text: "I keep distance", score: 2 },
+      { emoji: "🌍", text: "I respect and include", score: 3 }
+    ]},
+    { q: "During conflicts...", options: [
+      { emoji: "👎", text: "I complain or blame", score: 1 },
+      { emoji: "🚶", text: "I walk away", score: 2 },
+      { emoji: "⚖️", text: "I try to resolve it", score: 3 }
+    ]}
+  ]
+};
+
+const sectionOrder = ['intro', 'section1', 'section2', 'section3', 'section4', 'section5', 'reflection'];
+const sectionMeta = {
+  intro: { icon: '📋', title: 'Info', color: '#0D9488' },
+  section1: { icon: '📖', title: 'Study', color: '#3B82F6' },
+  section2: { icon: '🚀', title: 'Routine', color: '#8B5CF6' },
+  section3: { icon: '💖', title: 'Emotions', color: '#EC4899' },
+  section4: { icon: '📱', title: 'Digital', color: '#F59E0B' },
+  section5: { icon: '🤝', title: 'Social', color: '#10B981' },
+  reflection: { icon: '✍️', title: 'Reflect', color: '#D4A843' }
+};
+
+let currentSection = 0;
+let answers = {};
+const totalQs = 25;
+
+// Build section nav pills
+function buildNav() {
+  const nav = document.getElementById('sectionNav');
+  sectionOrder.forEach((s, i) => {
+    const m = sectionMeta[s];
+    const pill = document.createElement('div');
+    pill.className = 'section-pill' + (i === 0 ? ' active' : '');
+    pill.id = 'pill-' + s;
+    pill.style.cssText = i === 0 ? `background:${m.color};color:#fff;border-color:transparent` : '';
+    pill.innerHTML = `${m.icon} ${m.title}`;
+    nav.appendChild(pill);
+  });
+}
+
+// Build question HTML
+function buildQuestions() {
+  Object.keys(questionsData).forEach(sectionId => {
+    const container = document.getElementById('questions-' + sectionId);
+    if (!container) return;
+    const color = sectionMeta[sectionId].color;
+
+    questionsData[sectionId].forEach((q, qi) => {
+      const globalIdx = getGlobalIndex(sectionId, qi);
+      const block = document.createElement('div');
+      block.className = 'question-block';
+      block.innerHTML = `
+        <div class="question-number" style="color:${color}">Question ${qi + 1} of 5</div>
+        <div class="question-text">${q.q}</div>
+        <div class="options-grid">
+          ${q.options.map((opt, oi) => `
+            <div class="option-card" data-section="${sectionId}" data-q="${qi}" data-score="${opt.score}" onclick="selectOption(this, '${sectionId}', ${qi}, ${opt.score})">
+              <div class="option-emoji">${opt.emoji}</div>
+              <div class="option-text">${opt.text}</div>
+              <div class="option-check"></div>
+            </div>
+          `).join('')}
+        </div>
+      `;
+      container.appendChild(block);
+    });
+  });
+}
+
+function getGlobalIndex(sectionId, qi) {
+  const sections = ['section1','section2','section3','section4','section5'];
+  let idx = 0;
+  for (const s of sections) {
+    if (s === sectionId) return idx + qi;
+    idx += questionsData[s].length;
+  }
+  return idx;
+}
+
+function selectOption(el, sectionId, qi, score) {
+  // Deselect siblings
+  const parent = el.parentElement;
+  parent.querySelectorAll('.option-card').forEach(c => c.classList.remove('selected'));
+  el.classList.add('selected');
+
+  if (!answers[sectionId]) answers[sectionId] = {};
+  answers[sectionId][qi] = score;
+
+  updateProgress();
+}
+
+function updateProgress() {
+  let answered = 0;
+  Object.values(answers).forEach(section => {
+    answered += Object.keys(section).length;
+  });
+
+  const pct = Math.round((answered / totalQs) * 100);
+  document.getElementById('progressFill').style.width = pct + '%';
+  document.getElementById('progressPercent').textContent = pct + '%';
+
+  const sectionNames = ['', 'School & Study', 'Routine & Responsibility', 'Emotional Awareness', 'Digital Discipline', 'Social Skills', 'Final Reflection'];
+  const name = currentSection < sectionNames.length ? sectionNames[currentSection] : '';
+  document.getElementById('progressText').textContent = currentSection === 0 ? 'Getting Started' : name || 'Assessment';
+}
+
+function showSection(idx) {
+  sectionOrder.forEach((s, i) => {
+    const card = document.getElementById('card-' + s);
+    if (i === idx) {
+      card.classList.remove('card-hidden');
+      card.style.animation = 'none';
+      card.offsetHeight;
+      card.style.animation = 'slideUp 0.5s ease';
+    } else {
+      card.classList.add('card-hidden');
+    }
+
+    // Update pills
+    const pill = document.getElementById('pill-' + s);
+    const m = sectionMeta[s];
+    pill.className = 'section-pill';
+    pill.style.cssText = '';
+
+    if (i === idx) {
+      pill.classList.add('active');
+      pill.style.cssText = `background:${m.color};color:#fff;border-color:transparent`;
+    } else if (i < idx) {
+      pill.classList.add('completed');
+    }
+  });
+
+  currentSection = idx;
+  updateProgress();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function validateIntro() {
+  const fields = ['studentName', 'studentAge', 'schoolName', 'studentClass', 'parentName', 'parentPhone'];
+  let valid = true;
+
+  fields.forEach(id => {
+    const input = document.getElementById(id);
+    const err = document.getElementById('err-' + id);
+    if (!input.value.trim()) {
+      err.classList.add('show');
+      input.style.borderColor = '#EF4444';
+      valid = false;
+    } else {
+      err.classList.remove('show');
+      input.style.borderColor = '#e5e7eb';
+    }
+  });
+
+  return valid;
+}
+
+function validateSection(sectionId) {
+  const qs = questionsData[sectionId];
+  if (!qs) return true;
+  if (!answers[sectionId]) return false;
+  return Object.keys(answers[sectionId]).length === qs.length;
+}
+
+function nextSection() {
+  const sId = sectionOrder[currentSection];
+
+  if (sId === 'intro') {
+    if (!validateIntro()) return;
+  } else if (questionsData[sId]) {
+    if (!validateSection(sId)) {
+      alert('Please answer all questions in this section before proceeding.');
+      return;
+    }
+  }
+
+  if (currentSection < sectionOrder.length - 1) {
+    showSection(currentSection + 1);
+  }
+}
+
+function prevSection() {
+  if (currentSection > 0) {
+    showSection(currentSection - 1);
+  }
+}
+
+function submitAssessment() {
+  // Calculate scores
+  const sectionScores = {};
+  const sectionNames = {
+    section1: { title: 'School & Study Readiness', icon: '📖', color: '#3B82F6' },
+    section2: { title: 'Routine, Independence & Responsibility', icon: '🚀', color: '#8B5CF6' },
+    section3: { title: 'Emotional Awareness & Behaviour', icon: '💖', color: '#EC4899' },
+    section4: { title: 'Digital Awareness & Screen Discipline', icon: '📱', color: '#F59E0B' },
+    section5: { title: 'Social Skills, Friendship & Group Behaviour', icon: '🤝', color: '#10B981' }
+  };
+
+  let totalScore = 0;
+  const maxTotal = totalQs * 3;
+
+  Object.keys(questionsData).forEach(sId => {
+    let sectionTotal = 0;
+    const maxSection = questionsData[sId].length * 3;
+
+    if (answers[sId]) {
+      Object.values(answers[sId]).forEach(score => {
+        sectionTotal += score;
+        totalScore += score;
+      });
+    }
+
+    sectionScores[sId] = {
+      score: sectionTotal,
+      max: maxSection,
+      percent: Math.round((sectionTotal / maxSection) * 100)
+    };
+  });
+
+  const overallPercent = Math.round((totalScore / maxTotal) * 100);
+
+  // Determine band
+  let band, bandColor, bandBg, bandDesc, bandEmoji;
+  if (overallPercent >= 80) {
+    band = 'Strong Skill Behaviour'; bandColor = '#10B981'; bandBg = 'rgba(16,185,129,0.2)'; bandEmoji = '🌟';
+    bandDesc = 'You demonstrate strong life skills across most areas. Keep building on these strengths and consider mentoring others who are still developing.';
+  } else if (overallPercent >= 50) {
+    band = 'Developing'; bandColor = '#F59E0B'; bandBg = 'rgba(245,158,11,0.2)'; bandEmoji = '🌱';
+    bandDesc = 'You are on the right track with room to grow. Focused training in specific areas can help you level up your daily habits, emotional responses, and social interactions.';
+  } else {
+    band = 'Needs Support'; bandColor = '#EF4444'; bandBg = 'rgba(239,68,68,0.2)'; bandEmoji = '🤲';
+    bandDesc = 'You would benefit from structured life skills guidance. This is a starting point, not a limitation. With the right support, every skill here can be developed.';
+  }
+
+  // Hide all cards, show results
+  sectionOrder.forEach(s => {
+    document.getElementById('card-' + s).classList.add('card-hidden');
+  });
+
+  // Hide nav pills
+  document.getElementById('sectionNav').style.display = 'none';
+
+  // Update progress to 100%
+  document.getElementById('progressFill').style.width = '100%';
+  document.getElementById('progressPercent').textContent = '100%';
+  document.getElementById('progressText').textContent = 'Screening Complete';
+
+  // Build student info
+  const studentInfo = document.getElementById('resultStudentInfo');
+  studentInfo.innerHTML = `
+    <h3>Student Profile</h3>
+    <div class="info-grid">
+      <div class="info-item"><div class="info-item-label">Name</div><div class="info-item-value">${document.getElementById('studentName').value}</div></div>
+      <div class="info-item"><div class="info-item-label">Age</div><div class="info-item-value">${document.getElementById('studentAge').value} years</div></div>
+      <div class="info-item"><div class="info-item-label">School</div><div class="info-item-value">${document.getElementById('schoolName').value}</div></div>
+      <div class="info-item"><div class="info-item-label">Class</div><div class="info-item-value">${document.getElementById('studentClass').value}</div></div>
+      <div class="info-item"><div class="info-item-label">Parent</div><div class="info-item-value">${document.getElementById('parentName').value}</div></div>
+      <div class="info-item"><div class="info-item-label">Contact</div><div class="info-item-value">${document.getElementById('parentPhone').value}</div></div>
+    </div>
+  `;
+
+  // Build hero
+  const hero = document.getElementById('resultHero');
+  hero.innerHTML = `
+    <div class="result-emoji">${bandEmoji}</div>
+    <div class="result-label">Overall Score</div>
+    <div class="result-score">${overallPercent}<span>%</span></div>
+    <div class="result-band" style="background:${bandBg};color:${bandColor}">${band}</div>
+    <div class="result-desc">${bandDesc}</div>
+  `;
+
+  // Build section scores
+  const scoresContainer = document.getElementById('sectionScores');
+  scoresContainer.innerHTML = '';
+
+  Object.keys(sectionScores).forEach((sId, i) => {
+    const s = sectionScores[sId];
+    const meta = sectionNames[sId];
+    let interp;
+    if (s.percent >= 80) interp = 'Strong. Keep it up!';
+    else if (s.percent >= 50) interp = 'Developing. Room to grow.';
+    else interp = 'Needs focused support.';
+
+    const card = document.createElement('div');
+    card.className = 'score-card';
+    card.style.animationDelay = (i * 0.1) + 's';
+    card.innerHTML = `
+      <div class="score-card-header">
+        <div class="score-card-title"><span>${meta.icon}</span> ${meta.title}</div>
+        <div class="score-card-percent" style="color:${meta.color}">${s.percent}%</div>
+      </div>
+      <div class="score-bar-track">
+        <div class="score-bar-fill" id="bar-${sId}" style="background:${meta.color}"></div>
+      </div>
+      <div class="score-interpretation">${interp} (${s.score}/${s.max} points)</div>
+    `;
+    scoresContainer.appendChild(card);
+  });
+
+  // Show results
+  document.getElementById('card-results').classList.remove('card-hidden');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+
+  // Animate bars
+  setTimeout(() => {
+    Object.keys(sectionScores).forEach(sId => {
+      const bar = document.getElementById('bar-' + sId);
+      if (bar) bar.style.width = sectionScores[sId].percent + '%';
+    });
+  }, 300);
+}
+
+// Initialize
+buildNav();
+buildQuestions();
+showSection(0);
+
+// Add focus animations to inputs
+document.querySelectorAll('.form-input').forEach(input => {
+  input.addEventListener('input', function() {
+    const err = document.getElementById('err-' + this.id);
+    if (err && this.value.trim()) {
+      err.classList.remove('show');
+      this.style.borderColor = '#e5e7eb';
+    }
+  });
+});
+</script>
+
+</body>
+</html>
