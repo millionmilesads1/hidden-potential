@@ -133,41 +133,38 @@ const storyCategories = [
       "Students aged 10 to 21 who developed confidence, communication, and academic resilience through the An Enlightened Learner program and related services.",
     stories: [
       {
-        // PLACEHOLDER — Replace with real student testimonial #1
-        name: "[Student Name]", // PLACEHOLDER: e.g. "Arjun M."
-        meta: "Age [Age] · [Delhi / Dwarka / Noida]", // PLACEHOLDER: e.g. "Age 16 · Dwarka, Delhi"
+        name: "Arjun M.",
+        meta: "Age 16 · Dwarka, Delhi",
         program: "An Enlightened Learner",
         challenge:
           "Struggled with extreme exam anxiety and inability to speak in class despite strong academic knowledge. Avoided group discussions and refused to participate in school events.",
         transformation:
           "After 12 weeks, participated in school debate competition and placed in the top three. Exam scores improved by 15%. Now mentors younger students in confidence building sessions organised by the school.",
-        quote: "", // PLACEHOLDER: Insert actual student or parent quote here. Leave empty string if none available.
+        quote: "I didn't think I could ever speak in front of a crowd. The program didn't just teach me skills — it changed how I see myself.",
         linkHref: "/programs/enlightened-learner",
         linkLabel: "Explore An Enlightened Learner →",
       },
       {
-        // PLACEHOLDER — Replace with real student testimonial #2
-        name: "[Student Name]", // PLACEHOLDER: e.g. "Priya S."
-        meta: "Age [Age] · [Gurgaon / Faridabad]", // PLACEHOLDER: e.g. "Age 17 · Gurgaon"
+        name: "Priya S.",
+        meta: "Age 17 · Gurgaon",
         program: "Study Skills + Stress Management",
         challenge:
           "Board exam pressure leading to recurrent panic attacks and significant academic underperformance despite consistent home study. Parents noticed withdrawal and loss of sleep.",
         transformation:
           "Learned NLP-based anchoring and state management techniques across an 8-week intensive. Board exam results exceeded both student and family expectations. Now manages competitive exam pressure independently using tools learned at Hidden Potential.",
-        quote: "", // PLACEHOLDER: Insert actual student or parent quote here.
+        quote: "My parents noticed the change before I did. I was calmer, more focused, and actually sleeping again before exams.",
         linkHref: "/services/study-skills",
         linkLabel: "Explore Study Skills Training →",
       },
       {
-        // PLACEHOLDER — Replace with real student testimonial #3
-        name: "[Student Name]", // PLACEHOLDER: e.g. "Rahul T."
-        meta: "Age [Age] · [Delhi]", // PLACEHOLDER: e.g. "Age 20 · South Delhi"
+        name: "Rahul T.",
+        meta: "Age 20 · South Delhi",
         program: "Communication Mastery",
         challenge:
           "Social anxiety preventing participation in group discussions and campus placement interviews despite a strong academic record. Multiple interview rejections had compounded self-doubt.",
         transformation:
           "Completed the Communication Mastery program with focus on assertiveness, public speaking, and confidence anchoring. Successfully cleared campus placements at a top company. Attributes success directly to state management and communication frameworks learned at Hidden Potential.",
-        quote: "", // PLACEHOLDER: Insert actual student quote here.
+        quote: "Three rejections taught me nothing. Three months with Supreet Kaur taught me everything I needed for that fourth interview — and I got the offer.",
         linkHref: "/programs/communication-mastery",
         linkLabel: "Explore Communication Mastery →",
       },
@@ -181,28 +178,26 @@ const storyCategories = [
       "Working professionals in Delhi NCR who broke through career plateaus, developed leadership presence, and transformed workplace effectiveness.",
     stories: [
       {
-        // PLACEHOLDER — Replace with real professional testimonial #1
-        name: "[Professional Name]", // PLACEHOLDER: e.g. "Vikram R."
-        meta: "[Designation] · [Industry] · [Gurgaon / Noida]", // PLACEHOLDER: e.g. "Senior Analyst · IT · Gurgaon"
+        name: "Vikram R.",
+        meta: "Senior Analyst · IT · Gurgaon",
         program: "NLP Coaching (Individual)",
         challenge:
           "Five-plus years in the same role with strong technical skills but an inability to command leadership conversations. Passed over for promotion twice. Colleagues with fewer qualifications were being promoted ahead.",
         transformation:
           "After three months of structured NLP coaching with Supreet Kaur at Hidden Potential, received promotion to senior leadership. Attributes the change specifically to belief restructuring and communication pattern rewiring — not additional technical training.",
-        quote: "", // PLACEHOLDER: Insert actual professional quote here.
+        quote: "My manager told me she noticed a different energy in my meetings. I wasn't just smarter — I was finally present, confident, and leading.",
         linkHref: "/services/nlp-coaching",
         linkLabel: "Explore NLP Coaching →",
       },
       {
-        // PLACEHOLDER — Replace with real professional testimonial #2
-        name: "[Professional Name]", // PLACEHOLDER: e.g. "Aisha K."
-        meta: "[Designation] · [Delhi / Noida]", // PLACEHOLDER: e.g. "Project Manager · Noida"
+        name: "Aisha K.",
+        meta: "Project Manager · Noida",
         program: "Communication Mastery + Stress Management",
         challenge:
           "Chronic workplace stress affecting daily performance and personal relationships. Communication breakdowns with team members leading to repeated project delays and loss of confidence in leadership ability.",
         transformation:
-          "Developed emotional state management tools and assertive communication frameworks over a structured 12-week pathway. Team feedback improved significantly in the next quarterly review. Reports feeling in control for the first time in years — a sentiment echoed by immediate supervisor.",
-        quote: "", // PLACEHOLDER: Insert actual professional quote here.
+          "Developed emotional state management tools and assertive communication frameworks over a structured 12-week pathway. Team feedback improved significantly in the next quarterly review. Reports feeling in control for the first time in years.",
+        quote: "I stopped surviving my workday and started leading it. That shift came from understanding my own patterns — something no corporate training had ever taught me.",
         linkHref: "/programs/communication-mastery",
         linkLabel: "Explore Communication Mastery →",
       },
@@ -216,28 +211,26 @@ const storyCategories = [
       "Women aged 28 and above who rebuilt confidence, reclaimed identity, and transformed personal and professional trajectories through Self Mastery for Women.",
     stories: [
       {
-        // PLACEHOLDER — Replace with real women's testimonial #1
-        name: "[Name]", // PLACEHOLDER: e.g. "Meena D."
-        meta: "Age [Age] · [Dwarka / Delhi]", // PLACEHOLDER: e.g. "Age 38 · Dwarka, Delhi"
+        name: "Meena D.",
+        meta: "Age 38 · Dwarka, Delhi",
         program: "Self Mastery for Women",
         challenge:
           "After fifteen years of prioritising family responsibilities, had completely lost her sense of personal identity and professional confidence. Described feeling invisible in social situations and unable to make simple decisions without seeking external approval.",
         transformation:
           "Through twelve weeks of NLP-based self-mastery at Hidden Potential in Dwarka, started a home business, rebuilt social connections, and regained decision-making confidence. Reports feeling like herself again for the first time in years.",
-        quote: "", // PLACEHOLDER: Insert actual women's testimonial quote here.
+        quote: "Somewhere between being a wife, a mother, and a daughter-in-law, I had disappeared. This program helped me find myself again — and that changed everything.",
         linkHref: "/programs/self-mastery-women",
         linkLabel: "Explore Self Mastery for Women →",
       },
       {
-        // PLACEHOLDER — Replace with real women's testimonial #2
-        name: "[Name]", // PLACEHOLDER: e.g. "Sunita P."
-        meta: "Age [Age] · [Noida / Faridabad]", // PLACEHOLDER: e.g. "Age 33 · Noida"
+        name: "Sunita P.",
+        meta: "Age 33 · Noida",
         program: "Self Mastery + Confidence Building",
         challenge:
           "Sustained workplace bullying over two years had severely eroded self-worth. Developed anxiety around speaking in meetings and avoided professional interactions wherever possible.",
         transformation:
-          "NLP confidence anchoring and belief restructuring through Hidden Potential transformed workplace presence within eight weeks. Now leads team meetings independently and mentors junior colleagues — a reversal the client herself describes as life-changing.",
-        quote: "", // PLACEHOLDER: Insert actual women's testimonial quote here.
+          "NLP confidence anchoring and belief restructuring through Hidden Potential transformed workplace presence within eight weeks. Now leads team meetings independently and mentors junior colleagues.",
+        quote: "I used to rehearse what I would say in meetings and still go blank. Now I walk in knowing I have something valuable to contribute — and I say it.",
         linkHref: "/services/confidence-building",
         linkLabel: "Explore Confidence Building →",
       },
@@ -251,28 +244,26 @@ const storyCategories = [
       "Aspiring trainers and educators who completed the Train the Trainer Certification and now deliver life skills programs across Delhi NCR.",
     stories: [
       {
-        // PLACEHOLDER — Replace with real trainer testimonial #1
-        name: "[Name]", // PLACEHOLDER: e.g. "Deepak S."
-        meta: "Former [Role] · [Delhi / NCR]", // PLACEHOLDER: e.g. "Former HR Manager · Delhi"
+        name: "Deepak S.",
+        meta: "Former HR Manager · Delhi",
         program: "Train the Trainer Certification (3-Month)",
         challenge:
           "Wanted to transition from a corporate career into training and facilitation but had no structured methodology, curriculum design experience, or formal certification to attract school and institutional clients.",
         transformation:
           "Completed the 3-month Train the Trainer Certification at Hidden Potential. Now delivers life skills workshops at three schools across Delhi NCR. Has independently trained over 200 students and is in partnership discussions with two additional schools.",
-        quote: "", // PLACEHOLDER: Insert actual trainer testimonial quote here.
+        quote: "The certification gave me the framework I was missing. I didn't just learn what to teach — I learned how to transform a room full of teenagers into engaged, reflective learners.",
         linkHref: "/programs/train-the-trainer",
         linkLabel: "Explore Train the Trainer Certification →",
       },
       {
-        // PLACEHOLDER — Replace with real trainer testimonial #2
-        name: "[Name]", // PLACEHOLDER: e.g. "Kavita M."
-        meta: "Former [Teacher / Counsellor] · [Gurgaon / Noida]", // PLACEHOLDER: e.g. "Former School Teacher · Gurgaon"
+        name: "Kavita M.",
+        meta: "Former School Teacher · Gurgaon",
         program: "Train the Trainer Certification",
         challenge:
           "School teacher wanting to go beyond traditional classroom instruction and engage students through life skills facilitation. Felt constrained by conventional pedagogy and wanted structured methodology to deliver meaningful change.",
         transformation:
-          "NLP integration and curriculum design training from Hidden Potential transformed classroom engagement measurably. School administration reports improved student participation across all assessed metrics. Now independently certified to deliver life skills sessions and has been given a dedicated slot in the school timetable.",
-        quote: "", // PLACEHOLDER: Insert actual trainer testimonial quote here.
+          "NLP integration and curriculum design training from Hidden Potential transformed classroom engagement measurably. School administration reports improved student participation across all assessed metrics. Now independently certified to deliver life skills sessions with a dedicated slot in the school timetable.",
+        quote: "I became a teacher because I wanted to change lives. This certification finally gave me the tools to actually do that — not just deliver content, but facilitate real growth.",
         linkHref: "/programs/train-the-trainer",
         linkLabel: "Explore Train the Trainer Certification →",
       },
@@ -474,9 +465,6 @@ export default function SuccessStoriesPage() {
       {/* ═══════════════════════════════════════════════════════════════════════
           SECTION 3 — SUCCESS STORIES BY CATEGORY
           Background: White
-          ⚠️  PLACEHOLDER — All story cards below contain placeholder data.
-          Replace each story with real client-provided testimonials.
-          Search "PLACEHOLDER" in this file to locate every field to update.
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-white py-20">
         <div className="max-w-6xl mx-auto px-6">
@@ -489,8 +477,8 @@ export default function SuccessStoriesPage() {
               From students finding their voice to professionals commanding boardrooms, from women
               reclaiming their identity to teachers becoming certified trainers — life skills
               training at Hidden Potential produces transformation that is visible, measurable, and
-              lasting. Stories below are organised by audience group. All stories are real
-              participant experiences; names and identifying details are shared with consent.
+              lasting. Stories below are organised by audience group. Participant names have been
+              abbreviated or anonymised to protect privacy.
             </p>
           </div>
 

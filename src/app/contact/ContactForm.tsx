@@ -1,18 +1,86 @@
 "use client";
 
+import { useState } from "react";
+
 /**
  * ContactForm — Client Component
- * Handles the frontend contact form on /contact.
- * TODO: Wire the handleSubmit function to a server action or POST /api/contact
- *       to process and deliver the form data.
+ * On submit, builds a pre-filled WhatsApp message and opens it in a new tab,
+ * then shows a success state with direct contact options.
  */
 
 export default function ContactForm() {
+  const [status, setStatus] = useState<"idle" | "submitting" | "success">("idle");
+
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    // TODO: Connect to server action or POST /api/contact
-    // const formData = new FormData(e.currentTarget);
-    // await fetch('/api/contact', { method: 'POST', body: formData });
+    setStatus("submitting");
+
+    const form = e.currentTarget;
+    const data = new FormData(form);
+    const name = data.get("fullName") as string;
+    const phone = data.get("phone") as string;
+    const email = data.get("email") as string;
+    const location = data.get("location") as string;
+    const interest = data.get("interest") as string;
+    const message = (data.get("message") as string) || "";
+
+    const text = [
+      `Hi Supreet, I came from the Hidden Potential website and would like to enquire about life skills coaching.`,
+      ``,
+      `Name: ${name}`,
+      `Phone: ${phone}`,
+      `Email: ${email}`,
+      `Location: ${location}`,
+      `Interested in: ${interest}`,
+      message ? `Message: ${message}` : "",
+    ]
+      .filter(Boolean)
+      .join("\n");
+
+    const waUrl = `https://wa.me/919899209335?text=${encodeURIComponent(text)}`;
+    window.open(waUrl, "_blank", "noopener,noreferrer");
+
+    setStatus("success");
+  }
+
+  if (status === "success") {
+    return (
+      <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-8 md:p-10 text-center">
+        <div className="w-14 h-14 rounded-full bg-teal-light flex items-center justify-center mx-auto mb-5">
+          <svg className="w-7 h-7 text-primary-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round">
+            <path d="M5 13l4 4L19 7" />
+          </svg>
+        </div>
+        <h3 className="text-xl font-extrabold text-primary-navy mb-2" style={{ fontFamily: "var(--font-display)" }}>
+          Your Message Is Ready
+        </h3>
+        <p className="text-sm text-charcoal/70 leading-relaxed mb-6 max-w-md mx-auto">
+          A WhatsApp window has opened with your details pre-filled. Simply send the message to connect with Supreet Kaur directly. You can also reach us by phone or email below.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-3 justify-center mb-6">
+          <a
+            href="https://wa.me/919899209335"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary-teal hover:bg-teal-dark text-white text-sm font-bold rounded-lg transition-colors"
+          >
+            Open WhatsApp
+          </a>
+          <a
+            href="tel:+919899209335"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-primary-teal/30 hover:border-primary-teal text-primary-teal text-sm font-bold rounded-lg transition-colors"
+          >
+            Call +91 98992 09335
+          </a>
+        </div>
+        <button
+          onClick={() => setStatus("idle")}
+          className="text-xs text-charcoal/40 hover:text-charcoal/60 underline transition-colors"
+        >
+          Send another message
+        </button>
+      </div>
+    );
   }
 
   return (
@@ -149,9 +217,10 @@ export default function ContactForm() {
         {/* Submit */}
         <button
           type="submit"
-          className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-10 py-4 text-sm font-bold text-white bg-primary-teal hover:bg-teal-dark rounded-md transition-colors"
+          disabled={status === "submitting"}
+          className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-10 py-4 text-sm font-bold text-white bg-primary-teal hover:bg-teal-dark disabled:opacity-70 rounded-md transition-colors"
         >
-          Start My Transformation Journey
+          {status === "submitting" ? "Opening WhatsApp…" : "Start My Transformation Journey"}
           <svg
             className="w-4 h-4"
             fill="none"

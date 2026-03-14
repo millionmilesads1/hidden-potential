@@ -289,7 +289,7 @@ export default function BlogPage() {
             ))}
           </div>
           <p className="text-[11px] text-charcoal/35 mt-3">
-            Category filtering coming soon. More articles publishing weekly.
+            New articles published weekly across all topics.
           </p>
         </div>
       </section>

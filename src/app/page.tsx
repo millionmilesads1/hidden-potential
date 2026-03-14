@@ -52,6 +52,38 @@ const schema = {
       openingHours: ["Mo-Fr 10:00-19:00"],
       areaServed: ["Delhi", "Noida", "Gurgaon", "Faridabad"],
     },
+    {
+      "@type": "EducationalOrganization",
+      "@id": "https://hiddenpotentialskills.com/#educational",
+      name: "Hidden Potential",
+      description:
+        "Structured life skills training academy offering assessment-based transformational programs for students, women, professionals, and aspiring trainers in Delhi NCR.",
+      url: "https://hiddenpotentialskills.com",
+      telephone: "+919899209335",
+      email: "hiddenpotential2030@gmail.com",
+      founder: { "@type": "Person", name: "Supreet Kaur" },
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "D-802, Palm Court Apartment, Plot 3, Sector 19B, Dwarka",
+        addressLocality: "South West Delhi",
+        addressRegion: "Delhi",
+        postalCode: "110075",
+        addressCountry: "IN",
+      },
+      areaServed: ["Delhi", "Noida", "Gurgaon", "Faridabad"],
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://hiddenpotentialskills.com/#breadcrumb",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://hiddenpotentialskills.com",
+        },
+      ],
+    },
   ],
 };
 

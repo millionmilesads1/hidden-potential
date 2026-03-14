@@ -95,6 +95,12 @@ const schema = {
     },
   ],
   isAccessibleForFree: false,
+  instructor: {
+    "@type": "Person",
+    name: "Supreet Kaur",
+    jobTitle: "Founder & Director, Hidden Potential",
+    url: "https://hiddenpotentialskills.com/about",
+  },
 };
 
 // ── Page Content Data ─────────────────────────────────────────────────────────

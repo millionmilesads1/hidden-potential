@@ -110,6 +110,22 @@ const schema = {
     },
   ],
   isAccessibleForFree: false,
+  instructor: {
+    "@type": "Person",
+    name: "Supreet Kaur",
+    jobTitle: "Founder & Director, Hidden Potential",
+    url: "https://hiddenpotentialskills.com/about",
+  },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://hiddenpotentialskills.com" },
+    { "@type": "ListItem", position: 2, name: "Programs", item: "https://hiddenpotentialskills.com/programs/enlightened-learner" },
+    { "@type": "ListItem", position: 3, name: "An Enlightened Learner", item: "https://hiddenpotentialskills.com/programs/enlightened-learner" },
+  ],
 };
 
 // ── Page Content Data ─────────────────────────────────────────────────────────
@@ -313,6 +329,10 @@ export default function AELPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       {/* ═══════════════════════════════════════════════════════════════════════

@@ -52,7 +52,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${BASE_URL}${path}`,
     lastModified: now,
     changeFrequency: "monthly",
-    priority: 0.9,
+    priority: 0.7,
   }));
 
   // ── Location pages (4) ────────────────────────────────────────────────────
@@ -84,6 +84,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const highPriority: MetadataRoute.Sitemap = [
     "/contact",
     "/enroll",
+    "/assessment",
   ].map((path) => ({
     url: `${BASE_URL}${path}`,
     lastModified: now,
@@ -115,8 +116,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const medium: MetadataRoute.Sitemap = [
     "/success-stories",
     "/faq",
-    "/resources",
-    "/assessment",
+    "/books",
   ].map((path) => ({
     url: `${BASE_URL}${path}`,
     lastModified: now,

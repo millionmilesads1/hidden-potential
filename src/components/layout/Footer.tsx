@@ -63,6 +63,7 @@ export default function Footer() {
               <a
                 key={abbr}
                 href="#"
+                rel="nofollow"
                 aria-label={`Hidden Potential on ${label}`}
                 className="text-xs font-semibold text-white/40 hover:text-white transition-colors"
                 style={{ fontFamily: "var(--font-display)" }}
