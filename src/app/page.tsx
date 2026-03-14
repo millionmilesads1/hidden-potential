@@ -382,17 +382,24 @@ export default function HomePage() {
 
           {/* H1 — Playfair Display, editorial scale, NOT purple bg */}
           <h1
-            className="font-bold text-white leading-[1.1] mb-8"
+            className="font-bold text-white leading-[1.1] mb-4"
             style={{
-              fontFamily: "var(--font-display)",
-              fontSize: "clamp(2.75rem, 5.5vw, 4.25rem)",
-              maxWidth: "780px",
+              fontFamily: "var(--font-accent)",
+              fontStyle: "italic",
+              fontSize: "clamp(2rem, 4vw, 3.25rem)",
+              maxWidth: "820px",
             }}
           >
-            Build the Inner Strength{" "}
-            <span style={{ color: "#ffffff", textShadow: "0 0 24px rgba(255,255,255,0.9), 0 0 48px rgba(255,255,255,0.5)" }}>Schools</span>{" "}
-            Never Taught You
+            &ldquo;I have never let my{" "}
+            <span style={{ color: "#ffffff", textShadow: "0 0 24px rgba(255,255,255,0.9), 0 0 48px rgba(255,255,255,0.5)" }}>schooling</span>{" "}
+            interfere with my education.&rdquo;
           </h1>
+          <p
+            className="mb-8 text-white/70 font-semibold tracking-widest uppercase"
+            style={{ fontFamily: "var(--font-display)", fontSize: "0.85rem" }}
+          >
+            — Mark Twain
+          </p>
 
           {/* Subtitle */}
           <p
