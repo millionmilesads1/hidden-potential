@@ -39,7 +39,7 @@ import {
 
 // ── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "Self Mastery for Women (28+) | Emotional Leadership Program | Hidden Potential",
+  title: { absolute: "Self Mastery for Women (28+) | Emotional Leadership Program | Hidden Potential" },
   description:
     "A structured growth journey for women 28+. Rebuild identity, emotional resilience, personal independence & inner clarity. Group & 1:1 sessions. Delhi NCR & Online.",
   openGraph: {
@@ -324,7 +324,7 @@ export default function SelfMasteryWomenPage() {
       <section
         className="relative overflow-hidden"
         style={{
-          background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)",
+          background: "#0f0f1a",
         }}
       >
         {/* Decorative blobs */}
@@ -357,8 +357,8 @@ export default function SelfMasteryWomenPage() {
             <span
               className="inline-flex items-center px-4 py-1.5 text-[11px] font-bold uppercase tracking-widest text-primary-gold rounded-full"
               style={{
-                background: "rgba(200,169,81,0.12)",
-                border: "1px solid rgba(200,169,81,0.25)",
+                background: "rgba(212,168,67,0.12)",
+                border: "1px solid rgba(212,168,67,0.25)",
               }}
             >
               Women 28+
@@ -453,7 +453,7 @@ export default function SelfMasteryWomenPage() {
               >
                 <div
                   className="w-1 h-8 rounded-full mb-4"
-                  style={{ backgroundColor: "#C8A951" }}
+                  style={{ backgroundColor: "#D4A843" }}
                 />
                 <h3 className="font-bold text-primary-navy mb-2 text-[15px] leading-snug">
                   {item.title}
@@ -478,7 +478,7 @@ export default function SelfMasteryWomenPage() {
               >
                 <div
                   className="w-1 h-8 rounded-full mb-4"
-                  style={{ backgroundColor: "#C8A951" }}
+                  style={{ backgroundColor: "#D4A843" }}
                 />
                 <h3 className="font-bold text-primary-navy mb-2 text-[15px] leading-snug">
                   {item.title}
@@ -499,12 +499,12 @@ export default function SelfMasteryWomenPage() {
           {/* Gold callout — program differentiator */}
           <div
             className="rounded-lg p-6 border-l-4 max-w-3xl mx-auto mb-12"
-            style={{ borderColor: "#C8A951", background: "#FBF7EE" }}
+            style={{ borderColor: "#D4A843", background: "#FBF7EE" }}
           >
             <div className="flex items-start gap-3">
               <div
                 className="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"
-                style={{ background: "#C8A951" }}
+                style={{ background: "#D4A843" }}
               >
                 <svg
                   className="w-3 h-3 text-white"
@@ -609,7 +609,7 @@ export default function SelfMasteryWomenPage() {
               className="rounded-lg p-6 flex flex-col justify-center"
               style={{
                 background: "linear-gradient(135deg, #FBF7EE 0%, #EDE9FE 100%)",
-                border: "1px solid rgba(200,169,81,0.18)",
+                border: "1px solid rgba(212,168,67,0.18)",
               }}
             >
               <p className="text-xs font-bold uppercase tracking-widest text-primary-gold mb-4">
@@ -695,7 +695,7 @@ export default function SelfMasteryWomenPage() {
       <section
         className="py-20"
         style={{
-          background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)",
+          background: "#0f0f1a",
         }}
       >
         <div className="max-w-6xl mx-auto px-6">
@@ -772,7 +772,7 @@ export default function SelfMasteryWomenPage() {
               {/* Gold quote callout */}
               <div
                 className="rounded-lg p-6"
-                style={{ background: "#FBF7EE", borderLeft: "3px solid #C8A951" }}
+                style={{ background: "#FBF7EE", borderLeft: "3px solid #D4A843" }}
               >
                 <p
                   className="text-lg text-primary-navy leading-relaxed"
@@ -890,7 +890,7 @@ export default function SelfMasteryWomenPage() {
                 className="rounded-lg p-5"
                 style={{
                   background: "linear-gradient(135deg, #FBF7EE 0%, #EDE9FE 100%)",
-                  border: "1px solid rgba(200,169,81,0.18)",
+                  border: "1px solid rgba(212,168,67,0.18)",
                 }}
               >
                 <p className="text-xs font-bold uppercase tracking-widest text-primary-gold mb-2">

@@ -342,7 +342,7 @@ export default function AELPage() {
       <section
         className="relative overflow-hidden"
         style={{
-          background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)",
+          background: "#0f0f1a",
         }}
       >
         {/* Decorative blobs */}
@@ -356,7 +356,7 @@ export default function AELPage() {
           className="absolute bottom-0 -left-16 w-64 h-64 rounded-full pointer-events-none"
           style={{
             background:
-              "radial-gradient(circle at center, rgba(200,169,81,0.07) 0%, transparent 70%)",
+              "radial-gradient(circle at center, rgba(212,168,67,0.07) 0%, transparent 70%)",
           }}
         />
 
@@ -366,8 +366,8 @@ export default function AELPage() {
             <span
               className="inline-flex items-center px-4 py-1.5 text-[11px] font-bold uppercase tracking-widest text-primary-gold rounded-full"
               style={{
-                background: "rgba(200,169,81,0.12)",
-                border: "1px solid rgba(200,169,81,0.25)",
+                background: "rgba(212,168,67,0.12)",
+                border: "1px solid rgba(212,168,67,0.25)",
               }}
             >
               Flagship Program
@@ -475,7 +475,7 @@ export default function AELPage() {
               >
                 <div
                   className="w-1 h-8 rounded-full mb-4"
-                  style={{ backgroundColor: "#7C3AED" }}
+                  style={{ backgroundColor: "#0D9488" }}
                 />
                 <h3 className="font-bold text-primary-navy mb-2 text-[15px] leading-snug">
                   {item.title}
@@ -496,12 +496,12 @@ export default function AELPage() {
           {/* Gold callout — Pre/Post Assessment */}
           <div
             className="rounded-lg p-6 border-l-4 max-w-3xl mx-auto mb-12"
-            style={{ borderColor: "#C8A951", background: "#FBF7EE" }}
+            style={{ borderColor: "#D4A843", background: "#FBF7EE" }}
           >
             <div className="flex items-start gap-3">
               <div
                 className="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"
-                style={{ background: "#C8A951" }}
+                style={{ background: "#D4A843" }}
               >
                 <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 13l4 4L19 7" />
@@ -663,7 +663,7 @@ export default function AELPage() {
       <section
         className="py-20"
         style={{
-          background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)",
+          background: "#0f0f1a",
         }}
       >
         <div className="max-w-6xl mx-auto px-6">
@@ -743,7 +743,7 @@ export default function AELPage() {
                 className="rounded-lg p-6"
                 style={{
                   background: "#FBF7EE",
-                  borderLeft: "3px solid #C8A951",
+                  borderLeft: "3px solid #D4A843",
                 }}
               >
                 <p

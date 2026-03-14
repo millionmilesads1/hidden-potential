@@ -102,7 +102,7 @@ export default function EnrollForm() {
 
   return (
     <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-8 md:p-10">
-      <form className="space-y-6" onSubmit={handleSubmit}>
+      <form className="space-y-6" onSubmit={handleSubmit} aria-describedby="enroll-form-note" noValidate>
 
         {/* ── Row 1: Full Name + Phone ─────────────────────────────────────────── */}
         <div className="grid md:grid-cols-2 gap-6">
@@ -115,7 +115,9 @@ export default function EnrollForm() {
               name="fullName"
               type="text"
               required
+              aria-required="true"
               placeholder="Your full name"
+              autoComplete="name"
               className={inputClass}
             />
           </div>
@@ -130,7 +132,9 @@ export default function EnrollForm() {
               name="phone"
               type="tel"
               required
+              aria-required="true"
               placeholder="+91 XXXXX XXXXX"
+              autoComplete="tel"
               className={inputClass}
             />
           </div>
@@ -147,7 +151,9 @@ export default function EnrollForm() {
               name="email"
               type="email"
               required
+              aria-required="true"
               placeholder="you@example.com"
+              autoComplete="email"
               className={inputClass}
             />
           </div>
@@ -159,6 +165,7 @@ export default function EnrollForm() {
               id="location"
               name="location"
               required
+              aria-required="true"
               defaultValue=""
               className={selectClass}
             >
@@ -185,6 +192,7 @@ export default function EnrollForm() {
             id="program"
             name="program"
             required
+            aria-required="true"
             defaultValue=""
             className={selectClass}
           >
@@ -216,6 +224,7 @@ export default function EnrollForm() {
               id="mode"
               name="mode"
               required
+              aria-required="true"
               defaultValue=""
               className={selectClass}
             >
@@ -308,7 +317,7 @@ export default function EnrollForm() {
         </div>
 
         {/* Privacy note */}
-        <p className="text-xs text-charcoal/40 leading-relaxed">
+        <p id="enroll-form-note" className="text-xs text-charcoal/40 leading-relaxed">
           Submitting this form does not commit you to any payment or program. A member of our team
           will contact you within 24 hours to discuss your goals and share program details. Your
           information is kept strictly confidential and will never be shared with third parties. By

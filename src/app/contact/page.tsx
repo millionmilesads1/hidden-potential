@@ -21,7 +21,7 @@ import ContactForm from "./ContactForm";
 
 // ── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "Book Free Evaluation | Contact Hidden Potential | Life Skills Delhi",
+  title: { absolute: "Book Free Evaluation | Contact Hidden Potential | Life Skills Delhi" },
   description:
     "Schedule a free 30-minute life skills evaluation. WhatsApp, phone, or online. Serving Delhi, Noida, Gurgaon, Faridabad & pan-India. 14+ years. 5000+ trained.",
   openGraph: {
@@ -326,21 +326,21 @@ export default function ContactPage() {
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
         className="relative overflow-hidden"
-        style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }}
+        style={{ background: "#0f0f1a" }}
       >
         {/* Glows */}
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
             background:
-              "radial-gradient(circle at 85% 20%, rgba(109,40,217,0.08) 0%, transparent 60%)",
+              "radial-gradient(circle at 85% 20%, rgba(111,0,255,0.08) 0%, transparent 60%)",
           }}
         />
         <div
           className="absolute bottom-0 -left-16 w-64 h-64 rounded-full pointer-events-none"
           style={{
             background:
-              "radial-gradient(circle at center, rgba(200,169,81,0.07) 0%, transparent 70%)",
+              "radial-gradient(circle at center, rgba(212,168,67,0.07) 0%, transparent 70%)",
           }}
         />
 
@@ -567,7 +567,7 @@ export default function ContactPage() {
                 <div className="flex items-center gap-3 mb-3">
                   <div
                     className="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0"
-                    style={{ background: "#7C3AED" }}
+                    style={{ background: "#0D9488" }}
                   >
                     <svg
                       className="w-3.5 h-3.5 text-white"
@@ -685,14 +685,14 @@ export default function ContactPage() {
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
         className="relative overflow-hidden py-20"
-        style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }}
+        style={{ background: "#0f0f1a" }}
       >
         {/* Glow */}
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
             background:
-              "radial-gradient(circle at 85% 20%, rgba(109,40,217,0.08) 0%, transparent 60%)",
+              "radial-gradient(circle at 85% 20%, rgba(111,0,255,0.08) 0%, transparent 60%)",
           }}
         />
 

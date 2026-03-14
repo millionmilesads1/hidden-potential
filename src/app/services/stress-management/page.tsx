@@ -6,13 +6,11 @@ import React from "react";
    SEO METADATA
 ───────────────────────────────────────────────────────────────────────────── */
 export const metadata: Metadata = {
-  title:
-    "Stress Management Coaching in Delhi | Regain Calm, Build Resilience | Hidden Potential",
+  title: { absolute: "Stress Management Coaching in Delhi | Regain Calm, Build Resilience | Hidden Potential" },
   description:
     "Stress management coaching in Delhi for students, professionals & women. Mindfulness, emotional regulation, NLP techniques & structured resilience building. Dwarka, Delhi & Online.",
   openGraph: {
-    title:
-      "Stress Management Coaching in Delhi | Regain Calm, Build Resilience | Hidden Potential",
+    title: "Stress Management Coaching in Delhi | Regain Calm, Build Resilience | Hidden Potential",
     description:
       "Stress management coaching in Delhi for students, professionals & women. Mindfulness, emotional regulation, NLP techniques & structured resilience building. Dwarka, Delhi & Online.",
     url: "https://hiddenpotentialskills.com/services/stress-management",
@@ -20,8 +18,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title:
-      "Stress Management Coaching in Delhi | Regain Calm, Build Resilience | Hidden Potential",
+    title: "Stress Management Coaching in Delhi | Regain Calm, Build Resilience | Hidden Potential",
     description:
       "Stress management coaching in Delhi for students, professionals & women. Mindfulness, emotional regulation, NLP techniques & structured resilience building. Dwarka, Delhi & Online.",
   },
@@ -155,7 +152,7 @@ export default function StressManagementPage() {
         ═══════════════════════════════════════════════════════════════ */}
         <section
           className="relative overflow-hidden"
-          style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }}
+          style={{ background: "#0f0f1a" }}
         >
           <div
             className="absolute inset-0 pointer-events-none"
@@ -168,7 +165,7 @@ export default function StressManagementPage() {
             className="absolute bottom-0 -left-16 w-64 h-64 rounded-full pointer-events-none"
             style={{
               background:
-                "radial-gradient(circle at center, rgba(200,169,81,0.07) 0%, transparent 70%)",
+                "radial-gradient(circle at center, rgba(212,168,67,0.07) 0%, transparent 70%)",
             }}
           />
 
@@ -278,7 +275,7 @@ export default function StressManagementPage() {
             <SectionLabel>Why Stress Management Matters</SectionLabel>
             <h2
               className="text-2xl md:text-3xl font-bold mb-8 leading-snug"
-              style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}
+              style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
             >
               The Real Cost of Unmanaged Stress in Delhi NCR
             </h2>
@@ -322,7 +319,7 @@ export default function StressManagementPage() {
             </div>
             <h2
               className="text-2xl md:text-3xl font-bold text-center mb-5 leading-snug max-w-3xl mx-auto"
-              style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}
+              style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
             >
               Stress Management Skills Taught at Hidden Potential in Delhi
             </h2>
@@ -338,7 +335,7 @@ export default function StressManagementPage() {
             <div className="grid md:grid-cols-2 gap-6">
               {/* Card 01 */}
               <div className="rounded-lg border border-[#E8E8E8] overflow-hidden">
-                <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#7C3AED" }}>
+                <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#0D9488" }}>
                   <span className="text-white/60 text-xs font-bold">01</span>
                   <h3 className="text-sm font-bold text-white" style={{ fontFamily: "var(--font-display)" }}>
                     Stress Pattern Identification and Self-Awareness
@@ -359,7 +356,7 @@ export default function StressManagementPage() {
 
               {/* Card 02 */}
               <div className="rounded-lg border border-[#E8E8E8] overflow-hidden">
-                <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#7C3AED" }}>
+                <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#0D9488" }}>
                   <span className="text-white/60 text-xs font-bold">02</span>
                   <h3 className="text-sm font-bold text-white" style={{ fontFamily: "var(--font-display)" }}>
                     Emotional Regulation and Response Control
@@ -384,7 +381,7 @@ export default function StressManagementPage() {
 
               {/* Card 03 */}
               <div className="rounded-lg border border-[#E8E8E8] overflow-hidden">
-                <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#7C3AED" }}>
+                <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#0D9488" }}>
                   <span className="text-white/60 text-xs font-bold">03</span>
                   <h3 className="text-sm font-bold text-white" style={{ fontFamily: "var(--font-display)" }}>
                     Mindfulness and Grounding Techniques
@@ -407,7 +404,7 @@ export default function StressManagementPage() {
 
               {/* Card 04 */}
               <div className="rounded-lg border border-[#E8E8E8] overflow-hidden">
-                <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#7C3AED" }}>
+                <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#0D9488" }}>
                   <span className="text-white/60 text-xs font-bold">04</span>
                   <h3 className="text-sm font-bold text-white" style={{ fontFamily: "var(--font-display)" }}>
                     NLP-Based Stress Response Rewiring
@@ -431,7 +428,7 @@ export default function StressManagementPage() {
 
               {/* Card 05 */}
               <div className="rounded-lg border border-[#E8E8E8] overflow-hidden">
-                <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#7C3AED" }}>
+                <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#0D9488" }}>
                   <span className="text-white/60 text-xs font-bold">05</span>
                   <h3 className="text-sm font-bold text-white" style={{ fontFamily: "var(--font-display)" }}>
                     Boundary Setting and Energy Management
@@ -456,7 +453,7 @@ export default function StressManagementPage() {
 
               {/* Card 06 */}
               <div className="rounded-lg border border-[#E8E8E8] overflow-hidden">
-                <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#7C3AED" }}>
+                <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#0D9488" }}>
                   <span className="text-white/60 text-xs font-bold">06</span>
                   <h3 className="text-sm font-bold text-white" style={{ fontFamily: "var(--font-display)" }}>
                     Sustainable Stress Prevention Systems
@@ -488,7 +485,7 @@ export default function StressManagementPage() {
             </div>
             <h2
               className="text-2xl md:text-3xl font-bold text-center mb-5 leading-snug max-w-3xl mx-auto"
-              style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}
+              style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
             >
               Who Benefits from Stress Management Coaching in Delhi?
             </h2>
@@ -507,7 +504,7 @@ export default function StressManagementPage() {
               <div className="bg-white rounded-lg p-5 border border-[#E8E8E8]">
                 <div className="flex items-start gap-3 mb-3">
                   <span className="text-[11px] font-bold text-primary-teal rounded-full px-2 py-0.5 shrink-0 mt-0.5" style={{ background: "#EDE9FE" }}>01</span>
-                  <h3 className="text-sm font-bold leading-snug" style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}>
+                  <h3 className="text-sm font-bold leading-snug" style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}>
                     Students Facing Academic Pressure (Ages 13-21)
                   </h3>
                 </div>
@@ -528,7 +525,7 @@ export default function StressManagementPage() {
               <div className="bg-white rounded-lg p-5 border border-[#E8E8E8]">
                 <div className="flex items-start gap-3 mb-3">
                   <span className="text-[11px] font-bold text-primary-teal rounded-full px-2 py-0.5 shrink-0 mt-0.5" style={{ background: "#EDE9FE" }}>02</span>
-                  <h3 className="text-sm font-bold leading-snug" style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}>
+                  <h3 className="text-sm font-bold leading-snug" style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}>
                     Working Professionals Approaching Burnout
                   </h3>
                 </div>
@@ -547,7 +544,7 @@ export default function StressManagementPage() {
               <div className="bg-white rounded-lg p-5 border border-[#E8E8E8]">
                 <div className="flex items-start gap-3 mb-3">
                   <span className="text-[11px] font-bold text-primary-teal rounded-full px-2 py-0.5 shrink-0 mt-0.5" style={{ background: "#EDE9FE" }}>03</span>
-                  <h3 className="text-sm font-bold leading-snug" style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}>
+                  <h3 className="text-sm font-bold leading-snug" style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}>
                     Women Managing Multiple Roles
                   </h3>
                 </div>
@@ -568,7 +565,7 @@ export default function StressManagementPage() {
               <div className="bg-white rounded-lg p-5 border border-[#E8E8E8]">
                 <div className="flex items-start gap-3 mb-3">
                   <span className="text-[11px] font-bold text-primary-teal rounded-full px-2 py-0.5 shrink-0 mt-0.5" style={{ background: "#EDE9FE" }}>04</span>
-                  <h3 className="text-sm font-bold leading-snug" style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}>
+                  <h3 className="text-sm font-bold leading-snug" style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}>
                     Individuals Experiencing Anxiety or Emotional Overwhelm
                   </h3>
                 </div>
@@ -586,7 +583,7 @@ export default function StressManagementPage() {
               <div className="bg-white rounded-lg p-5 border border-[#E8E8E8]">
                 <div className="flex items-start gap-3 mb-3">
                   <span className="text-[11px] font-bold text-primary-teal rounded-full px-2 py-0.5 shrink-0 mt-0.5" style={{ background: "#EDE9FE" }}>05</span>
-                  <h3 className="text-sm font-bold leading-snug" style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}>
+                  <h3 className="text-sm font-bold leading-snug" style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}>
                     Corporate Teams and Organisations
                   </h3>
                 </div>
@@ -615,7 +612,7 @@ export default function StressManagementPage() {
             </div>
             <h2
               className="text-2xl md:text-3xl font-bold text-center mb-12 leading-snug max-w-3xl mx-auto"
-              style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}
+              style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
             >
               Why Stress Management Coaching at Hidden Potential Produces Lasting Resilience
             </h2>
@@ -628,7 +625,7 @@ export default function StressManagementPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                   </svg>
                 </div>
-                <h3 className="text-sm font-bold mb-2" style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}>
+                <h3 className="text-sm font-bold mb-2" style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}>
                   Structured Development, Not Quick Fixes
                 </h3>
                 <p className="text-sm leading-relaxed" style={{ color: "#6B6B6B" }}>
@@ -647,7 +644,7 @@ export default function StressManagementPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                   </svg>
                 </div>
-                <h3 className="text-sm font-bold mb-2" style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}>
+                <h3 className="text-sm font-bold mb-2" style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}>
                   NLP-Powered Techniques for Root-Level Change
                 </h3>
                 <p className="text-sm leading-relaxed" style={{ color: "#6B6B6B" }}>
@@ -666,7 +663,7 @@ export default function StressManagementPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                   </svg>
                 </div>
-                <h3 className="text-sm font-bold mb-2" style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}>
+                <h3 className="text-sm font-bold mb-2" style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}>
                   Integrated Into Complete Life Skills Pathways
                 </h3>
                 <p className="text-sm leading-relaxed" style={{ color: "#6B6B6B" }}>
@@ -684,7 +681,7 @@ export default function StressManagementPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                   </svg>
                 </div>
-                <h3 className="text-sm font-bold mb-2" style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}>
+                <h3 className="text-sm font-bold mb-2" style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}>
                   Personalised Through Assessment
                 </h3>
                 <p className="text-sm leading-relaxed" style={{ color: "#6B6B6B" }}>
@@ -708,7 +705,7 @@ export default function StressManagementPage() {
             </div>
             <h2
               className="text-2xl md:text-3xl font-bold text-center mb-12 leading-snug"
-              style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}
+              style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
             >
               Common Questions About Stress Management Coaching in Delhi
             </h2>
@@ -742,7 +739,7 @@ export default function StressManagementPage() {
               ].map(({ q, a }) => (
                 <div key={q} className="rounded-lg overflow-hidden border border-[#E8E8E8]">
                   <div className="px-6 py-4 bg-[#F8F6F2] border-l-4 border-primary-teal">
-                    <p className="text-sm font-bold" style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}>{q}</p>
+                    <p className="text-sm font-bold" style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}>{q}</p>
                   </div>
                   <div className="px-6 py-5">
                     <p className="text-sm leading-relaxed" style={{ color: "#2D2D2D" }}>{a}</p>
@@ -758,7 +755,7 @@ export default function StressManagementPage() {
         ═══════════════════════════════════════════════════════════════ */}
         <section
           className="relative overflow-hidden py-24"
-          style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }}
+          style={{ background: "#0f0f1a" }}
         >
           <div
             className="absolute inset-0 pointer-events-none"

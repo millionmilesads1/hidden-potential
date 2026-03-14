@@ -4,8 +4,9 @@ import Link from "next/link";
 
 // ── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title:
-    "Life Skills Training in Delhi | Hidden Potential — Structured Growth Pathways",
+  title: {
+    absolute: "Life Skills Training in Delhi | Hidden Potential — Structured Growth Pathways",
+  },
   description:
     "Structured life skills programs for students, women & professionals in Delhi. Assessment-based placement. 14+ years experience. 5000+ trained. Book free evaluation.",
   openGraph: {
@@ -88,71 +89,43 @@ const schema = {
 };
 
 // ── Data ─────────────────────────────────────────────────────────────────────
+const heroStats = [
+  { value: "14+",        label: "Years Experience" },
+  { value: "5,000+",     label: "Individuals Trained" },
+  { value: "200+",       label: "Trainers Developed" },
+  { value: "Josh Talks", label: "Speaker" },
+  { value: "NEP 2020",   label: "Certified · IGNOU" },
+];
+
 const pillars = [
   {
-    icon: (
-      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
-        <path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
-      </svg>
-    ),
+    num: "01",
     title: "System",
     desc: "A defined developmental pathway — from where you are to where you need to be. No fragmented sessions, only one clear journey.",
-    bg: "bg-primary-teal",
-    iconColor: "text-white",
+    hoverClass: "card-hover-purple",
   },
   {
-    icon: (
-      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
-        <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-      </svg>
-    ),
+    num: "02",
     title: "Science",
     desc: "Emotional intelligence research, behavioural psychology, and NLP frameworks that underpin every single module and interaction.",
-    bg: "bg-primary-navy",
-    iconColor: "text-white",
+    hoverClass: "card-hover-teal",
   },
   {
-    icon: (
-      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
-        <path d="M4 6h16M4 10h16M4 14h16M4 18h16" />
-      </svg>
-    ),
+    num: "03",
     title: "Structure",
     desc: "Guided practice, real-life application, and continuous feedback at every level of the development journey.",
-    bg: "bg-primary-gold",
-    iconColor: "text-primary-navy",
+    hoverClass: "card-hover-gold",
   },
 ];
+
+// Number ghost (large, low-opacity) accent per pillar
+const pillarAccent = ["#6F00FF", "#0D9488", "#D4A843"];
 
 const growthStages = [
-  { num: "01", label: "Awareness", desc: "Understand where you truly are" },
-  { num: "02", label: "Practice", desc: "Build new skills intentionally" },
+  { num: "01", label: "Awareness",   desc: "Understand where you truly are" },
+  { num: "02", label: "Practice",    desc: "Build new skills intentionally" },
   { num: "03", label: "Application", desc: "Apply in real-life contexts" },
-  { num: "04", label: "Mastery", desc: "Lead, teach, and sustain growth" },
-];
-
-const devLevels = [
-  {
-    level: "Foundation",
-    duration: "3 Months",
-    desc: "Core skills and self-awareness. A safe environment to understand yourself and begin.",
-    borderColor: "border-primary-teal",
-    labelColor: "text-primary-teal",
-  },
-  {
-    level: "Growth",
-    duration: "6 Months",
-    desc: "Deeper practice and real-world application. Building consistency and genuine confidence.",
-    borderColor: "border-primary-gold",
-    labelColor: "text-primary-gold",
-  },
-  {
-    level: "Mastery Track",
-    duration: "12 Months",
-    desc: "Leadership, identity integration, and sustainable long-term transformation.",
-    borderColor: "border-primary-navy",
-    labelColor: "text-primary-navy",
-  },
+  { num: "04", label: "Mastery",     desc: "Lead, teach, and sustain growth" },
 ];
 
 const programs = [
@@ -160,11 +133,12 @@ const programs = [
     name: "An Enlightened Learner",
     ages: "Ages 8–21",
     tagline: "From hesitation to confidence. From emotional confusion to clarity.",
-    desc: "A complete life skills curriculum across self-mastery, communication, academic thinking, and real-world readiness.",
+    desc: "A complete life skills curriculum across self-mastery, communication, academic thinking, and real-world readiness. Three structured levels for every stage of childhood and adolescence.",
     href: "/programs/enlightened-learner",
-    topBg: "bg-primary-teal",
-    tagBg: "bg-teal-light",
-    tagText: "text-primary-teal",
+    accent: "#6F00FF",
+    lightBg: "#F3E8FF",
+    borderBase: "rgba(111,0,255,0.1)",
+    hoverClass: "card-hover-purple",
   },
   {
     name: "Communication Mastery",
@@ -172,9 +146,10 @@ const programs = [
     tagline: "From fear of speaking to leadership presence.",
     desc: "Build confidence and clarity to express yourself powerfully — in every personal and professional situation.",
     href: "/programs/communication-mastery",
-    topBg: "bg-primary-gold",
-    tagBg: "bg-gold-light",
-    tagText: "text-gold-dark",
+    accent: "#0D9488",
+    lightBg: "#E6F7F5",
+    borderBase: "rgba(13,148,136,0.12)",
+    hoverClass: "card-hover-teal",
   },
   {
     name: "Self Mastery for Women",
@@ -182,19 +157,21 @@ const programs = [
     tagline: "From emotional overwhelm to grounded strength.",
     desc: "A structured journey for women to reclaim identity, build resilience, and lead with clarity on their own terms.",
     href: "/programs/self-mastery-women",
-    topBg: "bg-primary-teal",
-    tagBg: "bg-teal-light",
-    tagText: "text-primary-teal",
+    accent: "#D4A843",
+    lightBg: "#FBF7EE",
+    borderBase: "rgba(212,168,67,0.12)",
+    hoverClass: "card-hover-gold",
   },
   {
     name: "Train the Trainer",
-    ages: "All Experience Levels",
+    ages: "All Levels",
     tagline: "From learner to leader. From passion to professional pathway.",
     desc: "Become a certified life skills trainer with curriculum mastery, NLP tools, and expert facilitation skills.",
     href: "/programs/train-the-trainer",
-    topBg: "bg-primary-navy",
-    tagBg: "bg-navy-light",
-    tagText: "text-primary-navy",
+    accent: "#6F00FF",
+    lightBg: "#F3E8FF",
+    borderBase: "rgba(111,0,255,0.1)",
+    hoverClass: "card-hover-purple",
   },
   {
     name: "Art Therapy for Healing",
@@ -202,9 +179,10 @@ const programs = [
     tagline: "From mental clutter to emotional clarity.",
     desc: "Use art, reflective journaling, and mindfulness as structured tools for emotional release and inner healing.",
     href: "/programs/art-therapy",
-    topBg: "bg-primary-gold",
-    tagBg: "bg-gold-light",
-    tagText: "text-gold-dark",
+    accent: "#0D9488",
+    lightBg: "#E6F7F5",
+    borderBase: "rgba(13,148,136,0.12)",
+    hoverClass: "card-hover-teal",
   },
 ];
 
@@ -212,36 +190,57 @@ const differentiators = [
   {
     title: "Assessment-Based Placement",
     desc: "Every learner begins with a structured skills assessment — no guesswork, only clarity about where to begin.",
+    icon: (
+      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.75} strokeLinecap="round" strokeLinejoin="round">
+        <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+      </svg>
+    ),
   },
   {
     title: "Structured Progression",
     desc: "Foundation → Growth → Mastery. A defined developmental path, not a random collection of sessions.",
+    icon: (
+      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.75} strokeLinecap="round" strokeLinejoin="round">
+        <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+      </svg>
+    ),
   },
   {
     title: "Measurable Growth",
     desc: "Pre and post assessments track tangible skill development at every level of the journey.",
+    icon: (
+      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.75} strokeLinecap="round" strokeLinejoin="round">
+        <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+      </svg>
+    ),
   },
   {
     title: "NLP Integration",
     desc: "Neuro-Linguistic Programming techniques embedded into every module for lasting behaviour change.",
+    icon: (
+      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.75} strokeLinecap="round" strokeLinejoin="round">
+        <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+      </svg>
+    ),
   },
   {
     title: "Multi-Level Pathways",
     desc: "Programs that grow with you — built for sustained development, not one-time workshops.",
+    icon: (
+      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.75} strokeLinecap="round" strokeLinejoin="round">
+        <path d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+      </svg>
+    ),
   },
   {
     title: "Identity-Driven Development",
     desc: "We don't just teach skills. We help you become the person who naturally uses them.",
+    icon: (
+      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.75} strokeLinecap="round" strokeLinejoin="round">
+        <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+      </svg>
+    ),
   },
-];
-
-const stats = [
-  { value: "14+", label: "Years of Experience" },
-  { value: "5000+", label: "Individuals Trained" },
-  { value: "200+", label: "Trainers Developed" },
-  { value: "Josh Talks", label: "Speaker" },
-  { value: "Award-Winning", label: "Educator" },
-  { value: "NEP 2020", label: "Certified · IGNOU" },
 ];
 
 const testimonials = [
@@ -265,6 +264,13 @@ const testimonials = [
     name: "Anandita Joshi",
     role: "Program Graduate, Women's Pathway",
     initial: "A",
+  },
+  {
+    quote:
+      "As a school administrator, I was looking for something structured, not motivational fluff. Hidden Potential delivered exactly that — measurable outcomes and real student growth.",
+    name: "Priya Sharma",
+    role: "Vice Principal, Delhi NCR",
+    initial: "P",
   },
 ];
 
@@ -291,80 +297,38 @@ const enrollmentSteps = [
   },
 ];
 
-// ── Helper Components ────────────────────────────────────────────────────────
-function SectionLabel({ children, light = false }: { children: ReactNode; light?: boolean }) {
+const credentials = [
+  "Masters in Psychology",
+  "NLP Practitioner",
+  "Harvard Life Skills Affiliate",
+  "Graphology · American Board",
+  "Art Therapy · IISD",
+  "Train the Trainer · ILA",
+  "MSME Registered",
+  "Skill India Certified",
+  "NEP 2020 Certified · IGNOU",
+  "Josh Talks Speaker",
+  "Published Author",
+  "Award-Winning Educator",
+];
+
+// ── Helpers ───────────────────────────────────────────────────────────────────
+function Label({ children, dark = false }: { children: ReactNode; dark?: boolean }) {
   return (
     <p
-      className={`text-xs font-bold uppercase tracking-widest mb-3 ${
-        light ? "text-primary-gold" : "text-primary-teal"
-      }`}
+      className="text-[11px] font-bold uppercase tracking-widest mb-4"
+      style={{ color: dark ? "#D4A843" : "#0D9488", fontFamily: "var(--font-body)" }}
     >
       {children}
     </p>
   );
 }
 
-function SectionHeading({ children, light = false }: { children: ReactNode; light?: boolean }) {
-  return (
-    <h2
-      className={`text-3xl md:text-4xl font-bold mb-4 leading-tight ${
-        light ? "text-white" : "text-primary-navy"
-      }`}
-    >
-      {children}
-    </h2>
-  );
-}
-
-function ArrowIcon({ className = "w-4 h-4" }: { className?: string }) {
+function Chevron({ className = "w-4 h-4" }: { className?: string }) {
   return (
     <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round">
       <path d="M9 5l7 7-7 7" />
     </svg>
-  );
-}
-
-function ProgramCard({ prog }: { prog: (typeof programs)[number] }) {
-  return (
-    <div className="group bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow flex flex-col overflow-hidden">
-      <div className={`${prog.topBg} h-1.5 w-full flex-shrink-0`} />
-      <div className="p-6 flex flex-col flex-1">
-        <span
-          className={`inline-block text-xs font-bold px-2.5 py-1 rounded-full ${prog.tagBg} ${prog.tagText} mb-4 self-start`}
-        >
-          {prog.ages}
-        </span>
-        <h3 className="text-lg font-bold text-primary-navy mb-3 leading-snug">
-          {prog.name}
-        </h3>
-        <p
-          className="text-sm text-charcoal/80 mb-4 leading-relaxed"
-          style={{ fontFamily: "var(--font-accent)", fontStyle: "italic" }}
-        >
-          {prog.tagline}
-        </p>
-        <p className="text-sm text-charcoal/65 leading-relaxed flex-1 mb-6">
-          {prog.desc}
-        </p>
-        <Link
-          href={prog.href}
-          className="inline-flex items-center gap-1.5 text-sm font-bold text-primary-teal hover:text-teal-dark transition-colors mt-auto"
-        >
-          Explore Pathway
-          <svg
-            className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth={2.5}
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M9 5l7 7-7 7" />
-          </svg>
-        </Link>
-      </div>
-    </div>
   );
 }
 
@@ -379,330 +343,118 @@ export default function HomePage() {
 
       {/* ═══════════════════════════════════════════
           1. HERO
+          Dark editorial (#0f0f1a) — NOT purple gradient.
+          Purple (#6F00FF) used as a spot accent on one word.
+          Trust & Authority: stats as primary social proof.
       ═══════════════════════════════════════════ */}
       <section
-        className="relative overflow-hidden"
-        style={{
-          background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)",
-        }}
+        className="relative overflow-hidden grain-overlay"
+        style={{ background: "#0f0f1a", minHeight: "90vh", display: "flex", alignItems: "center" }}
       >
-        {/* Decorative blobs */}
+        {/* Ambient glows — accents, not gradient backgrounds */}
         <div
-          className="absolute inset-0 pointer-events-none"
+          className="absolute top-0 right-0 pointer-events-none"
           style={{
-            background: "radial-gradient(circle at 85% 20%, rgba(109,40,217,0.08) 0%, transparent 60%)",
+            width: "500px", height: "500px",
+            background: "radial-gradient(circle at center, rgba(111,0,255,0.18) 0%, transparent 70%)",
+            filter: "blur(40px)",
           }}
+          aria-hidden="true"
         />
         <div
-          className="absolute bottom-0 -left-20 w-72 h-72 rounded-full pointer-events-none"
+          className="absolute bottom-0 left-0 pointer-events-none"
           style={{
-            background: "radial-gradient(circle at center, rgba(200,169,81,0.08) 0%, transparent 70%)",
+            width: "380px", height: "380px",
+            background: "radial-gradient(circle at center, rgba(13,148,136,0.12) 0%, transparent 70%)",
+            filter: "blur(40px)",
           }}
+          aria-hidden="true"
         />
 
-        <div className="relative max-w-5xl mx-auto px-6 py-28 text-center">
+        <div className="relative max-w-5xl mx-auto px-6 py-28 w-full">
           {/* Pre-label */}
-          <p className="text-xs font-bold uppercase tracking-widest text-primary-gold mb-6">
+          <p
+            className="text-[11px] font-bold uppercase tracking-[0.2em] mb-8"
+            style={{ color: "#D4A843", fontFamily: "var(--font-body)" }}
+          >
             Transformational Life Skills Academy · Delhi NCR
           </p>
 
-          {/* H1 */}
+          {/* H1 — Playfair Display, editorial scale, NOT purple bg */}
           <h1
-            className="text-4xl md:text-5xl lg:text-[3.25rem] font-extrabold text-white leading-[1.15] mb-7"
-            style={{ textShadow: "0 1px 2px rgba(0,0,0,0.15)" }}
+            className="font-bold text-white leading-[1.1] mb-8"
+            style={{
+              fontFamily: "var(--font-display)",
+              fontSize: "clamp(2.75rem, 5.5vw, 4.25rem)",
+              maxWidth: "780px",
+            }}
           >
-            Build the Inner Strength
-            <br className="hidden sm:block" />
-            That Schools Never Taught You
+            Build the Inner Strength{" "}
+            <span style={{ color: "#6F00FF" }}>Schools</span>{" "}
+            Never Taught You
           </h1>
 
           {/* Subtitle */}
-          <p className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto mb-12 leading-relaxed" style={{ textShadow: "0 1px 2px rgba(0,0,0,0.15)" }}>
+          <p
+            className="mb-12 leading-relaxed"
+            style={{
+              color: "#6b7280",
+              fontSize: "1.125rem",
+              maxWidth: "540px",
+              fontFamily: "var(--font-body)",
+            }}
+          >
             Structured transformational pathways for students, women,
-            professionals and future trainers.
+            professionals and future trainers. Assessment-based. Measurable.
+            Real.
           </p>
 
-          {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+          {/* CTAs — CSS hover classes, min 52px touch targets */}
+          <div className="flex flex-col sm:flex-row gap-4 mb-20">
             <Link
               href="/assessment"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 text-sm font-bold text-white bg-primary-teal hover:bg-teal-dark rounded-md transition-colors"
+              className="btn-teal inline-flex items-center justify-center gap-2 rounded-xl font-semibold text-white"
+              style={{
+                padding: "14px 32px",
+                fontSize: "0.9375rem",
+                fontFamily: "var(--font-body)",
+                minHeight: "52px",
+              }}
             >
-              Take the Assessment <ArrowIcon />
+              Take the Assessment
+              <Chevron className="w-4 h-4" />
             </Link>
             <Link
               href="#programs"
-              className="inline-flex items-center justify-center px-8 py-4 text-sm font-bold text-white border-2 border-white/30 hover:border-white/70 hover:bg-white/5 rounded-md transition-colors"
+              className="btn-outline-hero inline-flex items-center justify-center rounded-xl font-semibold"
+              style={{
+                padding: "14px 32px",
+                fontSize: "0.9375rem",
+                fontFamily: "var(--font-body)",
+                minHeight: "52px",
+              }}
             >
-              Explore Your Pathway
+              Explore Pathways
             </Link>
           </div>
 
-          {/* Trust badge pills */}
-          <div className="flex flex-wrap justify-center gap-2.5">
-            {[
-              "14+ Years Experience",
-              "5000+ Trained",
-              "200+ Trainers",
-              "Josh Talks Speaker",
-              "Award-Winning Educator",
-            ].map((badge) => (
-              <span
-                key={badge}
-                className="px-3 py-1.5 text-xs font-semibold text-white/75 bg-white/8 border border-white/15 rounded-full"
-                style={{ backgroundColor: "rgba(255,255,255,0.07)" }}
-              >
-                {badge}
-              </span>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════
-          2. BRAND STORY
-      ═══════════════════════════════════════════ */}
-      <section className="bg-white py-20">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <SectionLabel>Our Story</SectionLabel>
-
-          <p
-            className="text-2xl md:text-3xl text-charcoal leading-relaxed mb-10"
-            style={{ fontFamily: "var(--font-accent)", fontStyle: "italic" }}
+          {/* Stats row — Trust & Authority primary signal */}
+          <div
+            className="flex flex-wrap gap-x-10 gap-y-6 pt-8"
+            style={{ borderTop: "1px solid rgba(255,255,255,0.08)" }}
           >
-            &ldquo;For years, academic systems focused on grades, performance
-            and achievement. But something essential was missing.&rdquo;
-          </p>
-
-          {/* The missing elements */}
-          <div className="flex flex-wrap justify-center gap-3 mb-12">
-            {[
-              "Emotional Resilience",
-              "Self-Awareness",
-              "Communication Mastery",
-              "Clarity of Identity",
-            ].map((item) => (
-              <span
-                key={item}
-                className="px-4 py-2 text-sm font-semibold text-primary-navy bg-navy-light rounded-full border border-primary-navy/10"
-              >
-                {item}
-              </span>
-            ))}
-          </div>
-
-          <div className="max-w-2xl mx-auto space-y-5 text-left sm:text-center">
-            <p className="text-lg text-charcoal leading-relaxed">
-              <strong className="text-primary-teal">Hidden Potential</strong>{" "}
-              was created to bridge that gap — to give every learner the tools
-              that formal education never prioritised.
-            </p>
-            <p className="text-lg text-charcoal leading-relaxed">
-              This is not a training institute. It is a{" "}
-              <strong>transformational academy</strong> — where structured
-              pathways meet real human development, and growth is never left to
-              chance.
-            </p>
-          </div>
-
-          <div className="mt-10">
-            <Link
-              href="/about"
-              className="inline-flex items-center gap-2 text-sm font-bold text-primary-teal hover:text-teal-dark transition-colors"
-            >
-              Meet Supreet Kaur, Founder <ArrowIcon />
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════
-          3. TRANSFORMATION MODEL
-      ═══════════════════════════════════════════ */}
-      <section className="bg-off-white py-20">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-14">
-            <SectionLabel>The Hidden Potential Method</SectionLabel>
-            <SectionHeading>System. Science. Structure.</SectionHeading>
-            <p className="text-lg text-charcoal max-w-2xl mx-auto leading-relaxed">
-              Three foundational principles that make transformation reliable,
-              repeatable, and real.
-            </p>
-          </div>
-
-          {/* 3 Pillars */}
-          <div className="grid md:grid-cols-3 gap-6 mb-10">
-            {pillars.map((p) => (
-              <div
-                key={p.title}
-                className="bg-white rounded-lg p-7 shadow-sm border border-gray-200 flex flex-col"
-              >
-                <div
-                  className={`${p.bg} ${p.iconColor} w-12 h-12 rounded-md flex items-center justify-center mb-5 flex-shrink-0`}
+            {heroStats.map((s) => (
+              <div key={s.value} className="flex flex-col">
+                <span
+                  className="font-bold leading-none text-white"
+                  style={{ fontFamily: "var(--font-display)", fontSize: "1.75rem" }}
                 >
-                  {p.icon}
-                </div>
-                <h3 className="text-xl font-bold text-primary-navy mb-3">{p.title}</h3>
-                <p className="text-sm text-charcoal leading-relaxed">{p.desc}</p>
-              </div>
-            ))}
-          </div>
-
-          {/* 4 Growth Stages */}
-          <div className="bg-white rounded-lg p-8 shadow-sm border border-gray-200 mb-6">
-            <p className="text-xs font-bold uppercase tracking-widest text-primary-teal text-center mb-8">
-              4 Stages of Growth
-            </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              {growthStages.map((s, i) => (
-                <div key={s.label} className="flex flex-col items-center text-center relative">
-                  {/* Connector line between stages on desktop */}
-                  {i < growthStages.length - 1 && (
-                    <div
-                      className="hidden md:block absolute top-5 w-full h-px"
-                      style={{
-                        left: "calc(50% + 1.75rem)",
-                        width: "calc(100% - 1.75rem)",
-                        background: "linear-gradient(to right, #C8A951, #C8A95140)",
-                      }}
-                    />
-                  )}
-                  <div className="w-10 h-10 rounded-full bg-primary-navy text-white flex items-center justify-center text-xs font-bold mb-3 relative z-10 flex-shrink-0">
-                    {s.num}
-                  </div>
-                  <p className="font-bold text-primary-navy text-sm mb-1">{s.label}</p>
-                  <p className="text-xs text-charcoal/60">{s.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* 3 Development Levels */}
-          <div className="grid md:grid-cols-3 gap-4">
-            {devLevels.map((d) => (
-              <div
-                key={d.level}
-                className={`bg-white rounded-lg p-6 border-l-4 ${d.borderColor} shadow-sm`}
-              >
-                <div className="flex items-center justify-between mb-3">
-                  <h4 className={`font-bold text-base ${d.labelColor}`}>{d.level}</h4>
-                  <span className="text-xs font-semibold text-charcoal/50 bg-gray-100 px-2.5 py-1 rounded-full">
-                    {d.duration}
-                  </span>
-                </div>
-                <p className="text-sm text-charcoal leading-relaxed">{d.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════
-          4. PROGRAMS
-      ═══════════════════════════════════════════ */}
-      <section id="programs" className="bg-white py-20">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-14">
-            <SectionLabel>Transformational Pathways</SectionLabel>
-            <SectionHeading>Choose Your Growth Pathway</SectionHeading>
-            <p className="text-lg text-charcoal max-w-2xl mx-auto leading-relaxed">
-              Every program is assessment-based, structured, and designed to
-              take you from where you are to where you want to be.
-            </p>
-          </div>
-
-          {/* Row 1: top 3 programs */}
-          <div className="grid md:grid-cols-3 gap-6 mb-6">
-            {programs.slice(0, 3).map((prog) => (
-              <ProgramCard key={prog.name} prog={prog} />
-            ))}
-          </div>
-
-          {/* Row 2: last 2 programs — centered, matching column width of row above */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-[792px] mx-auto">
-            {programs.slice(3).map((prog) => (
-              <ProgramCard key={prog.name} prog={prog} />
-            ))}
-          </div>
-
-          <div className="text-center mt-14 pt-10 border-t border-gray-100">
-            <p className="text-xl font-bold text-primary-navy mb-2">
-              Not sure where to start?
-            </p>
-            <p className="text-sm text-charcoal/60 mb-6 max-w-sm mx-auto">
-              Take a free structured assessment and receive your personalised growth pathway.
-            </p>
-            <Link
-              href="/assessment"
-              className="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-bold text-white bg-primary-teal hover:bg-teal-dark rounded-md transition-colors"
-            >
-              Take the Free Skills Assessment <ArrowIcon />
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════
-          5. DIFFERENTIATOR
-      ═══════════════════════════════════════════ */}
-      <section className="bg-primary-navy py-20">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-14">
-            <SectionLabel light>What Sets Us Apart</SectionLabel>
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-5 leading-tight">
-              Most programs offer information.
-              <br className="hidden md:block" />
-              We design transformation.
-            </h2>
-            <p className="text-lg text-white/60 max-w-2xl mx-auto leading-relaxed">
-              Six principles that make every Hidden Potential program
-              fundamentally different from anything you have experienced before.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {differentiators.map((d, i) => (
-              <div
-                key={d.title}
-                className="bg-white/5 border border-white/10 rounded-lg p-6 hover:bg-white/8 transition-colors"
-                style={{ backgroundColor: "rgba(255,255,255,0.05)" }}
-              >
-                <div className="flex items-start gap-3">
-                  <span className="text-xs font-bold text-primary-gold/50 mt-0.5 w-6 flex-shrink-0 tabular-nums">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <div>
-                    <h3 className="font-bold text-white mb-2 text-[15px] leading-snug">
-                      {d.title}
-                    </h3>
-                    <p className="text-sm text-white/55 leading-relaxed">{d.desc}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════
-          6. TRUST BAR
-      ═══════════════════════════════════════════ */}
-      <section
-        style={{
-          background: "linear-gradient(90deg, #2D1B69 0%, #7C3AED 50%, #2D1B69 100%)",
-        }}
-      >
-        <div className="max-w-6xl mx-auto px-6 py-16">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-y-8 gap-x-6 lg:gap-x-3">
-            {stats.map((s) => (
-              <div
-                key={s.value}
-                className="flex flex-col items-center text-center"
-              >
-                <span className="text-3xl md:text-4xl lg:text-2xl font-extrabold text-white mb-1 leading-tight">
                   {s.value}
                 </span>
-                <span className="text-xs font-semibold uppercase tracking-wide text-white/60 mt-1 leading-snug">
+                <span
+                  className="text-xs mt-1.5 uppercase tracking-wide"
+                  style={{ color: "#6b7280", fontFamily: "var(--font-body)" }}
+                >
                   {s.label}
                 </span>
               </div>
@@ -712,124 +464,652 @@ export default function HomePage() {
       </section>
 
       {/* ═══════════════════════════════════════════
-          7. TESTIMONIALS
+          2. BRAND STORY — White, editorial quote
       ═══════════════════════════════════════════ */}
-      <section className="py-20 bg-navy-light">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-14">
-            <SectionLabel>Success Stories</SectionLabel>
-            <SectionHeading>Transformations That Speak</SectionHeading>
-            <p className="text-lg text-charcoal max-w-xl mx-auto leading-relaxed">
-              Real results from students, parents, and professionals who chose
-              structured growth.
-            </p>
-          </div>
+      <section className="bg-white py-24">
+        <div className="max-w-4xl mx-auto px-6">
+          <Label>Our Story</Label>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            {testimonials.map((t) => (
-              <div
-                key={t.name}
-                className="bg-white rounded-lg p-7 shadow-sm flex flex-col"
-                style={{ borderLeft: "3px solid #C8A951" }}
+          <blockquote
+            className="leading-relaxed mb-10"
+            style={{
+              fontFamily: "var(--font-display)",
+              fontStyle: "italic",
+              fontSize: "clamp(1.35rem, 2.5vw, 1.75rem)",
+              color: "#0f0f1a",
+              borderLeft: "3px solid #6F00FF",
+              paddingLeft: "24px",
+            }}
+          >
+            &ldquo;For years, academic systems focused on grades, performance
+            and achievement. But something essential was missing.&rdquo;
+          </blockquote>
+
+          <div className="flex flex-wrap gap-3 mb-10 pl-9">
+            {[
+              "Emotional Resilience",
+              "Self-Awareness",
+              "Communication Mastery",
+              "Clarity of Identity",
+            ].map((item) => (
+              <span
+                key={item}
+                className="px-4 py-2 text-sm font-medium rounded-full"
+                style={{
+                  fontFamily: "var(--font-body)",
+                  background: "#F3E8FF",
+                  color: "#6F00FF",
+                  border: "1px solid rgba(111,0,255,0.15)",
+                }}
               >
-                {/* Gold quote mark */}
-                <svg
-                  className="w-8 h-8 text-primary-gold/30 mb-4 flex-shrink-0"
-                  fill="currentColor"
-                  viewBox="0 0 32 32"
-                >
-                  <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
-                </svg>
-
-                {/* Quote — Lora italic */}
-                <p
-                  className="text-[15px] text-charcoal leading-relaxed mb-7 flex-1"
-                  style={{ fontFamily: "var(--font-accent)", fontStyle: "italic" }}
-                >
-                  {t.quote}
-                </p>
-
-                {/* Author */}
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-primary-navy flex items-center justify-center text-white text-sm font-bold flex-shrink-0">
-                    {t.initial}
-                  </div>
-                  <div>
-                    <p className="text-sm font-bold text-primary-navy leading-tight">{t.name}</p>
-                    <p className="text-xs text-charcoal/55 mt-0.5">{t.role}</p>
-                  </div>
-                </div>
-              </div>
+                {item}
+              </span>
             ))}
           </div>
 
-          <div className="text-center mt-10">
-            <Link
-              href="/success-stories"
-              className="inline-flex items-center gap-2 text-sm font-bold text-primary-teal hover:text-teal-dark transition-colors"
+          <div className="pl-9 max-w-2xl space-y-5">
+            <p
+              className="leading-relaxed"
+              style={{ color: "#1c1c2e", fontSize: "1.0625rem", fontFamily: "var(--font-body)" }}
             >
-              Read More Success Stories <ArrowIcon />
+              <strong style={{ color: "#0D9488" }}>Hidden Potential</strong>{" "}
+              was created to bridge that gap — to give every learner the tools
+              that formal education never prioritised.
+            </p>
+            <p
+              className="leading-relaxed"
+              style={{ color: "#1c1c2e", fontSize: "1.0625rem", fontFamily: "var(--font-body)" }}
+            >
+              This is not a training institute. It is a{" "}
+              <strong>transformational academy</strong> — where structured
+              pathways meet real human development, and growth is never left to
+              chance.
+            </p>
+          </div>
+
+          <div className="mt-9 pl-9">
+            <Link
+              href="/about"
+              className="text-link-teal inline-flex items-center gap-2 text-sm font-semibold"
+            >
+              Meet Supreet Kaur, Founder <Chevron />
             </Link>
           </div>
         </div>
       </section>
 
       {/* ═══════════════════════════════════════════
-          8. ENROLLMENT FLOW
+          3. METHOD — System · Science · Structure
       ═══════════════════════════════════════════ */}
-      <section className="bg-navy-light py-20">
+      <section style={{ background: "#FAFAF9" }} className="py-24">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-14">
-            <SectionLabel>How It Works</SectionLabel>
-            <SectionHeading>Your Path to Transformation</SectionHeading>
-            <p className="text-lg text-charcoal max-w-2xl mx-auto leading-relaxed">
-              No guesswork. No generic advice. Only guided evolution — from
-              where you are to where you can be.
+          <div className="mb-14">
+            <Label>The Hidden Potential Method</Label>
+            <h2
+              className="font-bold leading-tight mb-5"
+              style={{
+                fontFamily: "var(--font-display)",
+                fontSize: "clamp(1.75rem, 3vw, 2.5rem)",
+                color: "#0f0f1a",
+                maxWidth: "480px",
+              }}
+            >
+              System. Science. Structure.
+            </h2>
+            <p
+              className="leading-relaxed"
+              style={{ color: "#6b7280", maxWidth: "500px", fontFamily: "var(--font-body)", fontSize: "1.0625rem" }}
+            >
+              Three foundational principles that make transformation reliable,
+              repeatable, and real.
             </p>
           </div>
 
-          {/* Steps grid */}
-          <div className="grid md:grid-cols-4 gap-5 mb-10">
+          {/* 3 Pillars — CSS hover via card-hover class */}
+          <div className="grid md:grid-cols-3 gap-5 mb-10">
+            {pillars.map((p, i) => (
+              <div
+                key={p.title}
+                className={`bg-white rounded-2xl p-8 card-hover ${p.hoverClass}`}
+                style={{
+                  border: "1px solid rgba(0,0,0,0.07)",
+                  boxShadow: "0 2px 8px rgba(0,0,0,0.04)",
+                }}
+              >
+                <p
+                  className="text-5xl font-bold mb-4"
+                  style={{
+                    fontFamily: "var(--font-display)",
+                    color: pillarAccent[i],
+                    opacity: 0.12,
+                    lineHeight: 1,
+                  }}
+                >
+                  {p.num}
+                </p>
+                <h3
+                  className="font-bold mb-3 text-xl"
+                  style={{ fontFamily: "var(--font-display)", color: "#0f0f1a" }}
+                >
+                  {p.title}
+                </h3>
+                <p
+                  className="text-sm leading-relaxed"
+                  style={{ color: "#6b7280", fontFamily: "var(--font-body)" }}
+                >
+                  {p.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* 4 Growth Stages */}
+          <div className="rounded-2xl p-8" style={{ background: "#0f0f1a" }}>
+            <p
+              className="text-[11px] font-bold uppercase tracking-widest mb-8"
+              style={{ color: "#D4A843", fontFamily: "var(--font-body)" }}
+            >
+              4 Stages of Growth
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              {growthStages.map((s, i) => (
+                <div key={s.label} className="flex flex-col items-start relative">
+                  {i < growthStages.length - 1 && (
+                    <div
+                      className="hidden md:block absolute top-4 h-px"
+                      style={{
+                        left: "calc(28px + 12px)",
+                        right: "-16px",
+                        background: "rgba(255,255,255,0.08)",
+                      }}
+                      aria-hidden="true"
+                    />
+                  )}
+                  <div
+                    className="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold mb-4 flex-shrink-0 relative z-10 text-white"
+                    style={{ background: "rgba(111,0,255,0.35)", fontFamily: "var(--font-body)" }}
+                  >
+                    {s.num}
+                  </div>
+                  <p
+                    className="font-bold text-sm mb-1 text-white"
+                    style={{ fontFamily: "var(--font-display)" }}
+                  >
+                    {s.label}
+                  </p>
+                  <p
+                    className="text-xs leading-relaxed"
+                    style={{ color: "rgba(255,255,255,0.45)", fontFamily: "var(--font-body)" }}
+                  >
+                    {s.desc}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════
+          4. PROGRAMS — Bento grid
+          Asymmetric: AEL featured (4/6 cols wide)
+      ═══════════════════════════════════════════ */}
+      <section id="programs" className="bg-white py-24">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="mb-14">
+            <Label>Transformational Pathways</Label>
+            <h2
+              className="font-bold leading-tight mb-4"
+              style={{
+                fontFamily: "var(--font-display)",
+                fontSize: "clamp(1.75rem, 3vw, 2.5rem)",
+                color: "#0f0f1a",
+              }}
+            >
+              Choose Your Growth Pathway
+            </h2>
+            <p
+              className="leading-relaxed"
+              style={{ color: "#6b7280", maxWidth: "520px", fontFamily: "var(--font-body)", fontSize: "1.0625rem" }}
+            >
+              Every program is assessment-based, structured, and designed to
+              take you from where you are to where you want to be.
+            </p>
+          </div>
+
+          {/* Bento grid — no symmetry, features AEL prominently */}
+          <div className="grid grid-cols-1 md:grid-cols-6 gap-4">
+
+            {/* AEL — Featured, 4/6 cols, taller */}
+            <Link
+              href={programs[0].href}
+              className={`group md:col-span-4 rounded-2xl p-8 flex flex-col justify-between card-hover ${programs[0].hoverClass}`}
+              style={{
+                background: programs[0].lightBg,
+                border: `1px solid ${programs[0].borderBase}`,
+                minHeight: "300px",
+              }}
+            >
+              <div>
+                <div className="flex items-center gap-3 mb-5">
+                  <span
+                    className="text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider"
+                    style={{ background: `${programs[0].accent}18`, color: programs[0].accent, fontFamily: "var(--font-body)" }}
+                  >
+                    {programs[0].ages}
+                  </span>
+                  <span
+                    className="text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider"
+                    style={{ background: `${programs[0].accent}0D`, color: `${programs[0].accent}99`, fontFamily: "var(--font-body)" }}
+                  >
+                    Featured Program
+                  </span>
+                </div>
+                <h3
+                  className="font-bold mb-3 leading-tight"
+                  style={{ fontFamily: "var(--font-display)", fontSize: "1.5rem", color: "#0f0f1a" }}
+                >
+                  {programs[0].name}
+                </h3>
+                <p
+                  className="mb-4 leading-relaxed"
+                  style={{ fontFamily: "var(--font-display)", fontStyle: "italic", color: programs[0].accent, fontSize: "1rem" }}
+                >
+                  {programs[0].tagline}
+                </p>
+                <p
+                  className="text-sm leading-relaxed"
+                  style={{ color: "#6b7280", fontFamily: "var(--font-body)" }}
+                >
+                  {programs[0].desc}
+                </p>
+              </div>
+              <div
+                className="inline-flex items-center gap-2 text-sm font-semibold mt-6"
+                style={{ color: programs[0].accent, fontFamily: "var(--font-body)" }}
+              >
+                Explore Pathway
+                <Chevron className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform duration-200" />
+              </div>
+            </Link>
+
+            {/* Communication — 2/6 cols */}
+            <Link
+              href={programs[1].href}
+              className={`group md:col-span-2 rounded-2xl p-7 flex flex-col justify-between card-hover ${programs[1].hoverClass}`}
+              style={{
+                background: programs[1].lightBg,
+                border: `1px solid ${programs[1].borderBase}`,
+                minHeight: "300px",
+              }}
+            >
+              <div>
+                <span
+                  className="text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4 inline-block"
+                  style={{ background: `${programs[1].accent}18`, color: programs[1].accent, fontFamily: "var(--font-body)" }}
+                >
+                  {programs[1].ages}
+                </span>
+                <h3
+                  className="font-bold mb-2 leading-tight"
+                  style={{ fontFamily: "var(--font-display)", fontSize: "1.2rem", color: "#0f0f1a" }}
+                >
+                  {programs[1].name}
+                </h3>
+                <p
+                  className="text-sm leading-relaxed"
+                  style={{ fontFamily: "var(--font-display)", fontStyle: "italic", color: programs[1].accent }}
+                >
+                  {programs[1].tagline}
+                </p>
+              </div>
+              <div
+                className="inline-flex items-center gap-1.5 text-sm font-semibold mt-5"
+                style={{ color: programs[1].accent, fontFamily: "var(--font-body)" }}
+              >
+                Explore <Chevron className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform duration-200" />
+              </div>
+            </Link>
+
+            {/* Row 2: Women, TTT, Art Therapy — 2 cols each */}
+            {programs.slice(2).map((prog) => (
+              <Link
+                key={prog.name}
+                href={prog.href}
+                className={`group md:col-span-2 rounded-2xl p-7 flex flex-col justify-between card-hover ${prog.hoverClass}`}
+                style={{
+                  background: prog.lightBg,
+                  border: `1px solid ${prog.borderBase}`,
+                  minHeight: "220px",
+                }}
+              >
+                <div>
+                  <span
+                    className="text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4 inline-block"
+                    style={{ background: `${prog.accent}18`, color: prog.accent, fontFamily: "var(--font-body)" }}
+                  >
+                    {prog.ages}
+                  </span>
+                  <h3
+                    className="font-bold mb-2 leading-snug"
+                    style={{ fontFamily: "var(--font-display)", fontSize: "1.1rem", color: "#0f0f1a" }}
+                  >
+                    {prog.name}
+                  </h3>
+                  <p
+                    className="text-sm leading-relaxed"
+                    style={{ fontFamily: "var(--font-display)", fontStyle: "italic", color: prog.accent }}
+                  >
+                    {prog.tagline}
+                  </p>
+                </div>
+                <div
+                  className="inline-flex items-center gap-1.5 text-sm font-semibold mt-5"
+                  style={{ color: prog.accent, fontFamily: "var(--font-body)" }}
+                >
+                  Explore <Chevron className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform duration-200" />
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          {/* Assessment prompt */}
+          <div
+            className="mt-12 rounded-2xl p-8 flex flex-col sm:flex-row items-center justify-between gap-6"
+            style={{ background: "#F3E8FF", border: "1px solid rgba(111,0,255,0.1)" }}
+          >
+            <div>
+              <p
+                className="font-bold mb-1"
+                style={{ fontFamily: "var(--font-display)", color: "#0f0f1a", fontSize: "1.15rem" }}
+              >
+                Not sure where to start?
+              </p>
+              <p
+                className="text-sm"
+                style={{ color: "#6b7280", fontFamily: "var(--font-body)" }}
+              >
+                Take a free structured assessment and receive your personalised pathway.
+              </p>
+            </div>
+            <Link
+              href="/assessment"
+              className="btn-purple inline-flex items-center gap-2 rounded-xl font-semibold text-white whitespace-nowrap shrink-0"
+              style={{
+                padding: "13px 28px",
+                fontSize: "0.9rem",
+                fontFamily: "var(--font-body)",
+                minHeight: "48px",
+              }}
+            >
+              Take the Free Assessment <Chevron />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════
+          5. DIFFERENTIATORS — Dark section
+      ═══════════════════════════════════════════ */}
+      <section style={{ background: "#0f0f1a" }} className="py-24">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="mb-14">
+            <Label dark>What Sets Us Apart</Label>
+            <h2
+              className="font-bold leading-tight mb-5"
+              style={{
+                fontFamily: "var(--font-display)",
+                fontSize: "clamp(1.75rem, 3vw, 2.5rem)",
+                color: "white",
+              }}
+            >
+              Most programs offer information.
+              <br />
+              <span style={{ color: "#6F00FF" }}>We design transformation.</span>
+            </h2>
+            <p
+              className="leading-relaxed"
+              style={{ color: "#6b7280", maxWidth: "500px", fontFamily: "var(--font-body)", fontSize: "1.0625rem" }}
+            >
+              Six principles that make every Hidden Potential program
+              fundamentally different from what you have experienced before.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {differentiators.map((d, i) => (
+              <div
+                key={d.title}
+                className="rounded-2xl p-6 card-hover-dark"
+                style={{
+                  background: "rgba(255,255,255,0.04)",
+                  border: "1px solid rgba(255,255,255,0.07)",
+                }}
+              >
+                <div className="flex items-start gap-4">
+                  <div
+                    className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
+                    style={{ background: "rgba(13,148,136,0.15)", color: "#0D9488" }}
+                  >
+                    {d.icon}
+                  </div>
+                  <div>
+                    <span
+                      className="text-[10px] font-bold tabular-nums block mb-2"
+                      style={{ color: "rgba(212,168,67,0.4)", fontFamily: "var(--font-body)" }}
+                    >
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <h3
+                      className="font-bold mb-2 leading-snug text-white"
+                      style={{ fontFamily: "var(--font-display)", fontSize: "1rem" }}
+                    >
+                      {d.title}
+                    </h3>
+                    <p
+                      className="text-sm leading-relaxed"
+                      style={{ color: "rgba(255,255,255,0.45)", fontFamily: "var(--font-body)" }}
+                    >
+                      {d.desc}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════
+          6. CREDENTIALS STRIP
+          Trust & Authority: certifications prominently displayed
+      ═══════════════════════════════════════════ */}
+      <section style={{ background: "#FAFAF9" }} className="py-14">
+        <div className="max-w-6xl mx-auto px-6">
+          <p
+            className="text-[11px] font-bold uppercase tracking-widest text-center mb-8"
+            style={{ color: "#D4A843", fontFamily: "var(--font-body)" }}
+          >
+            Credentials &amp; Certifications · Supreet Kaur, Founder
+          </p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {credentials.map((c) => (
+              <span
+                key={c}
+                className="text-sm font-medium px-4 py-2 rounded-full"
+                style={{
+                  fontFamily: "var(--font-body)",
+                  background: "white",
+                  color: "#0f0f1a",
+                  border: "1px solid rgba(212,168,67,0.3)",
+                  boxShadow: "0 1px 4px rgba(0,0,0,0.04)",
+                }}
+              >
+                {c}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════
+          7. TESTIMONIALS — Auto-scroll marquee
+          CSS animation, pauses on hover (in globals.css)
+      ═══════════════════════════════════════════ */}
+      <section className="bg-white py-24 overflow-hidden">
+        <div className="max-w-6xl mx-auto px-6 mb-12">
+          <Label>Success Stories</Label>
+          <h2
+            className="font-bold leading-tight"
+            style={{
+              fontFamily: "var(--font-display)",
+              fontSize: "clamp(1.75rem, 3vw, 2.5rem)",
+              color: "#0f0f1a",
+            }}
+          >
+            Transformations That Speak
+          </h2>
+        </div>
+
+        {/* Marquee — duplicated for seamless loop */}
+        <div className="flex overflow-hidden">
+          <div className="animate-marquee flex gap-5 shrink-0" aria-label="Testimonials carousel">
+            {[...testimonials, ...testimonials].map((t, i) => (
+              <article
+                key={`${t.name}-${i}`}
+                className="shrink-0 rounded-2xl p-7 flex flex-col"
+                style={{
+                  width: "340px",
+                  background: "#FAFAF9",
+                  border: "1px solid rgba(0,0,0,0.07)",
+                  borderLeft: "3px solid #D4A843",
+                  boxShadow: "0 2px 8px rgba(0,0,0,0.04)",
+                }}
+              >
+                <svg
+                  className="w-7 h-7 mb-4 flex-shrink-0"
+                  fill="#D4A843"
+                  opacity="0.3"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                >
+                  <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+                </svg>
+                <p
+                  className="text-sm leading-relaxed mb-6 flex-1"
+                  style={{ fontFamily: "var(--font-display)", fontStyle: "italic", color: "#1c1c2e" }}
+                >
+                  {t.quote}
+                </p>
+                <div className="flex items-center gap-3">
+                  <div
+                    className="w-9 h-9 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 text-white"
+                    style={{ background: "#0f0f1a", fontFamily: "var(--font-body)" }}
+                  >
+                    {t.initial}
+                  </div>
+                  <div>
+                    <p
+                      className="text-sm font-bold leading-tight"
+                      style={{ fontFamily: "var(--font-display)", color: "#0f0f1a" }}
+                    >
+                      {t.name}
+                    </p>
+                    <p
+                      className="text-xs mt-0.5"
+                      style={{ color: "#6b7280", fontFamily: "var(--font-body)" }}
+                    >
+                      {t.role}
+                    </p>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+
+        <div className="text-center mt-12">
+          <Link href="/success-stories" className="text-link-teal inline-flex items-center gap-2 text-sm font-semibold">
+            Read More Success Stories <Chevron />
+          </Link>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════
+          8. HOW IT WORKS
+      ═══════════════════════════════════════════ */}
+      <section style={{ background: "#F3E8FF" }} className="py-24">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-14">
+            <Label>How It Works</Label>
+            <h2
+              className="font-bold leading-tight mb-4"
+              style={{
+                fontFamily: "var(--font-display)",
+                fontSize: "clamp(1.75rem, 3vw, 2.5rem)",
+                color: "#0f0f1a",
+              }}
+            >
+              Your Path to Transformation
+            </h2>
+            <p
+              className="leading-relaxed mx-auto"
+              style={{ color: "#6b7280", maxWidth: "500px", fontFamily: "var(--font-body)", fontSize: "1.0625rem" }}
+            >
+              No guesswork. No generic advice. Only guided evolution.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-4 gap-5">
             {enrollmentSteps.map((s, i) => (
               <div key={s.step} className="relative">
-                {/* Connector arrow between cards on desktop */}
                 {i < enrollmentSteps.length - 1 && (
-                  <div className="hidden md:flex absolute top-7 -right-3 z-10 w-6 justify-center">
-                    <svg
-                      className="w-4 h-4 text-primary-gold"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth={2}
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M9 5l7 7-7 7" />
-                    </svg>
-                  </div>
+                  <div
+                    className="hidden md:block absolute top-7 z-10"
+                    style={{
+                      left: "calc(50% + 28px + 8px)",
+                      right: "-16px",
+                      height: "2px",
+                      background: "rgba(111,0,255,0.15)",
+                    }}
+                    aria-hidden="true"
+                  />
                 )}
-
-                <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200 h-full">
-                  {/* Step circle */}
-                  <div className="w-14 h-14 rounded-full bg-primary-navy flex items-center justify-center mb-5">
-                    <span className="text-lg font-extrabold text-primary-gold tabular-nums">
+                <div
+                  className="rounded-2xl p-6 h-full"
+                  style={{ background: "white", border: "1px solid rgba(111,0,255,0.08)" }}
+                >
+                  <div
+                    className="w-14 h-14 rounded-2xl flex items-center justify-center mb-5"
+                    style={{ background: "#0f0f1a" }}
+                  >
+                    <span
+                      className="text-lg font-bold tabular-nums"
+                      style={{ fontFamily: "var(--font-display)", color: "#D4A843" }}
+                    >
                       {s.step}
                     </span>
                   </div>
-
-                  <h3 className="text-[15px] font-bold text-primary-navy mb-2 leading-snug">
+                  <h3
+                    className="font-bold mb-2 leading-snug"
+                    style={{ fontFamily: "var(--font-display)", color: "#0f0f1a", fontSize: "1rem" }}
+                  >
                     {s.title}
                   </h3>
-                  <p className="text-sm text-charcoal/65 leading-relaxed">{s.desc}</p>
+                  <p
+                    className="text-sm leading-relaxed"
+                    style={{ color: "#6b7280", fontFamily: "var(--font-body)" }}
+                  >
+                    {s.desc}
+                  </p>
                 </div>
               </div>
             ))}
           </div>
 
-          {/* Closing line */}
           <p
-            className="text-center text-base text-charcoal/50"
-            style={{ fontFamily: "var(--font-accent)", fontStyle: "italic" }}
+            className="text-center text-base mt-10"
+            style={{ fontFamily: "var(--font-display)", fontStyle: "italic", color: "rgba(0,0,0,0.35)" }}
           >
             &ldquo;No guesswork. Only guided evolution.&rdquo;
           </p>
@@ -837,19 +1117,26 @@ export default function HomePage() {
       </section>
 
       {/* ═══════════════════════════════════════════
-          9. FAQ
+          9. FAQ — Native <details> accordion
+          No JS required, works in Server Components
       ═══════════════════════════════════════════ */}
-      <section id="faq" className="bg-white py-20">
-        <div className="max-w-4xl mx-auto px-6">
+      <section id="faq" className="bg-white py-24">
+        <div className="max-w-3xl mx-auto px-6">
           <div className="text-center mb-12">
-            <SectionLabel>Frequently Asked Questions</SectionLabel>
-            <SectionHeading>Common Questions About Our Programs</SectionHeading>
-            <p className="text-lg text-charcoal max-w-2xl mx-auto leading-relaxed">
-              Everything you need to know before taking the next step.
-            </p>
+            <Label>Frequently Asked Questions</Label>
+            <h2
+              className="font-bold leading-tight mb-4"
+              style={{
+                fontFamily: "var(--font-display)",
+                fontSize: "clamp(1.75rem, 3vw, 2.25rem)",
+                color: "#0f0f1a",
+              }}
+            >
+              Common Questions About Our Programs
+            </h2>
           </div>
 
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-3">
             {[
               {
                 q: "What age groups do Hidden Potential's programs cater to?",
@@ -876,31 +1163,53 @@ export default function HomePage() {
                 a: "Yes. Hidden Potential has structured institutional partnerships for schools and corporate teams. School programs include student life skills curriculum, teacher training, and parent engagement sessions — all NEP 2020 aligned. Corporate offerings include group workshops, communication training, and emotional intelligence sessions. Contact us to discuss a customised annual program.",
               },
             ].map(({ q, a }) => (
-              <div
+              <details
                 key={q}
-                className="rounded-lg border border-gray-200 shadow-sm overflow-hidden"
+                className="group rounded-2xl overflow-hidden"
+                style={{ border: "1px solid rgba(0,0,0,0.07)" }}
               >
-                <div
-                  className="px-6 py-4 border-l-4 border-primary-teal"
-                  style={{ background: "#F8F6F2" }}
+                <summary
+                  className="flex items-center justify-between gap-4 px-6 py-5"
+                  style={{ background: "#FAFAF9", fontFamily: "var(--font-body)" }}
                 >
-                  <p className="text-[15px] font-bold text-primary-navy leading-snug">
+                  <span
+                    className="font-semibold leading-snug"
+                    style={{ color: "#0f0f1a", fontSize: "0.9375rem" }}
+                  >
                     {q}
+                  </span>
+                  <svg
+                    className="faq-chevron w-4 h-4 flex-shrink-0"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="#6b7280"
+                    strokeWidth={2.5}
+                    aria-hidden="true"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </summary>
+                <div
+                  className="px-6 py-5"
+                  style={{ background: "white", borderTop: "1px solid rgba(0,0,0,0.05)" }}
+                >
+                  <p
+                    className="text-sm leading-relaxed"
+                    style={{ color: "#6b7280", fontFamily: "var(--font-body)" }}
+                  >
+                    {a}
                   </p>
                 </div>
-                <div className="px-6 py-4 bg-white">
-                  <p className="text-sm text-charcoal leading-relaxed">{a}</p>
-                </div>
-              </div>
+              </details>
             ))}
           </div>
 
-          <p className="text-center text-sm text-charcoal/70 mt-10">
+          <p
+            className="text-center text-sm mt-10"
+            style={{ color: "#6b7280", fontFamily: "var(--font-body)" }}
+          >
             Have a different question?{" "}
-            <Link
-              href="/contact"
-              className="font-semibold text-primary-teal hover:underline"
-            >
+            <Link href="/contact" className="text-link-teal font-semibold">
               Contact us directly →
             </Link>
           </p>
@@ -908,24 +1217,34 @@ export default function HomePage() {
       </section>
 
       {/* ═══════════════════════════════════════════
-          10. FINAL CTA
+          10. FINAL CTA — Dark editorial
+          Credentials grid = Trust & Authority's primary signal
       ═══════════════════════════════════════════ */}
-      <section
-        className="py-24"
-        style={{
-          background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)",
-        }}
-      >
+      <section style={{ background: "#0f0f1a" }} className="py-28">
         <div className="max-w-3xl mx-auto px-6 text-center">
-          <SectionLabel light>Begin Your Journey</SectionLabel>
+          <Label dark>Begin Your Journey</Label>
 
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-6 leading-tight">
+          <h2
+            className="font-bold leading-tight text-white mb-6"
+            style={{
+              fontFamily: "var(--font-display)",
+              fontSize: "clamp(2rem, 4vw, 3.25rem)",
+            }}
+          >
             You don&apos;t need more motivation.
-            <br className="hidden sm:block" />
-            You need structured transformation.
+            <br />
+            <span style={{ color: "#6F00FF" }}>You need structured transformation.</span>
           </h2>
 
-          <p className="text-lg text-white/65 mb-12 leading-relaxed max-w-2xl mx-auto">
+          <p
+            className="mb-12 leading-relaxed mx-auto"
+            style={{
+              color: "#6b7280",
+              maxWidth: "500px",
+              fontFamily: "var(--font-body)",
+              fontSize: "1.0625rem",
+            }}
+          >
             Take the Life Skills Assessment and receive your personalized
             growth pathway — designed for exactly where you are today.
           </p>
@@ -933,32 +1252,41 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-14">
             <Link
               href="/assessment"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 text-sm font-bold text-white bg-primary-teal hover:bg-teal-dark rounded-md transition-colors"
+              className="btn-teal inline-flex items-center justify-center gap-2 rounded-xl font-semibold text-white"
+              style={{
+                padding: "16px 36px",
+                fontSize: "0.9375rem",
+                fontFamily: "var(--font-body)",
+                minHeight: "56px",
+              }}
             >
-              Begin Your Journey <ArrowIcon />
+              Begin Your Journey <Chevron />
             </Link>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center px-8 py-4 text-sm font-bold text-white border-2 border-white/25 hover:border-white/60 hover:bg-white/5 rounded-md transition-colors"
+              className="btn-outline-dark inline-flex items-center justify-center rounded-xl font-semibold"
+              style={{
+                padding: "16px 36px",
+                fontSize: "0.9375rem",
+                fontFamily: "var(--font-body)",
+                minHeight: "56px",
+              }}
             >
               Book a Discovery Call
             </Link>
           </div>
 
-          {/* Credential badges */}
+          {/* Credential badges — Trust & Authority's key signal */}
           <div className="flex flex-wrap justify-center gap-2.5">
-            {[
-              "NLP Practitioner",
-              "Harvard Life Skills Affiliate",
-              "Masters in Psychology",
-              "MSME Registered",
-              "Skill India Certified",
-              "Published Author",
-              "NEP 2020 Certified (IGNOU)",
-            ].map((badge) => (
+            {credentials.map((badge) => (
               <span
                 key={badge}
-                className="px-3 py-1 text-xs font-semibold text-primary-gold/70 border border-primary-gold/25 rounded-full"
+                className="px-3 py-1.5 text-[11px] font-semibold rounded-full"
+                style={{
+                  fontFamily: "var(--font-body)",
+                  color: "rgba(212,168,67,0.7)",
+                  border: "1px solid rgba(212,168,67,0.2)",
+                }}
               >
                 {badge}
               </span>

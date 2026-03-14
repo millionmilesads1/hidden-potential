@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Terms of Service | Hidden Potential',
+  title: { absolute: 'Terms of Service | Hidden Potential' },
   description:
     'Terms and conditions for using Hidden Potential website and enrolling in life skills programs.',
   alternates: {
@@ -18,7 +18,7 @@ export default function TermsPage() {
     <main>
       {/* ── HEADER ──────────────────────────────────────────────────────────── */}
       <section
-        style={{ background: 'linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)' }}
+        style={{ background: '#0f0f1a' }}
         className="pt-24 pb-16 text-center"
       >
         <div className="max-w-3xl mx-auto px-6">

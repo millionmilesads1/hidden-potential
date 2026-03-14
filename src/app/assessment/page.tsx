@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import AssessmentClient from './AssessmentClient';
 
 export const metadata: Metadata = {
-  title: 'Life Skills Assessment | Discover Your Growth Pathway | Hidden Potential',
+  title: { absolute: 'Life Skills Assessment | Discover Your Growth Pathway | Hidden Potential' },
   description:
     'Take a structured life skills assessment to identify strengths, gaps, and the right development pathway. Confidential evaluation by certified professionals. Free consultation.',
   openGraph: {

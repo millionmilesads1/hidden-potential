@@ -27,8 +27,7 @@ import Link from "next/link";
 
 // ── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title:
-    "Books & Resources | Life Skills, NLP & Personal Development | Hidden Potential",
+  title: { absolute: "Books & Resources | Life Skills, NLP & Personal Development | Hidden Potential" },
   description:
     "Recommended books and resources on life skills, NLP, emotional intelligence, and personal development. Curated by Supreet Kaur, founder of Hidden Potential. Free resources and reading lists for students, professionals, and trainers.",
   openGraph: {
@@ -299,7 +298,7 @@ export default function ResourcesPage() {
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
         className="relative overflow-hidden"
-        style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }}
+        style={{ background: "#0f0f1a" }}
       >
         {/* Top-right purple glow */}
         <div
@@ -314,7 +313,7 @@ export default function ResourcesPage() {
           className="absolute bottom-0 -left-16 w-64 h-64 rounded-full pointer-events-none"
           style={{
             background:
-              "radial-gradient(circle at center, rgba(200,169,81,0.07) 0%, transparent 70%)",
+              "radial-gradient(circle at center, rgba(212,168,67,0.07) 0%, transparent 70%)",
           }}
         />
 
@@ -658,7 +657,7 @@ export default function ResourcesPage() {
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
         className="relative overflow-hidden py-20"
-        style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }}
+        style={{ background: "#0f0f1a" }}
       >
         {/* Glow */}
         <div

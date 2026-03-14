@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Life Skills Blog | Tips, Research & Insights | Hidden Potential',
+  title: { absolute: 'Life Skills Blog | Tips, Research & Insights | Hidden Potential' },
   description:
     'Expert articles on emotional intelligence, communication, confidence building, NLP, and structured personal development. Written by certified life skills professionals.',
   openGraph: {
@@ -218,22 +218,22 @@ export default function BlogPage() {
 
       {/* ── SECTION 1: HERO ─────────────────────────────────────────────────── */}
       <section
-        style={{ background: 'linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)' }}
+        style={{ background: '#0f0f1a' }}
         className="relative pt-24 pb-20 text-center overflow-hidden"
       >
         <div className="absolute inset-0 pointer-events-none">
           <div
-            style={{ background: 'radial-gradient(circle at 85% 20%, rgba(109,40,217,0.08) 0%, transparent 60%)' }}
+            style={{ background: 'radial-gradient(circle at 85% 20%, rgba(111,0,255,0.08) 0%, transparent 60%)' }}
             className="absolute inset-0"
           />
           <div
-            style={{ background: 'radial-gradient(circle at 15% 80%, rgba(200,169,81,0.06) 0%, transparent 50%)' }}
+            style={{ background: 'radial-gradient(circle at 15% 80%, rgba(212,168,67,0.06) 0%, transparent 50%)' }}
             className="absolute inset-0"
           />
         </div>
 
         <div className="relative max-w-3xl mx-auto px-6">
-          <div className="inline-flex items-center px-3 py-1 rounded-full mb-6" style={{ background: 'rgba(124,58,237,0.12)' }}>
+          <div className="inline-flex items-center px-3 py-1 rounded-full mb-6" style={{ background: 'rgba(111,0,255,0.12)' }}>
             <span className="text-[11px] font-bold uppercase tracking-widest text-primary-teal">
               Life Skills Blog
             </span>
@@ -395,12 +395,12 @@ export default function BlogPage() {
 
       {/* ── SECTION 5: FINAL CTA ────────────────────────────────────────────── */}
       <section
-        style={{ background: 'linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)' }}
+        style={{ background: '#0f0f1a' }}
         className="relative py-20 text-center overflow-hidden"
       >
         <div className="absolute inset-0 pointer-events-none">
           <div
-            style={{ background: 'radial-gradient(circle at 50% 50%, rgba(109,40,217,0.12) 0%, transparent 70%)' }}
+            style={{ background: 'radial-gradient(circle at 50% 50%, rgba(111,0,255,0.12) 0%, transparent 70%)' }}
             className="absolute inset-0"
           />
         </div>

@@ -6,13 +6,11 @@ import React from "react";
    SEO METADATA
 ───────────────────────────────────────────────────────────────────────────── */
 export const metadata: Metadata = {
-  title:
-    "Emotional Intelligence Coaching in Delhi | Self-Awareness & Empathy | Hidden Potential",
+  title: { absolute: "Emotional Intelligence Coaching in Delhi | Self-Awareness & Empathy | Hidden Potential" },
   description:
     "Emotional intelligence coaching in Delhi. Develop self-awareness, empathy, emotional regulation & social skills through structured training. For students, professionals & women. Dwarka & Online.",
   openGraph: {
-    title:
-      "Emotional Intelligence Coaching in Delhi | Self-Awareness & Empathy | Hidden Potential",
+    title: "Emotional Intelligence Coaching in Delhi | Self-Awareness & Empathy | Hidden Potential",
     description:
       "Emotional intelligence coaching in Delhi. Develop self-awareness, empathy, emotional regulation & social skills through structured training. For students, professionals & women. Dwarka & Online.",
     url: "https://hiddenpotentialskills.com/services/emotional-intelligence",
@@ -20,8 +18,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title:
-      "Emotional Intelligence Coaching in Delhi | Self-Awareness & Empathy | Hidden Potential",
+    title: "Emotional Intelligence Coaching in Delhi | Self-Awareness & Empathy | Hidden Potential",
     description:
       "Emotional intelligence coaching in Delhi. Develop self-awareness, empathy, emotional regulation & social skills through structured training. For students, professionals & women. Dwarka & Online.",
   },
@@ -155,7 +152,7 @@ export default function EmotionalIntelligencePage() {
         ═══════════════════════════════════════════════════════════════ */}
         <section
           className="relative overflow-hidden"
-          style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }}
+          style={{ background: "#0f0f1a" }}
         >
           <div
             className="absolute inset-0 pointer-events-none"
@@ -168,7 +165,7 @@ export default function EmotionalIntelligencePage() {
             className="absolute bottom-0 -left-16 w-64 h-64 rounded-full pointer-events-none"
             style={{
               background:
-                "radial-gradient(circle at center, rgba(200,169,81,0.07) 0%, transparent 70%)",
+                "radial-gradient(circle at center, rgba(212,168,67,0.07) 0%, transparent 70%)",
             }}
           />
 
@@ -278,7 +275,7 @@ export default function EmotionalIntelligencePage() {
             <SectionLabel>Why Emotional Intelligence Matters</SectionLabel>
             <h2
               className="text-2xl md:text-3xl font-bold mb-8 leading-snug"
-              style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}
+              style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
             >
               Why Emotional Intelligence Is the Most Important Skill Nobody Teaches
             </h2>
@@ -328,7 +325,7 @@ export default function EmotionalIntelligencePage() {
             </div>
             <h2
               className="text-2xl md:text-3xl font-bold text-center mb-5 leading-snug max-w-3xl mx-auto"
-              style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}
+              style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
             >
               Emotional Intelligence Skills Developed at Hidden Potential in Delhi
             </h2>
@@ -345,7 +342,7 @@ export default function EmotionalIntelligencePage() {
             <div className="grid md:grid-cols-2 gap-6">
               {/* Card 01 */}
               <div className="rounded-lg border border-[#E8E8E8] overflow-hidden">
-                <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#7C3AED" }}>
+                <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#0D9488" }}>
                   <span className="text-white/60 text-xs font-bold">01</span>
                   <h3 className="text-sm font-bold text-white" style={{ fontFamily: "var(--font-display)" }}>
                     Self-Awareness — Understanding Your Emotional Landscape
@@ -369,7 +366,7 @@ export default function EmotionalIntelligencePage() {
 
               {/* Card 02 */}
               <div className="rounded-lg border border-[#E8E8E8] overflow-hidden">
-                <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#7C3AED" }}>
+                <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#0D9488" }}>
                   <span className="text-white/60 text-xs font-bold">02</span>
                   <h3 className="text-sm font-bold text-white" style={{ fontFamily: "var(--font-display)" }}>
                     Self-Regulation — Managing Emotions Under Pressure
@@ -395,7 +392,7 @@ export default function EmotionalIntelligencePage() {
 
               {/* Card 03 */}
               <div className="rounded-lg border border-[#E8E8E8] overflow-hidden">
-                <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#7C3AED" }}>
+                <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#0D9488" }}>
                   <span className="text-white/60 text-xs font-bold">03</span>
                   <h3 className="text-sm font-bold text-white" style={{ fontFamily: "var(--font-display)" }}>
                     Motivation — Building Internal Drive and Resilience
@@ -417,7 +414,7 @@ export default function EmotionalIntelligencePage() {
 
               {/* Card 04 */}
               <div className="rounded-lg border border-[#E8E8E8] overflow-hidden">
-                <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#7C3AED" }}>
+                <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#0D9488" }}>
                   <span className="text-white/60 text-xs font-bold">04</span>
                   <h3 className="text-sm font-bold text-white" style={{ fontFamily: "var(--font-display)" }}>
                     Empathy — Understanding Others Accurately
@@ -440,7 +437,7 @@ export default function EmotionalIntelligencePage() {
 
               {/* Card 05 — spans full width on md+ */}
               <div className="rounded-lg border border-[#E8E8E8] overflow-hidden md:col-span-2">
-                <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#7C3AED" }}>
+                <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#0D9488" }}>
                   <span className="text-white/60 text-xs font-bold">05</span>
                   <h3 className="text-sm font-bold text-white" style={{ fontFamily: "var(--font-display)" }}>
                     Social Skills — Building and Managing Relationships
@@ -476,7 +473,7 @@ export default function EmotionalIntelligencePage() {
             </div>
             <h2
               className="text-2xl md:text-3xl font-bold text-center mb-5 leading-snug max-w-3xl mx-auto"
-              style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}
+              style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
             >
               Who Benefits from Emotional Intelligence Coaching in Delhi?
             </h2>
@@ -495,7 +492,7 @@ export default function EmotionalIntelligencePage() {
               <div className="bg-white rounded-lg p-5 border border-[#E8E8E8]">
                 <div className="flex items-start gap-3 mb-3">
                   <span className="text-[11px] font-bold text-primary-teal rounded-full px-2 py-0.5 shrink-0 mt-0.5" style={{ background: "#EDE9FE" }}>01</span>
-                  <h3 className="text-sm font-bold leading-snug" style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}>
+                  <h3 className="text-sm font-bold leading-snug" style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}>
                     Students Developing Emotional Foundations (Ages 8-21)
                   </h3>
                 </div>
@@ -515,7 +512,7 @@ export default function EmotionalIntelligencePage() {
               <div className="bg-white rounded-lg p-5 border border-[#E8E8E8]">
                 <div className="flex items-start gap-3 mb-3">
                   <span className="text-[11px] font-bold text-primary-teal rounded-full px-2 py-0.5 shrink-0 mt-0.5" style={{ background: "#EDE9FE" }}>02</span>
-                  <h3 className="text-sm font-bold leading-snug" style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}>
+                  <h3 className="text-sm font-bold leading-snug" style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}>
                     Professionals Developing Leadership Presence
                   </h3>
                 </div>
@@ -536,7 +533,7 @@ export default function EmotionalIntelligencePage() {
               <div className="bg-white rounded-lg p-5 border border-[#E8E8E8]">
                 <div className="flex items-start gap-3 mb-3">
                   <span className="text-[11px] font-bold text-primary-teal rounded-full px-2 py-0.5 shrink-0 mt-0.5" style={{ background: "#EDE9FE" }}>03</span>
-                  <h3 className="text-sm font-bold leading-snug" style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}>
+                  <h3 className="text-sm font-bold leading-snug" style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}>
                     Women Rebuilding Emotional Resilience
                   </h3>
                 </div>
@@ -556,7 +553,7 @@ export default function EmotionalIntelligencePage() {
               <div className="bg-white rounded-lg p-5 border border-[#E8E8E8]">
                 <div className="flex items-start gap-3 mb-3">
                   <span className="text-[11px] font-bold text-primary-teal rounded-full px-2 py-0.5 shrink-0 mt-0.5" style={{ background: "#EDE9FE" }}>04</span>
-                  <h3 className="text-sm font-bold leading-snug" style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}>
+                  <h3 className="text-sm font-bold leading-snug" style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}>
                     Aspiring Trainers and Educators
                   </h3>
                 </div>
@@ -575,7 +572,7 @@ export default function EmotionalIntelligencePage() {
               <div className="bg-white rounded-lg p-5 border border-[#E8E8E8]">
                 <div className="flex items-start gap-3 mb-3">
                   <span className="text-[11px] font-bold text-primary-teal rounded-full px-2 py-0.5 shrink-0 mt-0.5" style={{ background: "#EDE9FE" }}>05</span>
-                  <h3 className="text-sm font-bold leading-snug" style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}>
+                  <h3 className="text-sm font-bold leading-snug" style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}>
                     Anyone Seeking Better Relationships and Self-Understanding
                   </h3>
                 </div>
@@ -601,7 +598,7 @@ export default function EmotionalIntelligencePage() {
             </div>
             <h2
               className="text-2xl md:text-3xl font-bold text-center mb-12 leading-snug max-w-3xl mx-auto"
-              style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}
+              style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
             >
               Why Emotional Intelligence Coaching at Hidden Potential Produces Deeper Results
             </h2>
@@ -614,7 +611,7 @@ export default function EmotionalIntelligencePage() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                   </svg>
                 </div>
-                <h3 className="text-sm font-bold mb-2" style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}>
+                <h3 className="text-sm font-bold mb-2" style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}>
                   Psychology-Backed, Structured Approach
                 </h3>
                 <p className="text-sm leading-relaxed" style={{ color: "#6B6B6B" }}>
@@ -633,7 +630,7 @@ export default function EmotionalIntelligencePage() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                   </svg>
                 </div>
-                <h3 className="text-sm font-bold mb-2" style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}>
+                <h3 className="text-sm font-bold mb-2" style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}>
                   NLP Integration for Accelerated Development
                 </h3>
                 <p className="text-sm leading-relaxed" style={{ color: "#6B6B6B" }}>
@@ -652,7 +649,7 @@ export default function EmotionalIntelligencePage() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                   </svg>
                 </div>
-                <h3 className="text-sm font-bold mb-2" style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}>
+                <h3 className="text-sm font-bold mb-2" style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}>
                   Woven Into Every Pathway, Not Standalone
                 </h3>
                 <p className="text-sm leading-relaxed" style={{ color: "#6B6B6B" }}>
@@ -671,7 +668,7 @@ export default function EmotionalIntelligencePage() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                   </svg>
                 </div>
-                <h3 className="text-sm font-bold mb-2" style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}>
+                <h3 className="text-sm font-bold mb-2" style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}>
                   Assessment-Driven Personalisation
                 </h3>
                 <p className="text-sm leading-relaxed" style={{ color: "#6B6B6B" }}>
@@ -695,7 +692,7 @@ export default function EmotionalIntelligencePage() {
             </div>
             <h2
               className="text-2xl md:text-3xl font-bold text-center mb-12 leading-snug"
-              style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}
+              style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
             >
               Common Questions About Emotional Intelligence Coaching in Delhi
             </h2>
@@ -729,7 +726,7 @@ export default function EmotionalIntelligencePage() {
               ].map(({ q, a }) => (
                 <div key={q} className="rounded-lg overflow-hidden border border-[#E8E8E8]">
                   <div className="px-6 py-4 bg-[#F8F6F2] border-l-4 border-primary-teal">
-                    <p className="text-sm font-bold" style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}>{q}</p>
+                    <p className="text-sm font-bold" style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}>{q}</p>
                   </div>
                   <div className="px-6 py-5">
                     <p className="text-sm leading-relaxed" style={{ color: "#2D2D2D" }}>{a}</p>
@@ -745,7 +742,7 @@ export default function EmotionalIntelligencePage() {
         ═══════════════════════════════════════════════════════════════ */}
         <section
           className="relative overflow-hidden py-24"
-          style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }}
+          style={{ background: "#0f0f1a" }}
         >
           <div
             className="absolute inset-0 pointer-events-none"

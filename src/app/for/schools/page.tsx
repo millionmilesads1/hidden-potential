@@ -20,7 +20,7 @@ import Link from "next/link";
 
 // ── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "Life Skills Programs for Schools in Delhi | NEP 2020 Aligned | Hidden Potential",
+  title: { absolute: "Life Skills Programs for Schools in Delhi | NEP 2020 Aligned | Hidden Potential" },
   description:
     "Comprehensive life skills programs for schools in Delhi by certified NLP practitioner Supreet Kaur. 14+ years experience. 5000+ students trained. NEP 2020 aligned. MSME registered. Dwarka, Noida, Gurgaon.",
   openGraph: {
@@ -345,7 +345,7 @@ export default function ForSchoolsPage() {
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
         className="relative overflow-hidden"
-        style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }}
+        style={{ background: "#0f0f1a" }}
       >
         {/* Glows */}
         <div
@@ -359,7 +359,7 @@ export default function ForSchoolsPage() {
           className="absolute bottom-0 -left-16 w-64 h-64 rounded-full pointer-events-none"
           style={{
             background:
-              "radial-gradient(circle at center, rgba(200,169,81,0.07) 0%, transparent 70%)",
+              "radial-gradient(circle at center, rgba(212,168,67,0.07) 0%, transparent 70%)",
           }}
         />
 
@@ -633,7 +633,7 @@ export default function ForSchoolsPage() {
             <div className="flex items-center gap-3 mb-3">
               <div
                 className="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0"
-                style={{ background: "#7C3AED" }}
+                style={{ background: "#0D9488" }}
               >
                 <svg
                   className="w-3.5 h-3.5 text-white"
@@ -720,7 +720,7 @@ export default function ForSchoolsPage() {
                 <div className="flex items-center gap-3 mb-3">
                   <div
                     className="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0"
-                    style={{ background: "#7C3AED" }}
+                    style={{ background: "#0D9488" }}
                   >
                     <svg
                       className="w-3.5 h-3.5 text-white"
@@ -807,7 +807,7 @@ export default function ForSchoolsPage() {
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
         className="relative overflow-hidden py-20"
-        style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }}
+        style={{ background: "#0f0f1a" }}
       >
         {/* Glow */}
         <div

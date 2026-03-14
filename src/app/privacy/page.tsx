@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Hidden Potential',
+  title: { absolute: 'Privacy Policy | Hidden Potential' },
   description:
     'How Hidden Potential collects, uses and protects your personal information. Read our complete privacy policy.',
   alternates: {
@@ -18,7 +18,7 @@ export default function PrivacyPage() {
     <main>
       {/* ── HEADER ──────────────────────────────────────────────────────────── */}
       <section
-        style={{ background: 'linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)' }}
+        style={{ background: '#0f0f1a' }}
         className="pt-24 pb-16 text-center"
       >
         <div className="max-w-3xl mx-auto px-6">

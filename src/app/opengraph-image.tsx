@@ -16,7 +16,7 @@ export default function Image() {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)",
+          background: "#0f0f1a",
           fontFamily: "sans-serif",
           position: "relative",
           overflow: "hidden",
@@ -52,7 +52,7 @@ export default function Image() {
           style={{
             width: 64,
             height: 3,
-            background: "#C8A951",
+            background: "#D4A843",
             borderRadius: 2,
             marginBottom: 28,
           }}
@@ -63,7 +63,7 @@ export default function Image() {
           style={{
             fontSize: 22,
             fontWeight: 700,
-            color: "#C8A951",
+            color: "#D4A843",
             letterSpacing: "0.18em",
             textTransform: "uppercase",
             marginBottom: 20,
@@ -127,7 +127,7 @@ export default function Image() {
                 style={{
                   fontSize: 28,
                   fontWeight: 800,
-                  color: "#C8A951",
+                  color: "#D4A843",
                   lineHeight: 1,
                 }}
               >

@@ -1,26 +1,39 @@
 /* ─────────────────────────────────────────────
-   GOOGLE FONTS — must come before @import "tailwindcss"
+   GOOGLE FONTS
+   Playfair Display  — editorial serif headings
+   DM Sans          — clean modern body
    ───────────────────────────────────────────── */
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;700&family=Lora:ital,wght@1,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&display=swap");
 
 @import "tailwindcss";
 
 /* ─────────────────────────────────────────────
-   TAILWIND v4 THEME — Brand Tokens
+   TAILWIND v4 THEME — Brand Design Tokens
    ───────────────────────────────────────────── */
 @theme {
-  /* ── Colors ── */
-  --color-primary-navy:   #2D1B69;
-  --color-primary-teal:   #7C3AED;
-  --color-primary-gold:   #C8A951;
-  --color-off-white:      #F8F6F2;
-  --color-charcoal:       #2D2D2D;
+  /* ── Core Brand Palette ── */
+  --color-brand-dark:         #0f0f1a;   /* Near-black — hero, footer, dark sections */
+  --color-brand-purple:       #6F00FF;   /* Electric purple — spot accent, NOT gradient bg */
+  --color-brand-teal:         #0D9488;   /* Teal — primary CTAs, links, action */
+  --color-brand-teal-dark:    #0f766e;   /* Teal hover state */
+  --color-brand-gold:         #D4A843;   /* Gold — credentials, labels, premium accent */
+  --color-brand-gold-dark:    #b8882a;   /* Gold hover */
+  --color-brand-light-purple: #F3E8FF;   /* Light purple — card/section backgrounds */
+  --color-brand-light-teal:   #E6F7F5;   /* Light teal — highlights */
+  --color-brand-muted:        #4b5563;   /* Secondary text — meets 5.9:1 contrast on white (WCAG AA) */
 
-  --color-navy-light:     #F3F0FF;
-  --color-teal-light:     #EDE9FE;
-  --color-teal-dark:      #6D28D9;
+  /* ── Semantic aliases (cascade to all existing pages) ── */
+  --color-primary-navy:   #0f0f1a;
+  --color-primary-teal:   #0D9488;
+  --color-primary-gold:   #D4A843;
+  --color-off-white:      #FAFAF9;
+  --color-charcoal:       #1c1c2e;
+
+  --color-navy-light:     #F3E8FF;
+  --color-teal-light:     #E6F7F5;
+  --color-teal-dark:      #0f766e;
   --color-gold-light:     #FBF7EE;
-  --color-gold-dark:      #A68B3E;
+  --color-gold-dark:      #b8882a;
 
   --color-success:        #2D8F5E;
   --color-warning:        #E07A5F;
@@ -31,10 +44,9 @@
   --color-gray-600:       #6B6B6B;
 
   /* ── Font Families ── */
-  --font-display: "Plus Jakarta Sans", sans-serif;
-  --font-body:    "DM Sans", sans-serif;
-  --font-accent:  "Lora", serif;
-
+  --font-display: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-body:    "DM Sans", system-ui, -apple-system, sans-serif;
+  --font-accent:  "Playfair Display", Georgia, serif;
 }
 
 /* ─────────────────────────────────────────────
@@ -43,23 +55,224 @@
 @layer base {
   html {
     font-family: var(--font-body);
-    color: var(--color-charcoal);
-    background-color: var(--color-off-white);
+    color: #1c1c2e;
+    background-color: #FAFAF9;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
-    color: var(--color-primary-navy);
+    color: #0f0f1a;
   }
 
   a {
-    color: var(--color-primary-teal);
+    color: #0D9488;
     text-decoration: none;
   }
 
   a:hover {
-    color: var(--color-teal-dark);
+    color: #0f766e;
   }
+
+  /* ── Accessibility: keyboard focus rings (WCAG 2.4.7) ── */
+  a:focus-visible,
+  button:focus-visible,
+  [tabindex]:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible {
+    outline: 2px solid #6F00FF;
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  /* Skip link: suppress default focus outline (has its own bg styling) */
+  a[href="#main-content"]:focus-visible {
+    outline: none;
+  }
+
+  /* ── Accessibility: respect motion preferences ── */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* ─────────────────────────────────────────────
+   MARQUEE ANIMATION — testimonials auto-scroll
+   Only runs when user hasn't requested reduced motion
+   ───────────────────────────────────────────── */
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .animate-marquee {
+    animation: marquee-scroll 50s linear infinite;
+    will-change: transform;
+  }
+
+  .animate-marquee:hover {
+    animation-play-state: paused;
+  }
+}
+
+/* ─────────────────────────────────────────────
+   GRAIN TEXTURE — hero overlay
+   CSS-only noise, no image file required
+   ───────────────────────────────────────────── */
+.grain-overlay::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+  opacity: 0.025;
+  pointer-events: none;
+}
+
+/* ─────────────────────────────────────────────
+   HOVER EFFECTS — CSS-only, no JS event handlers
+   Safe to use in Next.js Server Components
+   ───────────────────────────────────────────── */
+
+/* Card lifts — used on program bento cards, pillar cards */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  cursor: pointer;
+}
+.card-hover-purple:hover  { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(111,0,255,0.14); border-color: rgba(111,0,255,0.28) !important; }
+.card-hover-teal:hover    { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(13,148,136,0.14); border-color: rgba(13,148,136,0.28) !important; }
+.card-hover-gold:hover    { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(212,168,67,0.14); border-color: rgba(212,168,67,0.28) !important; }
+.card-hover-neutral:hover { transform: translateY(-3px); box-shadow: 0 8px 32px rgba(0,0,0,0.08); }
+
+/* Dark section cards (differentiators, dark bg) */
+.card-hover-dark {
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+.card-hover-dark:hover {
+  background: rgba(111,0,255,0.08) !important;
+  border-color: rgba(111,0,255,0.2) !important;
+}
+
+/* CTA buttons */
+.btn-teal {
+  background: #0D9488;
+  box-shadow: 0 4px 16px rgba(13,148,136,0.38);
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn-teal:hover {
+  background: #0f766e;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(13,148,136,0.45);
+}
+
+.btn-purple {
+  background: #6F00FF;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.btn-purple:hover {
+  background: #5a00d4;
+  transform: translateY(-1px);
+}
+
+.btn-outline-dark {
+  border: 1.5px solid rgba(255,255,255,0.18);
+  color: rgba(255,255,255,0.75);
+  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+.btn-outline-dark:hover {
+  border-color: rgba(255,255,255,0.5);
+  color: white;
+  background: rgba(255,255,255,0.05);
+}
+
+.btn-outline-hero {
+  border: 1.5px solid rgba(255,255,255,0.18);
+  color: rgba(255,255,255,0.75);
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+.btn-outline-hero:hover {
+  border-color: rgba(255,255,255,0.5);
+  color: rgba(255,255,255,1);
+}
+
+/* Footer links */
+.footer-link {
+  color: rgba(255,255,255,0.55);
+  transition: color 0.2s ease;
+}
+.footer-link:hover { color: rgba(255,255,255,0.9); }
+
+.footer-social {
+  color: rgba(255,255,255,0.35);
+  transition: color 0.2s ease;
+}
+.footer-social:hover { color: #D4A843; }
+
+.footer-utility {
+  color: rgba(255,255,255,0.3);
+  transition: color 0.2s ease;
+}
+.footer-utility:hover { color: rgba(255,255,255,0.7); }
+
+.footer-whatsapp {
+  color: #0D9488;
+  transition: color 0.2s ease;
+}
+.footer-whatsapp:hover { color: #0f766e; }
+
+.footer-contact {
+  color: rgba(255,255,255,0.45);
+  transition: color 0.2s ease;
+}
+.footer-contact:hover { color: rgba(255,255,255,0.9); }
+
+/* FAQ native <details> chevron rotation */
+details > summary { list-style: none; cursor: pointer; }
+details > summary::-webkit-details-marker { display: none; }
+details .faq-chevron { transition: transform 0.25s ease-out; }
+details[open] .faq-chevron { transform: rotate(180deg); }
+
+details > summary {
+  transition: background 0.15s ease;
+}
+details > summary:hover { background: #F3E8FF !important; }
+
+/* Text links in body */
+.text-link-teal {
+  color: #0D9488;
+  transition: color 0.15s ease;
+}
+.text-link-teal:hover { color: #0f766e; }
+
+.text-link-purple {
+  color: #6F00FF;
+  transition: color 0.15s ease;
+}
+.text-link-purple:hover { color: #5a00d4; }
+
+/* Navbar dropdown links (CSS fallback — Navbar is "use client" so JS is fine too) */
+.nav-dropdown-link {
+  color: #0f0f1a;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.nav-dropdown-link:hover {
+  background: #E6F7F5;
+  color: #0D9488;
+}
+
+/* ─────────────────────────────────────────────
+   UTILITY: smooth underline link hover
+   ───────────────────────────────────────────── */
+.link-underline {
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  transition: text-decoration-color 200ms ease;
 }

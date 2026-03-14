@@ -30,25 +30,27 @@ export function NavBar({ items, className }: NavBarProps) {
   }, [])
 
   return (
-    <div
+    <nav
+      aria-label="Mobile navigation"
       className={cn(
         "fixed bottom-0 left-1/2 -translate-x-1/2 z-50 mb-4",
         className,
       )}
     >
       {/* Frosted pill container — brand navy background */}
-      <div className="flex items-center gap-1 bg-primary-navy/90 border border-white/10 backdrop-blur-lg py-1.5 px-1.5 rounded-full shadow-2xl shadow-primary-navy/40">
+      <ul className="flex items-center gap-1 bg-primary-navy/90 border border-white/10 backdrop-blur-lg py-1.5 px-1.5 rounded-full shadow-2xl shadow-primary-navy/40" role="list">
         {items.map((item) => {
           const Icon = item.icon
           const isActive = activeTab === item.name
 
           return (
+            <li key={item.name}>
             <Link
-              key={item.name}
               href={item.url}
               onClick={() => setActiveTab(item.name)}
+              aria-current={isActive ? "page" : undefined}
               className={cn(
-                "relative cursor-pointer text-xs font-semibold px-4 py-2.5 rounded-full transition-colors",
+                "relative cursor-pointer text-xs font-semibold px-4 py-2.5 rounded-full transition-colors block",
                 // Default state: muted white, hover brighter
                 "text-white/60 hover:text-white",
                 // Active state: white text, slightly lighter bg
@@ -88,9 +90,10 @@ export function NavBar({ items, className }: NavBarProps) {
                 </motion.div>
               )}
             </Link>
+            </li>
           )
         })}
-      </div>
-    </div>
+      </ul>
+    </nav>
   )
 }

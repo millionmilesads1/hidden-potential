@@ -21,7 +21,13 @@
       "Bash(kill:*)",
       "Bash(pkill:*)",
       "Bash(npx tsc:*)",
-      "Bash(git push)"
+      "Bash(git push)",
+      "Bash(identify:*)",
+      "Bash(for f in about assessment blog contact enroll faq resources privacy terms success-stories)",
+      "Bash(do)",
+      "Bash(echo:*)",
+      "Bash(__NEW_LINE_0718cbf0f9d0ff39__ grep -n \"export const metadata\" /Users/me/Desktop/hidden-potential-site/src/app/$f/page.tsx)",
+      "Bash(bun run build:*)"
     ]
   }
 }

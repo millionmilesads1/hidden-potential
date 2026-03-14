@@ -6,13 +6,11 @@ import React from "react";
    SEO METADATA
 ───────────────────────────────────────────────────────────────────────────── */
 export const metadata: Metadata = {
-  title:
-    "Study Skills Training for Students | Smarter Learning, Stronger Results | Hidden Potential",
+  title: { absolute: "Study Skills Training for Students | Smarter Learning, Stronger Results | Hidden Potential" },
   description:
     "Study skills training for students in Delhi. Smart study strategies, time management, goal execution, memory techniques & exam preparation. Ages 8-21. Dwarka, Delhi & Online.",
   openGraph: {
-    title:
-      "Study Skills Training for Students | Smarter Learning, Stronger Results | Hidden Potential",
+    title: "Study Skills Training for Students | Smarter Learning, Stronger Results | Hidden Potential",
     description:
       "Study skills training for students in Delhi. Smart study strategies, time management, goal execution, memory techniques & exam preparation. Ages 8-21. Dwarka, Delhi & Online.",
     url: "https://hiddenpotentialskills.com/services/study-skills",
@@ -20,8 +18,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title:
-      "Study Skills Training for Students | Smarter Learning, Stronger Results | Hidden Potential",
+    title: "Study Skills Training for Students | Smarter Learning, Stronger Results | Hidden Potential",
     description:
       "Study skills training for students in Delhi. Smart study strategies, time management, goal execution, memory techniques & exam preparation. Ages 8-21. Dwarka, Delhi & Online.",
   },
@@ -155,7 +152,7 @@ export default function StudySkillsPage() {
         ═══════════════════════════════════════════════════════════════ */}
         <section
           className="relative overflow-hidden"
-          style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }}
+          style={{ background: "#0f0f1a" }}
         >
           <div
             className="absolute inset-0 pointer-events-none"
@@ -168,7 +165,7 @@ export default function StudySkillsPage() {
             className="absolute bottom-0 -left-16 w-64 h-64 rounded-full pointer-events-none"
             style={{
               background:
-                "radial-gradient(circle at center, rgba(200,169,81,0.07) 0%, transparent 70%)",
+                "radial-gradient(circle at center, rgba(212,168,67,0.07) 0%, transparent 70%)",
             }}
           />
 
@@ -280,7 +277,7 @@ export default function StudySkillsPage() {
             <SectionLabel>Why Study Skills Matter</SectionLabel>
             <h2
               className="text-2xl md:text-3xl font-bold mb-8 leading-snug"
-              style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}
+              style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
             >
               Why Most Students in Delhi Struggle Despite Working Hard
             </h2>
@@ -324,7 +321,7 @@ export default function StudySkillsPage() {
             </div>
             <h2
               className="text-2xl md:text-3xl font-bold text-center mb-5 leading-snug max-w-3xl mx-auto"
-              style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}
+              style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
             >
               Study Skills We Develop at Hidden Potential for Students in Delhi
             </h2>
@@ -340,7 +337,7 @@ export default function StudySkillsPage() {
             <div className="grid md:grid-cols-2 gap-6">
               {/* Card 01 */}
               <div className="rounded-lg border border-[#E8E8E8] overflow-hidden">
-                <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#7C3AED" }}>
+                <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#0D9488" }}>
                   <span className="text-white/60 text-xs font-bold">01</span>
                   <h3 className="text-sm font-bold text-white" style={{ fontFamily: "var(--font-display)" }}>
                     Smart Study Strategies
@@ -362,7 +359,7 @@ export default function StudySkillsPage() {
 
               {/* Card 02 */}
               <div className="rounded-lg border border-[#E8E8E8] overflow-hidden">
-                <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#7C3AED" }}>
+                <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#0D9488" }}>
                   <span className="text-white/60 text-xs font-bold">02</span>
                   <h3 className="text-sm font-bold text-white" style={{ fontFamily: "var(--font-display)" }}>
                     Time Management and Study Planning
@@ -383,7 +380,7 @@ export default function StudySkillsPage() {
 
               {/* Card 03 */}
               <div className="rounded-lg border border-[#E8E8E8] overflow-hidden">
-                <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#7C3AED" }}>
+                <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#0D9488" }}>
                   <span className="text-white/60 text-xs font-bold">03</span>
                   <h3 className="text-sm font-bold text-white" style={{ fontFamily: "var(--font-display)" }}>
                     Goal Setting and Academic Execution
@@ -404,7 +401,7 @@ export default function StudySkillsPage() {
 
               {/* Card 04 */}
               <div className="rounded-lg border border-[#E8E8E8] overflow-hidden">
-                <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#7C3AED" }}>
+                <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#0D9488" }}>
                   <span className="text-white/60 text-xs font-bold">04</span>
                   <h3 className="text-sm font-bold text-white" style={{ fontFamily: "var(--font-display)" }}>
                     Memory Enhancement and Retention Techniques
@@ -425,7 +422,7 @@ export default function StudySkillsPage() {
 
               {/* Card 05 */}
               <div className="rounded-lg border border-[#E8E8E8] overflow-hidden">
-                <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#7C3AED" }}>
+                <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#0D9488" }}>
                   <span className="text-white/60 text-xs font-bold">05</span>
                   <h3 className="text-sm font-bold text-white" style={{ fontFamily: "var(--font-display)" }}>
                     Exam Preparation and Test-Taking Strategies
@@ -446,7 +443,7 @@ export default function StudySkillsPage() {
 
               {/* Card 06 */}
               <div className="rounded-lg border border-[#E8E8E8] overflow-hidden">
-                <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#7C3AED" }}>
+                <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#0D9488" }}>
                   <span className="text-white/60 text-xs font-bold">06</span>
                   <h3 className="text-sm font-bold text-white" style={{ fontFamily: "var(--font-display)" }}>
                     Focus, Concentration and Digital Discipline
@@ -479,7 +476,7 @@ export default function StudySkillsPage() {
             </div>
             <h2
               className="text-2xl md:text-3xl font-bold text-center mb-5 leading-snug max-w-3xl mx-auto"
-              style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}
+              style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
             >
               Which Students Benefit from Study Skills Training in Delhi?
             </h2>
@@ -497,7 +494,7 @@ export default function StudySkillsPage() {
               <div className="bg-white rounded-lg p-5 border border-[#E8E8E8]">
                 <div className="flex items-start gap-3 mb-3">
                   <span className="text-[11px] font-bold text-primary-teal rounded-full px-2 py-0.5 shrink-0 mt-0.5" style={{ background: "#EDE9FE" }}>01</span>
-                  <h3 className="text-sm font-bold leading-snug" style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}>
+                  <h3 className="text-sm font-bold leading-snug" style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}>
                     Students Aged 8-12 (Foundation Stage)
                   </h3>
                 </div>
@@ -517,7 +514,7 @@ export default function StudySkillsPage() {
               <div className="bg-white rounded-lg p-5 border border-[#E8E8E8]">
                 <div className="flex items-start gap-3 mb-3">
                   <span className="text-[11px] font-bold text-primary-teal rounded-full px-2 py-0.5 shrink-0 mt-0.5" style={{ background: "#EDE9FE" }}>02</span>
-                  <h3 className="text-sm font-bold leading-snug" style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}>
+                  <h3 className="text-sm font-bold leading-snug" style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}>
                     Students Aged 13-16 (Growth Stage)
                   </h3>
                 </div>
@@ -535,7 +532,7 @@ export default function StudySkillsPage() {
               <div className="bg-white rounded-lg p-5 border border-[#E8E8E8]">
                 <div className="flex items-start gap-3 mb-3">
                   <span className="text-[11px] font-bold text-primary-teal rounded-full px-2 py-0.5 shrink-0 mt-0.5" style={{ background: "#EDE9FE" }}>03</span>
-                  <h3 className="text-sm font-bold leading-snug" style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}>
+                  <h3 className="text-sm font-bold leading-snug" style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}>
                     Students Aged 17-21 (Mastery Stage)
                   </h3>
                 </div>
@@ -552,7 +549,7 @@ export default function StudySkillsPage() {
               <div className="bg-white rounded-lg p-5 border border-[#E8E8E8]">
                 <div className="flex items-start gap-3 mb-3">
                   <span className="text-[11px] font-bold text-primary-teal rounded-full px-2 py-0.5 shrink-0 mt-0.5" style={{ background: "#EDE9FE" }}>04</span>
-                  <h3 className="text-sm font-bold leading-snug" style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}>
+                  <h3 className="text-sm font-bold leading-snug" style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}>
                     Students with Exam Anxiety
                   </h3>
                 </div>
@@ -571,7 +568,7 @@ export default function StudySkillsPage() {
               <div className="bg-white rounded-lg p-5 border border-[#E8E8E8]">
                 <div className="flex items-start gap-3 mb-3">
                   <span className="text-[11px] font-bold text-primary-teal rounded-full px-2 py-0.5 shrink-0 mt-0.5" style={{ background: "#EDE9FE" }}>05</span>
-                  <h3 className="text-sm font-bold leading-snug" style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}>
+                  <h3 className="text-sm font-bold leading-snug" style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}>
                     Parents Seeking Academic Support Beyond Tuition
                   </h3>
                 </div>
@@ -598,7 +595,7 @@ export default function StudySkillsPage() {
             </div>
             <h2
               className="text-2xl md:text-3xl font-bold text-center mb-12 leading-snug max-w-3xl mx-auto"
-              style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}
+              style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
             >
               Why Study Skills Training at Hidden Potential Produces Better Academic Results
             </h2>
@@ -611,7 +608,7 @@ export default function StudySkillsPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                   </svg>
                 </div>
-                <h3 className="text-sm font-bold mb-2" style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}>
+                <h3 className="text-sm font-bold mb-2" style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}>
                   Assessment-Based, Not Generic
                 </h3>
                 <p className="text-sm leading-relaxed" style={{ color: "#6B6B6B" }}>
@@ -630,7 +627,7 @@ export default function StudySkillsPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                   </svg>
                 </div>
-                <h3 className="text-sm font-bold mb-2" style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}>
+                <h3 className="text-sm font-bold mb-2" style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}>
                   Part of a Complete Life Skills System
                 </h3>
                 <p className="text-sm leading-relaxed" style={{ color: "#6B6B6B" }}>
@@ -649,7 +646,7 @@ export default function StudySkillsPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                   </svg>
                 </div>
-                <h3 className="text-sm font-bold mb-2" style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}>
+                <h3 className="text-sm font-bold mb-2" style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}>
                   NLP-Enhanced Learning Techniques
                 </h3>
                 <p className="text-sm leading-relaxed" style={{ color: "#6B6B6B" }}>
@@ -668,7 +665,7 @@ export default function StudySkillsPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                   </svg>
                 </div>
-                <h3 className="text-sm font-bold mb-2" style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}>
+                <h3 className="text-sm font-bold mb-2" style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}>
                   Measurable Improvement with Pre and Post Assessment
                 </h3>
                 <p className="text-sm leading-relaxed" style={{ color: "#6B6B6B" }}>
@@ -692,7 +689,7 @@ export default function StudySkillsPage() {
             </div>
             <h2
               className="text-2xl md:text-3xl font-bold text-center mb-12 leading-snug"
-              style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}
+              style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
             >
               Common Questions About Study Skills Training in Delhi
             </h2>
@@ -726,7 +723,7 @@ export default function StudySkillsPage() {
               ].map(({ q, a }) => (
                 <div key={q} className="rounded-lg overflow-hidden border border-[#E8E8E8]">
                   <div className="px-6 py-4 bg-[#F8F6F2] border-l-4 border-primary-teal">
-                    <p className="text-sm font-bold" style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}>{q}</p>
+                    <p className="text-sm font-bold" style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}>{q}</p>
                   </div>
                   <div className="px-6 py-5">
                     <p className="text-sm leading-relaxed" style={{ color: "#2D2D2D" }}>{a}</p>
@@ -742,7 +739,7 @@ export default function StudySkillsPage() {
         ═══════════════════════════════════════════════════════════════ */}
         <section
           className="relative overflow-hidden py-24"
-          style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }}
+          style={{ background: "#0f0f1a" }}
         >
           <div
             className="absolute inset-0 pointer-events-none"

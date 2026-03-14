@@ -1643,7 +1643,7 @@ export default async function Image({ params }: { params: { slug: string } }) {
     (
       <div
         style={{
-          background: 'linear-gradient(135deg, #2D1B4E 0%, #0D9488 100%)',
+          background: 'linear-gradient(135deg, #6F00FF 0%, #0D9488 100%)',
           width: '100%',
           height: '100%',
           display: 'flex',
@@ -1681,7 +1681,7 @@ export async function GET(request: NextRequest) {
     (
       <div
         style={{
-          background: 'linear-gradient(135deg, #2D1B4E 0%, #0D9488 100%)',
+          background: 'linear-gradient(135deg, #6F00FF 0%, #0D9488 100%)',
           width: '100%',
           height: '100%',
           display: 'flex',

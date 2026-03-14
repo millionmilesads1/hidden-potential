@@ -8,7 +8,7 @@ const fs   = require('fs');
 const path = require('path');
 
 // ─── Brand colours ───────────────────────────────────────────────────────────
-const BG  = [0x2D, 0x1B, 0x4E, 0xFF]; // #2D1B4E  deep purple
+const BG  = [0x6F, 0x00, 0xFF, 0xFF]; // #6F00FF  electric purple
 const TXT = [0xD4, 0xA8, 0x43, 0xFF]; // #D4A843  gold
 
 // ─── Bitmap glyphs (7-wide × 9-tall for H, 6-wide × 9-tall for P) ────────────

@@ -24,7 +24,7 @@ import EnrollForm from "./EnrollForm";
 
 // ── SEO Metadata ──────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "Enroll Now | Life Skills Training in Delhi | Hidden Potential",
+  title: { absolute: "Enroll Now | Life Skills Training in Delhi | Hidden Potential" },
   description:
     "Enroll in life skills training in Delhi with Hidden Potential. NLP coaching, confidence building, communication mastery, trainer certification. 14+ years. 5000+ trained. Dwarka, Noida, Gurgaon. Limited batch sizes.",
   openGraph: {
@@ -413,7 +413,7 @@ export default function EnrollPage() {
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
         className="relative overflow-hidden"
-        style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }}
+        style={{ background: "#0f0f1a" }}
       >
         {/* Glows */}
         <div
@@ -427,7 +427,7 @@ export default function EnrollPage() {
           className="absolute bottom-0 -left-16 w-64 h-64 rounded-full pointer-events-none"
           style={{
             background:
-              "radial-gradient(circle at center, rgba(200,169,81,0.07) 0%, transparent 70%)",
+              "radial-gradient(circle at center, rgba(212,168,67,0.07) 0%, transparent 70%)",
           }}
         />
 
@@ -685,7 +685,7 @@ export default function EnrollPage() {
                 <div className="flex items-center gap-3 mb-3">
                   <div
                     className="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0"
-                    style={{ background: "#7C3AED" }}
+                    style={{ background: "#0D9488" }}
                   >
                     <svg
                       className="w-3.5 h-3.5 text-white"
@@ -772,7 +772,7 @@ export default function EnrollPage() {
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
         className="relative overflow-hidden py-20"
-        style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }}
+        style={{ background: "#0f0f1a" }}
       >
         {/* Glow */}
         <div

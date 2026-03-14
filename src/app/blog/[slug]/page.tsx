@@ -560,7 +560,7 @@ export async function generateMetadata({
   const post = posts.find((p) => p.slug === params.slug);
   if (!post) return {};
   return {
-    title: post.metaTitle,
+    title: { absolute: post.metaTitle },
     description: post.metaDescription,
     alternates: {
       canonical: `https://hiddenpotentialskills.com/blog/${post.slug}`,
@@ -737,7 +737,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 
       {/* ── HERO ──────────────────────────────────────────────────────────── */}
       <section
-        style={{ background: 'linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)' }}
+        style={{ background: '#0f0f1a' }}
         className="relative pt-24 pb-16 overflow-hidden"
       >
         <div
@@ -879,7 +879,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 
       {/* ── FINAL CTA ─────────────────────────────────────────────────────── */}
       <section
-        style={{ background: 'linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)' }}
+        style={{ background: '#0f0f1a' }}
         className="relative py-20 text-center overflow-hidden"
       >
         <div

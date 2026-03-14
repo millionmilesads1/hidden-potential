@@ -23,13 +23,11 @@ import Link from "next/link";
 
 // ── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title:
-    "FAQ | Life Skills Training in Delhi — All Your Questions Answered | Hidden Potential",
+  title: { absolute: "FAQ | Life Skills Training in Delhi — All Your Questions Answered | Hidden Potential" },
   description:
     "Frequently asked questions about life skills training at Hidden Potential in Delhi. Programs, pricing, duration, online options, certifications, NLP coaching, school programs. Everything you need to know.",
   openGraph: {
-    title:
-      "FAQ — Life Skills Training Questions Answered | Hidden Potential Delhi",
+    title: "FAQ — Life Skills Training Questions Answered | Hidden Potential Delhi",
     description:
       "Complete FAQ: programs, pricing, online options, certifications, NLP coaching, school programs, corporate workshops. Hidden Potential, Dwarka, Delhi NCR.",
     type: "website",
@@ -859,7 +857,7 @@ export default function FaqPage() {
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
         className="relative overflow-hidden"
-        style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }}
+        style={{ background: "#0f0f1a" }}
       >
         {/* Top-right purple glow */}
         <div
@@ -874,7 +872,7 @@ export default function FaqPage() {
           className="absolute bottom-0 -left-16 w-64 h-64 rounded-full pointer-events-none"
           style={{
             background:
-              "radial-gradient(circle at center, rgba(200,169,81,0.07) 0%, transparent 70%)",
+              "radial-gradient(circle at center, rgba(212,168,67,0.07) 0%, transparent 70%)",
           }}
         />
 
@@ -1097,7 +1095,7 @@ export default function FaqPage() {
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
         className="relative overflow-hidden py-20"
-        style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }}
+        style={{ background: "#0f0f1a" }}
       >
         {/* Glow */}
         <div

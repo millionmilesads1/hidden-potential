@@ -234,6 +234,7 @@ function OptionCard({
   return (
     <button
       onClick={onClick}
+      aria-pressed={isSelected}
       className={`text-left p-4 rounded-lg border transition-all duration-200 w-full cursor-pointer ${
         isSelected
           ? 'border-primary-teal bg-teal-light shadow-md ring-1 ring-primary-teal/30'
@@ -256,7 +257,7 @@ function OptionCard({
         {isSelected && (
           <div
             className="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center mt-0.5"
-            style={{ background: '#7C3AED' }}
+            style={{ background: '#0D9488' }}
           >
             <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 12 12">
               <path d="M2 6l3 3 5-5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -318,7 +319,7 @@ export default function AssessmentClient() {
     <div>
       {/* ── SECTION 1: HERO ──────────────────────────────────────────────────── */}
       <section
-        style={{ background: 'linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)' }}
+        style={{ background: '#0f0f1a' }}
         className="relative pt-24 pb-20 text-center overflow-hidden"
       >
         {/* Decorative glows */}
@@ -328,7 +329,7 @@ export default function AssessmentClient() {
             className="absolute inset-0"
           />
           <div
-            style={{ background: 'radial-gradient(circle at 15% 80%, rgba(200,169,81,0.06) 0%, transparent 50%)' }}
+            style={{ background: 'radial-gradient(circle at 15% 80%, rgba(212,168,67,0.06) 0%, transparent 50%)' }}
             className="absolute inset-0"
           />
         </div>
@@ -383,7 +384,11 @@ export default function AssessmentClient() {
           <div className="max-w-2xl mx-auto px-6">
             {/* Progress bar */}
             <div className="mb-8">
-              <div className="flex items-center justify-between text-xs font-bold text-charcoal/50 uppercase tracking-wider mb-2">
+              <div
+                className="flex items-center justify-between text-xs font-bold text-charcoal/50 uppercase tracking-wider mb-2"
+                aria-live="polite"
+                aria-atomic="true"
+              >
                 <span>Step {currentStep} of {totalSteps}</span>
                 <span>{Math.round((currentStep / totalSteps) * 100)}% Complete</span>
               </div>
@@ -403,7 +408,11 @@ export default function AssessmentClient() {
               </h2>
 
               {/* Options grid */}
-              <div className="grid md:grid-cols-2 gap-3 mb-8">
+              <div
+                className="grid md:grid-cols-2 gap-3 mb-8"
+                role="group"
+                aria-label={currentQ.question}
+              >
                 {currentQ.options.map((option) => (
                   <OptionCard
                     key={option.value}
@@ -460,7 +469,7 @@ export default function AssessmentClient() {
         <>
           {/* Result hero */}
           <section
-            style={{ background: 'linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)' }}
+            style={{ background: '#0f0f1a' }}
             className="relative py-20 overflow-hidden"
           >
             <div className="absolute inset-0 pointer-events-none">
@@ -504,7 +513,7 @@ export default function AssessmentClient() {
                       <div key={i} className="flex items-center gap-2">
                         <div
                           className="w-4 h-4 rounded-full flex items-center justify-center flex-shrink-0"
-                          style={{ background: '#7C3AED' }}
+                          style={{ background: '#0D9488' }}
                         >
                           <svg className="w-2.5 h-2.5 text-white" fill="none" viewBox="0 0 10 10">
                             <path d="M2 5l2 2 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />

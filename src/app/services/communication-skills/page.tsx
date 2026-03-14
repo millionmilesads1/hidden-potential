@@ -6,13 +6,11 @@ import React from "react";
    SEO METADATA
 ───────────────────────────────────────────────────────────────────────────── */
 export const metadata: Metadata = {
-  title:
-    "Communication Skills Training in Delhi | Speak Clearly, Lead Confidently | Hidden Potential",
+  title: { absolute: "Communication Skills Training in Delhi | Speak Clearly, Lead Confidently | Hidden Potential" },
   description:
     "Communication skills training in Delhi for students, professionals & corporate teams. Public speaking, assertive communication, active listening & leadership expression. Dwarka, Delhi & Online.",
   openGraph: {
-    title:
-      "Communication Skills Training in Delhi | Speak Clearly, Lead Confidently | Hidden Potential",
+    title: "Communication Skills Training in Delhi | Speak Clearly, Lead Confidently | Hidden Potential",
     description:
       "Communication skills training in Delhi for students, professionals & corporate teams. Public speaking, assertive communication, active listening & leadership expression. Dwarka, Delhi & Online.",
     url: "https://hiddenpotentialskills.com/services/communication-skills",
@@ -20,8 +18,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title:
-      "Communication Skills Training in Delhi | Speak Clearly, Lead Confidently | Hidden Potential",
+    title: "Communication Skills Training in Delhi | Speak Clearly, Lead Confidently | Hidden Potential",
     description:
       "Communication skills training in Delhi for students, professionals & corporate teams. Public speaking, assertive communication, active listening & leadership expression. Dwarka, Delhi & Online.",
   },
@@ -155,7 +152,7 @@ export default function CommunicationSkillsPage() {
         ═══════════════════════════════════════════════════════════════ */}
         <section
           className="relative overflow-hidden"
-          style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }}
+          style={{ background: "#0f0f1a" }}
         >
           {/* Decorative glows */}
           <div
@@ -169,7 +166,7 @@ export default function CommunicationSkillsPage() {
             className="absolute bottom-0 -left-16 w-64 h-64 rounded-full pointer-events-none"
             style={{
               background:
-                "radial-gradient(circle at center, rgba(200,169,81,0.07) 0%, transparent 70%)",
+                "radial-gradient(circle at center, rgba(212,168,67,0.07) 0%, transparent 70%)",
             }}
           />
 
@@ -287,7 +284,7 @@ export default function CommunicationSkillsPage() {
             <SectionLabel>Why Communication Skills Matter</SectionLabel>
             <h2
               className="text-2xl md:text-3xl font-bold mb-8 leading-snug"
-              style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}
+              style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
             >
               Why Communication Skills Training Is the Highest-ROI Investment You Can Make
             </h2>
@@ -332,7 +329,7 @@ export default function CommunicationSkillsPage() {
             </div>
             <h2
               className="text-2xl md:text-3xl font-bold text-center mb-5 leading-snug max-w-3xl mx-auto"
-              style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}
+              style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
             >
               Communication Skills We Develop at Hidden Potential in Delhi
             </h2>
@@ -352,7 +349,7 @@ export default function CommunicationSkillsPage() {
               <div className="rounded-lg border border-[#E8E8E8] overflow-hidden">
                 <div
                   className="px-5 py-3 flex items-center gap-3"
-                  style={{ background: "#7C3AED" }}
+                  style={{ background: "#0D9488" }}
                 >
                   <span className="text-white/60 text-xs font-bold">01</span>
                   <h3
@@ -380,7 +377,7 @@ export default function CommunicationSkillsPage() {
               <div className="rounded-lg border border-[#E8E8E8] overflow-hidden">
                 <div
                   className="px-5 py-3 flex items-center gap-3"
-                  style={{ background: "#7C3AED" }}
+                  style={{ background: "#0D9488" }}
                 >
                   <span className="text-white/60 text-xs font-bold">02</span>
                   <h3
@@ -409,7 +406,7 @@ export default function CommunicationSkillsPage() {
               <div className="rounded-lg border border-[#E8E8E8] overflow-hidden">
                 <div
                   className="px-5 py-3 flex items-center gap-3"
-                  style={{ background: "#7C3AED" }}
+                  style={{ background: "#0D9488" }}
                 >
                   <span className="text-white/60 text-xs font-bold">03</span>
                   <h3
@@ -436,7 +433,7 @@ export default function CommunicationSkillsPage() {
               <div className="rounded-lg border border-[#E8E8E8] overflow-hidden">
                 <div
                   className="px-5 py-3 flex items-center gap-3"
-                  style={{ background: "#7C3AED" }}
+                  style={{ background: "#0D9488" }}
                 >
                   <span className="text-white/60 text-xs font-bold">04</span>
                   <h3
@@ -464,7 +461,7 @@ export default function CommunicationSkillsPage() {
               <div className="rounded-lg border border-[#E8E8E8] overflow-hidden">
                 <div
                   className="px-5 py-3 flex items-center gap-3"
-                  style={{ background: "#7C3AED" }}
+                  style={{ background: "#0D9488" }}
                 >
                   <span className="text-white/60 text-xs font-bold">05</span>
                   <h3
@@ -492,7 +489,7 @@ export default function CommunicationSkillsPage() {
               <div className="rounded-lg border border-[#E8E8E8] overflow-hidden">
                 <div
                   className="px-5 py-3 flex items-center gap-3"
-                  style={{ background: "#7C3AED" }}
+                  style={{ background: "#0D9488" }}
                 >
                   <span className="text-white/60 text-xs font-bold">06</span>
                   <h3
@@ -519,7 +516,7 @@ export default function CommunicationSkillsPage() {
               <div className="rounded-lg border border-[#E8E8E8] overflow-hidden">
                 <div
                   className="px-5 py-3 flex items-center gap-3"
-                  style={{ background: "#7C3AED" }}
+                  style={{ background: "#0D9488" }}
                 >
                   <span className="text-white/60 text-xs font-bold">07</span>
                   <h3
@@ -546,7 +543,7 @@ export default function CommunicationSkillsPage() {
               <div className="rounded-lg border border-[#E8E8E8] overflow-hidden">
                 <div
                   className="px-5 py-3 flex items-center gap-3"
-                  style={{ background: "#7C3AED" }}
+                  style={{ background: "#0D9488" }}
                 >
                   <span className="text-white/60 text-xs font-bold">08</span>
                   <h3
@@ -583,7 +580,7 @@ export default function CommunicationSkillsPage() {
             </div>
             <h2
               className="text-2xl md:text-3xl font-bold text-center mb-5 leading-snug max-w-3xl mx-auto"
-              style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}
+              style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
             >
               Who Benefits from Communication Skills Training in Delhi?
             </h2>
@@ -610,7 +607,7 @@ export default function CommunicationSkillsPage() {
                   </span>
                   <h3
                     className="text-sm font-bold leading-snug"
-                    style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}
+                    style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
                   >
                     Students Ages 8 to 21
                   </h3>
@@ -643,7 +640,7 @@ export default function CommunicationSkillsPage() {
                   </span>
                   <h3
                     className="text-sm font-bold leading-snug"
-                    style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}
+                    style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
                   >
                     Young Adults Entering the Workforce (18-25)
                   </h3>
@@ -675,7 +672,7 @@ export default function CommunicationSkillsPage() {
                   </span>
                   <h3
                     className="text-sm font-bold leading-snug"
-                    style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}
+                    style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
                   >
                     Working Professionals in Delhi NCR
                   </h3>
@@ -701,7 +698,7 @@ export default function CommunicationSkillsPage() {
                   </span>
                   <h3
                     className="text-sm font-bold leading-snug"
-                    style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}
+                    style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
                   >
                     Corporate Teams and Organisations
                   </h3>
@@ -733,7 +730,7 @@ export default function CommunicationSkillsPage() {
                   </span>
                   <h3
                     className="text-sm font-bold leading-snug"
-                    style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}
+                    style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
                   >
                     Women Seeking Confident Expression
                   </h3>
@@ -764,7 +761,7 @@ export default function CommunicationSkillsPage() {
                   </span>
                   <h3
                     className="text-sm font-bold leading-snug"
-                    style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}
+                    style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
                   >
                     Schools and Educational Institutions
                   </h3>
@@ -797,7 +794,7 @@ export default function CommunicationSkillsPage() {
             </div>
             <h2
               className="text-2xl md:text-3xl font-bold text-center mb-5 leading-snug max-w-4xl mx-auto"
-              style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}
+              style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
             >
               Why Communication Skills Training at Hidden Potential Produces Better Results Than
               Other Programs in Delhi
@@ -830,7 +827,7 @@ export default function CommunicationSkillsPage() {
                 </div>
                 <h3
                   className="text-sm font-bold mb-2"
-                  style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}
+                  style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
                 >
                   Structured Progression, Not One-Time Workshops
                 </h3>
@@ -861,7 +858,7 @@ export default function CommunicationSkillsPage() {
                 </div>
                 <h3
                   className="text-sm font-bold mb-2"
-                  style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}
+                  style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
                 >
                   Assessment-Based Personalisation
                 </h3>
@@ -891,7 +888,7 @@ export default function CommunicationSkillsPage() {
                 </div>
                 <h3
                   className="text-sm font-bold mb-2"
-                  style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}
+                  style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
                 >
                   Live Practice with Structured Feedback
                 </h3>
@@ -922,7 +919,7 @@ export default function CommunicationSkillsPage() {
                 </div>
                 <h3
                   className="text-sm font-bold mb-2"
-                  style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}
+                  style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
                 >
                   Complete Communication System, Not Just Public Speaking
                 </h3>
@@ -953,7 +950,7 @@ export default function CommunicationSkillsPage() {
                 </div>
                 <h3
                   className="text-sm font-bold mb-2"
-                  style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}
+                  style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
                 >
                   Ages 8 to 65, Individual to Corporate
                 </h3>
@@ -984,7 +981,7 @@ export default function CommunicationSkillsPage() {
                 </div>
                 <h3
                   className="text-sm font-bold mb-2"
-                  style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}
+                  style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
                 >
                   Measurable Results with Pre and Post Assessment
                 </h3>
@@ -1010,7 +1007,7 @@ export default function CommunicationSkillsPage() {
             </div>
             <h2
               className="text-2xl md:text-3xl font-bold text-center mb-12 leading-snug"
-              style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}
+              style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
             >
               Common Questions About Communication Skills Training in Delhi
             </h2>
@@ -1021,7 +1018,7 @@ export default function CommunicationSkillsPage() {
                 <div className="px-6 py-4 bg-[#F8F6F2] border-l-4 border-primary-teal">
                   <p
                     className="text-sm font-bold"
-                    style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}
+                    style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
                   >
                     What is included in communication skills training at Hidden Potential?
                   </p>
@@ -1045,7 +1042,7 @@ export default function CommunicationSkillsPage() {
                 <div className="px-6 py-4 bg-[#F8F6F2] border-l-4 border-primary-teal">
                   <p
                     className="text-sm font-bold"
-                    style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}
+                    style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
                   >
                     Is communication skills training available for children and teenagers?
                   </p>
@@ -1069,7 +1066,7 @@ export default function CommunicationSkillsPage() {
                 <div className="px-6 py-4 bg-[#F8F6F2] border-l-4 border-primary-teal">
                   <p
                     className="text-sm font-bold"
-                    style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}
+                    style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
                   >
                     How long does communication skills training take?
                   </p>
@@ -1091,7 +1088,7 @@ export default function CommunicationSkillsPage() {
                 <div className="px-6 py-4 bg-[#F8F6F2] border-l-4 border-primary-teal">
                   <p
                     className="text-sm font-bold"
-                    style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}
+                    style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
                   >
                     Do you offer corporate communication training in Delhi?
                   </p>
@@ -1113,7 +1110,7 @@ export default function CommunicationSkillsPage() {
                 <div className="px-6 py-4 bg-[#F8F6F2] border-l-4 border-primary-teal">
                   <p
                     className="text-sm font-bold"
-                    style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}
+                    style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
                   >
                     Is communication skills training available online?
                   </p>
@@ -1134,7 +1131,7 @@ export default function CommunicationSkillsPage() {
                 <div className="px-6 py-4 bg-[#F8F6F2] border-l-4 border-primary-teal">
                   <p
                     className="text-sm font-bold"
-                    style={{ color: "#2D1B69", fontFamily: "var(--font-display)" }}
+                    style={{ color: "#0f0f1a", fontFamily: "var(--font-display)" }}
                   >
                     How is this different from spoken English or personality development classes?
                   </p>
@@ -1162,7 +1159,7 @@ export default function CommunicationSkillsPage() {
         ═══════════════════════════════════════════════════════════════ */}
         <section
           className="relative overflow-hidden py-24"
-          style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }}
+          style={{ background: "#0f0f1a" }}
         >
           <div
             className="absolute inset-0 pointer-events-none"

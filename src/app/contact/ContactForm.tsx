@@ -85,7 +85,7 @@ export default function ContactForm() {
 
   return (
     <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-8 md:p-10">
-      <form className="space-y-6" onSubmit={handleSubmit}>
+      <form className="space-y-6" onSubmit={handleSubmit} aria-describedby="contact-form-note" noValidate>
         {/* Row 1: Name + Phone */}
         <div className="grid md:grid-cols-2 gap-6">
           <div>
@@ -100,7 +100,9 @@ export default function ContactForm() {
               name="fullName"
               type="text"
               required
+              aria-required="true"
               placeholder="Your full name"
+              autoComplete="name"
               className="w-full px-4 py-3 text-sm text-charcoal bg-white border border-gray-200 rounded-md placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-teal/30 focus:border-primary-teal transition-colors"
             />
           </div>
@@ -116,7 +118,9 @@ export default function ContactForm() {
               name="phone"
               type="tel"
               required
+              aria-required="true"
               placeholder="+91 XXXXX XXXXX"
+              autoComplete="tel"
               className="w-full px-4 py-3 text-sm text-charcoal bg-white border border-gray-200 rounded-md placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-teal/30 focus:border-primary-teal transition-colors"
             />
           </div>
@@ -136,7 +140,9 @@ export default function ContactForm() {
               name="email"
               type="email"
               required
+              aria-required="true"
               placeholder="you@example.com"
+              autoComplete="email"
               className="w-full px-4 py-3 text-sm text-charcoal bg-white border border-gray-200 rounded-md placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-teal/30 focus:border-primary-teal transition-colors"
             />
           </div>
@@ -151,6 +157,7 @@ export default function ContactForm() {
               id="location"
               name="location"
               required
+              aria-required="true"
               defaultValue=""
               className="w-full px-4 py-3 text-sm text-charcoal bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-teal/30 focus:border-primary-teal transition-colors appearance-none"
             >
@@ -179,6 +186,7 @@ export default function ContactForm() {
             id="interest"
             name="interest"
             required
+            aria-required="true"
             defaultValue=""
             className="w-full px-4 py-3 text-sm text-charcoal bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-teal/30 focus:border-primary-teal transition-colors appearance-none"
           >
@@ -235,7 +243,7 @@ export default function ContactForm() {
         </button>
 
         {/* Privacy note */}
-        <p className="text-xs text-charcoal/40 leading-relaxed">
+        <p id="contact-form-note" className="text-xs text-charcoal/40 leading-relaxed">
           Your information is kept strictly confidential and will never be shared with third
           parties. By submitting this form you consent to being contacted by Hidden Potential
           regarding your inquiry.

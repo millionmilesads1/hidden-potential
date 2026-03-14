@@ -20,7 +20,7 @@ import Link from "next/link";
 
 // ── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "Life Skills Training in Noida | NLP Coaching & Programs | Hidden Potential",
+  title: { absolute: "Life Skills Training in Noida | NLP Coaching & Programs | Hidden Potential" },
   description:
     "Life skills training in Noida by Supreet Kaur. NLP coaching, confidence building, communication skills, corporate workshops. Online & Dwarka centre. 14+ years. 5000+ trained.",
   openGraph: {
@@ -406,7 +406,7 @@ export default function NoidaLocationPage() {
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
         className="relative overflow-hidden"
-        style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }}
+        style={{ background: "#0f0f1a" }}
       >
         {/* Glows */}
         <div
@@ -420,7 +420,7 @@ export default function NoidaLocationPage() {
           className="absolute bottom-0 -left-16 w-64 h-64 rounded-full pointer-events-none"
           style={{
             background:
-              "radial-gradient(circle at center, rgba(200,169,81,0.07) 0%, transparent 70%)",
+              "radial-gradient(circle at center, rgba(212,168,67,0.07) 0%, transparent 70%)",
           }}
         />
 
@@ -707,7 +707,7 @@ export default function NoidaLocationPage() {
                 <div className="flex items-center gap-3 mb-3">
                   <div
                     className="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0"
-                    style={{ background: "#7C3AED" }}
+                    style={{ background: "#0D9488" }}
                   >
                     <svg
                       className="w-3.5 h-3.5 text-white"
@@ -794,7 +794,7 @@ export default function NoidaLocationPage() {
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
         className="relative overflow-hidden py-20"
-        style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }}
+        style={{ background: "#0f0f1a" }}
       >
         {/* Glow */}
         <div

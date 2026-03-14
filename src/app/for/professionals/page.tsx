@@ -20,8 +20,7 @@ import Link from "next/link";
 
 // ── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title:
-    "Life Skills Training for Professionals in Delhi | NLP & Leadership | Hidden Potential",
+  title: { absolute: "Life Skills Training for Professionals in Delhi | NLP & Leadership | Hidden Potential" },
   description:
     "Life skills training for working professionals in Delhi NCR. NLP coaching, communication mastery, stress management, leadership development, corporate workshops. 14+ years. Supreet Kaur. Dwarka & online.",
   openGraph: {
@@ -34,8 +33,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title:
-      "Life Skills Training for Professionals in Delhi | Hidden Potential",
+    title: "Life Skills Training for Professionals in Delhi | Hidden Potential",
     description:
       "NLP coaching, leadership, communication, stress management for working professionals. Delhi, Noida, Gurgaon. 14+ years. Harvard-affiliated.",
   },
@@ -393,7 +391,7 @@ export default function ForProfessionalsPage() {
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
         className="relative overflow-hidden"
-        style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }}
+        style={{ background: "#0f0f1a" }}
       >
         {/* Glows */}
         <div
@@ -407,7 +405,7 @@ export default function ForProfessionalsPage() {
           className="absolute bottom-0 -left-16 w-64 h-64 rounded-full pointer-events-none"
           style={{
             background:
-              "radial-gradient(circle at center, rgba(200,169,81,0.07) 0%, transparent 70%)",
+              "radial-gradient(circle at center, rgba(212,168,67,0.07) 0%, transparent 70%)",
           }}
         />
 
@@ -680,7 +678,7 @@ export default function ForProfessionalsPage() {
                 <div className="flex items-center gap-3 mb-3">
                   <div
                     className="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0"
-                    style={{ background: "#7C3AED" }}
+                    style={{ background: "#0D9488" }}
                   >
                     <svg
                       className="w-3.5 h-3.5 text-white"
@@ -767,7 +765,7 @@ export default function ForProfessionalsPage() {
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
         className="relative overflow-hidden py-20"
-        style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }}
+        style={{ background: "#0f0f1a" }}
       >
         {/* Glow */}
         <div

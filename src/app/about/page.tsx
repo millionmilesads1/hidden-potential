@@ -4,7 +4,7 @@ import CertificateLightbox from "@/components/ui/CertificateLightbox";
 
 // ── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "About Supreet Kaur | Life Skills Coach in Delhi | Hidden Potential",
+  title: { absolute: "About Supreet Kaur | Life Skills Coach in Delhi | Hidden Potential" },
   description:
     "Meet Supreet Kaur — Masters in Psychology, NLP practitioner, Josh Talks speaker. 14+ years training 5000+ individuals. Award-winning life skills educator in Delhi.",
   openGraph: {
@@ -203,15 +203,15 @@ const books = [
     title: "The Inner Edge",
     subtitle: "A Structured Guide to Life Skills",
     desc: "A comprehensive guide to developing the essential life skills that formal education overlooks — from emotional resilience and self-awareness to confident communication and purposeful living.",
-    gradientFrom: "#2D1B69",
-    gradientTo: "#7C3AED",
+    gradientFrom: "#0f0f1a",
+    gradientTo: "#1a1f2e",
   },
   {
     title: "Designed to Grow",
     subtitle: "Pathways to Structured Personal Mastery",
     desc: "A practitioner's guide to lasting personal transformation through structured pathways, evidence-based assessment, and intentional daily practice — written for learners and educators alike.",
-    gradientFrom: "#2D1B69",
-    gradientTo: "#7C3AED",
+    gradientFrom: "#0f0f1a",
+    gradientTo: "#0d1a1a",
   },
 ];
 
@@ -239,7 +239,7 @@ export default function AboutPage() {
             <div
               className="w-full rounded-lg flex flex-col justify-end p-6 flex-shrink-0"
               style={{
-                background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)",
+                background: "#0f0f1a",
                 aspectRatio: "3 / 4",
                 maxHeight: "520px",
               }}
@@ -281,9 +281,9 @@ export default function AboutPage() {
                       key={tag}
                       className="text-[10px] font-semibold px-2 py-0.5 rounded-full"
                       style={{
-                        background: "rgba(200,169,81,0.18)",
-                        color: "#C8A951",
-                        border: "1px solid rgba(200,169,81,0.25)",
+                        background: "rgba(212,168,67,0.18)",
+                        color: "#D4A843",
+                        border: "1px solid rgba(212,168,67,0.25)",
                       }}
                     >
                       {tag}
@@ -320,7 +320,7 @@ export default function AboutPage() {
                 style={{
                   fontFamily: "var(--font-accent)",
                   fontStyle: "italic",
-                  borderLeft: "3px solid #C8A951",
+                  borderLeft: "3px solid #D4A843",
                 }}
               >
                 &ldquo;Transformation is not a moment. It is a structured journey — with the
@@ -602,8 +602,8 @@ export default function AboutPage() {
           <div
             className="mb-6 rounded-lg p-6 md:p-8 flex flex-col md:flex-row gap-6 md:gap-10 items-start"
             style={{
-              background: "linear-gradient(135deg, #EDE9FE 0%, #F3F0FF 100%)",
-              border: "2px solid rgba(45,27,105,0.22)",
+              background: "linear-gradient(135deg, #F3E8FF 0%, #EDE9FE 100%)",
+              border: "2px solid rgba(111,0,255,0.15)",
             }}
           >
             {/* Left — Credential info */}
@@ -632,7 +632,7 @@ export default function AboutPage() {
                 {/* Grade A badge */}
                 <span
                   className="inline-flex items-center justify-center w-7 h-7 rounded-full text-[12px] font-extrabold flex-shrink-0"
-                  style={{ backgroundColor: "#D4A843", color: "#2D1B69" }}
+                  style={{ backgroundColor: "#D4A843", color: "#0f0f1a" }}
                 >
                   A
                 </span>
@@ -691,13 +691,13 @@ export default function AboutPage() {
                 className="rounded-lg p-5 flex flex-col items-center text-center"
                 style={{
                   background: "#EDE9FE",
-                  border: "1px solid rgba(45,27,105,0.18)",
+                  border: "1px solid rgba(111,0,255,0.12)",
                 }}
               >
                 {/* Gold accent top bar */}
                 <div
                   className="w-8 h-0.5 rounded-full mb-4 flex-shrink-0"
-                  style={{ backgroundColor: "#C8A951" }}
+                  style={{ backgroundColor: "#D4A843" }}
                 />
                 <p
                   className="text-sm font-bold text-primary-navy leading-snug mb-1"
@@ -718,7 +718,7 @@ export default function AboutPage() {
       <section
         className="py-16"
         style={{
-          background: "linear-gradient(90deg, #2D1B69 0%, #7C3AED 50%, #2D1B69 100%)",
+          background: "#0f0f1a",
         }}
       >
         <div className="max-w-6xl mx-auto px-6">
@@ -799,14 +799,14 @@ export default function AboutPage() {
                     style={{
                       background:
                         i === 0
-                          ? "linear-gradient(to bottom, #C8A951, #A68B3E)"
-                          : "linear-gradient(to bottom, #7C3AED, #2D1B69)",
+                          ? "linear-gradient(to bottom, #D4A843, #b8882a)"
+                          : "linear-gradient(to bottom, #0D9488, #0f766e)",
                     }}
                   />
                   <div className="text-center px-8 pl-10">
                     <div
                       className="w-6 h-0.5 mx-auto mb-3"
-                      style={{ backgroundColor: "#C8A951" }}
+                      style={{ backgroundColor: "#D4A843" }}
                     />
                     <p
                       className="text-white font-bold text-base leading-snug mb-1"
@@ -877,7 +877,7 @@ export default function AboutPage() {
       <section
         className="relative overflow-hidden py-24"
         style={{
-          background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)",
+          background: "#0f0f1a",
         }}
       >
         {/* Decorative radial glow */}
@@ -885,7 +885,7 @@ export default function AboutPage() {
           className="absolute pointer-events-none"
           style={{
             background:
-              "radial-gradient(circle at center, rgba(200,169,81,0.07) 0%, transparent 65%)",
+              "radial-gradient(circle at center, rgba(212,168,67,0.07) 0%, transparent 65%)",
             width: "36rem",
             height: "36rem",
             top: "50%",
