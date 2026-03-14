@@ -28,7 +28,17 @@
       "Bash(echo:*)",
       "Bash(__NEW_LINE_0718cbf0f9d0ff39__ grep -n \"export const metadata\" /Users/me/Desktop/hidden-potential-site/src/app/$f/page.tsx)",
       "Bash(bun run build:*)",
-      "Bash(xargs sed:*)"
+      "Bash(xargs sed:*)",
+      "Bash(node -e:*)",
+      "Bash(sips --help:*)",
+      "Bash(git push:*)",
+      "Bash(cat:*)",
+      "Bash(for f in enlightened-learner self-mastery-women train-the-trainer art-therapy)",
+      "Bash(__NEW_LINE_b4ab400b9948a385__ grep -n \"ShineBorder\" /Users/me/Desktop/hidden-potential-site/src/app/programs/$f/page.tsx)",
+      "Bash(__NEW_LINE_b4ab400b9948a385__ done)",
+      "Bash(for f in professionals schools)",
+      "Bash(__NEW_LINE_70086f92d1f899b7__ grep -n \"ShineBorder\" /Users/me/Desktop/hidden-potential-site/src/app/for/$f/page.tsx)",
+      "Bash(__NEW_LINE_70086f92d1f899b7__ done)"
     ]
   }
 }
