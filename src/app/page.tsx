@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://hiddenpotentialskills.com",
   },
+  alternates: {
+    canonical: "https://hiddenpotentialskills.com",
+  },
 };
 
 // ── Schema.org JSON-LD ───────────────────────────────────────────────────────
