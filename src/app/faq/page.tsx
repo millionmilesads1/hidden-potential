@@ -98,7 +98,7 @@ const faqSchema = {
       name: "What is the An Enlightened Learner program?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "An Enlightened Learner is Supreet Kaur's signature program — a comprehensive life skills development pathway originally designed for students aged 10 to 18. It covers confidence building, communication skills, emotional intelligence, study techniques, goal setting, and exam resilience using NLP-based methods. Extended modules are available for college-age learners. It is the most complete starting point for personal transformation at Hidden Potential.",
+        text: "An Enlightened Learner is Supreet Kaur's signature program — a comprehensive life skills development pathway designed for students aged 8 to 21, with three age-appropriate sub-groups (8–12, 13–16, and 17–21). It covers confidence building, communication skills, emotional intelligence, study techniques, goal setting, and exam resilience using NLP-based methods. It is the most complete starting point for personal transformation at Hidden Potential.",
       },
     },
     {
@@ -238,7 +238,7 @@ const faqSchema = {
       name: "What age group is the student program for?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The An Enlightened Learner program is designed for students aged 10 to 18, with age-appropriate content for different developmental stages. College students aged 18 to 25 can access advanced modules. For younger children aged 4 to 9, we offer simplified activity-based programs through school partnerships.",
+        text: "The An Enlightened Learner program is designed for students aged 8 to 21, with three developmental sub-groups: 8–12, 13–16, and 17–21. Each sub-group receives age-appropriate content, pacing, and skill focus. Young adults aged 18–21 access leadership and independence modules. For children under 8, activity-based programs are available through school partnerships.",
       },
     },
     {
@@ -462,12 +462,12 @@ const faqCategories = [
               An Enlightened Learner
             </Link>{" "}
             is Supreet Kaur&apos;s signature program — a comprehensive life
-            skills development pathway originally designed for students aged 10
-            to 18. It covers confidence building, communication skills,
-            emotional intelligence, study techniques, goal setting, and exam
-            resilience using NLP-based methods. Extended modules are available
-            for college-age learners. It is the most complete starting point for
-            personal transformation at Hidden Potential.
+            skills development pathway designed for students aged 8 to 21, with
+            three age-appropriate sub-groups (8–12, 13–16, and 17–21). It covers
+            confidence building, communication skills, emotional intelligence,
+            study techniques, goal setting, and exam resilience using NLP-based
+            methods. It is the most complete starting point for personal
+            transformation at Hidden Potential.
           </>
         ),
       },
@@ -749,11 +749,10 @@ const faqCategories = [
             >
               An Enlightened Learner
             </Link>{" "}
-            program is designed for students aged 10 to 18, with age-appropriate
-            content for different developmental stages. College students aged 18
-            to 25 can access advanced modules. For younger children aged 4 to 9,
-            we offer simplified activity-based programs through school
-            partnerships.
+            program is designed for students aged 8 to 21, with three
+            developmental sub-groups: 8–12, 13–16, and 17–21. Each sub-group
+            receives age-appropriate content and skill focus. For children under
+            8, activity-based programs are available through school partnerships.
           </>
         ),
       },

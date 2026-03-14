@@ -763,13 +763,13 @@ export default function AboutPage() {
                 key={book.title}
                 className="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden flex flex-col"
               >
-                {/* Book cover placeholder */}
+                {/* Book cover */}
                 <div
                   className="w-full h-56 flex items-center justify-center relative overflow-hidden"
                   style={{
                     background: `linear-gradient(160deg, ${book.gradientFrom} 0%, ${book.gradientTo} 100%)`,
                   }}
-                  aria-label={`Cover placeholder for "${book.title}" by Supreet Kaur`}
+                  aria-label={`Book cover: "${book.title}" by Supreet Kaur`}
                 >
                   {/* Inner decorative frame */}
                   <div

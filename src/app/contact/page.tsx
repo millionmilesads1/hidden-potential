@@ -21,9 +21,9 @@ import ContactForm from "./ContactForm";
 
 // ── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "Contact Us | Life Skills Training in Delhi | Hidden Potential",
+  title: "Book Free Evaluation | Contact Hidden Potential | Life Skills Delhi",
   description:
-    "Contact Hidden Potential for life skills training in Delhi. Book a free consultation with Supreet Kaur. NLP coaching, school programs, corporate workshops. Dwarka, Noida, Gurgaon, Faridabad. Call, WhatsApp or visit.",
+    "Schedule a free 30-minute life skills evaluation. WhatsApp, phone, or online. Serving Delhi, Noida, Gurgaon, Faridabad & pan-India. 14+ years. 5000+ trained.",
   openGraph: {
     title: "Contact Hidden Potential — Life Skills Training in Delhi NCR",
     description:
@@ -362,7 +362,7 @@ export default function ContactPage() {
             className="text-3xl md:text-4xl lg:text-[2.75rem] font-extrabold text-white leading-tight mb-6 max-w-4xl mx-auto"
             style={{ textShadow: "0 1px 2px rgba(0,0,0,0.15)" }}
           >
-            Contact Hidden Potential — Life Skills Training in Delhi
+            Book Your Free Life Skills Evaluation
           </h1>
 
           {/* Lora italic tagline */}

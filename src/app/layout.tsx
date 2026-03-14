@@ -12,6 +12,21 @@ export const metadata: Metadata = {
   description:
     "Structured life skills programs for students, women & professionals in Delhi. Assessment-based placement. 14+ years experience. 5000+ trained.",
   metadataBase: new URL("https://hiddenpotentialskills.com"),
+  openGraph: {
+    siteName: "Hidden Potential",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Hidden Potential — Life Skills Training Academy in Delhi",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/opengraph-image"],
+  },
   icons: {
     icon: "/favicon.ico",
     apple: "/apple-icon.png",
