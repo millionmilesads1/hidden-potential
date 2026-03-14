@@ -474,11 +474,12 @@ export default function HomePage() {
             </div>
 
             {/* Right — Hero image */}
-            <div className="hidden md:block relative rounded-2xl overflow-hidden" style={{ height: "520px" }}>
+            <div className="hidden md:block relative w-full rounded-2xl overflow-hidden" style={{ height: "520px" }}>
               <Image
                 src="/images/students/supreet-teaching.jpg"
                 alt="Supreet Kaur conducting a life skills session with students at Hidden Potential Delhi"
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover object-center"
                 priority
               />
@@ -573,11 +574,12 @@ export default function HomePage() {
             </div>
 
             {/* Right — Full image */}
-            <div className="relative rounded-2xl overflow-hidden" style={{ height: "440px" }}>
+            <div className="relative w-full rounded-2xl overflow-hidden" style={{ height: "440px" }}>
               <Image
                 src="/images/media/media-2.jpg"
                 alt="Hidden Potential life skills training session in Delhi — real transformation in action"
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover object-center"
               />
             </div>
