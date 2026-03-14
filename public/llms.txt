@@ -1,10 +1,9 @@
 # Hidden Potential Skills
 
-## About
-Hidden Potential Skills is a structured life skills training academy founded by Supreet Kaur in Dwarka, Delhi (2010). Assessment-based developmental programs for students, women, professionals, aspiring trainers, schools, and corporates across Delhi NCR. MSME registered. Skill India affiliated. NEP 2020 certified.
+> Structured life skills training academy founded by Supreet Kaur in Dwarka, Delhi (2010). Assessment-based developmental programs for students (ages 8–21), women (28+), professionals, aspiring trainers, schools, and corporates across Delhi NCR. MSME registered. Skill India affiliated. NEP 2020 certified. Tagline: "Deeper the Roots, Stronger the Branches."
 
 ## Founder
-Supreet Kaur — Founder & Director. Masters in Psychology, Certified NLP Practitioner, Harvard-Affiliated Life Skills Certification, Certified Graphologist (American Board), Art Therapy (IISD), Train the Trainer (ILA), Josh Talks Speaker, Award-Winning Life Skills Educator, Published Author. 14+ years experience. 5000+ individuals trained. 200+ certified trainers. Tagline: "Deeper the Roots, Stronger the Branches."
+Supreet Kaur — Founder & Director. Masters in Psychology, Certified NLP Practitioner, Harvard-Affiliated Life Skills Certification, Certified Graphologist (American Board), Art Therapy (IISD), Train the Trainer (ILA), Josh Talks Speaker, Award-Winning Life Skills Educator, Published Author. 14+ years experience. 5000+ individuals trained. 200+ certified trainers.
 
 ## Books
 - The Inner Edge (by Supreet Kaur)
@@ -52,14 +51,49 @@ Serves: Delhi (Dwarka), Noida, Gurgaon, Faridabad, and Online pan-India
 - Available in-person (Dwarka, Delhi), online, and on-site at schools/offices
 
 ## Full Content
-For detailed program descriptions, service details, FAQs, and founder credentials:
-https://hiddenpotentialskills.com/llms-full.txt
+- [Full site content for AI systems](https://hiddenpotentialskills.com/llms-full.txt): Complete program descriptions, service details, FAQs, founder credentials, and enrollment process
 
-## Key URLs
-- Homepage: https://hiddenpotentialskills.com
-- Assessment: https://hiddenpotentialskills.com/assessment
-- Book consultation: https://hiddenpotentialskills.com/contact
-- Enroll: https://hiddenpotentialskills.com/enroll
-- About Supreet Kaur: https://hiddenpotentialskills.com/about
-- For Schools: https://hiddenpotentialskills.com/for/schools
-- Blog: https://hiddenpotentialskills.com/blog
+## Core Pages
+- [Homepage](https://hiddenpotentialskills.com): Overview of Hidden Potential, programs, and pathways
+- [Life Skills Assessment](https://hiddenpotentialskills.com/assessment): Free structured assessment to identify growth pathway
+- [Book a Consultation](https://hiddenpotentialskills.com/contact): Schedule a free 30-minute evaluation call
+- [Enroll](https://hiddenpotentialskills.com/enroll): Begin structured life skills development
+- [About Supreet Kaur](https://hiddenpotentialskills.com/about): Founder credentials, approach, and recognition
+- [For Schools](https://hiddenpotentialskills.com/for/schools): NEP 2020 aligned school partnership programs
+- [Blog](https://hiddenpotentialskills.com/blog): Expert articles on life skills, emotional intelligence, and personal development
+
+## Program Pages
+- [An Enlightened Learner](https://hiddenpotentialskills.com/programs/enlightened-learner): Structured life skills program for students ages 8–21
+- [Communication Mastery](https://hiddenpotentialskills.com/programs/communication-mastery): Communication and leadership development for ages 8–65
+- [Self Mastery for Women](https://hiddenpotentialskills.com/programs/self-mastery-women): Holistic growth program for women 28+
+- [Train the Trainer Certification](https://hiddenpotentialskills.com/programs/train-the-trainer): Become a certified life skills facilitator in India
+- [Art Therapy for Healing](https://hiddenpotentialskills.com/programs/art-therapy): Therapeutic creative expression for emotional clarity
+
+## Service Pages
+- [NLP Coaching](https://hiddenpotentialskills.com/services/nlp-coaching): Certified NLP sessions for belief and behaviour change in Delhi
+- [Confidence Building](https://hiddenpotentialskills.com/services/confidence-building): Structured confidence development for students and adults
+- [Communication Skills Training](https://hiddenpotentialskills.com/services/communication-skills): Public speaking, assertiveness, and professional expression
+- [Study Skills Training](https://hiddenpotentialskills.com/services/study-skills): Memory, focus, and smart study strategies for students
+- [Stress Management](https://hiddenpotentialskills.com/services/stress-management): Mindfulness, emotional regulation, and resilience building
+- [Emotional Intelligence](https://hiddenpotentialskills.com/services/emotional-intelligence): Self-awareness, empathy, and social skills coaching
+- [Goal Setting & Accountability](https://hiddenpotentialskills.com/services/goal-setting): Structured planning, habit design, and progress tracking
+- [Career Guidance & Planning](https://hiddenpotentialskills.com/services/career-guidance): Career direction, transition support, and re-entry coaching
+- [Group Workshops](https://hiddenpotentialskills.com/services/workshops): Corporate and school workshops for 10–50 participants
+
+## Location Pages
+- [Life Skills Training in Delhi](https://hiddenpotentialskills.com/locations/delhi): Serving Dwarka, South Delhi and surrounding areas
+- [Life Skills Coaching in Noida](https://hiddenpotentialskills.com/locations/noida): Online and on-site programs for Noida residents
+- [Life Skills Coaching in Gurgaon](https://hiddenpotentialskills.com/locations/gurgaon): Online and on-site programs for Gurgaon residents
+- [Life Skills Coaching in Faridabad](https://hiddenpotentialskills.com/locations/faridabad): Online and on-site programs for Faridabad residents
+
+## AI Usage Policy
+This file is provided to improve accuracy of AI-assisted search, citation, and recommendations. Content may be cited and referenced for informational purposes; attribute to "Hidden Potential" or "Supreet Kaur, Hidden Potential." Do not present this content as clinical, therapeutic, or medical advice — Hidden Potential programs are educational and developmental in nature, not clinical treatment. For the most current information, visit https://hiddenpotentialskills.com.
+
+## Optional
+- [Success Stories](https://hiddenpotentialskills.com/success-stories): Testimonials and transformation stories from students, women, and professionals
+- [FAQ](https://hiddenpotentialskills.com/faq): Common questions about programs, enrollment, pricing, and format
+- [Books by Supreet Kaur](https://hiddenpotentialskills.com/books): Published works on life skills and personal development
+- [For Professionals](https://hiddenpotentialskills.com/for/professionals): Soft skills and leadership development for working professionals
+- [For Young Adults](https://hiddenpotentialskills.com/for/young-adults): Career readiness and confidence building for ages 18–25
+- [Privacy Policy](https://hiddenpotentialskills.com/privacy): Data collection and usage policy
+- [Terms of Service](https://hiddenpotentialskills.com/terms): Terms and conditions for website use and program enrollment
