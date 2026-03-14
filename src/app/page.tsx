@@ -390,7 +390,7 @@ export default function HomePage() {
             }}
           >
             Build the Inner Strength{" "}
-            <span style={{ color: "#6F00FF" }}>Schools</span>{" "}
+            <span style={{ color: "#ffffff", textShadow: "0 0 24px rgba(255,255,255,0.9), 0 0 48px rgba(255,255,255,0.5)" }}>Schools</span>{" "}
             Never Taught You
           </h1>
 
@@ -398,7 +398,7 @@ export default function HomePage() {
           <p
             className="mb-12 leading-relaxed"
             style={{
-              color: "#6b7280",
+              color: "#ffffff",
               fontSize: "1.125rem",
               maxWidth: "540px",
               fontFamily: "var(--font-body)",
@@ -453,7 +453,7 @@ export default function HomePage() {
                 </span>
                 <span
                   className="text-xs mt-1.5 uppercase tracking-wide"
-                  style={{ color: "#6b7280", fontFamily: "var(--font-body)" }}
+                  style={{ color: "rgba(255,255,255,0.75)", fontFamily: "var(--font-body)" }}
                 >
                   {s.label}
                 </span>
