@@ -54,6 +54,16 @@ export default function Navbar() {
     return () => document.removeEventListener("keydown", handleKeyDown);
   }, []);
 
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    if (mobileOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => { document.body.style.overflow = ""; };
+  }, [mobileOpen]);
+
   // Close a dropdown when focus leaves its container
   const handleDropdownBlur =
     (setter: (v: boolean) => void, ref: React.RefObject<HTMLLIElement | null>) =>
@@ -92,13 +102,13 @@ export default function Navbar() {
           >
             <span
               className="text-[17px] font-bold tracking-tight"
-              style={{ color: "#D4A843" }}
+              style={{ color: "#C8A951" }}
             >
               Hidden
             </span>
             <span
               className="text-[17px] font-bold tracking-tight"
-              style={{ color: "#6F00FF" }}
+              style={{ color: "#7C3AED" }}
             >
               {" "}Potential
             </span>
@@ -266,11 +276,11 @@ export default function Navbar() {
               onClick={() => setMobileOpen(!mobileOpen)}
             >
               {mobileOpen ? (
-                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="#6F00FF" strokeWidth={2.5} aria-hidden="true">
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="#7C3AED" strokeWidth={2.5} aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                 </svg>
               ) : (
-                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="#6F00FF" strokeWidth={2} aria-hidden="true">
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="#7C3AED" strokeWidth={2} aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
               )}
@@ -290,23 +300,26 @@ export default function Navbar() {
               borderRadius:         "24px",
               boxShadow:            "0 8px 32px rgba(0,0,0,0.12)",
               border:               "1px solid rgba(0,0,0,0.07)",
+              maxHeight:            "calc(100svh - 160px)",
+              overflowY:            "auto",
+              WebkitOverflowScrolling: "touch",
             }}
           >
-            <nav aria-label="Mobile navigation" className="flex flex-col gap-0.5" style={{ fontFamily: "var(--font-body)" }}>
+            <nav aria-label="Mobile navigation" className="flex flex-col gap-0.5 pb-6" style={{ fontFamily: "var(--font-body)" }}>
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
                   className="py-3 px-4 text-base font-medium rounded-xl transition-colors min-h-[44px] flex items-center cursor-pointer"
-                  style={{ color: "#6F00FF" }}
+                  style={{ color: "#7C3AED" }}
                 >
                   {link.label}
                 </Link>
               ))}
 
               <div className="px-4 pt-2 pb-1">
-                <p className="text-[10px] font-bold uppercase tracking-widest mb-2 pl-1" style={{ color: "#D4A843" }} aria-hidden="true">
+                <p className="text-[10px] font-bold uppercase tracking-widest mb-2 pl-1" style={{ color: "#C8A951" }} aria-hidden="true">
                   Pathways
                 </p>
                 <div className="flex flex-col gap-0.5" role="list" aria-label="Pathways">
@@ -316,7 +329,7 @@ export default function Navbar() {
                       href={p.href}
                       onClick={() => setMobileOpen(false)}
                       className="py-2.5 px-3 text-sm font-medium rounded-lg transition-colors min-h-[44px] flex items-center cursor-pointer"
-                      style={{ color: "#1c1c2e" }}
+                      style={{ color: "#2D2D2D" }}
                     >
                       {p.label}
                     </Link>
@@ -325,7 +338,7 @@ export default function Navbar() {
               </div>
 
               <div className="px-4 pt-2 pb-1">
-                <p className="text-[10px] font-bold uppercase tracking-widest mb-2 pl-1" style={{ color: "#D4A843" }} aria-hidden="true">
+                <p className="text-[10px] font-bold uppercase tracking-widest mb-2 pl-1" style={{ color: "#C8A951" }} aria-hidden="true">
                   For
                 </p>
                 <div className="flex flex-col gap-0.5" role="list" aria-label="For">
@@ -335,7 +348,7 @@ export default function Navbar() {
                       href={f.href}
                       onClick={() => setMobileOpen(false)}
                       className="py-2.5 px-3 text-sm font-medium rounded-lg transition-colors min-h-[44px] flex items-center cursor-pointer"
-                      style={{ color: "#1c1c2e" }}
+                      style={{ color: "#2D2D2D" }}
                     >
                       {f.label}
                     </Link>
@@ -347,7 +360,7 @@ export default function Navbar() {
                 href="/contact#book-evaluation"
                 onClick={() => setMobileOpen(false)}
                 className="mt-2 mx-2 py-3.5 text-center text-sm font-semibold text-white rounded-full transition-colors min-h-[44px] flex items-center justify-center cursor-pointer"
-                style={{ background: "#0D9488", fontFamily: "var(--font-body)" }}
+                style={{ background: "#7C3AED", fontFamily: "var(--font-body)" }}
               >
                 Book Free Consultation
               </Link>

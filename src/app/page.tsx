@@ -120,7 +120,7 @@ const pillars = [
 ];
 
 // Number ghost (large, low-opacity) accent per pillar
-const pillarAccent = ["#6F00FF", "#0D9488", "#D4A843"];
+const pillarAccent = ["#7C3AED", "#7C3AED", "#C8A951"];
 
 const growthStages = [
   { num: "01", label: "Awareness",   desc: "Understand where you truly are" },
@@ -136,9 +136,9 @@ const programs = [
     tagline: "From hesitation to confidence. From emotional confusion to clarity.",
     desc: "A complete life skills curriculum across self-mastery, communication, academic thinking, and real-world readiness. Three structured levels for every stage of childhood and adolescence.",
     href: "/programs/enlightened-learner",
-    accent: "#6F00FF",
-    lightBg: "#F3E8FF",
-    borderBase: "rgba(111,0,255,0.1)",
+    accent: "#7C3AED",
+    lightBg: "#F3F0FF",
+    borderBase: "rgba(124,58,237,0.1)",
     hoverClass: "card-hover-purple",
   },
   {
@@ -147,9 +147,9 @@ const programs = [
     tagline: "From fear of speaking to leadership presence.",
     desc: "Build confidence and clarity to express yourself powerfully — in every personal and professional situation.",
     href: "/programs/communication-mastery",
-    accent: "#0D9488",
-    lightBg: "#E6F7F5",
-    borderBase: "rgba(13,148,136,0.12)",
+    accent: "#7C3AED",
+    lightBg: "#EDE9FE",
+    borderBase: "rgba(109,40,217,0.12)",
     hoverClass: "card-hover-teal",
   },
   {
@@ -158,9 +158,9 @@ const programs = [
     tagline: "From emotional overwhelm to grounded strength.",
     desc: "A structured journey for women to reclaim identity, build resilience, and lead with clarity on their own terms.",
     href: "/programs/self-mastery-women",
-    accent: "#D4A843",
+    accent: "#C8A951",
     lightBg: "#FBF7EE",
-    borderBase: "rgba(212,168,67,0.12)",
+    borderBase: "rgba(200,169,81,0.12)",
     hoverClass: "card-hover-gold",
   },
   {
@@ -169,9 +169,9 @@ const programs = [
     tagline: "From learner to leader. From passion to professional pathway.",
     desc: "Become a certified life skills trainer with curriculum mastery, NLP tools, and expert facilitation skills.",
     href: "/programs/train-the-trainer",
-    accent: "#6F00FF",
-    lightBg: "#F3E8FF",
-    borderBase: "rgba(111,0,255,0.1)",
+    accent: "#7C3AED",
+    lightBg: "#F3F0FF",
+    borderBase: "rgba(124,58,237,0.1)",
     hoverClass: "card-hover-purple",
   },
   {
@@ -180,9 +180,9 @@ const programs = [
     tagline: "From mental clutter to emotional clarity.",
     desc: "Use art, reflective journaling, and mindfulness as structured tools for emotional release and inner healing.",
     href: "/programs/art-therapy",
-    accent: "#0D9488",
-    lightBg: "#E6F7F5",
-    borderBase: "rgba(13,148,136,0.12)",
+    accent: "#7C3AED",
+    lightBg: "#EDE9FE",
+    borderBase: "rgba(109,40,217,0.12)",
     hoverClass: "card-hover-teal",
   },
 ];
@@ -318,7 +318,7 @@ function Label({ children, dark = false }: { children: ReactNode; dark?: boolean
   return (
     <p
       className="text-[11px] font-bold uppercase tracking-widest mb-4"
-      style={{ color: dark ? "#D4A843" : "#0D9488", fontFamily: "var(--font-body)" }}
+      style={{ color: dark ? "#C8A951" : "#7C3AED", fontFamily: "var(--font-body)" }}
     >
       {children}
     </p>
@@ -344,20 +344,20 @@ export default function HomePage() {
 
       {/* ═══════════════════════════════════════════
           1. HERO
-          Dark editorial (#6F00FF) — NOT purple gradient.
-          Purple (#6F00FF) used as a spot accent on one word.
+          Dark editorial (#7C3AED) — NOT purple gradient.
+          Purple (#7C3AED) used as a spot accent on one word.
           Trust & Authority: stats as primary social proof.
       ═══════════════════════════════════════════ */}
       <section
         className="relative overflow-hidden grain-overlay"
-        style={{ background: "linear-gradient(180deg, #1A0F3C 0%, #6F00FF 100%)", minHeight: "90vh", display: "flex", alignItems: "center" }}
+        style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)", minHeight: "90vh", display: "flex", alignItems: "center" }}
       >
         {/* Ambient glows — accents, not gradient backgrounds */}
         <div
           className="absolute top-0 right-0 pointer-events-none"
           style={{
             width: "500px", height: "500px",
-            background: "radial-gradient(circle at center, rgba(111,0,255,0.18) 0%, transparent 70%)",
+            background: "radial-gradient(circle at center, rgba(124,58,237,0.18) 0%, transparent 70%)",
             filter: "blur(40px)",
           }}
           aria-hidden="true"
@@ -366,7 +366,7 @@ export default function HomePage() {
           className="absolute bottom-0 left-0 pointer-events-none"
           style={{
             width: "380px", height: "380px",
-            background: "radial-gradient(circle at center, rgba(13,148,136,0.12) 0%, transparent 70%)",
+            background: "radial-gradient(circle at center, rgba(109,40,217,0.12) 0%, transparent 70%)",
             filter: "blur(40px)",
           }}
           aria-hidden="true"
@@ -380,7 +380,7 @@ export default function HomePage() {
               {/* Pre-label */}
               <p
                 className="text-[11px] font-bold uppercase tracking-[0.2em] mb-8"
-                style={{ color: "#D4A843", fontFamily: "var(--font-body)" }}
+                style={{ color: "#C8A951", fontFamily: "var(--font-body)" }}
               >
                 Transformational Life Skills Academy · Delhi NCR
               </p>
@@ -514,8 +514,8 @@ export default function HomePage() {
                   fontFamily: "var(--font-display)",
                   fontStyle: "italic",
                   fontSize: "clamp(1.25rem, 2.2vw, 1.6rem)",
-                  color: "#6F00FF",
-                  borderLeft: "3px solid #6F00FF",
+                  color: "#7C3AED",
+                  borderLeft: "3px solid #7C3AED",
                   paddingLeft: "24px",
                 }}
               >
@@ -535,9 +535,9 @@ export default function HomePage() {
                     className="px-4 py-2 text-sm font-medium rounded-full"
                     style={{
                       fontFamily: "var(--font-body)",
-                      background: "#F3E8FF",
-                      color: "#6F00FF",
-                      border: "1px solid rgba(111,0,255,0.15)",
+                      background: "#F3F0FF",
+                      color: "#7C3AED",
+                      border: "1px solid rgba(124,58,237,0.15)",
                     }}
                   >
                     {item}
@@ -548,15 +548,15 @@ export default function HomePage() {
               <div className="pl-9 space-y-5">
                 <p
                   className="leading-relaxed"
-                  style={{ color: "#1c1c2e", fontSize: "1.0625rem", fontFamily: "var(--font-body)" }}
+                  style={{ color: "#2D2D2D", fontSize: "1.0625rem", fontFamily: "var(--font-body)" }}
                 >
-                  <strong style={{ color: "#0D9488" }}>Hidden Potential</strong>{" "}
+                  <strong style={{ color: "#7C3AED" }}>Hidden Potential</strong>{" "}
                   was created to bridge that gap — to give every learner the tools
                   that formal education never prioritised.
                 </p>
                 <p
                   className="leading-relaxed"
-                  style={{ color: "#1c1c2e", fontSize: "1.0625rem", fontFamily: "var(--font-body)" }}
+                  style={{ color: "#2D2D2D", fontSize: "1.0625rem", fontFamily: "var(--font-body)" }}
                 >
                   This is not a training institute. It is a{" "}
                   <strong>transformational academy</strong> — where structured
@@ -595,7 +595,7 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════
           3. METHOD — System · Science · Structure
       ═══════════════════════════════════════════ */}
-      <section style={{ background: "#FAFAF9" }} className="py-24">
+      <section style={{ background: "#F8F6F2" }} className="py-24">
         <div className="max-w-6xl mx-auto px-6">
           <div className="mb-14">
             <Label>The Hidden Potential Method</Label>
@@ -604,7 +604,7 @@ export default function HomePage() {
               style={{
                 fontFamily: "var(--font-display)",
                 fontSize: "clamp(1.75rem, 3vw, 2.5rem)",
-                color: "#6F00FF",
+                color: "#7C3AED",
                 maxWidth: "480px",
               }}
             >
@@ -643,7 +643,7 @@ export default function HomePage() {
                 </p>
                 <h3
                   className="font-bold mb-3 text-xl"
-                  style={{ fontFamily: "var(--font-display)", color: "#6F00FF" }}
+                  style={{ fontFamily: "var(--font-display)", color: "#7C3AED" }}
                 >
                   {p.title}
                 </h3>
@@ -658,10 +658,10 @@ export default function HomePage() {
           </div>
 
           {/* 4 Growth Stages */}
-          <div className="rounded-2xl p-8" style={{ background: "linear-gradient(180deg, #1A0F3C 0%, #6F00FF 100%)" }}>
+          <div className="rounded-2xl p-8" style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }}>
             <p
               className="text-[11px] font-bold uppercase tracking-widest mb-8"
-              style={{ color: "#D4A843", fontFamily: "var(--font-body)" }}
+              style={{ color: "#C8A951", fontFamily: "var(--font-body)" }}
             >
               4 Stages of Growth
             </p>
@@ -681,7 +681,7 @@ export default function HomePage() {
                   )}
                   <div
                     className="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold mb-4 flex-shrink-0 relative z-10 text-white"
-                    style={{ background: "rgba(111,0,255,0.35)", fontFamily: "var(--font-body)" }}
+                    style={{ background: "rgba(124,58,237,0.35)", fontFamily: "var(--font-body)" }}
                   >
                     {s.num}
                   </div>
@@ -717,7 +717,7 @@ export default function HomePage() {
               style={{
                 fontFamily: "var(--font-display)",
                 fontSize: "clamp(1.75rem, 3vw, 2.5rem)",
-                color: "#6F00FF",
+                color: "#7C3AED",
               }}
             >
               Choose Your Growth Pathway
@@ -761,7 +761,7 @@ export default function HomePage() {
                 </div>
                 <h3
                   className="font-bold mb-3 leading-tight"
-                  style={{ fontFamily: "var(--font-display)", fontSize: "1.5rem", color: "#6F00FF" }}
+                  style={{ fontFamily: "var(--font-display)", fontSize: "1.5rem", color: "#7C3AED" }}
                 >
                   {programs[0].name}
                 </h3>
@@ -806,7 +806,7 @@ export default function HomePage() {
                 </span>
                 <h3
                   className="font-bold mb-2 leading-tight"
-                  style={{ fontFamily: "var(--font-display)", fontSize: "1.2rem", color: "#6F00FF" }}
+                  style={{ fontFamily: "var(--font-display)", fontSize: "1.2rem", color: "#7C3AED" }}
                 >
                   {programs[1].name}
                 </h3>
@@ -846,7 +846,7 @@ export default function HomePage() {
                   </span>
                   <h3
                     className="font-bold mb-2 leading-snug"
-                    style={{ fontFamily: "var(--font-display)", fontSize: "1.1rem", color: "#6F00FF" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "1.1rem", color: "#7C3AED" }}
                   >
                     {prog.name}
                   </h3>
@@ -870,12 +870,12 @@ export default function HomePage() {
           {/* Assessment prompt */}
           <div
             className="mt-12 rounded-2xl p-8 flex flex-col sm:flex-row items-center justify-between gap-6"
-            style={{ background: "#F3E8FF", border: "1px solid rgba(111,0,255,0.1)" }}
+            style={{ background: "#F3F0FF", border: "1px solid rgba(124,58,237,0.1)" }}
           >
             <div>
               <p
                 className="font-bold mb-1"
-                style={{ fontFamily: "var(--font-display)", color: "#6F00FF", fontSize: "1.15rem" }}
+                style={{ fontFamily: "var(--font-display)", color: "#7C3AED", fontSize: "1.15rem" }}
               >
                 Not sure where to start?
               </p>
@@ -905,7 +905,7 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════
           5. DIFFERENTIATORS — Dark section
       ═══════════════════════════════════════════ */}
-      <section style={{ background: "linear-gradient(180deg, #1A0F3C 0%, #6F00FF 100%)" }} className="py-24">
+      <section style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }} className="py-24">
         <div className="max-w-6xl mx-auto px-6">
           <div className="mb-14">
             <Label dark>What Sets Us Apart</Label>
@@ -943,14 +943,14 @@ export default function HomePage() {
                 <div className="flex items-start gap-4">
                   <div
                     className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
-                    style={{ background: "rgba(13,148,136,0.15)", color: "#0D9488" }}
+                    style={{ background: "rgba(109,40,217,0.15)", color: "#7C3AED" }}
                   >
                     {d.icon}
                   </div>
                   <div>
                     <span
                       className="text-[10px] font-bold tabular-nums block mb-2"
-                      style={{ color: "#D4A843", fontFamily: "var(--font-body)" }}
+                      style={{ color: "#C8A951", fontFamily: "var(--font-body)" }}
                     >
                       {String(i + 1).padStart(2, "0")}
                     </span>
@@ -978,11 +978,11 @@ export default function HomePage() {
           6. CREDENTIALS STRIP
           Trust & Authority: certifications prominently displayed
       ═══════════════════════════════════════════ */}
-      <section style={{ background: "#FAFAF9" }} className="py-14">
+      <section style={{ background: "#F8F6F2" }} className="py-14">
         <div className="max-w-6xl mx-auto px-6">
           <p
             className="text-[11px] font-bold uppercase tracking-widest text-center mb-8"
-            style={{ color: "#D4A843", fontFamily: "var(--font-body)" }}
+            style={{ color: "#C8A951", fontFamily: "var(--font-body)" }}
           >
             Credentials &amp; Certifications · Supreet Kaur, Founder
           </p>
@@ -994,8 +994,8 @@ export default function HomePage() {
                 style={{
                   fontFamily: "var(--font-body)",
                   background: "white",
-                  color: "#6F00FF",
-                  border: "1px solid rgba(212,168,67,0.3)",
+                  color: "#7C3AED",
+                  border: "1px solid rgba(200,169,81,0.3)",
                   boxShadow: "0 1px 4px rgba(0,0,0,0.04)",
                 }}
               >
@@ -1018,7 +1018,7 @@ export default function HomePage() {
             style={{
               fontFamily: "var(--font-display)",
               fontSize: "clamp(1.75rem, 3vw, 2.5rem)",
-              color: "#6F00FF",
+              color: "#7C3AED",
             }}
           >
             Transformations That Speak
@@ -1034,15 +1034,15 @@ export default function HomePage() {
                 className="shrink-0 rounded-2xl p-7 flex flex-col"
                 style={{
                   width: "340px",
-                  background: "#FAFAF9",
+                  background: "#F8F6F2",
                   border: "1px solid rgba(0,0,0,0.07)",
-                  borderLeft: "3px solid #D4A843",
+                  borderLeft: "3px solid #C8A951",
                   boxShadow: "0 2px 8px rgba(0,0,0,0.04)",
                 }}
               >
                 <svg
                   className="w-7 h-7 mb-4 flex-shrink-0"
-                  fill="#D4A843"
+                  fill="#C8A951"
                   opacity="0.3"
                   viewBox="0 0 32 32"
                   aria-hidden="true"
@@ -1051,21 +1051,21 @@ export default function HomePage() {
                 </svg>
                 <p
                   className="text-sm leading-relaxed mb-6 flex-1"
-                  style={{ fontFamily: "var(--font-display)", fontStyle: "italic", color: "#1c1c2e" }}
+                  style={{ fontFamily: "var(--font-display)", fontStyle: "italic", color: "#2D2D2D" }}
                 >
                   {t.quote}
                 </p>
                 <div className="flex items-center gap-3">
                   <div
                     className="w-9 h-9 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 text-white"
-                    style={{ background: "linear-gradient(180deg, #1A0F3C 0%, #6F00FF 100%)", fontFamily: "var(--font-body)" }}
+                    style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)", fontFamily: "var(--font-body)" }}
                   >
                     {t.initial}
                   </div>
                   <div>
                     <p
                       className="text-sm font-bold leading-tight"
-                      style={{ fontFamily: "var(--font-display)", color: "#6F00FF" }}
+                      style={{ fontFamily: "var(--font-display)", color: "#7C3AED" }}
                     >
                       {t.name}
                     </p>
@@ -1092,7 +1092,7 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════
           8. HOW IT WORKS
       ═══════════════════════════════════════════ */}
-      <section style={{ background: "#F3E8FF" }} className="py-24">
+      <section style={{ background: "#F3F0FF" }} className="py-24">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-14">
             <Label>How It Works</Label>
@@ -1101,7 +1101,7 @@ export default function HomePage() {
               style={{
                 fontFamily: "var(--font-display)",
                 fontSize: "clamp(1.75rem, 3vw, 2.5rem)",
-                color: "#6F00FF",
+                color: "#7C3AED",
               }}
             >
               Your Path to Transformation
@@ -1124,29 +1124,29 @@ export default function HomePage() {
                       left: "calc(50% + 28px + 8px)",
                       right: "-16px",
                       height: "2px",
-                      background: "rgba(111,0,255,0.15)",
+                      background: "rgba(124,58,237,0.15)",
                     }}
                     aria-hidden="true"
                   />
                 )}
                 <div
                   className="rounded-2xl p-6 h-full"
-                  style={{ background: "white", border: "1px solid rgba(111,0,255,0.08)" }}
+                  style={{ background: "white", border: "1px solid rgba(124,58,237,0.08)" }}
                 >
                   <div
                     className="w-14 h-14 rounded-2xl flex items-center justify-center mb-5"
-                    style={{ background: "linear-gradient(180deg, #1A0F3C 0%, #6F00FF 100%)" }}
+                    style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }}
                   >
                     <span
                       className="text-lg font-bold tabular-nums"
-                      style={{ fontFamily: "var(--font-display)", color: "#D4A843" }}
+                      style={{ fontFamily: "var(--font-display)", color: "#C8A951" }}
                     >
                       {s.step}
                     </span>
                   </div>
                   <h3
                     className="font-bold mb-2 leading-snug"
-                    style={{ fontFamily: "var(--font-display)", color: "#6F00FF", fontSize: "1rem" }}
+                    style={{ fontFamily: "var(--font-display)", color: "#7C3AED", fontSize: "1rem" }}
                   >
                     {s.title}
                   </h3>
@@ -1183,7 +1183,7 @@ export default function HomePage() {
               style={{
                 fontFamily: "var(--font-display)",
                 fontSize: "clamp(1.75rem, 3vw, 2.25rem)",
-                color: "#6F00FF",
+                color: "#7C3AED",
               }}
             >
               Common Questions About Our Programs
@@ -1224,11 +1224,11 @@ export default function HomePage() {
               >
                 <summary
                   className="flex items-center justify-between gap-4 px-6 py-5"
-                  style={{ background: "#FAFAF9", fontFamily: "var(--font-body)" }}
+                  style={{ background: "#F8F6F2", fontFamily: "var(--font-body)" }}
                 >
                   <span
                     className="font-semibold leading-snug"
-                    style={{ color: "#6F00FF", fontSize: "0.9375rem" }}
+                    style={{ color: "#7C3AED", fontSize: "0.9375rem" }}
                   >
                     {q}
                   </span>
@@ -1274,7 +1274,7 @@ export default function HomePage() {
           10. FINAL CTA — Dark editorial
           Credentials grid = Trust & Authority's primary signal
       ═══════════════════════════════════════════ */}
-      <section style={{ background: "linear-gradient(180deg, #1A0F3C 0%, #6F00FF 100%)" }} className="py-28">
+      <section style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }} className="py-28">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <Label dark>Begin Your Journey</Label>
 
@@ -1287,7 +1287,7 @@ export default function HomePage() {
           >
             You don&apos;t need more motivation.
             <br />
-            <span style={{ color: "#6F00FF" }}>You need structured transformation.</span>
+            <span style={{ color: "#7C3AED" }}>You need structured transformation.</span>
           </h2>
 
           <p
@@ -1340,7 +1340,7 @@ export default function HomePage() {
                   fontFamily: "var(--font-body)",
                   background: "white",
                   color: "#7C3AED",
-                  border: "1px solid rgba(212,168,67,0.5)",
+                  border: "1px solid rgba(200,169,81,0.5)",
                 }}
               >
                 {badge}

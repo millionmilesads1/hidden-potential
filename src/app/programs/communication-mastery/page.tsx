@@ -317,7 +317,7 @@ export default function CommunicationMasteryPage() {
       <section
         className="relative overflow-hidden"
         style={{
-          background: "linear-gradient(180deg, #1A0F3C 0%, #6F00FF 100%)",
+          background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)",
         }}
       >
         {/* Decorative blobs */}
@@ -331,7 +331,7 @@ export default function CommunicationMasteryPage() {
           className="absolute bottom-0 -left-16 w-64 h-64 rounded-full pointer-events-none"
           style={{
             background:
-              "radial-gradient(circle at center, rgba(212,168,67,0.07) 0%, transparent 70%)",
+              "radial-gradient(circle at center, rgba(200,169,81,0.07) 0%, transparent 70%)",
           }}
         />
 
@@ -350,8 +350,8 @@ export default function CommunicationMasteryPage() {
             <span
               className="inline-flex items-center px-4 py-1.5 text-[11px] font-bold uppercase tracking-widest text-primary-gold rounded-full"
               style={{
-                background: "rgba(212,168,67,0.12)",
-                border: "1px solid rgba(212,168,67,0.25)",
+                background: "rgba(200,169,81,0.12)",
+                border: "1px solid rgba(200,169,81,0.25)",
               }}
             >
               Ages 8–65
@@ -442,7 +442,7 @@ export default function CommunicationMasteryPage() {
               >
                 <div
                   className="w-1 h-8 rounded-full mb-4"
-                  style={{ backgroundColor: "#0D9488" }}
+                  style={{ backgroundColor: "#7C3AED" }}
                 />
                 <h3 className="font-bold text-primary-navy mb-2 text-[15px] leading-snug">
                   {item.title}
@@ -467,7 +467,7 @@ export default function CommunicationMasteryPage() {
               >
                 <div
                   className="w-1 h-8 rounded-full mb-4"
-                  style={{ backgroundColor: "#0D9488" }}
+                  style={{ backgroundColor: "#7C3AED" }}
                 />
                 <h3 className="font-bold text-primary-navy mb-2 text-[15px] leading-snug">
                   {item.title}
@@ -488,12 +488,12 @@ export default function CommunicationMasteryPage() {
           {/* Gold callout — Pre/Post Assessment */}
           <div
             className="rounded-lg p-6 border-l-4 max-w-3xl mx-auto mb-12"
-            style={{ borderColor: "#D4A843", background: "#FBF7EE" }}
+            style={{ borderColor: "#C8A951", background: "#FBF7EE" }}
           >
             <div className="flex items-start gap-3">
               <div
                 className="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"
-                style={{ background: "#D4A843" }}
+                style={{ background: "#C8A951" }}
               >
                 <svg
                   className="w-3 h-3 text-white"
@@ -683,7 +683,7 @@ export default function CommunicationMasteryPage() {
       <section
         className="py-20"
         style={{
-          background: "linear-gradient(180deg, #1A0F3C 0%, #6F00FF 100%)",
+          background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)",
         }}
       >
         <div className="max-w-6xl mx-auto px-6">
@@ -760,7 +760,7 @@ export default function CommunicationMasteryPage() {
               {/* Gold quote callout */}
               <div
                 className="rounded-lg p-6"
-                style={{ background: "#FBF7EE", borderLeft: "3px solid #D4A843" }}
+                style={{ background: "#FBF7EE", borderLeft: "3px solid #C8A951" }}
               >
                 <p
                   className="text-lg text-primary-navy leading-relaxed"

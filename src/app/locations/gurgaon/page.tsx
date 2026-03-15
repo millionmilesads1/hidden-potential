@@ -409,7 +409,7 @@ export default function GurgaonLocationPage() {
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
         className="relative overflow-hidden"
-        style={{ background: "linear-gradient(180deg, #1A0F3C 0%, #6F00FF 100%)" }}
+        style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }}
       >
         {/* Glows */}
         <div
@@ -423,7 +423,7 @@ export default function GurgaonLocationPage() {
           className="absolute bottom-0 -left-16 w-64 h-64 rounded-full pointer-events-none"
           style={{
             background:
-              "radial-gradient(circle at center, rgba(212,168,67,0.07) 0%, transparent 70%)",
+              "radial-gradient(circle at center, rgba(200,169,81,0.07) 0%, transparent 70%)",
           }}
         />
 
@@ -715,7 +715,7 @@ export default function GurgaonLocationPage() {
                 <div className="flex items-center gap-3 mb-3">
                   <div
                     className="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0"
-                    style={{ background: "#0D9488" }}
+                    style={{ background: "#7C3AED" }}
                   >
                     <svg
                       className="w-3.5 h-3.5 text-white"
@@ -802,7 +802,7 @@ export default function GurgaonLocationPage() {
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
         className="relative overflow-hidden py-20"
-        style={{ background: "linear-gradient(180deg, #1A0F3C 0%, #6F00FF 100%)" }}
+        style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }}
       >
         {/* Glow */}
         <div

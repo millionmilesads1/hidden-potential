@@ -49,7 +49,7 @@ export default function RootLayout({
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[9999] focus:px-6 focus:py-3 focus:rounded-md focus:text-sm focus:font-semibold focus:text-white focus:shadow-lg"
-          style={{ background: "linear-gradient(180deg, #1A0F3C 0%, #6F00FF 100%)" }}
+          style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }}
         >
           Skip to main content
         </a>
@@ -66,8 +66,8 @@ export default function RootLayout({
           {/* ── Tagline banner — scrolls with page, appears on every page ── */}
           <div
             style={{
-              background: "linear-gradient(180deg, #1A0F3C 0%, #6F00FF 100%)",
-              borderBottom: "1px solid rgba(13, 148, 136, 0.3)",
+              background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)",
+              borderBottom: "1px solid rgba(109, 40, 217, 0.3)",
               letterSpacing: "0.5px",
             }}
             className="w-full py-[10px] px-4 text-center text-[13px]"
@@ -75,7 +75,7 @@ export default function RootLayout({
             <span style={{ color: "#FFFFFF", fontWeight: 400 }}>
               Our Core Strategy:&nbsp;
             </span>
-            <span style={{ color: "#D4A843", fontStyle: "italic" }}>
+            <span style={{ color: "#C8A951", fontStyle: "italic" }}>
               &ldquo;Deeper the Roots, Stronger the Branches&rdquo;
             </span>
           </div>

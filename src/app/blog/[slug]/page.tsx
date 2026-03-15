@@ -737,7 +737,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 
       {/* ── HERO ──────────────────────────────────────────────────────────── */}
       <section
-        style={{ background: 'linear-gradient(180deg, #1A0F3C 0%, #6F00FF 100%)' }}
+        style={{ background: 'linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)' }}
         className="relative pt-24 pb-16 overflow-hidden"
       >
         <div
@@ -879,7 +879,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 
       {/* ── FINAL CTA ─────────────────────────────────────────────────────── */}
       <section
-        style={{ background: 'linear-gradient(180deg, #1A0F3C 0%, #6F00FF 100%)' }}
+        style={{ background: 'linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)' }}
         className="relative py-20 text-center overflow-hidden"
       >
         <div

@@ -29,7 +29,7 @@ const locations = [
 
 export default function Footer() {
   return (
-    <footer style={{ background: "linear-gradient(180deg, #1A0F3C 0%, #6F00FF 100%)" }}>
+    <footer style={{ background: "#2D1B69" }}>
 
       {/* ── Top tagline strip ─────────────────────────────────────────── */}
       <div style={{ borderBottom: "1px solid rgba(255,255,255,0.06)" }}>
@@ -37,7 +37,7 @@ export default function Footer() {
           <Link href="/" className="inline-flex items-center cursor-pointer shrink-0">
             <span
               className="text-xl font-bold tracking-tight"
-              style={{ fontFamily: "var(--font-display)", color: "#D4A843" }}
+              style={{ fontFamily: "var(--font-display)", color: "#C8A951" }}
             >
               Hidden
             </span>
@@ -54,7 +54,7 @@ export default function Footer() {
             style={{
               fontFamily: "var(--font-display)",
               fontStyle: "italic",
-              color: "#D4A843",
+              color: "#C8A951",
               opacity: 0.8,
             }}
           >
@@ -105,9 +105,9 @@ export default function Footer() {
                 className="text-[10px] font-semibold px-2.5 py-1 rounded-full"
                 style={{
                   fontFamily: "var(--font-body)",
-                  color: "#D4A843",
-                  border: "1px solid rgba(212,168,67,0.3)",
-                  background: "rgba(212,168,67,0.06)",
+                  color: "#C8A951",
+                  border: "1px solid rgba(200,169,81,0.3)",
+                  background: "rgba(200,169,81,0.06)",
                 }}
               >
                 {badge}
@@ -121,7 +121,7 @@ export default function Footer() {
           <h3
             id="footer-programs-heading"
             className="text-[10px] font-bold uppercase tracking-widest mb-5"
-            style={{ fontFamily: "var(--font-body)", color: "#D4A843" }}
+            style={{ fontFamily: "var(--font-body)", color: "#C8A951" }}
           >
             Programs
           </h3>
@@ -145,7 +145,7 @@ export default function Footer() {
           <h3
             id="footer-services-heading"
             className="text-[10px] font-bold uppercase tracking-widest mb-5"
-            style={{ fontFamily: "var(--font-body)", color: "#D4A843" }}
+            style={{ fontFamily: "var(--font-body)", color: "#C8A951" }}
           >
             Services
           </h3>
@@ -170,7 +170,7 @@ export default function Footer() {
             <h3
               id="footer-locations-heading"
               className="text-[10px] font-bold uppercase tracking-widest mb-5"
-              style={{ fontFamily: "var(--font-body)", color: "#D4A843" }}
+              style={{ fontFamily: "var(--font-body)", color: "#C8A951" }}
             >
               Locations
             </h3>

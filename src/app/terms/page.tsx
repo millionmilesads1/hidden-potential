@@ -18,7 +18,7 @@ export default function TermsPage() {
     <main>
       {/* ── HEADER ──────────────────────────────────────────────────────────── */}
       <section
-        style={{ background: 'linear-gradient(180deg, #1A0F3C 0%, #6F00FF 100%)' }}
+        style={{ background: 'linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)' }}
         className="pt-24 pb-16 text-center"
       >
         <div className="max-w-3xl mx-auto px-6">

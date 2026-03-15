@@ -298,7 +298,7 @@ export default function ResourcesPage() {
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
         className="relative overflow-hidden"
-        style={{ background: "linear-gradient(180deg, #1A0F3C 0%, #6F00FF 100%)" }}
+        style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }}
       >
         {/* Top-right purple glow */}
         <div
@@ -313,7 +313,7 @@ export default function ResourcesPage() {
           className="absolute bottom-0 -left-16 w-64 h-64 rounded-full pointer-events-none"
           style={{
             background:
-              "radial-gradient(circle at center, rgba(212,168,67,0.07) 0%, transparent 70%)",
+              "radial-gradient(circle at center, rgba(200,169,81,0.07) 0%, transparent 70%)",
           }}
         />
 
@@ -657,7 +657,7 @@ export default function ResourcesPage() {
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
         className="relative overflow-hidden py-20"
-        style={{ background: "linear-gradient(180deg, #1A0F3C 0%, #6F00FF 100%)" }}
+        style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }}
       >
         {/* Glow */}
         <div

@@ -1,9 +1,10 @@
 /* ─────────────────────────────────────────────
    GOOGLE FONTS
-   Playfair Display  — editorial serif headings
+   Plus Jakarta Sans — modern sans-serif headings
    DM Sans          — clean modern body
+   Lora             — italic accent only
    ───────────────────────────────────────────── */
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Lora:ital,wght@1,400;1,600&display=swap");
 
 @import "tailwindcss";
 
@@ -50,28 +51,29 @@
 
 @theme {
   /* ── Core Brand Palette ── */
-  --color-brand-dark:         #3D00CC;   /* Deep purple — darkest gradient stop */
-  --color-brand-purple:       #6F00FF;   /* Electric purple — primary brand color */
-  --color-brand-teal:         #0D9488;   /* Teal — primary CTAs, links, action */
-  --color-brand-teal-dark:    #0f766e;   /* Teal hover state */
-  --color-brand-gold:         #D4A843;   /* Gold — credentials, labels, premium accent */
-  --color-brand-gold-dark:    #b8882a;   /* Gold hover */
-  --color-brand-light-purple: #F3E8FF;   /* Light purple — card/section backgrounds */
-  --color-brand-light-teal:   #E6F7F5;   /* Light teal — highlights */
-  --color-brand-muted:        #4b5563;   /* Secondary text — meets 5.9:1 contrast on white (WCAG AA) */
+  --color-brand-dark:         #2D1B69;   /* Deep navy purple — heroes, footer, headings */
+  --color-brand-purple:       #7C3AED;   /* Vibrant purple — CTAs, links, action */
+  --color-brand-teal:         #7C3AED;   /* Alias → vibrant purple (replaces ocean teal) */
+  --color-brand-teal-dark:    #6D28D9;   /* Purple hover state */
+  --color-brand-gold:         #C8A951;   /* Gold — credentials, labels, premium accent */
+  --color-brand-gold-dark:    #A68B3E;   /* Gold hover */
+  --color-brand-light-purple: #F3F0FF;   /* Light purple — card/section backgrounds */
+  --color-brand-light-teal:   #EDE9FE;   /* Purple glow — highlights */
+  --color-brand-muted:        #6B6B6B;   /* Secondary text — gray-600 */
 
   /* ── Semantic aliases (cascade to all existing pages) ── */
-  --color-primary-navy:   #6F00FF;
-  --color-primary-teal:   #0D9488;
-  --color-primary-gold:   #D4A843;
-  --color-off-white:      #FAFAF9;
-  --color-charcoal:       #1c1c2e;
+  --color-primary-navy:   #2D1B69;
+  --color-primary-teal:   #7C3AED;
+  --color-primary-gold:   #C8A951;
+  --color-off-white:      #F8F6F2;
+  --color-charcoal:       #2D2D2D;
 
-  --color-navy-light:     #F3E8FF;
-  --color-teal-light:     #E6F7F5;
-  --color-teal-dark:      #0f766e;
+  --color-navy-light:     #F3F0FF;
+  --color-teal-light:     #EDE9FE;
+  --color-teal-dark:      #6D28D9;
+  --color-teal-hover:     #8B5CF6;
   --color-gold-light:     #FBF7EE;
-  --color-gold-dark:      #b8882a;
+  --color-gold-dark:      #A68B3E;
 
   --color-success:        #2D8F5E;
   --color-warning:        #E07A5F;
@@ -82,9 +84,9 @@
   --color-gray-600:       #6B6B6B;
 
   /* ── Font Families ── */
-  --font-display: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-display: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
   --font-body:    "DM Sans", system-ui, -apple-system, sans-serif;
-  --font-accent:  "Playfair Display", Georgia, serif;
+  --font-accent:  "Lora", Georgia, serif;
 }
 
 /* ─────────────────────────────────────────────
@@ -93,24 +95,24 @@
 @layer base {
   html {
     font-family: var(--font-body);
-    color: #1c1c2e;
-    background-color: #FAFAF9;
+    color: #2D2D2D;
+    background-color: #F8F6F2;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
-    color: #6F00FF;
+    color: #2D1B69;
   }
 
   a {
-    color: #0D9488;
+    color: #7C3AED;
     text-decoration: none;
   }
 
   a:hover {
-    color: #0f766e;
+    color: #6D28D9;
   }
 
   /* ── Accessibility: keyboard focus rings (WCAG 2.4.7) ── */
@@ -120,7 +122,7 @@
   input:focus-visible,
   select:focus-visible,
   textarea:focus-visible {
-    outline: 2px solid #6F00FF;
+    outline: 2px solid #7C3AED;
     outline-offset: 2px;
     border-radius: 4px;
   }
@@ -185,9 +187,9 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   cursor: pointer;
 }
-.card-hover-purple:hover  { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(111,0,255,0.14); border-color: rgba(111,0,255,0.28) !important; }
-.card-hover-teal:hover    { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(13,148,136,0.14); border-color: rgba(13,148,136,0.28) !important; }
-.card-hover-gold:hover    { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(212,168,67,0.14); border-color: rgba(212,168,67,0.28) !important; }
+.card-hover-purple:hover  { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(124,58,237,0.14); border-color: rgba(124,58,237,0.28) !important; }
+.card-hover-teal:hover    { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(124,58,237,0.14); border-color: rgba(124,58,237,0.28) !important; }
+.card-hover-gold:hover    { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(200,169,81,0.14); border-color: rgba(200,169,81,0.28) !important; }
 .card-hover-neutral:hover { transform: translateY(-3px); box-shadow: 0 8px 32px rgba(0,0,0,0.08); }
 
 /* Dark section cards (differentiators, dark bg) */
@@ -195,29 +197,36 @@
   transition: background 0.2s ease, border-color 0.2s ease;
 }
 .card-hover-dark:hover {
-  background: rgba(111,0,255,0.08) !important;
-  border-color: rgba(111,0,255,0.2) !important;
+  background: rgba(124,58,237,0.08) !important;
+  border-color: rgba(124,58,237,0.2) !important;
 }
 
 /* CTA buttons */
 .btn-teal {
-  background: #0D9488;
-  box-shadow: 0 4px 16px rgba(13,148,136,0.38);
+  background: #7C3AED;
+  box-shadow: 0 4px 16px rgba(124,58,237,0.38);
   transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 .btn-teal:hover {
-  background: #0f766e;
+  background: #6D28D9;
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(13,148,136,0.45);
+  box-shadow: 0 8px 24px rgba(124,58,237,0.45);
+}
+.btn-teal:active {
+  transform: scale(0.97);
+  box-shadow: 0 2px 8px rgba(124,58,237,0.3);
 }
 
 .btn-purple {
-  background: linear-gradient(180deg, #1A0F3C 0%, #6F00FF 100%);
+  background: linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%);
   transition: background 0.2s ease, transform 0.2s ease;
 }
 .btn-purple:hover {
-  background: #5a00d4;
+  background: #6D28D9;
   transform: translateY(-1px);
+}
+.btn-purple:active {
+  transform: scale(0.97);
 }
 
 .btn-outline-dark {
@@ -230,6 +239,9 @@
   color: white;
   background: rgba(255,255,255,0.05);
 }
+.btn-outline-dark:active {
+  transform: scale(0.97);
+}
 
 .btn-outline-hero {
   border: 1.5px solid rgba(255,255,255,0.18);
@@ -240,19 +252,22 @@
   border-color: rgba(255,255,255,0.5);
   color: rgba(255,255,255,1);
 }
+.btn-outline-hero:active {
+  transform: scale(0.97);
+}
 
 /* Footer links */
 .footer-link {
   color: #ffffff;
   transition: color 0.2s ease;
 }
-.footer-link:hover { color: #D4A843; }
+.footer-link:hover { color: #C8A951; }
 
 .footer-social {
   color: rgba(255,255,255,0.8);
   transition: color 0.2s ease;
 }
-.footer-social:hover { color: #D4A843; }
+.footer-social:hover { color: #C8A951; }
 
 .footer-utility {
   color: rgba(255,255,255,0.8);
@@ -261,16 +276,16 @@
 .footer-utility:hover { color: #ffffff; }
 
 .footer-whatsapp {
-  color: #0D9488;
+  color: #8B5CF6;
   transition: color 0.2s ease;
 }
-.footer-whatsapp:hover { color: #0f766e; }
+.footer-whatsapp:hover { color: #EDE9FE; }
 
 .footer-contact {
   color: #ffffff;
   transition: color 0.2s ease;
 }
-.footer-contact:hover { color: #D4A843; }
+.footer-contact:hover { color: #C8A951; }
 
 /* FAQ native <details> chevron rotation */
 details > summary { list-style: none; cursor: pointer; }
@@ -281,20 +296,20 @@ details[open] .faq-chevron { transform: rotate(180deg); }
 details > summary {
   transition: background 0.15s ease;
 }
-details > summary:hover { background: #F3E8FF !important; }
+details > summary:hover { background: #F3F0FF !important; }
 
 /* Text links in body */
 .text-link-teal {
-  color: #0D9488;
+  color: #7C3AED;
   transition: color 0.15s ease;
 }
-.text-link-teal:hover { color: #0f766e; }
+.text-link-teal:hover { color: #6D28D9; }
 
 .text-link-purple {
-  color: #6F00FF;
+  color: #7C3AED;
   transition: color 0.15s ease;
 }
-.text-link-purple:hover { color: #5a00d4; }
+.text-link-purple:hover { color: #6D28D9; }
 
 /* Navbar dropdown links (CSS fallback — Navbar is "use client" so JS is fine too) */
 .nav-dropdown-link {
@@ -302,8 +317,8 @@ details > summary:hover { background: #F3E8FF !important; }
   transition: background 0.15s ease, color 0.15s ease;
 }
 .nav-dropdown-link:hover {
-  background: #E6F7F5;
-  color: #0D9488;
+  background: #EDE9FE;
+  color: #7C3AED;
 }
 
 /* ─────────────────────────────────────────────

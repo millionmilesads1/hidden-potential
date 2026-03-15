@@ -346,7 +346,7 @@ export default function ForSchoolsPage() {
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
         className="relative overflow-hidden"
-        style={{ background: "linear-gradient(180deg, #1A0F3C 0%, #6F00FF 100%)" }}
+        style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }}
       >
         {/* Glows */}
         <div
@@ -360,7 +360,7 @@ export default function ForSchoolsPage() {
           className="absolute bottom-0 -left-16 w-64 h-64 rounded-full pointer-events-none"
           style={{
             background:
-              "radial-gradient(circle at center, rgba(212,168,67,0.07) 0%, transparent 70%)",
+              "radial-gradient(circle at center, rgba(200,169,81,0.07) 0%, transparent 70%)",
           }}
         />
 
@@ -648,7 +648,7 @@ export default function ForSchoolsPage() {
             <div className="flex items-center gap-3 mb-3">
               <div
                 className="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0"
-                style={{ background: "#0D9488" }}
+                style={{ background: "#7C3AED" }}
               >
                 <svg
                   className="w-3.5 h-3.5 text-white"
@@ -679,13 +679,13 @@ export default function ForSchoolsPage() {
               className="rounded-lg p-5 flex items-start gap-4"
               style={{
                 background: "#F5F2FA",
-                borderLeft: "4px solid #0D9488",
+                borderLeft: "4px solid #7C3AED",
               }}
             >
               {/* Graduation cap icon */}
               <div
                 className="w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"
-                style={{ background: "rgba(13,148,136,0.12)" }}
+                style={{ background: "rgba(109,40,217,0.12)" }}
               >
                 <svg
                   className="w-5 h-5"
@@ -695,7 +695,7 @@ export default function ForSchoolsPage() {
                   strokeWidth={1.75}
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  style={{ color: "#0D9488" }}
+                  style={{ color: "#7C3AED" }}
                 >
                   <path d="M12 14l9-5-9-5-9 5 9 5z" />
                   <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
@@ -717,7 +717,7 @@ export default function ForSchoolsPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[13px] font-semibold hover:underline transition-colors"
-                  style={{ color: "#0D9488" }}
+                  style={{ color: "#7C3AED" }}
                 >
                   View Certificate →
                 </a>
@@ -735,7 +735,7 @@ export default function ForSchoolsPage() {
                 <div className="flex items-center gap-3 mb-3">
                   <div
                     className="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0"
-                    style={{ background: "#0D9488" }}
+                    style={{ background: "#7C3AED" }}
                   >
                     <svg
                       className="w-3.5 h-3.5 text-white"
@@ -822,7 +822,7 @@ export default function ForSchoolsPage() {
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
         className="relative overflow-hidden py-20"
-        style={{ background: "linear-gradient(180deg, #1A0F3C 0%, #6F00FF 100%)" }}
+        style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }}
       >
         {/* Glow */}
         <div

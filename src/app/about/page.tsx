@@ -205,7 +205,7 @@ const books = [
     subtitle: "A Toolkit To Become A Better Learner",
     desc: "A structured guide to developing the essential learning skills that formal education overlooks — from emotional resilience and self-awareness to confident communication and purposeful growth.",
     imageSrc: "/images/books/book-1.jpg",
-    gradientFrom: "#6F00FF",
+    gradientFrom: "#7C3AED",
     gradientTo: "#1a1f2e",
   },
   {
@@ -213,7 +213,7 @@ const books = [
     subtitle: "Self Help Book",
     desc: "A practitioner's guide to lasting personal transformation through structured pathways, evidence-based assessment, and intentional daily practice — written for learners and educators alike.",
     imageSrc: "/images/books/book-2.jpg",
-    gradientFrom: "#6F00FF",
+    gradientFrom: "#7C3AED",
     gradientTo: "#0d1a1a",
   },
 ];
@@ -282,9 +282,9 @@ export default function AboutPage() {
                         key={tag}
                         className="text-[10px] font-semibold px-2 py-0.5 rounded-full"
                         style={{
-                          background: "rgba(212,168,67,0.18)",
-                          color: "#D4A843",
-                          border: "1px solid rgba(212,168,67,0.25)",
+                          background: "rgba(200,169,81,0.18)",
+                          color: "#C8A951",
+                          border: "1px solid rgba(200,169,81,0.25)",
                         }}
                       >
                         {tag}
@@ -323,7 +323,7 @@ export default function AboutPage() {
                 style={{
                   fontFamily: "var(--font-accent)",
                   fontStyle: "italic",
-                  borderLeft: "3px solid #D4A843",
+                  borderLeft: "3px solid #C8A951",
                 }}
               >
                 &ldquo;Transformation is not a moment. It is a structured journey — with the
@@ -605,8 +605,8 @@ export default function AboutPage() {
           <div
             className="mb-6 rounded-lg p-6 md:p-8 flex flex-col md:flex-row gap-6 md:gap-10 items-start"
             style={{
-              background: "linear-gradient(135deg, #F3E8FF 0%, #EDE9FE 100%)",
-              border: "2px solid rgba(111,0,255,0.15)",
+              background: "linear-gradient(135deg, #F3F0FF 0%, #EDE9FE 100%)",
+              border: "2px solid rgba(124,58,237,0.15)",
             }}
           >
             {/* Left — Credential info */}
@@ -615,7 +615,7 @@ export default function AboutPage() {
               <div className="flex flex-wrap items-center gap-2 mb-4">
                 <span
                   className="inline-flex items-center gap-1 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider rounded-full text-white"
-                  style={{ backgroundColor: "#0D9488" }}
+                  style={{ backgroundColor: "#7C3AED" }}
                 >
                   {/* Checkmark icon */}
                   <svg
@@ -635,7 +635,7 @@ export default function AboutPage() {
                 {/* Grade A badge */}
                 <span
                   className="inline-flex items-center justify-center w-7 h-7 rounded-full text-[12px] font-extrabold flex-shrink-0"
-                  style={{ backgroundColor: "#D4A843", color: "#6F00FF" }}
+                  style={{ backgroundColor: "#C8A951", color: "#7C3AED" }}
                 >
                   A
                 </span>
@@ -694,13 +694,13 @@ export default function AboutPage() {
                 className="rounded-lg p-5 flex flex-col items-center text-center"
                 style={{
                   background: "#EDE9FE",
-                  border: "1px solid rgba(111,0,255,0.12)",
+                  border: "1px solid rgba(124,58,237,0.12)",
                 }}
               >
                 {/* Gold accent top bar */}
                 <div
                   className="w-8 h-0.5 rounded-full mb-4 flex-shrink-0"
-                  style={{ backgroundColor: "#D4A843" }}
+                  style={{ backgroundColor: "#C8A951" }}
                 />
                 <p
                   className="text-sm font-bold text-primary-navy leading-snug mb-1"
@@ -721,7 +721,7 @@ export default function AboutPage() {
       <section
         className="py-16"
         style={{
-          background: "linear-gradient(180deg, #1A0F3C 0%, #6F00FF 100%)",
+          background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)",
         }}
       >
         <div className="max-w-6xl mx-auto px-6">
@@ -866,7 +866,7 @@ export default function AboutPage() {
       <section
         className="relative overflow-hidden py-24"
         style={{
-          background: "linear-gradient(180deg, #1A0F3C 0%, #6F00FF 100%)",
+          background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)",
         }}
       >
         {/* Decorative radial glow */}
@@ -874,7 +874,7 @@ export default function AboutPage() {
           className="absolute pointer-events-none"
           style={{
             background:
-              "radial-gradient(circle at center, rgba(212,168,67,0.07) 0%, transparent 65%)",
+              "radial-gradient(circle at center, rgba(200,169,81,0.07) 0%, transparent 65%)",
             width: "36rem",
             height: "36rem",
             top: "50%",
