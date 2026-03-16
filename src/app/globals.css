@@ -123,6 +123,11 @@
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
     color: #2D1B69;
+    text-wrap: balance;
+  }
+
+  h1, h2 {
+    letter-spacing: -0.01em;
   }
 
   a {
@@ -203,7 +208,7 @@
 
 /* Card lifts — used on program bento cards, pillar cards */
 .card-hover {
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  transition: transform 0.6s cubic-bezier(0.32,0.72,0,1), box-shadow 0.6s cubic-bezier(0.32,0.72,0,1), border-color 0.6s cubic-bezier(0.32,0.72,0,1);
   cursor: pointer;
 }
 .card-hover-purple:hover  { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(124,58,237,0.14); border-color: rgba(124,58,237,0.28) !important; }
@@ -213,7 +218,7 @@
 
 /* Dark section cards (differentiators, dark bg) */
 .card-hover-dark {
-  transition: background 0.2s ease, border-color 0.2s ease;
+  transition: background 0.45s cubic-bezier(0.32,0.72,0,1), border-color 0.45s cubic-bezier(0.32,0.72,0,1);
 }
 .card-hover-dark:hover {
   background: rgba(124,58,237,0.08) !important;
@@ -347,4 +352,175 @@ details > summary:hover { background: #F3F0FF !important; }
   text-underline-offset: 3px;
   text-decoration-thickness: 1px;
   transition: text-decoration-color 200ms ease;
+}
+
+/* ─────────────────────────────────────────────
+   PREMIUM BUTTON-IN-BUTTON ARCHITECTURE
+   cubic-bezier(0.32,0.72,0,1) — heavy deceleration
+   ───────────────────────────────────────────── */
+
+/* Purple filled pill — primary CTA */
+.btn-premium-fill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #7C3AED;
+  border-radius: 9999px;
+  padding: 9px 9px 9px 26px;
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: white;
+  min-height: 50px;
+  box-shadow: 0 4px 20px rgba(124,58,237,0.38), inset 0 1px 0 rgba(255,255,255,0.12);
+  transition: background 0.55s cubic-bezier(0.32,0.72,0,1), box-shadow 0.55s cubic-bezier(0.32,0.72,0,1), transform 0.4s cubic-bezier(0.32,0.72,0,1);
+}
+.btn-premium-fill:hover {
+  background: #6D28D9;
+  box-shadow: 0 10px 32px rgba(124,58,237,0.5), inset 0 1px 0 rgba(255,255,255,0.12);
+}
+.btn-premium-fill:active { transform: scale(0.97); }
+.btn-premium-fill .btn-icon-circle {
+  width: 34px;
+  height: 34px;
+  border-radius: 9999px;
+  background: rgba(255,255,255,0.14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.55s cubic-bezier(0.32,0.72,0,1), background 0.55s cubic-bezier(0.32,0.72,0,1);
+}
+.btn-premium-fill:hover .btn-icon-circle {
+  transform: translate(2px, -1.5px) scale(1.1);
+  background: rgba(255,255,255,0.22);
+}
+
+/* Ghost outline pill — secondary CTA on dark bg */
+.btn-premium-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 9999px;
+  padding: 9px 9px 9px 26px;
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.78);
+  min-height: 50px;
+  transition: border-color 0.55s cubic-bezier(0.32,0.72,0,1), color 0.55s cubic-bezier(0.32,0.72,0,1), background 0.55s cubic-bezier(0.32,0.72,0,1), transform 0.4s cubic-bezier(0.32,0.72,0,1);
+}
+.btn-premium-ghost:hover {
+  border-color: rgba(255,255,255,0.48);
+  color: white;
+  background: rgba(255,255,255,0.05);
+}
+.btn-premium-ghost:active { transform: scale(0.97); }
+.btn-premium-ghost .btn-icon-circle {
+  width: 34px;
+  height: 34px;
+  border-radius: 9999px;
+  background: rgba(255,255,255,0.09);
+  border: 1px solid rgba(255,255,255,0.14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.55s cubic-bezier(0.32,0.72,0,1), background 0.55s cubic-bezier(0.32,0.72,0,1);
+}
+.btn-premium-ghost:hover .btn-icon-circle {
+  transform: translate(2px, -1.5px) scale(1.1);
+  background: rgba(255,255,255,0.18);
+}
+
+/* Ghost plain pill — no icon, for text-only secondary actions */
+.btn-premium-ghost-plain {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 9999px;
+  padding: 13px 32px;
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.78);
+  min-height: 50px;
+  transition: border-color 0.55s cubic-bezier(0.32,0.72,0,1), color 0.55s cubic-bezier(0.32,0.72,0,1), background 0.55s cubic-bezier(0.32,0.72,0,1), transform 0.4s cubic-bezier(0.32,0.72,0,1);
+}
+.btn-premium-ghost-plain:hover {
+  border-color: rgba(255,255,255,0.48);
+  color: white;
+  background: rgba(255,255,255,0.05);
+}
+.btn-premium-ghost-plain:active { transform: scale(0.97); }
+
+/* Dark navy fill pill — primary CTA on light backgrounds */
+.btn-premium-dark {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%);
+  border-radius: 9999px;
+  padding: 8px 8px 8px 22px;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: white;
+  min-height: 48px;
+  white-space: nowrap;
+  box-shadow: 0 4px 18px rgba(45,27,105,0.28), inset 0 1px 0 rgba(255,255,255,0.08);
+  transition: box-shadow 0.55s cubic-bezier(0.32,0.72,0,1), transform 0.4s cubic-bezier(0.32,0.72,0,1);
+}
+.btn-premium-dark:hover {
+  box-shadow: 0 8px 28px rgba(45,27,105,0.45), inset 0 1px 0 rgba(255,255,255,0.08);
+  transform: translateY(-1px);
+}
+.btn-premium-dark:active { transform: scale(0.97); }
+.btn-premium-dark .btn-icon-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+  background: rgba(255,255,255,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.55s cubic-bezier(0.32,0.72,0,1);
+}
+.btn-premium-dark:hover .btn-icon-circle {
+  transform: translate(2px, -1.5px) scale(1.1);
+}
+
+/* ─────────────────────────────────────────────
+   DOUBLE-BEZEL CARD ARCHITECTURE
+   Outer shell (hairline ring) + Inner core (inset glow)
+   ───────────────────────────────────────────── */
+
+.card-bezel-outer {
+  transition: transform 0.6s cubic-bezier(0.32,0.72,0,1), box-shadow 0.6s cubic-bezier(0.32,0.72,0,1);
+  cursor: pointer;
+}
+.card-bezel-outer-purple:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 28px 64px rgba(124,58,237,0.14), 0 0 0 1px rgba(124,58,237,0.16);
+}
+.card-bezel-outer-gold:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 28px 64px rgba(200,169,81,0.14), 0 0 0 1px rgba(200,169,81,0.2);
+}
+
+/* ─────────────────────────────────────────────
+   GRADIENT-BORDER GLASS CARDS (Dark sections)
+   1px gradient border trick for glassmorphism
+   ───────────────────────────────────────────── */
+
+.card-glass-border {
+  background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.03) 100%);
+  transition: background 0.5s cubic-bezier(0.32,0.72,0,1);
+  cursor: pointer;
+}
+.card-glass-border:hover {
+  background: linear-gradient(135deg, rgba(255,255,255,0.19) 0%, rgba(255,255,255,0.07) 100%);
 }

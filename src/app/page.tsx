@@ -517,7 +517,7 @@ export default function HomePage() {
               style={{
                 fontFamily: "var(--font-display)",
                 fontSize: "clamp(1.75rem, 3vw, 2.5rem)",
-                color: "#7C3AED",
+                color: "#2D1B69",
                 maxWidth: "480px",
               }}
             >
@@ -525,7 +525,7 @@ export default function HomePage() {
             </h2>
             <p
               className="leading-relaxed"
-              style={{ color: "#6b7280", maxWidth: "500px", fontFamily: "var(--font-body)", fontSize: "1.0625rem" }}
+              style={{ color: "#6B6B6B", maxWidth: "500px", fontFamily: "var(--font-body)", fontSize: "1.0625rem" }}
             >
               Three foundational principles that make transformation reliable,
               repeatable, and real.
@@ -537,35 +537,47 @@ export default function HomePage() {
             {pillars.map((p, i) => (
               <div
                 key={p.title}
-                className={`bg-white rounded-2xl p-8 card-hover ${p.hoverClass}`}
+                className={`card-bezel-outer ${p.hoverClass === "card-hover-gold" ? "card-bezel-outer-gold" : "card-bezel-outer-purple"}`}
                 style={{
-                  border: "1px solid rgba(0,0,0,0.07)",
-                  boxShadow: "0 2px 8px rgba(0,0,0,0.04)",
+                  background: "rgba(0,0,0,0.025)",
+                  borderRadius: "1.75rem",
+                  padding: "5px",
+                  boxShadow: "0 0 0 1px rgba(0,0,0,0.055)",
                 }}
               >
-                <p
-                  className="text-5xl font-bold mb-4"
+                <div
                   style={{
-                    fontFamily: "var(--font-display)",
-                    color: pillarAccent[i],
-                    opacity: 0.7,
-                    lineHeight: 1,
+                    background: "white",
+                    borderRadius: "calc(1.75rem - 5px)",
+                    padding: "32px",
+                    boxShadow: "inset 0 1px 0 rgba(255,255,255,0.95)",
+                    height: "100%",
                   }}
                 >
-                  {p.num}
-                </p>
-                <h3
-                  className="font-bold mb-3 text-xl"
-                  style={{ fontFamily: "var(--font-display)", color: "#7C3AED" }}
-                >
-                  {p.title}
-                </h3>
-                <p
-                  className="text-sm leading-relaxed"
-                  style={{ color: "#374151", fontFamily: "var(--font-body)" }}
-                >
-                  {p.desc}
-                </p>
+                  <p
+                    className="text-5xl font-bold mb-4"
+                    style={{
+                      fontFamily: "var(--font-display)",
+                      color: pillarAccent[i],
+                      opacity: 0.7,
+                      lineHeight: 1,
+                    }}
+                  >
+                    {p.num}
+                  </p>
+                  <h3
+                    className="font-bold mb-3 text-xl"
+                    style={{ fontFamily: "var(--font-display)", color: "#2D1B69" }}
+                  >
+                    {p.title}
+                  </h3>
+                  <p
+                    className="text-sm leading-relaxed"
+                    style={{ color: "#2D2D2D", fontFamily: "var(--font-body)" }}
+                  >
+                    {p.desc}
+                  </p>
+                </div>
               </div>
             ))}
           </AnimateGroup>
@@ -632,14 +644,14 @@ export default function HomePage() {
               style={{
                 fontFamily: "var(--font-display)",
                 fontSize: "clamp(1.75rem, 3vw, 2.5rem)",
-                color: "#7C3AED",
+                color: "#2D1B69",
               }}
             >
               Choose Your Growth Pathway
             </h2>
             <p
               className="leading-relaxed"
-              style={{ color: "#6b7280", maxWidth: "520px", fontFamily: "var(--font-body)", fontSize: "1.0625rem" }}
+              style={{ color: "#6B6B6B", maxWidth: "520px", fontFamily: "var(--font-body)", fontSize: "1.0625rem" }}
             >
               Every program is assessment-based, structured, and designed to
               take you from where you are to where you want to be.
@@ -663,22 +675,17 @@ export default function HomePage() {
               </p>
               <p
                 className="text-sm"
-                style={{ color: "#6b7280", fontFamily: "var(--font-body)" }}
+                style={{ color: "#6B6B6B", fontFamily: "var(--font-body)" }}
               >
                 Take a free structured assessment and receive your personalised pathway.
               </p>
             </div>
             <Link
               href="/assessment"
-              className="btn-purple inline-flex items-center gap-2 rounded-xl font-semibold text-white whitespace-nowrap shrink-0"
-              style={{
-                padding: "13px 28px",
-                fontSize: "0.9rem",
-                fontFamily: "var(--font-body)",
-                minHeight: "48px",
-              }}
+              className="btn-premium-dark shrink-0"
             >
-              Take the Free Assessment <Chevron />
+              Take the Free Assessment
+              <span className="btn-icon-circle" aria-hidden="true"><Chevron /></span>
             </Link>
           </div>
         </div>
@@ -716,38 +723,44 @@ export default function HomePage() {
             {differentiators.map((d, i) => (
               <div
                 key={d.title}
-                className="rounded-2xl p-6 card-hover-dark"
-                style={{
-                  background: "rgba(255,255,255,0.04)",
-                  border: "1px solid rgba(255,255,255,0.3)",
-                }}
+                className="card-glass-border rounded-xl p-px"
               >
-                <div className="flex items-start gap-4">
-                  <div
-                    className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
-                    style={{ background: "rgba(109,40,217,0.15)", color: "#7C3AED" }}
-                  >
-                    {d.icon}
-                  </div>
-                  <div>
-                    <span
-                      className="text-[10px] font-bold tabular-nums block mb-2"
-                      style={{ color: "#C8A951", fontFamily: "var(--font-body)" }}
+                <div
+                  style={{
+                    background: "rgba(255,255,255,0.03)",
+                    borderRadius: "calc(0.75rem - 1px)",
+                    padding: "24px",
+                    boxShadow: "inset 0 1px 0 rgba(255,255,255,0.07)",
+                    height: "100%",
+                  }}
+                >
+                  <div className="flex items-start gap-4">
+                    <div
+                      className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
+                      style={{ background: "rgba(109,40,217,0.15)", color: "#7C3AED" }}
                     >
-                      {String(i + 1).padStart(2, "0")}
-                    </span>
-                    <h3
-                      className="font-bold mb-2 leading-snug text-white"
-                      style={{ fontFamily: "var(--font-display)", fontSize: "1rem" }}
-                    >
-                      {d.title}
-                    </h3>
-                    <p
-                      className="text-sm leading-relaxed"
-                      style={{ color: "#ffffff", fontFamily: "var(--font-body)" }}
-                    >
-                      {d.desc}
-                    </p>
+                      {d.icon}
+                    </div>
+                    <div>
+                      <span
+                        className="text-[10px] font-bold tabular-nums block mb-2"
+                        style={{ color: "#C8A951", fontFamily: "var(--font-body)" }}
+                      >
+                        {String(i + 1).padStart(2, "0")}
+                      </span>
+                      <h3
+                        className="font-bold mb-2 leading-snug text-white"
+                        style={{ fontFamily: "var(--font-display)", fontSize: "1rem" }}
+                      >
+                        {d.title}
+                      </h3>
+                      <p
+                        className="text-sm leading-relaxed"
+                        style={{ color: "#ffffff", fontFamily: "var(--font-body)" }}
+                      >
+                        {d.desc}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -800,7 +813,7 @@ export default function HomePage() {
             style={{
               fontFamily: "var(--font-display)",
               fontSize: "clamp(1.75rem, 3vw, 2.5rem)",
-              color: "#7C3AED",
+              color: "#2D1B69",
             }}
           >
             Transformations That Speak
@@ -808,7 +821,13 @@ export default function HomePage() {
         </div>
 
         {/* Marquee — duplicated for seamless loop */}
-        <div className="flex overflow-hidden">
+        <div
+          className="flex overflow-hidden"
+          style={{
+            maskImage: "linear-gradient(to right, transparent 0px, black 80px, black calc(100% - 80px), transparent 100%)",
+            WebkitMaskImage: "linear-gradient(to right, transparent 0px, black 80px, black calc(100% - 80px), transparent 100%)",
+          }}
+        >
           <div className="animate-marquee flex gap-5 shrink-0" aria-label="Testimonials carousel">
             {[...testimonials, ...testimonials].map((t, i) => (
               <article
@@ -833,7 +852,7 @@ export default function HomePage() {
                 </svg>
                 <p
                   className="text-sm leading-relaxed mb-6 flex-1"
-                  style={{ fontFamily: "var(--font-display)", fontStyle: "italic", color: "#2D2D2D" }}
+                  style={{ fontFamily: "var(--font-accent)", fontStyle: "italic", color: "#2D2D2D" }}
                 >
                   {t.quote}
                 </p>
@@ -853,7 +872,7 @@ export default function HomePage() {
                     </p>
                     <p
                       className="text-xs mt-0.5"
-                      style={{ color: "#6b7280", fontFamily: "var(--font-body)" }}
+                      style={{ color: "#6B6B6B", fontFamily: "var(--font-body)" }}
                     >
                       {t.role}
                     </p>
@@ -883,14 +902,14 @@ export default function HomePage() {
               style={{
                 fontFamily: "var(--font-display)",
                 fontSize: "clamp(1.75rem, 3vw, 2.5rem)",
-                color: "#7C3AED",
+                color: "#2D1B69",
               }}
             >
               Your Path to Transformation
             </h2>
             <p
               className="leading-relaxed mx-auto"
-              style={{ color: "#6b7280", maxWidth: "500px", fontFamily: "var(--font-body)", fontSize: "1.0625rem" }}
+              style={{ color: "#6B6B6B", maxWidth: "500px", fontFamily: "var(--font-body)", fontSize: "1.0625rem" }}
             >
               No guesswork. No generic advice. Only guided evolution.
             </p>
@@ -928,13 +947,13 @@ export default function HomePage() {
                   </div>
                   <h3
                     className="font-bold mb-2 leading-snug"
-                    style={{ fontFamily: "var(--font-display)", color: "#7C3AED", fontSize: "1rem" }}
+                    style={{ fontFamily: "var(--font-display)", color: "#2D1B69", fontSize: "1rem" }}
                   >
                     {s.title}
                   </h3>
                   <p
                     className="text-sm leading-relaxed"
-                    style={{ color: "#6b7280", fontFamily: "var(--font-body)" }}
+                    style={{ color: "#6B6B6B", fontFamily: "var(--font-body)" }}
                   >
                     {s.desc}
                   </p>
@@ -965,7 +984,7 @@ export default function HomePage() {
               style={{
                 fontFamily: "var(--font-display)",
                 fontSize: "clamp(1.75rem, 3vw, 2.25rem)",
-                color: "#7C3AED",
+                color: "#2D1B69",
               }}
             >
               Common Questions About Our Programs
@@ -1010,7 +1029,7 @@ export default function HomePage() {
                 >
                   <span
                     className="font-semibold leading-snug"
-                    style={{ color: "#7C3AED", fontSize: "0.9375rem" }}
+                    style={{ color: "#2D1B69", fontSize: "0.9375rem" }}
                   >
                     {q}
                   </span>
@@ -1018,7 +1037,7 @@ export default function HomePage() {
                     className="faq-chevron w-4 h-4 flex-shrink-0"
                     fill="none"
                     viewBox="0 0 24 24"
-                    stroke="#6b7280"
+                    stroke="#6B6B6B"
                     strokeWidth={2.5}
                     aria-hidden="true"
                   >
@@ -1031,7 +1050,7 @@ export default function HomePage() {
                 >
                   <p
                     className="text-sm leading-relaxed"
-                    style={{ color: "#6b7280", fontFamily: "var(--font-body)" }}
+                    style={{ color: "#6B6B6B", fontFamily: "var(--font-body)" }}
                   >
                     {a}
                   </p>
@@ -1042,7 +1061,7 @@ export default function HomePage() {
 
           <p
             className="text-center text-sm mt-10"
-            style={{ color: "#6b7280", fontFamily: "var(--font-body)" }}
+            style={{ color: "#6B6B6B", fontFamily: "var(--font-body)" }}
           >
             Have a different question?{" "}
             <Link href="/contact" className="text-link-teal font-semibold">
@@ -1070,13 +1089,13 @@ export default function HomePage() {
           >
             You don&apos;t need more motivation.
             <br />
-            <span style={{ color: "#7C3AED" }}>You need structured transformation.</span>
+            <span style={{ color: "#C8A951" }}>You need structured transformation.</span>
           </h2>
 
           <p
             className="mb-12 leading-relaxed mx-auto"
             style={{
-              color: "#6b7280",
+              color: "rgba(255,255,255,0.6)",
               maxWidth: "500px",
               fontFamily: "var(--font-body)",
               fontSize: "1.0625rem",
@@ -1090,25 +1109,14 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-14">
             <Link
               href="/assessment"
-              className="btn-teal inline-flex items-center justify-center gap-2 rounded-xl font-semibold text-white"
-              style={{
-                padding: "16px 36px",
-                fontSize: "0.9375rem",
-                fontFamily: "var(--font-body)",
-                minHeight: "56px",
-              }}
+              className="btn-premium-fill"
             >
-              Begin Your Journey <Chevron />
+              Begin Your Journey
+              <span className="btn-icon-circle" aria-hidden="true"><Chevron /></span>
             </Link>
             <Link
               href="/contact"
-              className="btn-outline-dark inline-flex items-center justify-center rounded-xl font-semibold"
-              style={{
-                padding: "16px 36px",
-                fontSize: "0.9375rem",
-                fontFamily: "var(--font-body)",
-                minHeight: "56px",
-              }}
+              className="btn-premium-ghost-plain"
             >
               Book a Discovery Call
             </Link>

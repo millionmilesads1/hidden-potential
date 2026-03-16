@@ -17,16 +17,13 @@ import { letterDrop, headlineContainer } from "@/lib/animations";
 // ── Headline words ────────────────────────────────────────────────────────────
 // Mirrors the exact text rendered in page.tsx with glow styling on key words
 const headlineWords: Array<{ word: string; glow: boolean }> = [
-  { word: "\u201cI",           glow: false },
-  { word: "have",              glow: false },
-  { word: "never",             glow: false },
-  { word: "let",               glow: false },
-  { word: "my",                glow: false },
-  { word: "schooling",         glow: true  },
-  { word: "interfere",         glow: false },
-  { word: "with",              glow: false },
-  { word: "my",                glow: false },
-  { word: "education.\u201d",  glow: true  },
+  { word: "Don\u2019t",  glow: false },
+  { word: "let",         glow: false },
+  { word: "Schooling",   glow: true  },
+  { word: "interfere",   glow: false },
+  { word: "with",        glow: false },
+  { word: "your",        glow: false },
+  { word: "education",   glow: true  },
 ];
 
 // ── Stats ─────────────────────────────────────────────────────────────────────
@@ -117,7 +114,7 @@ export default function AnimatedHeroContent() {
         variants={headlineContainer}
         initial="hidden"
         animate="visible"
-        aria-label="\u201cI have never let my schooling interfere with my education.\u201d"
+        aria-label="Don't let Schooling interfere with your education"
       >
         {headlineWords.map(({ word, glow }, i) => (
           <React.Fragment key={i}>
@@ -136,8 +133,8 @@ export default function AnimatedHeroContent() {
             >
               {word}
             </motion.span>
-            {/* non-breaking space keeps words separated with inline-block */}
-            {i < headlineWords.length - 1 && "\u00A0"}
+            {/* regular space trims at line starts, fixing wrapped-line indent */}
+            {i < headlineWords.length - 1 && " "}
           </React.Fragment>
         ))}
       </motion.h1>
@@ -189,39 +186,28 @@ export default function AnimatedHeroContent() {
       >
         <MotionLink
           href="/assessment"
-          className="btn-teal inline-flex items-center justify-center gap-2 rounded-xl font-semibold text-white"
-          style={{
-            padding: "14px 32px",
-            fontSize: "0.9375rem",
-            fontFamily: "var(--font-body)",
-            minHeight: "52px",
-          }}
+          className="btn-premium-fill"
           whileHover={{
-            scale: 1.08,
+            scale: 1.02,
             transition: { type: "spring", stiffness: 300, damping: 20 },
           }}
-          whileTap={{ scale: 0.94, transition: { duration: 0.05 } }}
+          whileTap={{ scale: 0.96, transition: { duration: 0.05 } }}
         >
           Take the Assessment
-          <Chevron />
+          <span className="btn-icon-circle" aria-hidden="true"><Chevron /></span>
         </MotionLink>
 
         <MotionLink
           href="#programs"
-          className="btn-outline-hero inline-flex items-center justify-center rounded-xl font-semibold"
-          style={{
-            padding: "14px 32px",
-            fontSize: "0.9375rem",
-            fontFamily: "var(--font-body)",
-            minHeight: "52px",
-          }}
+          className="btn-premium-ghost"
           whileHover={{
-            scale: 1.08,
+            scale: 1.02,
             transition: { type: "spring", stiffness: 300, damping: 20 },
           }}
-          whileTap={{ scale: 0.94, transition: { duration: 0.05 } }}
+          whileTap={{ scale: 0.96, transition: { duration: 0.05 } }}
         >
           Explore Pathways
+          <span className="btn-icon-circle" aria-hidden="true"><Chevron /></span>
         </MotionLink>
       </motion.div>
 

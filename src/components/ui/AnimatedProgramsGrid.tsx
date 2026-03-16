@@ -120,7 +120,7 @@ export default function AnimatedProgramsGrid({
             style={{
               fontFamily: "var(--font-display)",
               fontSize: "1.5rem",
-              color: "#7C3AED",
+              color: "#2D1B69",
             }}
           >
             {programs[0].name}
@@ -139,7 +139,7 @@ export default function AnimatedProgramsGrid({
           {programs[0].desc && (
             <p
               className="text-sm leading-relaxed"
-              style={{ color: "#6b7280", fontFamily: "var(--font-body)" }}
+              style={{ color: "#6B6B6B", fontFamily: "var(--font-body)" }}
             >
               {programs[0].desc}
             </p>
@@ -184,7 +184,7 @@ export default function AnimatedProgramsGrid({
             style={{
               fontFamily: "var(--font-display)",
               fontSize: "1.2rem",
-              color: "#7C3AED",
+              color: "#2D1B69",
             }}
           >
             {programs[1].name}
@@ -240,7 +240,7 @@ export default function AnimatedProgramsGrid({
               style={{
                 fontFamily: "var(--font-display)",
                 fontSize: "1.1rem",
-                color: "#7C3AED",
+                color: "#2D1B69",
               }}
             >
               {prog.name}
