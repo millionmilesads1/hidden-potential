@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
+import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 const programs = [
   { label: "An Enlightened Learner (Ages 8–21)",  href: "/programs/enlightened-learner" },
@@ -26,6 +28,8 @@ const navLinks = [
 ];
 
 export default function Navbar() {
+  const pathname = usePathname();
+
   const [scrolled,      setScrolled]      = useState(false);
   const [mobileOpen,    setMobileOpen]    = useState(false);
   const [pathwaysOpen,  setPathwaysOpen]  = useState(false);
@@ -121,17 +125,42 @@ export default function Navbar() {
             style={{ fontFamily: "var(--font-body)" }}
           >
             <ul className="flex items-center gap-0.5" role="list">
-              {navLinks.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="nav-dropdown-link text-sm font-medium cursor-pointer transition-colors px-3 py-1.5 rounded-full whitespace-nowrap block"
-                    style={{ opacity: 0.75 }}
+              {navLinks.map((link) => {
+                const isActive = pathname === link.href || (link.href === "/#faq" && pathname === "/");
+                return (
+                  <motion.li
+                    key={link.href}
+                    className="relative"
+                    initial="rest"
+                    whileHover="hovered"
+                    animate="rest"
                   >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
+                    <Link
+                      href={link.href}
+                      className="nav-dropdown-link text-sm font-medium cursor-pointer transition-colors px-3 py-1.5 rounded-full whitespace-nowrap block relative"
+                      style={{
+                        opacity: isActive ? 1 : 0.75,
+                        color: isActive ? "#7C3AED" : undefined,
+                        textShadow: isActive
+                          ? "0 0 20px rgba(124,58,237,0.45)"
+                          : "none",
+                      }}
+                    >
+                      {link.label}
+                    </Link>
+                    {/* Animated underline — scaleX grows from left on hover, stays for active */}
+                    <motion.span
+                      className="absolute bottom-0.5 left-3 right-3 h-[2px] rounded-full pointer-events-none"
+                      style={{ background: "#7C3AED", originX: 0 }}
+                      variants={{
+                        rest:    { scaleX: isActive ? 1 : 0 },
+                        hovered: { scaleX: 1 },
+                      }}
+                      transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                    />
+                  </motion.li>
+                );
+              })}
 
               {/* Pathways dropdown — disclosure pattern */}
               <li
@@ -259,13 +288,19 @@ export default function Navbar() {
 
           {/* Right side: CTA + hamburger */}
           <div className="flex items-center gap-2 shrink-0">
-            <Link
-              href="/contact#book-evaluation"
-              className="btn-teal hidden md:inline-flex items-center min-h-[44px] px-5 py-2 text-sm font-semibold text-white rounded-full whitespace-nowrap cursor-pointer"
-              style={{ fontFamily: "var(--font-body)" }}
+            <motion.div
+              whileHover={{ scale: 1.06, transition: { type: "spring", stiffness: 300, damping: 20 } }}
+              whileTap={{ scale: 0.95 }}
+              className="hidden md:block"
             >
-              Book Free Consultation
-            </Link>
+              <Link
+                href="/contact#book-evaluation"
+                className="btn-teal inline-flex items-center min-h-[44px] px-5 py-2 text-sm font-semibold text-white rounded-full whitespace-nowrap cursor-pointer"
+                style={{ fontFamily: "var(--font-body)" }}
+              >
+                Book Free Consultation
+              </Link>
+            </motion.div>
 
             {/* Hamburger — mobile only */}
             <button

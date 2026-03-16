@@ -12,6 +12,25 @@
    TAILWIND v4 THEME — Brand Design Tokens
    ───────────────────────────────────────────── */
 /* ─────────────────────────────────────────────
+   HERO FLOATING GRADIENT BLOBS
+   Slow pulse + vertical float for ambient glows
+   ───────────────────────────────────────────── */
+@keyframes float-glow {
+  0%,  100% { transform: translateY(0)    scale(1);    opacity: 0.18; }
+  50%       { transform: translateY(-24px) scale(1.06); opacity: 0.30; }
+}
+
+.hero-float-1 {
+  animation: float-glow 7s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+.hero-float-2 {
+  animation: float-glow 9s ease-in-out infinite 2.5s;
+  will-change: transform, opacity;
+}
+
+/* ─────────────────────────────────────────────
    SHINE BORDER ANIMATION
    ───────────────────────────────────────────── */
 @keyframes shine {

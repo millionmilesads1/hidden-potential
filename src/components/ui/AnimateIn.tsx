@@ -11,11 +11,11 @@ interface AnimateInProps {
   children: ReactNode;
   className?: string;
   style?: React.CSSProperties;
-  /** Extra delay in seconds on top of any stagger delay */
+  /** Extra delay in seconds merged into the variant transition */
   delay?: number;
   /** Override default fadeUp variant */
   variants?: Variants;
-  /** How far from the viewport edge to trigger (default "-80px 0px") */
+  /** How far from the viewport edge to trigger (default "-40px 0px") */
   margin?: string;
 }
 
@@ -25,21 +25,42 @@ export default function AnimateIn({
   style,
   delay = 0,
   variants = fadeUp,
-  margin = "-80px 0px",
+  margin = "-40px 0px",
 }: AnimateInProps) {
-  const ref  = useRef(null);
+  const ref    = useRef(null);
   const inView = useInView(ref, { once: true, margin } as Parameters<typeof useInView>[1]);
   const reduce = useReducedMotion();
+
+  if (reduce) {
+    return (
+      <div className={className} style={style}>
+        {children}
+      </div>
+    );
+  }
+
+  // Merge delay into the visible transition so variant-level timing is respected
+  const activeVariants: Variants = delay > 0
+    ? {
+        ...variants,
+        visible: {
+          ...(variants.visible as object),
+          transition: {
+            ...((variants.visible as Record<string, unknown>)?.transition ?? {}),
+            delay,
+          },
+        },
+      }
+    : variants;
 
   return (
     <motion.div
       ref={ref}
       className={className}
       style={style}
-      initial={reduce ? false : "hidden"}
+      initial="hidden"
       animate={inView ? "visible" : "hidden"}
-      variants={reduce ? undefined : variants}
-      transition={delay ? { delay } : undefined}
+      variants={activeVariants}
     >
       {children}
     </motion.div>

@@ -2,7 +2,7 @@
 
 /**
  * AnimateGroup — stagger container that auto-wraps each child in a motion.div
- * with the fadeUp variant. Use it for grids of cards, feature lists, steps, etc.
+ * with the cardEntrance variant. Use it for grids of cards, feature lists, etc.
  *
  * Example:
  *   <AnimateGroup className="grid grid-cols-3 gap-6">
@@ -14,31 +14,31 @@ import { Children } from "react";
 import { motion, useInView, useReducedMotion } from "framer-motion";
 import { useRef } from "react";
 import type { ReactNode } from "react";
-import { fadeUp, stagger } from "@/lib/animations";
+import { cardEntrance } from "@/lib/animations";
 import type { Variants } from "framer-motion";
 
 interface AnimateGroupProps {
   children: ReactNode;
   className?: string;
-  /** Speed of stagger: "normal" (0.10s) | "fast" (0.07s) | "slow" (0.14s) */
+  /** Speed of stagger: "fast" (0.10s) | "normal" (0.15s) | "slow" (0.20s) */
   speed?: "fast" | "normal" | "slow";
   margin?: string;
-  /** Override item variant (default: fadeUp) */
+  /** Override item variant (default: cardEntrance — y:80 spring) */
   itemVariants?: Variants;
 }
 
 const staggerSpeeds = {
-  fast:   0.07,
-  normal: 0.10,
-  slow:   0.14,
+  fast:   0.10,
+  normal: 0.15,
+  slow:   0.20,
 };
 
 export default function AnimateGroup({
   children,
   className,
   speed = "normal",
-  margin = "-80px 0px",
-  itemVariants = fadeUp,
+  margin = "-40px 0px",
+  itemVariants = cardEntrance,
 }: AnimateGroupProps) {
   const ref    = useRef(null);
   const inView = useInView(ref, { once: true, margin } as Parameters<typeof useInView>[1]);
@@ -65,7 +65,16 @@ export default function AnimateGroup({
     >
       {Children.map(children, (child) =>
         child == null ? null : (
-          <motion.div variants={itemVariants} style={{ height: "100%" }}>
+          <motion.div
+            variants={itemVariants}
+            style={{ height: "100%" }}
+            whileHover={{
+              scale: 1.05,
+              y: -6,
+              boxShadow: "0 20px 60px rgba(0,0,0,0.12)",
+              transition: { type: "spring", stiffness: 300, damping: 20 },
+            }}
+          >
             {child}
           </motion.div>
         )

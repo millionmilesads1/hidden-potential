@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import AnimateIn from "@/components/ui/AnimateIn";
+import AnimateGroup from "@/components/ui/AnimateGroup";
+import AnimatedHeroContent from "@/components/ui/AnimatedHeroContent";
+import AnimatedProgramsGrid from "@/components/ui/AnimatedProgramsGrid";
 
 // ── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -352,9 +356,9 @@ export default function HomePage() {
         className="relative overflow-hidden grain-overlay"
         style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)", minHeight: "90vh", display: "flex", alignItems: "center" }}
       >
-        {/* Ambient glows — accents, not gradient backgrounds */}
+        {/* Ambient glows — floating/pulsing via CSS keyframes */}
         <div
-          className="absolute top-0 right-0 pointer-events-none"
+          className="absolute top-0 right-0 pointer-events-none hero-float-1"
           style={{
             width: "500px", height: "500px",
             background: "radial-gradient(circle at center, rgba(124,58,237,0.18) 0%, transparent 70%)",
@@ -363,7 +367,7 @@ export default function HomePage() {
           aria-hidden="true"
         />
         <div
-          className="absolute bottom-0 left-0 pointer-events-none"
+          className="absolute bottom-0 left-0 pointer-events-none hero-float-2"
           style={{
             width: "380px", height: "380px",
             background: "radial-gradient(circle at center, rgba(109,40,217,0.12) 0%, transparent 70%)",
@@ -375,103 +379,8 @@ export default function HomePage() {
         <div className="relative max-w-6xl mx-auto px-6 py-24 w-full">
           <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
 
-            {/* Left — Text content */}
-            <div>
-              {/* Pre-label */}
-              <p
-                className="text-[11px] font-bold uppercase tracking-[0.2em] mb-8"
-                style={{ color: "#C8A951", fontFamily: "var(--font-body)" }}
-              >
-                Transformational Life Skills Academy · Delhi NCR
-              </p>
-
-              {/* H1 */}
-              <h1
-                className="font-bold text-white leading-[1.1] mb-4"
-                style={{
-                  fontFamily: "var(--font-accent)",
-                  fontStyle: "italic",
-                  fontSize: "clamp(1.9rem, 3.5vw, 3rem)",
-                }}
-              >
-                &ldquo;I have never let my{" "}
-                <span style={{ color: "#ffffff", textShadow: "0 0 18px rgba(255,255,255,0.65), 0 0 36px rgba(255,255,255,0.3)" }}>schooling</span>{" "}
-                interfere with my{" "}
-                <span style={{ color: "#ffffff", textShadow: "0 0 18px rgba(255,255,255,0.65), 0 0 36px rgba(255,255,255,0.3)" }}>education</span>.&rdquo;
-              </h1>
-              <p
-                className="mb-8 text-white/70 font-semibold tracking-widest uppercase"
-                style={{ fontFamily: "var(--font-display)", fontSize: "0.85rem" }}
-              >
-                — Mark Twain
-              </p>
-
-              {/* Subtitle */}
-              <p
-                className="mb-10 leading-relaxed"
-                style={{
-                  color: "#ffffff",
-                  fontSize: "1.0625rem",
-                  fontFamily: "var(--font-body)",
-                }}
-              >
-                Structured transformational pathways for students, women,
-                professionals and future trainers. Assessment-based. Measurable.
-                Real.
-              </p>
-
-              {/* CTAs */}
-              <div className="flex flex-col sm:flex-row gap-4 mb-14">
-                <Link
-                  href="/assessment"
-                  className="btn-teal inline-flex items-center justify-center gap-2 rounded-xl font-semibold text-white"
-                  style={{
-                    padding: "14px 32px",
-                    fontSize: "0.9375rem",
-                    fontFamily: "var(--font-body)",
-                    minHeight: "52px",
-                  }}
-                >
-                  Take the Assessment
-                  <Chevron className="w-4 h-4" />
-                </Link>
-                <Link
-                  href="#programs"
-                  className="btn-outline-hero inline-flex items-center justify-center rounded-xl font-semibold"
-                  style={{
-                    padding: "14px 32px",
-                    fontSize: "0.9375rem",
-                    fontFamily: "var(--font-body)",
-                    minHeight: "52px",
-                  }}
-                >
-                  Explore Pathways
-                </Link>
-              </div>
-
-              {/* Stats row */}
-              <div
-                className="flex flex-wrap gap-x-8 gap-y-5 pt-8"
-                style={{ borderTop: "1px solid rgba(255,255,255,0.08)" }}
-              >
-                {heroStats.map((s) => (
-                  <div key={s.value} className="flex flex-col">
-                    <span
-                      className="font-bold leading-none text-white"
-                      style={{ fontFamily: "var(--font-display)", fontSize: "1.6rem" }}
-                    >
-                      {s.value}
-                    </span>
-                    <span
-                      className="text-xs mt-1.5 uppercase tracking-wide"
-                      style={{ color: "rgba(255,255,255,0.75)", fontFamily: "var(--font-body)" }}
-                    >
-                      {s.label}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </div>
+            {/* Left — Animated text content */}
+            <AnimatedHeroContent />
 
             {/* Right — Hero image */}
             <div className="hidden md:block relative w-full overflow-hidden rounded-2xl">
@@ -505,6 +414,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
 
             {/* Left — Story content */}
+            <AnimateIn>
             <div>
               <Label>Our Story</Label>
 
@@ -574,8 +484,10 @@ export default function HomePage() {
                 </Link>
               </div>
             </div>
+            </AnimateIn>
 
             {/* Right — Full image */}
+            <AnimateIn variants={{ hidden: { opacity: 0, x: 60 }, visible: { opacity: 1, x: 0, transition: { type: "spring", stiffness: 60, damping: 15 } } }}>
             <div className="relative w-full overflow-hidden rounded-2xl">
               <div className="relative w-full" style={{ height: "440px" }}>
                 <Image
@@ -587,6 +499,7 @@ export default function HomePage() {
                 />
               </div>
             </div>
+            </AnimateIn>
 
           </div>
         </div>
@@ -597,7 +510,7 @@ export default function HomePage() {
       ═══════════════════════════════════════════ */}
       <section style={{ background: "#F8F6F2" }} className="py-24">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="mb-14">
+          <AnimateIn className="mb-14">
             <Label>The Hidden Potential Method</Label>
             <h2
               className="font-bold leading-tight mb-5"
@@ -617,10 +530,10 @@ export default function HomePage() {
               Three foundational principles that make transformation reliable,
               repeatable, and real.
             </p>
-          </div>
+          </AnimateIn>
 
-          {/* 3 Pillars — CSS hover via card-hover class */}
-          <div className="grid md:grid-cols-3 gap-5 mb-10">
+          {/* 3 Pillars — stagger entrance */}
+          <AnimateGroup className="grid md:grid-cols-3 gap-5 mb-10">
             {pillars.map((p, i) => (
               <div
                 key={p.title}
@@ -655,9 +568,10 @@ export default function HomePage() {
                 </p>
               </div>
             ))}
-          </div>
+          </AnimateGroup>
 
           {/* 4 Growth Stages */}
+          <AnimateIn>
           <div className="rounded-2xl p-8" style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }}>
             <p
               className="text-[11px] font-bold uppercase tracking-widest mb-8"
@@ -701,6 +615,7 @@ export default function HomePage() {
               ))}
             </div>
           </div>
+          </AnimateIn>
         </div>
       </section>
 
@@ -710,7 +625,7 @@ export default function HomePage() {
       ═══════════════════════════════════════════ */}
       <section id="programs" className="bg-white py-24">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="mb-14">
+          <AnimateIn className="mb-14">
             <Label>Transformational Pathways</Label>
             <h2
               className="font-bold leading-tight mb-4"
@@ -729,143 +644,10 @@ export default function HomePage() {
               Every program is assessment-based, structured, and designed to
               take you from where you are to where you want to be.
             </p>
-          </div>
+          </AnimateIn>
 
-          {/* Bento grid — no symmetry, features AEL prominently */}
-          <div className="grid grid-cols-1 md:grid-cols-6 gap-4">
-
-            {/* AEL — Featured, 4/6 cols, taller */}
-            <Link
-              href={programs[0].href}
-              className={`group md:col-span-4 rounded-2xl p-8 flex flex-col justify-between card-hover ${programs[0].hoverClass}`}
-              style={{
-                background: programs[0].lightBg,
-                border: `1px solid ${programs[0].borderBase}`,
-                minHeight: "300px",
-              }}
-            >
-              <div>
-                <div className="flex items-center gap-3 mb-5">
-                  <span
-                    className="text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider"
-                    style={{ background: `${programs[0].accent}18`, color: programs[0].accent, fontFamily: "var(--font-body)" }}
-                  >
-                    {programs[0].ages}
-                  </span>
-                  <span
-                    className="text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider"
-                    style={{ background: `${programs[0].accent}0D`, color: `${programs[0].accent}99`, fontFamily: "var(--font-body)" }}
-                  >
-                    Featured Program
-                  </span>
-                </div>
-                <h3
-                  className="font-bold mb-3 leading-tight"
-                  style={{ fontFamily: "var(--font-display)", fontSize: "1.5rem", color: "#7C3AED" }}
-                >
-                  {programs[0].name}
-                </h3>
-                <p
-                  className="mb-4 leading-relaxed"
-                  style={{ fontFamily: "var(--font-display)", fontStyle: "italic", color: programs[0].accent, fontSize: "1rem" }}
-                >
-                  {programs[0].tagline}
-                </p>
-                <p
-                  className="text-sm leading-relaxed"
-                  style={{ color: "#6b7280", fontFamily: "var(--font-body)" }}
-                >
-                  {programs[0].desc}
-                </p>
-              </div>
-              <div
-                className="inline-flex items-center gap-2 text-sm font-semibold mt-6"
-                style={{ color: programs[0].accent, fontFamily: "var(--font-body)" }}
-              >
-                Explore Pathway
-                <Chevron className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform duration-200" />
-              </div>
-            </Link>
-
-            {/* Communication — 2/6 cols */}
-            <Link
-              href={programs[1].href}
-              className={`group md:col-span-2 rounded-2xl p-7 flex flex-col justify-between card-hover ${programs[1].hoverClass}`}
-              style={{
-                background: programs[1].lightBg,
-                border: `1px solid ${programs[1].borderBase}`,
-                minHeight: "300px",
-              }}
-            >
-              <div>
-                <span
-                  className="text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4 inline-block"
-                  style={{ background: `${programs[1].accent}18`, color: programs[1].accent, fontFamily: "var(--font-body)" }}
-                >
-                  {programs[1].ages}
-                </span>
-                <h3
-                  className="font-bold mb-2 leading-tight"
-                  style={{ fontFamily: "var(--font-display)", fontSize: "1.2rem", color: "#7C3AED" }}
-                >
-                  {programs[1].name}
-                </h3>
-                <p
-                  className="text-sm leading-relaxed"
-                  style={{ fontFamily: "var(--font-display)", fontStyle: "italic", color: programs[1].accent }}
-                >
-                  {programs[1].tagline}
-                </p>
-              </div>
-              <div
-                className="inline-flex items-center gap-1.5 text-sm font-semibold mt-5"
-                style={{ color: programs[1].accent, fontFamily: "var(--font-body)" }}
-              >
-                Explore <Chevron className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform duration-200" />
-              </div>
-            </Link>
-
-            {/* Row 2: Women, TTT, Art Therapy — 2 cols each */}
-            {programs.slice(2).map((prog) => (
-              <Link
-                key={prog.name}
-                href={prog.href}
-                className={`group md:col-span-2 rounded-2xl p-7 flex flex-col justify-between card-hover ${prog.hoverClass}`}
-                style={{
-                  background: prog.lightBg,
-                  border: `1px solid ${prog.borderBase}`,
-                  minHeight: "220px",
-                }}
-              >
-                <div>
-                  <span
-                    className="text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4 inline-block"
-                    style={{ background: `${prog.accent}18`, color: prog.accent, fontFamily: "var(--font-body)" }}
-                  >
-                    {prog.ages}
-                  </span>
-                  <h3
-                    className="font-bold mb-2 leading-snug"
-                    style={{ fontFamily: "var(--font-display)", fontSize: "1.1rem", color: "#7C3AED" }}
-                  >
-                    {prog.name}
-                  </h3>
-                  <p
-                    className="text-sm leading-relaxed"
-                    style={{ fontFamily: "var(--font-display)", fontStyle: "italic", color: prog.accent }}
-                  >
-                    {prog.tagline}
-                  </p>
-                </div>
-                <div
-                  className="inline-flex items-center gap-1.5 text-sm font-semibold mt-5"
-                  style={{ color: prog.accent, fontFamily: "var(--font-body)" }}
-                >
-                  Explore <Chevron className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform duration-200" />
-                </div>
-              </Link>
-            ))}
-          </div>
+          {/* Bento grid — animated with stagger + hover lift */}
+          <AnimatedProgramsGrid programs={programs} />
 
           {/* Assessment prompt */}
           <div
@@ -907,7 +689,7 @@ export default function HomePage() {
       ═══════════════════════════════════════════ */}
       <section style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }} className="py-24">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="mb-14">
+          <AnimateIn className="mb-14">
             <Label dark>What Sets Us Apart</Label>
             <h2
               className="font-bold leading-tight mb-5"
@@ -928,9 +710,9 @@ export default function HomePage() {
               Six principles that make every Hidden Potential program
               fundamentally different from what you have experienced before.
             </p>
-          </div>
+          </AnimateIn>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <AnimateGroup className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {differentiators.map((d, i) => (
               <div
                 key={d.title}
@@ -970,7 +752,7 @@ export default function HomePage() {
                 </div>
               </div>
             ))}
-          </div>
+          </AnimateGroup>
         </div>
       </section>
 
@@ -1094,7 +876,7 @@ export default function HomePage() {
       ═══════════════════════════════════════════ */}
       <section style={{ background: "#F3F0FF" }} className="py-24">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-14">
+          <AnimateIn className="text-center mb-14">
             <Label>How It Works</Label>
             <h2
               className="font-bold leading-tight mb-4"
@@ -1112,9 +894,9 @@ export default function HomePage() {
             >
               No guesswork. No generic advice. Only guided evolution.
             </p>
-          </div>
+          </AnimateIn>
 
-          <div className="grid md:grid-cols-4 gap-5">
+          <AnimateGroup className="grid md:grid-cols-4 gap-5">
             {enrollmentSteps.map((s, i) => (
               <div key={s.step} className="relative">
                 {i < enrollmentSteps.length - 1 && (
@@ -1159,7 +941,7 @@ export default function HomePage() {
                 </div>
               </div>
             ))}
-          </div>
+          </AnimateGroup>
 
           <p
             className="text-center text-base mt-10"
@@ -1276,6 +1058,7 @@ export default function HomePage() {
       ═══════════════════════════════════════════ */}
       <section style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }} className="py-28">
         <div className="max-w-3xl mx-auto px-6 text-center">
+          <AnimateIn>
           <Label dark>Begin Your Journey</Label>
 
           <h2
@@ -1302,6 +1085,7 @@ export default function HomePage() {
             Take the Life Skills Assessment and receive your personalized
             growth pathway — designed for exactly where you are today.
           </p>
+          </AnimateIn>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-14">
             <Link

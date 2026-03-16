@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import MobileBottomNav from "@/components/ui/mobile-bottom-nav";
+import LayoutClient from "@/components/layout/LayoutClient";
 
 export const metadata: Metadata = {
   title: {
@@ -80,7 +81,7 @@ export default function RootLayout({
             </span>
           </div>
 
-          {children}
+          <LayoutClient>{children}</LayoutClient>
         </main>
 
         <Footer />
