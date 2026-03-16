@@ -482,24 +482,14 @@ export default function NoidaLocationPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 text-sm font-bold text-white bg-primary-teal hover:bg-teal-dark rounded-md transition-colors"
+              className="btn-premium-fill"
             >
               Book a Free Consultation
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2.5}
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M9 5l7 7-7 7" />
-              </svg>
+              <span className="btn-icon-circle" aria-hidden="true"><svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round"><path d="M9 5l7 7-7 7" /></svg></span>
             </Link>
             <Link
               href="/enroll"
-              className="inline-flex items-center justify-center px-8 py-4 text-sm font-bold text-white border-2 border-white/30 hover:border-white/70 hover:bg-white/5 rounded-md transition-colors"
+              className="btn-premium-ghost-plain"
             >
               Enroll in a Program
             </Link>
@@ -602,7 +592,7 @@ export default function NoidaLocationPage() {
             {offerings.map((o) => (
               <div
                 key={o.num}
-                className="bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden flex flex-col"
+                className="card-service"
               >
                 {/* Teal header bar with number + title */}
                 <div className="bg-primary-teal px-5 py-4">
@@ -702,7 +692,7 @@ export default function NoidaLocationPage() {
             {differentiators.map((d) => (
               <div
                 key={d.title}
-                className="bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow p-6"
+                className="card-service"
               >
                 <div className="flex items-center gap-3 mb-3">
                   <div
@@ -749,7 +739,7 @@ export default function NoidaLocationPage() {
             {faqs.map((faq, i) => (
               <div
                 key={i}
-                className="rounded-lg border border-gray-200 bg-white shadow-sm overflow-hidden"
+                className="card-service"
               >
                 {/* Question — teal left bar */}
                 <div
@@ -830,24 +820,14 @@ export default function NoidaLocationPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 text-sm font-bold text-white bg-primary-teal hover:bg-teal-dark rounded-md transition-colors"
+              className="btn-premium-fill"
             >
               Book a Free Consultation
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2.5}
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M9 5l7 7-7 7" />
-              </svg>
+              <span className="btn-icon-circle" aria-hidden="true"><svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round"><path d="M9 5l7 7-7 7" /></svg></span>
             </Link>
             <Link
               href="/enroll"
-              className="inline-flex items-center justify-center px-8 py-4 text-sm font-bold text-white border-2 border-white/30 hover:border-white/70 hover:bg-white/5 rounded-md transition-colors"
+              className="btn-premium-ghost-plain"
             >
               Enroll Now
             </Link>

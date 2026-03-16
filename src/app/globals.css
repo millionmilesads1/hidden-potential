@@ -380,6 +380,29 @@ details > summary:hover { background: #F3F0FF !important; }
   box-shadow: 0 10px 32px rgba(124,58,237,0.5), inset 0 1px 0 rgba(255,255,255,0.12);
 }
 .btn-premium-fill:active { transform: scale(0.97); }
+
+/* Balanced fill pill — when no trailing icon-circle is needed */
+.btn-premium-fill-plain {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #7C3AED;
+  border-radius: 9999px;
+  padding: 13px 32px;
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: white;
+  min-height: 50px;
+  box-shadow: 0 4px 20px rgba(124,58,237,0.38), inset 0 1px 0 rgba(255,255,255,0.12);
+  transition: background 0.55s cubic-bezier(0.32,0.72,0,1), box-shadow 0.55s cubic-bezier(0.32,0.72,0,1), transform 0.4s cubic-bezier(0.32,0.72,0,1);
+}
+.btn-premium-fill-plain:hover {
+  background: #6D28D9;
+  box-shadow: 0 10px 32px rgba(124,58,237,0.5), inset 0 1px 0 rgba(255,255,255,0.12);
+}
+.btn-premium-fill-plain:active { transform: scale(0.97); }
 .btn-premium-fill .btn-icon-circle {
   width: 34px;
   height: 34px;
@@ -523,4 +546,75 @@ details > summary:hover { background: #F3F0FF !important; }
 }
 .card-glass-border:hover {
   background: linear-gradient(135deg, rgba(255,255,255,0.19) 0%, rgba(255,255,255,0.07) 100%);
+}
+
+/* ─────────────────────────────────────────────
+   SERVICE & CONTENT CARD — double-bezel on light bg
+   Consistent premium card for all content sections
+   Outer shell: hairline ring + padding
+   Inner core:  white bg + inset glow
+   ───────────────────────────────────────────── */
+
+.card-service {
+  background: rgba(0,0,0,0.025);
+  border-radius: 1.5rem;
+  padding: 5px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.055);
+  transition: transform 0.6s cubic-bezier(0.32,0.72,0,1), box-shadow 0.6s cubic-bezier(0.32,0.72,0,1);
+  overflow: hidden;
+  cursor: default;
+}
+.card-service:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 48px rgba(124,58,237,0.12), 0 0 0 1px rgba(124,58,237,0.16);
+}
+.card-service-inner {
+  background: white;
+  border-radius: calc(1.5rem - 5px);
+  padding: 24px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.9);
+}
+
+/* Gold accent variant */
+.card-service-gold:hover {
+  box-shadow: 0 20px 48px rgba(200,169,81,0.12), 0 0 0 1px rgba(200,169,81,0.18);
+}
+
+/* ─────────────────────────────────────────────
+   EYEBROW PILL TAG — above section headings
+   ───────────────────────────────────────────── */
+
+.eyebrow-purple {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  padding: 4px 12px;
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  background: rgba(124,58,237,0.08);
+  color: #7C3AED;
+  border: 1px solid rgba(124,58,237,0.18);
+  margin-bottom: 16px;
+}
+
+.eyebrow-gold {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  padding: 4px 12px;
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  background: rgba(200,169,81,0.08);
+  color: #C8A951;
+  border: 1px solid rgba(200,169,81,0.22);
+  margin-bottom: 16px;
 }

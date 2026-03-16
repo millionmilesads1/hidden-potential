@@ -185,10 +185,10 @@ export default function GoalSettingPage() {
               ))}
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/assessment" className="inline-block bg-primary-teal text-white font-bold px-8 py-4 rounded-lg text-sm hover:bg-teal-dark transition-colors" style={{ fontFamily: 'var(--font-display)' }}>
+              <Link href="/assessment" className="btn-premium-fill">
                 Take the Goal Clarity Assessment
               </Link>
-              <Link href="/contact" className="inline-block border border-white/40 text-white font-bold px-8 py-4 rounded-lg text-sm hover:border-white/70 transition-colors" style={{ fontFamily: 'var(--font-display)' }}>
+              <Link href="/contact" className="btn-premium-ghost-plain">
                 Book a Discovery Call
               </Link>
             </div>
@@ -224,7 +224,7 @@ export default function GoalSettingPage() {
             </div>
             <div className="grid md:grid-cols-2 gap-6">
               {skillCards.map((card) => (
-                <div key={card.num} className="rounded-lg overflow-hidden border border-gray-100 shadow-sm">
+                <div key={card.num} className="card-service">
                   <div className="bg-primary-teal px-6 py-4 flex items-center gap-3">
                     <span className="text-white/50 font-bold text-sm" style={{ fontFamily: 'var(--font-display)' }}>{card.num}</span>
                     <h3 className="text-white font-bold text-base" style={{ fontFamily: 'var(--font-display)' }}>{card.title}</h3>
@@ -252,7 +252,7 @@ export default function GoalSettingPage() {
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {audienceCards.map((card) => (
-                <div key={card.num} className="bg-white rounded-lg p-6 shadow-sm">
+                <div key={card.num} className="card-service">
                   <div className="w-8 h-8 rounded-full bg-[#EDE9FE] flex items-center justify-center mb-4">
                     <span className="text-primary-teal font-bold text-xs" style={{ fontFamily: 'var(--font-display)' }}>{card.num}</span>
                   </div>
@@ -280,7 +280,7 @@ export default function GoalSettingPage() {
             </div>
             <div className="grid md:grid-cols-2 gap-6">
               {differentiatorCards.map((card) => (
-                <div key={card.title} className="bg-white rounded-lg p-6 shadow-sm flex gap-4">
+                <div key={card.title} className="card-service">
                   <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#EDE9FE] flex items-center justify-center mt-1">
                     <svg className="w-4 h-4 text-primary-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -327,10 +327,10 @@ export default function GoalSettingPage() {
               The difference between people who achieve their goals and people who do not is not talent, motivation, or luck — it is system. Goal setting and achievement coaching at Hidden Potential in Dwarka, Delhi gives you the structured clarity, execution frameworks, and accountability systems that turn intentions into documented results. Start with a free assessment to understand your current achievement patterns and receive a personalised development plan.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
-              <Link href="/assessment" className="inline-block bg-primary-teal text-white font-bold px-8 py-4 rounded-lg text-sm hover:bg-teal-dark transition-colors" style={{ fontFamily: 'var(--font-display)' }}>
+              <Link href="/assessment" className="btn-premium-fill">
                 Take the Goal Clarity Assessment
               </Link>
-              <Link href="/contact" className="inline-block border border-white/40 text-white font-bold px-8 py-4 rounded-lg text-sm hover:border-white/70 transition-colors" style={{ fontFamily: 'var(--font-display)' }}>
+              <Link href="/contact" className="btn-premium-ghost-plain">
                 Book a Discovery Call
               </Link>
             </div>

@@ -487,24 +487,14 @@ export default function EnrollPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
             <a
               href="#programs"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 text-sm font-bold text-white bg-primary-teal hover:bg-teal-dark rounded-md transition-colors"
+              className="btn-premium-fill"
             >
               Select Your Program Below
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2.5}
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M9 5l7 7-7 7" />
-              </svg>
+              <span className="btn-icon-circle" aria-hidden="true"><svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round"><path d="M9 5l7 7-7 7" /></svg></span>
             </a>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center px-8 py-4 text-sm font-bold text-white border-2 border-white/30 hover:border-white/70 hover:bg-white/5 rounded-md transition-colors"
+              className="btn-premium-ghost-plain"
             >
               Not Sure? Book a Free Call
             </Link>
@@ -806,26 +796,16 @@ export default function EnrollPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <a
               href="#programs"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 text-sm font-bold text-white bg-primary-teal hover:bg-teal-dark rounded-md transition-colors"
+              className="btn-premium-fill"
             >
               Scroll Up to Enroll
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2.5}
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M9 5l7 7-7 7" />
-              </svg>
+              <span className="btn-icon-circle" aria-hidden="true"><svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round"><path d="M9 5l7 7-7 7" /></svg></span>
             </a>
             <a
               href="https://wa.me/919899209335"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-8 py-4 text-sm font-bold text-white border-2 border-white/30 hover:border-white/70 hover:bg-white/5 rounded-md transition-colors"
+              className="btn-premium-ghost-plain"
             >
               WhatsApp Us
             </a>

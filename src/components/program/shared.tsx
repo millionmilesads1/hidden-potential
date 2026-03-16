@@ -174,32 +174,35 @@ export function FormatBadge({ label }: { label: string }) {
 
 export function DomainCard({ data }: { data: DomainCardData }) {
   const a = domainAccent[data.accent];
+  const hoverClass = data.accent === "gold" ? "card-service-gold" : "";
   return (
     <div
-      className={`bg-white rounded-lg border ${a.border} shadow-sm overflow-hidden flex flex-col`}
+      className={`card-service ${hoverClass}`}
     >
-      {/* Coloured header */}
-      <div className={`${a.header} px-5 py-4`}>
-        <span className={`text-[11px] font-bold tabular-nums ${a.numText}`}>
-          {data.num}
-        </span>
-        <h3 className={`text-base font-bold ${a.headerText} mt-0.5 leading-snug`}>
-          {data.title}
-        </h3>
-      </div>
+      <div style={{ background: "white", borderRadius: "calc(1.5rem - 5px)", overflow: "hidden", display: "flex", flexDirection: "column", height: "100%", boxShadow: "inset 0 1px 0 rgba(255,255,255,0.9)" }}>
+        {/* Coloured header */}
+        <div className={`${a.header} px-5 py-4`}>
+          <span className={`text-[11px] font-bold tabular-nums ${a.numText}`}>
+            {data.num}
+          </span>
+          <h3 className={`text-base font-bold ${a.headerText} mt-0.5 leading-snug`} style={{ fontFamily: "var(--font-display)" }}>
+            {data.title}
+          </h3>
+        </div>
 
-      {/* Body */}
-      <div className="p-5 flex flex-col flex-1">
-        <p className="text-xs text-charcoal/65 leading-relaxed mb-4">{data.desc}</p>
-        <div className="flex flex-wrap gap-1.5 mt-auto">
-          {data.skills.map((s) => (
-            <span
-              key={s}
-              className={`text-[11px] font-semibold px-2.5 py-1 rounded-full ${a.chip}`}
-            >
-              {s}
-            </span>
-          ))}
+        {/* Body */}
+        <div className="p-5 flex flex-col flex-1">
+          <p className="text-xs leading-relaxed mb-4" style={{ color: "rgba(45,45,45,0.65)", fontFamily: "var(--font-body)" }}>{data.desc}</p>
+          <div className="flex flex-wrap gap-1.5 mt-auto">
+            {data.skills.map((s) => (
+              <span
+                key={s}
+                className={`text-[11px] font-semibold px-2.5 py-1 rounded-full ${a.chip}`}
+              >
+                {s}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </div>
@@ -213,20 +216,25 @@ export function PathwayLevelCard({ data }: { data: PathwayLevelData }) {
   const a = pathwayAccent[data.accent];
   return (
     <div
-      className={`flex-1 rounded-lg p-7 border ${a.border} flex flex-col items-center text-center`}
-      style={{ background: "rgba(255,255,255,0.06)" }}
+      className={`flex-1 p-7 border ${a.border} flex flex-col items-center text-center`}
+      style={{
+        background: "rgba(255,255,255,0.07)",
+        borderRadius: "1.5rem",
+        boxShadow: "inset 0 1px 0 rgba(255,255,255,0.1), 0 0 0 1px rgba(255,255,255,0.04)",
+        transition: "background 0.5s cubic-bezier(0.32,0.72,0,1)",
+      }}
     >
       <div className={`w-3 h-3 rounded-full ${a.dot} mb-4 flex-shrink-0`} />
-      <p className={`text-xs font-bold uppercase tracking-widest ${a.label} mb-2`}>
+      <p className={`text-xs font-bold uppercase tracking-widest ${a.label} mb-2`} style={{ letterSpacing: "0.15em" }}>
         {data.name}
       </p>
       <p
-        className="text-2xl font-extrabold text-white mb-3"
-        style={{ fontFamily: "var(--font-display)" }}
+        className="font-extrabold text-white mb-3"
+        style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 2.5vw, 2rem)" }}
       >
         {data.duration}
       </p>
-      <p className="text-sm text-white/55 leading-relaxed">{data.desc}</p>
+      <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.55)", fontFamily: "var(--font-body)" }}>{data.desc}</p>
     </div>
   );
 }
@@ -294,27 +302,15 @@ export function ProgramCTASection({ data }: { data: ProgramCtaData }) {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-          <Link
-            href={data.cta1Href}
-            className="inline-flex items-center justify-center gap-2 px-8 py-4 text-sm font-bold text-white bg-primary-teal hover:bg-teal-dark rounded-md transition-colors"
-          >
+          <Link href={data.cta1Href} className="btn-premium-fill">
             {data.cta1Label}
-            <svg
-              className="w-4 h-4"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2.5}
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M9 5l7 7-7 7" />
-            </svg>
+            <span className="btn-icon-circle" aria-hidden="true">
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round">
+                <path d="M9 5l7 7-7 7" />
+              </svg>
+            </span>
           </Link>
-          <Link
-            href={data.cta2Href}
-            className="inline-flex items-center justify-center px-8 py-4 text-sm font-bold text-white border-2 border-white/30 hover:border-white/70 hover:bg-white/5 rounded-md transition-colors"
-          >
+          <Link href={data.cta2Href} className="btn-premium-ghost-plain">
             {data.cta2Label}
           </Link>
         </div>

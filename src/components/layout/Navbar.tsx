@@ -14,30 +14,41 @@ const programs = [
 ];
 
 const forLinks = [
-  { label: "Schools",       href: "/for/schools" },
-  { label: "Professionals", href: "/for/professionals" },
-  { label: "Young Adults",  href: "/for/young-adults" },
+  { label: "Schools",               href: "/for/schools" },
+  { label: "Professionals",         href: "/for/professionals" },
+  { label: "Young Adults",          href: "/for/young-adults" },
+  { label: "Women",                 href: "/for/women" },
+  { label: "Corporates",            href: "/for/corporates" },
+  { label: "Teachers & Coaches",    href: "/for/teachers-and-coaches" },
+  { label: "Parents",               href: "/for/parents" },
+];
+
+const assessmentLinks = [
+  { label: "For Students", href: "/assessment" },
+  { label: "For Adults",   href: "/assessment/adults" },
 ];
 
 const navLinks = [
-  { label: "Home",       href: "/" },
-  { label: "Assessment", href: "/assessment" },
-  { label: "About",      href: "/about" },
-  { label: "Gallery",    href: "/gallery" },
-  { label: "FAQ",        href: "/#faq" },
-  { label: "Blog",       href: "/blog" },
+  { label: "Home",    href: "/" },
+  { label: "About",   href: "/about" },
+  { label: "Gallery", href: "/gallery" },
+  { label: "Books",   href: "/books" },
+  { label: "FAQ",     href: "/#faq" },
+  { label: "Blog",    href: "/blog" },
 ];
 
 export default function Navbar() {
   const pathname = usePathname();
 
-  const [scrolled,      setScrolled]      = useState(false);
-  const [mobileOpen,    setMobileOpen]    = useState(false);
-  const [pathwaysOpen,  setPathwaysOpen]  = useState(false);
-  const [forOpen,       setForOpen]       = useState(false);
+  const [scrolled,        setScrolled]        = useState(false);
+  const [mobileOpen,      setMobileOpen]      = useState(false);
+  const [pathwaysOpen,    setPathwaysOpen]    = useState(false);
+  const [forOpen,         setForOpen]         = useState(false);
+  const [assessmentOpen,  setAssessmentOpen]  = useState(false);
 
-  const pathwaysRef = useRef<HTMLLIElement>(null);
-  const forRef      = useRef<HTMLLIElement>(null);
+  const pathwaysRef   = useRef<HTMLLIElement>(null);
+  const forRef        = useRef<HTMLLIElement>(null);
+  const assessmentRef = useRef<HTMLLIElement>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10);
@@ -53,6 +64,7 @@ export default function Navbar() {
         setMobileOpen(false);
         setPathwaysOpen(false);
         setForOpen(false);
+        setAssessmentOpen(false);
       }
     };
     document.addEventListener("keydown", handleKeyDown);
@@ -90,6 +102,8 @@ export default function Navbar() {
     padding:              "10px 20px",
     transition:           "background 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease",
   };
+
+  const isAssessmentActive = pathname === "/assessment" || pathname === "/assessment/adults";
 
   return (
     <>
@@ -163,6 +177,67 @@ export default function Navbar() {
                 );
               })}
 
+              {/* Assessment dropdown — disclosure pattern */}
+              <li
+                className="relative group"
+                ref={assessmentRef}
+                onBlur={handleDropdownBlur(setAssessmentOpen, assessmentRef)}
+              >
+                <button
+                  aria-haspopup="true"
+                  aria-expanded={assessmentOpen}
+                  aria-controls="assessment-dropdown"
+                  onClick={() => { setAssessmentOpen(!assessmentOpen); setPathwaysOpen(false); setForOpen(false); }}
+                  className="flex items-center gap-1 text-sm font-medium transition-colors px-3 py-1.5 rounded-full cursor-pointer"
+                  style={{ color: isAssessmentActive ? "#7C3AED" : "rgba(28,28,46,0.7)" }}
+                >
+                  Assessment
+                  <svg
+                    className={`w-3.5 h-3.5 transition-transform duration-200 ${assessmentOpen ? "rotate-180" : ""} group-hover:rotate-180`}
+                    fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}
+                    aria-hidden="true"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+
+                <div
+                  id="assessment-dropdown"
+                  className={`
+                    absolute top-full left-1/2 -translate-x-1/2
+                    pt-2 w-52
+                    transition-all duration-200
+                    ${assessmentOpen
+                      ? "visible opacity-100"
+                      : "invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 delay-[150ms] group-hover:delay-[0ms] group-focus-within:delay-[0ms]"}
+                  `}
+                >
+                  <div
+                    className="py-2"
+                    style={{
+                      background:           "rgba(255,255,255,0.98)",
+                      backdropFilter:       "blur(16px)",
+                      WebkitBackdropFilter: "blur(16px)",
+                      borderRadius:         "18px",
+                      boxShadow:            "0 8px 32px rgba(0,0,0,0.12)",
+                      border:               "1px solid rgba(0,0,0,0.07)",
+                    }}
+                  >
+                    {assessmentLinks.map((a) => (
+                      <Link
+                        key={a.href}
+                        href={a.href}
+                        onClick={() => setAssessmentOpen(false)}
+                        className="nav-dropdown-link block px-4 py-2.5 text-sm font-medium transition-colors rounded-lg mx-1 cursor-pointer"
+                        style={{ fontFamily: "var(--font-body)" }}
+                      >
+                        {a.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </li>
+
               {/* Pathways dropdown — disclosure pattern */}
               <li
                 className="relative group"
@@ -173,11 +248,11 @@ export default function Navbar() {
                   aria-haspopup="true"
                   aria-expanded={pathwaysOpen}
                   aria-controls="pathways-dropdown"
-                  onClick={() => { setPathwaysOpen(!pathwaysOpen); setForOpen(false); }}
+                  onClick={() => { setPathwaysOpen(!pathwaysOpen); setForOpen(false); setAssessmentOpen(false); }}
                   className="flex items-center gap-1 text-sm font-medium transition-colors px-3 py-1.5 rounded-full cursor-pointer"
                   style={{ color: "rgba(28,28,46,0.7)" }}
                 >
-                  Pathways
+                  Courses
                   <svg
                     className={`w-3.5 h-3.5 transition-transform duration-200 ${pathwaysOpen ? "rotate-180" : ""} group-hover:rotate-180`}
                     fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}
@@ -234,7 +309,7 @@ export default function Navbar() {
                   aria-haspopup="true"
                   aria-expanded={forOpen}
                   aria-controls="for-dropdown"
-                  onClick={() => { setForOpen(!forOpen); setPathwaysOpen(false); }}
+                  onClick={() => { setForOpen(!forOpen); setPathwaysOpen(false); setAssessmentOpen(false); }}
                   className="flex items-center gap-1 text-sm font-medium transition-colors px-3 py-1.5 rounded-full cursor-pointer"
                   style={{ color: "rgba(28,28,46,0.7)" }}
                 >
@@ -252,7 +327,7 @@ export default function Navbar() {
                   id="for-dropdown"
                   className={`
                     absolute top-full left-1/2 -translate-x-1/2
-                    pt-2 w-56
+                    pt-2 w-64
                     transition-all duration-200
                     ${forOpen
                       ? "visible opacity-100"
@@ -356,9 +431,28 @@ export default function Navbar() {
 
               <div className="px-4 pt-2 pb-1">
                 <p className="text-[10px] font-bold uppercase tracking-widest mb-2 pl-1" style={{ color: "#C8A951" }} aria-hidden="true">
-                  Pathways
+                  Assessment
                 </p>
-                <div className="flex flex-col gap-0.5" role="list" aria-label="Pathways">
+                <div className="flex flex-col gap-0.5" role="list" aria-label="Assessment">
+                  {assessmentLinks.map((a) => (
+                    <Link
+                      key={a.href}
+                      href={a.href}
+                      onClick={() => setMobileOpen(false)}
+                      className="py-2.5 px-3 text-sm font-medium rounded-lg transition-colors min-h-[44px] flex items-center cursor-pointer"
+                      style={{ color: "#2D2D2D" }}
+                    >
+                      {a.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+
+              <div className="px-4 pt-2 pb-1">
+                <p className="text-[10px] font-bold uppercase tracking-widest mb-2 pl-1" style={{ color: "#C8A951" }} aria-hidden="true">
+                  Courses
+                </p>
+                <div className="flex flex-col gap-0.5" role="list" aria-label="Courses">
                   {programs.map((p) => (
                     <Link
                       key={p.href}

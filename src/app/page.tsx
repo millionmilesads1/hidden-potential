@@ -435,10 +435,10 @@ export default function HomePage() {
 
               <div className="flex flex-wrap gap-3 mb-10 pl-9">
                 {[
-                  "Emotional Resilience",
-                  "Self-Awareness",
-                  "Communication Mastery",
-                  "Clarity of Identity",
+                  "Personality Development",
+                  "Communication Skills",
+                  "Soft Skills Training",
+                  "Life Skills Training",
                 ].map((item) => (
                   <span
                     key={item}
@@ -1072,7 +1072,109 @@ export default function HomePage() {
       </section>
 
       {/* ═══════════════════════════════════════════
-          10. FINAL CTA — Dark editorial
+          10. BOOKS TEASER — Author credibility
+      ═══════════════════════════════════════════ */}
+      <section style={{ background: "#F3F0FF" }} className="py-16 md:py-20">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-10 items-center">
+
+            {/* Image */}
+            <AnimateIn delay={0}>
+              <div
+                className="relative rounded-2xl overflow-hidden"
+                style={{
+                  aspectRatio: "4/3",
+                  boxShadow: "0 8px 40px rgba(45,27,105,0.14)",
+                }}
+              >
+                <Image
+                  src="/gallery/08_Book/img-002.jpg"
+                  alt="An Enlightened Learner and Discover Your Potential Book by Supreet Kaur"
+                  fill
+                  className="object-cover object-center"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+            </AnimateIn>
+
+            {/* Text */}
+            <AnimateIn delay={0.1}>
+              <span
+                className="inline-block px-3 py-1 rounded-full text-xs font-bold tracking-widest uppercase mb-4"
+                style={{
+                  background: "rgba(200,169,81,0.15)",
+                  color: "#C8A951",
+                  border: "1px solid rgba(200,169,81,0.3)",
+                  fontFamily: "var(--font-body)",
+                }}
+              >
+                Published Works
+              </span>
+
+              <h2
+                className="font-bold leading-tight mb-3"
+                style={{
+                  fontFamily: "var(--font-display)",
+                  fontSize: "clamp(1.75rem, 3.5vw, 2.75rem)",
+                  color: "#2D1B69",
+                }}
+              >
+                Books by{" "}
+                <span style={{ color: "#7C3AED" }}>Supreet Kaur</span>
+              </h2>
+
+              <p
+                className="leading-relaxed mb-7"
+                style={{
+                  color: "#2D2D2D",
+                  opacity: 0.75,
+                  fontFamily: "var(--font-body)",
+                  fontSize: "0.9375rem",
+                  maxWidth: "420px",
+                }}
+              >
+                Structured life skills wisdom distilled into books — for
+                students, parents, and lifelong learners who want a real
+                toolkit, not just inspiration.
+              </p>
+
+              <div className="flex flex-wrap gap-3">
+                <Link
+                  href="/books"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold text-white transition-all hover:opacity-90"
+                  style={{
+                    background: "#7C3AED",
+                    fontFamily: "var(--font-body)",
+                    boxShadow: "0 4px 16px rgba(124,58,237,0.3)",
+                  }}
+                >
+                  View All Books
+                  <svg className="w-3.5 h-3.5" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                    <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </Link>
+                <a
+                  href="https://amzn.in/d/08Ijy89H"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold transition-all hover:scale-[1.02]"
+                  style={{
+                    background: "white",
+                    color: "#7C3AED",
+                    fontFamily: "var(--font-body)",
+                    border: "1px solid rgba(124,58,237,0.2)",
+                  }}
+                >
+                  Buy on Amazon
+                </a>
+              </div>
+            </AnimateIn>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════
+          11. FINAL CTA — Dark editorial
           Credentials grid = Trust & Authority's primary signal
       ═══════════════════════════════════════════ */}
       <section style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }} className="py-28">

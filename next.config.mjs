@@ -2,13 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   async redirects() {
-    return [
-      {
-        source: "/books",
-        destination: "/resources",
-        permanent: true,
-      },
-    ];
+    return [];
   },
   async headers() {
     return [

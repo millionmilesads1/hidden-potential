@@ -220,27 +220,15 @@ export default function StudySkillsPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
               <Link
                 href="/assessment"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 text-sm font-bold text-white bg-primary-teal hover:bg-teal-dark rounded-md transition-colors"
+                className="btn-premium-fill"
                 style={{ fontFamily: "var(--font-display)" }}
               >
                 Take the Learning Assessment
-                <svg
-                  className="w-4 h-4"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2.5}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                  />
-                </svg>
+                <span className="btn-icon-circle" aria-hidden="true"><svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round"><path d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg></span>
               </Link>
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 text-sm font-bold text-white/90 rounded-md transition-colors hover:text-white"
+                className="btn-premium-ghost-plain"
                 style={{
                   border: "1px solid rgba(255,255,255,0.25)",
                   fontFamily: "var(--font-display)",
@@ -336,7 +324,7 @@ export default function StudySkillsPage() {
 
             <div className="grid md:grid-cols-2 gap-6">
               {/* Card 01 */}
-              <div className="rounded-lg border border-[#E8E8E8] overflow-hidden">
+              <div className="card-service">
                 <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#7C3AED" }}>
                   <span className="text-white/60 text-xs font-bold">01</span>
                   <h3 className="text-sm font-bold text-white" style={{ fontFamily: "var(--font-display)" }}>
@@ -358,7 +346,7 @@ export default function StudySkillsPage() {
               </div>
 
               {/* Card 02 */}
-              <div className="rounded-lg border border-[#E8E8E8] overflow-hidden">
+              <div className="card-service">
                 <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#7C3AED" }}>
                   <span className="text-white/60 text-xs font-bold">02</span>
                   <h3 className="text-sm font-bold text-white" style={{ fontFamily: "var(--font-display)" }}>
@@ -379,7 +367,7 @@ export default function StudySkillsPage() {
               </div>
 
               {/* Card 03 */}
-              <div className="rounded-lg border border-[#E8E8E8] overflow-hidden">
+              <div className="card-service">
                 <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#7C3AED" }}>
                   <span className="text-white/60 text-xs font-bold">03</span>
                   <h3 className="text-sm font-bold text-white" style={{ fontFamily: "var(--font-display)" }}>
@@ -400,7 +388,7 @@ export default function StudySkillsPage() {
               </div>
 
               {/* Card 04 */}
-              <div className="rounded-lg border border-[#E8E8E8] overflow-hidden">
+              <div className="card-service">
                 <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#7C3AED" }}>
                   <span className="text-white/60 text-xs font-bold">04</span>
                   <h3 className="text-sm font-bold text-white" style={{ fontFamily: "var(--font-display)" }}>
@@ -421,7 +409,7 @@ export default function StudySkillsPage() {
               </div>
 
               {/* Card 05 */}
-              <div className="rounded-lg border border-[#E8E8E8] overflow-hidden">
+              <div className="card-service">
                 <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#7C3AED" }}>
                   <span className="text-white/60 text-xs font-bold">05</span>
                   <h3 className="text-sm font-bold text-white" style={{ fontFamily: "var(--font-display)" }}>
@@ -442,7 +430,7 @@ export default function StudySkillsPage() {
               </div>
 
               {/* Card 06 */}
-              <div className="rounded-lg border border-[#E8E8E8] overflow-hidden">
+              <div className="card-service">
                 <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#7C3AED" }}>
                   <span className="text-white/60 text-xs font-bold">06</span>
                   <h3 className="text-sm font-bold text-white" style={{ fontFamily: "var(--font-display)" }}>
@@ -491,7 +479,7 @@ export default function StudySkillsPage() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
               {/* Audience 01 */}
-              <div className="bg-white rounded-lg p-5 border border-[#E8E8E8]">
+              <div className="card-service">
                 <div className="flex items-start gap-3 mb-3">
                   <span className="text-[11px] font-bold text-primary-teal rounded-full px-2 py-0.5 shrink-0 mt-0.5" style={{ background: "#EDE9FE" }}>01</span>
                   <h3 className="text-sm font-bold leading-snug" style={{ color: "#7C3AED", fontFamily: "var(--font-display)" }}>
@@ -511,7 +499,7 @@ export default function StudySkillsPage() {
               </div>
 
               {/* Audience 02 */}
-              <div className="bg-white rounded-lg p-5 border border-[#E8E8E8]">
+              <div className="card-service">
                 <div className="flex items-start gap-3 mb-3">
                   <span className="text-[11px] font-bold text-primary-teal rounded-full px-2 py-0.5 shrink-0 mt-0.5" style={{ background: "#EDE9FE" }}>02</span>
                   <h3 className="text-sm font-bold leading-snug" style={{ color: "#7C3AED", fontFamily: "var(--font-display)" }}>
@@ -529,7 +517,7 @@ export default function StudySkillsPage() {
               </div>
 
               {/* Audience 03 */}
-              <div className="bg-white rounded-lg p-5 border border-[#E8E8E8]">
+              <div className="card-service">
                 <div className="flex items-start gap-3 mb-3">
                   <span className="text-[11px] font-bold text-primary-teal rounded-full px-2 py-0.5 shrink-0 mt-0.5" style={{ background: "#EDE9FE" }}>03</span>
                   <h3 className="text-sm font-bold leading-snug" style={{ color: "#7C3AED", fontFamily: "var(--font-display)" }}>
@@ -546,7 +534,7 @@ export default function StudySkillsPage() {
               </div>
 
               {/* Audience 04 */}
-              <div className="bg-white rounded-lg p-5 border border-[#E8E8E8]">
+              <div className="card-service">
                 <div className="flex items-start gap-3 mb-3">
                   <span className="text-[11px] font-bold text-primary-teal rounded-full px-2 py-0.5 shrink-0 mt-0.5" style={{ background: "#EDE9FE" }}>04</span>
                   <h3 className="text-sm font-bold leading-snug" style={{ color: "#7C3AED", fontFamily: "var(--font-display)" }}>
@@ -565,7 +553,7 @@ export default function StudySkillsPage() {
               </div>
 
               {/* Audience 05 */}
-              <div className="bg-white rounded-lg p-5 border border-[#E8E8E8]">
+              <div className="card-service">
                 <div className="flex items-start gap-3 mb-3">
                   <span className="text-[11px] font-bold text-primary-teal rounded-full px-2 py-0.5 shrink-0 mt-0.5" style={{ background: "#EDE9FE" }}>05</span>
                   <h3 className="text-sm font-bold leading-snug" style={{ color: "#7C3AED", fontFamily: "var(--font-display)" }}>
@@ -602,7 +590,7 @@ export default function StudySkillsPage() {
 
             <div className="grid md:grid-cols-2 gap-6">
               {/* Diff 1 */}
-              <div className="bg-white rounded-lg p-6 border border-[#E8E8E8]">
+              <div className="card-service">
                 <div className="w-8 h-8 rounded-full flex items-center justify-center mb-4" style={{ background: "#EDE9FE" }}>
                   <svg className="w-4 h-4 text-primary-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
@@ -621,7 +609,7 @@ export default function StudySkillsPage() {
               </div>
 
               {/* Diff 2 */}
-              <div className="bg-white rounded-lg p-6 border border-[#E8E8E8]">
+              <div className="card-service">
                 <div className="w-8 h-8 rounded-full flex items-center justify-center mb-4" style={{ background: "#EDE9FE" }}>
                   <svg className="w-4 h-4 text-primary-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
@@ -640,7 +628,7 @@ export default function StudySkillsPage() {
               </div>
 
               {/* Diff 3 */}
-              <div className="bg-white rounded-lg p-6 border border-[#E8E8E8]">
+              <div className="card-service">
                 <div className="w-8 h-8 rounded-full flex items-center justify-center mb-4" style={{ background: "#EDE9FE" }}>
                   <svg className="w-4 h-4 text-primary-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
@@ -659,7 +647,7 @@ export default function StudySkillsPage() {
               </div>
 
               {/* Diff 4 */}
-              <div className="bg-white rounded-lg p-6 border border-[#E8E8E8]">
+              <div className="card-service">
                 <div className="w-8 h-8 rounded-full flex items-center justify-center mb-4" style={{ background: "#EDE9FE" }}>
                   <svg className="w-4 h-4 text-primary-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
@@ -764,17 +752,15 @@ export default function StudySkillsPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Link
                 href="/assessment"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 text-sm font-bold text-white bg-primary-teal hover:bg-teal-dark rounded-md transition-colors"
+                className="btn-premium-fill"
                 style={{ fontFamily: "var(--font-display)" }}
               >
                 Take the Learning Assessment
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                </svg>
+                <span className="btn-icon-circle" aria-hidden="true"><svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round"><path d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg></span>
               </Link>
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 text-sm font-bold text-white/90 rounded-md transition-colors hover:text-white"
+                className="btn-premium-ghost-plain"
                 style={{ border: "1px solid rgba(255,255,255,0.25)", fontFamily: "var(--font-display)" }}
               >
                 Book a Discovery Call
