@@ -205,6 +205,7 @@ const books = [
     subtitle: "A Toolkit To Become A Better Learner",
     desc: "A structured guide to developing the essential learning skills that formal education overlooks — from emotional resilience and self-awareness to confident communication and purposeful growth.",
     imageSrc: "/images/books/book-1.jpg",
+    objectPosition: "object-bottom",
     gradientFrom: "#7C3AED",
     gradientTo: "#1a1f2e",
   },
@@ -213,6 +214,7 @@ const books = [
     subtitle: "Self Help Book",
     desc: "A practitioner's guide to lasting personal transformation through structured pathways, evidence-based assessment, and intentional daily practice — written for learners and educators alike.",
     imageSrc: "/images/books/book-2.jpg",
+    objectPosition: "object-center",
     gradientFrom: "#7C3AED",
     gradientTo: "#0d1a1a",
   },
@@ -756,7 +758,7 @@ export default function AboutPage() {
           {/* Photo strip — Josh Talks + Media */}
           <div className="grid grid-cols-2 gap-4 mt-14 max-w-2xl mx-auto">
             <div className="relative overflow-hidden rounded-xl">
-              <div className="relative h-52">
+              <div className="relative h-80">
                 <Image
                   src="/images/founder/supreet-josh-talks.jpg"
                   alt="Supreet Kaur speaking at Josh Talks, a nationally recognised speaker platform in India"
@@ -769,12 +771,13 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="relative overflow-hidden rounded-xl">
-              <div className="relative h-52">
+              <div className="relative h-80">
                 <Image
                   src="/images/media/media-1.jpg"
                   alt="Supreet Kaur featured in The Explore magazine as a life skills expert"
                   fill
-                  className="object-cover object-top"
+                  className="object-cover"
+                  style={{ objectPosition: "center 25%" }}
                 />
                 <div className="absolute bottom-0 left-0 right-0 px-3 py-2" style={{ background: "rgba(0,0,0,0.5)" }}>
                   <p className="text-white text-[11px] font-semibold">Media Recognition</p>
@@ -816,7 +819,7 @@ export default function AboutPage() {
                       src={book.imageSrc}
                       alt={`Cover of "${book.title}" by Supreet Kaur, published author and life skills educator`}
                       fill
-                      className="object-cover object-top"
+                      className={`object-cover ${book.objectPosition}`}
                     />
                   </div>
                 </div>

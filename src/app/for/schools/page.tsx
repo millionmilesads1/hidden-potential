@@ -419,12 +419,6 @@ export default function ForSchoolsPage() {
               Schedule a School Consultation
               <span className="btn-icon-circle" aria-hidden="true"><svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round"><path d="M9 5l7 7-7 7" /></svg></span>
             </Link>
-            <Link
-              href="/contact"
-              className="btn-premium-ghost-plain"
-            >
-              Download School Program Brochure
-            </Link>
           </div>
 
           {/* Trust signals — 6 items */}
