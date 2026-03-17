@@ -214,7 +214,7 @@ export default function BlogPage() {
   const [featured, ...rest] = posts;
 
   return (
-    <main>
+    <div>
       {/* Schema */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
@@ -461,6 +461,6 @@ export default function BlogPage() {
           </p>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

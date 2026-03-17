@@ -724,7 +724,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
   };
 
   return (
-    <main>
+    <div>
       {/* Schema */}
       <script
         type="application/ld+json"
@@ -926,6 +926,6 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

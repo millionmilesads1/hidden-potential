@@ -43,12 +43,12 @@ const schema = {
 
 export default function GalleryPage() {
   return (
-    <main id="main-content">
+    <div>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
       <GalleryClient />
-    </main>
+    </div>
   );
 }

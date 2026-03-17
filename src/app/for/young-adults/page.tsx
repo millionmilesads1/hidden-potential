@@ -152,7 +152,7 @@ const breadcrumbSchema = {
 const painPoints = [
   {
     num: "01",
-    title: "College can give you subject knowledge cant develop skills required to live  Happy and successful life.",
+    title: "College can give you subject knowledge — it can't develop the skills required to live a happy and successful life.",
     desc: "You can solve equations, write essays, and pass exams. But can you walk into a room of strangers and introduce yourself with confidence? Can you handle a group discussion without freezing? Can you articulate what makes you valuable in 60 seconds? The gap between academic knowledge and real-world capability is where most young adults in Delhi NCR struggle — and it is exactly what life skills training fills.",
   },
   {

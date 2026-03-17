@@ -4,14 +4,14 @@ import { useState } from "react";
 
 /**
  * EnrollForm — Client Component
- * On submit, builds a pre-filled WhatsApp message and opens it in a new tab,
- * then shows a success state with next-step guidance.
+ * Submits to Web3Forms for email capture, then opens a pre-filled WhatsApp
+ * message. Shows a success or error state after submission.
  */
 
 export default function EnrollForm() {
-  const [status, setStatus] = useState<"idle" | "submitting" | "success">("idle");
+  const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setStatus("submitting");
 
@@ -27,6 +27,33 @@ export default function EnrollForm() {
     const goals = (data.get("goals") as string) || "";
     const source = (data.get("source") as string) || "";
 
+    // Submit to Web3Forms for email capture
+    try {
+      const payload = new FormData();
+      payload.append("access_key", process.env.NEXT_PUBLIC_WEB3FORMS_KEY ?? "");
+      payload.append("subject", `New Enrollment Request — ${program}`);
+      payload.append("name", name);
+      payload.append("phone", phone);
+      payload.append("email", email);
+      payload.append("location", location);
+      payload.append("program", program);
+      payload.append("mode", mode);
+      if (timing) payload.append("timing", timing);
+      if (goals) payload.append("goals", goals);
+      if (source) payload.append("source", source);
+
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: payload,
+      });
+      const json = await res.json();
+      if (!json.success) throw new Error("Web3Forms rejected the submission");
+    } catch {
+      setStatus("error");
+      return;
+    }
+
+    // Open WhatsApp with pre-filled message
     const text = [
       `Hi Supreet, I would like to enroll in a Hidden Potential program.`,
       ``,
@@ -47,6 +74,46 @@ export default function EnrollForm() {
     window.open(waUrl, "_blank", "noopener,noreferrer");
 
     setStatus("success");
+  }
+
+  if (status === "error") {
+    return (
+      <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-8 md:p-10 text-center">
+        <div className="w-14 h-14 rounded-full bg-red-50 flex items-center justify-center mx-auto mb-5">
+          <svg className="w-7 h-7 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round">
+            <path d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </div>
+        <h3 className="text-xl font-extrabold text-primary-navy mb-2" style={{ fontFamily: "var(--font-display)" }}>
+          Something Went Wrong
+        </h3>
+        <p className="text-sm text-charcoal/70 leading-relaxed mb-6 max-w-md mx-auto">
+          We couldn&apos;t submit your enrollment right now. Please reach us directly on WhatsApp or by phone and we&apos;ll get you enrolled straight away.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-3 justify-center mb-6">
+          <a
+            href="https://wa.me/919899209335"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary-teal hover:bg-teal-dark text-white text-sm font-bold rounded-lg transition-colors"
+          >
+            WhatsApp Us
+          </a>
+          <a
+            href="tel:+919899209335"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-primary-teal/30 hover:border-primary-teal text-primary-teal text-sm font-bold rounded-lg transition-colors"
+          >
+            Call +91 98992 09335
+          </a>
+        </div>
+        <button
+          onClick={() => setStatus("idle")}
+          className="text-xs text-charcoal/40 hover:text-charcoal/60 underline transition-colors"
+        >
+          Try again
+        </button>
+      </div>
+    );
   }
 
   if (status === "success") {

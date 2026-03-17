@@ -46,7 +46,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/services/stress-management",
     "/services/emotional-intelligence",
     "/services/goal-setting",
-    "/services/career-transition",
+    "/services/career-guidance",
     "/services/workshops",
   ].map((path) => ({
     url: `${BASE_URL}${path}`,
@@ -68,11 +68,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  // ── Audience pages (3) ────────────────────────────────────────────────────
+  // ── Audience pages (7) ────────────────────────────────────────────────────
   const audience: MetadataRoute.Sitemap = [
     "/for/schools",
     "/for/professionals",
     "/for/young-adults",
+    "/for/women",
+    "/for/corporates",
+    "/for/teachers-and-coaches",
+    "/for/parents",
   ].map((path) => ({
     url: `${BASE_URL}${path}`,
     lastModified: now,
@@ -85,6 +89,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/contact",
     "/enroll",
     "/assessment",
+    "/assessment/adults",
   ].map((path) => ({
     url: `${BASE_URL}${path}`,
     lastModified: now,
@@ -126,9 +131,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // ── Medium-priority supporting pages ──────────────────────────────────────
   const medium: MetadataRoute.Sitemap = [
-    "/success-stories",
     "/faq",
-    "/books",
+    "/resources",
+    "/gallery",
   ].map((path) => ({
     url: `${BASE_URL}${path}`,
     lastModified: now,

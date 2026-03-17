@@ -79,16 +79,17 @@ export default function Footer() {
           {/* Social links */}
           <div className="flex items-center gap-5 mt-1">
             {[
-              { abbr: "FB", label: "Facebook" },
-              { abbr: "IG", label: "Instagram" },
-              { abbr: "LI", label: "LinkedIn" },
-              { abbr: "YT", label: "YouTube" },
-            ].map(({ abbr, label }) => (
+              { abbr: "FB", label: "Facebook",  href: "https://www.facebook.com/hiddenpotentialskills" },
+              { abbr: "IG", label: "Instagram", href: "https://www.instagram.com/hiddenpotentialskills" },
+              { abbr: "LI", label: "LinkedIn",  href: "https://www.linkedin.com/in/supreetkaur-hiddenpotential" },
+              { abbr: "YT", label: "YouTube",   href: "https://www.youtube.com/@hiddenpotentialskills" },
+            ].map(({ abbr, label, href }) => (
               <a
                 key={abbr}
-                href="#"
-                rel="nofollow"
-                aria-label={`Hidden Potential on ${label}`}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Hidden Potential on ${label} (opens in new tab)`}
                 className="footer-social text-xs font-semibold cursor-pointer"
                 style={{ fontFamily: "var(--font-body)", letterSpacing: "0.04em" }}
               >

@@ -848,7 +848,7 @@ export default function ForSchoolsPage() {
               href="/contact"
               className="btn-premium-ghost-plain"
             >
-              Download Program Brochure
+              Request Program Details
             </Link>
           </div>
 

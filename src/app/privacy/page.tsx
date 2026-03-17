@@ -15,7 +15,7 @@ const lastUpdated = 'February 1, 2026';
 
 export default function PrivacyPage() {
   return (
-    <main>
+    <div>
       {/* ── HEADER ──────────────────────────────────────────────────────────── */}
       <section
         style={{ background: 'linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)' }}
@@ -252,6 +252,6 @@ export default function PrivacyPage() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

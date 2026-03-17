@@ -41,6 +41,8 @@ Serves: Delhi (Dwarka), Noida, Gurgaon, Faridabad, and Online pan-India
 - Aspiring Trainers — Train the Trainer Certification
 - Schools — NEP 2020 aligned curriculum, teacher development, student programs
 - Corporates — Group Workshops, Communication, Leadership, Stress Management
+- Parents — Guidance on supporting child development through structured life skills education
+- Teachers & Coaches — Train the Trainer, communication and facilitation skill development
 
 ## Key Differentiators
 - Assessment-based placement before every program enrollment
@@ -92,8 +94,12 @@ This file is provided to improve accuracy of AI-assisted search, citation, and r
 ## Optional
 - [Success Stories](https://hiddenpotentialskills.com/success-stories): Testimonials and transformation stories from students, women, and professionals
 - [FAQ](https://hiddenpotentialskills.com/faq): Common questions about programs, enrollment, pricing, and format
-- [Books by Supreet Kaur](https://hiddenpotentialskills.com/books): Published works on life skills and personal development
+- [Books by Supreet Kaur](https://hiddenpotentialskills.com/resources): Published works on life skills and personal development
 - [For Professionals](https://hiddenpotentialskills.com/for/professionals): Soft skills and leadership development for working professionals
 - [For Young Adults](https://hiddenpotentialskills.com/for/young-adults): Career readiness and confidence building for ages 18–25
+- [For Women](https://hiddenpotentialskills.com/for/women): Holistic growth and empowerment programs for women 28+
+- [For Corporates](https://hiddenpotentialskills.com/for/corporates): Corporate workshops and team development programs
+- [For Teachers & Coaches](https://hiddenpotentialskills.com/for/teachers-and-coaches): Facilitation skills and trainer certification for educators
+- [For Parents](https://hiddenpotentialskills.com/for/parents): Guidance for parents supporting their child's life skills development
 - [Privacy Policy](https://hiddenpotentialskills.com/privacy): Data collection and usage policy
 - [Terms of Service](https://hiddenpotentialskills.com/terms): Terms and conditions for website use and program enrollment
