@@ -38,7 +38,8 @@
       "Bash(__NEW_LINE_b4ab400b9948a385__ done)",
       "Bash(for f in professionals schools)",
       "Bash(__NEW_LINE_70086f92d1f899b7__ grep -n \"ShineBorder\" /Users/me/Desktop/hidden-potential-site/src/app/for/$f/page.tsx)",
-      "Bash(__NEW_LINE_70086f92d1f899b7__ done)"
+      "Bash(__NEW_LINE_70086f92d1f899b7__ done)",
+      "Bash(test:*)"
     ]
   }
 }

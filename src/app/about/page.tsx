@@ -277,7 +277,7 @@ export default function AboutPage() {
                     Founder & Director, Hidden Potential
                   </p>
                   <div className="flex flex-wrap gap-1.5 mt-2.5">
-                    {["NLP Practitioner", "Josh Talks Speaker"].map((tag) => (
+                    {["NLP Practitioner", "Josh Talks Speaker", "Award-Winning Life Skills Coach", "Art Therapist", "Published Author"].map((tag) => (
                       <span
                         key={tag}
                         className="text-[10px] font-semibold px-2 py-0.5 rounded-full"
@@ -504,7 +504,7 @@ export default function AboutPage() {
               {/* Missing elements from education */}
               <div className="bg-white rounded-lg border border-gray-200 p-6 shadow-sm">
                 <p className="text-xs font-bold uppercase tracking-widest text-primary-teal mb-4">
-                  What Schools Don&rsquo;t Teach
+                  Majorly Missing Skills in Today&rsquo;s World
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {[

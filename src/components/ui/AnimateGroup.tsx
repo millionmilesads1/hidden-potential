@@ -69,10 +69,9 @@ export default function AnimateGroup({
             variants={itemVariants}
             style={{ height: "100%" }}
             whileHover={{
-              scale: 1.05,
-              y: -6,
-              boxShadow: "0 20px 60px rgba(0,0,0,0.12)",
-              transition: { type: "spring", stiffness: 300, damping: 20 },
+              y: -4,
+              boxShadow: "0 8px 28px rgba(0,0,0,0.10)",
+              transition: { type: "spring", stiffness: 300, damping: 22 },
             }}
           >
             {child}

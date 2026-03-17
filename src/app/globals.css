@@ -526,12 +526,10 @@ details > summary:hover { background: #F3F0FF !important; }
   cursor: pointer;
 }
 .card-bezel-outer-purple:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 28px 64px rgba(124,58,237,0.14), 0 0 0 1px rgba(124,58,237,0.16);
+  box-shadow: 0 6px 24px rgba(124,58,237,0.13), 0 2px 8px rgba(124,58,237,0.08), 0 0 0 1px rgba(124,58,237,0.14);
 }
 .card-bezel-outer-gold:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 28px 64px rgba(200,169,81,0.14), 0 0 0 1px rgba(200,169,81,0.2);
+  box-shadow: 0 6px 24px rgba(200,169,81,0.13), 0 2px 8px rgba(200,169,81,0.08), 0 0 0 1px rgba(200,169,81,0.18);
 }
 
 /* ─────────────────────────────────────────────

@@ -124,7 +124,7 @@ const pillars = [
 ];
 
 // Number ghost (large, low-opacity) accent per pillar
-const pillarAccent = ["#7C3AED", "#7C3AED", "#C8A951"];
+const pillarAccent = ["#7C3AED", "#7C3AED", "#7C3AED"];
 
 const growthStages = [
   { num: "01", label: "Awareness",   desc: "Understand where you truly are" },
@@ -162,10 +162,10 @@ const programs = [
     tagline: "From emotional overwhelm to grounded strength.",
     desc: "A structured journey for women to reclaim identity, build resilience, and lead with clarity on their own terms.",
     href: "/programs/self-mastery-women",
-    accent: "#C8A951",
-    lightBg: "#FBF7EE",
-    borderBase: "rgba(200,169,81,0.12)",
-    hoverClass: "card-hover-gold",
+    accent: "#7C3AED",
+    lightBg: "#F3F0FF",
+    borderBase: "rgba(124,58,237,0.1)",
+    hoverClass: "card-hover-purple",
   },
   {
     name: "Train the Trainer",
@@ -533,11 +533,11 @@ export default function HomePage() {
           </AnimateIn>
 
           {/* 3 Pillars — stagger entrance */}
-          <AnimateGroup className="grid md:grid-cols-3 gap-5 mb-10">
+          <AnimateGroup className="grid md:grid-cols-3 gap-5 mb-10 items-stretch">
             {pillars.map((p, i) => (
               <div
                 key={p.title}
-                className={`card-bezel-outer ${p.hoverClass === "card-hover-gold" ? "card-bezel-outer-gold" : "card-bezel-outer-purple"}`}
+                className={`card-bezel-outer card-bezel-outer-purple h-full`}
                 style={{
                   background: "rgba(0,0,0,0.025)",
                   borderRadius: "1.75rem",
