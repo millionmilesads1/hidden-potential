@@ -5,6 +5,12 @@ export const metadata: Metadata = {
   title: { absolute: 'Terms of Service | Hidden Potential' },
   description:
     'Terms and conditions for using Hidden Potential website and enrolling in life skills programs.',
+  openGraph: {
+    title: 'Terms of Service | Hidden Potential',
+    description: 'Terms and conditions for using Hidden Potential website and enrolling in life skills programs.',
+    type: 'website',
+    url: 'https://hiddenpotentialskills.com/terms',
+  },
   alternates: {
     canonical: 'https://hiddenpotentialskills.com/terms',
   },

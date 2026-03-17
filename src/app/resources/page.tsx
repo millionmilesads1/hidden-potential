@@ -3,23 +3,17 @@
  * ─────────────────────────────────────────────────────────────────────────────
  * Route: /resources
  *
- * E-E-A-T and authority page showcasing Supreet Kaur's recommended reading,
- * her own publications (placeholder), and free resources from Hidden Potential.
+ * E-E-A-T and authority page showcasing Supreet Kaur's published books,
+ * recommended reading, and free resources from Hidden Potential.
  *
  * Custom 5-section layout:
  *   Section 1 — HERO                  (dark gradient)
- *   Section 2 — BOOKS BY SUPREET KAUR (off-white, 2 placeholder book cards)
+ *   Section 2 — BOOKS BY SUPREET KAUR (off-white, book cards)
  *   Section 3 — RECOMMENDED READING   (white, 10 book cards in 2-col grid)
  *   Section 4 — FREE RESOURCES        (navy-light, 5 resource cards)
  *   Section 5 — BOTTOM CTA            (dark gradient)
  *
  * Schemas: CollectionPage + BreadcrumbList
- *
- * ⚠️  PLACEHOLDER NOTICE
- * Section 2 contains placeholder book slots. Search for "PLACEHOLDER" in this
- * file to find every field that must be replaced with real client-provided
- * content before launch. If Supreet Kaur has no published books, remove
- * Section 2 entirely.
  */
 
 import type { Metadata } from "next";
@@ -88,26 +82,13 @@ const breadcrumbSchema = {
 };
 
 // ── Data: Books by Supreet Kaur (Section 2) ───────────────────────────────────
-//
-// ⚠️  PLACEHOLDER — Replace ALL fields below with real book details from client.
-// If Supreet Kaur has not published books, remove this entire data array and
-// Section 2 from the page component below.
-//
 const supreetBooks = [
   {
-    // PLACEHOLDER — Replace with actual book 1 details
-    title: "[Book Title by Supreet Kaur]", // PLACEHOLDER: e.g. "The Aware Learner"
+    title: "An Enlightened Learner",
     description:
-      "[Description of book — topic, audience, key takeaways. To be provided by client.]", // PLACEHOLDER
-    availability: "#", // PLACEHOLDER: Replace with Amazon / Flipkart / website URL
-    availabilityLabel: "[Available on Amazon / Flipkart]", // PLACEHOLDER
-  },
-  {
-    // PLACEHOLDER — Replace with actual book 2 details (or remove if only one book)
-    title: "[Second Book or Upcoming Publication]", // PLACEHOLDER
-    description: "[Description to be provided by client.]", // PLACEHOLDER
-    availability: "#", // PLACEHOLDER: Replace with real URL
-    availabilityLabel: "[Coming Soon / Available at —]", // PLACEHOLDER
+      "Supreet Kaur's guide to structured life skills development for students and young learners. Covers emotional intelligence, communication, self-awareness, and the Foundation → Growth → Mastery framework that underpins Hidden Potential's flagship program.",
+    availability: "https://amzn.in/d/08Ijy89H",
+    availabilityLabel: "Available on Amazon India",
   },
 ];
 

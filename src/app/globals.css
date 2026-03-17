@@ -1,10 +1,4 @@
-/* ─────────────────────────────────────────────
-   GOOGLE FONTS
-   Plus Jakarta Sans — modern sans-serif headings
-   DM Sans          — clean modern body
-   Lora             — italic accent only
-   ───────────────────────────────────────────── */
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Lora:ital,wght@1,400;1,600&display=swap");
+/* Fonts are loaded via next/font/google in src/app/layout.tsx (self-hosted, no external request). */
 
 @import "tailwindcss";
 
@@ -102,10 +96,10 @@
   --color-gray-400:       #9B9B9B;
   --color-gray-600:       #6B6B6B;
 
-  /* ── Font Families ── */
-  --font-display: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
-  --font-body:    "DM Sans", system-ui, -apple-system, sans-serif;
-  --font-accent:  "Lora", Georgia, serif;
+  /* ── Font Families (next/font variables set via layout.tsx) ── */
+  --font-display: var(--font-jakarta-sans), system-ui, -apple-system, sans-serif;
+  --font-body:    var(--font-dm-sans), system-ui, -apple-system, sans-serif;
+  --font-accent:  var(--font-lora), Georgia, serif;
 }
 
 /* ─────────────────────────────────────────────

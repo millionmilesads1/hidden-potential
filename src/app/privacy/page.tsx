@@ -5,6 +5,12 @@ export const metadata: Metadata = {
   title: { absolute: 'Privacy Policy | Hidden Potential' },
   description:
     'How Hidden Potential collects, uses and protects your personal information. Read our complete privacy policy.',
+  openGraph: {
+    title: 'Privacy Policy | Hidden Potential',
+    description: 'How Hidden Potential collects, uses and protects your personal information.',
+    type: 'website',
+    url: 'https://hiddenpotentialskills.com/privacy',
+  },
   alternates: {
     canonical: 'https://hiddenpotentialskills.com/privacy',
   },

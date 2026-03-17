@@ -43,6 +43,12 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://hiddenpotentialskills.com/programs/communication-mastery",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Communication Mastery — Structured Communication & Leadership Training",
+    description:
+      "Public speaking, voice modulation, leadership presence & professional communication for ages 8–65. Assessment-based placement. Delhi NCR.",
+  },
   alternates: {
     canonical: "https://hiddenpotentialskills.com/programs/communication-mastery",
   },

@@ -23,6 +23,30 @@ export const metadata: Metadata = {
   },
 };
 
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Adult Life Alignment Assessment (Age 22+)",
+  description:
+    "A structured 30-question self-reflection for adults. Reflect on 10 life areas — health, emotions, relationships, career, finance, and more — to discover your growth pathway. Free assessment.",
+  url: "https://hiddenpotentialskills.com/assessment/adults",
+  provider: {
+    "@type": "Organization",
+    name: "Hidden Potential",
+    url: "https://hiddenpotentialskills.com",
+  },
+  areaServed: ["Delhi", "Noida", "Gurgaon", "Faridabad"],
+  serviceType: "Life Skills Assessment",
+};
+
 export default function AdultAssessmentPage() {
-  return <AdultAssessmentClient />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <AdultAssessmentClient />
+    </>
+  );
 }

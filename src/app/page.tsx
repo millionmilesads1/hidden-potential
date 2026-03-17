@@ -38,6 +38,12 @@ const schema = {
       telephone: "+919899209335",
       email: "hiddenpotential2030@gmail.com",
       founder: { "@type": "Person", name: "Supreet Kaur" },
+      sameAs: [
+        "https://www.facebook.com/hiddenpotentialskills",
+        "https://www.instagram.com/hiddenpotentialskills",
+        "https://www.linkedin.com/in/supreetkaur-hiddenpotential",
+        "https://www.youtube.com/@hiddenpotentialskills",
+      ],
     },
     {
       "@type": "LocalBusiness",
@@ -89,6 +95,61 @@ const schema = {
           item: "https://hiddenpotentialskills.com",
         },
       ],
+    },
+  ],
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What age groups do Hidden Potential's programs cater to?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Our programs are designed for a wide range of ages. An Enlightened Learner (AEL) serves students aged 8–21 across three sub-groups. Communication Mastery is open to ages 8–65. Self Mastery for Women is designed for women aged 28 and above. Train the Trainer and Art Therapy welcome all adult age groups. Every program is structured by developmental stage, not just age.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How do I know which program is the right fit for me?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "We recommend starting with our Life Skills Assessment. It identifies your current strengths, developmental gaps, and the most appropriate starting point within our program range. You'll receive a personalised pathway recommendation — no guesswork, no generic advice.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Are your programs available online, offline, or both?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Most programs are offered in hybrid format — you can choose offline sessions at our Dwarka centre or fully online participation from anywhere in India. School and corporate programs are delivered on-site at the client's premises across Delhi, Noida, Gurgaon, and Faridabad.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What makes Hidden Potential different from other coaching institutes?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Three things: System, Science, and Structure. We use NLP-based frameworks, emotional intelligence research, and behavioural psychology — not motivation-only sessions. Every student is assessed before and after, progress is documented, and programs follow a clear Foundation → Growth → Mastery pathway. Our founder holds a Masters in Psychology, NLP Practitioner certification, and IGNOU's NEP 2020 Implementation credential.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How long do the programs run, and what is the time commitment?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Program duration depends on the level: Foundation is typically 3 months, Growth is 6 months, and Mastery is 12 months. Session frequency ranges from once to twice per week depending on the program. Short-format workshops (1–3 days) are also available for schools and corporate groups.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do you offer programs for schools and organisations?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Hidden Potential has structured institutional partnerships for schools and corporate teams. School programs include student life skills curriculum, teacher training, and parent engagement sessions — all NEP 2020 aligned. Corporate offerings include group workshops, communication training, and emotional intelligence sessions. Contact us to discuss a customised annual program.",
+      },
     },
   ],
 };
@@ -344,6 +405,10 @@ export default function HomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       {/* ═══════════════════════════════════════════

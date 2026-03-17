@@ -85,7 +85,9 @@ const schema = {
     },
   ],
   award: "Award-Winning Life Skills Educator",
-  sameAs: [],
+  sameAs: [
+    "https://www.linkedin.com/in/supreetkaur-hiddenpotential",
+  ],
 };
 
 const breadcrumbSchema = {

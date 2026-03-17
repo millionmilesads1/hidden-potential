@@ -1,6 +1,30 @@
 import type { Metadata } from "next";
+import { Plus_Jakarta_Sans, DM_Sans, Lora } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
+
+const plusJakartaSans = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-jakarta-sans",
+  display: "swap",
+});
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-dm-sans",
+  display: "swap",
+});
+
+const lora = Lora({
+  subsets: ["latin"],
+  weight: ["400", "600"],
+  style: ["italic"],
+  variable: "--font-lora",
+  display: "swap",
+});
 import Footer from "@/components/layout/Footer";
 import MobileBottomNav from "@/components/ui/mobile-bottom-nav";
 import LayoutClient from "@/components/layout/LayoutClient";
@@ -41,7 +65,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${plusJakartaSans.variable} ${dmSans.variable} ${lora.variable}`}>
       <body className="min-h-screen flex flex-col">
         {/* ── Desktop + tablet sticky header nav ──────────────────────── */}
         {/* ── Skip navigation — keyboard accessibility (WCAG 2.4.1 SC) ─────

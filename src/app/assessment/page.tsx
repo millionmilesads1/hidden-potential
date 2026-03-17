@@ -23,6 +23,30 @@ export const metadata: Metadata = {
   },
 };
 
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Life Skills Assessment — Discover Your Growth Pathway",
+  description:
+    "A structured life skills assessment to identify your strengths, developmental gaps, and the right program pathway. Confidential evaluation by certified professionals. Free consultation.",
+  url: "https://hiddenpotentialskills.com/assessment",
+  provider: {
+    "@type": "Organization",
+    name: "Hidden Potential",
+    url: "https://hiddenpotentialskills.com",
+  },
+  areaServed: ["Delhi", "Noida", "Gurgaon", "Faridabad"],
+  serviceType: "Life Skills Assessment",
+};
+
 export default function AssessmentPage() {
-  return <AssessmentClient />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <AssessmentClient />
+    </>
+  );
 }
