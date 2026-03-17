@@ -537,7 +537,7 @@ export default function AboutPage() {
               The Method
             </p>
             <h2 className="text-3xl md:text-4xl font-bold text-primary-navy mb-4 leading-tight">
-              Her Approach: System. Science. Structure.
+              Our Approach: System. Science. Structure.
             </h2>
             <p className="text-lg text-charcoal max-w-2xl mx-auto leading-relaxed">
               Three non-negotiable principles that make every Hidden Potential program reliable,

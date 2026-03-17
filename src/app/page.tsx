@@ -1050,7 +1050,7 @@ export default function HomePage() {
                 >
                   <p
                     className="text-sm leading-relaxed"
-                    style={{ color: "#6B6B6B", fontFamily: "var(--font-body)" }}
+                    style={{ color: "#2D2D2D", fontFamily: "var(--font-body)" }}
                   >
                     {a}
                   </p>

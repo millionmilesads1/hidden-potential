@@ -33,7 +33,7 @@ const navLinks = [
   { label: "About",   href: "/about" },
   { label: "Gallery", href: "/gallery" },
   { label: "Books",   href: "/books" },
-  { label: "FAQ",     href: "/#faq" },
+  { label: "FAQ",     href: "/faq" },
   { label: "Blog",    href: "/blog" },
 ];
 
@@ -141,7 +141,7 @@ export default function Navbar() {
           >
             <ul className="flex items-center gap-0.5" role="list">
               {navLinks.map((link) => {
-                const isActive = pathname === link.href || (link.href === "/#faq" && pathname === "/");
+                const isActive = pathname === link.href;
                 return (
                   <motion.li
                     key={link.href}

@@ -1043,7 +1043,7 @@ export default function FaqPage() {
                       </div>
                       {/* Answer */}
                       <div className="px-6 py-5">
-                        <div className="text-sm text-charcoal/80 leading-relaxed">
+                        <div className="text-sm text-charcoal leading-relaxed">
                           {faq.a}
                         </div>
                       </div>
