@@ -37,6 +37,9 @@ const navLinks = [
   { label: "Blog",    href: "/blog" },
 ];
 
+// Desktop nav omits "Home" — the logo already links to "/" (standard UX)
+const desktopNavLinks = navLinks.filter(l => l.href !== "/");
+
 export default function Navbar() {
   const pathname = usePathname();
 
@@ -136,11 +139,11 @@ export default function Navbar() {
           {/* Desktop nav — centered via absolute trick */}
           <nav
             aria-label="Main navigation"
-            className="hidden md:block absolute left-1/2 -translate-x-1/2"
+            className="hidden lg:flex flex-1 justify-center min-w-0"
             style={{ fontFamily: "var(--font-body)" }}
           >
             <ul className="flex items-center gap-0.5" role="list">
-              {navLinks.map((link) => {
+              {desktopNavLinks.map((link) => {
                 const isActive = pathname === link.href;
                 return (
                   <motion.li
@@ -367,7 +370,7 @@ export default function Navbar() {
             <motion.div
               whileHover={{ scale: 1.06, transition: { type: "spring", stiffness: 300, damping: 20 } }}
               whileTap={{ scale: 0.95 }}
-              className="hidden md:block"
+              className="hidden lg:block"
             >
               <Link
                 href="/contact#book-evaluation"
@@ -380,7 +383,7 @@ export default function Navbar() {
 
             {/* Hamburger — mobile only */}
             <button
-              className="md:hidden p-2 min-h-[44px] min-w-[44px] rounded-full hover:bg-gray-100 transition-colors cursor-pointer flex items-center justify-center"
+              className="lg:hidden p-2 min-h-[44px] min-w-[44px] rounded-full hover:bg-gray-100 transition-colors cursor-pointer flex items-center justify-center"
               aria-label={mobileOpen ? "Close navigation menu" : "Open navigation menu"}
               aria-expanded={mobileOpen}
               aria-controls="mobile-menu"
@@ -403,7 +406,7 @@ export default function Navbar() {
         {mobileOpen && (
           <div
             id="mobile-menu"
-            className="md:hidden mt-2 py-3 px-2"
+            className="lg:hidden mt-2 py-3 px-2"
             style={{
               background:           "rgba(255,255,255,0.98)",
               backdropFilter:       "blur(16px)",

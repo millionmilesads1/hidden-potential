@@ -64,7 +64,7 @@ export default function HeroSection() {
       className="relative overflow-hidden grain-overlay"
       style={{
         background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)",
-        minHeight: "90vh",
+        minHeight: "90svh",
         display: "flex",
         alignItems: "center",
       }}
@@ -89,7 +89,7 @@ export default function HeroSection() {
         aria-hidden="true"
       />
 
-      <div className="relative max-w-6xl mx-auto px-6 py-24 w-full">
+      <div className="relative max-w-6xl mx-auto px-6 py-12 md:py-20 lg:py-24 w-full">
         <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
 
           {/* ── Left — Animated text ── */}
