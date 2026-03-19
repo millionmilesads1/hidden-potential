@@ -451,11 +451,11 @@ export default function HomePage() {
             <div className="hidden md:block relative w-full overflow-hidden rounded-2xl">
               <div className="relative w-full" style={{ height: "520px" }}>
                 <Image
-                  src="/images/students/supreet-teaching.jpg"
-                  alt="Supreet Kaur conducting a life skills session with students at Hidden Potential Delhi"
+                  src="/images/students/supreet-kaur.jpeg"
+                  alt="Supreet Kaur, founder of Hidden Potential life skills academy, Delhi NCR"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover object-center"
+                  className="object-cover object-top"
                   priority
                 />
                 {/* Subtle gradient overlay at bottom */}
