@@ -1,6 +1,3 @@
-import { redirect } from 'next/navigation';
-redirect('/about');
-
 /**
  * SUPPORTING PAGE — SUCCESS STORIES
  * ─────────────────────────────────────────────────────────────────────────────
