@@ -106,13 +106,17 @@
    BASE STYLES
    ───────────────────────────────────────────── */
 @layer base {
+  html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
   html {
     font-family: var(--font-body);
     color: #2D2D2D;
     background-color: #F8F6F2;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    overflow-x: hidden;
   }
 
   h1, h2, h3, h4, h5, h6 {

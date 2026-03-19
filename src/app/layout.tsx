@@ -66,7 +66,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${plusJakartaSans.variable} ${dmSans.variable} ${lora.variable}`}>
-      <body className="min-h-screen flex flex-col">
+      <body className="min-h-screen flex flex-col overflow-x-hidden">
         {/* ── Desktop + tablet sticky header nav ──────────────────────── */}
         {/* ── Skip navigation — keyboard accessibility (WCAG 2.4.1 SC) ─────
             Visually hidden until focused; lets keyboard/screen-reader users
