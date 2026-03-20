@@ -494,7 +494,7 @@ export default function AdultAssessmentClient() {
       bandDesc = 'You are developing across multiple life areas with meaningful room to grow. Focused training can help you create deeper alignment and lasting change.';
     } else {
       band = 'Needs Focused Attention'; bandColor = '#EF4444'; bandBg = 'rgba(239,68,68,0.15)'; bandEmoji = '🤲';
-      bandDesc = 'Several life areas would benefit from structured guidance and support. This is a powerful starting point — every skill here can be developed with the right approach.';
+      bandDesc = 'Several life areas would benefit from structured guidance and support. This is a powerful starting point - every skill here can be developed with the right approach.';
     }
 
     setResults({ totalScore, overallPercent, band, bandColor, bandBg, bandEmoji, bandDesc, sectionScores });

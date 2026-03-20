@@ -1,16 +1,16 @@
 /**
- * AUDIENCE PAGE — CORPORATE LIFE SKILLS & TEAM DEVELOPMENT PROGRAMS
+ * AUDIENCE PAGE - CORPORATE LIFE SKILLS & TEAM DEVELOPMENT PROGRAMS
  * ─────────────────────────────────────────────────────────────────────────────
  * Route: /for/corporates
  *
  * 7-section structure:
- *   Section 1  — HERO                       (dark gradient, H1, Lora italic, body, 2 CTAs, trust signals)
- *   Section 2  — THE CORPORATE CHALLENGE    (off-white, intro + 6 pain-point cards)
- *   Section 3  — RECOMMENDED PROGRAMS       (white, 8 program cards numbered 01–08)
- *   Section 4  — WHO SPECIFICALLY BENEFITS  (navy-light, 6 persona cards)
- *   Section 5  — WHY HIDDEN POTENTIAL       (off-white, 6 differentiator cards)
- *   Section 6  — FAQ                        (white, 6 Q&As)
- *   Section 7  — FINAL CTA                  (dark gradient, para, 2 CTAs, cross-sell, location line)
+ *   Section 1  - HERO                       (dark gradient, H1, Lora italic, body, 2 CTAs, trust signals)
+ *   Section 2  - THE CORPORATE CHALLENGE    (off-white, intro + 6 pain-point cards)
+ *   Section 3  - RECOMMENDED PROGRAMS       (white, 8 program cards numbered 01–08)
+ *   Section 4  - WHO SPECIFICALLY BENEFITS  (navy-light, 6 persona cards)
+ *   Section 5  - WHY HIDDEN POTENTIAL       (off-white, 6 differentiator cards)
+ *   Section 6  - FAQ                        (white, 6 Q&As)
+ *   Section 7  - FINAL CTA                  (dark gradient, para, 2 CTAs, cross-sell, location line)
  *
  * Schemas: Service + FAQPage + BreadcrumbList (all embedded as JSON-LD)
  */
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   description:
     "Corporate life skills, communication, and team development programs in Delhi NCR. NLP-based workshops for HR managers, L&D heads, and corporate teams. 14+ years. MSME registered. Gurgaon, Noida, Delhi.",
   openGraph: {
-    title: "Corporate Team Development Programs in Delhi NCR — Team Development That Actually Works",
+    title: "Corporate Team Development Programs in Delhi NCR - Team Development That Actually Works",
     description:
       "NLP-based corporate workshops, communication training, emotional intelligence, and stress management for teams in Delhi, Gurgaon, Noida. 14+ years. MSME registered. Institutional invoicing.",
     type: "website",
@@ -81,7 +81,7 @@ const faqSchema = {
       name: "What corporate training programs does Hidden Potential offer in Delhi NCR?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Hidden Potential offers several corporate training programs: customised team workshops on communication, emotional intelligence, leadership, stress management, and conflict resolution; the Communication Mastery Program for teams requiring public speaking, presentation, and professional communication skills; NLP Coaching for senior leaders and managers seeking individual behavioural transformation; Emotional Intelligence Training for managers and team leads; and the Train the Trainer Certification for HR and L&D professionals who want to build internal life skills training capability. All programs include institutional invoicing and are available at your office in Delhi, Gurgaon, Noida, or Faridabad — or online.",
+        text: "Hidden Potential offers several corporate training programs: customised team workshops on communication, emotional intelligence, leadership, stress management, and conflict resolution; the Communication Mastery Program for teams requiring public speaking, presentation, and professional communication skills; NLP Coaching for senior leaders and managers seeking individual behavioural transformation; Emotional Intelligence Training for managers and team leads; and the Train the Trainer Certification for HR and L&D professionals who want to build internal life skills training capability. All programs include institutional invoicing and are available at your office in Delhi, Gurgaon, Noida, or Faridabad - or online.",
       },
     },
     {
@@ -89,7 +89,7 @@ const faqSchema = {
       name: "How is Hidden Potential's corporate training different from generic HR workshops?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Most HR training is information-based — content delivered in half-day sessions that fades within a week because it does not address the behavioural patterns driving the problem. Hidden Potential's NLP-based approach works at the neurological level, identifying the specific belief systems and emotional patterns causing communication breakdowns, leadership gaps, and burnout. Programs are structured across 8 to 12 weeks with pre-assessment, structured practice, and post-assessment documentation. Outcomes are measurable. This is behavioural transformation, not information delivery.",
+        text: "Most HR training is information-based - content delivered in half-day sessions that fades within a week because it does not address the behavioural patterns driving the problem. Hidden Potential's NLP-based approach works at the neurological level, identifying the specific belief systems and emotional patterns causing communication breakdowns, leadership gaps, and burnout. Programs are structured across 8 to 12 weeks with pre-assessment, structured practice, and post-assessment documentation. Outcomes are measurable. This is behavioural transformation, not information delivery.",
       },
     },
     {
@@ -97,7 +97,7 @@ const faqSchema = {
       name: "Can you deliver workshops at our office in Gurgaon or Noida?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. We deliver corporate workshops at client offices across Delhi NCR including Gurgaon's Cyber City and Golf Course Road corridor, Noida's Sectors 62, 63, and 135, South Delhi business hubs, and Faridabad industrial areas. We also offer hybrid and fully online delivery for distributed teams. Scheduling is designed around your corporate calendar — we work within your constraints, not ours. Minimum team size is typically 10 participants. Contact us for a customised proposal.",
+        text: "Yes. We deliver corporate workshops at client offices across Delhi NCR including Gurgaon's Cyber City and Golf Course Road corridor, Noida's Sectors 62, 63, and 135, South Delhi business hubs, and Faridabad industrial areas. We also offer hybrid and fully online delivery for distributed teams. Scheduling is designed around your corporate calendar - we work within your constraints, not ours. Minimum team size is typically 10 participants. Contact us for a customised proposal.",
       },
     },
     {
@@ -153,32 +153,32 @@ const painPoints = [
   {
     num: "01",
     title: "Team Communication Breaks Down Under Pressure",
-    desc: "In high-stakes projects, deadlines, and conflict situations, your team's communication deteriorates exactly when it matters most. Emails get misread. Meetings end without alignment. Managers avoid difficult conversations. These are not personality problems — they are learnable behavioural patterns that training can systematically address.",
+    desc: "In high-stakes projects, deadlines, and conflict situations, your team's communication deteriorates exactly when it matters most. Emails get misread. Meetings end without alignment. Managers avoid difficult conversations. These are not personality problems - they are learnable behavioural patterns that training can systematically address.",
   },
   {
     num: "02",
     title: "Leadership Presence Is Inconsistent Across Management Levels",
-    desc: "Some managers inspire. Others erode morale without knowing why. When leadership quality varies dramatically across the same organisation, the culture suffers unevenly. Consistent leadership presence is not a hiring problem — it is a development problem. NLP-based coaching builds the specific competencies that make managers leaders.",
+    desc: "Some managers inspire. Others erode morale without knowing why. When leadership quality varies dramatically across the same organisation, the culture suffers unevenly. Consistent leadership presence is not a hiring problem - it is a development problem. NLP-based coaching builds the specific competencies that make managers leaders.",
   },
   {
     num: "03",
     title: "High Attrition Tied to Burnout and Poor Team Dynamics",
-    desc: "The cost of replacing a mid-level employee in Delhi NCR — recruiting, onboarding, productivity ramp — typically exceeds several months of their salary. When attrition is driven by burnout, toxic dynamics, or poor communication rather than compensation, targeted behavioural training is the most direct lever available to HR.",
+    desc: "The cost of replacing a mid-level employee in Delhi NCR - recruiting, onboarding, productivity ramp - typically exceeds several months of their salary. When attrition is driven by burnout, toxic dynamics, or poor communication rather than compensation, targeted behavioural training is the most direct lever available to HR.",
   },
   {
     num: "04",
     title: "Generic Training Fades Within Weeks",
-    desc: "You have run the half-day workshops. The energy is high on the day. By the following Monday, nothing has changed. Generic content delivery does not produce lasting behavioural change because it addresses the symptom — information gaps — not the cause, which is the underlying beliefs and emotional patterns driving behaviour.",
+    desc: "You have run the half-day workshops. The energy is high on the day. By the following Monday, nothing has changed. Generic content delivery does not produce lasting behavioural change because it addresses the symptom - information gaps - not the cause, which is the underlying beliefs and emotional patterns driving behaviour.",
   },
   {
     num: "05",
     title: "L&D Investment Is Hard to Justify Without Measurable Outcomes",
-    desc: "Training budgets face increasing scrutiny. When programs cannot demonstrate documented improvement — in communication quality, leadership confidence, or stress management capacity — the business case for continued L&D investment weakens. Hidden Potential's assessment-based approach gives you pre and post data to demonstrate ROI.",
+    desc: "Training budgets face increasing scrutiny. When programs cannot demonstrate documented improvement - in communication quality, leadership confidence, or stress management capacity - the business case for continued L&D investment weakens. Hidden Potential's assessment-based approach gives you pre and post data to demonstrate ROI.",
   },
   {
     num: "06",
     title: "You Want to Build Internal Training Capability, Not Just Buy Events",
-    desc: "One-off workshops create temporary change. Organisations that build sustained internal life skills delivery capability — through certified in-house trainers — create compounding returns on their L&D investment. The Train the Trainer Certification is the pathway to exactly this outcome.",
+    desc: "One-off workshops create temporary change. Organisations that build sustained internal life skills delivery capability - through certified in-house trainers - create compounding returns on their L&D investment. The Train the Trainer Certification is the pathway to exactly this outcome.",
   },
 ];
 
@@ -186,7 +186,7 @@ const recommendedPrograms = [
   {
     num: "01",
     title: "Corporate Workshops",
-    desc: "Customised team workshops delivered at your office in Delhi, Gurgaon, Noida, or Faridabad. Topics include team communication, leadership presence, conflict resolution, emotional intelligence, stress management, and professional expression. Available for teams of 10 to 50. Content is tailored to your industry, team culture, and specific development challenges — not recycled from a generic slide deck.",
+    desc: "Customised team workshops delivered at your office in Delhi, Gurgaon, Noida, or Faridabad. Topics include team communication, leadership presence, conflict resolution, emotional intelligence, stress management, and professional expression. Available for teams of 10 to 50. Content is tailored to your industry, team culture, and specific development challenges - not recycled from a generic slide deck.",
     match: "Best for: HR managers, L&D heads booking team development sessions",
     linkHref: "/services/workshops",
     linkLabel: "Explore Corporate Workshops \u2192",
@@ -253,14 +253,14 @@ const personas = [
   {
     num: "01",
     title: "HR Managers and L&D Heads Across Delhi NCR",
-    desc: "You are responsible for your organisation's people development and need a credible, MSME-registered partner who delivers documented outcomes, provides institutional invoicing, and customises programs to your specific team challenges — not a generic content vendor.",
+    desc: "You are responsible for your organisation's people development and need a credible, MSME-registered partner who delivers documented outcomes, provides institutional invoicing, and customises programs to your specific team challenges - not a generic content vendor.",
     linkHref: "/services/workshops",
     linkLabel: "Explore Corporate Workshops \u2192",
   },
   {
     num: "02",
     title: "Corporate Teams in Gurgaon's MNC and Finance Sector",
-    desc: "High-pressure Cyber City and Golf Course Road environments create communication breakdowns, leadership gaps, and burnout that undermine performance. Our NLP-based communication, EI, and stress management programs address these challenges where they originate — in behaviour, not information.",
+    desc: "High-pressure Cyber City and Golf Course Road environments create communication breakdowns, leadership gaps, and burnout that undermine performance. Our NLP-based communication, EI, and stress management programs address these challenges where they originate - in behaviour, not information.",
     linkHref: "/services/stress-management",
     linkLabel: "Explore Stress Management \u2192",
   },
@@ -281,14 +281,14 @@ const personas = [
   {
     num: "05",
     title: "Companies Investing in Women's Professional Development",
-    desc: "Organisations with gender diversity goals need targeted programs for women employees — building communication confidence, leadership presence, and professional assertiveness. Our women-specific programs and general communication training create measurable professional advancement.",
+    desc: "Organisations with gender diversity goals need targeted programs for women employees - building communication confidence, leadership presence, and professional assertiveness. Our women-specific programs and general communication training create measurable professional advancement.",
     linkHref: "/programs/self-mastery-women",
     linkLabel: "Explore Self Mastery for Women \u2192",
   },
   {
     num: "06",
     title: "Organisations Seeking Train-the-Trainer Capability",
-    desc: "Companies that want to embed sustained life skills development rather than repeatedly purchasing external programs. The Train the Trainer Certification creates certified internal facilitators who deliver programs independently — building compounding L&D ROI over time.",
+    desc: "Companies that want to embed sustained life skills development rather than repeatedly purchasing external programs. The Train the Trainer Certification creates certified internal facilitators who deliver programs independently - building compounding L&D ROI over time.",
     linkHref: "/programs/train-the-trainer",
     linkLabel: "Explore Train the Trainer Certification \u2192",
   },
@@ -301,14 +301,14 @@ const differentiators = [
   },
   {
     title: "NLP-Based Behavioural Change, Not Generic Content",
-    desc: "Standard corporate training delivers information. NLP-based training rewires the behavioural patterns driving your team's specific challenges — communication breakdowns, leadership gaps, stress responses, and conflict patterns. The change persists because it operates at the neurological level, not just the cognitive level.",
+    desc: "Standard corporate training delivers information. NLP-based training rewires the behavioural patterns driving your team's specific challenges - communication breakdowns, leadership gaps, stress responses, and conflict patterns. The change persists because it operates at the neurological level, not just the cognitive level.",
   },
   {
     title: "Measurable ROI with Pre and Post Assessment",
     desc: "Every corporate program begins with a team assessment mapping communication patterns, confidence levels, emotional regulation, and leadership presence. Post-assessment documentation gives HR and management concrete data on what changed and by how much. You invest in training that you can actually demonstrate worked.",
   },
   {
-    title: "MSME Registered — GST-Compliant Institutional Billing",
+    title: "MSME Registered - GST-Compliant Institutional Billing",
     desc: "Hidden Potential is MSME registered and Skill India affiliated. This means proper institutional invoicing, GST-compliant billing, and all documentation required by corporate procurement, L&D budgets, and vendor registration processes. Institutional partnerships are handled professionally and transparently.",
   },
   {
@@ -317,22 +317,22 @@ const differentiators = [
   },
   {
     title: "Train-the-Trainer Option for Sustained Impact",
-    desc: "No external training creates permanent change if it stops when the vendor leaves. Hidden Potential's Train the Trainer Certification builds internal capability — your own certified facilitators who embed life skills development into your organisational DNA. Over 200 certified trainers across Delhi NCR are living proof of this model.",
+    desc: "No external training creates permanent change if it stops when the vendor leaves. Hidden Potential's Train the Trainer Certification builds internal capability - your own certified facilitators who embed life skills development into your organisational DNA. Over 200 certified trainers across Delhi NCR are living proof of this model.",
   },
 ];
 
 const faqs = [
   {
     q: "What corporate training programs does Hidden Potential offer in Delhi NCR?",
-    a: "Hidden Potential offers several corporate training programs: customised team workshops on communication, emotional intelligence, leadership, stress management, and conflict resolution; the Communication Mastery Program for teams requiring public speaking, presentation, and professional communication skills; NLP Coaching for senior leaders and managers seeking individual behavioural transformation; Emotional Intelligence Training for managers and team leads; and the Train the Trainer Certification for HR and L&D professionals who want to build internal life skills training capability. All programs include institutional invoicing and are available at your office in Delhi, Gurgaon, Noida, or Faridabad — or online.",
+    a: "Hidden Potential offers several corporate training programs: customised team workshops on communication, emotional intelligence, leadership, stress management, and conflict resolution; the Communication Mastery Program for teams requiring public speaking, presentation, and professional communication skills; NLP Coaching for senior leaders and managers seeking individual behavioural transformation; Emotional Intelligence Training for managers and team leads; and the Train the Trainer Certification for HR and L&D professionals who want to build internal life skills training capability. All programs include institutional invoicing and are available at your office in Delhi, Gurgaon, Noida, or Faridabad - or online.",
   },
   {
     q: "How is Hidden Potential's corporate training different from generic HR workshops?",
-    a: "Most HR training is information-based — content delivered in half-day sessions that fades within a week because it does not address the behavioural patterns driving the problem. Hidden Potential's NLP-based approach works at the neurological level, identifying the specific belief systems and emotional patterns causing communication breakdowns, leadership gaps, and burnout. Programs are structured across 8 to 12 weeks with pre-assessment, structured practice, and post-assessment documentation. Outcomes are measurable. This is behavioural transformation, not information delivery.",
+    a: "Most HR training is information-based - content delivered in half-day sessions that fades within a week because it does not address the behavioural patterns driving the problem. Hidden Potential's NLP-based approach works at the neurological level, identifying the specific belief systems and emotional patterns causing communication breakdowns, leadership gaps, and burnout. Programs are structured across 8 to 12 weeks with pre-assessment, structured practice, and post-assessment documentation. Outcomes are measurable. This is behavioural transformation, not information delivery.",
   },
   {
     q: "Can you deliver workshops at our office in Gurgaon or Noida?",
-    a: "Yes. We deliver corporate workshops at client offices across Delhi NCR including Gurgaon's Cyber City and Golf Course Road corridor, Noida's Sectors 62, 63, and 135, South Delhi business hubs, and Faridabad industrial areas. We also offer hybrid and fully online delivery for distributed teams. Scheduling is designed around your corporate calendar — we work within your constraints, not ours. Minimum team size is typically 10 participants. Contact us for a customised proposal.",
+    a: "Yes. We deliver corporate workshops at client offices across Delhi NCR including Gurgaon's Cyber City and Golf Course Road corridor, Noida's Sectors 62, 63, and 135, South Delhi business hubs, and Faridabad industrial areas. We also offer hybrid and fully online delivery for distributed teams. Scheduling is designed around your corporate calendar - we work within your constraints, not ours. Minimum team size is typically 10 participants. Contact us for a customised proposal.",
   },
   {
     q: "Do you provide GST-compliant invoicing for corporate training budgets?",
@@ -386,7 +386,7 @@ export default function ForCorporatesPage() {
       />
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 1 — HERO
+          SECTION 1 - HERO
           Background: Dark navy-to-deep gradient
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
@@ -427,7 +427,7 @@ export default function ForCorporatesPage() {
             className="text-3xl md:text-4xl lg:text-[2.75rem] font-extrabold text-white leading-tight mb-6 max-w-4xl mx-auto"
             style={{ textShadow: "0 1px 2px rgba(0,0,0,0.15)" }}
           >
-            Corporate Life Skills &amp; Team Development Programs in Delhi NCR — Team Development That Actually Works
+            Corporate Life Skills &amp; Team Development Programs in Delhi NCR - Team Development That Actually Works
           </h1>
 
           {/* Lora italic tagline */}
@@ -447,15 +447,15 @@ export default function ForCorporatesPage() {
             Your team&rsquo;s technical capability is not the constraint. Communication breakdowns,
             inconsistent leadership, burnout-driven attrition, and poor emotional regulation cost
             Delhi NCR organisations far more than any skills gap. Hidden Potential delivers
-            NLP-based corporate life skills training — customised workshops, structured multi-week
-            programs, and leadership coaching — designed by{" "}
+            NLP-based corporate life skills training - customised workshops, structured multi-week
+            programs, and leadership coaching - designed by{" "}
             <Link
               href="/about"
               className="font-semibold text-white/80 hover:text-white transition-colors underline underline-offset-2"
             >
               Supreet Kaur
             </Link>{" "}
-            with 14+ years of corporate experience across Delhi, Gurgaon, and Noida. Harvard-affiliated methodology. Pre and post assessment documentation. MSME registered for institutional invoicing. Not motivational workshops — measurable behavioural transformation with documented ROI.
+            with 14+ years of corporate experience across Delhi, Gurgaon, and Noida. Harvard-affiliated methodology. Pre and post assessment documentation. MSME registered for institutional invoicing. Not motivational workshops - measurable behavioural transformation with documented ROI.
           </p>
 
           {/* CTAs */}
@@ -494,7 +494,7 @@ export default function ForCorporatesPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 2 — THE CORPORATE CHALLENGE
+          SECTION 2 - THE CORPORATE CHALLENGE
           Background: Off-white
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-off-white py-20">
@@ -511,7 +511,7 @@ export default function ForCorporatesPage() {
             </p>
           </div>
 
-          {/* 6 pain-point cards — 2-column grid */}
+          {/* 6 pain-point cards - 2-column grid */}
           <div className="grid md:grid-cols-2 gap-5">
             {painPoints.map((p) => (
               <div
@@ -534,7 +534,7 @@ export default function ForCorporatesPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 3 — RECOMMENDED PROGRAMS
+          SECTION 3 - RECOMMENDED PROGRAMS
           Background: White
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-white py-20">
@@ -566,7 +566,7 @@ export default function ForCorporatesPage() {
             </div>
           </div>
 
-          {/* 8 program cards — 2-column grid */}
+          {/* 8 program cards - 2-column grid */}
           <div className="grid md:grid-cols-2 gap-5">
             {recommendedPrograms.map((p) => (
               <div
@@ -602,7 +602,7 @@ export default function ForCorporatesPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 4 — WHO SPECIFICALLY BENEFITS
+          SECTION 4 - WHO SPECIFICALLY BENEFITS
           Background: Navy-light (#F3F0FF)
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-navy-light py-20">
@@ -615,12 +615,12 @@ export default function ForCorporatesPage() {
             <p className="text-base text-charcoal/75 leading-relaxed max-w-3xl">
               Hidden Potential serves corporate clients across industries, sizes, and development
               goals. Whether you are an HR head in Gurgaon, a startup founder in Noida, or a
-              business owner in Delhi building a professional culture — there is a program designed
+              business owner in Delhi building a professional culture - there is a program designed
               for your specific organisational challenge.
             </p>
           </div>
 
-          {/* 6 persona cards — 2-column grid */}
+          {/* 6 persona cards - 2-column grid */}
           <div className="grid md:grid-cols-2 gap-5">
             {personas.map((a) => (
               <div
@@ -649,7 +649,7 @@ export default function ForCorporatesPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 5 — WHY HIDDEN POTENTIAL
+          SECTION 5 - WHY HIDDEN POTENTIAL
           Background: Off-white
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-off-white py-20">
@@ -665,7 +665,7 @@ export default function ForCorporatesPage() {
             </p>
           </div>
 
-          {/* 6 differentiator cards — 3-column grid */}
+          {/* 6 differentiator cards - 3-column grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {differentiators.map((d) => (
               <div
@@ -701,7 +701,7 @@ export default function ForCorporatesPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 6 — FAQ
+          SECTION 6 - FAQ
           Background: White
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-white py-20">
@@ -719,7 +719,7 @@ export default function ForCorporatesPage() {
                 key={i}
                 className="card-service"
               >
-                {/* Question — teal left bar */}
+                {/* Question - teal left bar */}
                 <div
                   className="px-6 py-4 border-l-4 border-primary-teal"
                   style={{ background: "#F8F6F2" }}
@@ -757,7 +757,7 @@ export default function ForCorporatesPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 7 — FINAL CTA
+          SECTION 7 - FINAL CTA
           Background: Dark navy gradient
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
@@ -809,6 +809,11 @@ export default function ForCorporatesPage() {
             </Link>
           </div>
 
+          {/* Hybrid trust signal */}
+          <p className="text-sm text-white/50 mb-6">
+            All programs available online and in-person - choose what works for you.
+          </p>
+
           {/* Cross-sell */}
           <p className="text-xs text-white/40 mb-4">
             Also explore:{" "}
@@ -818,7 +823,7 @@ export default function ForCorporatesPage() {
             >
               Train the Trainer Certification
             </Link>{" "}
-            — build internal life skills training capability within your organisation
+            - build internal life skills training capability within your organisation
           </p>
 
           {/* Location line */}

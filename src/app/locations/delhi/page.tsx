@@ -1,16 +1,16 @@
 /**
- * LOCATION PAGE — DELHI
+ * LOCATION PAGE - DELHI
  * ─────────────────────────────────────────────────────────────────────────────
  * Route: /locations/delhi
  *
  * 7-section structure:
- *   Section 1  — HERO                (dark gradient, H1, Lora italic, body para, 2 CTAs, trust signals)
- *   Section 2  — WHY DELHI           (off-white, 3 explanatory paragraphs)
- *   Section 3  — ALL PROGRAMS        (white, 14 offering cards numbered 01–14)
- *   Section 4  — AREAS WE SERVE      (navy-light, 6 Delhi area cards)
- *   Section 5  — WHY HIDDEN POTENTIAL(off-white, 6 differentiator cards)
- *   Section 6  — FAQ                 (white, 6 Delhi-specific Q&As)
- *   Section 7  — CTA                 (dark gradient, para, 2 CTAs, cross-sell, location line)
+ *   Section 1  - HERO                (dark gradient, H1, Lora italic, body para, 2 CTAs, trust signals)
+ *   Section 2  - WHY DELHI           (off-white, 3 explanatory paragraphs)
+ *   Section 3  - ALL PROGRAMS        (white, 14 offering cards numbered 01–14)
+ *   Section 4  - AREAS WE SERVE      (navy-light, 6 Delhi area cards)
+ *   Section 5  - WHY HIDDEN POTENTIAL(off-white, 6 differentiator cards)
+ *   Section 6  - FAQ                 (white, 6 Delhi-specific Q&As)
+ *   Section 7  - CTA                 (dark gradient, para, 2 CTAs, cross-sell, location line)
  *
  * Schemas: LocalBusiness + FAQPage + BreadcrumbList (all embedded as JSON-LD)
  */
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   description:
     "Expert life skills training in Delhi by certified NLP practitioner Supreet Kaur. Student programs, women's empowerment, corporate workshops & NLP coaching. Dwarka centre. 14+ years. 5000+ trained.",
   openGraph: {
-    title: "Life Skills Training in Delhi — Personalised Programs at Dwarka & Online",
+    title: "Life Skills Training in Delhi - Personalised Programs at Dwarka & Online",
     description:
       "Structured life skills programs at Hidden Potential's Delhi training centre. NLP coaching, student programs, women's empowerment, trainer certification. Dwarka, South Delhi & Online.",
     type: "website",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Life Skills Training in Delhi — Personalised Programs at Dwarka & Online",
+    title: "Life Skills Training in Delhi - Personalised Programs at Dwarka & Online",
     description:
       "Structured life skills training at Hidden Potential's Delhi centre. NLP coaching, student programs, women's empowerment. Dwarka & Online. 14+ years. 5000+ trained.",
   },
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  name: "Hidden Potential — Life Skills Training Delhi",
+  name: "Hidden Potential - Life Skills Training Delhi",
   description:
     "Structured life skills training academy in Delhi. NLP coaching, student programs, women's empowerment, corporate workshops, and trainer certification. MSME registered. Skill India affiliated.",
   url: "https://hiddenpotentialskills.com/locations/delhi",
@@ -97,7 +97,7 @@ const faqSchema = {
       name: "Where is Hidden Potential's training centre in Delhi?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Hidden Potential's main training centre is located at D-802, Palm Court Apartment, Plot 3, Sector 19B, Dwarka, South West Delhi — 110075. Dwarka is well-connected by Delhi Metro (Blue Line) and is easily accessible from South Delhi, West Delhi, Janakpuri, Uttam Nagar, and Dwarka Expressway. Sessions are available weekdays from 10 AM to 7 PM, with weekend and evening batches by appointment.",
+        text: "Hidden Potential's main training centre is located at D-802, Palm Court Apartment, Plot 3, Sector 19B, Dwarka, South West Delhi - 110075. Dwarka is well-connected by Delhi Metro (Blue Line) and is easily accessible from South Delhi, West Delhi, Janakpuri, Uttam Nagar, and Dwarka Expressway. Sessions are available weekdays from 10 AM to 7 PM, with weekend and evening batches by appointment.",
       },
     },
     {
@@ -121,7 +121,7 @@ const faqSchema = {
       name: "How is Hidden Potential different from other life skills trainers in Delhi?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Most life skills training providers in Delhi offer motivational talks, one-day workshops, or certification courses with no follow-through. Hidden Potential is different in three critical ways: first, every learner begins with a structured pre-assessment that identifies specific gaps and recommends the right pathway — not a generic program. Second, programs run across 3, 6, and 12-month structured pathways with documented progress, not one-off sessions. Third, NLP is integrated throughout, not offered as a standalone module. Hidden Potential is MSME registered and Skill India affiliated, with 14+ years of applied experience across 5000+ learners.",
+        text: "Most life skills training providers in Delhi offer motivational talks, one-day workshops, or certification courses with no follow-through. Hidden Potential is different in three critical ways: first, every learner begins with a structured pre-assessment that identifies specific gaps and recommends the right pathway - not a generic program. Second, programs run across 3, 6, and 12-month structured pathways with documented progress, not one-off sessions. Third, NLP is integrated throughout, not offered as a standalone module. Hidden Potential is MSME registered and Skill India affiliated, with 14+ years of applied experience across 5000+ learners.",
       },
     },
     {
@@ -129,7 +129,7 @@ const faqSchema = {
       name: "How much does life skills training in Delhi cost?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Program fees at Hidden Potential vary based on the pathway selected, level (Foundation, Growth, or Mastery), and format (individual, group, online, or in-person). We do not publish a single price because every learner's pathway is personalised after the initial assessment. The most accurate way to understand fees is to book a free 30-minute consultation — during which Supreet Kaur reviews your goals, recommends the right pathway, and provides complete pricing. There is no obligation to enroll after the consultation.",
+        text: "Program fees at Hidden Potential vary based on the pathway selected, level (Foundation, Growth, or Mastery), and format (individual, group, online, or in-person). We do not publish a single price because every learner's pathway is personalised after the initial assessment. The most accurate way to understand fees is to book a free 30-minute consultation - during which Supreet Kaur reviews your goals, recommends the right pathway, and provides complete pricing. There is no obligation to enroll after the consultation.",
       },
     },
     {
@@ -174,8 +174,8 @@ const breadcrumbSchema = {
 const offerings = [
   {
     num: "01",
-    title: "An Enlightened Learner — Student Program",
-    desc: "The flagship structured life skills program for students aged 8 to 21 in Delhi. Three age-specific tracks — 8 to 12, 13 to 16, and 17 to 21 — address the exact challenges each group faces. Confidence anchoring, academic focus techniques, social skills, and emotional regulation are developed across Foundation, Growth, and Mastery levels. Pre and post assessment document every learner's progress. Available in-person at Dwarka, online, and through school partnerships across Delhi NCR.",
+    title: "An Enlightened Learner - Student Program",
+    desc: "The flagship structured life skills program for students aged 8 to 21 in Delhi. Three age-specific tracks - 8 to 12, 13 to 16, and 17 to 21 - address the exact challenges each group faces. Confidence anchoring, academic focus techniques, social skills, and emotional regulation are developed across Foundation, Growth, and Mastery levels. Pre and post assessment document every learner's progress. Available in-person at Dwarka, online, and through school partnerships across Delhi NCR.",
     linkHref: "/programs/enlightened-learner",
     linkLabel: "Explore An Enlightened Learner →",
   },
@@ -189,7 +189,7 @@ const offerings = [
   {
     num: "03",
     title: "Self Mastery for Women",
-    desc: "Holistic growth program for women aged 28 and above in Delhi. Addresses emotional overwhelm, suppressed identity, financial dependence, relationship boundaries, and personal ambition — challenges particularly acute for women navigating family, career, and societal expectations in Delhi. Group sessions foster a community of growth. Individual pathway option available. Available at the Dwarka centre and online.",
+    desc: "Holistic growth program for women aged 28 and above in Delhi. Addresses emotional overwhelm, suppressed identity, financial dependence, relationship boundaries, and personal ambition - challenges particularly acute for women navigating family, career, and societal expectations in Delhi. Group sessions foster a community of growth. Individual pathway option available. Available at the Dwarka centre and online.",
     linkHref: "/programs/self-mastery-women",
     linkLabel: "Explore Self Mastery for Women →",
   },
@@ -203,21 +203,21 @@ const offerings = [
   {
     num: "05",
     title: "Art Therapy for Healing",
-    desc: "A creative therapeutic pathway combining mindfulness, reflective journaling, and art-based expression for emotional clarity and healing. No artistic skill required — only willingness to grow. Particularly effective for individuals in Delhi dealing with chronic stress, anxiety, emotional numbness, grief, or burnout. Available as 1-month, 3-month, and 6-month programs at the Dwarka centre and online.",
+    desc: "A creative therapeutic pathway combining mindfulness, reflective journaling, and art-based expression for emotional clarity and healing. No artistic skill required - only willingness to grow. Particularly effective for individuals in Delhi dealing with chronic stress, anxiety, emotional numbness, grief, or burnout. Available as 1-month, 3-month, and 6-month programs at the Dwarka centre and online.",
     linkHref: "/programs/art-therapy",
     linkLabel: "Explore Art Therapy for Healing →",
   },
   {
     num: "06",
-    title: "NLP Coaching — Individual Sessions",
-    desc: "Certified NLP coaching for belief restructuring, emotional reprogramming, and behavioural change. Available as individual sessions or integrated into structured pathway programs. Particularly effective for professionals in Delhi dealing with career plateaus, students with exam anxiety, and women rebuilding confidence. Delivered by Supreet Kaur — certified NLP practitioner with 14+ years of applied experience.",
+    title: "NLP Coaching - Individual Sessions",
+    desc: "Certified NLP coaching for belief restructuring, emotional reprogramming, and behavioural change. Available as individual sessions or integrated into structured pathway programs. Particularly effective for professionals in Delhi dealing with career plateaus, students with exam anxiety, and women rebuilding confidence. Delivered by Supreet Kaur - certified NLP practitioner with 14+ years of applied experience.",
     linkHref: "/services/nlp-coaching",
     linkLabel: "Explore NLP Coaching →",
   },
   {
     num: "07",
     title: "Confidence Building Program",
-    desc: "Structured confidence development for students, professionals, and women in Delhi. Addresses the root beliefs and habitual thought patterns that create self-doubt, hesitation, and fear of judgment. Uses NLP anchoring, reframing, and identity development techniques. Assessment-based — your specific confidence gaps are identified at entry and measurable progress is documented throughout.",
+    desc: "Structured confidence development for students, professionals, and women in Delhi. Addresses the root beliefs and habitual thought patterns that create self-doubt, hesitation, and fear of judgment. Uses NLP anchoring, reframing, and identity development techniques. Assessment-based - your specific confidence gaps are identified at entry and measurable progress is documented throughout.",
     linkHref: "/services/confidence-building",
     linkLabel: "Explore Confidence Building →",
   },
@@ -231,28 +231,28 @@ const offerings = [
   {
     num: "09",
     title: "Study Skills & Memory Training",
-    desc: "Smart study strategies, memory enhancement techniques, time management, and academic focus training for students in Delhi. Research-backed methods including mind mapping, spaced repetition, active recall, and distraction management are taught through structured practice — not just theory. Particularly effective for students in Classes 9 to 12 facing board exams and competitive entrance preparation in Delhi.",
+    desc: "Smart study strategies, memory enhancement techniques, time management, and academic focus training for students in Delhi. Research-backed methods including mind mapping, spaced repetition, active recall, and distraction management are taught through structured practice - not just theory. Particularly effective for students in Classes 9 to 12 facing board exams and competitive entrance preparation in Delhi.",
     linkHref: "/services/study-skills",
     linkLabel: "Explore Study Skills Training →",
   },
   {
     num: "10",
     title: "Stress Management Coaching",
-    desc: "Structured stress management program for students, professionals, and women in Delhi. Covers mindfulness techniques, emotional regulation, physiological stress response management, and work-life balance frameworks. Goes far beyond generic relaxation advice — techniques are NLP-integrated and assessed for measurable improvement. Highly relevant for the high-pressure environments of Delhi's schools, corporate offices, and family contexts.",
+    desc: "Structured stress management program for students, professionals, and women in Delhi. Covers mindfulness techniques, emotional regulation, physiological stress response management, and work-life balance frameworks. Goes far beyond generic relaxation advice - techniques are NLP-integrated and assessed for measurable improvement. Highly relevant for the high-pressure environments of Delhi's schools, corporate offices, and family contexts.",
     linkHref: "/services/stress-management",
     linkLabel: "Explore Stress Management →",
   },
   {
     num: "11",
     title: "Emotional Intelligence Development",
-    desc: "Science-backed emotional intelligence coaching for students, educators, and professionals in Delhi. Builds self-awareness, empathy, emotional regulation, and social skill — the four pillars of EI that determine long-term success in relationships and careers. Integrated with NLP techniques for deeper, faster results. Particularly valuable for managers, teachers, and parents in Delhi NCR seeking to improve their impact.",
+    desc: "Science-backed emotional intelligence coaching for students, educators, and professionals in Delhi. Builds self-awareness, empathy, emotional regulation, and social skill - the four pillars of EI that determine long-term success in relationships and careers. Integrated with NLP techniques for deeper, faster results. Particularly valuable for managers, teachers, and parents in Delhi NCR seeking to improve their impact.",
     linkHref: "/services/emotional-intelligence",
     linkLabel: "Explore Emotional Intelligence Coaching →",
   },
   {
     num: "12",
     title: "Goal Setting & Accountability",
-    desc: "Structured goal-setting and accountability program for individuals in Delhi who know what they want but consistently struggle to execute. Goes beyond vision boards and affirmations — teaches specific planning frameworks, progress tracking systems, and psychological accountability mechanisms. Available for individuals and small groups. Integrates NLP state management to maintain motivation through obstacles.",
+    desc: "Structured goal-setting and accountability program for individuals in Delhi who know what they want but consistently struggle to execute. Goes beyond vision boards and affirmations - teaches specific planning frameworks, progress tracking systems, and psychological accountability mechanisms. Available for individuals and small groups. Integrates NLP state management to maintain motivation through obstacles.",
     linkHref: "/services/goal-setting",
     linkLabel: "Explore Goal Setting Workshop →",
   },
@@ -275,29 +275,29 @@ const offerings = [
 const delhiAreas = [
   {
     num: "01",
-    title: "Dwarka & Sector 19B — Our Home Base",
-    desc: "Hidden Potential's training centre is located in Dwarka, Sector 19B — one of Delhi's most well-planned residential areas with excellent Metro connectivity. Students, professionals, and families from across Dwarka Sectors 1 to 23, Dwarka Expressway, and Uttam Nagar attend programs in-person. The centre is a 3-minute walk from the nearest bus stop and within reach of Dwarka Mor and Dwarka Sector 21 Metro stations.",
+    title: "Dwarka & Sector 19B - Our Home Base",
+    desc: "Hidden Potential's training centre is located in Dwarka, Sector 19B - one of Delhi's most well-planned residential areas with excellent Metro connectivity. Students, professionals, and families from across Dwarka Sectors 1 to 23, Dwarka Expressway, and Uttam Nagar attend programs in-person. The centre is a 3-minute walk from the nearest bus stop and within reach of Dwarka Mor and Dwarka Sector 21 Metro stations.",
     linkHref: "/contact",
     linkLabel: "Book a session at Dwarka →",
   },
   {
     num: "02",
-    title: "South Delhi — Vasant Kunj, Saket, Hauz Khas, Mehrauli",
+    title: "South Delhi - Vasant Kunj, Saket, Hauz Khas, Mehrauli",
     desc: "South Delhi residents from Vasant Kunj, Saket, Greater Kailash, Defence Colony, Hauz Khas, Mehrauli, Malviya Nagar, and Lajpat Nagar regularly attend Hidden Potential programs either in-person at Dwarka or through online sessions. South Delhi's high concentration of CBSE schools, working professionals, and aspirational families makes it one of our most active learner communities.",
   },
   {
     num: "03",
-    title: "West Delhi — Janakpuri, Rajouri Garden, Tilak Nagar",
-    desc: "West Delhi is geographically closest to Hidden Potential's Dwarka centre. Learners from Janakpuri, Rajouri Garden, Tilak Nagar, Uttam Nagar, Vikaspuri, Paschim Vihar, and Punjabi Bagh can access the Dwarka centre with ease via Metro or road. West Delhi's dense student population — with dozens of coaching institutes and CBSE schools — makes structured life skills training a natural complement to academic preparation.",
+    title: "West Delhi - Janakpuri, Rajouri Garden, Tilak Nagar",
+    desc: "West Delhi is geographically closest to Hidden Potential's Dwarka centre. Learners from Janakpuri, Rajouri Garden, Tilak Nagar, Uttam Nagar, Vikaspuri, Paschim Vihar, and Punjabi Bagh can access the Dwarka centre with ease via Metro or road. West Delhi's dense student population - with dozens of coaching institutes and CBSE schools - makes structured life skills training a natural complement to academic preparation.",
   },
   {
     num: "04",
-    title: "North Delhi — Rohini, Pitampura, Shalimar Bagh",
+    title: "North Delhi - Rohini, Pitampura, Shalimar Bagh",
     desc: "Learners from Rohini, Pitampura, Shalimar Bagh, Rani Bagh, and Ashok Vihar attend Hidden Potential programs through a combination of in-person and online sessions. North Delhi has a rapidly growing demand for quality life skills training, particularly among school students and young professionals in the area. Online sessions eliminate the commute barrier entirely for North Delhi learners.",
   },
   {
     num: "05",
-    title: "East Delhi — Preet Vihar, Laxmi Nagar, Mayur Vihar",
+    title: "East Delhi - Preet Vihar, Laxmi Nagar, Mayur Vihar",
     desc: "East Delhi learners from Preet Vihar, Laxmi Nagar, Mayur Vihar, Patparganj, Vivek Vihar, and Shahdara access Hidden Potential primarily through online programs or attend the Dwarka centre on weekends. The Noida-border proximity makes many East Delhi learners also eligible for programs designed for Noida residents. Contact us to discuss the most practical format for your location.",
     linkHref: "/locations/noida",
     linkLabel: "Also see: Life Skills in Noida →",
@@ -305,7 +305,7 @@ const delhiAreas = [
   {
     num: "06",
     title: "Delhi Schools & Corporate Organisations",
-    desc: "Hidden Potential offers institutional programs directly at school and corporate premises across Delhi — from Dwarka and Rohini to Greater Kailash and Connaught Place. School partnership programs deliver life skills curriculum in-house, eliminating the need for students to travel. Corporate workshops are conducted at client offices. Contact us to schedule an institutional assessment and program proposal.",
+    desc: "Hidden Potential offers institutional programs directly at school and corporate premises across Delhi - from Dwarka and Rohini to Greater Kailash and Connaught Place. School partnership programs deliver life skills curriculum in-house, eliminating the need for students to travel. Corporate workshops are conducted at client offices. Contact us to schedule an institutional assessment and program proposal.",
     linkHref: "/contact",
     linkLabel: "Enquire about institutional programs →",
   },
@@ -313,27 +313,27 @@ const delhiAreas = [
 
 const differentiators = [
   {
-    title: "Assessment-Based Placement — Unique in Delhi",
-    desc: "Hidden Potential is among the very few life skills training providers in Delhi that begins with a structured pre-assessment. Before any program recommendation, we map your specific confidence gaps, communication patterns, belief systems, and learning style. This means every learner in Delhi gets a personalised pathway — not a standard course delivered to a room full of strangers.",
+    title: "Assessment-Based Placement - Unique in Delhi",
+    desc: "Hidden Potential is among the very few life skills training providers in Delhi that begins with a structured pre-assessment. Before any program recommendation, we map your specific confidence gaps, communication patterns, belief systems, and learning style. This means every learner in Delhi gets a personalised pathway - not a standard course delivered to a room full of strangers.",
   },
   {
     title: "NEP 2020 Aligned Programs",
-    desc: "India's National Education Policy 2020 mandates holistic development and life skills integration in schools. Hidden Potential's programs are specifically designed to align with NEP 2020 requirements, making them appropriate for school partnerships across Delhi NCR. This alignment gives schools a compliance-ready, documented, and credentialed life skills curriculum — not informal add-ons.",
+    desc: "India's National Education Policy 2020 mandates holistic development and life skills integration in schools. Hidden Potential's programs are specifically designed to align with NEP 2020 requirements, making them appropriate for school partnerships across Delhi NCR. This alignment gives schools a compliance-ready, documented, and credentialed life skills curriculum - not informal add-ons.",
   },
   {
     title: "MSME Registered & Skill India Certified",
-    desc: "Hidden Potential is registered under MSME and affiliated with Skill India — providing Delhi schools, corporates, and institutions with the documentation and institutional credibility required for formal partnerships, CSR funding, and compliance reporting. This is a significant differentiator from the many informal life skills coaches operating in Delhi without institutional registration.",
+    desc: "Hidden Potential is registered under MSME and affiliated with Skill India - providing Delhi schools, corporates, and institutions with the documentation and institutional credibility required for formal partnerships, CSR funding, and compliance reporting. This is a significant differentiator from the many informal life skills coaches operating in Delhi without institutional registration.",
   },
   {
     title: "14+ Years of Applied Experience in Delhi",
-    desc: "Supreet Kaur has spent over 14 years delivering life skills training in Delhi — working with students from Dwarka schools, professionals from Delhi's corporate sector, women from across the city, and educators seeking train-the-trainer certification. This is not recent certification — it is deep, Delhi-specific applied experience with 5000+ individuals trained in this city.",
+    desc: "Supreet Kaur has spent over 14 years delivering life skills training in Delhi - working with students from Dwarka schools, professionals from Delhi's corporate sector, women from across the city, and educators seeking train-the-trainer certification. This is not recent certification - it is deep, Delhi-specific applied experience with 5000+ individuals trained in this city.",
   },
   {
     title: "Documented Progress, Not Motivational Sessions",
     desc: "Every learner at Hidden Potential begins with a documented baseline assessment and ends with a documented progress report. Growth in confidence, communication, emotional regulation, and belief patterns is measured and visible. This distinguishes structured life skills training in Delhi from the hundreds of motivational speakers and workshop facilitators who deliver energy but no measurable growth.",
   },
   {
-    title: "Programs for Every Age Group — 8 to 65+",
+    title: "Programs for Every Age Group - 8 to 65+",
     desc: "Hidden Potential serves Delhi learners from age 8 (An Enlightened Learner foundation track) through to working adults, women, and senior professionals. No other structured life skills provider in Delhi serves this complete age range under one roof, with a connected philosophy and consistent NLP-integrated methodology across all programs.",
   },
 ];
@@ -341,11 +341,11 @@ const differentiators = [
 const faqs = [
   {
     q: "Where is Hidden Potential's training centre in Delhi?",
-    a: "Hidden Potential's main training centre is located at D-802, Palm Court Apartment, Plot 3, Sector 19B, Dwarka, South West Delhi — 110075. Dwarka is well-connected by Delhi Metro (Blue Line) and is easily accessible from South Delhi, West Delhi, Janakpuri, Uttam Nagar, and Dwarka Expressway. Sessions are available weekdays from 10 AM to 7 PM, with weekend and evening batches by appointment.",
+    a: "Hidden Potential's main training centre is located at D-802, Palm Court Apartment, Plot 3, Sector 19B, Dwarka, South West Delhi - 110075. Dwarka is well-connected by Delhi Metro (Blue Line) and is easily accessible from South Delhi, West Delhi, Janakpuri, Uttam Nagar, and Dwarka Expressway. Sessions are available weekdays from 10 AM to 7 PM, with weekend and evening batches by appointment.",
   },
   {
     q: "Which life skills programs are available at the Delhi centre?",
-    a: "All Hidden Potential programs are available from the Delhi centre — including An Enlightened Learner (student program for ages 8–21), Communication Mastery, Self Mastery for Women, Train the Trainer Certification, and Art Therapy for Healing. Sub-services including NLP coaching, confidence building, study skills, stress management, emotional intelligence, and goal setting are also offered. Corporate and school programs are conducted at client locations across Delhi NCR.",
+    a: "All Hidden Potential programs are available from the Delhi centre - including An Enlightened Learner (student program for ages 8–21), Communication Mastery, Self Mastery for Women, Train the Trainer Certification, and Art Therapy for Healing. Sub-services including NLP coaching, confidence building, study skills, stress management, emotional intelligence, and goal setting are also offered. Corporate and school programs are conducted at client locations across Delhi NCR.",
   },
   {
     q: "Is online life skills training available for people across Delhi?",
@@ -353,15 +353,15 @@ const faqs = [
   },
   {
     q: "How is Hidden Potential different from other life skills trainers in Delhi?",
-    a: "Most life skills training providers in Delhi offer motivational talks, one-day workshops, or generic certification courses. Hidden Potential is different in three critical ways: every learner begins with a structured pre-assessment identifying specific gaps; programs run across 3, 6, and 12-month structured pathways with documented progress — not one-off sessions; and NLP is integrated throughout, not offered as a standalone module. Hidden Potential is MSME registered and Skill India affiliated, with 14+ years of applied experience across 5000+ learners in Delhi NCR.",
+    a: "Most life skills training providers in Delhi offer motivational talks, one-day workshops, or generic certification courses. Hidden Potential is different in three critical ways: every learner begins with a structured pre-assessment identifying specific gaps; programs run across 3, 6, and 12-month structured pathways with documented progress - not one-off sessions; and NLP is integrated throughout, not offered as a standalone module. Hidden Potential is MSME registered and Skill India affiliated, with 14+ years of applied experience across 5000+ learners in Delhi NCR.",
   },
   {
     q: "How much does life skills training in Delhi cost?",
-    a: "Program fees vary based on the pathway selected, level (Foundation, Growth, or Mastery), and format (individual, group, online, or in-person). We do not publish a single price because every learner's pathway is personalised after the initial assessment. The most accurate way to understand fees is to book a free 30-minute consultation — during which Supreet Kaur reviews your goals, recommends the right pathway, and provides complete pricing details. There is no obligation to enroll after the consultation.",
+    a: "Program fees vary based on the pathway selected, level (Foundation, Growth, or Mastery), and format (individual, group, online, or in-person). We do not publish a single price because every learner's pathway is personalised after the initial assessment. The most accurate way to understand fees is to book a free 30-minute consultation - during which Supreet Kaur reviews your goals, recommends the right pathway, and provides complete pricing details. There is no obligation to enroll after the consultation.",
   },
   {
     q: "Can schools and corporates in Delhi book group life skills programs?",
-    a: "Yes. Hidden Potential offers school partnership programs and corporate life skills workshops for organisations across Delhi. School programs include student workshops, teacher development, and parent engagement sessions — all NEP 2020 aligned and MSME documented. Corporate programs cover communication, emotional intelligence, stress management, and leadership development. All institutional programs are customised after a needs assessment. Contact us to discuss your organisation's requirements and receive a tailored program proposal.",
+    a: "Yes. Hidden Potential offers school partnership programs and corporate life skills workshops for organisations across Delhi. School programs include student workshops, teacher development, and parent engagement sessions - all NEP 2020 aligned and MSME documented. Corporate programs cover communication, emotional intelligence, stress management, and leadership development. All institutional programs are customised after a needs assessment. Contact us to discuss your organisation's requirements and receive a tailored program proposal.",
   },
 ];
 
@@ -403,7 +403,7 @@ export default function DelhiLocationPage() {
       />
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 1 — HERO
+          SECTION 1 - HERO
           Background: Dark navy-to-deep gradient
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
@@ -444,7 +444,7 @@ export default function DelhiLocationPage() {
             className="text-3xl md:text-4xl lg:text-[2.75rem] font-extrabold text-white leading-tight mb-6 max-w-4xl mx-auto"
             style={{ textShadow: "0 1px 2px rgba(0,0,0,0.15)" }}
           >
-            Life Skills Training in Delhi — NLP Coaching, Student Programs &amp; Corporate Workshops
+            Life Skills Training in Delhi - NLP Coaching, Student Programs &amp; Corporate Workshops
           </h1>
 
           {/* Lora italic tagline */}
@@ -461,7 +461,7 @@ export default function DelhiLocationPage() {
 
           {/* Body paragraph */}
           <p className="text-base text-white/60 leading-relaxed mb-10 max-w-3xl mx-auto">
-            Hidden Potential&rsquo;s life skills training centre is based in Sector 19B, Dwarka, Delhi — serving
+            Hidden Potential&rsquo;s life skills training centre is based in Sector 19B, Dwarka, Delhi - serving
             learners from across Delhi NCR including South Delhi, West Delhi, Rohini, Pitampura, and
             online learners across India. Founded and led by{" "}
             <Link
@@ -470,11 +470,11 @@ export default function DelhiLocationPage() {
             >
               Supreet Kaur
             </Link>{" "}
-            — certified NLP practitioner, Masters in Psychology, Josh Talks speaker, and award-winning
-            life skills educator — the Delhi centre has delivered structured, assessment-based life skills
+            - certified NLP practitioner, Masters in Psychology, Josh Talks speaker, and award-winning
+            life skills educator - the Delhi centre has delivered structured, assessment-based life skills
             training in Delhi for over 14 years. With 5000+ individuals trained, 200+ trainers certified, and
             a NEP 2020 aligned, MSME registered curriculum, Hidden Potential is not a motivational
-            workshop provider. It is a structured transformational academy — the only one of its kind
+            workshop provider. It is a structured transformational academy - the only one of its kind
             in Delhi offering personalised, documented, and measurable life skills development for
             students, women, professionals, and aspiring trainers.
           </p>
@@ -515,7 +515,7 @@ export default function DelhiLocationPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 2 — WHY DELHI NEEDS LIFE SKILLS TRAINING
+          SECTION 2 - WHY DELHI NEEDS LIFE SKILLS TRAINING
           Background: Off-white
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-off-white py-20">
@@ -527,24 +527,24 @@ export default function DelhiLocationPage() {
 
           <div className="flex flex-col gap-6 text-base text-charcoal leading-relaxed">
             <p>
-              Delhi is one of the most competitive cities in India — and that competition begins early.
+              Delhi is one of the most competitive cities in India - and that competition begins early.
               Students in Delhi schools face board exams, competitive entrance tests for IIT, medical,
               and commerce colleges, mounting parental expectations, and social pressures amplified by
-              social media. Yet across thousands of Delhi schools — from Dwarka and Rohini to Greater
-              Kailash and Vasant Kunj — the curriculum remains overwhelmingly focused on academic
+              social media. Yet across thousands of Delhi schools - from Dwarka and Rohini to Greater
+              Kailash and Vasant Kunj - the curriculum remains overwhelmingly focused on academic
               performance. Emotional regulation, communication confidence, stress management, and
               self-awareness are left entirely to chance. The result is visible in rising rates of exam
               anxiety, peer conflict, and young adults entering college and workplaces with strong
               grades but fragile inner foundations. Life skills training in Delhi is not a supplement
-              to education — it has become a necessity.
+              to education - it has become a necessity.
             </p>
             <p>
               For Delhi&rsquo;s working adults, the pressures are different but equally acute. Professionals
-              in Delhi&rsquo;s corporate sector — from Connaught Place and Aerocity to Gurugram&rsquo;s satellite
-              offices — face communication breakdowns, leadership gaps, and chronic stress as routine
+              in Delhi&rsquo;s corporate sector - from Connaught Place and Aerocity to Gurugram&rsquo;s satellite
+              offices - face communication breakdowns, leadership gaps, and chronic stress as routine
               challenges. Women in Delhi navigate a particularly complex intersection of career ambition,
               family obligation, and societal conditioning that few wellness programs address
-              systematically. The capital city&rsquo;s intensity demands more than motivation — it demands
+              systematically. The capital city&rsquo;s intensity demands more than motivation - it demands
               structured skill-building, measured development, and personalised coaching aligned with
               the specific realities of life in Delhi. Generic self-help content and motivational speakers
               are abundant in Delhi. Structured, assessed, and documented life skills development is
@@ -552,7 +552,7 @@ export default function DelhiLocationPage() {
             </p>
             <p>
               Hidden Potential has been delivering structured life skills training in Delhi for over
-              14 years — not as a motivational workshop provider, but as a developmental academy with
+              14 years - not as a motivational workshop provider, but as a developmental academy with
               clear learning pathways, pre and post assessment, NLP integration, and documented progress
               for every learner. Founded by{" "}
               <Link
@@ -561,8 +561,8 @@ export default function DelhiLocationPage() {
               >
                 Supreet Kaur
               </Link>{" "}
-              — who has spent her entire career building and refining this system for Delhi and NCR
-              learners — the approach is deeply rooted in the city&rsquo;s specific educational culture,
+              - who has spent her entire career building and refining this system for Delhi and NCR
+              learners - the approach is deeply rooted in the city&rsquo;s specific educational culture,
               family dynamics, and professional context. Whether you are a parent in Dwarka seeking
               structured development for your child, a woman in South Delhi ready to rebuild her
               identity, or a corporate HR manager in Noida looking for a credible life skills partner,
@@ -574,7 +574,7 @@ export default function DelhiLocationPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 3 — ALL PROGRAMS AVAILABLE IN DELHI
+          SECTION 3 - ALL PROGRAMS AVAILABLE IN DELHI
           Background: White
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-white py-20">
@@ -586,13 +586,13 @@ export default function DelhiLocationPage() {
             </h2>
             <p className="text-base text-charcoal/75 leading-relaxed max-w-3xl">
               Hidden Potential&rsquo;s Delhi training centre offers the complete range of structured life
-              skills programs — from flagship developmental pathways to targeted sub-service sessions.
+              skills programs - from flagship developmental pathways to targeted sub-service sessions.
               All programs are available in-person at Dwarka, online, or in hybrid format. Here is
               everything available through life skills training in Delhi.
             </p>
           </div>
 
-          {/* 14 offering cards — 2-column grid */}
+          {/* 14 offering cards - 2-column grid */}
           <div className="grid md:grid-cols-2 gap-5">
             {offerings.map((o) => (
               <div
@@ -627,7 +627,7 @@ export default function DelhiLocationPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 4 — AREAS WE SERVE IN DELHI
+          SECTION 4 - AREAS WE SERVE IN DELHI
           Background: Navy-light (#F3F0FF)
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-navy-light py-20">
@@ -639,13 +639,13 @@ export default function DelhiLocationPage() {
             </h2>
             <p className="text-base text-charcoal/75 leading-relaxed max-w-3xl">
               Based in Dwarka, Sector 19B, Hidden Potential serves learners from across all areas
-              of Delhi — in-person, online, and through institutional programs at schools and
+              of Delhi - in-person, online, and through institutional programs at schools and
               corporate offices. Whether you are in South Delhi, West Delhi, North Delhi, or East
               Delhi, life skills training in Delhi is accessible to you.
             </p>
           </div>
 
-          {/* 6 area cards — 2-column grid */}
+          {/* 6 area cards - 2-column grid */}
           <div className="grid md:grid-cols-2 gap-5">
             {delhiAreas.map((a) => (
               <div
@@ -678,7 +678,7 @@ export default function DelhiLocationPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 5 — WHY HIDDEN POTENTIAL IN DELHI
+          SECTION 5 - WHY HIDDEN POTENTIAL IN DELHI
           Background: Off-white
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-off-white py-20">
@@ -695,7 +695,7 @@ export default function DelhiLocationPage() {
             </p>
           </div>
 
-          {/* 6 differentiator cards — 3-column grid */}
+          {/* 6 differentiator cards - 3-column grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {differentiators.map((d) => (
               <div
@@ -731,7 +731,7 @@ export default function DelhiLocationPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 6 — FAQ
+          SECTION 6 - FAQ
           Background: White
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-white py-20">
@@ -749,7 +749,7 @@ export default function DelhiLocationPage() {
                 key={i}
                 className="card-service"
               >
-                {/* Question — teal left bar */}
+                {/* Question - teal left bar */}
                 <div
                   className="px-6 py-4 border-l-4 border-primary-teal"
                   style={{ background: "#F8F6F2" }}
@@ -787,7 +787,7 @@ export default function DelhiLocationPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 7 — FINAL CTA
+          SECTION 7 - FINAL CTA
           Background: Dark navy gradient
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
@@ -812,12 +812,12 @@ export default function DelhiLocationPage() {
           </h2>
 
           <p className="text-base text-white/60 leading-relaxed mb-10 max-w-2xl mx-auto">
-            Life skills training in Delhi at Hidden Potential begins with a single step — a free
+            Life skills training in Delhi at Hidden Potential begins with a single step - a free
             30-minute consultation with Supreet Kaur. During that conversation, your specific goals,
             challenges, and developmental needs are assessed. You receive a personalised program
-            recommendation — not a generic brochure. Whether you are in Dwarka, South Delhi, Rohini,
+            recommendation - not a generic brochure. Whether you are in Dwarka, South Delhi, Rohini,
             East Delhi, or attending online from anywhere across India, the structured pathways at
-            Hidden Potential are designed to produce measurable, documented, lasting transformation —
+            Hidden Potential are designed to produce measurable, documented, lasting transformation -
             not temporary motivation. Over 5000 individuals in Delhi and Delhi NCR have built stronger
             foundations through this system. Your journey begins with one conversation.
           </p>
@@ -862,12 +862,12 @@ export default function DelhiLocationPage() {
             >
               Faridabad
             </Link>
-            {" "}— structured life skills programs across Delhi NCR
+            {" "}- structured life skills programs across Delhi NCR
           </p>
 
           {/* Location line */}
           <p className="text-[11px] text-white/30 leading-relaxed">
-            Training centre at Dwarka, Sector 19B, South West Delhi — 110075
+            Training centre at Dwarka, Sector 19B, South West Delhi - 110075
             <span className="mx-1 text-white/20">|</span>
             <Link
               href="/locations/noida"

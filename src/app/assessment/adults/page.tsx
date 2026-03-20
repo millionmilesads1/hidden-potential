@@ -4,7 +4,7 @@ import AdultAssessmentClient from './AdultAssessmentClient';
 export const metadata: Metadata = {
   title: { absolute: 'Adult Life Alignment Assessment | Hidden Potential Skills' },
   description:
-    'Take the Hidden Potential Life Alignment Assessment (Age 22+). Reflect on 10 life areas — health, emotions, relationships, career, finance, and more — to discover your growth pathway.',
+    'Take the Hidden Potential Life Alignment Assessment (Age 22+). Reflect on 10 life areas - health, emotions, relationships, career, finance, and more - to discover your growth pathway.',
   openGraph: {
     title: 'Adult Life Alignment Assessment | Hidden Potential Skills',
     description:
@@ -28,7 +28,7 @@ const schema = {
   "@type": "Service",
   name: "Adult Life Alignment Assessment (Age 22+)",
   description:
-    "A structured 30-question self-reflection for adults. Reflect on 10 life areas — health, emotions, relationships, career, finance, and more — to discover your growth pathway. Free assessment.",
+    "A structured 30-question self-reflection for adults. Reflect on 10 life areas - health, emotions, relationships, career, finance, and more - to discover your growth pathway. Free assessment.",
   url: "https://hiddenpotentialskills.com/assessment/adults",
   provider: {
     "@type": "Organization",

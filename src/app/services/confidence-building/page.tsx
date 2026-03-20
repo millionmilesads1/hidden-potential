@@ -84,7 +84,7 @@ const faqSchema = {
       name: "What causes low confidence and can it really be changed?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Low confidence is caused by a combination of factors — repeated negative experiences, critical feedback during formative years, comparison with peers, lack of structured skill development, and limiting beliefs formed in childhood. The good news is that confidence is not a fixed personality trait. Decades of research in behavioural psychology confirm that self-efficacy — the core of genuine confidence — is trainable through structured practice, competence building, and cognitive restructuring. At Hidden Potential, we have seen students, professionals, and women transform their confidence levels measurably within 3 to 6 months of structured development.",
+        text: "Low confidence is caused by a combination of factors - repeated negative experiences, critical feedback during formative years, comparison with peers, lack of structured skill development, and limiting beliefs formed in childhood. The good news is that confidence is not a fixed personality trait. Decades of research in behavioural psychology confirm that self-efficacy - the core of genuine confidence - is trainable through structured practice, competence building, and cognitive restructuring. At Hidden Potential, we have seen students, professionals, and women transform their confidence levels measurably within 3 to 6 months of structured development.",
       },
     },
     {
@@ -92,7 +92,7 @@ const faqSchema = {
       name: "At what age should confidence building start?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The earlier, the better. At Hidden Potential, confidence building begins at age 8 through the An Enlightened Learner program, with age-appropriate activities and assessments for students aged 8 to 12, 13 to 16, and 17 to 21. Research shows that confidence patterns established in childhood and adolescence have lasting effects on academic performance, career success, and relationship quality. However, confidence is trainable at any age — we work with learners up to age 65 across our various pathways.",
+        text: "The earlier, the better. At Hidden Potential, confidence building begins at age 8 through the An Enlightened Learner program, with age-appropriate activities and assessments for students aged 8 to 12, 13 to 16, and 17 to 21. Research shows that confidence patterns established in childhood and adolescence have lasting effects on academic performance, career success, and relationship quality. However, confidence is trainable at any age - we work with learners up to age 65 across our various pathways.",
       },
     },
     {
@@ -116,7 +116,7 @@ const faqSchema = {
       name: "How is this different from personality development classes in Delhi?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Most personality development classes in Delhi offer a broad, surface-level curriculum covering grooming, etiquette, public speaking, and general motivation. Confidence building at Hidden Potential is fundamentally different in three ways: first, it is assessment-based — every learner starts with a structured evaluation that identifies specific confidence gaps. Second, it uses NLP-powered behavioural tools that address confidence at the subconscious belief level, not just the behaviour level. Third, it follows structured developmental pathways spanning months with documented pre and post assessments — not a 10-session generic curriculum.",
+        text: "Most personality development classes in Delhi offer a broad, surface-level curriculum covering grooming, etiquette, public speaking, and general motivation. Confidence building at Hidden Potential is fundamentally different in three ways: first, it is assessment-based - every learner starts with a structured evaluation that identifies specific confidence gaps. Second, it uses NLP-powered behavioural tools that address confidence at the subconscious belief level, not just the behaviour level. Third, it follows structured developmental pathways spanning months with documented pre and post assessments - not a 10-session generic curriculum.",
       },
     },
     {
@@ -124,7 +124,7 @@ const faqSchema = {
       name: "How much does confidence building coaching cost in Delhi?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Confidence building program fees at Hidden Potential vary based on the developmental pathway, level, and format. Individual sessions, group programs, and integrated pathway options have different pricing structures. We recommend starting with a free life skills assessment — this identifies the right pathway and level for your specific needs, after which complete program details and pricing are provided. Contact us or book an assessment to begin.",
+        text: "Confidence building program fees at Hidden Potential vary based on the developmental pathway, level, and format. Individual sessions, group programs, and integrated pathway options have different pricing structures. We recommend starting with a free life skills assessment - this identifies the right pathway and level for your specific needs, after which complete program details and pricing are provided. Contact us or book an assessment to begin.",
       },
     },
   ],
@@ -148,7 +148,7 @@ export default function ConfidenceBuildingPage() {
 
       <main>
         {/* ═══════════════════════════════════════════════════════════════
-            SECTION 1 — HERO
+            SECTION 1 - HERO
         ═══════════════════════════════════════════════════════════════ */}
         <section
           className="relative overflow-hidden"
@@ -190,7 +190,7 @@ export default function ConfidenceBuildingPage() {
                 textShadow: "0 1px 2px rgba(0,0,0,0.15)",
               }}
             >
-              Confidence Building Program in Delhi — From Self-Doubt to Self-Assurance
+              Confidence Building Program in Delhi - From Self-Doubt to Self-Assurance
             </h1>
 
             {/* Lora italic tagline */}
@@ -202,13 +202,13 @@ export default function ConfidenceBuildingPage() {
                 textShadow: "0 1px 2px rgba(0,0,0,0.15)",
               }}
             >
-              Confidence isn&apos;t about pretending to be fearless — it&apos;s about building
+              Confidence isn&apos;t about pretending to be fearless - it&apos;s about building
               genuine inner strength.
             </p>
 
             {/* Body paragraph */}
             <p className="text-base text-white/65 max-w-3xl mx-auto mb-10 leading-relaxed">
-              Most confidence building programs in Delhi focus on surface-level motivation — a pep
+              Most confidence building programs in Delhi focus on surface-level motivation - a pep
               talk, a few affirmations, a group activity, and you are sent on your way feeling
               temporarily inspired. At Hidden Potential, confidence building is not a motivational
               event. It is a structured developmental process that begins with a detailed assessment,
@@ -216,7 +216,7 @@ export default function ConfidenceBuildingPage() {
               genuine, lasting self-assurance that holds up under real-world pressure. Whether you
               are an 8-year-old hesitating to speak in class, a teenager dealing with peer pressure,
               a professional struggling with leadership presence, or a woman rebuilding self-worth
-              after years of suppression — confidence is not something you either have or don&apos;t
+              after years of suppression - confidence is not something you either have or don&apos;t
               have. It is a compound skill built through self-awareness, communication practice,
               emotional regulation, and consistent structured feedback.
             </p>
@@ -264,7 +264,7 @@ export default function ConfidenceBuildingPage() {
         </section>
 
         {/* ═══════════════════════════════════════════════════════════════
-            SECTION 2 — WHY CONFIDENCE MATTERS
+            SECTION 2 - WHY CONFIDENCE MATTERS
         ═══════════════════════════════════════════════════════════════ */}
         <section className="py-20 bg-[#F8F6F2]">
           <div className="max-w-4xl mx-auto px-6">
@@ -277,7 +277,7 @@ export default function ConfidenceBuildingPage() {
             </h2>
             <div className="space-y-6 text-base leading-relaxed" style={{ color: "#2D2D2D" }}>
               <p>
-                Confidence is not just one skill among many — it is the multiplier that makes every
+                Confidence is not just one skill among many - it is the multiplier that makes every
                 other skill effective. A student who understands time management but lacks the
                 confidence to implement it will procrastinate. A professional who knows the right
                 answer but hesitates to speak up will be overlooked. A woman who understands her
@@ -285,15 +285,15 @@ export default function ConfidenceBuildingPage() {
                 continue to be undervalued.
               </p>
               <p>
-                Research consistently shows that confidence — specifically self-efficacy, the belief
-                in your ability to succeed in specific situations — is one of the strongest
+                Research consistently shows that confidence - specifically self-efficacy, the belief
+                in your ability to succeed in specific situations - is one of the strongest
                 predictors of academic performance, career advancement, relationship satisfaction,
                 and mental health. This is not opinion. It is decades of behavioural psychology
                 research from Bandura, Dweck, and others.
               </p>
               <p>
                 At Hidden Potential in Delhi, confidence building is not a standalone module. It is
-                embedded into every structured pathway — from the An Enlightened Learner student
+                embedded into every structured pathway - from the An Enlightened Learner student
                 program to Communication Mastery, Self Mastery for Women, and even the Train the
                 Trainer Certification. Every learner&apos;s confidence is assessed at entry,
                 developed through structured practice, and measured at completion.
@@ -303,7 +303,7 @@ export default function ConfidenceBuildingPage() {
         </section>
 
         {/* ═══════════════════════════════════════════════════════════════
-            SECTION 3 — WHAT YOU'LL DEVELOP
+            SECTION 3 - WHAT YOU'LL DEVELOP
         ═══════════════════════════════════════════════════════════════ */}
         <section className="py-20 bg-white">
           <div className="max-w-6xl mx-auto px-6">
@@ -320,7 +320,7 @@ export default function ConfidenceBuildingPage() {
               className="text-base text-center max-w-3xl mx-auto mb-12 leading-relaxed"
               style={{ color: "#6B6B6B" }}
             >
-              Confidence is not a single trait — it is a compound skill made up of multiple
+              Confidence is not a single trait - it is a compound skill made up of multiple
               dimensions. Weakness in any one dimension creates the feeling of &lsquo;not being
               confident enough.&rsquo; Our confidence building program in Delhi addresses all six
               dimensions systematically so the confidence you develop is genuine, resilient, and
@@ -344,12 +344,12 @@ export default function ConfidenceBuildingPage() {
                 </div>
                 <div className="px-5 py-5 bg-white">
                   <p className="text-sm leading-relaxed" style={{ color: "#2D2D2D" }}>
-                    Confidence starts with knowing who you are — your strengths, your values, your
+                    Confidence starts with knowing who you are - your strengths, your values, your
                     growth areas, and your non-negotiables. Most people who lack confidence have
                     never done structured self-reflection. They operate on assumptions about
                     themselves that were formed in childhood and never updated. Through guided
                     assessments and reflection exercises at Hidden Potential, you develop a clear,
-                    accurate understanding of your identity — which becomes the foundation for every
+                    accurate understanding of your identity - which becomes the foundation for every
                     other confidence dimension. Without self-awareness, confidence is just
                     performance. With it, confidence becomes authentic.
                   </p>
@@ -372,13 +372,13 @@ export default function ConfidenceBuildingPage() {
                 </div>
                 <div className="px-5 py-5 bg-white">
                   <p className="text-sm leading-relaxed mb-3" style={{ color: "#2D2D2D" }}>
-                    Hesitation is not a personality trait — it is a learned behavioural pattern
+                    Hesitation is not a personality trait - it is a learned behavioural pattern
                     driven by specific beliefs and emotional responses. Whether it is fear of public
-                    speaking, fear of judgment, fear of failure, or fear of conflict — every form of
+                    speaking, fear of judgment, fear of failure, or fear of conflict - every form of
                     hesitation has a structure that can be identified and changed. At Hidden
                     Potential, we use NLP-based techniques including belief mapping, cognitive
                     reframing, and confidence anchoring to help you understand exactly why you
-                    hesitate — and give you practical tools to move through it. This is not about
+                    hesitate - and give you practical tools to move through it. This is not about
                     forcing yourself to be brave. It is about removing the specific patterns that
                     create unnecessary fear.
                   </p>
@@ -409,11 +409,11 @@ export default function ConfidenceBuildingPage() {
                   <p className="text-sm leading-relaxed" style={{ color: "#2D2D2D" }}>
                     There is a critical difference between performed confidence and genuine
                     self-assurance. Performed confidence comes from motivation and fades within
-                    days. Genuine self-assurance comes from competence — from actually developing
+                    days. Genuine self-assurance comes from competence - from actually developing
                     real skills, receiving honest structured feedback, and seeing measurable progress
                     over time. Every confidence building pathway at Hidden Potential includes
                     pre-assessment and post-assessment. You do not have to wonder whether you have
-                    grown — you can see it documented. This evidence-based approach produces the
+                    grown - you can see it documented. This evidence-based approach produces the
                     kind of self-assurance that does not collapse under pressure because it is built
                     on real ability, not positive thinking.
                   </p>
@@ -437,9 +437,9 @@ export default function ConfidenceBuildingPage() {
                 <div className="px-5 py-5 bg-white">
                   <p className="text-sm leading-relaxed mb-3" style={{ color: "#2D2D2D" }}>
                     Public speaking anxiety affects an estimated 75% of the population. It is the
-                    most common form of confidence deficit — and also one of the most trainable. At
+                    most common form of confidence deficit - and also one of the most trainable. At
                     Hidden Potential, speaking confidence is not built by simply telling you to get
-                    up and talk more. It is developed through structured methodology — voice
+                    up and talk more. It is developed through structured methodology - voice
                     modulation training, body language coaching, content structuring techniques, and
                     repeated practice with specific feedback. Students as young as 8 years old and
                     professionals up to 65 develop genuine speaking confidence through the
@@ -471,11 +471,11 @@ export default function ConfidenceBuildingPage() {
                 </div>
                 <div className="px-5 py-5 bg-white">
                   <p className="text-sm leading-relaxed" style={{ color: "#2D2D2D" }}>
-                    Assertive communication is the midpoint between aggression and passivity — and
+                    Assertive communication is the midpoint between aggression and passivity - and
                     it is exactly where confident people operate. Being assertive means expressing
                     your thoughts, needs, and boundaries clearly without damaging relationships or
-                    apologising for having an opinion. For many learners — especially women and
-                    teenagers — assertiveness is the hardest confidence dimension because it
+                    apologising for having an opinion. For many learners - especially women and
+                    teenagers - assertiveness is the hardest confidence dimension because it
                     directly challenges ingrained patterns of people-pleasing, conflict avoidance,
                     and social compliance. At Hidden Potential, assertiveness is trained through
                     structured role-playing, real-world scenario practice, and progressive challenge
@@ -505,7 +505,7 @@ export default function ConfidenceBuildingPage() {
                     comparison amplified by social media create an environment where authentic
                     self-expression feels risky. For adults, the same dynamics play out in workplace
                     politics, family expectations, and social circles. Our confidence building
-                    approach addresses social anxiety and peer pressure specifically — teaching
+                    approach addresses social anxiety and peer pressure specifically - teaching
                     learners to maintain their identity and decisions under external pressure, to set
                     boundaries without guilt, and to distinguish between healthy social adaptation
                     and self-abandoning people-pleasing.
@@ -517,7 +517,7 @@ export default function ConfidenceBuildingPage() {
         </section>
 
         {/* ═══════════════════════════════════════════════════════════════
-            SECTION 4 — WHO IT'S FOR
+            SECTION 4 - WHO IT'S FOR
         ═══════════════════════════════════════════════════════════════ */}
         <section className="py-20 bg-[#F3F0FF]">
           <div className="max-w-6xl mx-auto px-6">
@@ -536,8 +536,8 @@ export default function ConfidenceBuildingPage() {
             >
               Confidence challenges look different at every age and life stage, but the underlying
               mechanics are the same. A structured, assessment-based approach ensures that every
-              learner — from an 8-year-old student in Dwarka to a 45-year-old professional in
-              Gurgaon — receives development targeted to their specific confidence gaps.
+              learner - from an 8-year-old student in Dwarka to a 45-year-old professional in
+              Gurgaon - receives development targeted to their specific confidence gaps.
             </p>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -560,7 +560,7 @@ export default function ConfidenceBuildingPage() {
                 <p className="text-sm leading-relaxed mb-3" style={{ color: "#6B6B6B" }}>
                   Children and teenagers who hesitate to participate in class, avoid social
                   situations, struggle to make eye contact, or have low self-image. Confidence
-                  building is a core developmental skill in the An Enlightened Learner program —
+                  building is a core developmental skill in the An Enlightened Learner program -
                   not an add-on or afterthought. Through structured activities, guided practice, and
                   age-appropriate NLP tools, students develop genuine self-assurance that carries
                   into academics, friendships, and future careers. Parents across Delhi, Noida, and
@@ -593,7 +593,7 @@ export default function ConfidenceBuildingPage() {
                 <p className="text-sm leading-relaxed" style={{ color: "#6B6B6B" }}>
                   Adolescence is the stage where identity is most vulnerable and peer influence is
                   strongest. Without structured confidence development, teenagers default to
-                  conformity — suppressing their authentic selves to fit in. The confidence building
+                  conformity - suppressing their authentic selves to fit in. The confidence building
                   approach at Hidden Potential gives teens practical tools to handle peer pressure,
                   make independent decisions, resist negative influence, and develop a stable sense
                   of self that does not depend on social approval. This is one of the most impactful
@@ -622,7 +622,7 @@ export default function ConfidenceBuildingPage() {
                   You are good at your job. Your technical skills are strong. But in meetings,
                   presentations, and leadership situations, you struggle to communicate your
                   competence with authority. This is one of the most common confidence gaps among
-                  professionals in Delhi NCR — and it is entirely trainable. The Communication
+                  professionals in Delhi NCR - and it is entirely trainable. The Communication
                   Mastery pathway addresses professional confidence specifically through leadership
                   communication training, executive presence development, and high-stakes
                   presentation practice.
@@ -656,7 +656,7 @@ export default function ConfidenceBuildingPage() {
                   navigating societal expectations, and managing role overload can erode confidence
                   at the identity level. Surface-level motivation does not fix this. The Self
                   Mastery for Women pathway at Hidden Potential rebuilds confidence from the
-                  foundation — through self-awareness, emotional regulation, boundary setting, and
+                  foundation - through self-awareness, emotional regulation, boundary setting, and
                   guided rediscovery of personal identity and purpose. This is structured
                   transformation, not a feel-good workshop.
                 </p>
@@ -686,7 +686,7 @@ export default function ConfidenceBuildingPage() {
                 </div>
                 <p className="text-sm leading-relaxed" style={{ color: "#6B6B6B" }}>
                   Changing careers, starting a business, relocating, ending a relationship, becoming
-                  a parent — every major life transition demands confidence in the face of
+                  a parent - every major life transition demands confidence in the face of
                   uncertainty. If you are navigating a transition and finding that self-doubt is
                   louder than it used to be, structured confidence development provides the tools
                   and accountability to move forward with clarity rather than paralysis.
@@ -713,7 +713,7 @@ export default function ConfidenceBuildingPage() {
                   Many parents in Delhi NCR recognise that their child&apos;s academic struggles are
                   rooted in confidence issues rather than intellectual ability. If your child avoids
                   participation, has difficulty making friends, struggles with self-expression, or
-                  shows signs of social anxiety — structured confidence building through the An
+                  shows signs of social anxiety - structured confidence building through the An
                   Enlightened Learner pathway can produce transformative results. Every child begins
                   with a skills assessment so development is targeted and measurable.
                 </p>
@@ -723,7 +723,7 @@ export default function ConfidenceBuildingPage() {
         </section>
 
         {/* ═══════════════════════════════════════════════════════════════
-            SECTION 5 — WHY DIFFERENT
+            SECTION 5 - WHY DIFFERENT
         ═══════════════════════════════════════════════════════════════ */}
         <section className="py-20 bg-[#F8F6F2]">
           <div className="max-w-6xl mx-auto px-6">
@@ -742,7 +742,7 @@ export default function ConfidenceBuildingPage() {
             >
               There are many personality development classes, motivation workshops, and confidence
               coaches in Delhi. Here is what makes the confidence building approach at Hidden
-              Potential fundamentally different — and why the results last longer.
+              Potential fundamentally different - and why the results last longer.
             </p>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -771,7 +771,7 @@ export default function ConfidenceBuildingPage() {
                 <p className="text-sm leading-relaxed" style={{ color: "#6B6B6B" }}>
                   Every learner begins with a structured pre-assessment that identifies their
                   specific confidence gaps across all six dimensions. The development pathway is
-                  then personalised to address your actual patterns — not a generic confidence
+                  then personalised to address your actual patterns - not a generic confidence
                   curriculum delivered identically to everyone. A student with public speaking
                   anxiety and a professional with leadership hesitation have different needs. Our
                   assessment ensures they receive different interventions.
@@ -802,7 +802,7 @@ export default function ConfidenceBuildingPage() {
                 </h3>
                 <p className="text-sm leading-relaxed" style={{ color: "#6B6B6B" }}>
                   Confidence is not built in a weekend. It is developed through consistent,
-                  structured practice over weeks and months — with progressive challenges,
+                  structured practice over weeks and months - with progressive challenges,
                   real-world application, and ongoing feedback. Our development pathways span 3
                   months (Foundation), 6 months (Growth), and 12 months (Mastery) because genuine
                   behavioural change requires time and reinforcement.
@@ -834,7 +834,7 @@ export default function ConfidenceBuildingPage() {
                 <p className="text-sm leading-relaxed" style={{ color: "#6B6B6B" }}>
                   You start with a documented baseline. You finish with a documented progress
                   report. Growth in self-awareness, communication confidence, assertiveness, and
-                  emotional regulation is visible and measurable — not assumed based on how you feel
+                  emotional regulation is visible and measurable - not assumed based on how you feel
                   after a workshop. This evidence-based approach is unique to Hidden Potential among
                   confidence building programs in Delhi.
                 </p>
@@ -864,9 +864,9 @@ export default function ConfidenceBuildingPage() {
                 </h3>
                 <p className="text-sm leading-relaxed mb-3" style={{ color: "#6B6B6B" }}>
                   Unlike programs that rely solely on practice and exposure, Hidden Potential
-                  integrates NLP techniques — confidence anchoring, belief restructuring, cognitive
-                  reframing, and emotional state management — to address confidence at the
-                  subconscious level. This means you are not just practising confident behaviour —
+                  integrates NLP techniques - confidence anchoring, belief restructuring, cognitive
+                  reframing, and emotional state management - to address confidence at the
+                  subconscious level. This means you are not just practising confident behaviour -
                   you are rewiring the belief patterns that created the hesitation in the first
                   place.
                 </p>
@@ -903,7 +903,7 @@ export default function ConfidenceBuildingPage() {
                 <p className="text-sm leading-relaxed" style={{ color: "#6B6B6B" }}>
                   Every confidence technique taught at Hidden Potential is practised in structured
                   exercises, tested in real-world scenarios, and refined through specific feedback.
-                  You do not sit in a lecture about confidence — you practise speaking, asserting,
+                  You do not sit in a lecture about confidence - you practise speaking, asserting,
                   leading, and expressing until the skill becomes natural. This is why our learners
                   maintain their confidence gains long after the program ends.
                 </p>
@@ -933,7 +933,7 @@ export default function ConfidenceBuildingPage() {
                 </h3>
                 <p className="text-sm leading-relaxed" style={{ color: "#6B6B6B" }}>
                   Supreet Kaur has spent over 14 years developing confidence in students,
-                  professionals, women, and future trainers — across 5000+ individuals, 200+
+                  professionals, women, and future trainers - across 5000+ individuals, 200+
                   certified trainers, and 1000+ structured workshops. This is not theoretical
                   confidence coaching. It is deeply experienced, refined through real-world Indian
                   contexts, and backed by measurable outcomes across age groups from 8 to 65.
@@ -944,7 +944,7 @@ export default function ConfidenceBuildingPage() {
         </section>
 
         {/* ═══════════════════════════════════════════════════════════════
-            SECTION 6 — FAQ
+            SECTION 6 - FAQ
         ═══════════════════════════════════════════════════════════════ */}
         <section className="py-20 bg-white">
           <div className="max-w-4xl mx-auto px-6">
@@ -971,12 +971,12 @@ export default function ConfidenceBuildingPage() {
                 </div>
                 <div className="px-6 py-5">
                   <p className="text-sm leading-relaxed" style={{ color: "#2D2D2D" }}>
-                    Low confidence is caused by a combination of factors — repeated negative
+                    Low confidence is caused by a combination of factors - repeated negative
                     experiences, critical feedback during formative years, comparison with peers,
                     lack of structured skill development, and limiting beliefs formed in childhood.
                     The good news is that confidence is not a fixed personality trait. Decades of
-                    research in behavioural psychology confirm that self-efficacy — the core of
-                    genuine confidence — is trainable through structured practice, competence
+                    research in behavioural psychology confirm that self-efficacy - the core of
+                    genuine confidence - is trainable through structured practice, competence
                     building, and cognitive restructuring. At Hidden Potential, we have seen
                     students, professionals, and women transform their confidence levels measurably
                     within 3 to 6 months of structured development.
@@ -1001,7 +1001,7 @@ export default function ConfidenceBuildingPage() {
                     and assessments for students aged 8 to 12, 13 to 16, and 17 to 21. Research
                     shows that confidence patterns established in childhood and adolescence have
                     lasting effects on academic performance, career success, and relationship
-                    quality. However, confidence is trainable at any age — we work with learners up
+                    quality. However, confidence is trainable at any age - we work with learners up
                     to age 65 across our various pathways.
                   </p>
                 </div>
@@ -1067,11 +1067,11 @@ export default function ConfidenceBuildingPage() {
                     Most personality development classes in Delhi offer a broad, surface-level
                     curriculum covering grooming, etiquette, public speaking, and general
                     motivation. Confidence building at Hidden Potential is fundamentally different
-                    in three ways: first, it is assessment-based — every learner starts with a
+                    in three ways: first, it is assessment-based - every learner starts with a
                     structured evaluation that identifies specific confidence gaps. Second, it uses
                     NLP-powered behavioural tools that address confidence at the subconscious belief
                     level, not just the behaviour level. Third, it follows structured developmental
-                    pathways spanning months with documented pre and post assessments — not a
+                    pathways spanning months with documented pre and post assessments - not a
                     10-session generic curriculum.
                   </p>
                 </div>
@@ -1092,7 +1092,7 @@ export default function ConfidenceBuildingPage() {
                     Confidence building program fees at Hidden Potential vary based on the
                     developmental pathway, level, and format. Individual sessions, group programs,
                     and integrated pathway options have different pricing structures. We recommend
-                    starting with a free life skills assessment — this identifies the right pathway
+                    starting with a free life skills assessment - this identifies the right pathway
                     and level for your specific needs, after which complete program details and
                     pricing are provided. Contact us or book an assessment to begin.
                   </p>
@@ -1103,7 +1103,7 @@ export default function ConfidenceBuildingPage() {
         </section>
 
         {/* ═══════════════════════════════════════════════════════════════
-            SECTION 7 — CTA
+            SECTION 7 - CTA
         ═══════════════════════════════════════════════════════════════ */}
         <section
           className="relative overflow-hidden py-24"
@@ -1127,12 +1127,12 @@ export default function ConfidenceBuildingPage() {
               Stop Waiting to Feel Confident. Start Building It.
             </h2>
             <p className="text-base text-white/65 mb-10 leading-relaxed">
-              Genuine confidence is not discovered — it is developed. It is the result of
+              Genuine confidence is not discovered - it is developed. It is the result of
               self-awareness, structured practice, honest feedback, and progressive challenge over
               time. At Hidden Potential in Dwarka, Delhi, every confidence journey begins with a
-              structured assessment that maps exactly where you are — and designs a clear pathway to
+              structured assessment that maps exactly where you are - and designs a clear pathway to
               where you want to be. Whether you choose the student pathway, the communication track,
-              the women&apos;s program, or individual coaching — the process is the same:
+              the women&apos;s program, or individual coaching - the process is the same:
               assessment, structured development, real-world practice, and documented growth.
             </p>
 
@@ -1167,7 +1167,7 @@ export default function ConfidenceBuildingPage() {
               >
                 Emotional Intelligence Coaching in Delhi
               </Link>{" "}
-              — the foundation that genuine confidence is built on
+              - the foundation that genuine confidence is built on
             </p>
 
             {/* Location line */}

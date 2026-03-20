@@ -76,9 +76,9 @@ const domainAccent = {
 } as const;
 
 const pathwayAccent = {
-  teal:  { dot: "bg-primary-teal",  label: "text-primary-teal",  border: "border-primary-teal/30"  },
-  gold:  { dot: "bg-primary-gold",  label: "text-primary-gold",  border: "border-primary-gold/40"  },
-  white: { dot: "bg-white/70",      label: "text-white",         border: "border-white/20"         },
+  teal:  { dot: "bg-white/70", label: "text-white", border: "border-white/20" },
+  gold:  { dot: "bg-white/70", label: "text-white", border: "border-white/20" },
+  white: { dot: "bg-white/70", label: "text-white", border: "border-white/20" },
 } as const;
 
 // ── Atom: ProgramSectionLabel ─────────────────────────────────────────────────
@@ -170,7 +170,7 @@ export function FormatBadge({ label }: { label: string }) {
 }
 
 // ── Molecule: DomainCard ──────────────────────────────────────────────────────
-// One of the 4 skill domain cards — coloured header + skills list
+// One of the 4 skill domain cards - coloured header + skills list
 
 export function DomainCard({ data }: { data: DomainCardData }) {
   const a = domainAccent[data.accent];
@@ -210,7 +210,7 @@ export function DomainCard({ data }: { data: DomainCardData }) {
 }
 
 // ── Molecule: PathwayLevelCard ────────────────────────────────────────────────
-// One of the 3 pathway levels — used inside a flex row with connectors between
+// One of the 3 pathway levels - used inside a flex row with connectors between
 
 export function PathwayLevelCard({ data }: { data: PathwayLevelData }) {
   const a = pathwayAccent[data.accent];

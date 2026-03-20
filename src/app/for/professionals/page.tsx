@@ -1,16 +1,16 @@
 /**
- * AUDIENCE PAGE — LIFE SKILLS TRAINING FOR PROFESSIONALS
+ * AUDIENCE PAGE - LIFE SKILLS TRAINING FOR PROFESSIONALS
  * ─────────────────────────────────────────────────────────────────────────────
  * Route: /for/professionals
  *
  * 7-section structure:
- *   Section 1  — HERO                       (dark gradient, H1, Lora italic, body, 2 CTAs, trust signals)
- *   Section 2  — THE PROFESSIONAL CHALLENGE (off-white, intro + 6 pain-point cards)
- *   Section 3  — RECOMMENDED PROGRAMS       (white, 8 program cards numbered 01–08)
- *   Section 4  — WHO SPECIFICALLY BENEFITS  (navy-light, 6 professional persona cards)
- *   Section 5  — WHY HIDDEN POTENTIAL       (off-white, 6 differentiator cards)
- *   Section 6  — FAQ                        (white, 6 Q&As)
- *   Section 7  — FINAL CTA                  (dark gradient, para, 2 CTAs, cross-sell, location line)
+ *   Section 1  - HERO                       (dark gradient, H1, Lora italic, body, 2 CTAs, trust signals)
+ *   Section 2  - THE PROFESSIONAL CHALLENGE (off-white, intro + 6 pain-point cards)
+ *   Section 3  - RECOMMENDED PROGRAMS       (white, 8 program cards numbered 01–08)
+ *   Section 4  - WHO SPECIFICALLY BENEFITS  (navy-light, 6 professional persona cards)
+ *   Section 5  - WHY HIDDEN POTENTIAL       (off-white, 6 differentiator cards)
+ *   Section 6  - FAQ                        (white, 6 Q&As)
+ *   Section 7  - FINAL CTA                  (dark gradient, para, 2 CTAs, cross-sell, location line)
  *
  * Schemas: Service + FAQPage + BreadcrumbList (all embedded as JSON-LD)
  */
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     "Life skills training for working professionals in Delhi NCR. NLP coaching, communication mastery, stress management, leadership development, corporate workshops. 14+ years. Supreet Kaur. Dwarka & online.",
   openGraph: {
     title:
-      "Life Skills Training for Professionals in Delhi — Career Growth Through Behavioural Mastery",
+      "Life Skills Training for Professionals in Delhi - Career Growth Through Behavioural Mastery",
     description:
       "NLP coaching, communication skills, stress management, and leadership programs for professionals in Delhi, Noida, Gurgaon, and Faridabad. 14+ years experience. Harvard-affiliated methodology.",
     type: "website",
@@ -98,7 +98,7 @@ const faqSchema = {
       name: "How is this different from corporate training my company provides?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Company-sponsored training is typically one-day or half-day sessions focused on team alignment or compliance. Hidden Potential's programs are structured across 8 to 12 weeks with individual assessment, NLP-based behavioural techniques, ongoing practice, and documented progress. The focus is on transforming your personal behavioural patterns — confidence, communication style, emotional regulation, leadership presence — not just providing information. This is individual transformation, not group compliance.",
+        text: "Company-sponsored training is typically one-day or half-day sessions focused on team alignment or compliance. Hidden Potential's programs are structured across 8 to 12 weeks with individual assessment, NLP-based behavioural techniques, ongoing practice, and documented progress. The focus is on transforming your personal behavioural patterns - confidence, communication style, emotional regulation, leadership presence - not just providing information. This is individual transformation, not group compliance.",
       },
     },
     {
@@ -106,7 +106,7 @@ const faqSchema = {
       name: "Will this help me get promoted or advance my career?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Career advancement beyond a certain level is almost entirely driven by behavioural competencies — how you communicate, how you handle pressure, how you lead, how you influence. Technical skills get you into the room. Life skills determine what happens next. Professionals who complete our NLP coaching and communication programs report measurable improvements in leadership presence, stakeholder management, and career confidence. We do not promise promotions, but we develop the skills that make them possible.",
+        text: "Career advancement beyond a certain level is almost entirely driven by behavioural competencies - how you communicate, how you handle pressure, how you lead, how you influence. Technical skills get you into the room. Life skills determine what happens next. Professionals who complete our NLP coaching and communication programs report measurable improvements in leadership presence, stakeholder management, and career confidence. We do not promise promotions, but we develop the skills that make them possible.",
       },
     },
     {
@@ -154,39 +154,39 @@ const painPoints = [
   {
     num: "01",
     title: "You Have the Technical Skills but Lack Executive Presence",
-    desc: "You know your domain. You deliver results. But in meetings, presentations, and leadership conversations, you struggle to command the room. Promotions go to people who communicate their value better, not necessarily to those who perform better. This is a communication and confidence gap — and it is fixable.",
+    desc: "You know your domain. You deliver results. But in meetings, presentations, and leadership conversations, you struggle to command the room. Promotions go to people who communicate their value better, not necessarily to those who perform better. This is a communication and confidence gap - and it is fixable.",
   },
   {
     num: "02",
     title: "Stress and Burnout Are Affecting Your Performance",
-    desc: "The relentless pace of corporate Delhi NCR — whether you are in Gurgaon's Cyber City, Noida's IT corridor, or South Delhi's professional circles — creates chronic stress that erodes decision-making, relationships, and health. Most professionals treat symptoms with vacations or lifestyle changes. NLP-based stress management addresses the root patterns driving your stress response.",
+    desc: "The relentless pace of corporate Delhi NCR - whether you are in Gurgaon's Cyber City, Noida's IT corridor, or South Delhi's professional circles - creates chronic stress that erodes decision-making, relationships, and health. Most professionals treat symptoms with vacations or lifestyle changes. NLP-based stress management addresses the root patterns driving your stress response.",
   },
   {
     num: "03",
     title: "Your Communication Creates Misunderstandings, Not Alignment",
-    desc: "Emails get misread. Feedback conversations become conflicts. Presentations fail to land. The gap between what you intend to communicate and what people actually receive is costing you — in relationships, in credibility, and in career momentum. Communication is a skill system, not a personality trait, and it can be systematically developed.",
+    desc: "Emails get misread. Feedback conversations become conflicts. Presentations fail to land. The gap between what you intend to communicate and what people actually receive is costing you - in relationships, in credibility, and in career momentum. Communication is a skill system, not a personality trait, and it can be systematically developed.",
   },
   {
     num: "04",
     title: "You React Emotionally Instead of Responding Strategically",
-    desc: "Defensive reactions to feedback. Frustration with team members. Anxiety before high-stakes conversations. Emotional regulation is not about suppressing feelings — it is about having the ability to choose your response under pressure. NLP-based emotional state management gives you this capability.",
+    desc: "Defensive reactions to feedback. Frustration with team members. Anxiety before high-stakes conversations. Emotional regulation is not about suppressing feelings - it is about having the ability to choose your response under pressure. NLP-based emotional state management gives you this capability.",
   },
   {
     num: "05",
     title: "You Feel Stuck Despite Working Hard",
-    desc: "Same role for years. Same patterns in different jobs. Same ceiling. If hard work alone drove career growth, you would already be where you want to be. The patterns keeping you stuck are usually subconscious belief systems — about your worth, your ability, your place in the hierarchy. NLP coaching identifies and rewires these specific patterns.",
+    desc: "Same role for years. Same patterns in different jobs. Same ceiling. If hard work alone drove career growth, you would already be where you want to be. The patterns keeping you stuck are usually subconscious belief systems - about your worth, your ability, your place in the hierarchy. NLP coaching identifies and rewires these specific patterns.",
   },
   {
     num: "06",
     title: "You Want to Transition into Training or Coaching",
-    desc: "Many experienced professionals want to leverage their expertise by becoming trainers, coaches, or facilitators. The Train the Trainer Certification at Hidden Potential provides a structured pathway — NLP integration, training methodology, content design, and delivery skills — with a recognised certification that opens new career doors.",
+    desc: "Many experienced professionals want to leverage their expertise by becoming trainers, coaches, or facilitators. The Train the Trainer Certification at Hidden Potential provides a structured pathway - NLP integration, training methodology, content design, and delivery skills - with a recognised certification that opens new career doors.",
   },
 ];
 
 const recommendedPrograms = [
   {
     num: "01",
-    title: "NLP Coaching — Individual Sessions",
+    title: "NLP Coaching - Individual Sessions",
     desc: "One-on-one behavioural transformation with Supreet Kaur. Identify the specific belief patterns limiting your professional growth and systematically rewire them. Covers confidence anchoring, leadership presence, decision-making clarity, and emotional state management. The most personalised and intensive option for professionals.",
     match: "Best for: Senior professionals, managers, entrepreneurs seeking deep individual transformation",
     linkHref: "/services/nlp-coaching",
@@ -195,7 +195,7 @@ const recommendedPrograms = [
   {
     num: "02",
     title: "Communication Mastery Program",
-    desc: "8 to 12 week structured program covering public speaking, executive communication, negotiation, conflict resolution, and NLP language patterns. Designed for professionals who need to communicate with impact — in meetings, presentations, stakeholder conversations, and team leadership.",
+    desc: "8 to 12 week structured program covering public speaking, executive communication, negotiation, conflict resolution, and NLP language patterns. Designed for professionals who need to communicate with impact - in meetings, presentations, stakeholder conversations, and team leadership.",
     match: "Best for: Mid-level to senior professionals, team leads, client-facing roles",
     linkHref: "/programs/communication-mastery",
     linkLabel: "Explore Communication Mastery \u2192",
@@ -203,7 +203,7 @@ const recommendedPrograms = [
   {
     num: "03",
     title: "Stress Management",
-    desc: "NLP-based stress management that goes beyond relaxation techniques. Learn to identify your specific stress triggers, restructure the belief patterns amplifying your stress response, and develop emotional state management tools you can use in real-time — before meetings, during conflicts, and under deadlines.",
+    desc: "NLP-based stress management that goes beyond relaxation techniques. Learn to identify your specific stress triggers, restructure the belief patterns amplifying your stress response, and develop emotional state management tools you can use in real-time - before meetings, during conflicts, and under deadlines.",
     match: "Best for: Corporate professionals in high-pressure roles, especially in Gurgaon and Noida IT corridors",
     linkHref: "/services/stress-management",
     linkLabel: "Explore Stress Management \u2192",
@@ -211,7 +211,7 @@ const recommendedPrograms = [
   {
     num: "04",
     title: "Confidence Building Program",
-    desc: "Structured confidence development using NLP anchoring, belief mapping, and progressive exposure techniques. Not motivational content — practical, repeatable tools that build genuine self-assurance over time. Particularly valuable for professionals preparing for leadership roles, career transitions, or higher-stakes environments.",
+    desc: "Structured confidence development using NLP anchoring, belief mapping, and progressive exposure techniques. Not motivational content - practical, repeatable tools that build genuine self-assurance over time. Particularly valuable for professionals preparing for leadership roles, career transitions, or higher-stakes environments.",
     match: "Best for: Professionals stepping into leadership, career changers, those preparing for senior roles",
     linkHref: "/services/confidence-building",
     linkLabel: "Explore Confidence Building \u2192",
@@ -275,7 +275,7 @@ const personas = [
   {
     num: "04",
     title: "Women Professionals Navigating Career Growth",
-    desc: "Women in Delhi NCR's professional landscape face unique challenges — from being heard in male-dominated meetings to rebuilding confidence after career breaks. Self Mastery for Women combined with communication and confidence programs creates a powerful professional development pathway.",
+    desc: "Women in Delhi NCR's professional landscape face unique challenges - from being heard in male-dominated meetings to rebuilding confidence after career breaks. Self Mastery for Women combined with communication and confidence programs creates a powerful professional development pathway.",
     linkHref: "/programs/self-mastery-women",
     linkLabel: "Explore Self Mastery for Women \u2192",
   },
@@ -298,7 +298,7 @@ const personas = [
 const differentiators = [
   {
     title: "Built for Professionals, Not Generic Audiences",
-    desc: "Our programs for professionals are not repurposed student content. The scenarios, exercises, language, and outcomes are designed for corporate and professional contexts — leadership challenges, workplace communication, stakeholder management, team dynamics, and career advancement.",
+    desc: "Our programs for professionals are not repurposed student content. The scenarios, exercises, language, and outcomes are designed for corporate and professional contexts - leadership challenges, workplace communication, stakeholder management, team dynamics, and career advancement.",
   },
   {
     title: "NLP-Based, Not Motivational",
@@ -310,7 +310,7 @@ const differentiators = [
   },
   {
     title: "Harvard-Affiliated Methodology with 14+ Years Applied Experience",
-    desc: "Supreet Kaur's Harvard-affiliated Life Skills certification, NLP practitioner training, and Masters in Psychology provide the methodological foundation. 14+ years of applying these tools with 5000+ individuals — including corporate teams across Delhi NCR — provides the practical depth.",
+    desc: "Supreet Kaur's Harvard-affiliated Life Skills certification, NLP practitioner training, and Masters in Psychology provide the methodological foundation. 14+ years of applying these tools with 5000+ individuals - including corporate teams across Delhi NCR - provides the practical depth.",
   },
   {
     title: "Measurable Outcomes, Not Feel-Good Sessions",
@@ -333,11 +333,11 @@ const faqs = [
   },
   {
     q: "How is this different from corporate training my company provides?",
-    a: "Company-sponsored training is typically one-day or half-day sessions focused on team alignment or compliance. Hidden Potential\u2019s programs are structured across 8 to 12 weeks with individual assessment, NLP-based behavioural techniques, ongoing practice, and documented progress. The focus is on transforming your personal behavioural patterns — confidence, communication style, emotional regulation, leadership presence — not just providing information. This is individual transformation, not group compliance.",
+    a: "Company-sponsored training is typically one-day or half-day sessions focused on team alignment or compliance. Hidden Potential\u2019s programs are structured across 8 to 12 weeks with individual assessment, NLP-based behavioural techniques, ongoing practice, and documented progress. The focus is on transforming your personal behavioural patterns - confidence, communication style, emotional regulation, leadership presence - not just providing information. This is individual transformation, not group compliance.",
   },
   {
     q: "Will this help me get promoted or advance my career?",
-    a: "Career advancement beyond a certain level is almost entirely driven by behavioural competencies — how you communicate, how you handle pressure, how you lead, how you influence. Technical skills get you into the room. Life skills determine what happens next. Professionals who complete our NLP coaching and communication programs report measurable improvements in leadership presence, stakeholder management, and career confidence. We do not promise promotions, but we develop the skills that make them possible.",
+    a: "Career advancement beyond a certain level is almost entirely driven by behavioural competencies - how you communicate, how you handle pressure, how you lead, how you influence. Technical skills get you into the room. Life skills determine what happens next. Professionals who complete our NLP coaching and communication programs report measurable improvements in leadership presence, stakeholder management, and career confidence. We do not promise promotions, but we develop the skills that make them possible.",
   },
   {
     q: "Do you offer individual coaching or only group programs?",
@@ -387,7 +387,7 @@ export default function ForProfessionalsPage() {
       />
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 1 — HERO
+          SECTION 1 - HERO
           Background: Dark navy-to-deep gradient
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
@@ -428,7 +428,7 @@ export default function ForProfessionalsPage() {
             className="text-3xl md:text-4xl lg:text-[2.75rem] font-extrabold text-white leading-tight mb-6 max-w-4xl mx-auto"
             style={{ textShadow: "0 1px 2px rgba(0,0,0,0.15)" }}
           >
-            Life Skills Training for Professionals in Delhi — Behavioural Mastery for Career Growth
+            Life Skills Training for Professionals in Delhi - Behavioural Mastery for Career Growth
           </h1>
 
           {/* Lora italic tagline */}
@@ -447,7 +447,7 @@ export default function ForProfessionalsPage() {
           <p className="text-base text-white/60 leading-relaxed mb-10 max-w-3xl mx-auto">
             You are accomplished. You have built real expertise and a track record that speaks for
             itself. But somewhere between where you are and where you know you could be, the gap is
-            not knowledge — it is behavioural. Communication under pressure. Confidence in
+            not knowledge - it is behavioural. Communication under pressure. Confidence in
             high-stakes rooms. Emotional regulation during conflict. Leadership presence that earns
             trust without demanding it. At Hidden Potential, life skills training for professionals
             in Delhi NCR uses NLP-based techniques developed by{" "}
@@ -459,7 +459,7 @@ export default function ForProfessionalsPage() {
             </Link>{" "}
             over 14+ years to rewire these specific patterns. Harvard-affiliated methodology.
             Structured programs available at our Dwarka, Delhi centre and fully online for
-            professionals across Noida, Gurgaon, and Faridabad. Not motivational workshops —
+            professionals across Noida, Gurgaon, and Faridabad. Not motivational workshops -
             structured behavioural transformation with measurable, documented outcomes.
           </p>
 
@@ -480,7 +480,7 @@ export default function ForProfessionalsPage() {
             </Link>
           </div>
 
-          {/* Trust signals — 5 items */}
+          {/* Trust signals - 5 items */}
           <div className="flex flex-wrap justify-center gap-x-5 gap-y-2 text-xs text-white/40">
             {[
               "14+ Years Experience",
@@ -499,7 +499,7 @@ export default function ForProfessionalsPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 2 — THE PROFESSIONAL CHALLENGE
+          SECTION 2 - THE PROFESSIONAL CHALLENGE
           Background: Off-white
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-off-white py-20">
@@ -510,7 +510,7 @@ export default function ForProfessionalsPage() {
               Why High-Performing Professionals in Delhi NCR Still Hit Career Ceilings
             </h2>
             <p className="text-base text-charcoal/75 leading-relaxed max-w-3xl">
-              Most professionals reaching mid-career in Delhi NCR share a common frustration —
+              Most professionals reaching mid-career in Delhi NCR share a common frustration -
               they work harder than ever but advancement stalls. The reason is almost never
               technical. The behavioural patterns that got you to this point are not the same
               patterns needed for the next level. Here is what we see most often among
@@ -518,7 +518,7 @@ export default function ForProfessionalsPage() {
             </p>
           </div>
 
-          {/* 6 pain-point cards — 2-column grid, audience card style */}
+          {/* 6 pain-point cards - 2-column grid, audience card style */}
           <div className="grid md:grid-cols-2 gap-5">
             {painPoints.map((p) => (
               <div
@@ -541,7 +541,7 @@ export default function ForProfessionalsPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 3 — RECOMMENDED PROGRAMS
+          SECTION 3 - RECOMMENDED PROGRAMS
           Background: White
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-white py-20">
@@ -572,7 +572,7 @@ export default function ForProfessionalsPage() {
             </div>
           </div>
 
-          {/* 8 program cards — 2-column grid, technique card style */}
+          {/* 8 program cards - 2-column grid, technique card style */}
           <div className="grid md:grid-cols-2 gap-5">
             {recommendedPrograms.map((p) => (
               <div
@@ -609,7 +609,7 @@ export default function ForProfessionalsPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 4 — WHO SPECIFICALLY BENEFITS
+          SECTION 4 - WHO SPECIFICALLY BENEFITS
           Background: Navy-light (#F3F0FF)
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-navy-light py-20">
@@ -623,11 +623,11 @@ export default function ForProfessionalsPage() {
               Life skills training at Hidden Potential serves professionals across industries,
               levels, and career stages. Whether you are a manager in Gurgaon&rsquo;s MNC belt,
               a tech founder in Noida, a woman navigating corporate Delhi, or an HR leader building
-              team capability — there is a program designed for your specific situation.
+              team capability - there is a program designed for your specific situation.
             </p>
           </div>
 
-          {/* 6 persona cards — 2-column grid */}
+          {/* 6 persona cards - 2-column grid */}
           <div className="grid md:grid-cols-2 gap-5">
             {personas.map((a) => (
               <div
@@ -656,7 +656,7 @@ export default function ForProfessionalsPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 5 — WHY HIDDEN POTENTIAL
+          SECTION 5 - WHY HIDDEN POTENTIAL
           Background: Off-white
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-off-white py-20">
@@ -673,7 +673,7 @@ export default function ForProfessionalsPage() {
             </p>
           </div>
 
-          {/* 6 differentiator cards — 3-column grid */}
+          {/* 6 differentiator cards - 3-column grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {differentiators.map((d) => (
               <div
@@ -709,7 +709,7 @@ export default function ForProfessionalsPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 6 — FAQ
+          SECTION 6 - FAQ
           Background: White
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-white py-20">
@@ -727,7 +727,7 @@ export default function ForProfessionalsPage() {
                 key={i}
                 className="card-service"
               >
-                {/* Question — teal left bar */}
+                {/* Question - teal left bar */}
                 <div
                   className="px-6 py-4 border-l-4 border-primary-teal"
                   style={{ background: "#F8F6F2" }}
@@ -765,7 +765,7 @@ export default function ForProfessionalsPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 7 — FINAL CTA
+          SECTION 7 - FINAL CTA
           Background: Dark navy gradient
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
@@ -790,7 +790,7 @@ export default function ForProfessionalsPage() {
           </h2>
 
           <p className="text-base text-white/60 leading-relaxed mb-10 max-w-2xl mx-auto">
-            The professionals who advance fastest are not always the most technically skilled —
+            The professionals who advance fastest are not always the most technically skilled -
             they are the ones who communicate with impact, lead with emotional intelligence, handle
             pressure with composure, and project confidence that earns trust. These are learnable
             skills. Supreet Kaur has spent 14+ years developing these capabilities in
@@ -816,6 +816,11 @@ export default function ForProfessionalsPage() {
             </Link>
           </div>
 
+          {/* Hybrid trust signal */}
+          <p className="text-sm text-white/50 mb-6">
+            All programs available online and in-person - choose what works for you.
+          </p>
+
           {/* Cross-sell */}
           <p className="text-xs text-white/40 mb-4">
             Also explore:{" "}
@@ -825,7 +830,7 @@ export default function ForProfessionalsPage() {
             >
               Life Skills Training for Young Adults
             </Link>{" "}
-            — for early-career professionals and recent graduates building foundational skills
+            - for early-career professionals and recent graduates building foundational skills
           </p>
 
           {/* Location line */}

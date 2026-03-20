@@ -6,7 +6,7 @@ import AnimateIn from "@/components/ui/AnimateIn";
 export const metadata: Metadata = {
   title: "Books by Supreet Kaur | Hidden Potential",
   description:
-    "Explore books by Supreet Kaur — 'An Enlightened Learner: A Toolkit To Become A Better Learner' and 'Discover Your Potential Book'. Life-transforming reads available on Amazon.",
+    "Explore books by Supreet Kaur - 'An Enlightened Learner: A Toolkit To Become A Better Learner' and 'Discover Your Potential Book'. Life-transforming reads available on Amazon.",
   alternates: { canonical: "https://hiddenpotentialskills.com/books" },
   openGraph: {
     title: "Books by Supreet Kaur | Hidden Potential",
@@ -71,7 +71,7 @@ const books = [
     image: "/gallery/08_Book/img-002.jpg",
     imageAlt: "Discover Your Potential Book and An Enlightened Learner by Supreet Kaur",
     description:
-      "An interactive workbook designed to help you uncover hidden strengths and build a life of intentional growth. Covering physical wellness, mental fitness, goal-setting, and mindfulness — this hands-on guide turns self-discovery into daily structured action.",
+      "An interactive workbook designed to help you uncover hidden strengths and build a life of intentional growth. Covering physical wellness, mental fitness, goal-setting, and mindfulness - this hands-on guide turns self-discovery into daily structured action.",
     themes: [
       "Physical Wellness & Body Confidence",
       "Mental Fitness & Brain Health",
@@ -180,7 +180,7 @@ export default function BooksPage() {
             </AnimateIn>
           </div>
 
-          {/* Hero image — both books on marble */}
+          {/* Hero image - both books on marble */}
           <AnimateIn delay={0.25}>
             <div
               className="relative rounded-2xl overflow-hidden shadow-2xl"
@@ -243,7 +243,7 @@ export default function BooksPage() {
                 >
                   <div className="grid md:grid-cols-[380px_1fr]">
 
-                    {/* Photo — natural, no tinting */}
+                    {/* Photo - natural, no tinting */}
                     <div className="relative min-h-[280px] md:min-h-0 overflow-hidden">
                       <Image
                         src={book.image}

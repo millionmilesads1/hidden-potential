@@ -4,13 +4,13 @@ import GalleryClient from "./GalleryClient";
 // ── SEO Metadata ──────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: "Gallery | Hidden Potential — Life Skills Training in Delhi",
+  title: "Gallery | Hidden Potential - Life Skills Training in Delhi",
   description:
     "Photo gallery of Hidden Potential's workshops, trainings, events and student journeys across Delhi NCR. 14+ years of transforming lives captured in one place.",
   openGraph: {
-    title: "Gallery — Hidden Potential Life Skills Academy",
+    title: "Gallery - Hidden Potential Life Skills Academy",
     description:
-      "Glimpses of transformation — school workshops, corporate trainings, art therapy and more from Hidden Potential's 14+ year journey.",
+      "Glimpses of transformation - school workshops, corporate trainings, art therapy and more from Hidden Potential's 14+ year journey.",
     type: "website",
     url: "https://hiddenpotentialskills.com/gallery",
   },

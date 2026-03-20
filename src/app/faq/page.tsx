@@ -1,20 +1,20 @@
 /**
- * SUPPORTING PAGE — FAQ
+ * SUPPORTING PAGE - FAQ
  * ─────────────────────────────────────────────────────────────────────────────
  * Route: /faq
  *
- * Comprehensive FAQ resource — NOT the short FAQ section from individual
+ * Comprehensive FAQ resource - NOT the short FAQ section from individual
  * service pages. Covers all 26 questions across 6 categories.
  *
  * Custom 4-section layout:
- *   Section 1 — HERO              (dark gradient, H1, Lora italic, body, CTA, trust)
- *   Section 2 — CATEGORY NAV      (off-white, horizontal anchor pill nav)
- *   Section 3 — FAQ CATEGORIES    (white, 6 anchored category blocks)
- *   Section 4 — BOTTOM CTA        (dark gradient, 2 CTAs, cross-sell, location line)
+ *   Section 1 - HERO              (dark gradient, H1, Lora italic, body, CTA, trust)
+ *   Section 2 - CATEGORY NAV      (off-white, horizontal anchor pill nav)
+ *   Section 3 - FAQ CATEGORIES    (white, 6 anchored category blocks)
+ *   Section 4 - BOTTOM CTA        (dark gradient, 2 CTAs, cross-sell, location line)
  *
  * Schemas: FAQPage (all 26 Q&As) + BreadcrumbList
  *
- * Primary keyword: "life skills training in Delhi" — 10+ mentions
+ * Primary keyword: "life skills training in Delhi" - 10+ mentions
  * Location signals: 15+ across all sections
  */
 
@@ -23,11 +23,11 @@ import Link from "next/link";
 
 // ── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: { absolute: "FAQ | Life Skills Training in Delhi — All Your Questions Answered | Hidden Potential" },
+  title: { absolute: "FAQ | Life Skills Training in Delhi - All Your Questions Answered | Hidden Potential" },
   description:
     "Frequently asked questions about life skills training at Hidden Potential in Delhi. Programs, pricing, duration, online options, certifications, NLP coaching, school programs. Everything you need to know.",
   openGraph: {
-    title: "FAQ — Life Skills Training Questions Answered | Hidden Potential Delhi",
+    title: "FAQ - Life Skills Training Questions Answered | Hidden Potential Delhi",
     description:
       "Complete FAQ: programs, pricing, online options, certifications, NLP coaching, school programs, corporate workshops. Hidden Potential, Dwarka, Delhi NCR.",
     type: "website",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   },
 };
 
-// ── Schema: FAQPage — ALL 26 questions ───────────────────────────────────────
+// ── Schema: FAQPage - ALL 26 questions ───────────────────────────────────────
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -55,7 +55,7 @@ const faqSchema = {
       name: "What is Hidden Potential Skills?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Hidden Potential Skills is a life skills training organisation founded by Supreet Kaur, based in Dwarka, Delhi. We offer structured, NLP-based programs for students, professionals, women, aspiring trainers, schools, and corporates across Delhi NCR — including Noida, Gurgaon, and Faridabad. With 14+ years of experience, 5000+ individuals trained, and 200+ certified trainers, we provide assessment-based developmental pathways that produce measurable, lasting transformation.",
+        text: "Hidden Potential Skills is a life skills training organisation founded by Supreet Kaur, based in Dwarka, Delhi. We offer structured, NLP-based programs for students, professionals, women, aspiring trainers, schools, and corporates across Delhi NCR - including Noida, Gurgaon, and Faridabad. With 14+ years of experience, 5000+ individuals trained, and 200+ certified trainers, we provide assessment-based developmental pathways that produce measurable, lasting transformation.",
       },
     },
     {
@@ -63,7 +63,7 @@ const faqSchema = {
       name: "Who is Supreet Kaur?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Supreet Kaur is the founder and lead trainer at Hidden Potential Skills. She is a certified NLP practitioner, holds a Harvard-affiliated Life Skills certification, a Masters in Psychology, and Graphology certification from the American Board. She created the An Enlightened Learner program — the signature student development framework. With 14+ years of experience and recognition as a Josh Talks speaker, Supreet has trained 5000+ individuals and certified 200+ trainers across Delhi NCR.",
+        text: "Supreet Kaur is the founder and lead trainer at Hidden Potential Skills. She is a certified NLP practitioner, holds a Harvard-affiliated Life Skills certification, a Masters in Psychology, and Graphology certification from the American Board. She created the An Enlightened Learner program - the signature student development framework. With 14+ years of experience and recognition as a Josh Talks speaker, Supreet has trained 5000+ individuals and certified 200+ trainers across Delhi NCR.",
       },
     },
     {
@@ -96,7 +96,7 @@ const faqSchema = {
       name: "What is the An Enlightened Learner program?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "An Enlightened Learner is Supreet Kaur's signature program — a comprehensive life skills development pathway designed for students aged 8 to 21, with three age-appropriate sub-groups (8–12, 13–16, and 17–21). It covers confidence building, communication skills, emotional intelligence, study techniques, goal setting, and exam resilience using NLP-based methods. It is the most complete starting point for personal transformation at Hidden Potential.",
+        text: "An Enlightened Learner is Supreet Kaur's signature program - a comprehensive life skills development pathway designed for students aged 8 to 21, with three age-appropriate sub-groups (8–12, 13–16, and 17–21). It covers confidence building, communication skills, emotional intelligence, study techniques, goal setting, and exam resilience using NLP-based methods. It is the most complete starting point for personal transformation at Hidden Potential.",
       },
     },
     {
@@ -104,7 +104,7 @@ const faqSchema = {
       name: "What is NLP coaching and how does it work?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "NLP — Neuro-Linguistic Programming — is a methodology that helps you understand and change the subconscious patterns driving your behaviour, emotions, and beliefs. At Hidden Potential, NLP coaching is delivered by certified practitioner Supreet Kaur and is integrated into all programs. Techniques include confidence anchoring, belief restructuring, cognitive reframing, language patterns, and emotional state management. NLP is not taught as a standalone weekend course — it is embedded into structured developmental pathways for lasting results.",
+        text: "NLP - Neuro-Linguistic Programming - is a methodology that helps you understand and change the subconscious patterns driving your behaviour, emotions, and beliefs. At Hidden Potential, NLP coaching is delivered by certified practitioner Supreet Kaur and is integrated into all programs. Techniques include confidence anchoring, belief restructuring, cognitive reframing, language patterns, and emotional state management. NLP is not taught as a standalone weekend course - it is embedded into structured developmental pathways for lasting results.",
       },
     },
     {
@@ -170,7 +170,7 @@ const faqSchema = {
       name: "Can I attend online from anywhere in India?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. All programs are available online through live, interactive video sessions — not pre-recorded content. The online experience uses the same structured methodology, NLP techniques, and assessment process as in-person training at our Dwarka centre. Clients from across India and sometimes internationally attend our online programs.",
+        text: "Yes. All programs are available online through live, interactive video sessions - not pre-recorded content. The online experience uses the same structured methodology, NLP techniques, and assessment process as in-person training at our Dwarka centre. Clients from across India and sometimes internationally attend our online programs.",
       },
     },
     {
@@ -203,7 +203,7 @@ const faqSchema = {
       name: "How do you measure progress and results?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Every learner begins with a structured pre-assessment that documents current confidence levels, communication patterns, emotional regulation, and other relevant metrics. At program completion, a post-assessment measures documented change. Growth is visible and quantifiable — not assumed based on subjective feedback. Schools receive detailed student progress reports.",
+        text: "Every learner begins with a structured pre-assessment that documents current confidence levels, communication patterns, emotional regulation, and other relevant metrics. At program completion, a post-assessment measures documented change. Growth is visible and quantifiable - not assumed based on subjective feedback. Schools receive detailed student progress reports.",
       },
     },
     {
@@ -219,7 +219,7 @@ const faqSchema = {
       name: "How quickly will I see results?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Most participants report noticeable shifts within the first 4 to 6 sessions — increased self-awareness, improved confidence in specific situations, and better emotional regulation. Lasting behavioural transformation requires the full program duration with consistent practice. This is why we offer structured pathways rather than one-day workshops.",
+        text: "Most participants report noticeable shifts within the first 4 to 6 sessions - increased self-awareness, improved confidence in specific situations, and better emotional regulation. Lasting behavioural transformation requires the full program duration with consistent practice. This is why we offer structured pathways rather than one-day workshops.",
       },
     },
     {
@@ -286,14 +286,14 @@ const breadcrumbSchema = {
   ],
 };
 
-// ── FAQ Data — structured by category ────────────────────────────────────────
+// ── FAQ Data - structured by category ────────────────────────────────────────
 
 const faqCategories = [
   {
     id: "about",
     navLabel: "About",
     sectionLabel: "About Hidden Potential",
-    h2: "About Hidden Potential — Who We Are and Where We Are",
+    h2: "About Hidden Potential - Who We Are and Where We Are",
     faqs: [
       {
         q: "What is Hidden Potential Skills?",
@@ -309,7 +309,7 @@ const faqCategories = [
             </Link>
             , based in Dwarka, Delhi. We offer structured, NLP-based programs
             for students, professionals, women, aspiring trainers, schools, and
-            corporates across Delhi NCR — including Noida, Gurgaon, and
+            corporates across Delhi NCR - including Noida, Gurgaon, and
             Faridabad. With 14+ years of experience, 5000+ individuals trained,
             and 200+ certified trainers, we provide assessment-based
             developmental pathways that produce measurable, lasting
@@ -337,7 +337,7 @@ const faqCategories = [
             >
               An Enlightened Learner
             </Link>{" "}
-            program — the signature student development framework. With 14+
+            program - the signature student development framework. With 14+
             years of experience and recognition as a Josh Talks speaker,
             Supreet has trained 5000+ individuals and certified 200+ trainers
             across Delhi NCR.
@@ -459,7 +459,7 @@ const faqCategories = [
             >
               An Enlightened Learner
             </Link>{" "}
-            is Supreet Kaur&apos;s signature program — a comprehensive life
+            is Supreet Kaur&apos;s signature program - a comprehensive life
             skills development pathway designed for students aged 8 to 21, with
             three age-appropriate sub-groups (8–12, 13–16, and 17–21). It covers
             confidence building, communication skills, emotional intelligence,
@@ -473,7 +473,7 @@ const faqCategories = [
         q: "What is NLP coaching and how does it work?",
         a: (
           <>
-            NLP — Neuro-Linguistic Programming — is a methodology that helps
+            NLP - Neuro-Linguistic Programming - is a methodology that helps
             you understand and change the subconscious patterns driving your
             behaviour, emotions, and beliefs. At Hidden Potential,{" "}
             <Link
@@ -486,7 +486,7 @@ const faqCategories = [
             integrated into all programs. Techniques include confidence
             anchoring, belief restructuring, cognitive reframing, language
             patterns, and emotional state management. NLP is not taught as a
-            standalone weekend course — it is embedded into structured
+            standalone weekend course - it is embedded into structured
             developmental pathways for lasting results.
           </>
         ),
@@ -611,7 +611,7 @@ const faqCategories = [
       },
       {
         q: "Can I attend online from anywhere in India?",
-        a: "Yes. All programs are available online through live, interactive video sessions — not pre-recorded content. The online experience uses the same structured methodology, NLP techniques, and assessment process as in-person training at our Dwarka centre. Clients from across India and sometimes internationally attend our online programs.",
+        a: "Yes. All programs are available online through live, interactive video sessions - not pre-recorded content. The online experience uses the same structured methodology, NLP techniques, and assessment process as in-person training at our Dwarka centre. Clients from across India and sometimes internationally attend our online programs.",
       },
       {
         q: "Do you offer weekend batches?",
@@ -690,7 +690,7 @@ const faqCategories = [
             documents current confidence levels, communication patterns,
             emotional regulation, and other relevant metrics. At program
             completion, a post-assessment measures documented change. Growth is
-            visible and quantifiable — not assumed based on subjective feedback.
+            visible and quantifiable - not assumed based on subjective feedback.
             Schools receive detailed student progress reports. Learn more at our{" "}
             <Link
               href="/assessment"
@@ -722,7 +722,7 @@ const faqCategories = [
       },
       {
         q: "How quickly will I see results?",
-        a: "Most participants report noticeable shifts within the first 4 to 6 sessions — increased self-awareness, improved confidence in specific situations, and better emotional regulation. Lasting behavioural transformation requires the full program duration with consistent practice. This is why we offer structured pathways rather than one-day workshops.",
+        a: "Most participants report noticeable shifts within the first 4 to 6 sessions - increased self-awareness, improved confidence in specific situations, and better emotional regulation. Lasting behavioural transformation requires the full program duration with consistent practice. This is why we offer structured pathways rather than one-day workshops.",
       },
       {
         q: "Is there support after the program ends?",
@@ -852,7 +852,7 @@ export default function FaqPage() {
       />
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 1 — HERO
+          SECTION 1 - HERO
           Background: Dark navy-to-deep gradient
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
@@ -894,7 +894,7 @@ export default function FaqPage() {
             className="text-3xl md:text-4xl lg:text-[2.75rem] font-extrabold text-white leading-tight mb-6 max-w-4xl mx-auto"
             style={{ textShadow: "0 1px 2px rgba(0,0,0,0.15)" }}
           >
-            Frequently Asked Questions — Life Skills Training in Delhi
+            Frequently Asked Questions - Life Skills Training in Delhi
           </h1>
 
           {/* Lora italic tagline */}
@@ -912,7 +912,7 @@ export default function FaqPage() {
 
           {/* Body */}
           <p className="text-base text-white/60 leading-relaxed mb-10 max-w-3xl mx-auto">
-            Hidden Potential offers life skills training in Delhi NCR —
+            Hidden Potential offers life skills training in Delhi NCR -
             including{" "}
             <Link
               href="/services/nlp-coaching"
@@ -941,7 +941,7 @@ export default function FaqPage() {
             >
               trainer certification
             </Link>{" "}
-            — guided by{" "}
+            - guided by{" "}
             <Link
               href="/about"
               className="text-white/80 hover:text-white underline underline-offset-2 transition-colors"
@@ -984,7 +984,7 @@ export default function FaqPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 2 — CATEGORY NAVIGATION
+          SECTION 2 - CATEGORY NAVIGATION
           Background: Off-white
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-off-white py-8 border-b border-gray-200 sticky top-[72px] z-30">
@@ -1008,7 +1008,7 @@ export default function FaqPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 3 — FAQ CATEGORIES
+          SECTION 3 - FAQ CATEGORIES
           Background: White
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-white py-20">
@@ -1025,14 +1025,14 @@ export default function FaqPage() {
                   </h2>
                 </div>
 
-                {/* FAQ cards — same style as nlp-coaching FAQ section */}
+                {/* FAQ cards - same style as nlp-coaching FAQ section */}
                 <div className="flex flex-col gap-5">
                   {cat.faqs.map((faq, faqIdx) => (
                     <div
                       key={faqIdx}
                       className="rounded-lg border border-gray-200 bg-white shadow-sm overflow-hidden"
                     >
-                      {/* Question — teal left border, off-white bg */}
+                      {/* Question - teal left border, off-white bg */}
                       <div
                         className="px-6 py-4 border-l-4 border-primary-teal"
                         style={{ background: "#F8F6F2" }}
@@ -1080,7 +1080,7 @@ export default function FaqPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 4 — BOTTOM CTA
+          SECTION 4 - BOTTOM CTA
           Background: Dark navy gradient
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
@@ -1116,7 +1116,7 @@ export default function FaqPage() {
             and the Hidden Potential team respond within 24 hours. Whether you
             are a parent exploring student programs, a professional considering
             NLP coaching, a school evaluating partnerships, or an organisation
-            planning workshops — we are based in Dwarka, Delhi and serve Noida,
+            planning workshops - we are based in Dwarka, Delhi and serve Noida,
             Gurgaon, Faridabad, and pan-India online. We are here to guide you.
           </p>
 

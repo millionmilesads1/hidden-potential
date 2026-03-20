@@ -4,7 +4,7 @@
  * ───────────────
  * Thin "use client" wrapper that supplies the nav items (which include Lucide
  * icon functions) to TubelightNav. This wrapper MUST be a Client Component
- * because Lucide icons are function references — they cannot be passed as
+ * because Lucide icons are function references - they cannot be passed as
  * props from a Server Component across the RSC/Client boundary.
  *
  * Shown only on mobile (md:hidden in layout.tsx).

@@ -1,7 +1,7 @@
 "use client";
 
 /**
- * AnimatedProgramsGrid — Bento grid of program cards with:
+ * AnimatedProgramsGrid - Bento grid of program cards with:
  *   • Staggered entrance from y:80 (0.15s between cards)
  *   • Hover: scale 1.05, y: -6, shadow lift (spring physics)
  *   • Tap: scale 0.98
@@ -11,6 +11,7 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import Link from "next/link";
+import { MagicCard } from "@/components/magicui/magic-card";
 
 export type ProgramCard = {
   name: string;
@@ -78,10 +79,11 @@ export default function AnimatedProgramsGrid({
   return (
     <div ref={ref} className="grid grid-cols-1 md:grid-cols-6 gap-4">
 
-      {/* AEL — Featured, 4/6 cols, taller */}
+      {/* AEL - Featured, 4/6 cols, taller */}
+      <MagicCard className="md:col-span-4 rounded-2xl overflow-visible" gradientColor="#7C3AED" gradientOpacity={0.07}>
       <MotionLink
         href={programs[0].href}
-        className={`group relative md:col-span-4 rounded-2xl p-8 flex flex-col justify-between ${programs[0].hoverClass}`}
+        className={`group relative w-full rounded-2xl p-8 flex flex-col justify-between ${programs[0].hoverClass}`}
         style={{
           background: programs[0].lightBg,
           border: `1px solid ${programs[0].borderBase}`,
@@ -109,8 +111,9 @@ export default function AnimatedProgramsGrid({
             <span
               className="text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider"
               style={{
-                background: `${programs[0].accent}18`,
-                color: programs[0].accent,
+                background: "rgba(200,169,81,0.12)",
+                color: "#C8A951",
+                border: "1px solid rgba(200,169,81,0.25)",
                 fontFamily: "var(--font-body)",
               }}
             >
@@ -165,11 +168,13 @@ export default function AnimatedProgramsGrid({
           <Chevron />
         </div>
       </MotionLink>
+      </MagicCard>
 
-      {/* Communication — 2/6 cols */}
+      {/* Communication - 2/6 cols */}
+      <MagicCard className="md:col-span-2 rounded-2xl overflow-visible" gradientColor="#7C3AED" gradientOpacity={0.07}>
       <MotionLink
         href={programs[1].href}
-        className={`group relative md:col-span-2 rounded-2xl p-7 flex flex-col justify-between ${programs[1].hoverClass}`}
+        className={`group relative w-full rounded-2xl p-7 flex flex-col justify-between ${programs[1].hoverClass}`}
         style={{
           background: programs[1].lightBg,
           border: `1px solid ${programs[1].borderBase}`,
@@ -196,8 +201,9 @@ export default function AnimatedProgramsGrid({
           <span
             className="text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4 inline-block"
             style={{
-              background: `${programs[1].accent}18`,
-              color: programs[1].accent,
+              background: "rgba(200,169,81,0.12)",
+              color: "#C8A951",
+              border: "1px solid rgba(200,169,81,0.25)",
               fontFamily: "var(--font-body)",
             }}
           >
@@ -231,13 +237,14 @@ export default function AnimatedProgramsGrid({
           Explore <Chevron size="3.5" />
         </div>
       </MotionLink>
+      </MagicCard>
 
-      {/* Row 2: Women, TTT, Art Therapy — 2 cols each */}
+      {/* Row 2: Women, TTT, Art Therapy - 2 cols each */}
       {programs.slice(2).map((prog, idx) => (
+        <MagicCard key={prog.name} className="md:col-span-2 rounded-2xl overflow-visible" gradientColor="#7C3AED" gradientOpacity={0.07}>
         <MotionLink
-          key={prog.name}
           href={prog.href}
-          className={`group relative md:col-span-2 rounded-2xl p-7 flex flex-col justify-between ${prog.hoverClass}`}
+          className={`group relative w-full rounded-2xl p-7 flex flex-col justify-between ${prog.hoverClass}`}
           style={{
             background: prog.lightBg,
             border: `1px solid ${prog.borderBase}`,
@@ -264,8 +271,9 @@ export default function AnimatedProgramsGrid({
             <span
               className="text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4 inline-block"
               style={{
-                background: `${prog.accent}18`,
-                color: prog.accent,
+                background: "rgba(200,169,81,0.12)",
+                color: "#C8A951",
+                border: "1px solid rgba(200,169,81,0.25)",
                 fontFamily: "var(--font-body)",
               }}
             >
@@ -299,6 +307,7 @@ export default function AnimatedProgramsGrid({
             Explore <Chevron size="3.5" />
           </div>
         </MotionLink>
+        </MagicCard>
       ))}
     </div>
   );

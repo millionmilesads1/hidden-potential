@@ -1,5 +1,5 @@
 /**
- * SUPPORTING PAGE — BOOKS & RESOURCES
+ * SUPPORTING PAGE - BOOKS & RESOURCES
  * ─────────────────────────────────────────────────────────────────────────────
  * Route: /resources
  *
@@ -7,11 +7,11 @@
  * recommended reading, and free resources from Hidden Potential.
  *
  * Custom 5-section layout:
- *   Section 1 — HERO                  (dark gradient)
- *   Section 2 — BOOKS BY SUPREET KAUR (off-white, book cards)
- *   Section 3 — RECOMMENDED READING   (white, 10 book cards in 2-col grid)
- *   Section 4 — FREE RESOURCES        (navy-light, 5 resource cards)
- *   Section 5 — BOTTOM CTA            (dark gradient)
+ *   Section 1 - HERO                  (dark gradient)
+ *   Section 2 - BOOKS BY SUPREET KAUR (off-white, book cards)
+ *   Section 3 - RECOMMENDED READING   (white, 10 book cards in 2-col grid)
+ *   Section 4 - FREE RESOURCES        (navy-light, 5 resource cards)
+ *   Section 5 - BOTTOM CTA            (dark gradient)
  *
  * Schemas: CollectionPage + BreadcrumbList
  */
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   description:
     "Recommended books and resources on life skills, NLP, emotional intelligence, and personal development. Curated by Supreet Kaur, founder of Hidden Potential. Free resources and reading lists for students, professionals, and trainers.",
   openGraph: {
-    title: "Books & Resources — Curated by Supreet Kaur | Hidden Potential",
+    title: "Books & Resources - Curated by Supreet Kaur | Hidden Potential",
     description:
       "Life skills, NLP, emotional intelligence, communication, and personal development books and resources. Curated by a certified NLP practitioner with 14+ years experience.",
     type: "website",
@@ -111,7 +111,7 @@ const supreetBooks = [
     image: "/gallery/08_Book/img-002.jpg",
     imageAlt: "Discover Your Potential Book and An Enlightened Learner by Supreet Kaur",
     description:
-      "An interactive workbook designed to help you uncover hidden strengths and build a life of intentional growth. Covering physical wellness, mental fitness, goal-setting, and mindfulness — this hands-on guide turns self-discovery into daily structured action.",
+      "An interactive workbook designed to help you uncover hidden strengths and build a life of intentional growth. Covering physical wellness, mental fitness, goal-setting, and mindfulness - this hands-on guide turns self-discovery into daily structured action.",
     themes: [
       "Physical Wellness & Body Confidence",
       "Mental Fitness & Brain Health",
@@ -308,7 +308,7 @@ export default function ResourcesPage() {
       />
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 1 — HERO
+          SECTION 1 - HERO
           Background: Dark navy-to-deep gradient
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
@@ -350,7 +350,7 @@ export default function ResourcesPage() {
             className="text-3xl md:text-4xl lg:text-[2.75rem] font-extrabold text-white leading-tight mb-6 max-w-4xl mx-auto"
             style={{ textShadow: "0 1px 2px rgba(0,0,0,0.15)" }}
           >
-            Books &amp; Resources — Life Skills, NLP &amp; Personal Development
+            Books &amp; Resources - Life Skills, NLP &amp; Personal Development
           </h1>
 
           {/* Lora italic tagline */}
@@ -427,7 +427,7 @@ export default function ResourcesPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 2 — BOOKS BY SUPREET KAUR
+          SECTION 2 - BOOKS BY SUPREET KAUR
           Background: Off-white
           ⚠️  PLACEHOLDER SECTION
           Replace ALL book fields with real client-provided details.
@@ -609,7 +609,7 @@ export default function ResourcesPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 3 — RECOMMENDED READING
+          SECTION 3 - RECOMMENDED READING
           Background: White
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-white py-20">
@@ -630,11 +630,11 @@ export default function ResourcesPage() {
               and form the intellectual foundation behind Hidden Potential&apos;s
               training methodology in Delhi NCR. Each book is tagged with the
               program it most closely supports. These are reading suggestions only
-              — no affiliate links.
+              - no affiliate links.
             </p>
           </div>
 
-          {/* 10 book cards — 2-column grid */}
+          {/* 10 book cards - 2-column grid */}
           <div className="grid md:grid-cols-2 gap-5">
             {recommendedBooks.map((book) => (
               <div
@@ -664,7 +664,7 @@ export default function ResourcesPage() {
                   {book.description}
                 </p>
 
-                {/* Recommended for — italic muted, links to program */}
+                {/* Recommended for - italic muted, links to program */}
                 <p className="text-xs text-charcoal/45 italic leading-relaxed">
                   Recommended for:{" "}
                   <Link
@@ -681,7 +681,7 @@ export default function ResourcesPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 4 — FREE RESOURCES
+          SECTION 4 - FREE RESOURCES
           Background: Navy-light (#F3F0FF)
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-navy-light py-20">
@@ -694,19 +694,19 @@ export default function ResourcesPage() {
             <p className="text-base text-charcoal/70 leading-relaxed max-w-3xl">
               Beyond reading, Hidden Potential provides practical tools, guides,
               and resources to help you begin or deepen your life skills journey
-              — whether you are a student in Delhi, a professional in Gurgaon, a
+              - whether you are a student in Delhi, a professional in Gurgaon, a
               school administrator in Noida, or an HR manager in Faridabad.
             </p>
           </div>
 
-          {/* 5 resource cards — 2-col to 3-col grid */}
+          {/* 5 resource cards - 2-col to 3-col grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {freeResources.map((r) => (
               <div
                 key={r.title}
                 className="bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow p-6 flex flex-col relative"
               >
-                {/* Type badge — top right */}
+                {/* Type badge - top right */}
                 <span
                   className="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wider text-primary-teal bg-teal-light px-2 py-0.5 rounded-full"
                 >
@@ -737,7 +737,7 @@ export default function ResourcesPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 5 — BOTTOM CTA
+          SECTION 5 - BOTTOM CTA
           Background: Dark navy gradient
       ═══════════════════════════════════════════════════════════════════════ */}
       <section

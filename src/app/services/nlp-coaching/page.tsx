@@ -1,16 +1,16 @@
 /**
- * SERVICE PAGE — NLP COACHING
+ * SERVICE PAGE - NLP COACHING
  * ─────────────────────────────────────────────────────────────────────────────
  * Route: /services/nlp-coaching
  *
  * 7-section structure:
- *   Section 1  — HERO                (dark gradient, H1, Lora italic, body para, 2 CTAs, trust signals)
- *   Section 2  — WHAT IS NLP         (off-white, 3 explanatory paragraphs)
- *   Section 3  — WHAT YOU'LL LEARN   (white, 8 technique cards numbered 01–08)
- *   Section 4  — WHO IT'S FOR        (navy-light, 6 audience cards, some with links)
- *   Section 5  — WHY DIFFERENT       (off-white, 6 differentiator cards)
- *   Section 6  — FAQ                 (white, 6 Q&As with FAQPage schema)
- *   Section 7  — CTA                 (dark gradient, para, 2 CTAs, cross-sell, location line)
+ *   Section 1  - HERO                (dark gradient, H1, Lora italic, body para, 2 CTAs, trust signals)
+ *   Section 2  - WHAT IS NLP         (off-white, 3 explanatory paragraphs)
+ *   Section 3  - WHAT YOU'LL LEARN   (white, 8 technique cards numbered 01–08)
+ *   Section 4  - WHO IT'S FOR        (navy-light, 6 audience cards, some with links)
+ *   Section 5  - WHY DIFFERENT       (off-white, 6 differentiator cards)
+ *   Section 6  - FAQ                 (white, 6 Q&As with FAQPage schema)
+ *   Section 7  - CTA                 (dark gradient, para, 2 CTAs, cross-sell, location line)
  *
  * Schemas: Service + FAQPage (both embedded as JSON-LD)
  */
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   description:
     "NLP coaching in Delhi by certified practitioner with 14+ years experience. Rewire limiting beliefs, build confidence anchors & transform behavioural patterns. Dwarka, South Delhi & Online.",
   openGraph: {
-    title: "NLP Coaching in Delhi — Rewire Beliefs & Unlock Behavioral Change",
+    title: "NLP Coaching in Delhi - Rewire Beliefs & Unlock Behavioral Change",
     description:
       "Certified NLP coaching in Delhi by Supreet Kaur. 14+ years experience. Integrated into structured life skills pathways for lasting behavioural change. Dwarka, South Delhi & Online.",
     type: "website",
@@ -74,7 +74,7 @@ const faqSchema = {
       name: "What is NLP coaching and how is it different from therapy?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "NLP coaching focuses on identifying and changing specific behavioural patterns, belief systems, and emotional responses using structured techniques. Unlike traditional therapy, which often explores the history and emotional context of issues over extended periods, NLP coaching is outcome-focused and technique-driven — meaning you learn practical tools that produce measurable changes in confidence, communication, and emotional regulation within weeks, not years. At Hidden Potential, NLP coaching is integrated into structured life skills pathways for sustained development.",
+        text: "NLP coaching focuses on identifying and changing specific behavioural patterns, belief systems, and emotional responses using structured techniques. Unlike traditional therapy, which often explores the history and emotional context of issues over extended periods, NLP coaching is outcome-focused and technique-driven - meaning you learn practical tools that produce measurable changes in confidence, communication, and emotional regulation within weeks, not years. At Hidden Potential, NLP coaching is integrated into structured life skills pathways for sustained development.",
       },
     },
     {
@@ -82,7 +82,7 @@ const faqSchema = {
       name: "How many sessions of NLP coaching do I need to see results?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Most learners report noticeable shifts in confidence, emotional regulation, and self-awareness within the first 4 to 6 sessions. However, lasting behavioural change requires consistent practice and reinforcement — which is why Hidden Potential integrates NLP into structured 3-month, 6-month, and 12-month developmental pathways rather than offering it as a one-time workshop. The pre-assessment and post-assessment process ensures your progress is documented and measurable.",
+        text: "Most learners report noticeable shifts in confidence, emotional regulation, and self-awareness within the first 4 to 6 sessions. However, lasting behavioural change requires consistent practice and reinforcement - which is why Hidden Potential integrates NLP into structured 3-month, 6-month, and 12-month developmental pathways rather than offering it as a one-time workshop. The pre-assessment and post-assessment process ensures your progress is documented and measurable.",
       },
     },
     {
@@ -106,7 +106,7 @@ const faqSchema = {
       name: "Can NLP coaching help with exam anxiety and academic performance?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Exam anxiety is typically driven by specific belief patterns — such as fear of failure, negative self-image, or catastrophic thinking — combined with poor emotional state management. NLP techniques like anchoring, reframing, and belief restructuring directly address these patterns. Many students in the An Enlightened Learner program at Hidden Potential report significant improvements in exam confidence and academic focus after learning NLP-based tools.",
+        text: "Yes. Exam anxiety is typically driven by specific belief patterns - such as fear of failure, negative self-image, or catastrophic thinking - combined with poor emotional state management. NLP techniques like anchoring, reframing, and belief restructuring directly address these patterns. Many students in the An Enlightened Learner program at Hidden Potential report significant improvements in exam confidence and academic focus after learning NLP-based tools.",
       },
     },
     {
@@ -114,7 +114,7 @@ const faqSchema = {
       name: "How much does NLP coaching cost in Delhi?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "NLP coaching fees at Hidden Potential vary based on the program pathway and format. Individual sessions, group programs, and integrated pathway options have different pricing structures. We recommend starting with a free life skills assessment — this helps identify the right pathway and level for your needs, after which full program details and pricing are shared. Contact us directly or book an assessment to learn more.",
+        text: "NLP coaching fees at Hidden Potential vary based on the program pathway and format. Individual sessions, group programs, and integrated pathway options have different pricing structures. We recommend starting with a free life skills assessment - this helps identify the right pathway and level for your needs, after which full program details and pricing are shared. Contact us directly or book an assessment to learn more.",
       },
     },
   ],
@@ -126,42 +126,42 @@ const techniques = [
   {
     num: "01",
     title: "Foundations of Neuro-Linguistic Programming",
-    desc: "Understand how your brain processes information, how language shapes perception, and how repeated experiences create automatic behavioural patterns. This foundation helps you see your own operating system clearly — the first step toward changing it. Most people go through life unaware that their reactions are programmed responses, not conscious choices.",
+    desc: "Understand how your brain processes information, how language shapes perception, and how repeated experiences create automatic behavioural patterns. This foundation helps you see your own operating system clearly - the first step toward changing it. Most people go through life unaware that their reactions are programmed responses, not conscious choices.",
   },
   {
     num: "02",
     title: "Belief System Mapping & Identification",
-    desc: "Every person carries a set of core beliefs about themselves, their abilities, money, relationships, and the world. Many of these beliefs were formed in childhood and operate below conscious awareness. NLP belief mapping helps you identify the specific limiting beliefs that are holding you back — whether it is \u2018I am not good enough to speak in public\u2019 or \u2018People like me don\u2019t succeed.\u2019 Identification is the essential first step before any rewiring can happen.",
+    desc: "Every person carries a set of core beliefs about themselves, their abilities, money, relationships, and the world. Many of these beliefs were formed in childhood and operate below conscious awareness. NLP belief mapping helps you identify the specific limiting beliefs that are holding you back - whether it is \u2018I am not good enough to speak in public\u2019 or \u2018People like me don\u2019t succeed.\u2019 Identification is the essential first step before any rewiring can happen.",
   },
   {
     num: "03",
     title: "Confidence Anchoring Techniques",
-    desc: "Anchoring is one of NLP\u2019s most powerful tools. It allows you to associate a specific physical trigger with a positive emotional state — so you can access confidence, calm, or focus on demand. This technique is used by athletes before competitions, speakers before presentations, and professionals before high-stakes meetings. At Hidden Potential, we teach anchoring through repeated structured practice until it becomes automatic.",
+    desc: "Anchoring is one of NLP\u2019s most powerful tools. It allows you to associate a specific physical trigger with a positive emotional state - so you can access confidence, calm, or focus on demand. This technique is used by athletes before competitions, speakers before presentations, and professionals before high-stakes meetings. At Hidden Potential, we teach anchoring through repeated structured practice until it becomes automatic.",
   },
   {
     num: "04",
     title: "Cognitive Reframing for Mindset Transformation",
-    desc: "Reframing is the NLP technique that changes how you interpret events, setbacks, and criticism. The event itself does not change — but your neurological and emotional response to it transforms completely. A student who fails an exam can interpret it as proof of inadequacy, or as specific feedback showing exactly what to study next. Reframing trains your brain to default to the interpretation that serves your growth.",
+    desc: "Reframing is the NLP technique that changes how you interpret events, setbacks, and criticism. The event itself does not change - but your neurological and emotional response to it transforms completely. A student who fails an exam can interpret it as proof of inadequacy, or as specific feedback showing exactly what to study next. Reframing trains your brain to default to the interpretation that serves your growth.",
   },
   {
     num: "05",
     title: "Language Patterns for Influence and Clarity",
-    desc: "The words you use — with others and with yourself — shape your reality more than most people realise. NLP language patterns teach you to communicate with precision, influence without manipulation, and eliminate the self-defeating language that undermines your confidence. This is particularly valuable for professionals, leaders, trainers, and anyone whose effectiveness depends on how they communicate.",
+    desc: "The words you use - with others and with yourself - shape your reality more than most people realise. NLP language patterns teach you to communicate with precision, influence without manipulation, and eliminate the self-defeating language that undermines your confidence. This is particularly valuable for professionals, leaders, trainers, and anyone whose effectiveness depends on how they communicate.",
   },
   {
     num: "06",
     title: "Subconscious Reprogramming Methods",
-    desc: "Many of our most persistent habits and emotional reactions are driven by subconscious programming — patterns set in place by past experiences that now run automatically. NLP provides structured techniques to access and modify these subconscious programs, replacing anxiety responses with calm, replacing hesitation with decisive action, and replacing self-doubt with grounded self-assurance.",
+    desc: "Many of our most persistent habits and emotional reactions are driven by subconscious programming - patterns set in place by past experiences that now run automatically. NLP provides structured techniques to access and modify these subconscious programs, replacing anxiety responses with calm, replacing hesitation with decisive action, and replacing self-doubt with grounded self-assurance.",
   },
   {
     num: "07",
     title: "Emotional State Management",
-    desc: "Your emotional state directly affects your performance, decision-making, and relationships. NLP state management techniques give you the ability to consciously shift your emotional state — from anxious to focused, from overwhelmed to clear, from reactive to composed. This is not about suppressing emotions — it is about developing the ability to choose your response instead of being controlled by automatic reactions.",
+    desc: "Your emotional state directly affects your performance, decision-making, and relationships. NLP state management techniques give you the ability to consciously shift your emotional state - from anxious to focused, from overwhelmed to clear, from reactive to composed. This is not about suppressing emotions - it is about developing the ability to choose your response instead of being controlled by automatic reactions.",
   },
   {
     num: "08",
     title: "Applied NLP in Life Skills Training",
-    desc: "For educators, coaches, and aspiring trainers pursuing the Train the Trainer Certification at Hidden Potential, NLP integration is a dedicated module. You will learn to embed NLP techniques directly into life skills sessions — using anchoring to build student confidence, reframing to shift limiting academic mindsets, and language patterns to create engaging, transformational training experiences.",
+    desc: "For educators, coaches, and aspiring trainers pursuing the Train the Trainer Certification at Hidden Potential, NLP integration is a dedicated module. You will learn to embed NLP techniques directly into life skills sessions - using anchoring to build student confidence, reframing to shift limiting academic mindsets, and language patterns to create engaging, transformational training experiences.",
     linkHref: "/programs/train-the-trainer",
     linkLabel: "Explore Train the Trainer Certification \u2192",
   },
@@ -183,49 +183,49 @@ const audiences = [
   {
     num: "03",
     title: "Aspiring Life Skills Trainers",
-    desc: "If you are pursuing the Train the Trainer Certification at Hidden Potential, NLP integration is not optional — it is a core module. You will learn to apply NLP tools within your own training sessions, making you a significantly more effective facilitator than trainers without this skill set. Over 200 trainers have been developed through this certification.",
+    desc: "If you are pursuing the Train the Trainer Certification at Hidden Potential, NLP integration is not optional - it is a core module. You will learn to apply NLP tools within your own training sessions, making you a significantly more effective facilitator than trainers without this skill set. Over 200 trainers have been developed through this certification.",
     linkHref: "/programs/train-the-trainer",
     linkLabel: "Explore Train the Trainer Certification \u2192",
   },
   {
     num: "04",
     title: "Women Rebuilding Confidence and Identity",
-    desc: "Women aged 28 and above who have spent years suppressing their own needs, opinions, and ambitions often carry deeply ingrained limiting beliefs about their worth and capability. NLP coaching provides the tools to identify these belief patterns — many of which were formed through years of societal conditioning — and systematically replace them with empowering alternatives. This work is integrated into the Self Mastery for Women pathway.",
+    desc: "Women aged 28 and above who have spent years suppressing their own needs, opinions, and ambitions often carry deeply ingrained limiting beliefs about their worth and capability. NLP coaching provides the tools to identify these belief patterns - many of which were formed through years of societal conditioning - and systematically replace them with empowering alternatives. This work is integrated into the Self Mastery for Women pathway.",
     linkHref: "/programs/self-mastery-women",
     linkLabel: "Explore Self Mastery for Women \u2192",
   },
   {
     num: "05",
     title: "Individuals Stuck in Repetitive Negative Patterns",
-    desc: "If you find yourself hitting the same walls repeatedly — the same relationship conflicts, the same career plateaus, the same emotional reactions — it is almost always a subconscious pattern at work. NLP coaching helps you identify the specific loop, understand its origin, and install a new pattern that serves your growth instead of blocking it.",
+    desc: "If you find yourself hitting the same walls repeatedly - the same relationship conflicts, the same career plateaus, the same emotional reactions - it is almost always a subconscious pattern at work. NLP coaching helps you identify the specific loop, understand its origin, and install a new pattern that serves your growth instead of blocking it.",
   },
   {
     num: "06",
     title: "Educators and School Counsellors",
-    desc: "Teachers and school counsellors in Delhi NCR who want to go beyond traditional classroom management and actually transform student behaviour. NLP tools like anchoring, reframing, and language patterns are powerful additions to any educator\u2019s toolkit — especially when aligned with NEP 2020 life skills requirements.",
+    desc: "Teachers and school counsellors in Delhi NCR who want to go beyond traditional classroom management and actually transform student behaviour. NLP tools like anchoring, reframing, and language patterns are powerful additions to any educator\u2019s toolkit - especially when aligned with NEP 2020 life skills requirements.",
   },
 ];
 
 const differentiators = [
   {
     title: "Integrated, Not Isolated",
-    desc: "NLP is not taught as a standalone weekend course. It is integrated into structured developmental pathways — meaning the techniques are practised, reinforced, and applied across months of guided development. A weekend NLP workshop gives you information. An integrated NLP pathway gives you transformation.",
+    desc: "NLP is not taught as a standalone weekend course. It is integrated into structured developmental pathways - meaning the techniques are practised, reinforced, and applied across months of guided development. A weekend NLP workshop gives you information. An integrated NLP pathway gives you transformation.",
   },
   {
     title: "Assessment-Based Personalisation",
-    desc: "Every learner begins with a structured pre-assessment that identifies their specific belief patterns, confidence gaps, and behavioural challenges. NLP coaching is then personalised to address your actual patterns — not generic content delivered to a room of 50 people.",
+    desc: "Every learner begins with a structured pre-assessment that identifies their specific belief patterns, confidence gaps, and behavioural challenges. NLP coaching is then personalised to address your actual patterns - not generic content delivered to a room of 50 people.",
   },
   {
     title: "14+ Years of Applied Experience",
-    desc: "Supreet Kaur has spent over 14 years integrating NLP into life skills training across 5000+ individuals, 200+ certified trainers, and 1000+ workshops. This is not newly certified NLP — it is deeply experienced, tested, and refined through real-world application with Indian learners.",
+    desc: "Supreet Kaur has spent over 14 years integrating NLP into life skills training across 5000+ individuals, 200+ certified trainers, and 1000+ workshops. This is not newly certified NLP - it is deeply experienced, tested, and refined through real-world application with Indian learners.",
   },
   {
     title: "Structured Practice, Not Just Theory",
-    desc: "Every NLP technique taught at Hidden Potential is practised in structured exercises, applied to real-life scenarios, and reinforced through ongoing feedback. You do not just learn what anchoring is — you practise it until it becomes an automatic tool you can use under pressure.",
+    desc: "Every NLP technique taught at Hidden Potential is practised in structured exercises, applied to real-life scenarios, and reinforced through ongoing feedback. You do not just learn what anchoring is - you practise it until it becomes an automatic tool you can use under pressure.",
   },
   {
     title: "Measurable Progress Through Pre and Post Assessment",
-    desc: "You begin with a documented baseline. You end with a documented progress report. Growth in confidence, communication, belief patterns, and emotional regulation is visible and measurable — not assumed based on how you feel after a session.",
+    desc: "You begin with a documented baseline. You end with a documented progress report. Growth in confidence, communication, belief patterns, and emotional regulation is visible and measurable - not assumed based on how you feel after a session.",
   },
   {
     title: "Recognised Credentials",
@@ -236,11 +236,11 @@ const differentiators = [
 const faqs = [
   {
     q: "What is NLP coaching and how is it different from therapy?",
-    a: "NLP coaching focuses on identifying and changing specific behavioural patterns, belief systems, and emotional responses using structured techniques. Unlike traditional therapy, which often explores the history and emotional context of issues over extended periods, NLP coaching is outcome-focused and technique-driven — meaning you learn practical tools that produce measurable changes in confidence, communication, and emotional regulation within weeks, not years. At Hidden Potential, NLP coaching is integrated into structured life skills pathways for sustained development.",
+    a: "NLP coaching focuses on identifying and changing specific behavioural patterns, belief systems, and emotional responses using structured techniques. Unlike traditional therapy, which often explores the history and emotional context of issues over extended periods, NLP coaching is outcome-focused and technique-driven - meaning you learn practical tools that produce measurable changes in confidence, communication, and emotional regulation within weeks, not years. At Hidden Potential, NLP coaching is integrated into structured life skills pathways for sustained development.",
   },
   {
     q: "How many sessions of NLP coaching do I need to see results?",
-    a: "Most learners report noticeable shifts in confidence, emotional regulation, and self-awareness within the first 4 to 6 sessions. However, lasting behavioural change requires consistent practice and reinforcement — which is why Hidden Potential integrates NLP into structured 3-month, 6-month, and 12-month developmental pathways rather than offering it as a one-time workshop. The pre-assessment and post-assessment process ensures your progress is documented and measurable.",
+    a: "Most learners report noticeable shifts in confidence, emotional regulation, and self-awareness within the first 4 to 6 sessions. However, lasting behavioural change requires consistent practice and reinforcement - which is why Hidden Potential integrates NLP into structured 3-month, 6-month, and 12-month developmental pathways rather than offering it as a one-time workshop. The pre-assessment and post-assessment process ensures your progress is documented and measurable.",
   },
   {
     q: "Is NLP coaching available online or only in Delhi?",
@@ -252,11 +252,11 @@ const faqs = [
   },
   {
     q: "Can NLP coaching help with exam anxiety and academic performance?",
-    a: "Yes. Exam anxiety is typically driven by specific belief patterns — such as fear of failure, negative self-image, or catastrophic thinking — combined with poor emotional state management. NLP techniques like anchoring, reframing, and belief restructuring directly address these patterns. Many students in the An Enlightened Learner program at Hidden Potential report significant improvements in exam confidence and academic focus after learning NLP-based tools.",
+    a: "Yes. Exam anxiety is typically driven by specific belief patterns - such as fear of failure, negative self-image, or catastrophic thinking - combined with poor emotional state management. NLP techniques like anchoring, reframing, and belief restructuring directly address these patterns. Many students in the An Enlightened Learner program at Hidden Potential report significant improvements in exam confidence and academic focus after learning NLP-based tools.",
   },
   {
     q: "How much does NLP coaching cost in Delhi?",
-    a: "NLP coaching fees at Hidden Potential vary based on the program pathway and format. Individual sessions, group programs, and integrated pathway options have different pricing structures. We recommend starting with a free life skills assessment — this helps identify the right pathway and level for your needs, after which full program details and pricing are shared. Contact us directly or book an assessment to learn more.",
+    a: "NLP coaching fees at Hidden Potential vary based on the program pathway and format. Individual sessions, group programs, and integrated pathway options have different pricing structures. We recommend starting with a free life skills assessment - this helps identify the right pathway and level for your needs, after which full program details and pricing are shared. Contact us directly or book an assessment to learn more.",
   },
 ];
 
@@ -294,7 +294,7 @@ export default function NlpCoachingPage() {
       />
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 1 — HERO
+          SECTION 1 - HERO
           Background: Dark navy-to-deep gradient
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
@@ -335,7 +335,7 @@ export default function NlpCoachingPage() {
             className="text-3xl md:text-4xl lg:text-[2.75rem] font-extrabold text-white leading-tight mb-6 max-w-4xl mx-auto"
             style={{ textShadow: "0 1px 2px rgba(0,0,0,0.15)" }}
           >
-            NLP Coaching in Delhi — Rewire Beliefs &amp; Unlock Behavioral Change
+            NLP Coaching in Delhi - Rewire Beliefs &amp; Unlock Behavioral Change
           </h1>
 
           {/* Lora italic tagline */}
@@ -355,11 +355,11 @@ export default function NlpCoachingPage() {
             Neuro-Linguistic Programming is one of the most effective behavioural transformation
             tools used worldwide by therapists, coaches, educators, and high-performance
             professionals. At Hidden Potential, NLP coaching in Delhi is not delivered as an
-            isolated technique or a weekend workshop — it is embedded into structured life skills
+            isolated technique or a weekend workshop - it is embedded into structured life skills
             pathways that produce lasting, measurable change. Whether you are a student dealing
             with self-doubt, a professional navigating career pressure, or a woman rebuilding
             confidence after years of suppressed expression, NLP provides the tools to identify
-            the root belief patterns driving your behaviour — and permanently rewire them.
+            the root belief patterns driving your behaviour - and permanently rewire them.
           </p>
 
           {/* CTAs */}
@@ -397,7 +397,7 @@ export default function NlpCoachingPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 2 — WHAT IS NLP
+          SECTION 2 - WHAT IS NLP
           Background: Off-white
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-off-white py-20">
@@ -409,7 +409,7 @@ export default function NlpCoachingPage() {
 
           <div className="flex flex-col gap-6 text-base text-charcoal leading-relaxed">
             <p>
-              NLP — Neuro-Linguistic Programming — is a methodology that explores the connection
+              NLP - Neuro-Linguistic Programming - is a methodology that explores the connection
               between neurological processes (neuro), language patterns (linguistic), and
               behavioural habits learned through experience (programming). Developed in the 1970s
               by Richard Bandler and John Grinder, NLP has since become one of the most widely
@@ -418,7 +418,7 @@ export default function NlpCoachingPage() {
             </p>
             <p>
               In simple terms, NLP coaching helps you understand why you think, feel, and behave
-              the way you do — and gives you practical techniques to change those patterns at the
+              the way you do - and gives you practical techniques to change those patterns at the
               subconscious level. Unlike traditional talk therapy or motivational approaches, NLP
               works directly with the neurological and linguistic structures that create your
               habits, fears, beliefs, and emotional responses.
@@ -431,9 +431,9 @@ export default function NlpCoachingPage() {
               >
                 Supreet Kaur
               </Link>{" "}
-              — a certified NLP practitioner with over 14 years of experience integrating
+              - a certified NLP practitioner with over 14 years of experience integrating
               neuro-linguistic programming into structured life skills training. This is not
-              theoretical NLP — every technique is applied, practised, and reinforced through
+              theoretical NLP - every technique is applied, practised, and reinforced through
               real-world exercises, structured feedback, and ongoing developmental pathways.
             </p>
           </div>
@@ -441,7 +441,7 @@ export default function NlpCoachingPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 3 — WHAT YOU'LL LEARN
+          SECTION 3 - WHAT YOU'LL LEARN
           Background: White
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-white py-20">
@@ -453,13 +453,13 @@ export default function NlpCoachingPage() {
             </h2>
             <p className="text-base text-charcoal/75 leading-relaxed max-w-3xl">
               Our NLP coaching covers both foundational concepts and advanced application
-              techniques. Every tool is taught through structured practice — not just explained
+              techniques. Every tool is taught through structured practice - not just explained
               in theory. Here is what you will learn through NLP coaching at Hidden Potential
               in Dwarka, Delhi.
             </p>
           </div>
 
-          {/* 8 technique cards — 2-column grid */}
+          {/* 8 technique cards - 2-column grid */}
           <div className="grid md:grid-cols-2 gap-5">
             {techniques.map((t) => (
               <div
@@ -494,7 +494,7 @@ export default function NlpCoachingPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 4 — WHO IT'S FOR
+          SECTION 4 - WHO IT'S FOR
           Background: Navy-light (#F3F0FF)
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-navy-light py-20">
@@ -506,13 +506,13 @@ export default function NlpCoachingPage() {
             </h2>
             <p className="text-base text-charcoal/75 leading-relaxed max-w-3xl">
               NLP coaching at Hidden Potential in Dwarka, Delhi is designed to serve a wide range
-              of individuals — from students as young as 13 to working professionals, women in
+              of individuals - from students as young as 13 to working professionals, women in
               transition, and aspiring life skills trainers. The techniques are universal, but the
               application is always personalised based on a structured pre-assessment.
             </p>
           </div>
 
-          {/* 6 audience cards — 2-column grid */}
+          {/* 6 audience cards - 2-column grid */}
           <div className="grid md:grid-cols-2 gap-5">
             {audiences.map((a) => (
               <div
@@ -546,7 +546,7 @@ export default function NlpCoachingPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 5 — WHY HIDDEN POTENTIAL IS DIFFERENT
+          SECTION 5 - WHY HIDDEN POTENTIAL IS DIFFERENT
           Background: Off-white
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-off-white py-20">
@@ -563,7 +563,7 @@ export default function NlpCoachingPage() {
             </p>
           </div>
 
-          {/* 6 differentiator cards — 3-column grid */}
+          {/* 6 differentiator cards - 3-column grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {differentiators.map((d) => (
               <div
@@ -599,7 +599,7 @@ export default function NlpCoachingPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 6 — FAQ
+          SECTION 6 - FAQ
           Background: White
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-white py-20">
@@ -617,7 +617,7 @@ export default function NlpCoachingPage() {
                 key={i}
                 className="card-service"
               >
-                {/* Question — teal left bar */}
+                {/* Question - teal left bar */}
                 <div
                   className="px-6 py-4 border-l-4 border-primary-teal"
                   style={{ background: "#F8F6F2" }}
@@ -655,7 +655,7 @@ export default function NlpCoachingPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 7 — FINAL CTA
+          SECTION 7 - FINAL CTA
           Background: Dark navy gradient
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
@@ -681,9 +681,9 @@ export default function NlpCoachingPage() {
 
           <p className="text-base text-white/60 leading-relaxed mb-10 max-w-2xl mx-auto">
             NLP coaching at Hidden Potential in Dwarka, Delhi begins with understanding where you
-            are — through a structured assessment that maps your current belief patterns,
+            are - through a structured assessment that maps your current belief patterns,
             confidence levels, and behavioural challenges. From there, you receive a personalised
-            pathway designed to produce measurable transformation — not just temporary motivation.
+            pathway designed to produce measurable transformation - not just temporary motivation.
             Whether you choose individual NLP coaching sessions or a structured developmental
             pathway, the process is the same: assessment, structured practice, real-world
             application, and documented progress.
@@ -715,7 +715,7 @@ export default function NlpCoachingPage() {
             >
               Confidence Building in Delhi
             </Link>{" "}
-            — structured self-assurance development powered by NLP techniques
+            - structured self-assurance development powered by NLP techniques
           </p>
 
           {/* Location line */}

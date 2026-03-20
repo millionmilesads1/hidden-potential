@@ -221,7 +221,7 @@ export default function PrivacyPage() {
                 <p>If you have questions about this Privacy Policy or wish to exercise your rights, please contact us:</p>
                 <div className="mt-4 bg-off-white rounded-lg border border-gray-200 p-5 space-y-1.5">
                   <p><strong className="text-charcoal">Hidden Potential</strong></p>
-                  <p>D-802, Palm Court Apartment, Plot 3, Sector 19B, Dwarka, South West Delhi — 110075</p>
+                  <p>D-802, Palm Court Apartment, Plot 3, Sector 19B, Dwarka, South West Delhi - 110075</p>
                   <p>
                     Email:{' '}
                     <a href="mailto:hiddenpotential2030@gmail.com" className="text-primary-teal hover:text-teal-dark underline underline-offset-2 transition-colors">

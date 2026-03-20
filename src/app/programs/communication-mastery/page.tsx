@@ -1,17 +1,17 @@
 /**
- * PROGRAM PAGE — COMMUNICATION MASTERY
+ * PROGRAM PAGE - COMMUNICATION MASTERY
  * ─────────────────────────────────────────────────────────────────────────────
  * Route: /programs/communication-mastery
  *
  * 7-section structure (identical template to An Enlightened Learner):
- *   Section 1  — HERO             (navy gradient, H1, Lora tagline, age badge, 2 CTAs)
- *   Section 2  — WHAT IT DELIVERS (off-white, 5 outcomes, gold callout, framework)
- *   Section 3  — WHO IT'S FOR     (white, 5 audience cards + program reach callout)
- *   Section 4  — KEY AREAS        (off-white, 10 skill chips + 4 domain cards)
- *   Section 5  — PATHWAY          (navy dark, 3 level cards + connectors)
- *   Section 6  — ASSESSMENT       (white, 5-step timeline + quote callout)
- *   Section 7a — OUTCOMES+FORMAT  (off-white, outcome bullets + format badges)
- *   Section 7b — FINAL CTA        (<ProgramCTASection> shared component)
+ *   Section 1  - HERO             (navy gradient, H1, Lora tagline, age badge, 2 CTAs)
+ *   Section 2  - WHAT IT DELIVERS (off-white, 5 outcomes, gold callout, framework)
+ *   Section 3  - WHO IT'S FOR     (white, 5 audience cards + program reach callout)
+ *   Section 4  - KEY AREAS        (off-white, 10 skill chips + 4 domain cards)
+ *   Section 5  - PATHWAY          (navy dark, 3 level cards + connectors)
+ *   Section 6  - ASSESSMENT       (white, 5-step timeline + quote callout)
+ *   Section 7a - OUTCOMES+FORMAT  (off-white, outcome bullets + format badges)
+ *   Section 7b - FINAL CTA        (<ProgramCTASection> shared component)
  */
 
 import type { Metadata } from "next";
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   description:
     "Structured communication & leadership development. Public speaking, voice modulation, assertive communication & professional expression. Pre & post assessment. Delhi NCR.",
   openGraph: {
-    title: "Communication Mastery — Structured Communication & Leadership Training",
+    title: "Communication Mastery - Structured Communication & Leadership Training",
     description:
       "Public speaking, voice modulation, leadership presence & professional communication for ages 8–65. Three levels: Foundation, Growth, Mastery. Assessment-based placement.",
     type: "website",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Communication Mastery — Structured Communication & Leadership Training",
+    title: "Communication Mastery - Structured Communication & Leadership Training",
     description:
       "Public speaking, voice modulation, leadership presence & professional communication for ages 8–65. Assessment-based placement. Delhi NCR.",
   },
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
 const schema = {
   "@context": "https://schema.org",
   "@type": "Course",
-  name: "Communication Mastery — Structured Communication & Leadership Training",
+  name: "Communication Mastery - Structured Communication & Leadership Training",
   description:
     "Structured communication and leadership development program for ages 8–65. Covers public speaking, voice modulation, professional communication, assertiveness, body language, and leadership expression.",
   url: "https://hiddenpotentialskills.com/programs/communication-mastery",
@@ -84,7 +84,7 @@ const schema = {
   hasCourseInstance: [
     {
       "@type": "CourseInstance",
-      name: "HP Foundation Level — Core Communication Skills",
+      name: "HP Foundation Level - Core Communication Skills",
       courseMode: ["onsite", "online", "blended"],
       duration: "P3M",
       locationCreated: {
@@ -98,13 +98,13 @@ const schema = {
     },
     {
       "@type": "CourseInstance",
-      name: "HP Growth Series — Applied Public & Professional Communication",
+      name: "HP Growth Series - Applied Public & Professional Communication",
       courseMode: ["onsite", "online", "blended"],
       duration: "P6M",
     },
     {
       "@type": "CourseInstance",
-      name: "HP Mastery Track — Leadership & Executive Communication",
+      name: "HP Mastery Track - Leadership & Executive Communication",
       courseMode: ["onsite", "online", "blended"],
       duration: "P12M",
     },
@@ -123,7 +123,7 @@ const schema = {
 const coreDeliverables = [
   {
     title: "Verbal Communication Clarity",
-    desc: "Structured, articulate speech that is clear, organised, and engaging in every situation — from classrooms to boardrooms.",
+    desc: "Structured, articulate speech that is clear, organised, and engaging in every situation - from classrooms to boardrooms.",
     serviceLink: "/services/communication-skills",
     serviceLinkLabel: "Explore Communication Skills",
   },
@@ -194,21 +194,21 @@ const domains: DomainCardData[] = [
   {
     num: "01",
     title: "Confidence & Presence",
-    desc: "Building the internal foundation of vocal confidence — overcoming hesitation, developing stage presence, and cultivating executive body language.",
+    desc: "Building the internal foundation of vocal confidence - overcoming hesitation, developing stage presence, and cultivating executive body language.",
     skills: ["Overcoming Hesitation", "Stage Confidence", "Executive Body Language", "Vocal Confidence"],
     accent: "teal",
   },
   {
     num: "02",
     title: "Verbal & Non-Verbal Communication",
-    desc: "Developing precision in speech — clarity of thought, articulation, tone control, posture awareness, and conscious non-verbal expression.",
+    desc: "Developing precision in speech - clarity of thought, articulation, tone control, posture awareness, and conscious non-verbal expression.",
     skills: ["Speech Clarity", "Articulation", "Tone Control", "Posture Awareness"],
     accent: "gold",
   },
   {
     num: "03",
     title: "Professional Communication",
-    desc: "Mastering the language of professional settings — workplace etiquette, structured email writing, formal presentations, and assertive expression.",
+    desc: "Mastering the language of professional settings - workplace etiquette, structured email writing, formal presentations, and assertive expression.",
     skills: ["Workplace Etiquette", "Email Writing", "Structured Presentations", "Assertiveness"],
     accent: "navy",
   },
@@ -256,7 +256,7 @@ const assessmentSteps: AssessmentStepData[] = [
   {
     num: "03",
     title: "Structured Feedback",
-    desc: "Detailed, actionable feedback delivered after every session — covering vocal delivery, body language, structure, and professional presence.",
+    desc: "Detailed, actionable feedback delivered after every session - covering vocal delivery, body language, structure, and professional presence.",
   },
   {
     num: "04",
@@ -266,7 +266,7 @@ const assessmentSteps: AssessmentStepData[] = [
   {
     num: "05",
     title: "Post-Assessment (Progress Review)",
-    desc: "A documented comparison of baseline to completion — growth in speaking confidence, clarity, and presence is visible, measurable, and presented as a formal progress report.",
+    desc: "A documented comparison of baseline to completion - growth in speaking confidence, clarity, and presence is visible, measurable, and presented as a formal progress report.",
   },
 ];
 
@@ -280,7 +280,7 @@ const expectedOutcomes = [
     text: "Strong stage presence and genuine public speaking ability",
   },
   {
-    text: "Structured thinking while speaking — organised, persuasive, memorable",
+    text: "Structured thinking while speaking - organised, persuasive, memorable",
   },
   {
     text: "Improved professional communication and workplace effectiveness",
@@ -288,7 +288,7 @@ const expectedOutcomes = [
     linkLabel: "Confidence Building",
   },
   {
-    text: "Leadership readiness — the voice, presence, and influence to lead",
+    text: "Leadership readiness - the voice, presence, and influence to lead",
   },
   {
     text: "Significantly reduced hesitation, anxiety, and fear of speaking",
@@ -305,7 +305,7 @@ const ctaData: ProgramCtaData = {
   cta2Href: "/contact",
   crossSellText: "Also explore:",
   crossSellHref: "/programs/enlightened-learner",
-  crossSellLabel: "An Enlightened Learner — for complete life skills development",
+  crossSellLabel: "An Enlightened Learner - for complete life skills development",
 };
 
 // ── Page ─────────────────────────────────────────────────────────────────────
@@ -318,7 +318,7 @@ export default function CommunicationMasteryPage() {
       />
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 1 — HERO
+          SECTION 1 - HERO
           Background: Dark navy-to-teal gradient
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
@@ -346,10 +346,10 @@ export default function CommunicationMasteryPage() {
           {/* Label badges */}
           <div className="flex items-center justify-center gap-3 mb-5">
             <span
-              className="inline-flex items-center px-4 py-1.5 text-[11px] font-bold uppercase tracking-widest text-primary-teal rounded-full"
+              className="inline-flex items-center px-4 py-1.5 text-[11px] font-bold uppercase tracking-widest text-primary-gold rounded-full"
               style={{
-                background: "rgba(124,58,237,0.12)",
-                border: "1px solid rgba(124,58,237,0.25)",
+                background: "rgba(200,169,81,0.12)",
+                border: "1px solid rgba(200,169,81,0.25)",
               }}
             >
               Communication &amp; Leadership
@@ -367,7 +367,7 @@ export default function CommunicationMasteryPage() {
 
           {/* H1 */}
           <h1 className="text-3xl md:text-4xl lg:text-[2.75rem] font-extrabold text-white leading-tight mb-6 max-w-4xl mx-auto" style={{ textShadow: "0 1px 2px rgba(0,0,0,0.15)" }}>
-            Communication Mastery — Structured Communication &amp; Leadership Training (Ages 8–65)
+            Communication Mastery - Structured Communication &amp; Leadership Training (Ages 8–65)
           </h1>
 
           {/* Lora italic transformation tagline */}
@@ -421,7 +421,7 @@ export default function CommunicationMasteryPage() {
       <LearnYourWaySelector />
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 2 — WHAT THIS PROGRAM DELIVERS
+          SECTION 2 - WHAT THIS PROGRAM DELIVERS
           Background: Off-white
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-off-white py-20">
@@ -432,12 +432,12 @@ export default function CommunicationMasteryPage() {
               Five Pillars of Communication Development
             </h2>
             <p className="text-lg text-charcoal max-w-2xl mx-auto leading-relaxed">
-              Every skill in this program is practised, assessed, and applied — not just discussed.
+              Every skill in this program is practised, assessed, and applied - not just discussed.
               Communication is built through structured, repeated, real-world practice.
             </p>
           </div>
 
-          {/* 5 deliverable cards — 2 col / 3 col layout, last row centred */}
+          {/* 5 deliverable cards - 2 col / 3 col layout, last row centred */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-6">
             {coreDeliverables.slice(0, 3).map((item) => (
               <div
@@ -489,7 +489,7 @@ export default function CommunicationMasteryPage() {
             ))}
           </div>
 
-          {/* Gold callout — Pre/Post Assessment */}
+          {/* Gold callout - Pre/Post Assessment */}
           <div
             className="rounded-lg p-6 border-l-4 max-w-3xl mx-auto mb-12"
             style={{ borderColor: "#C8A951", background: "#FBF7EE" }}
@@ -517,7 +517,7 @@ export default function CommunicationMasteryPage() {
                 </p>
                 <p className="text-sm text-charcoal/70 leading-relaxed">
                   Every learner begins with a structured communication baseline evaluation and
-                  completes with a documented progress report — so growth in speaking confidence,
+                  completes with a documented progress report - so growth in speaking confidence,
                   clarity, and professional presence is always visible and evidence-based.
                 </p>
               </div>
@@ -556,7 +556,7 @@ export default function CommunicationMasteryPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 3 — WHO IT IS DESIGNED FOR
+          SECTION 3 - WHO IT IS DESIGNED FOR
           Background: White
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-white py-20">
@@ -568,7 +568,7 @@ export default function CommunicationMasteryPage() {
             </h2>
             <p className="text-lg text-charcoal max-w-2xl mx-auto leading-relaxed">
               Communication Mastery serves ages 8–65 across individual, group, school, and
-              corporate formats — with the same structured developmental approach at every level.
+              corporate formats - with the same structured developmental approach at every level.
             </p>
           </div>
 
@@ -629,7 +629,7 @@ export default function CommunicationMasteryPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 4 — KEY AREAS & SKILL DOMAINS
+          SECTION 4 - KEY AREAS & SKILL DOMAINS
           Background: Off-white
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-off-white py-20">
@@ -640,12 +640,12 @@ export default function CommunicationMasteryPage() {
               10 Key Areas Across 4 Skill Domains
             </h2>
             <p className="text-lg text-charcoal max-w-2xl mx-auto leading-relaxed">
-              A complete communication curriculum — structured, progressive, and covering every
+              A complete communication curriculum - structured, progressive, and covering every
               dimension of personal and professional expression.
             </p>
           </div>
 
-          {/* 10 skill chips — flowing layout */}
+          {/* 10 skill chips - flowing layout */}
           <div className="flex flex-wrap justify-center gap-2.5 mb-14">
             {skillAreas.map((skill) => (
               <SkillChip key={skill} label={skill} />
@@ -681,7 +681,7 @@ export default function CommunicationMasteryPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 5 — DEVELOPMENT PATHWAY
+          SECTION 5 - DEVELOPMENT PATHWAY
           Background: Dark navy gradient
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
@@ -697,7 +697,7 @@ export default function CommunicationMasteryPage() {
               Three Levels. One Clear Journey.
             </h2>
             <p className="text-lg text-white/60 max-w-2xl mx-auto leading-relaxed">
-              Assessment-based placement ensures every learner starts at the right level — and the
+              Assessment-based placement ensures every learner starts at the right level - and the
               pathway is designed to grow with them from core skills to executive-level communication.
             </p>
           </div>
@@ -742,21 +742,21 @@ export default function CommunicationMasteryPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 6 — ASSESSMENT & MEASUREMENT
+          SECTION 6 - ASSESSMENT & MEASUREMENT
           Background: White
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-white py-20">
         <div className="max-w-5xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12 items-start">
 
-            {/* Left — Section header + quote */}
+            {/* Left - Section header + quote */}
             <div>
               <ProgramSectionLabel>Assessment Process</ProgramSectionLabel>
               <h2 className="text-3xl md:text-4xl font-bold text-primary-navy mb-6 leading-tight">
                 Growth Is Measured, Not Assumed
               </h2>
               <p className="text-base text-charcoal/80 leading-relaxed mb-8">
-                Every stage of Communication Mastery is supported by structured evaluation —
+                Every stage of Communication Mastery is supported by structured evaluation -
                 from baseline speaking analysis to live practice feedback. Progress in
                 confidence, clarity, and professional presence is always documented and visible.
               </p>
@@ -773,7 +773,7 @@ export default function CommunicationMasteryPage() {
                   &ldquo;Includes live speaking practice and structured feedback at every level.&rdquo;
                 </p>
                 <p className="text-xs font-semibold text-primary-teal mt-3">
-                  — Hidden Potential Assessment Framework
+                  - Hidden Potential Assessment Framework
                 </p>
               </div>
 
@@ -791,7 +791,7 @@ export default function CommunicationMasteryPage() {
               </p>
             </div>
 
-            {/* Right — 5-step assessment timeline */}
+            {/* Right - 5-step assessment timeline */}
             <div className="pt-2">
               {assessmentSteps.map((step, i) => (
                 <AssessmentStep
@@ -806,14 +806,14 @@ export default function CommunicationMasteryPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 7a — EXPECTED OUTCOMES + FORMAT
+          SECTION 7a - EXPECTED OUTCOMES + FORMAT
           Background: Off-white
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-off-white py-20">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12 items-start">
 
-            {/* Left — Expected outcomes */}
+            {/* Left - Expected outcomes */}
             <div>
               <ProgramSectionLabel>Expected Outcomes</ProgramSectionLabel>
               <h2 className="text-3xl font-bold text-primary-navy mb-6 leading-tight">
@@ -831,7 +831,7 @@ export default function CommunicationMasteryPage() {
               </div>
             </div>
 
-            {/* Right — Format + enroll + cross-sell */}
+            {/* Right - Format + enroll + cross-sell */}
             <div className="flex flex-col gap-6">
               {/* Format */}
               <div className="bg-white rounded-lg p-7 border border-gray-200 shadow-sm">
@@ -919,7 +919,7 @@ export default function CommunicationMasteryPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 7b — FINAL CTA
+          SECTION 7b - FINAL CTA
           Uses the shared <ProgramCTASection> component
       ═══════════════════════════════════════════════════════════════════════ */}
       <ProgramCTASection data={ctaData} />

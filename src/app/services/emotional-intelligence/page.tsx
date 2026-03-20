@@ -84,7 +84,7 @@ const faqSchema = {
       name: "What is emotional intelligence and can it be improved?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Emotional intelligence is the ability to recognise, understand, manage, and effectively use emotions in yourself and others. Research consistently confirms that emotional intelligence is not fixed — it is a set of trainable skills that can be developed at any age through structured practice. Daniel Goleman's framework identifies five components: self-awareness, self-regulation, motivation, empathy, and social skills. At Hidden Potential, all five components are developed through structured coaching, NLP techniques, and progressive real-world practice.",
+        text: "Emotional intelligence is the ability to recognise, understand, manage, and effectively use emotions in yourself and others. Research consistently confirms that emotional intelligence is not fixed - it is a set of trainable skills that can be developed at any age through structured practice. Daniel Goleman's framework identifies five components: self-awareness, self-regulation, motivation, empathy, and social skills. At Hidden Potential, all five components are developed through structured coaching, NLP techniques, and progressive real-world practice.",
       },
     },
     {
@@ -92,7 +92,7 @@ const faqSchema = {
       name: "How is emotional intelligence coaching different from therapy?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Emotional intelligence coaching is skill-focused and forward-looking — it teaches you practical techniques for understanding and managing emotions more effectively. Therapy typically addresses deeper psychological patterns, trauma, and clinical mental health conditions. Both are valuable in their contexts. If you are seeking structured skill development in emotional awareness, regulation, and social effectiveness, emotional intelligence coaching at Hidden Potential is highly effective.",
+        text: "Emotional intelligence coaching is skill-focused and forward-looking - it teaches you practical techniques for understanding and managing emotions more effectively. Therapy typically addresses deeper psychological patterns, trauma, and clinical mental health conditions. Both are valuable in their contexts. If you are seeking structured skill development in emotional awareness, regulation, and social effectiveness, emotional intelligence coaching at Hidden Potential is highly effective.",
       },
     },
     {
@@ -100,7 +100,7 @@ const faqSchema = {
       name: "What age group benefits most from emotional intelligence training?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "All age groups benefit from emotional intelligence development, but the impact is particularly significant for students aged 8 to 21 because emotional patterns established during these years influence lifelong behaviour. At Hidden Potential, emotional intelligence is a core component of the An Enlightened Learner student program with age-appropriate activities for 8-12, 13-16, and 17-21 year age groups. Adults of all ages also benefit significantly — particularly professionals in leadership roles and women navigating complex emotional landscapes.",
+        text: "All age groups benefit from emotional intelligence development, but the impact is particularly significant for students aged 8 to 21 because emotional patterns established during these years influence lifelong behaviour. At Hidden Potential, emotional intelligence is a core component of the An Enlightened Learner student program with age-appropriate activities for 8-12, 13-16, and 17-21 year age groups. Adults of all ages also benefit significantly - particularly professionals in leadership roles and women navigating complex emotional landscapes.",
       },
     },
     {
@@ -124,7 +124,7 @@ const faqSchema = {
       name: "How does emotional intelligence relate to confidence and communication?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Emotional intelligence is the foundation that both confidence and communication are built on. Self-awareness feeds confidence — you cannot be genuinely confident without understanding your emotions and patterns. Emotional regulation prevents anxiety and hesitation from undermining communication. Empathy makes your communication more effective because you understand your audience. At Hidden Potential, emotional intelligence, confidence building, and communication skills are developed together as interconnected competencies.",
+        text: "Emotional intelligence is the foundation that both confidence and communication are built on. Self-awareness feeds confidence - you cannot be genuinely confident without understanding your emotions and patterns. Emotional regulation prevents anxiety and hesitation from undermining communication. Empathy makes your communication more effective because you understand your audience. At Hidden Potential, emotional intelligence, confidence building, and communication skills are developed together as interconnected competencies.",
       },
     },
   ],
@@ -148,7 +148,7 @@ export default function EmotionalIntelligencePage() {
 
       <main>
         {/* ═══════════════════════════════════════════════════════════════
-            SECTION 1 — HERO
+            SECTION 1 - HERO
         ═══════════════════════════════════════════════════════════════ */}
         <section
           className="relative overflow-hidden"
@@ -187,7 +187,7 @@ export default function EmotionalIntelligencePage() {
                 textShadow: "0 1px 2px rgba(0,0,0,0.15)",
               }}
             >
-              Emotional Intelligence Coaching — Develop Self-Awareness &amp; Empathy in Delhi
+              Emotional Intelligence Coaching - Develop Self-Awareness &amp; Empathy in Delhi
             </h1>
 
             <p
@@ -198,24 +198,24 @@ export default function EmotionalIntelligencePage() {
                 textShadow: "0 1px 2px rgba(0,0,0,0.15)",
               }}
             >
-              Emotional intelligence is not about being emotional — it&apos;s about being
+              Emotional intelligence is not about being emotional - it&apos;s about being
               intelligent about emotions.
             </p>
 
             <p className="text-base text-white/65 max-w-3xl mx-auto mb-10 leading-relaxed">
-              Emotional intelligence — the ability to recognise, understand, manage, and effectively
-              use emotions in yourself and others — is consistently identified by researchers as a
+              Emotional intelligence - the ability to recognise, understand, manage, and effectively
+              use emotions in yourself and others - is consistently identified by researchers as a
               stronger predictor of life success than IQ, academic performance, or technical skills.
               Daniel Goleman&apos;s groundbreaking research established that emotional intelligence
               accounts for nearly 90 percent of what distinguishes top performers from average ones
               in leadership positions. Yet despite its proven importance, emotional intelligence is
-              almost never formally taught — not in schools, not in universities, and not in most
+              almost never formally taught - not in schools, not in universities, and not in most
               workplaces. At Hidden Potential, emotional intelligence coaching in Delhi is delivered
-              as a structured developmental skill — assessed at entry, developed through progressive
+              as a structured developmental skill - assessed at entry, developed through progressive
               training, practised in real-world scenarios, and measured at completion. Whether you
               are a student learning to understand and manage your emotions, a professional
               developing leadership presence, or a woman rebuilding emotional resilience after years
-              of suppression — emotional intelligence is the foundational skill that makes every
+              of suppression - emotional intelligence is the foundational skill that makes every
               other skill more effective.
             </p>
 
@@ -260,7 +260,7 @@ export default function EmotionalIntelligencePage() {
         </section>
 
         {/* ═══════════════════════════════════════════════════════════════
-            SECTION 2 — WHY IT MATTERS
+            SECTION 2 - WHY IT MATTERS
         ═══════════════════════════════════════════════════════════════ */}
         <section className="py-20 bg-[#F8F6F2]">
           <div className="max-w-4xl mx-auto px-6">
@@ -280,7 +280,7 @@ export default function EmotionalIntelligencePage() {
                 perspectives, and either suppresses or explodes when overwhelmed. Which student
                 performs better academically? Which one builds stronger friendships? Which one
                 handles exam pressure more effectively? Which one is better prepared for adult life?
-                The answer to every question is the first student — and the difference is emotional
+                The answer to every question is the first student - and the difference is emotional
                 intelligence.
               </p>
               <p>
@@ -294,12 +294,12 @@ export default function EmotionalIntelligencePage() {
               </p>
               <p>
                 At Hidden Potential in Delhi, emotional intelligence coaching is treated with the
-                seriousness it deserves — as a foundational life skill that underpins confidence,
+                seriousness it deserves - as a foundational life skill that underpins confidence,
                 communication, stress management, leadership, and relationship quality. Supreet Kaur
                 holds a Masters in Psychology and brings 14 years of experience in emotional
                 intelligence development across students, professionals, women, and aspiring
-                trainers. Every programme at Hidden Potential — from the student pathway to the
-                women&apos;s programme to the trainer certification — has emotional intelligence
+                trainers. Every programme at Hidden Potential - from the student pathway to the
+                women&apos;s programme to the trainer certification - has emotional intelligence
                 woven into its curriculum because no other skill produces such broad, measurable
                 impact.
               </p>
@@ -308,7 +308,7 @@ export default function EmotionalIntelligencePage() {
         </section>
 
         {/* ═══════════════════════════════════════════════════════════════
-            SECTION 3 — WHAT YOU'LL DEVELOP
+            SECTION 3 - WHAT YOU'LL DEVELOP
         ═══════════════════════════════════════════════════════════════ */}
         <section className="py-20 bg-white">
           <div className="max-w-6xl mx-auto px-6">
@@ -327,7 +327,7 @@ export default function EmotionalIntelligencePage() {
             >
               Emotional intelligence is composed of five interconnected competencies identified by
               Daniel Goleman. At Hidden Potential, each competency is developed through structured
-              training, practical exercises, and real-world application — not just discussed in
+              training, practical exercises, and real-world application - not just discussed in
               theory.
             </p>
 
@@ -337,15 +337,15 @@ export default function EmotionalIntelligencePage() {
                 <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#7C3AED" }}>
                   <span className="text-white/60 text-xs font-bold">01</span>
                   <h3 className="text-sm font-bold text-white" style={{ fontFamily: "var(--font-display)" }}>
-                    Self-Awareness — Understanding Your Emotional Landscape
+                    Self-Awareness - Understanding Your Emotional Landscape
                   </h3>
                 </div>
                 <div className="px-5 py-5 bg-white">
                   <p className="text-sm leading-relaxed" style={{ color: "#2D2D2D" }}>
-                    Self-awareness is the foundation of emotional intelligence — the ability to
+                    Self-awareness is the foundation of emotional intelligence - the ability to
                     accurately recognise your own emotions as they happen, understand why you feel
                     the way you do, and know how your emotions affect your thoughts, decisions, and
-                    behaviour. Most people operate on emotional autopilot — reacting to feelings
+                    behaviour. Most people operate on emotional autopilot - reacting to feelings
                     without understanding them. At Hidden Potential, self-awareness is developed
                     through structured reflection exercises, emotional journaling techniques, guided
                     self-assessment tools, and NLP-based pattern identification. You learn to
@@ -361,19 +361,19 @@ export default function EmotionalIntelligencePage() {
                 <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#7C3AED" }}>
                   <span className="text-white/60 text-xs font-bold">02</span>
                   <h3 className="text-sm font-bold text-white" style={{ fontFamily: "var(--font-display)" }}>
-                    Self-Regulation — Managing Emotions Under Pressure
+                    Self-Regulation - Managing Emotions Under Pressure
                   </h3>
                 </div>
                 <div className="px-5 py-5 bg-white">
                   <p className="text-sm leading-relaxed mb-3" style={{ color: "#2D2D2D" }}>
-                    Self-regulation is the ability to manage your emotional responses — especially
+                    Self-regulation is the ability to manage your emotional responses - especially
                     under pressure, conflict, or stress. It is not about suppressing emotions or
                     pretending you do not feel them. It is about choosing your response rather than
                     being controlled by automatic reactions. A self-regulated person can feel anger
                     without becoming aggressive, feel anxiety without becoming paralysed, and feel
                     disappointment without becoming defeated. At Hidden Potential, self-regulation is
                     developed through NLP techniques including emotional state management, confidence
-                    anchoring, and cognitive reframing — combined with mindfulness practices and
+                    anchoring, and cognitive reframing - combined with mindfulness practices and
                     structured behavioural exercises that build the muscle of emotional choice.
                   </p>
                   <Link href="/services/stress-management" className="text-xs font-semibold text-primary-teal hover:text-teal-dark transition-colors">
@@ -387,13 +387,13 @@ export default function EmotionalIntelligencePage() {
                 <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#7C3AED" }}>
                   <span className="text-white/60 text-xs font-bold">03</span>
                   <h3 className="text-sm font-bold text-white" style={{ fontFamily: "var(--font-display)" }}>
-                    Motivation — Building Internal Drive and Resilience
+                    Motivation - Building Internal Drive and Resilience
                   </h3>
                 </div>
                 <div className="px-5 py-5 bg-white">
                   <p className="text-sm leading-relaxed" style={{ color: "#2D2D2D" }}>
                     Emotionally intelligent motivation is not about external rewards or fear-based
-                    pressure — it is about internal drive aligned with personal values and purpose.
+                    pressure - it is about internal drive aligned with personal values and purpose.
                     People with strong emotional motivation persist through setbacks, maintain
                     optimism without denial, defer gratification for long-term goals, and recover
                     from failure with learning rather than defeat. At Hidden Potential, motivational
@@ -409,30 +409,30 @@ export default function EmotionalIntelligencePage() {
                 <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#7C3AED" }}>
                   <span className="text-white/60 text-xs font-bold">04</span>
                   <h3 className="text-sm font-bold text-white" style={{ fontFamily: "var(--font-display)" }}>
-                    Empathy — Understanding Others Accurately
+                    Empathy - Understanding Others Accurately
                   </h3>
                 </div>
                 <div className="px-5 py-5 bg-white">
                   <p className="text-sm leading-relaxed" style={{ color: "#2D2D2D" }}>
                     Empathy is the ability to accurately understand the emotions, perspectives, and
-                    needs of other people — even when they differ from your own. It is not about
+                    needs of other people - even when they differ from your own. It is not about
                     agreeing with everyone or being overly accommodating. It is about having an
                     accurate read on the people around you so you can communicate effectively,
                     manage relationships wisely, and navigate social situations with awareness. At
                     Hidden Potential, empathy development includes active listening training,
                     perspective-taking exercises, emotional reading practice, and cross-cultural
-                    awareness — particularly important in Delhi&apos;s diverse social and
+                    awareness - particularly important in Delhi&apos;s diverse social and
                     professional environment.
                   </p>
                 </div>
               </div>
 
-              {/* Card 05 — spans full width on md+ */}
+              {/* Card 05 - spans full width on md+ */}
               <div className="rounded-lg border border-[#E8E8E8] overflow-hidden md:col-span-2">
                 <div className="px-5 py-3 flex items-center gap-3" style={{ background: "#7C3AED" }}>
                   <span className="text-white/60 text-xs font-bold">05</span>
                   <h3 className="text-sm font-bold text-white" style={{ fontFamily: "var(--font-display)" }}>
-                    Social Skills — Building and Managing Relationships
+                    Social Skills - Building and Managing Relationships
                   </h3>
                 </div>
                 <div className="px-5 py-5 bg-white">
@@ -456,7 +456,7 @@ export default function EmotionalIntelligencePage() {
         </section>
 
         {/* ═══════════════════════════════════════════════════════════════
-            SECTION 4 — WHO IT'S FOR
+            SECTION 4 - WHO IT'S FOR
         ═══════════════════════════════════════════════════════════════ */}
         <section className="py-20 bg-[#F3F0FF]">
           <div className="max-w-6xl mx-auto px-6">
@@ -473,7 +473,7 @@ export default function EmotionalIntelligencePage() {
               className="text-base text-center max-w-3xl mx-auto mb-12 leading-relaxed"
               style={{ color: "#6B6B6B" }}
             >
-              Emotional intelligence gaps affect every age group and professional level — from
+              Emotional intelligence gaps affect every age group and professional level - from
               children who cannot name their emotions to executives who cannot read their teams. Our
               coaching in Dwarka, Delhi is personalised through structured assessment to address
               your specific emotional intelligence profile.
@@ -492,7 +492,7 @@ export default function EmotionalIntelligencePage() {
                   Children and teenagers who struggle to manage emotions, have difficulty
                   understanding others&apos; feelings, react impulsively, or suppress their emotions
                   entirely. Emotional intelligence is a core component of the An Enlightened Learner
-                  program — developed through age-appropriate activities that build self-awareness,
+                  program - developed through age-appropriate activities that build self-awareness,
                   empathy, and emotional regulation as foundational life skills.
                 </p>
                 <Link href="/programs/enlightened-learner" className="text-xs font-semibold text-primary-teal hover:text-teal-dark transition-colors">
@@ -532,7 +532,7 @@ export default function EmotionalIntelligencePage() {
                 <p className="text-sm leading-relaxed mb-3" style={{ color: "#6B6B6B" }}>
                   Women who have spent years managing everyone else&apos;s emotions at the expense
                   of their own emotional health. The Self Mastery for Women pathway at Hidden
-                  Potential addresses emotional intelligence specifically — helping women develop
+                  Potential addresses emotional intelligence specifically - helping women develop
                   self-awareness, emotional regulation, boundary-based self-care, and the empathy
                   balance that allows caring for others without depleting yourself.
                 </p>
@@ -569,7 +569,7 @@ export default function EmotionalIntelligencePage() {
                   </h3>
                 </div>
                 <p className="text-sm leading-relaxed" style={{ color: "#6B6B6B" }}>
-                  If you find that your relationships — personal or professional — are consistently
+                  If you find that your relationships - personal or professional - are consistently
                   strained by miscommunication, emotional reactivity, or misunderstanding, emotional
                   intelligence coaching addresses the root skill gap. Better self-understanding leads
                   to better self-management, which leads to better relationships in every area of
@@ -581,7 +581,7 @@ export default function EmotionalIntelligencePage() {
         </section>
 
         {/* ═══════════════════════════════════════════════════════════════
-            SECTION 5 — WHY DIFFERENT
+            SECTION 5 - WHY DIFFERENT
         ═══════════════════════════════════════════════════════════════ */}
         <section className="py-20 bg-[#F8F6F2]">
           <div className="max-w-5xl mx-auto px-6">
@@ -627,8 +627,8 @@ export default function EmotionalIntelligencePage() {
                 </h3>
                 <p className="text-sm leading-relaxed" style={{ color: "#6B6B6B" }}>
                   Traditional emotional intelligence training relies on awareness and practice alone.
-                  At Hidden Potential, NLP techniques — including emotional state management, belief
-                  restructuring, anchoring, and reframing — accelerate EI development by working at
+                  At Hidden Potential, NLP techniques - including emotional state management, belief
+                  restructuring, anchoring, and reframing - accelerate EI development by working at
                   the subconscious level. This means faster, deeper, more lasting emotional
                   intelligence growth.
                 </p>
@@ -646,7 +646,7 @@ export default function EmotionalIntelligencePage() {
                 </h3>
                 <p className="text-sm leading-relaxed" style={{ color: "#6B6B6B" }}>
                   Emotional intelligence at Hidden Potential is not a separate workshop. It is
-                  embedded into every developmental pathway — students, women, professionals, and
+                  embedded into every developmental pathway - students, women, professionals, and
                   trainers all develop emotional intelligence as a core skill within their program.
                   This ensures the skills are practised and reinforced across months of structured
                   development.
@@ -665,7 +665,7 @@ export default function EmotionalIntelligencePage() {
                 </h3>
                 <p className="text-sm leading-relaxed" style={{ color: "#6B6B6B" }}>
                   Every learner begins with a structured emotional intelligence assessment.
-                  Development is then targeted to your specific gaps — whether it is self-awareness,
+                  Development is then targeted to your specific gaps - whether it is self-awareness,
                   regulation, empathy, or social skills. A person who lacks self-awareness and a
                   person who lacks empathy need fundamentally different interventions.
                 </p>
@@ -675,7 +675,7 @@ export default function EmotionalIntelligencePage() {
         </section>
 
         {/* ═══════════════════════════════════════════════════════════════
-            SECTION 6 — FAQ
+            SECTION 6 - FAQ
         ═══════════════════════════════════════════════════════════════ */}
         <section className="py-20 bg-white">
           <div className="max-w-4xl mx-auto px-6">
@@ -693,15 +693,15 @@ export default function EmotionalIntelligencePage() {
               {[
                 {
                   q: "What is emotional intelligence and can it be improved?",
-                  a: "Emotional intelligence is the ability to recognise, understand, manage, and effectively use emotions in yourself and others. Research consistently confirms that emotional intelligence is not fixed — it is a set of trainable skills that can be developed at any age through structured practice. Daniel Goleman's framework identifies five components: self-awareness, self-regulation, motivation, empathy, and social skills. At Hidden Potential, all five components are developed through structured coaching, NLP techniques, and progressive real-world practice.",
+                  a: "Emotional intelligence is the ability to recognise, understand, manage, and effectively use emotions in yourself and others. Research consistently confirms that emotional intelligence is not fixed - it is a set of trainable skills that can be developed at any age through structured practice. Daniel Goleman's framework identifies five components: self-awareness, self-regulation, motivation, empathy, and social skills. At Hidden Potential, all five components are developed through structured coaching, NLP techniques, and progressive real-world practice.",
                 },
                 {
                   q: "How is emotional intelligence coaching different from therapy?",
-                  a: "Emotional intelligence coaching is skill-focused and forward-looking — it teaches you practical techniques for understanding and managing emotions more effectively. Therapy typically addresses deeper psychological patterns, trauma, and clinical mental health conditions. Both are valuable in their contexts. If you are seeking structured skill development in emotional awareness, regulation, and social effectiveness, emotional intelligence coaching at Hidden Potential is highly effective.",
+                  a: "Emotional intelligence coaching is skill-focused and forward-looking - it teaches you practical techniques for understanding and managing emotions more effectively. Therapy typically addresses deeper psychological patterns, trauma, and clinical mental health conditions. Both are valuable in their contexts. If you are seeking structured skill development in emotional awareness, regulation, and social effectiveness, emotional intelligence coaching at Hidden Potential is highly effective.",
                 },
                 {
                   q: "What age group benefits most from emotional intelligence training?",
-                  a: "All age groups benefit from emotional intelligence development, but the impact is particularly significant for students aged 8 to 21 because emotional patterns established during these years influence lifelong behaviour. At Hidden Potential, emotional intelligence is a core component of the An Enlightened Learner student program with age-appropriate activities for 8-12, 13-16, and 17-21 year age groups. Adults of all ages also benefit significantly — particularly professionals in leadership roles and women navigating complex emotional landscapes.",
+                  a: "All age groups benefit from emotional intelligence development, but the impact is particularly significant for students aged 8 to 21 because emotional patterns established during these years influence lifelong behaviour. At Hidden Potential, emotional intelligence is a core component of the An Enlightened Learner student program with age-appropriate activities for 8-12, 13-16, and 17-21 year age groups. Adults of all ages also benefit significantly - particularly professionals in leadership roles and women navigating complex emotional landscapes.",
                 },
                 {
                   q: "How long does emotional intelligence coaching take?",
@@ -713,7 +713,7 @@ export default function EmotionalIntelligencePage() {
                 },
                 {
                   q: "How does emotional intelligence relate to confidence and communication?",
-                  a: "Emotional intelligence is the foundation that both confidence and communication are built on. Self-awareness feeds confidence — you cannot be genuinely confident without understanding your emotions and patterns. Emotional regulation prevents anxiety and hesitation from undermining communication. Empathy makes your communication more effective because you understand your audience. At Hidden Potential, emotional intelligence, confidence building, and communication skills are developed together as interconnected competencies.",
+                  a: "Emotional intelligence is the foundation that both confidence and communication are built on. Self-awareness feeds confidence - you cannot be genuinely confident without understanding your emotions and patterns. Emotional regulation prevents anxiety and hesitation from undermining communication. Empathy makes your communication more effective because you understand your audience. At Hidden Potential, emotional intelligence, confidence building, and communication skills are developed together as interconnected competencies.",
                 },
               ].map(({ q, a }) => (
                 <div key={q} className="rounded-lg overflow-hidden border border-[#E8E8E8]">
@@ -730,7 +730,7 @@ export default function EmotionalIntelligencePage() {
         </section>
 
         {/* ═══════════════════════════════════════════════════════════════
-            SECTION 7 — CTA
+            SECTION 7 - CTA
         ═══════════════════════════════════════════════════════════════ */}
         <section
           className="relative overflow-hidden py-24"
@@ -748,13 +748,13 @@ export default function EmotionalIntelligencePage() {
               Understanding Emotions Is the First Step to Mastering Everything Else
             </h2>
             <p className="text-base text-white/65 mb-10 leading-relaxed">
-              Emotional intelligence is not a luxury skill — it is the foundation that confidence,
+              Emotional intelligence is not a luxury skill - it is the foundation that confidence,
               communication, leadership, relationships, and stress management are all built on. At
               Hidden Potential in Dwarka, Delhi, emotional intelligence coaching begins with a
-              structured assessment that maps your current EI profile across all five competencies —
+              structured assessment that maps your current EI profile across all five competencies -
               and designs a personalised pathway for measurable development. Whether you are
               developing emotional foundations for your child, building leadership presence for your
-              career, or rebuilding emotional resilience for yourself — the process starts with
+              career, or rebuilding emotional resilience for yourself - the process starts with
               understanding where you are.
             </p>
 
@@ -781,7 +781,7 @@ export default function EmotionalIntelligencePage() {
               <Link href="/services/confidence-building" className="text-white/65 hover:text-white font-semibold underline underline-offset-2 transition-colors">
                 Confidence Building in Delhi
               </Link>{" "}
-              — because emotional intelligence and confidence develop together
+              - because emotional intelligence and confidence develop together
             </p>
 
             <p className="text-[11px] text-white/30 leading-relaxed">

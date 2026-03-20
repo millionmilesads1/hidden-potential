@@ -37,7 +37,7 @@ export function NavBar({ items, className }: NavBarProps) {
         className,
       )}
     >
-      {/* Frosted pill container — brand navy background */}
+      {/* Frosted pill container - brand navy background */}
       <ul className="flex items-center gap-1 bg-primary-navy/90 border border-white/10 backdrop-blur-lg py-1.5 px-1.5 rounded-full shadow-2xl shadow-primary-navy/40" role="list">
         {items.map((item) => {
           const Icon = item.icon

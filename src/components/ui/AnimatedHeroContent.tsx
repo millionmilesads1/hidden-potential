@@ -1,7 +1,7 @@
 "use client";
 
 /**
- * AnimatedHeroContent — Animated left column of the hero section.
+ * AnimatedHeroContent - Animated left column of the hero section.
  * Features:
  *   • Word-by-word headline drop (y: -80, rotate, spring stagger 0.08s)
  *   • Subtext slides in from left (x: -60) at 0.6s delay
@@ -9,10 +9,11 @@
  *   • Stats row: staggered count-up animation triggered on scroll into view
  */
 
-import React, { useRef, useEffect, useState } from "react";
-import { motion, useInView, animate } from "framer-motion";
+import React from "react";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { letterDrop, headlineContainer } from "@/lib/animations";
+import { NumberTicker } from "@/components/magicui/number-ticker";
 
 // ── Headline words ────────────────────────────────────────────────────────────
 // Mirrors the exact text rendered in page.tsx with glow styling on key words
@@ -38,32 +39,6 @@ const stats: Stat[] = [
   { text: "Josh Talks", label: "Speaker" },
   { text: "NEP 2020",   label: "Certified \u00B7 IGNOU" },
 ];
-
-// ── CountUp ───────────────────────────────────────────────────────────────────
-function CountUp({ end, suffix, comma }: { end: number; suffix: string; comma?: boolean }) {
-  const ref    = useRef<HTMLSpanElement>(null);
-  const inView = useInView(ref, { once: true });
-  const [display, setDisplay] = useState("0");
-
-  useEffect(() => {
-    if (!inView) return;
-    const ctrl = animate(0, end, {
-      duration: 2,
-      ease: "easeOut",
-      onUpdate: (v) => {
-        const n = Math.round(v);
-        setDisplay(comma ? n.toLocaleString("en-IN") : String(n));
-      },
-    });
-    return ctrl.stop;
-  }, [inView, end, comma]);
-
-  return (
-    <span ref={ref}>
-      {display}{suffix}
-    </span>
-  );
-}
 
 // ── Chevron ───────────────────────────────────────────────────────────────────
 function Chevron() {
@@ -103,7 +78,7 @@ export default function AnimatedHeroContent() {
         Transformational Life Skills Academy &middot; Delhi NCR
       </motion.p>
 
-      {/* H1 — word-by-word drop from y: -80 */}
+      {/* H1 - word-by-word drop from y: -80 */}
       <motion.h1
         className="font-bold text-white leading-[1.1] mb-4"
         style={{
@@ -150,7 +125,7 @@ export default function AnimatedHeroContent() {
         &mdash; Mark Twain
       </motion.p>
 
-      {/* Subtitle — slides from left */}
+      {/* Subtitle - slides from left */}
       <motion.p
         className="mb-10 leading-relaxed"
         style={{
@@ -172,7 +147,7 @@ export default function AnimatedHeroContent() {
         Real.
       </motion.p>
 
-      {/* CTA buttons — spring bounce from scale 0 */}
+      {/* CTA buttons - spring bounce from scale 0 */}
       <motion.div
         className="flex flex-col sm:flex-row gap-4 mb-14"
         initial={{ opacity: 0, scale: 0 }}
@@ -211,7 +186,7 @@ export default function AnimatedHeroContent() {
         </MotionLink>
       </motion.div>
 
-      {/* Stats row — staggered count-up */}
+      {/* Stats row - staggered count-up */}
       <motion.div
         className="flex flex-wrap gap-x-8 gap-y-5 pt-8"
         style={{ borderTop: "1px solid rgba(255,255,255,0.08)" }}
@@ -245,7 +220,10 @@ export default function AnimatedHeroContent() {
               style={{ fontFamily: "var(--font-display)", fontSize: "1.6rem" }}
             >
               {"num" in s ? (
-                <CountUp end={s.num} suffix={s.suffix} comma={s.comma} />
+                <>
+                  <NumberTicker value={s.num} delay={0.4} />
+                  {s.suffix}
+                </>
               ) : (
                 s.text
               )}

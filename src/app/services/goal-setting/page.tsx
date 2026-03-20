@@ -37,12 +37,12 @@ const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
   mainEntity: [
-    { '@type': 'Question', name: 'What is goal setting coaching and how is it different from life coaching?', acceptedAnswer: { '@type': 'Answer', text: 'Goal setting coaching at Hidden Potential is specifically focused on the skills and systems required to achieve goals consistently — clarity, planning, execution, accountability, and adaptation. Life coaching is typically broader, covering general life satisfaction, relationships, and personal development. Our goal setting coaching is structured, assessment-based, and produces measurable outcomes rather than general motivation.' } },
+    { '@type': 'Question', name: 'What is goal setting coaching and how is it different from life coaching?', acceptedAnswer: { '@type': 'Answer', text: 'Goal setting coaching at Hidden Potential is specifically focused on the skills and systems required to achieve goals consistently - clarity, planning, execution, accountability, and adaptation. Life coaching is typically broader, covering general life satisfaction, relationships, and personal development. Our goal setting coaching is structured, assessment-based, and produces measurable outcomes rather than general motivation.' } },
     { '@type': 'Question', name: 'Can goal setting coaching help students with academic goals?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Goal setting and structured execution are core components of the An Enlightened Learner student program. Students learn to set specific academic targets, create study plans with milestones, track their own progress, and develop the daily habits that make consistent academic improvement sustainable. This is integrated with study skills, time management, and confidence building for a complete academic achievement system.' } },
-    { '@type': 'Question', name: 'How long does goal setting coaching take?', acceptedAnswer: { '@type': 'Answer', text: 'Goal clarity and initial planning can be established within 2 to 4 coaching sessions. Building the execution habits and accountability systems that sustain long-term achievement typically develops over 3 to 6 months of structured coaching. Most meaningful goals require at least one full program cycle to achieve — which is why Hidden Potential integrates goal setting into developmental pathways rather than offering it as a one-time workshop.' } },
+    { '@type': 'Question', name: 'How long does goal setting coaching take?', acceptedAnswer: { '@type': 'Answer', text: 'Goal clarity and initial planning can be established within 2 to 4 coaching sessions. Building the execution habits and accountability systems that sustain long-term achievement typically develops over 3 to 6 months of structured coaching. Most meaningful goals require at least one full program cycle to achieve - which is why Hidden Potential integrates goal setting into developmental pathways rather than offering it as a one-time workshop.' } },
     { '@type': 'Question', name: 'Is goal setting coaching available online?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Goal setting coaching at Hidden Potential is available offline at our Dwarka, Delhi location, online across India, and in hybrid format. Online sessions include the same structured assessments, planning frameworks, accountability reviews, and progress tracking as in-person coaching.' } },
-    { '@type': 'Question', name: 'What if I do not know what my goals should be?', acceptedAnswer: { '@type': 'Answer', text: 'That is actually the most common starting point. Many people know they want more from life but cannot articulate what that looks like. Goal setting coaching at Hidden Potential begins with structured clarity exercises and NLP-based values elicitation specifically designed to help you identify goals that align with your genuine values and strengths — rather than goals imposed by external expectations.' } },
-    { '@type': 'Question', name: 'How is this different from self-help books about goal setting?', acceptedAnswer: { '@type': 'Answer', text: 'Self-help books provide information. Goal setting coaching provides implementation. The gap between knowing what to do and actually doing it consistently is where most people fail. Coaching at Hidden Potential provides personalised assessment, structured frameworks, accountability, regular progress reviews, obstacle management, and course correction — the execution support that books cannot deliver.' } },
+    { '@type': 'Question', name: 'What if I do not know what my goals should be?', acceptedAnswer: { '@type': 'Answer', text: 'That is actually the most common starting point. Many people know they want more from life but cannot articulate what that looks like. Goal setting coaching at Hidden Potential begins with structured clarity exercises and NLP-based values elicitation specifically designed to help you identify goals that align with your genuine values and strengths - rather than goals imposed by external expectations.' } },
+    { '@type': 'Question', name: 'How is this different from self-help books about goal setting?', acceptedAnswer: { '@type': 'Answer', text: 'Self-help books provide information. Goal setting coaching provides implementation. The gap between knowing what to do and actually doing it consistently is where most people fail. Coaching at Hidden Potential provides personalised assessment, structured frameworks, accountability, regular progress reviews, obstacle management, and course correction - the execution support that books cannot deliver.' } },
   ],
 };
 
@@ -58,32 +58,32 @@ const skillCards = [
   {
     num: '01',
     title: 'Goal Clarity and Prioritisation',
-    body: "Most people fail at goals not because they cannot execute, but because they are pursuing the wrong goals — goals inherited from parents, imposed by society, or chosen based on what looks impressive rather than what genuinely matters. At Hidden Potential, goal setting begins with structured clarity exercises that help you distinguish between goals you think you should want and goals that align with your actual values, strengths, and circumstances. NLP-based techniques including values elicitation and belief mapping help uncover what you genuinely want to achieve — not what you have been conditioned to pursue.",
+    body: "Most people fail at goals not because they cannot execute, but because they are pursuing the wrong goals - goals inherited from parents, imposed by society, or chosen based on what looks impressive rather than what genuinely matters. At Hidden Potential, goal setting begins with structured clarity exercises that help you distinguish between goals you think you should want and goals that align with your actual values, strengths, and circumstances. NLP-based techniques including values elicitation and belief mapping help uncover what you genuinely want to achieve - not what you have been conditioned to pursue.",
   },
   {
     num: '02',
     title: 'Milestone Planning and Structured Execution',
-    body: 'A goal without a plan is just an intention. Milestone planning breaks large goals into structured phases with specific deliverables, timelines, and measurable checkpoints. At Hidden Potential, you learn to work backwards from your desired outcome — identifying the quarterly, monthly, weekly, and daily actions required to reach it. This reverse-engineering approach transforms overwhelming goals into manageable daily practices that build momentum through consistent small wins.',
+    body: 'A goal without a plan is just an intention. Milestone planning breaks large goals into structured phases with specific deliverables, timelines, and measurable checkpoints. At Hidden Potential, you learn to work backwards from your desired outcome - identifying the quarterly, monthly, weekly, and daily actions required to reach it. This reverse-engineering approach transforms overwhelming goals into manageable daily practices that build momentum through consistent small wins.',
   },
   {
     num: '03',
     title: 'Habit System Design',
-    body: "Goals are achieved through habits, not through bursts of motivation. At Hidden Potential, you learn to design habit systems — the daily and weekly routines that make goal-relevant actions automatic rather than dependent on willpower. This includes understanding habit loops, designing environmental triggers, building habit stacks, and creating accountability mechanisms that sustain habits through the inevitable periods when motivation drops.",
+    body: "Goals are achieved through habits, not through bursts of motivation. At Hidden Potential, you learn to design habit systems - the daily and weekly routines that make goal-relevant actions automatic rather than dependent on willpower. This includes understanding habit loops, designing environmental triggers, building habit stacks, and creating accountability mechanisms that sustain habits through the inevitable periods when motivation drops.",
   },
   {
     num: '04',
     title: 'Obstacle Anticipation and Resilience',
-    body: "Every meaningful goal encounters obstacles — unexpected challenges, loss of motivation, competing priorities, self-doubt, and external circumstances. Most people treat obstacles as reasons to quit. Effective goal achievers anticipate obstacles in advance and prepare response strategies. At Hidden Potential, obstacle anticipation is built into every goal plan — including 'if-then' contingency planning, NLP-based belief restructuring for moments of self-doubt, and resilience techniques that help you persist through difficulty without burnout.",
+    body: "Every meaningful goal encounters obstacles - unexpected challenges, loss of motivation, competing priorities, self-doubt, and external circumstances. Most people treat obstacles as reasons to quit. Effective goal achievers anticipate obstacles in advance and prepare response strategies. At Hidden Potential, obstacle anticipation is built into every goal plan - including 'if-then' contingency planning, NLP-based belief restructuring for moments of self-doubt, and resilience techniques that help you persist through difficulty without burnout.",
   },
   {
     num: '05',
     title: 'Accountability and Progress Tracking',
-    body: 'Accountability is the most underrated component of goal achievement. Research consistently shows that people who have structured accountability — someone who reviews their progress regularly — are 65 percent more likely to achieve their goals than those who work alone. At Hidden Potential, accountability is built into the coaching process through regular progress reviews, structured self-tracking systems, and milestone celebrations that reinforce the execution habit.',
+    body: 'Accountability is the most underrated component of goal achievement. Research consistently shows that people who have structured accountability - someone who reviews their progress regularly - are 65 percent more likely to achieve their goals than those who work alone. At Hidden Potential, accountability is built into the coaching process through regular progress reviews, structured self-tracking systems, and milestone celebrations that reinforce the execution habit.',
   },
   {
     num: '06',
     title: 'Course Correction and Adaptive Planning',
-    body: 'No plan survives contact with reality unchanged. The ability to assess progress honestly, identify what is working and what is not, and adjust your approach without abandoning your goal is a critical achievement skill. At Hidden Potential, you develop the skill of adaptive planning — maintaining commitment to the destination while remaining flexible about the route. This prevents the common pattern of rigid plan failure followed by complete abandonment.',
+    body: 'No plan survives contact with reality unchanged. The ability to assess progress honestly, identify what is working and what is not, and adjust your approach without abandoning your goal is a critical achievement skill. At Hidden Potential, you develop the skill of adaptive planning - maintaining commitment to the destination while remaining flexible about the route. This prevents the common pattern of rigid plan failure followed by complete abandonment.',
   },
 ];
 
@@ -91,7 +91,7 @@ const audienceCards = [
   {
     num: '01',
     title: 'Students Setting Academic Goals (Ages 13-21)',
-    body: 'Students who set targets every term but consistently fall short — not because they lack ability, but because they lack structured planning and execution systems. Goal setting is integrated into the An Enlightened Learner program alongside study skills, confidence building, and time management — creating a complete system for academic achievement rather than isolated goal-setting exercises.',
+    body: 'Students who set targets every term but consistently fall short - not because they lack ability, but because they lack structured planning and execution systems. Goal setting is integrated into the An Enlightened Learner program alongside study skills, confidence building, and time management - creating a complete system for academic achievement rather than isolated goal-setting exercises.',
     link: '/programs/enlightened-learner',
     linkText: 'Explore An Enlightened Learner →',
   },
@@ -105,50 +105,50 @@ const audienceCards = [
   {
     num: '03',
     title: 'Women Reclaiming Personal Ambitions',
-    body: "Women who spent years prioritising family and others' needs and now want to pursue their own goals — whether returning to a career, starting a business, developing a skill, or rebuilding their identity. The Self Mastery for Women pathway includes structured goal setting as a core component because reclaiming your ambitions requires both the emotional permission and the practical execution systems to follow through.",
+    body: "Women who spent years prioritising family and others' needs and now want to pursue their own goals - whether returning to a career, starting a business, developing a skill, or rebuilding their identity. The Self Mastery for Women pathway includes structured goal setting as a core component because reclaiming your ambitions requires both the emotional permission and the practical execution systems to follow through.",
     link: '/programs/self-mastery-women',
     linkText: 'Explore Self Mastery for Women →',
   },
   {
     num: '04',
     title: 'Aspiring Trainers Building a Career',
-    body: 'Individuals who want to become life skills trainers, NLP practitioners, or coaches but do not know how to structure the journey from aspiration to certification to active practice. The Train the Trainer pathway includes career goal planning as a structured component — helping you build a viable training career, not just accumulate certifications.',
+    body: 'Individuals who want to become life skills trainers, NLP practitioners, or coaches but do not know how to structure the journey from aspiration to certification to active practice. The Train the Trainer pathway includes career goal planning as a structured component - helping you build a viable training career, not just accumulate certifications.',
     link: '/programs/train-the-trainer',
     linkText: 'Explore Train the Trainer →',
   },
   {
     num: '05',
     title: 'Anyone Stuck Between Ambition and Action',
-    body: 'If you consistently set goals but fail to follow through, if you start strong but lose momentum, if you know what you want but cannot seem to make consistent progress — the problem is almost certainly a systems gap, not a motivation gap. Goal setting coaching at Hidden Potential provides the structured frameworks that bridge the gap between wanting and doing.',
+    body: 'If you consistently set goals but fail to follow through, if you start strong but lose momentum, if you know what you want but cannot seem to make consistent progress - the problem is almost certainly a systems gap, not a motivation gap. Goal setting coaching at Hidden Potential provides the structured frameworks that bridge the gap between wanting and doing.',
   },
 ];
 
 const differentiatorCards = [
   {
     title: 'Execution-Focused, Not Motivation-Focused',
-    body: 'Most goal-setting programs focus on inspiration — helping you dream bigger and want more. Hidden Potential focuses on execution — giving you the structured systems, habit frameworks, and accountability mechanisms that turn goals into documented outcomes. Motivation fades. Systems persist.',
+    body: 'Most goal-setting programs focus on inspiration - helping you dream bigger and want more. Hidden Potential focuses on execution - giving you the structured systems, habit frameworks, and accountability mechanisms that turn goals into documented outcomes. Motivation fades. Systems persist.',
   },
   {
     title: 'NLP-Enhanced Goal Clarity',
-    body: 'NLP techniques including values elicitation, belief mapping, and subconscious pattern identification help you clarify goals that genuinely align with who you are — not goals you have been conditioned to pursue. This prevents the common pattern of achieving goals that do not actually make you fulfilled.',
+    body: 'NLP techniques including values elicitation, belief mapping, and subconscious pattern identification help you clarify goals that genuinely align with who you are - not goals you have been conditioned to pursue. This prevents the common pattern of achieving goals that do not actually make you fulfilled.',
   },
   {
     title: 'Integrated Into Life Skills Pathways',
-    body: "Goal setting at Hidden Potential is not a standalone workshop. It is integrated into every developmental pathway — students, women, professionals, and trainers all develop execution skills within their program context. This means goal-setting skills are practised and reinforced across months of structured development.",
+    body: "Goal setting at Hidden Potential is not a standalone workshop. It is integrated into every developmental pathway - students, women, professionals, and trainers all develop execution skills within their program context. This means goal-setting skills are practised and reinforced across months of structured development.",
   },
   {
     title: 'Assessment-Based Personalisation',
-    body: 'Every learner begins with a structured assessment that identifies their specific achievement gaps — some people need clarity, others need planning skills, others need accountability systems, others need belief restructuring. Your coaching is personalised to your specific execution pattern.',
+    body: 'Every learner begins with a structured assessment that identifies their specific achievement gaps - some people need clarity, others need planning skills, others need accountability systems, others need belief restructuring. Your coaching is personalised to your specific execution pattern.',
   },
 ];
 
 const faqs = [
-  { q: 'What is goal setting coaching and how is it different from life coaching?', a: 'Goal setting coaching at Hidden Potential is specifically focused on the skills and systems required to achieve goals consistently — clarity, planning, execution, accountability, and adaptation. Life coaching is typically broader, covering general life satisfaction, relationships, and personal development. Our goal setting coaching is structured, assessment-based, and produces measurable outcomes rather than general motivation.' },
+  { q: 'What is goal setting coaching and how is it different from life coaching?', a: 'Goal setting coaching at Hidden Potential is specifically focused on the skills and systems required to achieve goals consistently - clarity, planning, execution, accountability, and adaptation. Life coaching is typically broader, covering general life satisfaction, relationships, and personal development. Our goal setting coaching is structured, assessment-based, and produces measurable outcomes rather than general motivation.' },
   { q: 'Can goal setting coaching help students with academic goals?', a: 'Yes. Goal setting and structured execution are core components of the An Enlightened Learner student program. Students learn to set specific academic targets, create study plans with milestones, track their own progress, and develop the daily habits that make consistent academic improvement sustainable. This is integrated with study skills, time management, and confidence building for a complete academic achievement system.' },
-  { q: 'How long does goal setting coaching take?', a: 'Goal clarity and initial planning can be established within 2 to 4 coaching sessions. Building the execution habits and accountability systems that sustain long-term achievement typically develops over 3 to 6 months of structured coaching. Most meaningful goals require at least one full program cycle to achieve — which is why Hidden Potential integrates goal setting into developmental pathways rather than offering it as a one-time workshop.' },
+  { q: 'How long does goal setting coaching take?', a: 'Goal clarity and initial planning can be established within 2 to 4 coaching sessions. Building the execution habits and accountability systems that sustain long-term achievement typically develops over 3 to 6 months of structured coaching. Most meaningful goals require at least one full program cycle to achieve - which is why Hidden Potential integrates goal setting into developmental pathways rather than offering it as a one-time workshop.' },
   { q: 'Is goal setting coaching available online?', a: 'Yes. Goal setting coaching at Hidden Potential is available offline at our Dwarka, Delhi location, online across India, and in hybrid format. Online sessions include the same structured assessments, planning frameworks, accountability reviews, and progress tracking as in-person coaching.' },
-  { q: 'What if I do not know what my goals should be?', a: 'That is actually the most common starting point. Many people know they want more from life but cannot articulate what that looks like. Goal setting coaching at Hidden Potential begins with structured clarity exercises and NLP-based values elicitation specifically designed to help you identify goals that align with your genuine values and strengths — rather than goals imposed by external expectations.' },
-  { q: 'How is this different from self-help books about goal setting?', a: 'Self-help books provide information. Goal setting coaching provides implementation. The gap between knowing what to do and actually doing it consistently is where most people fail. Coaching at Hidden Potential provides personalised assessment, structured frameworks, accountability, regular progress reviews, obstacle management, and course correction — the execution support that books cannot deliver.' },
+  { q: 'What if I do not know what my goals should be?', a: 'That is actually the most common starting point. Many people know they want more from life but cannot articulate what that looks like. Goal setting coaching at Hidden Potential begins with structured clarity exercises and NLP-based values elicitation specifically designed to help you identify goals that align with your genuine values and strengths - rather than goals imposed by external expectations.' },
+  { q: 'How is this different from self-help books about goal setting?', a: 'Self-help books provide information. Goal setting coaching provides implementation. The gap between knowing what to do and actually doing it consistently is where most people fail. Coaching at Hidden Potential provides personalised assessment, structured frameworks, accountability, regular progress reviews, obstacle management, and course correction - the execution support that books cannot deliver.' },
 ];
 
 export default function GoalSettingPage() {
@@ -168,13 +168,13 @@ export default function GoalSettingPage() {
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight" style={{ fontFamily: 'var(--font-display)' }}>
-              Goal Setting &amp; Achievement Coaching in Delhi — Plan, Execute, Succeed
+              Goal Setting &amp; Achievement Coaching in Delhi - Plan, Execute, Succeed
             </h1>
             <p className="text-xl text-white/80 mb-6 italic" style={{ fontFamily: 'var(--font-accent)' }}>
-              Goals without execution systems are just wishes — and wishes don&apos;t produce results.
+              Goals without execution systems are just wishes - and wishes don&apos;t produce results.
             </p>
             <p className="text-base text-white/70 mb-10 max-w-3xl mx-auto leading-relaxed" style={{ fontFamily: 'var(--font-body)' }}>
-              Everyone sets goals. Very few people achieve them consistently. The difference is not motivation, willpower, or talent — it is system. Most goal-setting advice focuses on writing SMART goals, creating vision boards, or finding your &apos;why.&apos; These are starting points, not solutions. At Hidden Potential, goal setting and achievement coaching in Delhi teaches the complete execution system — from clarifying what you genuinely want, to breaking it into structured milestones, to building the daily habits and accountability systems that turn intentions into measurable outcomes. Whether you are a student setting academic targets, a professional pursuing career advancement, a woman reclaiming personal ambitions after years of putting everyone else first, or an aspiring trainer building a new career — the methodology is the same: clarity, structure, action, accountability, and measurement. Every journey begins with a structured assessment because effective goal setting starts with understanding where you actually are, not just where you want to be.
+              Everyone sets goals. Very few people achieve them consistently. The difference is not motivation, willpower, or talent - it is system. Most goal-setting advice focuses on writing SMART goals, creating vision boards, or finding your &apos;why.&apos; These are starting points, not solutions. At Hidden Potential, goal setting and achievement coaching in Delhi teaches the complete execution system - from clarifying what you genuinely want, to breaking it into structured milestones, to building the daily habits and accountability systems that turn intentions into measurable outcomes. Whether you are a student setting academic targets, a professional pursuing career advancement, a woman reclaiming personal ambitions after years of putting everyone else first, or an aspiring trainer building a new career - the methodology is the same: clarity, structure, action, accountability, and measurement. Every journey begins with a structured assessment because effective goal setting starts with understanding where you actually are, not just where you want to be.
             </p>
             <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-10 text-white/60 text-sm" style={{ fontFamily: 'var(--font-body)' }}>
               {trustSignals.map((sig, i) => (
@@ -200,12 +200,12 @@ export default function GoalSettingPage() {
           <div className="max-w-3xl mx-auto">
             <SectionLabel>WHY GOAL SETTING MATTERS</SectionLabel>
             <h2 className="text-3xl md:text-4xl font-bold text-primary-navy mb-8 leading-snug" style={{ fontFamily: 'var(--font-display)' }}>
-              Why 92% of People Fail to Achieve Their Goals — and How to Be in the 8%
+              Why 92% of People Fail to Achieve Their Goals - and How to Be in the 8%
             </h2>
             <div className="space-y-6 text-charcoal leading-relaxed" style={{ fontFamily: 'var(--font-body)' }}>
-              <p>Research from the University of Scranton found that 92 percent of people who set New Year&apos;s resolutions never achieve them. Harvard Business School studies consistently show that the small percentage of people who write down specific goals and create execution plans earn ten times more than those who do not. The pattern is clear across every context — academic, professional, personal, and financial: goal achievement is not about desire. It is about structure.</p>
+              <p>Research from the University of Scranton found that 92 percent of people who set New Year&apos;s resolutions never achieve them. Harvard Business School studies consistently show that the small percentage of people who write down specific goals and create execution plans earn ten times more than those who do not. The pattern is clear across every context - academic, professional, personal, and financial: goal achievement is not about desire. It is about structure.</p>
               <p>In Delhi NCR, the gap between ambition and achievement is visible everywhere. Students set academic goals every term and fall short because they lack study planning systems. Professionals want promotions but have no structured career development plan. Women want to rebuild their identity and pursue personal goals but cannot find time because every hour is claimed by others&apos; needs. Aspiring trainers want to launch their careers but do not know how to structure the journey from intention to certification to practice.</p>
-              <p>At Hidden Potential, goal setting is not a motivational exercise. It is a structured coaching process that addresses every stage of the achievement cycle: goal clarity and prioritisation, milestone planning, habit system design, obstacle anticipation, accountability structures, progress tracking, and course correction. Every learner works with frameworks developed through 14 years of coaching experience — frameworks that have helped 5000+ individuals across Delhi turn vague ambitions into documented, measurable achievements.</p>
+              <p>At Hidden Potential, goal setting is not a motivational exercise. It is a structured coaching process that addresses every stage of the achievement cycle: goal clarity and prioritisation, milestone planning, habit system design, obstacle anticipation, accountability structures, progress tracking, and course correction. Every learner works with frameworks developed through 14 years of coaching experience - frameworks that have helped 5000+ individuals across Delhi turn vague ambitions into documented, measurable achievements.</p>
             </div>
           </div>
         </section>
@@ -219,7 +219,7 @@ export default function GoalSettingPage() {
                 Goal Setting and Achievement Skills Developed at Hidden Potential in Delhi
               </h2>
               <p className="text-gray-600 max-w-2xl mx-auto leading-relaxed" style={{ fontFamily: 'var(--font-body)' }}>
-                Goal achievement is not a single skill — it is a system of interconnected competencies spanning clarity, planning, execution, and adaptation. Weakness in any one area causes the entire system to fail. Our goal setting coaching in Delhi addresses the complete achievement cycle.
+                Goal achievement is not a single skill - it is a system of interconnected competencies spanning clarity, planning, execution, and adaptation. Weakness in any one area causes the entire system to fail. Our goal setting coaching in Delhi addresses the complete achievement cycle.
               </p>
             </div>
             <div className="grid md:grid-cols-2 gap-6">
@@ -247,7 +247,7 @@ export default function GoalSettingPage() {
                 Who Benefits from Goal Setting Coaching in Delhi?
               </h2>
               <p className="text-gray-600 max-w-2xl mx-auto leading-relaxed" style={{ fontFamily: 'var(--font-body)' }}>
-                Goal achievement challenges affect every age group and life stage. Whether your goals are academic, professional, personal, or entrepreneurial — the underlying execution skills are the same and entirely trainable.
+                Goal achievement challenges affect every age group and life stage. Whether your goals are academic, professional, personal, or entrepreneurial - the underlying execution skills are the same and entirely trainable.
               </p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -324,7 +324,7 @@ export default function GoalSettingPage() {
               Stop Setting Goals. Start Achieving Them.
             </h2>
             <p className="text-white/70 mb-10 leading-relaxed" style={{ fontFamily: 'var(--font-body)' }}>
-              The difference between people who achieve their goals and people who do not is not talent, motivation, or luck — it is system. Goal setting and achievement coaching at Hidden Potential in Dwarka, Delhi gives you the structured clarity, execution frameworks, and accountability systems that turn intentions into documented results. Start with a free assessment to understand your current achievement patterns and receive a personalised development plan.
+              The difference between people who achieve their goals and people who do not is not talent, motivation, or luck - it is system. Goal setting and achievement coaching at Hidden Potential in Dwarka, Delhi gives you the structured clarity, execution frameworks, and accountability systems that turn intentions into documented results. Start with a free assessment to understand your current achievement patterns and receive a personalised development plan.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
               <Link href="/assessment" className="btn-premium-fill">
@@ -339,7 +339,7 @@ export default function GoalSettingPage() {
               <Link href="/services/study-skills" className="text-primary-gold hover:text-white transition-colors underline">
                 Study Skills Training
               </Link>
-              {' '}— because academic goal achievement requires smart study systems
+              {' '}- because academic goal achievement requires smart study systems
             </p>
             <p className="text-white/40 text-xs" style={{ fontFamily: 'var(--font-body)' }}>
               Available at Dwarka (Sector 19B), Delhi | Noida | Gurgaon | Faridabad | Online across India

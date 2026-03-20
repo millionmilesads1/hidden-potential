@@ -1,16 +1,16 @@
 /**
- * AUDIENCE PAGE — LIFE SKILLS TRAINING FOR YOUNG ADULTS
+ * AUDIENCE PAGE - LIFE SKILLS TRAINING FOR YOUNG ADULTS
  * ─────────────────────────────────────────────────────────────────────────────
  * Route: /for/young-adults
  *
  * 7-section structure:
- *   Section 1  — HERO                       (dark gradient, H1, Lora italic, body, 2 CTAs, trust signals)
- *   Section 2  — THE REAL CHALLENGE         (off-white, intro + 6 pain-point cards)
- *   Section 3  — RECOMMENDED PROGRAMS       (white, id="programs", 8 program cards 01–08)
- *   Section 4  — WHO SPECIFICALLY BENEFITS  (navy-light, 6 persona cards)
- *   Section 5  — WHY HIDDEN POTENTIAL       (off-white, 6 differentiator cards)
- *   Section 6  — FAQ                        (white, 6 Q&As)
- *   Section 7  — FINAL CTA                  (dark gradient, para, 2 CTAs, cross-sell, location line)
+ *   Section 1  - HERO                       (dark gradient, H1, Lora italic, body, 2 CTAs, trust signals)
+ *   Section 2  - THE REAL CHALLENGE         (off-white, intro + 6 pain-point cards)
+ *   Section 3  - RECOMMENDED PROGRAMS       (white, id="programs", 8 program cards 01–08)
+ *   Section 4  - WHO SPECIFICALLY BENEFITS  (navy-light, 6 persona cards)
+ *   Section 5  - WHY HIDDEN POTENTIAL       (off-white, 6 differentiator cards)
+ *   Section 6  - FAQ                        (white, 6 Q&As)
+ *   Section 7  - FINAL CTA                  (dark gradient, para, 2 CTAs, cross-sell, location line)
  *
  * Schemas: Service + FAQPage + BreadcrumbList (all embedded as JSON-LD)
  */
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     "Life skills training for young adults, college students, and recent graduates in Delhi NCR. Confidence building, communication skills, career guidance, NLP coaching. Supreet Kaur. 14+ years. Dwarka & online.",
   openGraph: {
     title:
-      "Life Skills for Young Adults in Delhi — Build the Skills College Doesn\u2019t Teach",
+      "Life Skills for Young Adults in Delhi - Build the Skills College Doesn\u2019t Teach",
     description:
       "Confidence, communication, career clarity, emotional intelligence for 18-25 year olds in Delhi, Noida, Gurgaon, Faridabad. NLP-based. Harvard-affiliated methodology.",
     type: "website",
@@ -81,7 +81,7 @@ const faqSchema = {
       name: "What age group is this program designed for?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Our young adults programs are designed for individuals aged 18 to 25 — college students, final-year students preparing for careers, recent graduates navigating their first jobs, and young professionals in their early career years. The content, examples, and exercises are contextualised for the challenges this age group faces in Delhi NCR: competitive academic environments, campus placement pressure, first-job anxiety, and the transition from student to professional identity.",
+        text: "Our young adults programs are designed for individuals aged 18 to 25 - college students, final-year students preparing for careers, recent graduates navigating their first jobs, and young professionals in their early career years. The content, examples, and exercises are contextualised for the challenges this age group faces in Delhi NCR: competitive academic environments, campus placement pressure, first-job anxiety, and the transition from student to professional identity.",
       },
     },
     {
@@ -89,7 +89,7 @@ const faqSchema = {
       name: "I am a college student. Will this help with campus placements?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Campus placement success depends heavily on communication skills, confidence in group discussions and interviews, and the ability to articulate your value clearly under pressure. Our programs specifically develop these capabilities using NLP-based techniques — confidence anchoring for interview situations, cognitive reframing for rejection and feedback, and structured communication frameworks for group discussions. Students across Delhi University, IP University, Amity, and colleges in Noida and Gurgaon have used these tools for placement preparation.",
+        text: "Yes. Campus placement success depends heavily on communication skills, confidence in group discussions and interviews, and the ability to articulate your value clearly under pressure. Our programs specifically develop these capabilities using NLP-based techniques - confidence anchoring for interview situations, cognitive reframing for rejection and feedback, and structured communication frameworks for group discussions. Students across Delhi University, IP University, Amity, and colleges in Noida and Gurgaon have used these tools for placement preparation.",
       },
     },
     {
@@ -97,7 +97,7 @@ const faqSchema = {
       name: "How is this different from personality development classes?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Most personality development courses focus on surface-level grooming — how to dress, how to shake hands, how to make eye contact. These are useful but superficial. Hidden Potential\u2019s programs work at the behavioural and belief level using NLP techniques. We identify the specific limiting beliefs and patterns that create your self-doubt, communication anxiety, or career confusion — and systematically rewire them. The change is internal and lasting, not cosmetic.",
+        text: "Most personality development courses focus on surface-level grooming - how to dress, how to shake hands, how to make eye contact. These are useful but superficial. Hidden Potential\u2019s programs work at the behavioural and belief level using NLP techniques. We identify the specific limiting beliefs and patterns that create your self-doubt, communication anxiety, or career confusion - and systematically rewire them. The change is internal and lasting, not cosmetic.",
       },
     },
     {
@@ -121,7 +121,7 @@ const faqSchema = {
       name: "How much does life skills training cost for young adults?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "We offer special pricing for students and young adults. EMI options are available for longer programs. Group discounts apply when enrolling with friends or classmates. Pricing varies by program and format — submit an enrollment form or contact us for detailed pricing within 24 hours. We believe life skills training should be accessible for young people building their futures.",
+        text: "We offer special pricing for students and young adults. EMI options are available for longer programs. Group discounts apply when enrolling with friends or classmates. Pricing varies by program and format - submit an enrollment form or contact us for detailed pricing within 24 hours. We believe life skills training should be accessible for young people building their futures.",
       },
     },
   ],
@@ -152,40 +152,40 @@ const breadcrumbSchema = {
 const painPoints = [
   {
     num: "01",
-    title: "College can give you subject knowledge — it can't develop the skills required to live a happy and successful life.",
-    desc: "You can solve equations, write essays, and pass exams. But can you walk into a room of strangers and introduce yourself with confidence? Can you handle a group discussion without freezing? Can you articulate what makes you valuable in 60 seconds? The gap between academic knowledge and real-world capability is where most young adults in Delhi NCR struggle — and it is exactly what life skills training fills.",
+    title: "College can give you subject knowledge - it can't develop the skills required to live a happy and successful life.",
+    desc: "You can solve equations, write essays, and pass exams. But can you walk into a room of strangers and introduce yourself with confidence? Can you handle a group discussion without freezing? Can you articulate what makes you valuable in 60 seconds? The gap between academic knowledge and real-world capability is where most young adults in Delhi NCR struggle - and it is exactly what life skills training fills.",
   },
   {
     num: "02",
     title: "You Know What You Should Do, But You Cannot Make Yourself Do It",
-    desc: "You know you should speak up in class. You know you should network. You know you should start preparing for your career. But something holds you back — self-doubt, fear of judgement, perfectionism, or simple overwhelm. These are not motivation problems. They are belief patterns, and NLP coaching provides the tools to identify and rewire them.",
+    desc: "You know you should speak up in class. You know you should network. You know you should start preparing for your career. But something holds you back - self-doubt, fear of judgement, perfectionism, or simple overwhelm. These are not motivation problems. They are belief patterns, and NLP coaching provides the tools to identify and rewire them.",
   },
   {
     num: "03",
     title: "Campus Placement Pressure Is Crushing",
-    desc: "Group discussions, technical rounds, HR interviews, rejection emails — the placement season is one of the most stressful periods of a young adult\u2019s life. Most students prepare only the technical content and ignore the behavioural skills that actually determine success: confidence under pressure, communication clarity, and emotional composure. Students in Delhi, Noida, and Gurgaon face especially fierce competition.",
+    desc: "Group discussions, technical rounds, HR interviews, rejection emails - the placement season is one of the most stressful periods of a young adult\u2019s life. Most students prepare only the technical content and ignore the behavioural skills that actually determine success: confidence under pressure, communication clarity, and emotional composure. Students in Delhi, Noida, and Gurgaon face especially fierce competition.",
   },
   {
     num: "04",
     title: "Social Anxiety and Self-Doubt Are Holding You Back",
-    desc: "Avoiding social situations. Overthinking every interaction. Comparing yourself to peers who seem effortlessly confident. Social anxiety among young adults in Delhi NCR is more common than most people realise — and it directly impacts academic performance, career opportunities, and personal relationships. NLP-based confidence building addresses the root belief patterns, not just the symptoms.",
+    desc: "Avoiding social situations. Overthinking every interaction. Comparing yourself to peers who seem effortlessly confident. Social anxiety among young adults in Delhi NCR is more common than most people realise - and it directly impacts academic performance, career opportunities, and personal relationships. NLP-based confidence building addresses the root belief patterns, not just the symptoms.",
   },
   {
     num: "05",
     title: "You Have No Idea What Career Path to Choose",
-    desc: "Family expectations, peer pressure, market trends, and your own confused interests create a paralysing fog of career indecision. Career guidance at Hidden Potential goes beyond aptitude tests — it uses NLP techniques to help you understand what you actually value, what energises you, and what career direction aligns with your authentic strengths.",
+    desc: "Family expectations, peer pressure, market trends, and your own confused interests create a paralysing fog of career indecision. Career guidance at Hidden Potential goes beyond aptitude tests - it uses NLP techniques to help you understand what you actually value, what energises you, and what career direction aligns with your authentic strengths.",
   },
   {
     num: "06",
     title: "You Are About to Enter the Workforce and Feel Unprepared",
-    desc: "The transition from college to corporate is jarring. Workplace communication, professional relationships, managing authority figures, handling feedback, navigating office dynamics — none of this is taught in college. Life skills training bridges this gap so you enter your career with the behavioural toolkit that most professionals take years to develop on their own.",
+    desc: "The transition from college to corporate is jarring. Workplace communication, professional relationships, managing authority figures, handling feedback, navigating office dynamics - none of this is taught in college. Life skills training bridges this gap so you enter your career with the behavioural toolkit that most professionals take years to develop on their own.",
   },
 ];
 
 const recommendedPrograms = [
   {
     num: "01",
-    title: "An Enlightened Learner — The Signature Student Program",
+    title: "An Enlightened Learner - The Signature Student Program",
     desc: "Supreet Kaur\u2019s flagship program, originally designed for students aged 10 to 18 but with advanced modules for college-age learners. Comprehensive life skills covering confidence, communication, emotional intelligence, study techniques, goal setting, and exam resilience through NLP-based methods. The most complete starting point for young adults.",
     match: "Best for: College students seeking comprehensive personal development",
     linkHref: "/programs/enlightened-learner",
@@ -202,7 +202,7 @@ const recommendedPrograms = [
   {
     num: "03",
     title: "Confidence Building Program",
-    desc: "Structured confidence development using NLP anchoring, belief mapping, and progressive exposure. Not motivational speeches — practical tools that build genuine self-assurance through repeated structured practice. Particularly valuable for young adults dealing with social anxiety, imposter syndrome, or chronic self-doubt.",
+    desc: "Structured confidence development using NLP anchoring, belief mapping, and progressive exposure. Not motivational speeches - practical tools that build genuine self-assurance through repeated structured practice. Particularly valuable for young adults dealing with social anxiety, imposter syndrome, or chronic self-doubt.",
     match: "Best for: Young adults with self-doubt, social anxiety, or low self-esteem",
     linkHref: "/services/confidence-building",
     linkLabel: "Explore Confidence Building \u2192",
@@ -241,8 +241,8 @@ const recommendedPrograms = [
   },
   {
     num: "08",
-    title: "NLP Coaching — Individual Sessions",
-    desc: "One-on-one behavioural transformation with Supreet Kaur. For young adults with specific challenges — deep-rooted self-doubt, anxiety patterns, relationship issues, or identity confusion — individual NLP coaching provides personalised attention that group programs cannot match.",
+    title: "NLP Coaching - Individual Sessions",
+    desc: "One-on-one behavioural transformation with Supreet Kaur. For young adults with specific challenges - deep-rooted self-doubt, anxiety patterns, relationship issues, or identity confusion - individual NLP coaching provides personalised attention that group programs cannot match.",
     match: "Best for: Young adults with specific personal challenges needing individual attention",
     linkHref: "/services/nlp-coaching",
     linkLabel: "Explore NLP Coaching \u2192",
@@ -253,7 +253,7 @@ const personas = [
   {
     num: "01",
     title: "College Students Preparing for Campus Placements",
-    desc: "Students at Delhi University, IP University, Amity, Jamia, JNU, and colleges across Noida and Gurgaon. Communication mastery and confidence building are the two most impactful programs for placement preparation — group discussions, HR interviews, and technical rounds all require behavioural skills that most students never develop.",
+    desc: "Students at Delhi University, IP University, Amity, Jamia, JNU, and colleges across Noida and Gurgaon. Communication mastery and confidence building are the two most impactful programs for placement preparation - group discussions, HR interviews, and technical rounds all require behavioural skills that most students never develop.",
     linkHref: "/programs/communication-mastery",
     linkLabel: "Explore Communication Mastery \u2192",
   },
@@ -267,7 +267,7 @@ const personas = [
   {
     num: "03",
     title: "Young Adults Dealing with Social Anxiety",
-    desc: "If social situations feel overwhelming, if self-doubt is constant, if you avoid opportunities because of fear — NLP-based confidence building addresses the root belief patterns creating these responses. Change is structured, gradual, and lasting.",
+    desc: "If social situations feel overwhelming, if self-doubt is constant, if you avoid opportunities because of fear - NLP-based confidence building addresses the root belief patterns creating these responses. Change is structured, gradual, and lasting.",
     linkHref: "/services/nlp-coaching",
     linkLabel: "Explore NLP Coaching \u2192",
   },
@@ -281,7 +281,7 @@ const personas = [
   {
     num: "05",
     title: "Competitive Exam Aspirants",
-    desc: "UPSC, CAT, GATE, CLAT — competitive exam preparation is as much about mental resilience and emotional management as it is about content. Study skills, stress management, and confidence anchoring give you the psychological edge that separates top performers from the rest.",
+    desc: "UPSC, CAT, GATE, CLAT - competitive exam preparation is as much about mental resilience and emotional management as it is about content. Study skills, stress management, and confidence anchoring give you the psychological edge that separates top performers from the rest.",
     linkHref: "/services/study-skills",
     linkLabel: "Explore Study Skills \u2192",
   },
@@ -297,11 +297,11 @@ const personas = [
 const differentiators = [
   {
     title: "Designed for Your Age, Not Diluted for It",
-    desc: "Our young adults programs use real-world scenarios relevant to 18 to 25 year olds — campus placements, first jobs, social dynamics, career confusion, family expectations. The NLP techniques are the same used with senior professionals, but the application context is entirely yours.",
+    desc: "Our young adults programs use real-world scenarios relevant to 18 to 25 year olds - campus placements, first jobs, social dynamics, career confusion, family expectations. The NLP techniques are the same used with senior professionals, but the application context is entirely yours.",
   },
   {
     title: "NLP-Based, Not Motivational Fluff",
-    desc: "You have watched enough motivational videos on YouTube. Hidden Potential uses NLP-based techniques — confidence anchoring, belief restructuring, cognitive reframing — that produce neurological changes, not temporary emotional highs. The tools work because they change patterns at the subconscious level.",
+    desc: "You have watched enough motivational videos on YouTube. Hidden Potential uses NLP-based techniques - confidence anchoring, belief restructuring, cognitive reframing - that produce neurological changes, not temporary emotional highs. The tools work because they change patterns at the subconscious level.",
   },
   {
     title: "Created by Someone Who Has Trained 5000+ Learners",
@@ -317,22 +317,22 @@ const differentiators = [
   },
   {
     title: "Assessment-Based and Measurable",
-    desc: "Start with a structured pre-assessment. End with documented progress. You do not have to guess whether the training worked — confidence, communication, emotional regulation, and goal clarity improvements are tracked and visible.",
+    desc: "Start with a structured pre-assessment. End with documented progress. You do not have to guess whether the training worked - confidence, communication, emotional regulation, and goal clarity improvements are tracked and visible.",
   },
 ];
 
 const faqs = [
   {
     q: "What age group is this program designed for?",
-    a: "Our young adults programs are designed for individuals aged 18 to 25 — college students, final-year students preparing for careers, recent graduates navigating their first jobs, and young professionals in their early career years. The content, examples, and exercises are contextualised for the challenges this age group faces in Delhi NCR: competitive academic environments, campus placement pressure, first-job anxiety, and the transition from student to professional identity.",
+    a: "Our young adults programs are designed for individuals aged 18 to 25 - college students, final-year students preparing for careers, recent graduates navigating their first jobs, and young professionals in their early career years. The content, examples, and exercises are contextualised for the challenges this age group faces in Delhi NCR: competitive academic environments, campus placement pressure, first-job anxiety, and the transition from student to professional identity.",
   },
   {
     q: "I am a college student. Will this help with campus placements?",
-    a: "Yes. Campus placement success depends heavily on communication skills, confidence in group discussions and interviews, and the ability to articulate your value clearly under pressure. Our programs specifically develop these capabilities using NLP-based techniques — confidence anchoring for interview situations, cognitive reframing for rejection and feedback, and structured communication frameworks for group discussions. Students across Delhi University, IP University, Amity, and colleges in Noida and Gurgaon have used these tools for placement preparation.",
+    a: "Yes. Campus placement success depends heavily on communication skills, confidence in group discussions and interviews, and the ability to articulate your value clearly under pressure. Our programs specifically develop these capabilities using NLP-based techniques - confidence anchoring for interview situations, cognitive reframing for rejection and feedback, and structured communication frameworks for group discussions. Students across Delhi University, IP University, Amity, and colleges in Noida and Gurgaon have used these tools for placement preparation.",
   },
   {
     q: "How is this different from personality development classes?",
-    a: "Most personality development courses focus on surface-level grooming — how to dress, how to shake hands, how to make eye contact. These are useful but superficial. Hidden Potential\u2019s programs work at the behavioural and belief level using NLP techniques. We identify the specific limiting beliefs and patterns that create your self-doubt, communication anxiety, or career confusion — and systematically rewire them. The change is internal and lasting, not cosmetic.",
+    a: "Most personality development courses focus on surface-level grooming - how to dress, how to shake hands, how to make eye contact. These are useful but superficial. Hidden Potential\u2019s programs work at the behavioural and belief level using NLP techniques. We identify the specific limiting beliefs and patterns that create your self-doubt, communication anxiety, or career confusion - and systematically rewire them. The change is internal and lasting, not cosmetic.",
   },
   {
     q: "Can I attend while studying full-time?",
@@ -344,7 +344,7 @@ const faqs = [
   },
   {
     q: "How much does life skills training cost for young adults?",
-    a: "We offer special pricing for students and young adults. EMI options are available for longer programs. Group discounts apply when enrolling with friends or classmates. Pricing varies by program and format — submit an enrollment form or contact us for detailed pricing within 24 hours. We believe life skills training should be accessible for young people building their futures.",
+    a: "We offer special pricing for students and young adults. EMI options are available for longer programs. Group discounts apply when enrolling with friends or classmates. Pricing varies by program and format - submit an enrollment form or contact us for detailed pricing within 24 hours. We believe life skills training should be accessible for young people building their futures.",
   },
 ];
 
@@ -386,7 +386,7 @@ export default function ForYoungAdultsPage() {
       />
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 1 — HERO
+          SECTION 1 - HERO
           Background: Dark navy-to-deep gradient
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
@@ -427,7 +427,7 @@ export default function ForYoungAdultsPage() {
             className="text-3xl md:text-4xl lg:text-[2.75rem] font-extrabold text-white leading-tight mb-6 max-w-4xl mx-auto"
             style={{ textShadow: "0 1px 2px rgba(0,0,0,0.15)" }}
           >
-            Life Skills Training for Young Adults in Delhi — Build What College Does Not Teach
+            Life Skills Training for Young Adults in Delhi - Build What College Does Not Teach
           </h1>
 
           {/* Lora italic tagline */}
@@ -447,7 +447,7 @@ export default function ForYoungAdultsPage() {
             College teaches subjects. It rarely teaches confidence. Communication. Emotional
             intelligence. Career clarity. The ability to handle pressure, connect with people, and
             know what you actually want from life. These are the skills that determine whether
-            your degree translates into a life you are proud of — or a decade of figuring it out
+            your degree translates into a life you are proud of - or a decade of figuring it out
             the hard way. Hidden Potential&rsquo;s life skills training for young adults in Delhi
             NCR uses NLP-based techniques developed by{" "}
             <Link
@@ -480,7 +480,7 @@ export default function ForYoungAdultsPage() {
             </Link>
           </div>
 
-          {/* Trust signals — 5 items */}
+          {/* Trust signals - 5 items */}
           <div className="flex flex-wrap justify-center gap-x-5 gap-y-2 text-xs text-white/40">
             {[
               "14+ Years Experience",
@@ -499,7 +499,7 @@ export default function ForYoungAdultsPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 2 — THE REAL CHALLENGE
+          SECTION 2 - THE REAL CHALLENGE
           Background: Off-white
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-off-white py-20">
@@ -511,13 +511,13 @@ export default function ForYoungAdultsPage() {
             </h2>
             <p className="text-base text-charcoal/75 leading-relaxed max-w-3xl">
               The problem is not intelligence. It is not effort. Most young adults in Delhi NCR
-              work incredibly hard — but the behavioural skills that actually determine success in
+              work incredibly hard - but the behavioural skills that actually determine success in
               life and career are never part of any curriculum. Here are the challenges we see
               most often among young adults seeking life skills training in Delhi.
             </p>
           </div>
 
-          {/* 6 pain-point cards — 2-column grid */}
+          {/* 6 pain-point cards - 2-column grid */}
           <div className="grid md:grid-cols-2 gap-5">
             {painPoints.map((p) => (
               <div
@@ -540,7 +540,7 @@ export default function ForYoungAdultsPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 3 — RECOMMENDED PROGRAMS
+          SECTION 3 - RECOMMENDED PROGRAMS
           Background: White
       ═══════════════════════════════════════════════════════════════════════ */}
       <section id="programs" className="bg-white py-20">
@@ -558,7 +558,7 @@ export default function ForYoungAdultsPage() {
             </p>
           </div>
 
-          {/* 8 program cards — 2-column grid, technique card style */}
+          {/* 8 program cards - 2-column grid, technique card style */}
           <div className="grid md:grid-cols-2 gap-5">
             {recommendedPrograms.map((p) => (
               <div
@@ -594,7 +594,7 @@ export default function ForYoungAdultsPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 4 — WHO SPECIFICALLY BENEFITS
+          SECTION 4 - WHO SPECIFICALLY BENEFITS
           Background: Navy-light (#F3F0FF)
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-navy-light py-20">
@@ -606,13 +606,13 @@ export default function ForYoungAdultsPage() {
             </h2>
             <p className="text-base text-charcoal/75 leading-relaxed max-w-3xl">
               Life skills training for young adults at Hidden Potential serves a wide range of
-              situations — from placement-season college students to recent graduates navigating
+              situations - from placement-season college students to recent graduates navigating
               their first job, from competitive exam aspirants to young women building their
               professional identity in Delhi NCR.
             </p>
           </div>
 
-          {/* 6 persona cards — 2-column grid */}
+          {/* 6 persona cards - 2-column grid */}
           <div className="grid md:grid-cols-2 gap-5">
             {personas.map((a) => (
               <div
@@ -641,7 +641,7 @@ export default function ForYoungAdultsPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 5 — WHY HIDDEN POTENTIAL
+          SECTION 5 - WHY HIDDEN POTENTIAL
           Background: Off-white
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-off-white py-20">
@@ -658,7 +658,7 @@ export default function ForYoungAdultsPage() {
             </p>
           </div>
 
-          {/* 6 differentiator cards — 3-column grid */}
+          {/* 6 differentiator cards - 3-column grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {differentiators.map((d) => (
               <div
@@ -694,7 +694,7 @@ export default function ForYoungAdultsPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 6 — FAQ
+          SECTION 6 - FAQ
           Background: White
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-white py-20">
@@ -712,7 +712,7 @@ export default function ForYoungAdultsPage() {
                 key={i}
                 className="card-service"
               >
-                {/* Question — teal left bar */}
+                {/* Question - teal left bar */}
                 <div
                   className="px-6 py-4 border-l-4 border-primary-teal"
                   style={{ background: "#F8F6F2" }}
@@ -750,7 +750,7 @@ export default function ForYoungAdultsPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 7 — FINAL CTA
+          SECTION 7 - FINAL CTA
           Background: Dark navy gradient
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
@@ -802,6 +802,11 @@ export default function ForYoungAdultsPage() {
             </Link>
           </div>
 
+          {/* Hybrid trust signal */}
+          <p className="text-sm text-white/50 mb-6">
+            All programs available online and in-person - choose what works for you.
+          </p>
+
           {/* Cross-sell */}
           <p className="text-xs text-white/40 mb-4">
             Also explore:{" "}
@@ -811,7 +816,7 @@ export default function ForYoungAdultsPage() {
             >
               Life Skills Training for Professionals
             </Link>{" "}
-            — for early-career professionals ready for the next level
+            - for early-career professionals ready for the next level
           </p>
 
           {/* Location line */}

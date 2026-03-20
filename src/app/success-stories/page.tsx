@@ -1,5 +1,5 @@
 /**
- * SUPPORTING PAGE — SUCCESS STORIES
+ * SUPPORTING PAGE - SUCCESS STORIES
  * ─────────────────────────────────────────────────────────────────────────────
  * Route: /success-stories
  *
@@ -8,11 +8,11 @@
  * format, and schema approach as app/services/nlp-coaching/page.tsx.
  *
  * 5-section custom layout:
- *   Section 1 — HERO               (dark gradient, H1, Lora italic, body, 2 CTAs, trust)
- *   Section 2 — IMPACT NUMBERS     (off-white, 4-col stats grid)
- *   Section 3 — STORIES BY CATEGORY(white, 4 categories × 2–3 story cards each)
- *   Section 4 — SHARE YOUR STORY   (off-white, invite CTA)
- *   Section 5 — BOTTOM CTA         (dark gradient, 2 CTAs, cross-sell, location line)
+ *   Section 1 - HERO               (dark gradient, H1, Lora italic, body, 2 CTAs, trust)
+ *   Section 2 - IMPACT NUMBERS     (off-white, 4-col stats grid)
+ *   Section 3 - STORIES BY CATEGORY(white, 4 categories × 2–3 story cards each)
+ *   Section 4 - SHARE YOUR STORY   (off-white, invite CTA)
+ *   Section 5 - BOTTOM CTA         (dark gradient, 2 CTAs, cross-sell, location line)
  *
  * ⚠️  PLACEHOLDER NOTICE
  * ─────────────────────────────────────────────────────────────────────────────
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   description:
     "Real transformations from life skills training at Hidden Potential in Delhi. Student confidence growth, professional breakthroughs, women's empowerment journeys. 5000+ trained. Read their stories.",
   openGraph: {
-    title: "Success Stories — Real Transformations from Hidden Potential",
+    title: "Success Stories - Real Transformations from Hidden Potential",
     description:
       "Students, professionals, women, and trainers share how life skills training in Delhi NCR transformed their confidence, communication, and careers. 5000+ trained by Supreet Kaur.",
     type: "website",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Success Stories | Hidden Potential — Life Skills Training Delhi",
+    title: "Success Stories | Hidden Potential - Life Skills Training Delhi",
     description:
       "Real results from NLP coaching, student programs, women's empowerment, and trainer certification in Delhi NCR.",
   },
@@ -121,7 +121,7 @@ const stats = [
 // Each story has: name, meta (role/age/location), program, challenge,
 // transformation, quote (optional), linkHref, linkLabel.
 //
-// ⚠️  PLACEHOLDER — Replace all story fields with real client-provided content.
+// ⚠️  PLACEHOLDER - Replace all story fields with real client-provided content.
 //     Search for "PLACEHOLDER" in this file to find every field to update.
 //
 const storyCategories = [
@@ -140,7 +140,7 @@ const storyCategories = [
           "Struggled with extreme exam anxiety and inability to speak in class despite strong academic knowledge. Avoided group discussions and refused to participate in school events.",
         transformation:
           "After 12 weeks, participated in school debate competition and placed in the top three. Exam scores improved by 15%. Now mentors younger students in confidence building sessions organised by the school.",
-        quote: "I didn't think I could ever speak in front of a crowd. The program didn't just teach me skills — it changed how I see myself.",
+        quote: "I didn't think I could ever speak in front of a crowd. The program didn't just teach me skills - it changed how I see myself.",
         linkHref: "/programs/enlightened-learner",
         linkLabel: "Explore An Enlightened Learner →",
       },
@@ -164,7 +164,7 @@ const storyCategories = [
           "Social anxiety preventing participation in group discussions and campus placement interviews despite a strong academic record. Multiple interview rejections had compounded self-doubt.",
         transformation:
           "Completed the Communication Mastery program with focus on assertiveness, public speaking, and confidence anchoring. Successfully cleared campus placements at a top company. Attributes success directly to state management and communication frameworks learned at Hidden Potential.",
-        quote: "Three rejections taught me nothing. Three months with Supreet Kaur taught me everything I needed for that fourth interview — and I got the offer.",
+        quote: "Three rejections taught me nothing. Three months with Supreet Kaur taught me everything I needed for that fourth interview - and I got the offer.",
         linkHref: "/programs/communication-mastery",
         linkLabel: "Explore Communication Mastery →",
       },
@@ -184,8 +184,8 @@ const storyCategories = [
         challenge:
           "Five-plus years in the same role with strong technical skills but an inability to command leadership conversations. Passed over for promotion twice. Colleagues with fewer qualifications were being promoted ahead.",
         transformation:
-          "After three months of structured NLP coaching with Supreet Kaur at Hidden Potential, received promotion to senior leadership. Attributes the change specifically to belief restructuring and communication pattern rewiring — not additional technical training.",
-        quote: "My manager told me she noticed a different energy in my meetings. I wasn't just smarter — I was finally present, confident, and leading.",
+          "After three months of structured NLP coaching with Supreet Kaur at Hidden Potential, received promotion to senior leadership. Attributes the change specifically to belief restructuring and communication pattern rewiring - not additional technical training.",
+        quote: "My manager told me she noticed a different energy in my meetings. I wasn't just smarter - I was finally present, confident, and leading.",
         linkHref: "/services/nlp-coaching",
         linkLabel: "Explore NLP Coaching →",
       },
@@ -197,7 +197,7 @@ const storyCategories = [
           "Chronic workplace stress affecting daily performance and personal relationships. Communication breakdowns with team members leading to repeated project delays and loss of confidence in leadership ability.",
         transformation:
           "Developed emotional state management tools and assertive communication frameworks over a structured 12-week pathway. Team feedback improved significantly in the next quarterly review. Reports feeling in control for the first time in years.",
-        quote: "I stopped surviving my workday and started leading it. That shift came from understanding my own patterns — something no corporate training had ever taught me.",
+        quote: "I stopped surviving my workday and started leading it. That shift came from understanding my own patterns - something no corporate training had ever taught me.",
         linkHref: "/programs/communication-mastery",
         linkLabel: "Explore Communication Mastery →",
       },
@@ -218,7 +218,7 @@ const storyCategories = [
           "After fifteen years of prioritising family responsibilities, had completely lost her sense of personal identity and professional confidence. Described feeling invisible in social situations and unable to make simple decisions without seeking external approval.",
         transformation:
           "Through twelve weeks of NLP-based self-mastery at Hidden Potential in Dwarka, started a home business, rebuilt social connections, and regained decision-making confidence. Reports feeling like herself again for the first time in years.",
-        quote: "Somewhere between being a wife, a mother, and a daughter-in-law, I had disappeared. This program helped me find myself again — and that changed everything.",
+        quote: "Somewhere between being a wife, a mother, and a daughter-in-law, I had disappeared. This program helped me find myself again - and that changed everything.",
         linkHref: "/programs/self-mastery-women",
         linkLabel: "Explore Self Mastery for Women →",
       },
@@ -230,7 +230,7 @@ const storyCategories = [
           "Sustained workplace bullying over two years had severely eroded self-worth. Developed anxiety around speaking in meetings and avoided professional interactions wherever possible.",
         transformation:
           "NLP confidence anchoring and belief restructuring through Hidden Potential transformed workplace presence within eight weeks. Now leads team meetings independently and mentors junior colleagues.",
-        quote: "I used to rehearse what I would say in meetings and still go blank. Now I walk in knowing I have something valuable to contribute — and I say it.",
+        quote: "I used to rehearse what I would say in meetings and still go blank. Now I walk in knowing I have something valuable to contribute - and I say it.",
         linkHref: "/services/confidence-building",
         linkLabel: "Explore Confidence Building →",
       },
@@ -251,7 +251,7 @@ const storyCategories = [
           "Wanted to transition from a corporate career into training and facilitation but had no structured methodology, curriculum design experience, or formal certification to attract school and institutional clients.",
         transformation:
           "Completed the 3-month Train the Trainer Certification at Hidden Potential. Now delivers life skills workshops at three schools across Delhi NCR. Has independently trained over 200 students and is in partnership discussions with two additional schools.",
-        quote: "The certification gave me the framework I was missing. I didn't just learn what to teach — I learned how to transform a room full of teenagers into engaged, reflective learners.",
+        quote: "The certification gave me the framework I was missing. I didn't just learn what to teach - I learned how to transform a room full of teenagers into engaged, reflective learners.",
         linkHref: "/programs/train-the-trainer",
         linkLabel: "Explore Train the Trainer Certification →",
       },
@@ -263,7 +263,7 @@ const storyCategories = [
           "School teacher wanting to go beyond traditional classroom instruction and engage students through life skills facilitation. Felt constrained by conventional pedagogy and wanted structured methodology to deliver meaningful change.",
         transformation:
           "NLP integration and curriculum design training from Hidden Potential transformed classroom engagement measurably. School administration reports improved student participation across all assessed metrics. Now independently certified to deliver life skills sessions with a dedicated slot in the school timetable.",
-        quote: "I became a teacher because I wanted to change lives. This certification finally gave me the tools to actually do that — not just deliver content, but facilitate real growth.",
+        quote: "I became a teacher because I wanted to change lives. This certification finally gave me the tools to actually do that - not just deliver content, but facilitate real growth.",
         linkHref: "/programs/train-the-trainer",
         linkLabel: "Explore Train the Trainer Certification →",
       },
@@ -305,7 +305,7 @@ export default function SuccessStoriesPage() {
       />
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 1 — HERO
+          SECTION 1 - HERO
           Background: Dark navy-to-deep gradient
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
@@ -347,7 +347,7 @@ export default function SuccessStoriesPage() {
             className="text-3xl md:text-4xl lg:text-[2.75rem] font-extrabold text-white leading-tight mb-6 max-w-4xl mx-auto"
             style={{ textShadow: "0 1px 2px rgba(0,0,0,0.15)" }}
           >
-            Success Stories — Real Results from Life Skills Training in Delhi
+            Success Stories - Real Results from Life Skills Training in Delhi
           </h1>
 
           {/* Lora italic tagline */}
@@ -375,7 +375,7 @@ export default function SuccessStoriesPage() {
             <Link href="/programs/train-the-trainer" className="text-white/80 hover:text-white underline underline-offset-2 transition-colors">
               certified life skills trainer
             </Link>
-            . These are not hypothetical outcomes — they are documented transformations from life
+            . These are not hypothetical outcomes - they are documented transformations from life
             skills training at Hidden Potential, guided by{" "}
             <Link href="/about" className="text-white/80 hover:text-white underline underline-offset-2 transition-colors">
               Supreet Kaur
@@ -418,7 +418,7 @@ export default function SuccessStoriesPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 2 — IMPACT NUMBERS
+          SECTION 2 - IMPACT NUMBERS
           Background: Off-white
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-off-white py-20">
@@ -430,7 +430,7 @@ export default function SuccessStoriesPage() {
             </h2>
           </div>
 
-          {/* 4-column stats grid — 2-col mobile, 4-col desktop */}
+          {/* 4-column stats grid - 2-col mobile, 4-col desktop */}
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
             {stats.map((s) => (
               <div
@@ -453,7 +453,7 @@ export default function SuccessStoriesPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 3 — SUCCESS STORIES BY CATEGORY
+          SECTION 3 - SUCCESS STORIES BY CATEGORY
           Background: White
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-white py-20">
@@ -465,7 +465,7 @@ export default function SuccessStoriesPage() {
             </h2>
             <p className="text-base text-charcoal/75 leading-relaxed max-w-3xl">
               From students finding their voice to professionals commanding boardrooms, from women
-              reclaiming their identity to teachers becoming certified trainers — life skills
+              reclaiming their identity to teachers becoming certified trainers - life skills
               training at Hidden Potential produces transformation that is visible, measurable, and
               lasting. Stories below are organised by audience group. Participant names have been
               abbreviated or anonymised to protect privacy.
@@ -488,14 +488,14 @@ export default function SuccessStoriesPage() {
                 </div>
 
                 {/* Story cards grid */}
-                {/* PLACEHOLDER — Replace story data in the storyCategories array above */}
+                {/* PLACEHOLDER - Replace story data in the storyCategories array above */}
                 <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
                   {category.stories.map((story, idx) => (
                     <div
                       key={idx}
                       className="bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow flex flex-col overflow-hidden"
                     >
-                      {/* Card top — gold accent bar */}
+                      {/* Card top - gold accent bar */}
                       <div
                         className="h-1 w-full"
                         style={{ background: "#C8A951" }}
@@ -503,7 +503,7 @@ export default function SuccessStoriesPage() {
 
                       <div className="p-6 flex flex-col flex-1">
                         {/* Name + meta */}
-                        {/* PLACEHOLDER — Replace name and meta with real participant details */}
+                        {/* PLACEHOLDER - Replace name and meta with real participant details */}
                         <div className="mb-4">
                           <p className="font-bold text-primary-navy text-[15px] leading-snug">
                             {story.name}
@@ -519,7 +519,7 @@ export default function SuccessStoriesPage() {
                         </div>
 
                         {/* The Challenge */}
-                        {/* PLACEHOLDER — Replace challenge text with real participant's challenge */}
+                        {/* PLACEHOLDER - Replace challenge text with real participant's challenge */}
                         <div className="mb-4">
                           <p className="text-[11px] font-bold uppercase tracking-wider text-primary-navy mb-1.5">
                             The Challenge
@@ -530,7 +530,7 @@ export default function SuccessStoriesPage() {
                         </div>
 
                         {/* The Transformation */}
-                        {/* PLACEHOLDER — Replace transformation text with real outcome details */}
+                        {/* PLACEHOLDER - Replace transformation text with real outcome details */}
                         <div className="mb-4 flex-1">
                           <p className="text-[11px] font-bold uppercase tracking-wider text-primary-teal mb-1.5">
                             The Transformation
@@ -540,8 +540,8 @@ export default function SuccessStoriesPage() {
                           </p>
                         </div>
 
-                        {/* Quote — Lora italic (only shown if quote is provided) */}
-                        {/* PLACEHOLDER — Replace empty string with actual participant quote, or remove this block if no quote */}
+                        {/* Quote - Lora italic (only shown if quote is provided) */}
+                        {/* PLACEHOLDER - Replace empty string with actual participant quote, or remove this block if no quote */}
                         {story.quote && (
                           <blockquote
                             className="border-l-2 border-primary-gold pl-3 mb-4"
@@ -587,7 +587,7 @@ export default function SuccessStoriesPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 4 — SHARE YOUR STORY
+          SECTION 4 - SHARE YOUR STORY
           Background: Off-white
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-off-white py-20">
@@ -597,8 +597,8 @@ export default function SuccessStoriesPage() {
             Have You Trained with Hidden Potential? Share Your Story
           </h2>
           <p className="text-base text-charcoal/75 leading-relaxed mb-8 max-w-2xl mx-auto">
-            If you are a past participant of any Hidden Potential program — as a student,
-            professional, woman, or certified trainer — we would love to hear your story. Your
+            If you are a past participant of any Hidden Potential program - as a student,
+            professional, woman, or certified trainer - we would love to hear your story. Your
             experience helps others in Delhi, Noida, Gurgaon, and Faridabad make the decision to
             invest in their own transformation. Stories are shared with your consent, and your
             privacy is always respected. Contact us to share your journey.
@@ -646,7 +646,7 @@ export default function SuccessStoriesPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 5 — BOTTOM CTA
+          SECTION 5 - BOTTOM CTA
           Background: Dark navy gradient
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
@@ -671,7 +671,7 @@ export default function SuccessStoriesPage() {
           </h2>
 
           <p className="text-base text-white/60 leading-relaxed mb-10 max-w-2xl mx-auto">
-            Every success story on this page started exactly where you are right now — wondering
+            Every success story on this page started exactly where you are right now - wondering
             whether life skills training could actually make a difference. The answer, documented
             across 5000+ individuals over 14+ years, is yes. Whether you are a student in Dwarka,
             a professional in Gurgaon, a woman in Noida, or a teacher in Faridabad,{" "}

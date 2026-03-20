@@ -1,16 +1,16 @@
 /**
- * B2B PAGE — LIFE SKILLS PROGRAMS FOR SCHOOLS
+ * B2B PAGE - LIFE SKILLS PROGRAMS FOR SCHOOLS
  * ─────────────────────────────────────────────────────────────────────────────
  * Route: /for/schools
  *
  * 7-section structure:
- *   Section 1  — HERO                (dark gradient, H1, Lora italic, body para, 2 CTAs, trust signals)
- *   Section 2  — WHY SCHOOLS NEED    (off-white, 3 explanatory paragraphs)
- *   Section 3  — WHAT YOUR SCHOOL GETS (white, 8 offerings cards numbered 01–08)
- *   Section 4  — WHO THIS IS FOR     (navy-light, 6 audience cards, some with links)
- *   Section 5  — WHY HIDDEN POTENTIAL (off-white, 6 differentiator cards)
- *   Section 6  — FAQ                 (white, 6 Q&As with FAQPage schema)
- *   Section 7  — CTA                 (dark gradient, para, 2 CTAs, cross-sell, location line)
+ *   Section 1  - HERO                (dark gradient, H1, Lora italic, body para, 2 CTAs, trust signals)
+ *   Section 2  - WHY SCHOOLS NEED    (off-white, 3 explanatory paragraphs)
+ *   Section 3  - WHAT YOUR SCHOOL GETS (white, 8 offerings cards numbered 01–08)
+ *   Section 4  - WHO THIS IS FOR     (navy-light, 6 audience cards, some with links)
+ *   Section 5  - WHY HIDDEN POTENTIAL (off-white, 6 differentiator cards)
+ *   Section 6  - FAQ                 (white, 6 Q&As with FAQPage schema)
+ *   Section 7  - CTA                 (dark gradient, para, 2 CTAs, cross-sell, location line)
  *
  * Schemas: Service + FAQPage + BreadcrumbList (all embedded as JSON-LD)
  */
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   description:
     "Comprehensive life skills programs for schools in Delhi by certified NLP practitioner Supreet Kaur. 14+ years experience. 5000+ students trained. NEP 2020 aligned. MSME registered. Dwarka, Noida, Gurgaon.",
   openGraph: {
-    title: "Life Skills Programs for Schools in Delhi — NEP 2020 Aligned Curriculum",
+    title: "Life Skills Programs for Schools in Delhi - NEP 2020 Aligned Curriculum",
     description:
       "NLP-based life skills curriculum for schools in Delhi NCR. Student workshops, teacher training, parent engagement, exam stress management. MSME registered. Skill India affiliated.",
     type: "website",
@@ -97,7 +97,7 @@ const faqSchema = {
       name: "Are your school programs aligned with NEP 2020 requirements?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Our founder, Supreet Kaur, has formally completed IGNOU's UGC-approved Professional Development Programme on NEP 2020 Implementation with an A Grade — making Hidden Potential one of the few life skills providers in Delhi NCR with formal NEP 2020 training credentials. Our life skills programs for schools are designed to align with the National Education Policy 2020 mandate for holistic, experiential, and competency-based learning. We integrate social emotional learning, critical thinking, communication skills, and self-awareness development as outlined in the NEP 2020 framework. Schools receive NEP-compliant documentation that supports accreditation, inspection readiness, and compliance reporting. Supreet Kaur's curriculum draws on her NLP certification, Harvard-affiliated Life Skills training, and Graphology expertise to create programs that go well beyond what NEP 2020 requires.",
+        text: "Yes. Our founder, Supreet Kaur, has formally completed IGNOU's UGC-approved Professional Development Programme on NEP 2020 Implementation with an A Grade - making Hidden Potential one of the few life skills providers in Delhi NCR with formal NEP 2020 training credentials. Our life skills programs for schools are designed to align with the National Education Policy 2020 mandate for holistic, experiential, and competency-based learning. We integrate social emotional learning, critical thinking, communication skills, and self-awareness development as outlined in the NEP 2020 framework. Schools receive NEP-compliant documentation that supports accreditation, inspection readiness, and compliance reporting. Supreet Kaur's curriculum draws on her NLP certification, Harvard-affiliated Life Skills training, and Graphology expertise to create programs that go well beyond what NEP 2020 requires.",
       },
     },
     {
@@ -160,7 +160,7 @@ const offerings = [
   {
     num: "02",
     title: "Teacher Training and NLP Integration",
-    desc: "Equip your teaching staff with NLP-based classroom management techniques, student engagement strategies, and emotional intelligence tools. Teachers learn to identify hidden potential in students, manage diverse learning needs, and create psychologically safe classroom environments. This is not generic professional development — it is structured NLP integration built on Supreet Kaur\u2019s certified methodology and 14+ years of school-level experience. Over 200 educators across Delhi NCR have been certified through this approach.",
+    desc: "Equip your teaching staff with NLP-based classroom management techniques, student engagement strategies, and emotional intelligence tools. Teachers learn to identify hidden potential in students, manage diverse learning needs, and create psychologically safe classroom environments. This is not generic professional development - it is structured NLP integration built on Supreet Kaur\u2019s certified methodology and 14+ years of school-level experience. Over 200 educators across Delhi NCR have been certified through this approach.",
     linkHref: "/programs/train-the-trainer",
     linkLabel: "Explore Train the Trainer Certification \u2192",
   },
@@ -341,7 +341,7 @@ export default function ForSchoolsPage() {
       />
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 1 — HERO
+          SECTION 1 - HERO
           Background: Dark navy-to-deep gradient
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
@@ -382,7 +382,7 @@ export default function ForSchoolsPage() {
             className="text-3xl md:text-4xl lg:text-[2.75rem] font-extrabold text-white leading-tight mb-6 max-w-4xl mx-auto"
             style={{ textShadow: "0 1px 2px rgba(0,0,0,0.15)" }}
           >
-            Life Skills Programs for Schools in Delhi — Building Future-Ready Students
+            Life Skills Programs for Schools in Delhi - Building Future-Ready Students
           </h1>
 
           {/* Lora italic tagline */}
@@ -400,8 +400,8 @@ export default function ForSchoolsPage() {
           {/* Body paragraph */}
           <p className="text-base text-white/60 leading-relaxed mb-10 max-w-3xl mx-auto">
             Schools across Delhi NCR invest heavily in academic performance but the skills that
-            matter most in life — confidence, communication, emotional regulation, resilience, and
-            self-awareness — are rarely taught with the same rigour. Hidden Potential brings
+            matter most in life - confidence, communication, emotional regulation, resilience, and
+            self-awareness - are rarely taught with the same rigour. Hidden Potential brings
             structured, NLP-based life skills programs directly into schools, designed by Supreet
             Kaur, creator of the An Enlightened Learner program. With 14+ years of experience,
             Harvard-affiliated Life Skills certification, NLP credentials, and over 5000 students
@@ -421,7 +421,7 @@ export default function ForSchoolsPage() {
             </Link>
           </div>
 
-          {/* Trust signals — 6 items */}
+          {/* Trust signals - 6 items */}
           <div className="flex flex-wrap justify-center gap-x-5 gap-y-2 text-xs text-white/40">
             {[
               "14+ Years Experience",
@@ -441,7 +441,7 @@ export default function ForSchoolsPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 2 — WHY SCHOOLS NEED LIFE SKILLS
+          SECTION 2 - WHY SCHOOLS NEED LIFE SKILLS
           Background: Off-white
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-off-white py-20">
@@ -454,7 +454,7 @@ export default function ForSchoolsPage() {
           <div className="flex flex-col gap-6 text-base text-charcoal leading-relaxed">
             <p>
               NEP 2020 now mandates holistic development including life skills, social emotional
-              learning, and experiential education as core curricular requirements — not optional
+              learning, and experiential education as core curricular requirements - not optional
               additions. Schools in Delhi NCR that rely solely on academic instruction are falling
               behind the policy framework and parental expectations. Parents in Dwarka, South Delhi,
               Noida, and Gurgaon are actively choosing schools that offer structured life skills
@@ -462,7 +462,7 @@ export default function ForSchoolsPage() {
               on documented holistic development outcomes.
             </p>
             <p>
-              Student mental health challenges are rising sharply across Delhi NCR — exam anxiety,
+              Student mental health challenges are rising sharply across Delhi NCR - exam anxiety,
               social media-driven self-doubt, poor emotional regulation, communication gaps, and lack
               of career clarity are reported by school counsellors and principals across Rohini,
               Pitampura, Faridabad, and Greater Noida. These are not problems that more tutoring
@@ -487,14 +487,14 @@ export default function ForSchoolsPage() {
               </Link>{" "}
               specifically as a structured student development framework for school contexts. Unlike
               one-off motivational speakers, Hidden Potential delivers assessment-based programs with
-              documented outcomes — the difference between information and transformation.
+              documented outcomes - the difference between information and transformation.
             </p>
           </div>
         </div>
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 3 — WHAT YOUR SCHOOL GETS
+          SECTION 3 - WHAT YOUR SCHOOL GETS
           Background: White
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-white py-20">
@@ -507,7 +507,7 @@ export default function ForSchoolsPage() {
                 Comprehensive Life Skills Curriculum for Schools in Delhi NCR
               </h2>
               <p className="text-base text-charcoal/75 leading-relaxed">
-                Our school programs cover the full ecosystem — students, teachers, and parents —
+                Our school programs cover the full ecosystem - students, teachers, and parents -
                 because lasting transformation requires alignment across all three. Here is what your
                 school receives through a partnership with Hidden Potential.
               </p>
@@ -525,7 +525,7 @@ export default function ForSchoolsPage() {
             </div>
           </div>
 
-          {/* 8 offerings cards — 2-column grid */}
+          {/* 8 offerings cards - 2-column grid */}
           <div className="grid md:grid-cols-2 gap-5">
             {offerings.map((o) => (
               <div
@@ -560,7 +560,7 @@ export default function ForSchoolsPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 4 — WHICH SCHOOLS BENEFIT
+          SECTION 4 - WHICH SCHOOLS BENEFIT
           Background: Navy-light (#F3F0FF)
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-navy-light py-20">
@@ -578,7 +578,7 @@ export default function ForSchoolsPage() {
             </p>
           </div>
 
-          {/* 6 audience cards — 2-column grid */}
+          {/* 6 audience cards - 2-column grid */}
           <div className="grid md:grid-cols-2 gap-5">
             {audiences.map((a) => (
               <div
@@ -611,7 +611,7 @@ export default function ForSchoolsPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 5 — WHY HIDDEN POTENTIAL
+          SECTION 5 - WHY HIDDEN POTENTIAL
           Background: Off-white
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-off-white py-20">
@@ -709,7 +709,7 @@ export default function ForSchoolsPage() {
             </div>
           </div>
 
-          {/* ── Remaining 5 differentiator cards — 3-column grid ── */}
+          {/* ── Remaining 5 differentiator cards - 3-column grid ── */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {differentiators.filter((_, i) => i !== 1).map((d) => (
               <div
@@ -745,7 +745,7 @@ export default function ForSchoolsPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 6 — FAQ
+          SECTION 6 - FAQ
           Background: White
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-white py-20">
@@ -763,7 +763,7 @@ export default function ForSchoolsPage() {
                 key={i}
                 className="card-service"
               >
-                {/* Question — teal left bar */}
+                {/* Question - teal left bar */}
                 <div
                   className="px-6 py-4 border-l-4 border-primary-teal"
                   style={{ background: "#F8F6F2" }}
@@ -801,7 +801,7 @@ export default function ForSchoolsPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 7 — FINAL CTA
+          SECTION 7 - FINAL CTA
           Background: Dark navy gradient
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
@@ -826,10 +826,10 @@ export default function ForSchoolsPage() {
           </h2>
 
           <p className="text-base text-white/60 leading-relaxed mb-10 max-w-2xl mx-auto">
-            Your students spend 6 to 8 hours a day in your school — more waking time than they
+            Your students spend 6 to 8 hours a day in your school - more waking time than they
             spend at home. The habits, beliefs, and emotional patterns they develop during these
             years shape their entire adult lives. A structured life skills program does not compete
-            with academics — it amplifies academic performance by building the confidence, focus,
+            with academics - it amplifies academic performance by building the confidence, focus,
             emotional regulation, and communication skills that make learning effective. Over 5000
             students across Delhi NCR have experienced this transformation through Hidden Potential.
             Your school could be next.
@@ -852,6 +852,11 @@ export default function ForSchoolsPage() {
             </Link>
           </div>
 
+          {/* Hybrid trust signal */}
+          <p className="text-sm text-white/50 mb-6">
+            All programs available online and in-person - choose what works for you.
+          </p>
+
           {/* Cross-sell */}
           <p className="text-xs text-white/40 mb-4">
             Also explore:{" "}
@@ -861,7 +866,7 @@ export default function ForSchoolsPage() {
             >
               Corporate Workshops in Delhi
             </Link>{" "}
-            — structured team development for your teaching staff
+            - structured team development for your teaching staff
           </p>
 
           {/* Location line */}

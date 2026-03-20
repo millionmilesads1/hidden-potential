@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans, DM_Sans, Lora, Geist } from "next/font/google";
+import { Plus_Jakarta_Sans, DM_Sans, Lora } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 
@@ -30,11 +30,10 @@ import MobileBottomNav from "@/components/ui/mobile-bottom-nav";
 import LayoutClient from "@/components/layout/LayoutClient";
 import { cn } from "@/lib/utils";
 
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 export const metadata: Metadata = {
   title: {
-    default: "Hidden Potential — Life Skills Training Academy in Delhi",
+    default: "Hidden Potential - Life Skills Training Academy in Delhi",
     template: "%s | Hidden Potential",
   },
   description:
@@ -47,7 +46,7 @@ export const metadata: Metadata = {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Hidden Potential — Life Skills Training Academy in Delhi",
+        alt: "Hidden Potential - Life Skills Training Academy in Delhi",
       },
     ],
   },
@@ -68,10 +67,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={cn(plusJakartaSans.variable, dmSans.variable, lora.variable, "font-sans", geist.variable)}>
+    <html lang="en" className={cn(plusJakartaSans.variable, dmSans.variable, lora.variable, "font-sans")}>
       <body className="min-h-screen flex flex-col overflow-x-hidden">
         {/* ── Desktop + tablet sticky header nav ──────────────────────── */}
-        {/* ── Skip navigation — keyboard accessibility (WCAG 2.4.1 SC) ─────
+        {/* ── Skip navigation - keyboard accessibility (WCAG 2.4.1 SC) ─────
             Visually hidden until focused; lets keyboard/screen-reader users
             jump directly to main content, bypassing the repeated navbar.   */}
         <a
@@ -88,10 +87,10 @@ export default function RootLayout({
             pb-24 on mobile creates clearance so content is never hidden
             behind the fixed tubelight bottom bar.
             md:pb-0 removes the extra padding on desktop. */}
-        {/* pt-[92px] = 92px — clears the floating pill navbar (top:16px + ~60px height + 16px gap).
+        {/* pt-[92px] = 92px - clears the floating pill navbar (top:16px + ~60px height + 16px gap).
             pb-24 md:pb-0 clears the mobile tubelight bottom bar. */}
         <main id="main-content" tabIndex={-1} className="flex-1 pt-[92px] pb-24 md:pb-0 outline-none">
-          {/* ── Tagline banner — scrolls with page, appears on every page ── */}
+          {/* ── Tagline banner - scrolls with page, appears on every page ── */}
           <div
             style={{
               background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)",
@@ -113,12 +112,12 @@ export default function RootLayout({
 
         <Footer />
 
-        {/* ── Mobile spacer — prevents footer bottom row from hiding behind
+        {/* ── Mobile spacer - prevents footer bottom row from hiding behind
             the fixed tubelight bar (tubelight is ~72px tall + mb-4 gap). */}
         <div className="md:hidden h-24" aria-hidden="true" />
 
         {/* ── Mobile-only tubelight bottom nav (hidden on md+) ─────────
-            MobileBottomNav is a "use client" wrapper — required because
+            MobileBottomNav is a "use client" wrapper - required because
             Lucide icon function refs cannot cross the RSC/Client boundary
             from a Server Component layout.                               */}
         <div className="md:hidden">

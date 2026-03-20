@@ -1,5 +1,5 @@
 /**
- * PROGRAM PAGE — AN ENLIGHTENED LEARNER (AEL)
+ * PROGRAM PAGE - AN ENLIGHTENED LEARNER (AEL)
  * ─────────────────────────────────────────────────────────────────────────────
  * Route: /programs/enlightened-learner
  *
@@ -7,14 +7,14 @@
  * When building the next program page (Communication Mastery, Self Mastery for
  * Women, Train the Trainer, Art Therapy), follow this EXACT 7-section structure:
  *
- *   Section 1  — HERO             (navy gradient, h1, Lora tagline, age badge, 2 CTAs)
- *   Section 2  — WHAT IT DELIVERS (off-white, outcomes grid, gold callout, framework)
- *   Section 3  — WHO IT'S FOR     (white, audience cards)
- *   Section 4  — KEY AREAS        (off-white, skill chips + 4 domain cards)
- *   Section 5  — PATHWAY          (navy dark, 3 level cards + connectors)
- *   Section 6  — ASSESSMENT       (white, 5-step timeline + quote callout)
- *   Section 7a — OUTCOMES+FORMAT  (off-white, outcome bullets + format badges)
- *   Section 7b — FINAL CTA        (<ProgramCTASection> component)
+ *   Section 1  - HERO             (navy gradient, h1, Lora tagline, age badge, 2 CTAs)
+ *   Section 2  - WHAT IT DELIVERS (off-white, outcomes grid, gold callout, framework)
+ *   Section 3  - WHO IT'S FOR     (white, audience cards)
+ *   Section 4  - KEY AREAS        (off-white, skill chips + 4 domain cards)
+ *   Section 5  - PATHWAY          (navy dark, 3 level cards + connectors)
+ *   Section 6  - ASSESSMENT       (white, 5-step timeline + quote callout)
+ *   Section 7a - OUTCOMES+FORMAT  (off-white, outcome bullets + format badges)
+ *   Section 7b - FINAL CTA        (<ProgramCTASection> component)
  *
  * All shared visual components are imported from @/components/program/shared.
  */
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   description:
     "Structured life skills development for children & teens. Emotional intelligence, communication, self-discipline & academic efficiency. Pre & post assessment. 3 levels.",
   openGraph: {
-    title: "An Enlightened Learner — Life Skills Program for Students",
+    title: "An Enlightened Learner - Life Skills Program for Students",
     description:
       "Structured life skills development for children & teens aged 8–21. Three levels: Foundation, Growth, Mastery. Assessment-based placement.",
     type: "website",
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
 const schema = {
   "@context": "https://schema.org",
   "@type": "Course",
-  name: "An Enlightened Learner — Structured Life Skills Program for Students",
+  name: "An Enlightened Learner - Structured Life Skills Program for Students",
   description:
     "Structured life skills development for children and teens aged 8–21. Covers emotional intelligence, communication, self-discipline, academic efficiency, and real-world readiness.",
   url: "https://hiddenpotentialskills.com/programs/enlightened-learner",
@@ -213,7 +213,7 @@ const domains: DomainCardData[] = [
   {
     num: "01",
     title: "Self Mastery",
-    desc: "Building the internal foundation — self-awareness, emotional regulation, mindfulness, and the discipline to grow intentionally.",
+    desc: "Building the internal foundation - self-awareness, emotional regulation, mindfulness, and the discipline to grow intentionally.",
     skills: ["Self-Awareness", "Emotional Regulation", "Growth Mindset", "Self-Discipline"],
     accent: "teal",
   },
@@ -234,7 +234,7 @@ const domains: DomainCardData[] = [
   {
     num: "04",
     title: "Real-World Readiness",
-    desc: "Preparing students for life beyond the classroom — financial literacy, digital responsibility, and leadership.",
+    desc: "Preparing students for life beyond the classroom - financial literacy, digital responsibility, and leadership.",
     skills: ["Financial Literacy", "Digital Literacy", "Time Management", "Responsible Behaviour"],
     accent: "teal",
   },
@@ -256,7 +256,7 @@ const pathwayLevels: PathwayLevelData[] = [
   {
     name: "HP Mastery Track",
     duration: "12 Months",
-    desc: "Leadership, identity integration, and sustainable long-term transformation — the full journey.",
+    desc: "Leadership, identity integration, and sustainable long-term transformation - the full journey.",
     accent: "white",
   },
 ];
@@ -270,7 +270,7 @@ const assessmentSteps: AssessmentStepData[] = [
   {
     num: "02",
     title: "Structured Level Placement",
-    desc: "Assessment results determine the right entry point — Foundation, Growth Series, or Mastery Track — so no learner starts at the wrong level.",
+    desc: "Assessment results determine the right entry point - Foundation, Growth Series, or Mastery Track - so no learner starts at the wrong level.",
   },
   {
     num: "03",
@@ -285,7 +285,7 @@ const assessmentSteps: AssessmentStepData[] = [
   {
     num: "05",
     title: "Post-Assessment (Progress Report)",
-    desc: "A documented evaluation comparing baseline to completion — growth is visible, measurable, and presented as a formal progress report.",
+    desc: "A documented evaluation comparing baseline to completion - growth is visible, measurable, and presented as a formal progress report.",
   },
 ];
 
@@ -321,7 +321,7 @@ const ctaData: ProgramCtaData = {
   cta2Href: "/contact",
   crossSellText: "Also explore:",
   crossSellHref: "/programs/communication-mastery",
-  crossSellLabel: "Communication Mastery — for focused speaking and leadership skills",
+  crossSellLabel: "Communication Mastery - for focused speaking and leadership skills",
 };
 
 // ── Page ─────────────────────────────────────────────────────────────────────
@@ -338,7 +338,7 @@ export default function AELPage() {
       />
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 1 — HERO
+          SECTION 1 - HERO
           Background: Dark navy gradient
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
@@ -375,10 +375,10 @@ export default function AELPage() {
               Flagship Program
             </span>
             <span
-              className="inline-flex items-center px-4 py-1.5 text-[11px] font-bold uppercase tracking-widest text-primary-teal rounded-full"
+              className="inline-flex items-center px-4 py-1.5 text-[11px] font-bold uppercase tracking-widest text-primary-gold rounded-full"
               style={{
-                background: "rgba(124,58,237,0.12)",
-                border: "1px solid rgba(124,58,237,0.25)",
+                background: "rgba(200,169,81,0.12)",
+                border: "1px solid rgba(200,169,81,0.25)",
               }}
             >
               Ages 8–21
@@ -387,7 +387,7 @@ export default function AELPage() {
 
           {/* H1 */}
           <h1 className="text-3xl md:text-4xl lg:text-[2.75rem] font-extrabold text-white leading-tight mb-6 max-w-4xl mx-auto" style={{ textShadow: "0 1px 2px rgba(0,0,0,0.15)" }}>
-            An Enlightened Learner — Structured Life Skills Program for Students (Ages 8–21)
+            An Enlightened Learner - Structured Life Skills Program for Students (Ages 8–21)
           </h1>
 
           {/* Lora italic transformation tagline */}
@@ -457,7 +457,7 @@ export default function AELPage() {
       <LearnYourWaySelector />
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 2 — WHAT THIS PROGRAM DELIVERS
+          SECTION 2 - WHAT THIS PROGRAM DELIVERS
           Background: Off-white
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-off-white py-20">
@@ -468,7 +468,7 @@ export default function AELPage() {
               Six Core Areas of Transformation
             </h2>
             <p className="text-lg text-charcoal max-w-2xl mx-auto leading-relaxed">
-              Every skill developed in this program is structured, practised, and assessed — not
+              Every skill developed in this program is structured, practised, and assessed - not
               discussed once and forgotten.
             </p>
           </div>
@@ -500,7 +500,7 @@ export default function AELPage() {
             ))}
           </div>
 
-          {/* Gold callout — Pre/Post Assessment */}
+          {/* Gold callout - Pre/Post Assessment */}
           <div
             className="rounded-lg p-6 border-l-4 max-w-3xl mx-auto mb-12"
             style={{ borderColor: "#C8A951", background: "#FBF7EE" }}
@@ -520,7 +520,7 @@ export default function AELPage() {
                 </p>
                 <p className="text-sm text-charcoal/70 leading-relaxed">
                   Every learner begins with a structured diagnostic assessment and ends with a
-                  formal progress report — so growth is always visible, documented, and measurable.
+                  formal progress report - so growth is always visible, documented, and measurable.
                   No guesswork. No assumptions. Only evidence.
                 </p>
               </div>
@@ -551,7 +551,7 @@ export default function AELPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 3 — WHO IT IS DESIGNED FOR
+          SECTION 3 - WHO IT IS DESIGNED FOR
           Background: White
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-white py-20">
@@ -565,7 +565,7 @@ export default function AELPage() {
               </h2>
               <p className="text-lg text-charcoal leading-relaxed">
                 The An Enlightened Learner program is designed for students at any stage of
-                development — with age-specific sub-groups within each level.
+                development - with age-specific sub-groups within each level.
               </p>
             </div>
             <div className="relative w-full overflow-hidden rounded-2xl">
@@ -634,7 +634,7 @@ export default function AELPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 4 — KEY AREAS & SKILL DOMAINS
+          SECTION 4 - KEY AREAS & SKILL DOMAINS
           Background: Off-white
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-off-white py-20">
@@ -645,12 +645,12 @@ export default function AELPage() {
               13 Key Areas Across 4 Skill Domains
             </h2>
             <p className="text-lg text-charcoal max-w-2xl mx-auto leading-relaxed">
-              A complete life skills curriculum — structured, progressive, and covering every
+              A complete life skills curriculum - structured, progressive, and covering every
               dimension of student development.
             </p>
           </div>
 
-          {/* 13 skill chips — flowing layout */}
+          {/* 13 skill chips - flowing layout */}
           <div className="flex flex-wrap justify-center gap-2.5 mb-14">
             {skillAreas.map((skill) => (
               <SkillChip key={skill} label={skill} />
@@ -664,7 +664,7 @@ export default function AELPage() {
             ))}
           </div>
 
-          {/* Internal link — Communication Skills service page */}
+          {/* Internal link - Communication Skills service page */}
           <p className="text-center text-sm text-charcoal/70 mt-8">
             Looking for focused communication training?{" "}
             <Link
@@ -678,7 +678,7 @@ export default function AELPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 5 — DEVELOPMENT PATHWAY
+          SECTION 5 - DEVELOPMENT PATHWAY
           Background: Dark navy gradient
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
@@ -694,7 +694,7 @@ export default function AELPage() {
               Three Levels. One Clear Journey.
             </h2>
             <p className="text-lg text-white/60 max-w-2xl mx-auto leading-relaxed">
-              Assessment-based placement ensures every learner starts at the right level — and
+              Assessment-based placement ensures every learner starts at the right level - and
               the pathway is designed to move with them as they grow.
             </p>
           </div>
@@ -704,7 +704,7 @@ export default function AELPage() {
             {pathwayLevels.map((level, i) => (
               <div key={level.name} className="flex items-stretch md:flex-1">
                 <PathwayLevelCard data={level} />
-                {/* Connector arrow between cards — desktop only */}
+                {/* Connector arrow between cards - desktop only */}
                 {i < pathwayLevels.length - 1 && (
                   <div className="hidden md:flex items-center justify-center flex-shrink-0 px-3">
                     <svg
@@ -740,14 +740,14 @@ export default function AELPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 6 — ASSESSMENT & MEASUREMENT
+          SECTION 6 - ASSESSMENT & MEASUREMENT
           Background: White
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-white py-20">
         <div className="max-w-5xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12 items-start">
 
-            {/* Left — Section header + quote */}
+            {/* Left - Section header + quote */}
             <div>
               <ProgramSectionLabel>Assessment Process</ProgramSectionLabel>
               <h2 className="text-3xl md:text-4xl font-bold text-primary-navy mb-6 leading-tight">
@@ -755,7 +755,7 @@ export default function AELPage() {
               </h2>
               <p className="text-base text-charcoal/80 leading-relaxed mb-8">
                 Every stage of the An Enlightened Learner program is supported by structured
-                evaluation — from the first session to the final report. Progress is documented,
+                evaluation - from the first session to the final report. Progress is documented,
                 visible, and meaningful.
               </p>
 
@@ -775,7 +775,7 @@ export default function AELPage() {
                   every stage of the journey.&rdquo;
                 </p>
                 <p className="text-xs font-semibold text-primary-teal mt-3">
-                  — Hidden Potential Assessment Framework
+                  - Hidden Potential Assessment Framework
                 </p>
               </div>
 
@@ -792,7 +792,7 @@ export default function AELPage() {
               </p>
             </div>
 
-            {/* Right — 5-step assessment timeline */}
+            {/* Right - 5-step assessment timeline */}
             <div className="pt-2">
               {assessmentSteps.map((step, i) => (
                 <AssessmentStep
@@ -807,14 +807,14 @@ export default function AELPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 7a — EXPECTED OUTCOMES + FORMAT
+          SECTION 7a - EXPECTED OUTCOMES + FORMAT
           Background: Off-white
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-off-white py-20">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12 items-start">
 
-            {/* Left — Expected outcomes */}
+            {/* Left - Expected outcomes */}
             <div>
               <ProgramSectionLabel>Expected Outcomes</ProgramSectionLabel>
               <h2 className="text-3xl font-bold text-primary-navy mb-6 leading-tight">
@@ -832,7 +832,7 @@ export default function AELPage() {
               </div>
             </div>
 
-            {/* Right — Format + enroll prompt */}
+            {/* Right - Format + enroll prompt */}
             <div className="flex flex-col gap-6">
               {/* Format */}
               <div className="bg-white rounded-lg p-7 border border-gray-200 shadow-sm">
@@ -912,7 +912,7 @@ export default function AELPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 7b — FINAL CTA
+          SECTION 7b - FINAL CTA
           Uses the shared <ProgramCTASection> component
       ═══════════════════════════════════════════════════════════════════════ */}
       <ProgramCTASection data={ctaData} />

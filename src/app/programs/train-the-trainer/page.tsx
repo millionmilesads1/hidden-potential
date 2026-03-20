@@ -1,17 +1,17 @@
 /**
- * PROGRAM PAGE — TRAIN THE TRAINER CERTIFICATION
+ * PROGRAM PAGE - TRAIN THE TRAINER CERTIFICATION
  * ─────────────────────────────────────────────────────────────────────────────
  * Route: /programs/train-the-trainer
  *
  * 7-section structure:
- *   Section 1  — HERO             (navy gradient, H1, Lora tagline, track badges, 2 CTAs)
- *   Section 2  — WHAT IT DELIVERS (off-white, 5 outcomes, gold callout, framework)
- *   Section 3  — WHO IT'S FOR     (white, 6 audience cards + program info callout)
- *   Section 4  — KEY AREAS        (off-white, 15 skill chips + 4 domain cards)
- *   Section 5  — PATHWAY          (navy dark, 2 tracks + connector)
- *   Section 6  — ASSESSMENT       (white, 6-step timeline + quote callout)
- *   Section 7a — OUTCOMES+FORMAT  (off-white, outcome bullets + format badges + certification)
- *   Section 7b — FINAL CTA        (<ProgramCTASection> shared component)
+ *   Section 1  - HERO             (navy gradient, H1, Lora tagline, track badges, 2 CTAs)
+ *   Section 2  - WHAT IT DELIVERS (off-white, 5 outcomes, gold callout, framework)
+ *   Section 3  - WHO IT'S FOR     (white, 6 audience cards + program info callout)
+ *   Section 4  - KEY AREAS        (off-white, 15 skill chips + 4 domain cards)
+ *   Section 5  - PATHWAY          (navy dark, 2 tracks + connector)
+ *   Section 6  - ASSESSMENT       (white, 6-step timeline + quote callout)
+ *   Section 7a - OUTCOMES+FORMAT  (off-white, outcome bullets + format badges + certification)
+ *   Section 7b - FINAL CTA        (<ProgramCTASection> shared component)
  */
 
 import type { Metadata } from "next";
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   description:
     "Become a certified life skills trainer. Master 25 life skills, NLP integration, facilitation techniques & curriculum design. 1-month or 3-month tracks. MSME & Skill India certified.",
   openGraph: {
-    title: "Train the Trainer Certification — Become a Certified Life Skills Facilitator in India",
+    title: "Train the Trainer Certification - Become a Certified Life Skills Facilitator in India",
     description:
       "Master 25 life skills, facilitation, curriculum design & NLP integration. 1-month crash course or 3-month full certification. MSME registered. Skill India certified.",
     type: "website",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
 const schema = {
   "@context": "https://schema.org",
   "@type": "Course",
-  name: "Train the Trainer Certification — Become a Certified Life Skills Facilitator in India",
+  name: "Train the Trainer Certification - Become a Certified Life Skills Facilitator in India",
   description:
     "A structured certification program for aspiring life skills trainers. Covers 25 life skills, facilitation techniques, curriculum design, NLP integration, and practical training delivery. Two tracks: 1-month crash course and 3-month full certification.",
   url: "https://hiddenpotentialskills.com/programs/train-the-trainer",
@@ -110,7 +110,7 @@ const schema = {
 const coreDeliverables = [
   {
     title: "Deep Understanding of Life Skills",
-    desc: "Learn all 25 life skills through a structured framework — their definitions, developmental stages, and evidence-based methods for teaching them effectively.",
+    desc: "Learn all 25 life skills through a structured framework - their definitions, developmental stages, and evidence-based methods for teaching them effectively.",
     serviceLink: "/services/nlp-coaching",
     serviceLinkLabel: "Explore NLP Coaching",
   },
@@ -120,17 +120,17 @@ const coreDeliverables = [
   },
   {
     title: "Structured Session Design",
-    desc: "Master the art of building outcome-based training modules — from session planning and content sequencing to pre/post assessment tools and structured feedback models.",
+    desc: "Master the art of building outcome-based training modules - from session planning and content sequencing to pre/post assessment tools and structured feedback models.",
   },
   {
     title: "Professional Trainer Identity",
-    desc: "Build a credible, professional trainer profile — grounded in certification, curriculum ownership, and demonstrated facilitation competence recognised by MSME and Skill India.",
+    desc: "Build a credible, professional trainer profile - grounded in certification, curriculum ownership, and demonstrated facilitation competence recognised by MSME and Skill India.",
     serviceLink: "/about",
     serviceLinkLabel: "About Supreet Kaur",
   },
   {
     title: "Independent Income Pathway",
-    desc: "Gain the credentials and skills needed to launch your own life skills practice — in schools, corporates, community groups, or as an independent trainer.",
+    desc: "Gain the credentials and skills needed to launch your own life skills practice - in schools, corporates, community groups, or as an independent trainer.",
   },
 ];
 
@@ -143,7 +143,7 @@ const audiences = [
   {
     icon: "📚",
     title: "Educators & School Teachers",
-    desc: "Teachers seeking to bring structured life skills into the classroom — aligned with NEP 2020 and delivered with professional confidence.",
+    desc: "Teachers seeking to bring structured life skills into the classroom - aligned with NEP 2020 and delivered with professional confidence.",
     serviceLink: "/for/schools",
     serviceLinkLabel: "Life Skills for Schools",
   },
@@ -165,7 +165,7 @@ const audiences = [
   {
     icon: "💡",
     title: "Passionate Learners & Change-Makers",
-    desc: "People who believe life skills are essential for every individual and want to deliver this change at scale — in communities, schools, or organisations.",
+    desc: "People who believe life skills are essential for every individual and want to deliver this change at scale - in communities, schools, or organisations.",
   },
 ];
 
@@ -205,14 +205,14 @@ const domains: DomainCardData[] = [
   {
     num: "03",
     title: "Assessment & Program Design",
-    desc: "Building structured training modules from scratch — outcome mapping, session planning, pre/post assessment creation, feedback frameworks, and progress measurement.",
+    desc: "Building structured training modules from scratch - outcome mapping, session planning, pre/post assessment creation, feedback frameworks, and progress measurement.",
     skills: ["Session Planning", "Outcome Mapping", "Pre/Post Assessment", "Feedback Frameworks"],
     accent: "navy",
   },
   {
     num: "04",
     title: "NLP Integration & Behavioural Tools",
-    desc: "Applying Neuro-Linguistic Programming techniques in training contexts — anchoring, belief restructuring, language patterns for influence, and mindset-focused facilitation.",
+    desc: "Applying Neuro-Linguistic Programming techniques in training contexts - anchoring, belief restructuring, language patterns for influence, and mindset-focused facilitation.",
     skills: ["NLP Anchoring", "Belief Restructuring", "Language Patterns", "Mindset Facilitation"],
     accent: "teal",
   },
@@ -247,7 +247,7 @@ const assessmentSteps: AssessmentStepData[] = [
   {
     num: "03",
     title: "Session Planning Submission",
-    desc: "Design a complete training session from scratch — including objectives, content structure, delivery approach, and evaluation method.",
+    desc: "Design a complete training session from scratch - including objectives, content structure, delivery approach, and evaluation method.",
   },
   {
     num: "04",
@@ -262,7 +262,7 @@ const assessmentSteps: AssessmentStepData[] = [
   {
     num: "06",
     title: "Certification Upon Successful Completion",
-    desc: "Certification is awarded based on demonstrated competence — curriculum knowledge, facilitation quality, and session design — not attendance alone.",
+    desc: "Certification is awarded based on demonstrated competence - curriculum knowledge, facilitation quality, and session design - not attendance alone.",
   },
 ];
 
@@ -273,13 +273,13 @@ const expectedOutcomes = [
     linkLabel: "An Enlightened Learner",
   },
   {
-    text: "Practical facilitation confidence — ability to train groups with presence and structure",
+    text: "Practical facilitation confidence - ability to train groups with presence and structure",
   },
   {
     text: "Ability to design and deliver complete, outcome-based training sessions independently",
   },
   {
-    text: "Assessment creation skills — pre/post tools, feedback models, progress tracking",
+    text: "Assessment creation skills - pre/post tools, feedback models, progress tracking",
   },
   {
     text: "NLP-based behaviour tools for mindset training and effective facilitation",
@@ -290,7 +290,7 @@ const expectedOutcomes = [
     text: "A professional trainer profile recognised under MSME and Skill India",
   },
   {
-    text: "An independent income pathway — in schools, corporates, or as a freelance trainer",
+    text: "An independent income pathway - in schools, corporates, or as a freelance trainer",
   },
 ];
 
@@ -304,7 +304,7 @@ const ctaData: ProgramCtaData = {
   cta2Href: "/contact",
   crossSellText: "Also explore:",
   crossSellHref: "/programs/enlightened-learner",
-  crossSellLabel: "An Enlightened Learner — understand the student programs you'll be trained to deliver",
+  crossSellLabel: "An Enlightened Learner - understand the student programs you'll be trained to deliver",
 };
 
 // ── Page ─────────────────────────────────────────────────────────────────────
@@ -317,7 +317,7 @@ export default function TrainTheTrainerPage() {
       />
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 1 — HERO
+          SECTION 1 - HERO
           Background: Dark navy-to-deep gradient
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
@@ -344,10 +344,10 @@ export default function TrainTheTrainerPage() {
           {/* Label badge */}
           <div className="flex items-center justify-center gap-3 mb-5">
             <span
-              className="inline-flex items-center px-4 py-1.5 text-[11px] font-bold uppercase tracking-widest text-primary-teal rounded-full"
+              className="inline-flex items-center px-4 py-1.5 text-[11px] font-bold uppercase tracking-widest text-primary-gold rounded-full"
               style={{
-                background: "rgba(124,58,237,0.12)",
-                border: "1px solid rgba(124,58,237,0.25)",
+                background: "rgba(200,169,81,0.12)",
+                border: "1px solid rgba(200,169,81,0.25)",
               }}
             >
               Certification Program
@@ -368,7 +368,7 @@ export default function TrainTheTrainerPage() {
             className="text-3xl md:text-4xl lg:text-[2.75rem] font-extrabold text-white leading-tight mb-6 max-w-4xl mx-auto"
             style={{ textShadow: "0 1px 2px rgba(0,0,0,0.15)" }}
           >
-            Train the Trainer Certification — Become a Certified Life Skills Facilitator in India
+            Train the Trainer Certification - Become a Certified Life Skills Facilitator in India
           </h1>
 
           {/* Lora italic tagline */}
@@ -434,8 +434,10 @@ export default function TrainTheTrainerPage() {
         </div>
       </section>
 
+      <LearnYourWaySelector />
+
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 2 — WHAT THIS PROGRAM DELIVERS
+          SECTION 2 - WHAT THIS PROGRAM DELIVERS
           Background: Off-white
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-off-white py-20">
@@ -446,7 +448,7 @@ export default function TrainTheTrainerPage() {
               Five Pillars of Trainer Development
             </h2>
             <p className="text-lg text-charcoal max-w-2xl mx-auto leading-relaxed">
-              This program doesn&rsquo;t just teach you about life skills — it trains you to teach
+              This program doesn&rsquo;t just teach you about life skills - it trains you to teach
               them. Every outcome is grounded in structured practice and demonstrated competence.
             </p>
           </div>
@@ -527,7 +529,7 @@ export default function TrainTheTrainerPage() {
               </div>
               <div>
                 <p className="text-sm font-bold text-primary-navy mb-1">
-                  Certification Awarded Based on Demonstrated Competence — Not Attendance
+                  Certification Awarded Based on Demonstrated Competence - Not Attendance
                 </p>
                 <p className="text-sm text-charcoal/70 leading-relaxed">
                   Includes practical training, curriculum design exposure, and NLP integration.
@@ -569,7 +571,7 @@ export default function TrainTheTrainerPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 3 — WHO IT IS DESIGNED FOR
+          SECTION 3 - WHO IT IS DESIGNED FOR
           Background: White
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-white py-20">
@@ -582,7 +584,7 @@ export default function TrainTheTrainerPage() {
                 Is This Certification Right for You?
               </h2>
               <p className="text-lg text-charcoal leading-relaxed">
-                This program is built for individuals who believe life skills matter — and are ready
+                This program is built for individuals who believe life skills matter - and are ready
                 to make teaching them their professional identity.
               </p>
             </div>
@@ -590,7 +592,7 @@ export default function TrainTheTrainerPage() {
               <div className="relative w-full" style={{ height: "420px" }}>
                 <Image
                   src="/images/training/training-1.jpg"
-                  alt="Train the Trainer certification program session at Hidden Potential Delhi — participants in facilitation practice"
+                  alt="Train the Trainer certification program session at Hidden Potential Delhi - participants in facilitation practice"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover object-center"
@@ -656,7 +658,7 @@ export default function TrainTheTrainerPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 4 — KEY AREAS & SKILL DOMAINS
+          SECTION 4 - KEY AREAS & SKILL DOMAINS
           Background: Off-white
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-off-white py-20">
@@ -667,7 +669,7 @@ export default function TrainTheTrainerPage() {
               15 Key Areas Across 4 Skill Domains
             </h2>
             <p className="text-lg text-charcoal max-w-2xl mx-auto leading-relaxed">
-              A complete trainer curriculum — covering life skills theory, facilitation craft,
+              A complete trainer curriculum - covering life skills theory, facilitation craft,
               curriculum design, and NLP integration in one structured program.
             </p>
           </div>
@@ -708,7 +710,7 @@ export default function TrainTheTrainerPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 5 — DEVELOPMENT PATHWAY
+          SECTION 5 - DEVELOPMENT PATHWAY
           Background: Dark navy gradient
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
@@ -724,7 +726,7 @@ export default function TrainTheTrainerPage() {
               Two Tracks. One Certification Goal.
             </h2>
             <p className="text-lg text-white/60 max-w-2xl mx-auto leading-relaxed">
-              Choose the track that fits your timeline. Both lead to the same certified outcome —
+              Choose the track that fits your timeline. Both lead to the same certified outcome -
               demonstrated life skills facilitation competence.
             </p>
           </div>
@@ -769,14 +771,14 @@ export default function TrainTheTrainerPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 6 — ASSESSMENT & MEASUREMENT
+          SECTION 6 - ASSESSMENT & MEASUREMENT
           Background: White
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-white py-20">
         <div className="max-w-5xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12 items-start">
 
-            {/* Left — Section header + quote */}
+            {/* Left - Section header + quote */}
             <div>
               <ProgramSectionLabel>Assessment Process</ProgramSectionLabel>
               <h2 className="text-3xl md:text-4xl font-bold text-primary-navy mb-6 leading-tight">
@@ -785,7 +787,7 @@ export default function TrainTheTrainerPage() {
               <p className="text-base text-charcoal/80 leading-relaxed mb-8">
                 Every stage of the Train the Trainer program is supported by structured evaluation.
                 From session planning to live facilitation, your competence as a trainer is
-                assessed at every step — not just at the end.
+                assessed at every step - not just at the end.
               </p>
 
               {/* Gold quote callout */}
@@ -797,11 +799,11 @@ export default function TrainTheTrainerPage() {
                   className="text-lg text-primary-navy leading-relaxed"
                   style={{ fontFamily: "var(--font-accent)", fontStyle: "italic" }}
                 >
-                  &ldquo;Certification is earned through demonstrated competence — not just
+                  &ldquo;Certification is earned through demonstrated competence - not just
                   attendance.&rdquo;
                 </p>
                 <p className="text-xs font-semibold text-primary-teal mt-3">
-                  — Hidden Potential Certification Framework
+                  - Hidden Potential Certification Framework
                 </p>
               </div>
 
@@ -819,7 +821,7 @@ export default function TrainTheTrainerPage() {
               </p>
             </div>
 
-            {/* Right — 6-step assessment timeline */}
+            {/* Right - 6-step assessment timeline */}
             <div className="pt-2">
               {assessmentSteps.map((step, i) => (
                 <AssessmentStep
@@ -834,14 +836,14 @@ export default function TrainTheTrainerPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 7a — EXPECTED OUTCOMES + FORMAT
+          SECTION 7a - EXPECTED OUTCOMES + FORMAT
           Background: Off-white
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-off-white py-20">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12 items-start">
 
-            {/* Left — Expected outcomes */}
+            {/* Left - Expected outcomes */}
             <div>
               <ProgramSectionLabel>Expected Outcomes</ProgramSectionLabel>
               <h2 className="text-3xl font-bold text-primary-navy mb-6 leading-tight">
@@ -859,7 +861,7 @@ export default function TrainTheTrainerPage() {
               </div>
             </div>
 
-            {/* Right — Format + certification + cross-sell */}
+            {/* Right - Format + certification + cross-sell */}
             <div className="flex flex-col gap-6">
               {/* Format */}
               <div className="bg-white rounded-lg p-7 border border-gray-200 shadow-sm">
@@ -883,7 +885,7 @@ export default function TrainTheTrainerPage() {
                   Certification
                 </p>
                 <p className="text-sm text-charcoal/70 leading-relaxed mb-4">
-                  Yes — Hidden Potential is registered under MSME and trainings are conducted
+                  Yes - Hidden Potential is registered under MSME and trainings are conducted
                   under Skill India. Certification is issued upon successful completion of all
                   assessment requirements.
                 </p>
@@ -942,7 +944,7 @@ export default function TrainTheTrainerPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 7b — FINAL CTA
+          SECTION 7b - FINAL CTA
           Uses the shared <ProgramCTASection> component
       ═══════════════════════════════════════════════════════════════════════ */}
       <ProgramCTASection data={ctaData} />

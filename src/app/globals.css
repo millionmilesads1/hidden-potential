@@ -9,7 +9,7 @@
 @custom-variant dark (&:is(.dark *));
 
 /* ─────────────────────────────────────────────
-   TAILWIND v4 THEME — Brand Design Tokens
+   TAILWIND v4 THEME - Brand Design Tokens
    ───────────────────────────────────────────── */
 /* ─────────────────────────────────────────────
    HERO FLOATING GRADIENT BLOBS
@@ -47,7 +47,7 @@
   animation: shine var(--duration) infinite linear;
 }
 
-/* Shine border overlay — ::before pseudo-element styles.
+/* Shine border overlay - ::before pseudo-element styles.
    Uses CSS variables set via inline style on the parent div. */
 .shine-overlay::before {
   content: "";
@@ -70,15 +70,15 @@
 
 @theme {
   /* ── Core Brand Palette ── */
-  --color-brand-dark:         #2D1B69;   /* Deep navy purple — heroes, footer, headings */
-  --color-brand-purple:       #7C3AED;   /* Vibrant purple — CTAs, links, action */
+  --color-brand-dark:         #2D1B69;   /* Deep navy purple - heroes, footer, headings */
+  --color-brand-purple:       #7C3AED;   /* Vibrant purple - CTAs, links, action */
   --color-brand-teal:         #7C3AED;   /* Alias → vibrant purple (replaces ocean teal) */
   --color-brand-teal-dark:    #6D28D9;   /* Purple hover state */
-  --color-brand-gold:         #C8A951;   /* Gold — credentials, labels, premium accent */
+  --color-brand-gold:         #C8A951;   /* Gold - credentials, labels, premium accent */
   --color-brand-gold-dark:    #A68B3E;   /* Gold hover */
-  --color-brand-light-purple: #F3F0FF;   /* Light purple — card/section backgrounds */
-  --color-brand-light-teal:   #EDE9FE;   /* Purple glow — highlights */
-  --color-brand-muted:        #6B6B6B;   /* Secondary text — gray-600 */
+  --color-brand-light-purple: #F3F0FF;   /* Light purple - card/section backgrounds */
+  --color-brand-light-teal:   #EDE9FE;   /* Purple glow - highlights */
+  --color-brand-muted:        #6B6B6B;   /* Secondary text - gray-600 */
 
   /* ── Semantic aliases (cascade to all existing pages) ── */
   --color-primary-navy:   #2D1B69;
@@ -180,7 +180,7 @@
 }
 
 /* ─────────────────────────────────────────────
-   MARQUEE ANIMATION — testimonials auto-scroll
+   MARQUEE ANIMATION - testimonials auto-scroll
    Only runs when user hasn't requested reduced motion
    ───────────────────────────────────────────── */
 @keyframes marquee-scroll {
@@ -200,7 +200,7 @@
 }
 
 /* ─────────────────────────────────────────────
-   GRAIN TEXTURE — hero overlay
+   GRAIN TEXTURE - hero overlay
    CSS-only noise, no image file required
    ───────────────────────────────────────────── */
 .grain-overlay::after {
@@ -214,11 +214,11 @@
 }
 
 /* ─────────────────────────────────────────────
-   HOVER EFFECTS — CSS-only, no JS event handlers
+   HOVER EFFECTS - CSS-only, no JS event handlers
    Safe to use in Next.js Server Components
    ───────────────────────────────────────────── */
 
-/* Card lifts — used on program bento cards, pillar cards */
+/* Card lifts - used on program bento cards, pillar cards */
 .card-hover {
   transition: transform 0.6s cubic-bezier(0.32,0.72,0,1), box-shadow 0.6s cubic-bezier(0.32,0.72,0,1), border-color 0.6s cubic-bezier(0.32,0.72,0,1);
   cursor: pointer;
@@ -347,7 +347,7 @@ details > summary:hover { background: #F3F0FF !important; }
 }
 .text-link-purple:hover { color: #6D28D9; }
 
-/* Navbar dropdown links (CSS fallback — Navbar is "use client" so JS is fine too) */
+/* Navbar dropdown links (CSS fallback - Navbar is "use client" so JS is fine too) */
 .nav-dropdown-link {
   color: #0f0f1a;
   transition: background 0.15s ease, color 0.15s ease;
@@ -368,10 +368,10 @@ details > summary:hover { background: #F3F0FF !important; }
 
 /* ─────────────────────────────────────────────
    PREMIUM BUTTON-IN-BUTTON ARCHITECTURE
-   cubic-bezier(0.32,0.72,0,1) — heavy deceleration
+   cubic-bezier(0.32,0.72,0,1) - heavy deceleration
    ───────────────────────────────────────────── */
 
-/* Purple filled pill — primary CTA */
+/* Purple filled pill - primary CTA */
 .btn-premium-fill {
   display: inline-flex;
   align-items: center;
@@ -393,7 +393,7 @@ details > summary:hover { background: #F3F0FF !important; }
 }
 .btn-premium-fill:active { transform: scale(0.97); }
 
-/* Balanced fill pill — when no trailing icon-circle is needed */
+/* Balanced fill pill - when no trailing icon-circle is needed */
 .btn-premium-fill-plain {
   display: inline-flex;
   align-items: center;
@@ -431,7 +431,7 @@ details > summary:hover { background: #F3F0FF !important; }
   background: rgba(255,255,255,0.22);
 }
 
-/* Ghost outline pill — secondary CTA on dark bg */
+/* Ghost outline pill - secondary CTA on dark bg */
 .btn-premium-ghost {
   display: inline-flex;
   align-items: center;
@@ -469,7 +469,7 @@ details > summary:hover { background: #F3F0FF !important; }
   background: rgba(255,255,255,0.18);
 }
 
-/* Ghost plain pill — no icon, for text-only secondary actions */
+/* Ghost plain pill - no icon, for text-only secondary actions */
 .btn-premium-ghost-plain {
   display: inline-flex;
   align-items: center;
@@ -491,7 +491,7 @@ details > summary:hover { background: #F3F0FF !important; }
 }
 .btn-premium-ghost-plain:active { transform: scale(0.97); }
 
-/* Dark navy fill pill — primary CTA on light backgrounds */
+/* Dark navy fill pill - primary CTA on light backgrounds */
 .btn-premium-dark {
   display: inline-flex;
   align-items: center;
@@ -559,7 +559,7 @@ details > summary:hover { background: #F3F0FF !important; }
 }
 
 /* ─────────────────────────────────────────────
-   SERVICE & CONTENT CARD — double-bezel on light bg
+   SERVICE & CONTENT CARD - double-bezel on light bg
    Consistent premium card for all content sections
    Outer shell: hairline ring + padding
    Inner core:  white bg + inset glow
@@ -594,7 +594,7 @@ details > summary:hover { background: #F3F0FF !important; }
 }
 
 /* ─────────────────────────────────────────────
-   EYEBROW PILL TAG — above section headings
+   EYEBROW PILL TAG - above section headings
    ───────────────────────────────────────────── */
 
 .eyebrow-purple {
@@ -636,4 +636,62 @@ details > summary:hover { background: #F3F0FF !important; }
 }
 
 .dark { --background: oklch(0.145 0 0); --foreground: oklch(0.985 0 0); --card: oklch(0.205 0 0); --card-foreground: oklch(0.985 0 0); --popover: oklch(0.205 0 0); --popover-foreground: oklch(0.985 0 0); --primary: oklch(0.922 0 0); --primary-foreground: oklch(0.205 0 0); --secondary: oklch(0.269 0 0); --secondary-foreground: oklch(0.985 0 0); --muted: oklch(0.269 0 0); --muted-foreground: oklch(0.708 0 0); --accent: oklch(0.269 0 0); --accent-foreground: oklch(0.985 0 0); --destructive: oklch(0.704 0.191 22.216); --border: oklch(1 0 0 / 10%); --input: oklch(1 0 0 / 15%); --ring: oklch(0.556 0 0); --chart-1: oklch(0.87 0 0); --chart-2: oklch(0.556 0 0); --chart-3: oklch(0.439 0 0); --chart-4: oklch(0.371 0 0); --chart-5: oklch(0.269 0 0); --sidebar: oklch(0.205 0 0); --sidebar-foreground: oklch(0.985 0 0); --sidebar-primary: oklch(0.488 0.243 264.376); --sidebar-primary-foreground: oklch(0.985 0 0); --sidebar-accent: oklch(0.269 0 0); --sidebar-accent-foreground: oklch(0.985 0 0); --sidebar-border: oklch(1 0 0 / 10%); --sidebar-ring: oklch(0.556 0 0);
+}
+/* ─────────────────────────────────────────────
+   MAGIC UI ANIMATIONS
+   ───────────────────────────────────────────── */
+
+/* Marquee vertical */
+@keyframes marquee-vertical {
+  from { transform: translateY(0); }
+  to   { transform: translateY(-50%); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .animate-marquee {
+    animation: marquee-scroll 40s linear infinite;
+  }
+  .animate-marquee-vertical {
+    animation: marquee-vertical 40s linear infinite;
+  }
+}
+
+/* Border beam */
+@keyframes border-beam {
+  100% { offset-distance: 100%; }
+}
+
+.animate-border-beam {
+  animation: border-beam calc(var(--duration)*1s) infinite linear;
+}
+
+/* Shimmer slide */
+@keyframes shimmer-slide {
+  to { transform: translate(calc(100cqw - 100%), 0); }
+}
+
+.animate-shimmer-slide {
+  animation: shimmer-slide var(--speed) ease-in-out infinite alternate;
+}
+
+/* Spin around */
+@keyframes spin-around {
+  0%   { transform: translateZ(0) rotate(0); }
+  15%, 35% { transform: translateZ(0) rotate(90deg); }
+  65%, 85% { transform: translateZ(0) rotate(270deg); }
+  100% { transform: translateZ(0) rotate(360deg); }
+}
+
+.animate-spin-around {
+  animation: spin-around calc(var(--speed) * 2) infinite linear;
+}
+
+/* Gradient text animation */
+@keyframes gradient {
+  to { background-position: var(--bg-size) center; }
+}
+
+.animate-gradient {
+  animation: gradient 8s linear infinite;
+  background-size: 200%;
 }

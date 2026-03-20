@@ -66,7 +66,7 @@ export default function Footer() {
       {/* ── Main grid ────────────────────────────────────────────────── */}
       <div className="max-w-7xl mx-auto px-6 py-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
 
-        {/* Column 1 — Brand */}
+        {/* Column 1 - Brand */}
         <div className="flex flex-col gap-5">
           <p
             className="text-sm leading-relaxed"
@@ -117,7 +117,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Column 2 — Programs */}
+        {/* Column 2 - Programs */}
         <nav aria-labelledby="footer-programs-heading">
           <h3
             id="footer-programs-heading"
@@ -141,7 +141,7 @@ export default function Footer() {
           </ul>
         </nav>
 
-        {/* Column 3 — Services */}
+        {/* Column 3 - Services */}
         <nav aria-labelledby="footer-services-heading">
           <h3
             id="footer-services-heading"
@@ -165,7 +165,7 @@ export default function Footer() {
           </ul>
         </nav>
 
-        {/* Column 4 — Locations + NAP */}
+        {/* Column 4 - Locations + NAP */}
         <div className="flex flex-col gap-7">
           <nav aria-labelledby="footer-locations-heading">
             <h3

@@ -1,7 +1,7 @@
 "use client";
 
 /**
- * AnimateGroup — stagger container that auto-wraps each child in a motion.div
+ * AnimateGroup - stagger container that auto-wraps each child in a motion.div
  * with the cardEntrance variant. Use it for grids of cards, feature lists, etc.
  *
  * Example:
@@ -23,7 +23,7 @@ interface AnimateGroupProps {
   /** Speed of stagger: "fast" (0.10s) | "normal" (0.15s) | "slow" (0.20s) */
   speed?: "fast" | "normal" | "slow";
   margin?: string;
-  /** Override item variant (default: cardEntrance — y:80 spring) */
+  /** Override item variant (default: cardEntrance - y:80 spring) */
   itemVariants?: Variants;
 }
 

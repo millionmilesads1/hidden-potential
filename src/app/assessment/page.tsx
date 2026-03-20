@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     'Take a structured life skills assessment to identify strengths, gaps, and the right development pathway. Confidential evaluation by certified professionals. Free consultation.',
   openGraph: {
-    title: 'Life Skills Assessment — Discover Your Growth Pathway | Hidden Potential',
+    title: 'Life Skills Assessment - Discover Your Growth Pathway | Hidden Potential',
     description:
       'Answer 3 questions and receive a personalised pathway recommendation. NLP-based life skills programs for students, professionals, women, and trainers in Delhi NCR.',
     type: 'website',
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Life Skills Assessment — Discover Your Growth Pathway | Hidden Potential',
+    title: 'Life Skills Assessment - Discover Your Growth Pathway | Hidden Potential',
     description:
       'Answer 3 questions and receive a personalised pathway recommendation. NLP-based life skills programs for students, professionals, women, and trainers in Delhi NCR.',
   },
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 const schema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Life Skills Assessment — Discover Your Growth Pathway",
+  name: "Life Skills Assessment - Discover Your Growth Pathway",
   description:
     "A structured life skills assessment to identify your strengths, developmental gaps, and the right program pathway. Confidential evaluation by certified professionals. Free consultation.",
   url: "https://hiddenpotentialskills.com/assessment",

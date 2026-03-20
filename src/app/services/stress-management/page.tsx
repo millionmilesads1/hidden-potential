@@ -84,7 +84,7 @@ const faqSchema = {
       name: "What is the difference between stress management coaching and therapy?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Stress management coaching at Hidden Potential is skill-focused — it teaches you practical techniques for emotional regulation, mindfulness, boundary setting, and stress prevention. It is forward-looking and action-oriented. Therapy, particularly psychotherapy, typically explores the deeper psychological roots of emotional patterns and may address clinical conditions like depression, trauma, or anxiety disorders. If you are experiencing clinical-level mental health challenges, we recommend consulting a licensed therapist. For skill-based stress management and resilience building, our coaching is highly effective.",
+        text: "Stress management coaching at Hidden Potential is skill-focused - it teaches you practical techniques for emotional regulation, mindfulness, boundary setting, and stress prevention. It is forward-looking and action-oriented. Therapy, particularly psychotherapy, typically explores the deeper psychological roots of emotional patterns and may address clinical conditions like depression, trauma, or anxiety disorders. If you are experiencing clinical-level mental health challenges, we recommend consulting a licensed therapist. For skill-based stress management and resilience building, our coaching is highly effective.",
       },
     },
     {
@@ -92,7 +92,7 @@ const faqSchema = {
       name: "How quickly will I see results from stress management coaching?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Most learners report noticeable improvements in emotional regulation, sleep quality, and daily stress levels within 3 to 4 weeks of structured coaching. Mindfulness techniques and NLP-based tools provide immediate relief that deepens with practice. Lasting resilience — the ability to handle high-pressure situations consistently without burnout — typically develops over 3 to 6 months of structured development.",
+        text: "Most learners report noticeable improvements in emotional regulation, sleep quality, and daily stress levels within 3 to 4 weeks of structured coaching. Mindfulness techniques and NLP-based tools provide immediate relief that deepens with practice. Lasting resilience - the ability to handle high-pressure situations consistently without burnout - typically develops over 3 to 6 months of structured development.",
       },
     },
     {
@@ -148,7 +148,7 @@ export default function StressManagementPage() {
 
       <main>
         {/* ═══════════════════════════════════════════════════════════════
-            SECTION 1 — HERO
+            SECTION 1 - HERO
         ═══════════════════════════════════════════════════════════════ */}
         <section
           className="relative overflow-hidden"
@@ -187,7 +187,7 @@ export default function StressManagementPage() {
                 textShadow: "0 1px 2px rgba(0,0,0,0.15)",
               }}
             >
-              Stress Management Coaching in Delhi — Regain Calm, Build Resilience
+              Stress Management Coaching in Delhi - Regain Calm, Build Resilience
             </h1>
 
             <p
@@ -198,15 +198,15 @@ export default function StressManagementPage() {
                 textShadow: "0 1px 2px rgba(0,0,0,0.15)",
               }}
             >
-              Stress management is not about eliminating pressure — it&apos;s about building the
+              Stress management is not about eliminating pressure - it&apos;s about building the
               capacity to perform within it.
             </p>
 
             <p className="text-base text-white/65 max-w-3xl mx-auto mb-10 leading-relaxed">
-              Stress has become the default state for millions of people across Delhi NCR — students
+              Stress has become the default state for millions of people across Delhi NCR - students
               facing academic pressure, professionals managing career demands, women balancing
               multiple roles, and families navigating financial and social expectations. The problem
-              is not stress itself — some pressure is natural and even productive. The problem is
+              is not stress itself - some pressure is natural and even productive. The problem is
               chronic, unmanaged stress that erodes performance, damages health, destroys
               relationships, and creates a cycle of burnout and recovery that never actually
               resolves. At Hidden Potential, stress management coaching in Delhi is not a relaxation
@@ -215,7 +215,7 @@ export default function StressManagementPage() {
               developing practical regulation techniques, and creating sustainable lifestyle
               practices that prevent chronic stress from accumulating. Whether you are a student
               dealing with exam pressure, a professional approaching burnout, or a woman managing
-              emotional overload from multiple responsibilities — structured stress management is a
+              emotional overload from multiple responsibilities - structured stress management is a
               trainable skill, not a personality trait.
             </p>
 
@@ -260,7 +260,7 @@ export default function StressManagementPage() {
         </section>
 
         {/* ═══════════════════════════════════════════════════════════════
-            SECTION 2 — WHY IT MATTERS
+            SECTION 2 - WHY IT MATTERS
         ═══════════════════════════════════════════════════════════════ */}
         <section className="py-20 bg-[#F8F6F2]">
           <div className="max-w-4xl mx-auto px-6">
@@ -276,7 +276,7 @@ export default function StressManagementPage() {
                 According to the National Mental Health Survey of India, nearly 150 million Indians
                 need mental health support, with stress-related disorders being among the most
                 prevalent. In urban centres like Delhi, Noida, and Gurgaon, the numbers are even
-                higher — driven by academic competition, career pressure, traffic and commute stress,
+                higher - driven by academic competition, career pressure, traffic and commute stress,
                 financial anxiety, family expectations, and the constant digital stimulation that
                 prevents genuine rest and recovery.
               </p>
@@ -285,12 +285,12 @@ export default function StressManagementPage() {
                 sleep quality, social relationships, and long-term mental health. For professionals,
                 chronic stress leads to decreased productivity, poor decision-making, workplace
                 conflicts, career stagnation, and eventually burnout. For women managing multiple
-                roles — career, family, household, children&apos;s education, social obligations —
+                roles - career, family, household, children&apos;s education, social obligations -
                 stress accumulates silently until it manifests as emotional exhaustion, identity
                 loss, health problems, or relationship breakdown.
               </p>
               <p>
-                The solution is not occasional relaxation. It is structured resilience building —
+                The solution is not occasional relaxation. It is structured resilience building -
                 developing the emotional regulation skills, mindfulness practices, and lifestyle
                 systems that allow you to manage pressure sustainably rather than cycling between
                 stress and collapse. At Hidden Potential in Delhi, stress management coaching is
@@ -302,7 +302,7 @@ export default function StressManagementPage() {
         </section>
 
         {/* ═══════════════════════════════════════════════════════════════
-            SECTION 3 — WHAT YOU'LL DEVELOP
+            SECTION 3 - WHAT YOU'LL DEVELOP
         ═══════════════════════════════════════════════════════════════ */}
         <section className="py-20 bg-white">
           <div className="max-w-6xl mx-auto px-6">
@@ -319,7 +319,7 @@ export default function StressManagementPage() {
               className="text-base text-center max-w-3xl mx-auto mb-12 leading-relaxed"
               style={{ color: "#6B6B6B" }}
             >
-              Effective stress management is not a single technique — it is a system of skills
+              Effective stress management is not a single technique - it is a system of skills
               spanning self-awareness, emotional regulation, mindfulness, boundary setting, and
               lifestyle design. Our coaching in Dwarka, Delhi addresses the complete system.
             </p>
@@ -336,11 +336,11 @@ export default function StressManagementPage() {
                 <div className="px-5 py-5 bg-white">
                   <p className="text-sm leading-relaxed" style={{ color: "#2D2D2D" }}>
                     Before you can manage stress, you need to understand your personal stress
-                    patterns — what triggers you, how stress manifests in your body and behaviour,
+                    patterns - what triggers you, how stress manifests in your body and behaviour,
                     what your default coping mechanisms are, and which situations consistently
                     overwhelm your capacity. At Hidden Potential, stress management begins with a
                     structured self-assessment that maps your unique stress profile. This is not
-                    generic stress advice — it is personalised insight that forms the foundation for
+                    generic stress advice - it is personalised insight that forms the foundation for
                     everything that follows.
                   </p>
                 </div>
@@ -357,7 +357,7 @@ export default function StressManagementPage() {
                 <div className="px-5 py-5 bg-white">
                   <p className="text-sm leading-relaxed mb-3" style={{ color: "#2D2D2D" }}>
                     The difference between someone who manages stress well and someone who does not
-                    is rarely the amount of pressure they face — it is their ability to regulate
+                    is rarely the amount of pressure they face - it is their ability to regulate
                     their emotional response to that pressure. Emotional regulation is a trainable
                     skill that involves recognising emotional states as they arise, creating space
                     between trigger and response, choosing constructive responses over reactive ones,
@@ -381,7 +381,7 @@ export default function StressManagementPage() {
                 </div>
                 <div className="px-5 py-5 bg-white">
                   <p className="text-sm leading-relaxed" style={{ color: "#2D2D2D" }}>
-                    Mindfulness is not mystical — it is a well-researched, evidence-based practice
+                    Mindfulness is not mystical - it is a well-researched, evidence-based practice
                     for stress reduction. Research from Harvard Medical School, the American
                     Psychological Association, and multiple Indian institutions confirms that regular
                     mindfulness practice reduces cortisol levels, improves focus and concentration,
@@ -404,7 +404,7 @@ export default function StressManagementPage() {
                 </div>
                 <div className="px-5 py-5 bg-white">
                   <p className="text-sm leading-relaxed mb-3" style={{ color: "#2D2D2D" }}>
-                    Many stress responses are automatic — triggered by specific situations, people,
+                    Many stress responses are automatic - triggered by specific situations, people,
                     or thoughts before you even have time to think. NLP techniques allow you to
                     identify these automatic stress triggers and rewire your neurological response.
                     Techniques include anchoring calm states that can be accessed on demand,
@@ -428,10 +428,10 @@ export default function StressManagementPage() {
                 </div>
                 <div className="px-5 py-5 bg-white">
                   <p className="text-sm leading-relaxed mb-3" style={{ color: "#2D2D2D" }}>
-                    For many people — especially women and people-pleasers — chronic stress is
+                    For many people - especially women and people-pleasers - chronic stress is
                     directly caused by the inability to set and maintain healthy boundaries. Saying
                     yes to every request, taking on responsibilities that belong to others, and
-                    prioritising everyone else&apos;s needs over your own is not generosity — it is
+                    prioritising everyone else&apos;s needs over your own is not generosity - it is
                     a boundary problem that leads inevitably to burnout. Stress management coaching
                     at Hidden Potential includes structured assertiveness training and
                     boundary-setting practice so you can protect your energy without damaging
@@ -456,7 +456,7 @@ export default function StressManagementPage() {
                     Managing stress after it builds up is important. Preventing chronic stress from
                     accumulating in the first place is even better. Our coaching helps you design
                     sustainable daily routines, energy management systems, and lifestyle practices
-                    that keep stress at manageable levels consistently — rather than cycling between
+                    that keep stress at manageable levels consistently - rather than cycling between
                     high-stress periods and recovery crashes. This includes sleep hygiene practices,
                     digital boundary strategies, workload management systems, and structured rest and
                     recovery routines.
@@ -468,7 +468,7 @@ export default function StressManagementPage() {
         </section>
 
         {/* ═══════════════════════════════════════════════════════════════
-            SECTION 4 — WHO IT'S FOR
+            SECTION 4 - WHO IT'S FOR
         ═══════════════════════════════════════════════════════════════ */}
         <section className="py-20 bg-[#F3F0FF]">
           <div className="max-w-6xl mx-auto px-6">
@@ -485,8 +485,8 @@ export default function StressManagementPage() {
               className="text-base text-center max-w-3xl mx-auto mb-12 leading-relaxed"
               style={{ color: "#6B6B6B" }}
             >
-              Stress affects every age group and context differently, but the underlying skills —
-              self-awareness, emotional regulation, mindfulness, and boundary setting — are
+              Stress affects every age group and context differently, but the underlying skills -
+              self-awareness, emotional regulation, mindfulness, and boundary setting - are
               universal. Our stress management coaching in Delhi is personalised to your specific
               stress patterns and life stage.
             </p>
@@ -504,7 +504,7 @@ export default function StressManagementPage() {
                   Board exam stress, competitive exam preparation, parental expectations, peer
                   comparison, and the constant pressure to perform creates chronic stress in students
                   across Delhi NCR. At Hidden Potential, stress management for students is integrated
-                  into the An Enlightened Learner pathway — combining mindfulness techniques,
+                  into the An Enlightened Learner pathway - combining mindfulness techniques,
                   NLP-based exam anxiety management, and structured emotional regulation practice
                   within the student life skills program.
                 </p>
@@ -526,7 +526,7 @@ export default function StressManagementPage() {
                   pressure, and the inability to disconnect from work create a burnout trajectory
                   that affects millions of professionals. If you find yourself constantly exhausted,
                   increasingly irritable, losing interest in work you used to enjoy, or unable to
-                  focus — these are burnout warning signs, not personality flaws. Structured stress
+                  focus - these are burnout warning signs, not personality flaws. Structured stress
                   management coaching provides the skills to manage professional pressure
                   sustainably.
                 </p>
@@ -542,8 +542,8 @@ export default function StressManagementPage() {
                 </div>
                 <p className="text-sm leading-relaxed mb-3" style={{ color: "#6B6B6B" }}>
                   The compounding stress of managing career, family, household, children&apos;s
-                  education, social obligations, and personal health — often with minimal support and
-                  maximum expectation — creates chronic emotional overload that many women in Delhi
+                  education, social obligations, and personal health - often with minimal support and
+                  maximum expectation - creates chronic emotional overload that many women in Delhi
                   normalise. The Self Mastery for Women pathway at Hidden Potential addresses this
                   specifically through emotional regulation, boundary setting, identity reclamation,
                   and structured self-care practices.
@@ -564,7 +564,7 @@ export default function StressManagementPage() {
                 <p className="text-sm leading-relaxed" style={{ color: "#6B6B6B" }}>
                   If you find yourself constantly anxious, emotionally reactive, unable to relax
                   even when the situation does not warrant stress, or experiencing physical symptoms
-                  like headaches, sleep disruption, or digestive issues — your body is telling you
+                  like headaches, sleep disruption, or digestive issues - your body is telling you
                   that your current stress management capacity is exceeded. Structured coaching
                   provides practical tools to regulate your nervous system, manage anxiety triggers,
                   and build genuine emotional resilience.
@@ -583,7 +583,7 @@ export default function StressManagementPage() {
                   Workplace stress costs Indian organisations billions in lost productivity,
                   absenteeism, employee turnover, and poor decision-making. Hidden Potential
                   delivers customised stress management workshops for corporate teams across Delhi
-                  NCR — covering emotional regulation, mindfulness practices, workplace boundary
+                  NCR - covering emotional regulation, mindfulness practices, workplace boundary
                   setting, and sustainable performance strategies.
                 </p>
                 <Link href="/services/workshops" className="text-xs font-semibold text-primary-teal hover:text-teal-dark transition-colors">
@@ -595,7 +595,7 @@ export default function StressManagementPage() {
         </section>
 
         {/* ═══════════════════════════════════════════════════════════════
-            SECTION 5 — WHY DIFFERENT
+            SECTION 5 - WHY DIFFERENT
         ═══════════════════════════════════════════════════════════════ */}
         <section className="py-20 bg-[#F8F6F2]">
           <div className="max-w-5xl mx-auto px-6">
@@ -624,7 +624,7 @@ export default function StressManagementPage() {
                   A single meditation session or breathing workshop provides temporary relief.
                   Lasting stress resilience requires structured skill development over weeks and
                   months. Our stress management coaching follows progressive developmental pathways
-                  with assessment, practice, feedback, and measurable progress — not a one-time
+                  with assessment, practice, feedback, and measurable progress - not a one-time
                   event.
                 </p>
               </div>
@@ -640,8 +640,8 @@ export default function StressManagementPage() {
                   NLP-Powered Techniques for Root-Level Change
                 </h3>
                 <p className="text-sm leading-relaxed" style={{ color: "#6B6B6B" }}>
-                  Most stress management approaches address symptoms — teaching you to relax after
-                  stress builds. NLP-based coaching at Hidden Potential addresses the root — the
+                  Most stress management approaches address symptoms - teaching you to relax after
+                  stress builds. NLP-based coaching at Hidden Potential addresses the root - the
                   automatic thought patterns, belief systems, and neurological triggers that create
                   excessive stress in the first place. Rewiring these patterns produces permanent
                   change, not temporary relief.
@@ -678,7 +678,7 @@ export default function StressManagementPage() {
                 </h3>
                 <p className="text-sm leading-relaxed" style={{ color: "#6B6B6B" }}>
                   Every learner begins with a structured stress profile assessment. The coaching is
-                  then personalised to your specific triggers, patterns, and needs — not a generic
+                  then personalised to your specific triggers, patterns, and needs - not a generic
                   curriculum. A student with exam anxiety and a professional with burnout receive
                   fundamentally different interventions.
                 </p>
@@ -688,7 +688,7 @@ export default function StressManagementPage() {
         </section>
 
         {/* ═══════════════════════════════════════════════════════════════
-            SECTION 6 — FAQ
+            SECTION 6 - FAQ
         ═══════════════════════════════════════════════════════════════ */}
         <section className="py-20 bg-white">
           <div className="max-w-4xl mx-auto px-6">
@@ -706,11 +706,11 @@ export default function StressManagementPage() {
               {[
                 {
                   q: "What is the difference between stress management coaching and therapy?",
-                  a: "Stress management coaching at Hidden Potential is skill-focused — it teaches you practical techniques for emotional regulation, mindfulness, boundary setting, and stress prevention. It is forward-looking and action-oriented. Therapy, particularly psychotherapy, typically explores the deeper psychological roots of emotional patterns and may address clinical conditions like depression, trauma, or anxiety disorders. If you are experiencing clinical-level mental health challenges, we recommend consulting a licensed therapist. For skill-based stress management and resilience building, our coaching is highly effective.",
+                  a: "Stress management coaching at Hidden Potential is skill-focused - it teaches you practical techniques for emotional regulation, mindfulness, boundary setting, and stress prevention. It is forward-looking and action-oriented. Therapy, particularly psychotherapy, typically explores the deeper psychological roots of emotional patterns and may address clinical conditions like depression, trauma, or anxiety disorders. If you are experiencing clinical-level mental health challenges, we recommend consulting a licensed therapist. For skill-based stress management and resilience building, our coaching is highly effective.",
                 },
                 {
                   q: "How quickly will I see results from stress management coaching?",
-                  a: "Most learners report noticeable improvements in emotional regulation, sleep quality, and daily stress levels within 3 to 4 weeks of structured coaching. Mindfulness techniques and NLP-based tools provide immediate relief that deepens with practice. Lasting resilience — the ability to handle high-pressure situations consistently without burnout — typically develops over 3 to 6 months of structured development.",
+                  a: "Most learners report noticeable improvements in emotional regulation, sleep quality, and daily stress levels within 3 to 4 weeks of structured coaching. Mindfulness techniques and NLP-based tools provide immediate relief that deepens with practice. Lasting resilience - the ability to handle high-pressure situations consistently without burnout - typically develops over 3 to 6 months of structured development.",
                 },
                 {
                   q: "Is stress management coaching suitable for teenagers?",
@@ -743,7 +743,7 @@ export default function StressManagementPage() {
         </section>
 
         {/* ═══════════════════════════════════════════════════════════════
-            SECTION 7 — CTA
+            SECTION 7 - CTA
         ═══════════════════════════════════════════════════════════════ */}
         <section
           className="relative overflow-hidden py-24"
@@ -761,10 +761,10 @@ export default function StressManagementPage() {
               Stop Surviving Stress. Start Managing It.
             </h2>
             <p className="text-base text-white/65 mb-10 leading-relaxed">
-              Chronic stress is not inevitable — it is the result of specific patterns that can be
+              Chronic stress is not inevitable - it is the result of specific patterns that can be
               identified and changed. Stress management coaching at Hidden Potential in Dwarka, Delhi
               gives you the practical tools, structured techniques, and personalised guidance to
-              build genuine emotional resilience — not temporary relief. Start with a free assessment
+              build genuine emotional resilience - not temporary relief. Start with a free assessment
               to understand your stress patterns and receive a personalised development pathway.
             </p>
 
@@ -791,7 +791,7 @@ export default function StressManagementPage() {
               <Link href="/services/emotional-intelligence" className="text-white/65 hover:text-white font-semibold underline underline-offset-2 transition-colors">
                 Emotional Intelligence Coaching
               </Link>{" "}
-              — because stress management starts with understanding your emotional patterns
+              - because stress management starts with understanding your emotional patterns
             </p>
 
             <p className="text-[11px] text-white/30 leading-relaxed">

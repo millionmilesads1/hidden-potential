@@ -92,7 +92,7 @@ export default function HeroSection() {
       <div className="relative max-w-6xl mx-auto px-6 py-12 md:py-20 lg:py-24 w-full">
         <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
 
-          {/* ── Left — Animated text ── */}
+          {/* ── Left - Animated text ── */}
           <motion.div
             variants={shouldAnimate ? staggerContainer : undefined}
             initial={shouldAnimate ? "hidden" : false}
@@ -136,7 +136,7 @@ export default function HeroSection() {
               className="mb-8 text-white/70 font-semibold tracking-widest uppercase"
               style={{ fontFamily: "var(--font-display)", fontSize: "0.85rem" }}
             >
-              — Mark Twain
+              - Mark Twain
             </motion.p>
 
             {/* Subtitle */}
@@ -220,7 +220,7 @@ export default function HeroSection() {
             </motion.div>
           </motion.div>
 
-          {/* ── Right — Animated image ── */}
+          {/* ── Right - Animated image ── */}
           <motion.div
             variants={shouldAnimate ? slideRight : undefined}
             initial={shouldAnimate ? "hidden" : false}

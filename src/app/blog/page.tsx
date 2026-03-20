@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     'Expert articles on emotional intelligence, communication, confidence building, NLP, and structured personal development. Written by certified life skills professionals.',
   openGraph: {
-    title: 'Life Skills Blog — Expert Insights on Personal Development | Hidden Potential',
+    title: 'Life Skills Blog - Expert Insights on Personal Development | Hidden Potential',
     description:
       'Research-backed articles on emotional intelligence, communication mastery, confidence building, NLP techniques, and structured life skills development by Supreet Kaur.',
     type: 'website',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Life Skills Blog — Expert Insights on Personal Development | Hidden Potential',
+    title: 'Life Skills Blog - Expert Insights on Personal Development | Hidden Potential',
     description:
       'Research-backed articles on emotional intelligence, communication mastery, confidence building, NLP techniques, and structured life skills development.',
   },
@@ -53,7 +53,7 @@ const breadcrumbSchema = {
   ],
 };
 
-// ── Blog post data (placeholder — replace with real posts when available) ──────
+// ── Blog post data (placeholder - replace with real posts when available) ──────
 const posts = [
   {
     slug: 'what-are-life-skills',
@@ -61,7 +61,7 @@ const posts = [
     categoryColor: 'text-primary-teal bg-teal-light',
     title: 'What Are Life Skills and Why Do They Matter in 2026?',
     excerpt:
-      'Life skills are the foundation of everything we do — how we communicate, how we handle stress, how we make decisions. Yet most school curricula still treat them as optional. Here is why that needs to change.',
+      'Life skills are the foundation of everything we do - how we communicate, how we handle stress, how we make decisions. Yet most school curricula still treat them as optional. Here is why that needs to change.',
     author: 'Supreet Kaur',
     date: 'February 18, 2026',
     readTime: '6 min read',
@@ -76,7 +76,7 @@ const posts = [
     categoryColor: 'text-primary-teal bg-teal-light',
     title: 'How to Improve Communication Skills: A Structured Approach',
     excerpt:
-      'Most people believe communication is a personality trait — you either have it or you do not. This is wrong. Communication is a skill set that can be systematically built through structured practice and feedback.',
+      'Most people believe communication is a personality trait - you either have it or you do not. This is wrong. Communication is a skill set that can be systematically built through structured practice and feedback.',
     author: 'Supreet Kaur',
     date: 'February 10, 2026',
     readTime: '8 min read',
@@ -91,7 +91,7 @@ const posts = [
     categoryColor: 'text-primary-teal bg-teal-light',
     title: 'How to Build Self-Confidence: From Self-Doubt to Self-Assurance',
     excerpt:
-      'Confidence is not about feeling fearless. It is about developing a trust in yourself — your ability to handle situations, make decisions, and recover from setbacks. Here is the structured path to building it.',
+      'Confidence is not about feeling fearless. It is about developing a trust in yourself - your ability to handle situations, make decisions, and recover from setbacks. Here is the structured path to building it.',
     author: 'Supreet Kaur',
     date: 'January 28, 2026',
     readTime: '7 min read',
@@ -106,7 +106,7 @@ const posts = [
     categoryColor: 'text-primary-teal bg-teal-light',
     title: 'Emotional Intelligence for Students: The Guide Parents and Teachers Need',
     excerpt:
-      'Academic performance alone does not predict student success. Research consistently shows that emotional intelligence — the ability to understand and manage emotions — is a stronger predictor of life outcomes.',
+      'Academic performance alone does not predict student success. Research consistently shows that emotional intelligence - the ability to understand and manage emotions - is a stronger predictor of life outcomes.',
     author: 'Supreet Kaur',
     date: 'January 15, 2026',
     readTime: '9 min read',
@@ -121,7 +121,7 @@ const posts = [
     categoryColor: 'text-primary-teal bg-teal-light',
     title: 'Stress Management Techniques for Students That Actually Work',
     excerpt:
-      'Exam stress, peer pressure, academic expectations — students today face immense psychological load. This article explores structured, evidence-backed stress management techniques for students at every stage.',
+      'Exam stress, peer pressure, academic expectations - students today face immense psychological load. This article explores structured, evidence-backed stress management techniques for students at every stage.',
     author: 'Supreet Kaur',
     date: 'January 5, 2026',
     readTime: '7 min read',
@@ -246,7 +246,7 @@ export default function BlogPage() {
             className="text-3xl md:text-4xl lg:text-[2.75rem] font-extrabold text-white leading-tight mb-5"
             style={{ textShadow: '0 2px 20px rgba(0,0,0,0.3)' }}
           >
-            Life Skills Blog — Expert Insights on Personal Development
+            Life Skills Blog - Expert Insights on Personal Development
           </h1>
 
           <p
@@ -257,7 +257,7 @@ export default function BlogPage() {
           </p>
 
           <p className="text-base text-white/60 leading-relaxed mb-8 max-w-2xl mx-auto">
-            Written by <Link href="/about" className="text-white/80 font-semibold hover:text-white transition-colors underline underline-offset-2">Supreet Kaur</Link> — certified NLP practitioner, Masters in Psychology, and award-winning life skills educator with 14+ years of experience training 5000+ individuals across Delhi NCR. Every article connects to structured, actionable pathways.
+            Written by <Link href="/about" className="text-white/80 font-semibold hover:text-white transition-colors underline underline-offset-2">Supreet Kaur</Link> - certified NLP practitioner, Masters in Psychology, and award-winning life skills educator with 14+ years of experience training 5000+ individuals across Delhi NCR. Every article connects to structured, actionable pathways.
           </p>
 
           <div className="flex flex-wrap justify-center gap-x-5 gap-y-2 text-xs text-white/40">
@@ -342,7 +342,7 @@ export default function BlogPage() {
                 Reading Inspires. Structure Transforms.
               </h2>
               <p className="text-charcoal/65 text-sm leading-relaxed mb-6">
-                Articles give you awareness. Hidden Potential&apos;s structured programmes give you a personalised, step-by-step pathway from where you are to where you want to be — supported by assessment, practice, and real accountability.
+                Articles give you awareness. Hidden Potential&apos;s structured programmes give you a personalised, step-by-step pathway from where you are to where you want to be - supported by assessment, practice, and real accountability.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Link

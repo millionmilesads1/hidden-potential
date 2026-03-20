@@ -1,16 +1,16 @@
 /**
- * LOCATION PAGE — NOIDA
+ * LOCATION PAGE - NOIDA
  * ─────────────────────────────────────────────────────────────────────────────
  * Route: /locations/noida
  *
  * 7-section structure:
- *   Section 1  — HERO                (dark gradient, H1, Lora italic, body para, 2 CTAs, trust signals)
- *   Section 2  — WHY NOIDA           (off-white, 3 explanatory paragraphs)
- *   Section 3  — ALL PROGRAMS        (white, 14 offering cards numbered 01–14)
- *   Section 4  — AREAS WE SERVE      (navy-light, 6 Noida area cards)
- *   Section 5  — WHY HIDDEN POTENTIAL(off-white, 6 differentiator cards)
- *   Section 6  — FAQ                 (white, 6 Noida-specific Q&As)
- *   Section 7  — CTA                 (dark gradient, para, 2 CTAs, cross-sell, location line)
+ *   Section 1  - HERO                (dark gradient, H1, Lora italic, body para, 2 CTAs, trust signals)
+ *   Section 2  - WHY NOIDA           (off-white, 3 explanatory paragraphs)
+ *   Section 3  - ALL PROGRAMS        (white, 14 offering cards numbered 01–14)
+ *   Section 4  - AREAS WE SERVE      (navy-light, 6 Noida area cards)
+ *   Section 5  - WHY HIDDEN POTENTIAL(off-white, 6 differentiator cards)
+ *   Section 6  - FAQ                 (white, 6 Noida-specific Q&As)
+ *   Section 7  - CTA                 (dark gradient, para, 2 CTAs, cross-sell, location line)
  *
  * Schemas: LocalBusiness + FAQPage + BreadcrumbList (all embedded as JSON-LD)
  */
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   description:
     "Life skills training in Noida by Supreet Kaur. NLP coaching, confidence building, communication skills, corporate workshops. Online & Dwarka centre. 14+ years. 5000+ trained.",
   openGraph: {
-    title: "Life Skills Training in Noida — NLP Coaching, Student Programs & Corporate Workshops",
+    title: "Life Skills Training in Noida - NLP Coaching, Student Programs & Corporate Workshops",
     description:
       "Structured life skills programs for Noida residents and organisations. Online sessions, on-site corporate workshops, and school programs. NLP-based. Assessed. Measurable. 14+ years experience.",
     type: "website",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Life Skills Training in Noida — NLP Coaching, Student Programs & Corporate Workshops",
+    title: "Life Skills Training in Noida - NLP Coaching, Student Programs & Corporate Workshops",
     description:
       "Structured life skills training for Noida residents. Online sessions, on-site corporate workshops, school programs. NLP-based. MSME registered. 14+ years. 5000+ trained.",
   },
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  name: "Hidden Potential — Life Skills Training Noida",
+  name: "Hidden Potential - Life Skills Training Noida",
   description:
     "Structured life skills training for Noida residents and organisations. Online individual sessions, on-site corporate workshops, and school programs across Noida and Greater Noida. MSME registered.",
   url: "https://hiddenpotentialskills.com/locations/noida",
@@ -91,7 +91,7 @@ const faqSchema = {
       name: "Do you have a training centre in Noida?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Hidden Potential's primary training centre is at Dwarka, Delhi — accessible from Noida via the Dwarka Expressway and Delhi Metro. However, most Noida clients prefer our comprehensive online sessions which deliver the same curriculum, NLP techniques, and assessment process as in-person training. Corporate workshops and school programs in Noida are delivered on-site at your location.",
+        text: "Hidden Potential's primary training centre is at Dwarka, Delhi - accessible from Noida via the Dwarka Expressway and Delhi Metro. However, most Noida clients prefer our comprehensive online sessions which deliver the same curriculum, NLP techniques, and assessment process as in-person training. Corporate workshops and school programs in Noida are delivered on-site at your location.",
       },
     },
     {
@@ -123,7 +123,7 @@ const faqSchema = {
       name: "How do online sessions work for Noida clients?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Online sessions are live and interactive via video conferencing — not pre-recorded. Same structured methodology, same NLP-based techniques, same pre and post assessment process as in-person sessions at our Delhi centre. Many Noida professionals and students prefer online for convenience and time savings.",
+        text: "Online sessions are live and interactive via video conferencing - not pre-recorded. Same structured methodology, same NLP-based techniques, same pre and post assessment process as in-person sessions at our Delhi centre. Many Noida professionals and students prefer online for convenience and time savings.",
       },
     },
     {
@@ -131,7 +131,7 @@ const faqSchema = {
       name: "How much does life skills training cost in Noida?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Same pricing as our Delhi programs — varies by program, duration, and format. EMI available. Student and group discounts. Corporate and school institutional billing. Book a free 30-minute consultation with Supreet Kaur to get a personalised program recommendation and complete pricing details.",
+        text: "Same pricing as our Delhi programs - varies by program, duration, and format. EMI available. Student and group discounts. Corporate and school institutional billing. Book a free 30-minute consultation with Supreet Kaur to get a personalised program recommendation and complete pricing details.",
       },
     },
   ],
@@ -168,99 +168,99 @@ const breadcrumbSchema = {
 const offerings = [
   {
     num: "01",
-    title: "An Enlightened Learner — Student Program",
-    desc: "The flagship structured life skills program for students aged 8 to 21 — available online for Noida students and in-person at the Dwarka, Delhi centre. Three age-specific tracks (8 to 12, 13 to 16, 17 to 21) address the exact pressures faced by students in Noida's competitive academic environment — from CBSE board preparation to JEE and medical entrance coaching pressures. Confidence anchoring, study skills, emotional regulation, and communication are developed across Foundation, Growth, and Mastery levels with pre and post assessment.",
+    title: "An Enlightened Learner - Student Program",
+    desc: "The flagship structured life skills program for students aged 8 to 21 - available online for Noida students and in-person at the Dwarka, Delhi centre. Three age-specific tracks (8 to 12, 13 to 16, 17 to 21) address the exact pressures faced by students in Noida's competitive academic environment - from CBSE board preparation to JEE and medical entrance coaching pressures. Confidence anchoring, study skills, emotional regulation, and communication are developed across Foundation, Growth, and Mastery levels with pre and post assessment.",
     linkHref: "/programs/enlightened-learner",
     linkLabel: "Explore An Enlightened Learner →",
   },
   {
     num: "02",
     title: "Communication Mastery",
-    desc: "Structured communication and leadership program for ages 8 to 65 — available online for Noida individuals and as on-site workshops for Noida corporates and schools. Covers public speaking, body language, assertiveness, professional communication, and leadership presence. Particularly in demand among Noida's IT professionals and young graduates entering competitive job markets in the Noida Expressway corridor and Sector 62 tech parks.",
+    desc: "Structured communication and leadership program for ages 8 to 65 - available online for Noida individuals and as on-site workshops for Noida corporates and schools. Covers public speaking, body language, assertiveness, professional communication, and leadership presence. Particularly in demand among Noida's IT professionals and young graduates entering competitive job markets in the Noida Expressway corridor and Sector 62 tech parks.",
     linkHref: "/programs/communication-mastery",
     linkLabel: "Explore Communication Mastery →",
   },
   {
     num: "03",
     title: "Self Mastery for Women",
-    desc: "Holistic growth program for women aged 28 and above — available online for Noida residents. Addresses emotional overwhelm, suppressed identity, financial dependence, and relationship boundaries — challenges shared by women across Noida's diverse communities, from working professionals in Sector 62 to homemakers across Noida's residential sectors. Group sessions build community and accountability. Individual pathway option available.",
+    desc: "Holistic growth program for women aged 28 and above - available online for Noida residents. Addresses emotional overwhelm, suppressed identity, financial dependence, and relationship boundaries - challenges shared by women across Noida's diverse communities, from working professionals in Sector 62 to homemakers across Noida's residential sectors. Group sessions build community and accountability. Individual pathway option available.",
     linkHref: "/programs/self-mastery-women",
     linkLabel: "Explore Self Mastery for Women →",
   },
   {
     num: "04",
     title: "Train the Trainer Certification",
-    desc: "Become a certified life skills facilitator — available online for Noida trainers, educators, HR professionals, and school counsellors. 1-month or 3-month programs covering NLP integration, curriculum design, assessment methodology, and practical facilitation. Ideal for professionals in Noida's corporate sector who want to pivot into coaching, educators at Noida schools building internal life skills capability, and aspiring trainers seeking MSME and Skill India certified credentials.",
+    desc: "Become a certified life skills facilitator - available online for Noida trainers, educators, HR professionals, and school counsellors. 1-month or 3-month programs covering NLP integration, curriculum design, assessment methodology, and practical facilitation. Ideal for professionals in Noida's corporate sector who want to pivot into coaching, educators at Noida schools building internal life skills capability, and aspiring trainers seeking MSME and Skill India certified credentials.",
     linkHref: "/programs/train-the-trainer",
     linkLabel: "Explore Train the Trainer Certification →",
   },
   {
     num: "05",
     title: "Art Therapy for Healing",
-    desc: "A creative therapeutic pathway combining mindfulness, reflective journaling, and art-based expression — available online for Noida residents. No artistic skill required. Effective for Noida professionals dealing with corporate burnout, students under competitive academic pressure, and individuals experiencing emotional numbness, anxiety, or grief. Available as 1-month, 3-month, and 6-month programs.",
+    desc: "A creative therapeutic pathway combining mindfulness, reflective journaling, and art-based expression - available online for Noida residents. No artistic skill required. Effective for Noida professionals dealing with corporate burnout, students under competitive academic pressure, and individuals experiencing emotional numbness, anxiety, or grief. Available as 1-month, 3-month, and 6-month programs.",
     linkHref: "/programs/art-therapy",
     linkLabel: "Explore Art Therapy for Healing →",
   },
   {
     num: "06",
-    title: "NLP Coaching — Individual Sessions",
-    desc: "Certified NLP coaching for belief restructuring, emotional reprogramming, and behavioural change — available online for Noida clients. Noida's high-pressure professional environment — with its concentration of IT companies, startups, and MNCs — creates specific belief patterns around performance anxiety, impostor syndrome, and career stagnation. NLP coaching addresses these directly, identifying root belief structures and rewiring them through structured practice.",
+    title: "NLP Coaching - Individual Sessions",
+    desc: "Certified NLP coaching for belief restructuring, emotional reprogramming, and behavioural change - available online for Noida clients. Noida's high-pressure professional environment - with its concentration of IT companies, startups, and MNCs - creates specific belief patterns around performance anxiety, impostor syndrome, and career stagnation. NLP coaching addresses these directly, identifying root belief structures and rewiring them through structured practice.",
     linkHref: "/services/nlp-coaching",
     linkLabel: "Explore NLP Coaching →",
   },
   {
     num: "07",
     title: "Confidence Building Program",
-    desc: "Structured confidence development for Noida students, professionals, and women — available online and as on-site workshops. Addresses the root beliefs and habitual thought patterns that create self-doubt and hesitation. Particularly relevant for Noida's young IT professionals navigating high-stakes presentations, client interactions, and promotion-track visibility, and for students facing competitive academic evaluations.",
+    desc: "Structured confidence development for Noida students, professionals, and women - available online and as on-site workshops. Addresses the root beliefs and habitual thought patterns that create self-doubt and hesitation. Particularly relevant for Noida's young IT professionals navigating high-stakes presentations, client interactions, and promotion-track visibility, and for students facing competitive academic evaluations.",
     linkHref: "/services/confidence-building",
     linkLabel: "Explore Confidence Building →",
   },
   {
     num: "08",
     title: "Communication Skills Training",
-    desc: "Targeted communication skills development for Noida residents — available online and on-site for Noida corporates. Covers verbal clarity, active listening, assertiveness, non-verbal communication, and professional expression. High demand among Noida's software professionals and engineering graduates who possess strong technical ability but want to strengthen client-facing, team leadership, and cross-functional communication.",
+    desc: "Targeted communication skills development for Noida residents - available online and on-site for Noida corporates. Covers verbal clarity, active listening, assertiveness, non-verbal communication, and professional expression. High demand among Noida's software professionals and engineering graduates who possess strong technical ability but want to strengthen client-facing, team leadership, and cross-functional communication.",
     linkHref: "/services/communication-skills",
     linkLabel: "Explore Communication Skills Training →",
   },
   {
     num: "09",
     title: "Study Skills & Memory Training",
-    desc: "Smart study strategies, memory techniques, time management, and academic focus training for students in Noida — available online and at Noida school premises. Research-backed methods including mind mapping, spaced repetition, active recall, and distraction management. Directly relevant for students in Noida's high-density coaching ecosystem — where students often attend multiple classes but struggle with retention, focus, and exam performance.",
+    desc: "Smart study strategies, memory techniques, time management, and academic focus training for students in Noida - available online and at Noida school premises. Research-backed methods including mind mapping, spaced repetition, active recall, and distraction management. Directly relevant for students in Noida's high-density coaching ecosystem - where students often attend multiple classes but struggle with retention, focus, and exam performance.",
     linkHref: "/services/study-skills",
     linkLabel: "Explore Study Skills Training →",
   },
   {
     num: "10",
     title: "Stress Management Coaching",
-    desc: "Structured stress management for Noida professionals, students, and women — available online and as corporate on-site workshops. Noida's tech-driven work culture — with deadline-driven project cycles, frequent appraisals, and competitive peer environments — generates chronic professional stress. NLP-integrated techniques go far beyond generic relaxation, producing measurable improvements in emotional regulation and work-life clarity.",
+    desc: "Structured stress management for Noida professionals, students, and women - available online and as corporate on-site workshops. Noida's tech-driven work culture - with deadline-driven project cycles, frequent appraisals, and competitive peer environments - generates chronic professional stress. NLP-integrated techniques go far beyond generic relaxation, producing measurable improvements in emotional regulation and work-life clarity.",
     linkHref: "/services/stress-management",
     linkLabel: "Explore Stress Management →",
   },
   {
     num: "11",
     title: "Emotional Intelligence Development",
-    desc: "Science-backed emotional intelligence coaching for Noida students, educators, and professionals — available online and as team workshops for Noida corporates. Builds self-awareness, empathy, emotional regulation, and social skill. High demand from Noida IT managers, team leads, and HR professionals seeking to improve team dynamics, reduce conflict, and build psychologically safe work environments in Noida's high-growth companies.",
+    desc: "Science-backed emotional intelligence coaching for Noida students, educators, and professionals - available online and as team workshops for Noida corporates. Builds self-awareness, empathy, emotional regulation, and social skill. High demand from Noida IT managers, team leads, and HR professionals seeking to improve team dynamics, reduce conflict, and build psychologically safe work environments in Noida's high-growth companies.",
     linkHref: "/services/emotional-intelligence",
     linkLabel: "Explore Emotional Intelligence Coaching →",
   },
   {
     num: "12",
     title: "Goal Setting & Accountability",
-    desc: "Structured goal-setting and accountability program for Noida individuals — available online. Particularly effective for Noida professionals navigating career growth decisions, side business aspirations alongside corporate roles, and personal development goals that keep getting deprioritised by the demands of Noida's fast-paced professional culture. Teaches specific planning frameworks, progress tracking systems, and NLP-based motivation maintenance.",
+    desc: "Structured goal-setting and accountability program for Noida individuals - available online. Particularly effective for Noida professionals navigating career growth decisions, side business aspirations alongside corporate roles, and personal development goals that keep getting deprioritised by the demands of Noida's fast-paced professional culture. Teaches specific planning frameworks, progress tracking systems, and NLP-based motivation maintenance.",
     linkHref: "/services/goal-setting",
     linkLabel: "Explore Goal Setting Workshop →",
   },
   {
     num: "13",
     title: "Career Guidance & Transition Coaching",
-    desc: "Guidance for Noida individuals navigating career changes, re-entry after a break, or entrepreneurial transitions — available online. Noida's dynamic job market — with regular layoffs in IT, startup closures, and rapid role evolution — creates ongoing need for career clarity coaching. Combines structured decision-making frameworks with NLP belief work to address the fear and uncertainty that blocks most people from making necessary career pivots.",
+    desc: "Guidance for Noida individuals navigating career changes, re-entry after a break, or entrepreneurial transitions - available online. Noida's dynamic job market - with regular layoffs in IT, startup closures, and rapid role evolution - creates ongoing need for career clarity coaching. Combines structured decision-making frameworks with NLP belief work to address the fear and uncertainty that blocks most people from making necessary career pivots.",
     linkHref: "/services/career-guidance",
     linkLabel: "Explore Career Guidance →",
   },
   {
     num: "14",
     title: "Group Workshops & Corporate Programs",
-    desc: "Interactive life skills workshops for Noida corporates, schools, and community groups — delivered on-site across Noida and Greater Noida. Workshop themes include communication, emotional intelligence, stress management, leadership, and NLP for teams. Fully customised after a needs assessment. Popular in Noida's Sector 62, Sector 16A, Noida Expressway, and Film City corporate zones. MSME registered — institutional invoicing available.",
+    desc: "Interactive life skills workshops for Noida corporates, schools, and community groups - delivered on-site across Noida and Greater Noida. Workshop themes include communication, emotional intelligence, stress management, leadership, and NLP for teams. Fully customised after a needs assessment. Popular in Noida's Sector 62, Sector 16A, Noida Expressway, and Film City corporate zones. MSME registered - institutional invoicing available.",
     linkHref: "/services/workshops",
     linkLabel: "Explore Group Workshops →",
   },
@@ -269,8 +269,8 @@ const offerings = [
 const noidaAreas = [
   {
     num: "01",
-    title: "Noida Sectors 1–62 — Core Noida Residents",
-    desc: "Residents across Noida's core residential and commercial sectors — Sector 18, 22, 25, 27, 37, 44, 50, 56, 62, and surrounding areas — access Hidden Potential's life skills training in Noida primarily through online sessions. Individual programs, family packages (student + parent pathways), and corporate workshops for sector-based offices are all available. Online delivery removes the commute barrier entirely while maintaining full program quality.",
+    title: "Noida Sectors 1–62 - Core Noida Residents",
+    desc: "Residents across Noida's core residential and commercial sectors - Sector 18, 22, 25, 27, 37, 44, 50, 56, 62, and surrounding areas - access Hidden Potential's life skills training in Noida primarily through online sessions. Individual programs, family packages (student + parent pathways), and corporate workshops for sector-based offices are all available. Online delivery removes the commute barrier entirely while maintaining full program quality.",
   },
   {
     num: "02",
@@ -282,28 +282,28 @@ const noidaAreas = [
   {
     num: "03",
     title: "Noida Expressway Corridor",
-    desc: "Professionals working in the high-rise corporate complexes along the Noida Expressway — from Sector 125 to Sector 135 — face a specific combination of high performance expectations, competitive peer pressure, and career plateau anxiety. Hidden Potential's online individual coaching and on-site corporate workshop programs are designed precisely for this demographic. Stress management, communication mastery, leadership presence, and NLP-based belief restructuring are the most requested topics.",
+    desc: "Professionals working in the high-rise corporate complexes along the Noida Expressway - from Sector 125 to Sector 135 - face a specific combination of high performance expectations, competitive peer pressure, and career plateau anxiety. Hidden Potential's online individual coaching and on-site corporate workshop programs are designed precisely for this demographic. Stress management, communication mastery, leadership presence, and NLP-based belief restructuring are the most requested topics.",
     linkHref: "/services/stress-management",
     linkLabel: "Explore Stress Management →",
   },
   {
     num: "04",
-    title: "Film City & Sector 16A — Creative Professionals",
-    desc: "Media professionals, creative workers, production staff, and content creators in Noida's Film City and Sector 16A area have distinct life skills needs — particularly around communication confidence, creative block management, professional identity, and self-promotion clarity. Communication Mastery, Confidence Building, and NLP coaching are the most relevant programs for this community, available online and as workshop formats.",
+    title: "Film City & Sector 16A - Creative Professionals",
+    desc: "Media professionals, creative workers, production staff, and content creators in Noida's Film City and Sector 16A area have distinct life skills needs - particularly around communication confidence, creative block management, professional identity, and self-promotion clarity. Communication Mastery, Confidence Building, and NLP coaching are the most relevant programs for this community, available online and as workshop formats.",
     linkHref: "/programs/communication-mastery",
     linkLabel: "Explore Communication Mastery →",
   },
   {
     num: "05",
     title: "Noida Schools & Educational Institutions",
-    desc: "Hidden Potential delivers on-site life skills programs at CBSE, ICSE, and international school campuses across Noida and Greater Noida. NEP 2020 aligned curriculum covers student workshops, teacher training, and parent engagement sessions. School partnership programs are structured as semester-long or annual engagements — not one-day events. Institutional documentation and assessment reports are provided as standard. Contact us to schedule a school needs assessment.",
+    desc: "Hidden Potential delivers on-site life skills programs at CBSE, ICSE, and international school campuses across Noida and Greater Noida. NEP 2020 aligned curriculum covers student workshops, teacher training, and parent engagement sessions. School partnership programs are structured as semester-long or annual engagements - not one-day events. Institutional documentation and assessment reports are provided as standard. Contact us to schedule a school needs assessment.",
     linkHref: "/contact",
     linkLabel: "Enquire about school programs in Noida →",
   },
   {
     num: "06",
     title: "Noida Corporates, IT Parks & Startups",
-    desc: "Tech companies, IT services firms, startups, and MNCs with offices in Noida Sector 62, Sector 16, Sector 2, and the Noida Special Economic Zone engage Hidden Potential for team life skills workshops, leadership development, and communication training. All corporate programs are preceded by a needs assessment and followed by a progress report. MSME registered — institutional invoicing and corporate billing available.",
+    desc: "Tech companies, IT services firms, startups, and MNCs with offices in Noida Sector 62, Sector 16, Sector 2, and the Noida Special Economic Zone engage Hidden Potential for team life skills workshops, leadership development, and communication training. All corporate programs are preceded by a needs assessment and followed by a progress report. MSME registered - institutional invoicing and corporate billing available.",
     linkHref: "/contact",
     linkLabel: "Enquire about corporate workshops in Noida →",
   },
@@ -312,34 +312,34 @@ const noidaAreas = [
 const differentiators = [
   {
     title: "Serving Noida Without Compromise",
-    desc: "Not having a physical centre in Noida is not a limitation — it is a deliberate choice to deliver quality without dilution. Hidden Potential's online sessions for Noida clients use the same structured methodology, NLP techniques, pre and post assessment, and developmental pathways as in-person sessions at the Dwarka, Delhi centre. Many Noida clients report that online actually works better for their schedule.",
+    desc: "Not having a physical centre in Noida is not a limitation - it is a deliberate choice to deliver quality without dilution. Hidden Potential's online sessions for Noida clients use the same structured methodology, NLP techniques, pre and post assessment, and developmental pathways as in-person sessions at the Dwarka, Delhi centre. Many Noida clients report that online actually works better for their schedule.",
   },
   {
     title: "On-Site Corporate & School Delivery Across Noida",
-    desc: "For organisations, schools, and institutions in Noida that require in-person delivery, Hidden Potential travels to your location. Corporate workshops at Noida IT parks, student programs at Noida schools, and institutional events are delivered on-site. MSME registered — providing Noida corporates and schools with the institutional documentation required for formal program contracts.",
+    desc: "For organisations, schools, and institutions in Noida that require in-person delivery, Hidden Potential travels to your location. Corporate workshops at Noida IT parks, student programs at Noida schools, and institutional events are delivered on-site. MSME registered - providing Noida corporates and schools with the institutional documentation required for formal program contracts.",
   },
   {
     title: "Assessment-Based Personalisation",
-    desc: "Every Noida learner begins with a structured pre-assessment that maps specific confidence gaps, communication patterns, belief systems, and goals. The program recommendation is personalised — not a standard course assigned based on age or profession. This means a Noida IT professional and a Noida student receive pathways calibrated to their actual needs, not generic content.",
+    desc: "Every Noida learner begins with a structured pre-assessment that maps specific confidence gaps, communication patterns, belief systems, and goals. The program recommendation is personalised - not a standard course assigned based on age or profession. This means a Noida IT professional and a Noida student receive pathways calibrated to their actual needs, not generic content.",
   },
   {
     title: "14+ Years of Applied Experience",
-    desc: "Supreet Kaur has been delivering life skills training to learners from Noida for over 14 years — through school partnerships, corporate workshops, individual coaching, and the full suite of structured programs. Over 5000 individuals trained across Delhi NCR, with a significant and growing Noida client base. This is not newly launched online coaching — it is a tested, refined system built for Indian learners.",
+    desc: "Supreet Kaur has been delivering life skills training to learners from Noida for over 14 years - through school partnerships, corporate workshops, individual coaching, and the full suite of structured programs. Over 5000 individuals trained across Delhi NCR, with a significant and growing Noida client base. This is not newly launched online coaching - it is a tested, refined system built for Indian learners.",
   },
   {
     title: "NEP 2020 Aligned for Noida Schools",
-    desc: "Hidden Potential's school programs are specifically designed to meet the life skills requirements mandated by India's National Education Policy 2020. For Noida CBSE and ICSE schools seeking a credentialed, assessed, and documented life skills curriculum partner — as opposed to motivational speakers or one-day events — Hidden Potential provides the institutional solution with MSME registration and Skill India affiliation.",
+    desc: "Hidden Potential's school programs are specifically designed to meet the life skills requirements mandated by India's National Education Policy 2020. For Noida CBSE and ICSE schools seeking a credentialed, assessed, and documented life skills curriculum partner - as opposed to motivational speakers or one-day events - Hidden Potential provides the institutional solution with MSME registration and Skill India affiliation.",
   },
   {
     title: "Documented Progress, Not Just Motivation",
-    desc: "Every Noida learner at Hidden Potential begins with a documented baseline and ends with a documented progress report. Growth in confidence, communication clarity, emotional regulation, and goal achievement is measured and visible — not assumed. This is what separates structured life skills training in Noida from the motivational content and generic workshops that dominate the market.",
+    desc: "Every Noida learner at Hidden Potential begins with a documented baseline and ends with a documented progress report. Growth in confidence, communication clarity, emotional regulation, and goal achievement is measured and visible - not assumed. This is what separates structured life skills training in Noida from the motivational content and generic workshops that dominate the market.",
   },
 ];
 
 const faqs = [
   {
     q: "Do you have a training centre in Noida?",
-    a: "Hidden Potential's primary training centre is at Dwarka, Delhi — accessible from Noida via the Dwarka Expressway and Delhi Metro. However, most Noida clients prefer our comprehensive online sessions which deliver the same curriculum, NLP techniques, and assessment process as in-person training. Corporate workshops and school programs in Noida are delivered on-site at your location.",
+    a: "Hidden Potential's primary training centre is at Dwarka, Delhi - accessible from Noida via the Dwarka Expressway and Delhi Metro. However, most Noida clients prefer our comprehensive online sessions which deliver the same curriculum, NLP techniques, and assessment process as in-person training. Corporate workshops and school programs in Noida are delivered on-site at your location.",
   },
   {
     q: "What life skills programs are available for Noida residents?",
@@ -355,11 +355,11 @@ const faqs = [
   },
   {
     q: "How do online sessions work for Noida clients?",
-    a: "Online sessions are live and interactive via video conferencing — not pre-recorded. Same structured methodology, same NLP-based techniques, same pre and post assessment process as in-person sessions at our Delhi centre. Many Noida professionals and students prefer online for the convenience and time savings it provides.",
+    a: "Online sessions are live and interactive via video conferencing - not pre-recorded. Same structured methodology, same NLP-based techniques, same pre and post assessment process as in-person sessions at our Delhi centre. Many Noida professionals and students prefer online for the convenience and time savings it provides.",
   },
   {
     q: "How much does life skills training cost in Noida?",
-    a: "Same pricing as our Delhi programs — varies by program, duration, and format. EMI available. Student and group discounts apply. Corporate and school institutional billing supported. Book a free 30-minute consultation with Supreet Kaur to get a personalised program recommendation and complete pricing details with no obligation.",
+    a: "Same pricing as our Delhi programs - varies by program, duration, and format. EMI available. Student and group discounts apply. Corporate and school institutional billing supported. Book a free 30-minute consultation with Supreet Kaur to get a personalised program recommendation and complete pricing details with no obligation.",
   },
 ];
 
@@ -401,7 +401,7 @@ export default function NoidaLocationPage() {
       />
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 1 — HERO
+          SECTION 1 - HERO
           Background: Dark navy-to-deep gradient
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
@@ -442,7 +442,7 @@ export default function NoidaLocationPage() {
             className="text-3xl md:text-4xl lg:text-[2.75rem] font-extrabold text-white leading-tight mb-6 max-w-4xl mx-auto"
             style={{ textShadow: "0 1px 2px rgba(0,0,0,0.15)" }}
           >
-            Life Skills Training in Noida — NLP Coaching, Student Programs &amp; Corporate Workshops
+            Life Skills Training in Noida - NLP Coaching, Student Programs &amp; Corporate Workshops
           </h1>
 
           {/* Lora italic tagline */}
@@ -468,8 +468,8 @@ export default function NoidaLocationPage() {
             >
               Supreet Kaur
             </Link>{" "}
-            — certified NLP practitioner, Masters in Psychology, Josh Talks speaker, and
-            award-winning educator — our Noida programs cover the complete range of life skills
+            - certified NLP practitioner, Masters in Psychology, Josh Talks speaker, and
+            award-winning educator - our Noida programs cover the complete range of life skills
             development: student confidence and study skills, professional communication and
             leadership, women&rsquo;s empowerment and identity rebuilding, corporate team workshops, and
             NLP coaching for individuals. With 14+ years of experience, 5000+ individuals trained
@@ -514,7 +514,7 @@ export default function NoidaLocationPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 2 — WHY NOIDA NEEDS LIFE SKILLS TRAINING
+          SECTION 2 - WHY NOIDA NEEDS LIFE SKILLS TRAINING
           Background: Off-white
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-off-white py-20">
@@ -527,29 +527,29 @@ export default function NoidaLocationPage() {
           <div className="flex flex-col gap-6 text-base text-charcoal leading-relaxed">
             <p>
               Noida has evolved from a planned industrial township into one of India&rsquo;s most significant
-              IT and corporate hubs — home to major technology companies, media organisations, startups,
+              IT and corporate hubs - home to major technology companies, media organisations, startups,
               and a growing base of young professionals who relocated from across the country. Yet the
               same forces that make Noida professionally attractive also create specific life skills
               deficits. Engineers and graduates arriving in Noida from tier-2 cities are technically
               capable but often underprepared for the communication demands, performance review cycles,
               and leadership transitions that define career growth in Noida&rsquo;s corporate environment.
               Confidence gaps, public speaking anxiety, impostor syndrome, and difficulty managing
-              upward in organisations are routine challenges in Noida&rsquo;s IT and services sector —
+              upward in organisations are routine challenges in Noida&rsquo;s IT and services sector -
               challenges that structured life skills training in Noida directly addresses.
             </p>
             <p>
-              For Noida&rsquo;s student population — spread across dozens of CBSE and ICSE schools,
-              coaching institutes, and Greater Noida&rsquo;s engineering colleges — academic pressure has
+              For Noida&rsquo;s student population - spread across dozens of CBSE and ICSE schools,
+              coaching institutes, and Greater Noida&rsquo;s engineering colleges - academic pressure has
               intensified significantly over the past decade. The concentration of competitive entrance
               coaching in Noida creates a culture of academic performance at the expense of
               emotional regulation, identity development, and communication confidence. Students in
               Noida regularly exhibit exam anxiety, peer comparison stress, social withdrawal, and
               digital addiction patterns that academic tutoring cannot address. Life skills training in
-              Noida — when structured, assessed, and NLP-based — gives these students the inner
+              Noida - when structured, assessed, and NLP-based - gives these students the inner
               foundation that makes academic performance sustainable rather than anxiety-driven.
             </p>
             <p>
-              For Noida&rsquo;s women — across homemaker, professional, and entrepreneurial contexts —
+              For Noida&rsquo;s women - across homemaker, professional, and entrepreneurial contexts -
               the need for structured empowerment is significant and underserved. Women in Noida&rsquo;s
               residential sectors managing families alongside career ambitions, women re-entering the
               workforce after career breaks, and women in corporate Noida navigating leadership
@@ -561,8 +561,8 @@ export default function NoidaLocationPage() {
               >
                 Supreet Kaur
               </Link>
-              , serves all three of these Noida communities — students, professionals, and women
-              — with structured, documented, and NEP 2020 aligned programs that produce measurable,
+              , serves all three of these Noida communities - students, professionals, and women
+              - with structured, documented, and NEP 2020 aligned programs that produce measurable,
               lasting transformation rather than temporary motivation.
             </p>
           </div>
@@ -570,7 +570,7 @@ export default function NoidaLocationPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 3 — ALL PROGRAMS AVAILABLE IN NOIDA
+          SECTION 3 - ALL PROGRAMS AVAILABLE IN NOIDA
           Background: White
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-white py-20">
@@ -581,13 +581,13 @@ export default function NoidaLocationPage() {
               All Life Skills Programs and Services Available in Noida
             </h2>
             <p className="text-base text-charcoal/75 leading-relaxed max-w-3xl">
-              Every Hidden Potential program is accessible for Noida residents — through live online
+              Every Hidden Potential program is accessible for Noida residents - through live online
               sessions for individuals and on-site delivery for Noida schools and corporates. Here is
               the complete range of life skills training in Noida.
             </p>
           </div>
 
-          {/* 14 offering cards — 2-column grid */}
+          {/* 14 offering cards - 2-column grid */}
           <div className="grid md:grid-cols-2 gap-5">
             {offerings.map((o) => (
               <div
@@ -622,7 +622,7 @@ export default function NoidaLocationPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 4 — AREAS WE SERVE IN NOIDA
+          SECTION 4 - AREAS WE SERVE IN NOIDA
           Background: Navy-light (#F3F0FF)
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-navy-light py-20">
@@ -633,13 +633,13 @@ export default function NoidaLocationPage() {
               Life Skills Training Across All Areas of Noida and Greater Noida
             </h2>
             <p className="text-base text-charcoal/75 leading-relaxed max-w-3xl">
-              Hidden Potential serves learners and organisations across Noida — from residential
+              Hidden Potential serves learners and organisations across Noida - from residential
               sectors to corporate parks, educational institutions, and Greater Noida&rsquo;s college
               corridor. Online delivery means no commute, no compromise.
             </p>
           </div>
 
-          {/* 6 area cards — 2-column grid */}
+          {/* 6 area cards - 2-column grid */}
           <div className="grid md:grid-cols-2 gap-5">
             {noidaAreas.map((a) => (
               <div
@@ -670,7 +670,7 @@ export default function NoidaLocationPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 5 — WHY HIDDEN POTENTIAL IN NOIDA
+          SECTION 5 - WHY HIDDEN POTENTIAL IN NOIDA
           Background: Off-white
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-off-white py-20">
@@ -687,7 +687,7 @@ export default function NoidaLocationPage() {
             </p>
           </div>
 
-          {/* 6 differentiator cards — 3-column grid */}
+          {/* 6 differentiator cards - 3-column grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {differentiators.map((d) => (
               <div
@@ -723,7 +723,7 @@ export default function NoidaLocationPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 6 — FAQ
+          SECTION 6 - FAQ
           Background: White
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-white py-20">
@@ -741,7 +741,7 @@ export default function NoidaLocationPage() {
                 key={i}
                 className="card-service"
               >
-                {/* Question — teal left bar */}
+                {/* Question - teal left bar */}
                 <div
                   className="px-6 py-4 border-l-4 border-primary-teal"
                   style={{ background: "#F8F6F2" }}
@@ -779,7 +779,7 @@ export default function NoidaLocationPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 7 — FINAL CTA
+          SECTION 7 - FINAL CTA
           Background: Dark navy gradient
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
@@ -805,7 +805,7 @@ export default function NoidaLocationPage() {
 
           <p className="text-base text-white/60 leading-relaxed mb-10 max-w-2xl mx-auto">
             Life skills training in Noida at Hidden Potential begins with a free 30-minute
-            consultation — a structured conversation in which your goals, challenges, and
+            consultation - a structured conversation in which your goals, challenges, and
             developmental needs are assessed by Supreet Kaur. You receive a personalised program
             recommendation tailored to your situation: whether you are a student in Noida preparing
             for board exams and college admissions, a professional in Noida&rsquo;s IT sector building
@@ -856,7 +856,7 @@ export default function NoidaLocationPage() {
             >
               Faridabad
             </Link>
-            {" "}— structured life skills programs across Delhi NCR
+            {" "}- structured life skills programs across Delhi NCR
           </p>
 
           {/* Location line */}

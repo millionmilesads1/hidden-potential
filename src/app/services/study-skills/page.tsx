@@ -84,7 +84,7 @@ const faqSchema = {
       name: "What age is best to start study skills training?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The ideal starting age is 8 to 10 years old, when basic learning habits are being formed. Starting early prevents the development of ineffective study patterns that become harder to change in later years. However, study skills are trainable at any student age — we work with students from 8 to 21 across Foundation, Growth, and Mastery stages.",
+        text: "The ideal starting age is 8 to 10 years old, when basic learning habits are being formed. Starting early prevents the development of ineffective study patterns that become harder to change in later years. However, study skills are trainable at any student age - we work with students from 8 to 21 across Foundation, Growth, and Mastery stages.",
       },
     },
     {
@@ -100,7 +100,7 @@ const faqSchema = {
       name: "How is this different from regular tuition classes?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Tuition classes teach subject content — they help students understand what to learn. Study skills training teaches how to learn — the strategies, systems, and habits that make all learning more effective. Many students attend tuitions but still underperform because the problem is their learning method, not their content knowledge. Study skills training at Hidden Potential addresses the root cause and often reduces the need for subject-specific tuitions.",
+        text: "Tuition classes teach subject content - they help students understand what to learn. Study skills training teaches how to learn - the strategies, systems, and habits that make all learning more effective. Many students attend tuitions but still underperform because the problem is their learning method, not their content knowledge. Study skills training at Hidden Potential addresses the root cause and often reduces the need for subject-specific tuitions.",
       },
     },
     {
@@ -108,7 +108,7 @@ const faqSchema = {
       name: "Can study skills training help with competitive exam preparation like JEE or NEET?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Competitive exams require high-volume information retention, time-pressured performance, and sustained focus over long preparation periods — all of which are trainable study skills. Students preparing for JEE, NEET, CLAT, and other competitive exams benefit from structured memory techniques, time management systems, practice test strategies, and exam anxiety management that are core components of study skills training at Hidden Potential.",
+        text: "Yes. Competitive exams require high-volume information retention, time-pressured performance, and sustained focus over long preparation periods - all of which are trainable study skills. Students preparing for JEE, NEET, CLAT, and other competitive exams benefit from structured memory techniques, time management systems, practice test strategies, and exam anxiety management that are core components of study skills training at Hidden Potential.",
       },
     },
     {
@@ -124,7 +124,7 @@ const faqSchema = {
       name: "How long does study skills training take to show results?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Most parents and students report noticeable improvements in study habits, organisation, and time management within 4 to 6 weeks of structured training. Academic performance improvements — better test scores and grades — typically become visible within one to two academic terms as new study strategies become habitual. The Foundation pathway runs 3 months, with options to continue into Growth (6 months) and Mastery (12 months) levels.",
+        text: "Most parents and students report noticeable improvements in study habits, organisation, and time management within 4 to 6 weeks of structured training. Academic performance improvements - better test scores and grades - typically become visible within one to two academic terms as new study strategies become habitual. The Foundation pathway runs 3 months, with options to continue into Growth (6 months) and Mastery (12 months) levels.",
       },
     },
   ],
@@ -148,7 +148,7 @@ export default function StudySkillsPage() {
 
       <main>
         {/* ═══════════════════════════════════════════════════════════════
-            SECTION 1 — HERO
+            SECTION 1 - HERO
         ═══════════════════════════════════════════════════════════════ */}
         <section
           className="relative overflow-hidden"
@@ -187,7 +187,7 @@ export default function StudySkillsPage() {
                 textShadow: "0 1px 2px rgba(0,0,0,0.15)",
               }}
             >
-              Study Skills Training for Students — Smarter Learning, Stronger Results
+              Study Skills Training for Students - Smarter Learning, Stronger Results
             </h1>
 
             <p
@@ -198,22 +198,22 @@ export default function StudySkillsPage() {
                 textShadow: "0 1px 2px rgba(0,0,0,0.15)",
               }}
             >
-              Academic success is not about studying harder — it&apos;s about studying smarter with
+              Academic success is not about studying harder - it&apos;s about studying smarter with
               the right systems.
             </p>
 
             <p className="text-base text-white/65 max-w-3xl mx-auto mb-10 leading-relaxed">
               Every year, thousands of students across Delhi NCR spend hours studying yet fail to see
               proportionate results. They sit with their books, attend tuitions, complete worksheets
-              — but the grades do not reflect the effort. The problem is almost never intelligence or
+              - but the grades do not reflect the effort. The problem is almost never intelligence or
               dedication. It is the absence of structured study skills. At Hidden Potential, study
               skills training for students is built on the understanding that learning itself is a
-              skill — and like any skill, it can be taught, practised, and mastered. From smart study
+              skill - and like any skill, it can be taught, practised, and mastered. From smart study
               strategies and time management systems to goal-setting frameworks and memory
               enhancement techniques, our study skills program gives students aged 8 to 21 the tools
               to learn more effectively, retain information longer, perform better in exams, and
               develop the academic discipline that carries into career success. Every student begins
-              with an assessment so the training targets their specific learning gaps — not a generic
+              with an assessment so the training targets their specific learning gaps - not a generic
               one-size-fits-all approach.
             </p>
 
@@ -258,7 +258,7 @@ export default function StudySkillsPage() {
         </section>
 
         {/* ═══════════════════════════════════════════════════════════════
-            SECTION 2 — WHY IT MATTERS
+            SECTION 2 - WHY IT MATTERS
         ═══════════════════════════════════════════════════════════════ */}
         <section className="py-20 bg-[#F8F6F2]">
           <div className="max-w-4xl mx-auto px-6">
@@ -271,7 +271,7 @@ export default function StudySkillsPage() {
             </h2>
             <div className="space-y-6 text-base leading-relaxed" style={{ color: "#2D2D2D" }}>
               <p>
-                India&apos;s education system excels at delivering content — textbooks, syllabi,
+                India&apos;s education system excels at delivering content - textbooks, syllabi,
                 exams, and assessments are thorough and demanding. What it consistently fails to
                 teach is how to learn. Students are told what to study but never taught how to study.
                 They are given deadlines but never taught time management. They are expected to focus
@@ -283,16 +283,16 @@ export default function StudySkillsPage() {
                 develop exam anxiety because effort does not translate to results, and students who
                 lose confidence in their own intelligence because they assume the problem is their
                 brain rather than their method. Research from educational psychology consistently
-                shows that study skills — not IQ — are the strongest predictor of academic
+                shows that study skills - not IQ - are the strongest predictor of academic
                 performance. A student with average intelligence and excellent study skills will
                 consistently outperform a gifted student with poor study habits.
               </p>
               <p>
                 At Hidden Potential in Delhi, study skills training is a structured component of the
                 An Enlightened Learner student program. It is not an afterthought or an optional
-                add-on — it is treated as one of the 13 essential life skills that every student
+                add-on - it is treated as one of the 13 essential life skills that every student
                 needs to develop for long-term success. Students learn how to study, not just what to
-                study — and the difference in academic performance is measurable within the first
+                study - and the difference in academic performance is measurable within the first
                 three months.
               </p>
             </div>
@@ -300,7 +300,7 @@ export default function StudySkillsPage() {
         </section>
 
         {/* ═══════════════════════════════════════════════════════════════
-            SECTION 3 — WHAT YOU'LL DEVELOP
+            SECTION 3 - WHAT YOU'LL DEVELOP
         ═══════════════════════════════════════════════════════════════ */}
         <section className="py-20 bg-white">
           <div className="max-w-6xl mx-auto px-6">
@@ -317,7 +317,7 @@ export default function StudySkillsPage() {
               className="text-base text-center max-w-3xl mx-auto mb-12 leading-relaxed"
               style={{ color: "#6B6B6B" }}
             >
-              Study skills training covers the complete learning system — from how you organise your
+              Study skills training covers the complete learning system - from how you organise your
               study time to how you retain information, prepare for exams, and build the academic
               discipline that lasts beyond any single test.
             </p>
@@ -335,11 +335,11 @@ export default function StudySkillsPage() {
                   <p className="text-sm leading-relaxed" style={{ color: "#2D2D2D" }}>
                     Not all study methods are equally effective. Highlighting textbooks, re-reading
                     notes, and passive revision are among the least effective learning strategies
-                    according to educational research — yet they are what most students in Delhi
+                    according to educational research - yet they are what most students in Delhi
                     default to. At Hidden Potential, students learn evidence-based study techniques
                     including active recall, spaced repetition, the Feynman technique for deep
                     understanding, and elaborative interrogation. These methods are proven to improve
-                    retention by 40 to 60 percent compared to passive study — and they become habits
+                    retention by 40 to 60 percent compared to passive study - and they become habits
                     through structured practice.
                   </p>
                 </div>
@@ -355,7 +355,7 @@ export default function StudySkillsPage() {
                 </div>
                 <div className="px-5 py-5 bg-white">
                   <p className="text-sm leading-relaxed" style={{ color: "#2D2D2D" }}>
-                    Most students do not have a time problem — they have a planning problem. Without a
+                    Most students do not have a time problem - they have a planning problem. Without a
                     structured approach to managing study time, homework, revision, and extracurricular
                     activities, students either procrastinate until deadline pressure forces action or
                     study inefficiently by spending equal time on subjects regardless of difficulty.
@@ -378,7 +378,7 @@ export default function StudySkillsPage() {
                   <p className="text-sm leading-relaxed" style={{ color: "#2D2D2D" }}>
                     Setting academic goals is easy. Executing them consistently is where most students
                     fail. At Hidden Potential, goal setting is not about writing targets on a vision
-                    board — it is a structured execution framework. Students learn to break large goals
+                    board - it is a structured execution framework. Students learn to break large goals
                     into weekly and daily actions, track their own progress, identify when they are
                     falling behind before it becomes critical, and develop the accountability habits
                     that make long-term academic success sustainable rather than dependent on external
@@ -397,7 +397,7 @@ export default function StudySkillsPage() {
                 </div>
                 <div className="px-5 py-5 bg-white">
                   <p className="text-sm leading-relaxed" style={{ color: "#2D2D2D" }}>
-                    Memory is not a fixed capacity — it is a trainable skill. Students at Hidden
+                    Memory is not a fixed capacity - it is a trainable skill. Students at Hidden
                     Potential learn structured memory techniques including mind mapping for visual
                     learners, mnemonic systems for factual content, spaced repetition scheduling for
                     long-term retention, and active recall practice methods. These techniques are
@@ -440,12 +440,12 @@ export default function StudySkillsPage() {
                 <div className="px-5 py-5 bg-white">
                   <p className="text-sm leading-relaxed" style={{ color: "#2D2D2D" }}>
                     In an age of smartphones, social media, and constant digital distraction, the
-                    ability to focus deeply for sustained periods is becoming increasingly rare — and
+                    ability to focus deeply for sustained periods is becoming increasingly rare - and
                     increasingly valuable. Study skills training at Hidden Potential includes
                     structured concentration-building exercises, digital discipline strategies for
                     managing screen time, and mindfulness-based focus techniques that help students
                     maintain attention during study sessions, lectures, and exams. This is not about
-                    banning devices — it is about building the mental discipline to choose focus when
+                    banning devices - it is about building the mental discipline to choose focus when
                     it matters.
                   </p>
                 </div>
@@ -455,7 +455,7 @@ export default function StudySkillsPage() {
         </section>
 
         {/* ═══════════════════════════════════════════════════════════════
-            SECTION 4 — WHO IT'S FOR
+            SECTION 4 - WHO IT'S FOR
         ═══════════════════════════════════════════════════════════════ */}
         <section className="py-20 bg-[#F3F0FF]">
           <div className="max-w-6xl mx-auto px-6">
@@ -472,7 +472,7 @@ export default function StudySkillsPage() {
               className="text-base text-center max-w-3xl mx-auto mb-12 leading-relaxed"
               style={{ color: "#6B6B6B" }}
             >
-              Study skills gaps appear differently across age groups, but the impact is consistent —
+              Study skills gaps appear differently across age groups, but the impact is consistent -
               underperformance relative to potential. If your child is working hard but not seeing
               results, study skills training is almost certainly the missing piece.
             </p>
@@ -507,7 +507,7 @@ export default function StudySkillsPage() {
                   </h3>
                 </div>
                 <p className="text-sm leading-relaxed" style={{ color: "#6B6B6B" }}>
-                  Middle and high school students facing increasing academic demands — multiple
+                  Middle and high school students facing increasing academic demands - multiple
                   subjects, board exam preparation, competitive exam readiness, and growing
                   extracurricular commitments. This is the stage where study skills become essential
                   survival tools. Training focuses on time management systems, subject-specific study
@@ -543,7 +543,7 @@ export default function StudySkillsPage() {
                 </div>
                 <p className="text-sm leading-relaxed mb-3" style={{ color: "#6B6B6B" }}>
                   If your child understands the material in class but freezes during exams, the
-                  problem is not knowledge — it is exam anxiety combined with lack of structured
+                  problem is not knowledge - it is exam anxiety combined with lack of structured
                   test-taking strategies. Study skills training combined with NLP-based confidence
                   techniques addresses both the skill gap and the emotional pattern.
                 </p>
@@ -564,7 +564,7 @@ export default function StudySkillsPage() {
                   Tuition teaches content. Study skills training teaches how to learn content
                   independently and efficiently. If your child is attending tuitions but still
                   underperforming, study skills training at Hidden Potential addresses the root cause
-                  — the learning method, not the content gap. Many parents in Delhi, Noida, and
+                  - the learning method, not the content gap. Many parents in Delhi, Noida, and
                   Gurgaon find that structured study skills training reduces or eliminates the need
                   for subject-specific tuitions.
                 </p>
@@ -574,7 +574,7 @@ export default function StudySkillsPage() {
         </section>
 
         {/* ═══════════════════════════════════════════════════════════════
-            SECTION 5 — WHY DIFFERENT
+            SECTION 5 - WHY DIFFERENT
         ═══════════════════════════════════════════════════════════════ */}
         <section className="py-20 bg-[#F8F6F2]">
           <div className="max-w-5xl mx-auto px-6">
@@ -601,7 +601,7 @@ export default function StudySkillsPage() {
                 </h3>
                 <p className="text-sm leading-relaxed" style={{ color: "#6B6B6B" }}>
                   Every student begins with a structured learning assessment that identifies their
-                  specific study skill gaps — time management, memory retention, exam technique,
+                  specific study skill gaps - time management, memory retention, exam technique,
                   focus, or planning. Training is then personalised. A student who struggles with
                   focus receives different interventions than a student who struggles with exam
                   anxiety.
@@ -622,7 +622,7 @@ export default function StudySkillsPage() {
                   Study skills at Hidden Potential are not taught in isolation. They are integrated
                   into the An Enlightened Learner pathway alongside confidence building,
                   communication skills, emotional intelligence, and digital literacy. This means
-                  students develop the complete skill set for academic and life success — not just
+                  students develop the complete skill set for academic and life success - not just
                   exam performance.
                 </p>
               </div>
@@ -638,7 +638,7 @@ export default function StudySkillsPage() {
                   NLP-Enhanced Learning Techniques
                 </h3>
                 <p className="text-sm leading-relaxed" style={{ color: "#6B6B6B" }}>
-                  Hidden Potential integrates NLP-based techniques into study skills training —
+                  Hidden Potential integrates NLP-based techniques into study skills training -
                   including confidence anchoring for exam situations, belief restructuring for
                   students who have internalised &ldquo;I am not good at studies&rdquo; narratives,
                   and state management techniques for maintaining focus and calm during high-pressure
@@ -660,7 +660,7 @@ export default function StudySkillsPage() {
                   Academic improvement is tracked and documented. Students complete a pre-assessment
                   at entry and a post-assessment at each level completion. Parents receive structured
                   progress reports showing measurable development in study habits, time management,
-                  and learning efficiency — not just anecdotal feedback.
+                  and learning efficiency - not just anecdotal feedback.
                 </p>
               </div>
             </div>
@@ -668,7 +668,7 @@ export default function StudySkillsPage() {
         </section>
 
         {/* ═══════════════════════════════════════════════════════════════
-            SECTION 6 — FAQ
+            SECTION 6 - FAQ
         ═══════════════════════════════════════════════════════════════ */}
         <section className="py-20 bg-white">
           <div className="max-w-4xl mx-auto px-6">
@@ -686,7 +686,7 @@ export default function StudySkillsPage() {
               {[
                 {
                   q: "What age is best to start study skills training?",
-                  a: "The ideal starting age is 8 to 10 years old, when basic learning habits are being formed. Starting early prevents the development of ineffective study patterns that become harder to change in later years. However, study skills are trainable at any student age — we work with students from 8 to 21 across Foundation, Growth, and Mastery stages.",
+                  a: "The ideal starting age is 8 to 10 years old, when basic learning habits are being formed. Starting early prevents the development of ineffective study patterns that become harder to change in later years. However, study skills are trainable at any student age - we work with students from 8 to 21 across Foundation, Growth, and Mastery stages.",
                 },
                 {
                   q: "Will study skills training help with board exam preparation?",
@@ -694,11 +694,11 @@ export default function StudySkillsPage() {
                 },
                 {
                   q: "How is this different from regular tuition classes?",
-                  a: "Tuition classes teach subject content — they help students understand what to learn. Study skills training teaches how to learn — the strategies, systems, and habits that make all learning more effective. Many students attend tuitions but still underperform because the problem is their learning method, not their content knowledge. Study skills training at Hidden Potential addresses the root cause and often reduces the need for subject-specific tuitions.",
+                  a: "Tuition classes teach subject content - they help students understand what to learn. Study skills training teaches how to learn - the strategies, systems, and habits that make all learning more effective. Many students attend tuitions but still underperform because the problem is their learning method, not their content knowledge. Study skills training at Hidden Potential addresses the root cause and often reduces the need for subject-specific tuitions.",
                 },
                 {
                   q: "Can study skills training help with competitive exam preparation like JEE or NEET?",
-                  a: "Yes. Competitive exams require high-volume information retention, time-pressured performance, and sustained focus over long preparation periods — all of which are trainable study skills. Students preparing for JEE, NEET, CLAT, and other competitive exams benefit from structured memory techniques, time management systems, practice test strategies, and exam anxiety management that are core components of study skills training at Hidden Potential.",
+                  a: "Yes. Competitive exams require high-volume information retention, time-pressured performance, and sustained focus over long preparation periods - all of which are trainable study skills. Students preparing for JEE, NEET, CLAT, and other competitive exams benefit from structured memory techniques, time management systems, practice test strategies, and exam anxiety management that are core components of study skills training at Hidden Potential.",
                 },
                 {
                   q: "Is study skills training available online?",
@@ -706,7 +706,7 @@ export default function StudySkillsPage() {
                 },
                 {
                   q: "How long does study skills training take to show results?",
-                  a: "Most parents and students report noticeable improvements in study habits, organisation, and time management within 4 to 6 weeks of structured training. Academic performance improvements — better test scores and grades — typically become visible within one to two academic terms as new study strategies become habitual. The Foundation pathway runs 3 months, with options to continue into Growth (6 months) and Mastery (12 months) levels.",
+                  a: "Most parents and students report noticeable improvements in study habits, organisation, and time management within 4 to 6 weeks of structured training. Academic performance improvements - better test scores and grades - typically become visible within one to two academic terms as new study strategies become habitual. The Foundation pathway runs 3 months, with options to continue into Growth (6 months) and Mastery (12 months) levels.",
                 },
               ].map(({ q, a }) => (
                 <div key={q} className="rounded-lg overflow-hidden border border-[#E8E8E8]">
@@ -723,7 +723,7 @@ export default function StudySkillsPage() {
         </section>
 
         {/* ═══════════════════════════════════════════════════════════════
-            SECTION 7 — CTA
+            SECTION 7 - CTA
         ═══════════════════════════════════════════════════════════════ */}
         <section
           className="relative overflow-hidden py-24"
@@ -742,7 +742,7 @@ export default function StudySkillsPage() {
             </h2>
             <p className="text-base text-white/65 mb-10 leading-relaxed">
               The difference between a struggling student and a high-performing student is rarely
-              intelligence — it is method. Structured study skills training at Hidden Potential in
+              intelligence - it is method. Structured study skills training at Hidden Potential in
               Dwarka, Delhi gives students the learning systems, time management frameworks, and exam
               strategies that schools do not teach. Start with a free learning assessment to identify
               your child&apos;s specific study skill gaps and receive a personalised development
@@ -772,7 +772,7 @@ export default function StudySkillsPage() {
               <Link href="/programs/enlightened-learner" className="text-white/65 hover:text-white font-semibold underline underline-offset-2 transition-colors">
                 An Enlightened Learner
               </Link>{" "}
-              — the complete life skills program for students aged 8-21
+              - the complete life skills program for students aged 8-21
             </p>
 
             <p className="text-[11px] text-white/30 leading-relaxed">

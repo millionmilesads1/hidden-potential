@@ -73,11 +73,11 @@ export default function TermsPage() {
                 <p>Hidden Potential offers structured life skills training programmes, coaching, workshops, and certifications including (but not limited to):</p>
                 <ul className="list-none space-y-2">
                   {[
-                    'An Enlightened Learner — life skills programme for students (Ages 8–21)',
-                    'Communication Mastery — structured communication and leadership training',
-                    'Self Mastery for Women — holistic growth programme for women (28+)',
-                    'Train the Trainer Certification — certified facilitator programme',
-                    'Art Therapy for Healing — therapeutic creative expression programme',
+                    'An Enlightened Learner - life skills programme for students (Ages 8–21)',
+                    'Communication Mastery - structured communication and leadership training',
+                    'Self Mastery for Women - holistic growth programme for women (28+)',
+                    'Train the Trainer Certification - certified facilitator programme',
+                    'Art Therapy for Healing - therapeutic creative expression programme',
                     'Sub-service coaching: NLP, confidence building, stress management, emotional intelligence, and others',
                     'School and institutional partnership programmes',
                     'Free evaluation calls and life skills assessments',
@@ -135,7 +135,7 @@ export default function TermsPage() {
                 Intellectual Property
               </h2>
               <div className="pl-10 text-sm text-charcoal/75 leading-relaxed space-y-3">
-                <p>All content on this Website — including text, programme frameworks, curriculum materials, worksheets, assessments, branding, logos, and visual design — is the exclusive intellectual property of Hidden Potential and its founder Supreet Kaur, unless otherwise stated. You may not reproduce, distribute, modify, create derivative works from, or commercially exploit any content without prior written permission.</p>
+                <p>All content on this Website - including text, programme frameworks, curriculum materials, worksheets, assessments, branding, logos, and visual design - is the exclusive intellectual property of Hidden Potential and its founder Supreet Kaur, unless otherwise stated. You may not reproduce, distribute, modify, create derivative works from, or commercially exploit any content without prior written permission.</p>
                 <p>Programme materials provided to enrolled participants are for personal use only and may not be shared, resold, or used to develop competing programmes without written authorisation.</p>
               </div>
             </div>
@@ -207,7 +207,7 @@ export default function TermsPage() {
                 <p>For questions about these Terms, please contact:</p>
                 <div className="mt-4 bg-off-white rounded-lg border border-gray-200 p-5 space-y-1.5">
                   <p><strong className="text-charcoal">Hidden Potential</strong></p>
-                  <p>D-802, Palm Court Apartment, Plot 3, Sector 19B, Dwarka, South West Delhi — 110075</p>
+                  <p>D-802, Palm Court Apartment, Plot 3, Sector 19B, Dwarka, South West Delhi - 110075</p>
                   <p>
                     Email:{' '}
                     <a href="mailto:hiddenpotential2030@gmail.com" className="text-primary-teal hover:text-teal-dark underline underline-offset-2 transition-colors">

@@ -77,7 +77,7 @@ export default function CertificateLightbox({ imageSrc, imageAlt }: Props) {
           onClick={() => setOpen(false)}
           role="dialog"
           aria-modal="true"
-          aria-label="NEP 2020 Certificate — full size"
+          aria-label="NEP 2020 Certificate - full size"
         >
           <div
             className="relative max-w-3xl w-full rounded-xl shadow-2xl overflow-hidden"

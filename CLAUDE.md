@@ -4,6 +4,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 > **Before building any page, always read: [SITE-ARCHITECTURE.md](SITE-ARCHITECTURE.md) and [SEO.md](SEO.md)**
 
+> **Writing rule:** Never use em dashes (—) anywhere in this codebase. Not in visible content, metadata, aria-labels, or comments. Use a colon, comma, or hyphen instead.
+
 ---
 
 ## Commands

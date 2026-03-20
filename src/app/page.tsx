@@ -6,16 +6,22 @@ import AnimateIn from "@/components/ui/AnimateIn";
 import AnimateGroup from "@/components/ui/AnimateGroup";
 import AnimatedHeroContent from "@/components/ui/AnimatedHeroContent";
 import AnimatedProgramsGrid from "@/components/ui/AnimatedProgramsGrid";
+import { Particles } from "@/components/magicui/particles";
+import { BorderBeam } from "@/components/magicui/border-beam";
+import { MagicCard } from "@/components/magicui/magic-card";
+import { Marquee } from "@/components/magicui/marquee";
+import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
 // ── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: {
-    absolute: "Life Skills Training in Delhi | Hidden Potential — Structured Growth Pathways",
+    absolute: "Life Skills Training in Delhi | Hidden Potential - Structured Growth Pathways",
   },
   description:
     "Structured life skills programs for students, women & professionals in Delhi. Assessment-based placement. 14+ years experience. 5000+ trained. Book free evaluation.",
   openGraph: {
-    title: "Hidden Potential — Life Skills Training Academy in Delhi",
+    title: "Hidden Potential - Life Skills Training Academy in Delhi",
     description:
       "Structured transformational pathways for students, women, professionals and future trainers.",
     type: "website",
@@ -116,7 +122,7 @@ const faqSchema = {
       name: "How do I know which program is the right fit for me?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "We recommend starting with our Life Skills Assessment. It identifies your current strengths, developmental gaps, and the most appropriate starting point within our program range. You'll receive a personalised pathway recommendation — no guesswork, no generic advice.",
+        text: "We recommend starting with our Life Skills Assessment. It identifies your current strengths, developmental gaps, and the most appropriate starting point within our program range. You'll receive a personalised pathway recommendation - no guesswork, no generic advice.",
       },
     },
     {
@@ -124,7 +130,7 @@ const faqSchema = {
       name: "Are your programs available online, offline, or both?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Most programs are offered in hybrid format — you can choose offline sessions at our Dwarka centre or fully online participation from anywhere in India. School and corporate programs are delivered on-site at the client's premises across Delhi, Noida, Gurgaon, and Faridabad.",
+        text: "Most programs are offered in hybrid format - you can choose offline sessions at our Dwarka centre or fully online participation from anywhere in India. School and corporate programs are delivered on-site at the client's premises across Delhi, Noida, Gurgaon, and Faridabad.",
       },
     },
     {
@@ -132,7 +138,7 @@ const faqSchema = {
       name: "What makes Hidden Potential different from other coaching institutes?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Three things: System, Science, and Structure. We use NLP-based frameworks, emotional intelligence research, and behavioural psychology — not motivation-only sessions. Every student is assessed before and after, progress is documented, and programs follow a clear Foundation → Growth → Mastery pathway. Our founder holds a Masters in Psychology, NLP Practitioner certification, and IGNOU's NEP 2020 Implementation credential.",
+        text: "Three things: System, Science, and Structure. We use NLP-based frameworks, emotional intelligence research, and behavioural psychology - not motivation-only sessions. Every student is assessed before and after, progress is documented, and programs follow a clear Foundation → Growth → Mastery pathway. Our founder holds a Masters in Psychology, NLP Practitioner certification, and IGNOU's NEP 2020 Implementation credential.",
       },
     },
     {
@@ -148,7 +154,7 @@ const faqSchema = {
       name: "Do you offer programs for schools and organisations?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Hidden Potential has structured institutional partnerships for schools and corporate teams. School programs include student life skills curriculum, teacher training, and parent engagement sessions — all NEP 2020 aligned. Corporate offerings include group workshops, communication training, and emotional intelligence sessions. Contact us to discuss a customised annual program.",
+        text: "Yes. Hidden Potential has structured institutional partnerships for schools and corporate teams. School programs include student life skills curriculum, teacher training, and parent engagement sessions - all NEP 2020 aligned. Corporate offerings include group workshops, communication training, and emotional intelligence sessions. Contact us to discuss a customised annual program.",
       },
     },
   ],
@@ -167,7 +173,7 @@ const pillars = [
   {
     num: "01",
     title: "System",
-    desc: "A defined developmental pathway — from where you are to where you need to be. No fragmented sessions, only one clear journey.",
+    desc: "A defined developmental pathway - from where you are to where you need to be. No fragmented sessions, only one clear journey.",
     hoverClass: "card-hover-purple",
   },
   {
@@ -210,7 +216,7 @@ const programs = [
     name: "Communication Mastery",
     ages: "Ages 8–65",
     tagline: "From fear of speaking to leadership presence.",
-    desc: "Build confidence and clarity to express yourself powerfully — in every personal and professional situation.",
+    desc: "Build confidence and clarity to express yourself powerfully - in every personal and professional situation.",
     href: "/programs/communication-mastery",
     accent: "#7C3AED",
     lightBg: "#EDE9FE",
@@ -255,7 +261,7 @@ const programs = [
 const differentiators = [
   {
     title: "Assessment-Based Placement",
-    desc: "Every learner begins with a structured skills assessment — no guesswork, only clarity about where to begin.",
+    desc: "Every learner begins with a structured skills assessment - no guesswork, only clarity about where to begin.",
     icon: (
       <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.75} strokeLinecap="round" strokeLinejoin="round">
         <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
@@ -291,7 +297,7 @@ const differentiators = [
   },
   {
     title: "Multi-Level Pathways",
-    desc: "Programs that grow with you — built for sustained development, not one-time workshops.",
+    desc: "Programs that grow with you - built for sustained development, not one-time workshops.",
     icon: (
       <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.75} strokeLinecap="round" strokeLinejoin="round">
         <path d="M4 6h16M4 10h16M4 14h16M4 18h16" />
@@ -312,7 +318,7 @@ const differentiators = [
 const testimonials = [
   {
     quote:
-      "The structured approach at Hidden Potential is unlike any other coaching program. My students came back transformed — not just with skills, but with a completely new sense of who they are.",
+      "The structured approach at Hidden Potential is unlike any other coaching program. My students came back transformed - not just with skills, but with a completely new sense of who they are.",
     name: "Raaj Kumar",
     role: "Managing Trustee, School Partner",
     initial: "R",
@@ -333,7 +339,7 @@ const testimonials = [
   },
   {
     quote:
-      "As a school administrator, I was looking for something structured, not motivational fluff. Hidden Potential delivered exactly that — measurable outcomes and real student growth.",
+      "As a school administrator, I was looking for something structured, not motivational fluff. Hidden Potential delivered exactly that - measurable outcomes and real student growth.",
     name: "Priya Sharma",
     role: "Vice Principal, Delhi NCR",
     initial: "P",
@@ -349,7 +355,7 @@ const enrollmentSteps = [
   {
     step: "02",
     title: "Receive Your Personalized Pathway",
-    desc: "A recommended program and level — matched precisely to where you are today.",
+    desc: "A recommended program and level - matched precisely to where you are today.",
   },
   {
     step: "03",
@@ -359,7 +365,7 @@ const enrollmentSteps = [
   {
     step: "04",
     title: "Progress Through Structured Levels",
-    desc: "Move from Foundation to Growth to Mastery — with measurable milestones at every stage.",
+    desc: "Move from Foundation to Growth to Mastery - with measurable milestones at every stage.",
   },
 ];
 
@@ -413,7 +419,7 @@ export default function HomePage() {
 
       {/* ═══════════════════════════════════════════
           1. HERO
-          Dark editorial (#7C3AED) — NOT purple gradient.
+          Dark editorial (#7C3AED) - NOT purple gradient.
           Purple (#7C3AED) used as a spot accent on one word.
           Trust & Authority: stats as primary social proof.
       ═══════════════════════════════════════════ */}
@@ -421,7 +427,17 @@ export default function HomePage() {
         className="relative overflow-hidden grain-overlay"
         style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)", minHeight: "90vh", display: "flex", alignItems: "center" }}
       >
-        {/* Ambient glows — floating/pulsing via CSS keyframes */}
+        {/* Particle field - interactive canvas dots */}
+        <Particles
+          className="absolute inset-0 z-0"
+          quantity={80}
+          color="#ffffff"
+          staticity={60}
+          ease={70}
+          size={0.35}
+        />
+
+        {/* Ambient glows - floating/pulsing via CSS keyframes */}
         <div
           className="absolute top-0 right-0 pointer-events-none hero-float-1"
           style={{
@@ -444,10 +460,10 @@ export default function HomePage() {
         <div className="relative max-w-6xl mx-auto px-6 py-24 w-full">
           <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
 
-            {/* Left — Animated text content */}
+            {/* Left - Animated text content */}
             <AnimatedHeroContent />
 
-            {/* Right — Hero image */}
+            {/* Right - Hero image */}
             <div className="hidden md:block relative w-full overflow-hidden rounded-2xl">
               <div className="relative w-full" style={{ height: "520px" }}>
                 <Image
@@ -464,6 +480,13 @@ export default function HomePage() {
                   style={{ background: "linear-gradient(to top, rgba(26,15,60,0.4) 0%, transparent 100%)" }}
                   aria-hidden="true"
                 />
+                <BorderBeam
+                  size={220}
+                  duration={10}
+                  colorFrom="#7C3AED"
+                  colorTo="#C8A951"
+                  borderWidth={1.5}
+                />
               </div>
             </div>
 
@@ -472,13 +495,13 @@ export default function HomePage() {
       </section>
 
       {/* ═══════════════════════════════════════════
-          2. BRAND STORY — White, editorial quote
+          2. BRAND STORY - White, editorial quote
       ═══════════════════════════════════════════ */}
       <section className="bg-white py-24">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
 
-            {/* Left — Story content */}
+            {/* Left - Story content */}
             <AnimateIn>
             <div>
               <Label>Our Story</Label>
@@ -526,7 +549,7 @@ export default function HomePage() {
                   style={{ color: "#2D2D2D", fontSize: "1.0625rem", fontFamily: "var(--font-body)" }}
                 >
                   <strong style={{ color: "#7C3AED" }}>Hidden Potential</strong>{" "}
-                  was created to bridge that gap — to give every learner the tools
+                  was created to bridge that gap - to give every learner the tools
                   that formal education never prioritised.
                 </p>
                 <p
@@ -534,7 +557,7 @@ export default function HomePage() {
                   style={{ color: "#2D2D2D", fontSize: "1.0625rem", fontFamily: "var(--font-body)" }}
                 >
                   This is not a training institute. It is a{" "}
-                  <strong>transformational academy</strong> — where structured
+                  <strong>transformational academy</strong> - where structured
                   pathways meet real human development, and growth is never left to
                   chance.
                 </p>
@@ -551,13 +574,13 @@ export default function HomePage() {
             </div>
             </AnimateIn>
 
-            {/* Right — Full image */}
+            {/* Right - Full image */}
             <AnimateIn variants={{ hidden: { opacity: 0, x: 60 }, visible: { opacity: 1, x: 0, transition: { type: "spring", stiffness: 60, damping: 15 } } }}>
             <div className="relative w-full overflow-hidden rounded-2xl">
               <div className="relative w-full" style={{ height: "440px" }}>
                 <Image
                   src="/images/media/media-2.jpg"
-                  alt="Hidden Potential life skills training session in Delhi — real transformation in action"
+                  alt="Hidden Potential life skills training session in Delhi - real transformation in action"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover object-center"
@@ -571,7 +594,7 @@ export default function HomePage() {
       </section>
 
       {/* ═══════════════════════════════════════════
-          3. METHOD — System · Science · Structure
+          3. METHOD - System · Science · Structure
       ═══════════════════════════════════════════ */}
       <section style={{ background: "#F8F6F2" }} className="py-24">
         <div className="max-w-6xl mx-auto px-6">
@@ -597,12 +620,14 @@ export default function HomePage() {
             </p>
           </AnimateIn>
 
-          {/* 3 Pillars — stagger entrance */}
+          {/* 3 Pillars - stagger entrance */}
           <AnimateGroup className="grid md:grid-cols-3 gap-5 mb-10 items-stretch">
             {pillars.map((p, i) => (
-              <div
+              <MagicCard
                 key={p.title}
-                className={`card-bezel-outer card-bezel-outer-purple h-full`}
+                className="card-bezel-outer card-bezel-outer-purple h-full"
+                gradientColor="#7C3AED"
+                gradientOpacity={0.06}
                 style={{
                   background: "rgba(0,0,0,0.025)",
                   borderRadius: "1.75rem",
@@ -643,7 +668,7 @@ export default function HomePage() {
                     {p.desc}
                   </p>
                 </div>
-              </div>
+              </MagicCard>
             ))}
           </AnimateGroup>
 
@@ -697,7 +722,7 @@ export default function HomePage() {
       </section>
 
       {/* ═══════════════════════════════════════════
-          4. PROGRAMS — Bento grid
+          4. PROGRAMS - Bento grid
           Asymmetric: AEL featured (4/6 cols wide)
       ═══════════════════════════════════════════ */}
       <section id="programs" className="bg-white py-24">
@@ -723,14 +748,15 @@ export default function HomePage() {
             </p>
           </AnimateIn>
 
-          {/* Bento grid — animated with stagger + hover lift */}
+          {/* Bento grid - animated with stagger + hover lift */}
           <AnimatedProgramsGrid programs={programs} />
 
           {/* Assessment prompt */}
           <div
-            className="mt-12 rounded-2xl p-8 flex flex-col sm:flex-row items-center justify-between gap-6"
+            className="relative mt-12 rounded-2xl p-8 flex flex-col sm:flex-row items-center justify-between gap-6"
             style={{ background: "#F3F0FF", border: "1px solid rgba(124,58,237,0.1)" }}
           >
+            <BorderBeam size={180} duration={12} colorFrom="#7C3AED" colorTo="#C8A951" borderWidth={1.5} />
             <div>
               <p
                 className="font-bold mb-1"
@@ -757,7 +783,7 @@ export default function HomePage() {
       </section>
 
       {/* ═══════════════════════════════════════════
-          5. DIFFERENTIATORS — Dark section
+          5. DIFFERENTIATORS - Dark section
       ═══════════════════════════════════════════ */}
       <section style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }} className="py-24">
         <div className="max-w-6xl mx-auto px-6">
@@ -846,11 +872,15 @@ export default function HomePage() {
           >
             Credentials &amp; Certifications · Supreet Kaur, Founder
           </p>
-          <div className="flex flex-wrap justify-center gap-3">
+          <Marquee
+            className="[--duration:30s] [--gap:0.75rem]"
+            pauseOnHover
+            repeat={3}
+          >
             {credentials.map((c) => (
               <span
                 key={c}
-                className="text-sm font-medium px-4 py-2 rounded-full"
+                className="text-sm font-medium px-4 py-2 rounded-full shrink-0"
                 style={{
                   fontFamily: "var(--font-body)",
                   background: "white",
@@ -862,12 +892,12 @@ export default function HomePage() {
                 {c}
               </span>
             ))}
-          </div>
+          </Marquee>
         </div>
       </section>
 
       {/* ═══════════════════════════════════════════
-          7. TESTIMONIALS — Auto-scroll marquee
+          7. TESTIMONIALS - Auto-scroll marquee
           CSS animation, pauses on hover (in globals.css)
       ═══════════════════════════════════════════ */}
       <section className="bg-white py-24 overflow-hidden">
@@ -885,18 +915,21 @@ export default function HomePage() {
           </h2>
         </div>
 
-        {/* Marquee — duplicated for seamless loop */}
+        {/* Marquee - Magic UI component with pause-on-hover */}
         <div
-          className="flex overflow-hidden"
           style={{
             maskImage: "linear-gradient(to right, transparent 0px, black 80px, black calc(100% - 80px), transparent 100%)",
             WebkitMaskImage: "linear-gradient(to right, transparent 0px, black 80px, black calc(100% - 80px), transparent 100%)",
           }}
         >
-          <div className="animate-marquee flex gap-5 shrink-0" aria-label="Testimonials carousel">
-            {[...testimonials, ...testimonials].map((t, i) => (
+          <Marquee
+            className="[--duration:50s] [--gap:1.25rem]"
+            pauseOnHover
+            repeat={3}
+          >
+            {testimonials.map((t) => (
               <article
-                key={`${t.name}-${i}`}
+                key={t.name}
                 className="shrink-0 rounded-2xl p-7 flex flex-col"
                 style={{
                   width: "340px",
@@ -922,12 +955,14 @@ export default function HomePage() {
                   {t.quote}
                 </p>
                 <div className="flex items-center gap-3">
-                  <div
-                    className="w-9 h-9 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 text-white"
-                    style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)", fontFamily: "var(--font-body)" }}
-                  >
-                    {t.initial}
-                  </div>
+                  <Avatar size="default">
+                    <AvatarFallback
+                      className="text-sm font-bold text-white"
+                      style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)", fontFamily: "var(--font-body)" }}
+                    >
+                      {t.initial}
+                    </AvatarFallback>
+                  </Avatar>
                   <div>
                     <p
                       className="text-sm font-bold leading-tight"
@@ -945,7 +980,7 @@ export default function HomePage() {
                 </div>
               </article>
             ))}
-          </div>
+          </Marquee>
         </div>
 
         <div className="text-center mt-12">
@@ -1037,7 +1072,7 @@ export default function HomePage() {
       </section>
 
       {/* ═══════════════════════════════════════════
-          9. FAQ — Native <details> accordion
+          9. FAQ - Native <details> accordion
           No JS required, works in Server Components
       ═══════════════════════════════════════════ */}
       <section id="faq" className="bg-white py-24">
@@ -1056,7 +1091,7 @@ export default function HomePage() {
             </h2>
           </div>
 
-          <div className="flex flex-col gap-3">
+          <Accordion className="flex flex-col gap-3">
             {[
               {
                 q: "What age groups do Hidden Potential's programs cater to?",
@@ -1064,15 +1099,15 @@ export default function HomePage() {
               },
               {
                 q: "How do I know which program is the right fit for me?",
-                a: "We recommend starting with our Life Skills Assessment. It identifies your current strengths, developmental gaps, and the most appropriate starting point within our program range. You'll receive a personalised pathway recommendation — no guesswork, no generic advice.",
+                a: "We recommend starting with our Life Skills Assessment. It identifies your current strengths, developmental gaps, and the most appropriate starting point within our program range. You'll receive a personalised pathway recommendation - no guesswork, no generic advice.",
               },
               {
                 q: "Are your programs available online, offline, or both?",
-                a: "Most programs are offered in hybrid format — you can choose offline sessions at our Dwarka centre or fully online participation from anywhere in India. School and corporate programs are delivered on-site at the client's premises across Delhi, Noida, Gurgaon, and Faridabad.",
+                a: "Most programs are offered in hybrid format - you can choose offline sessions at our Dwarka centre or fully online participation from anywhere in India. School and corporate programs are delivered on-site at the client's premises across Delhi, Noida, Gurgaon, and Faridabad.",
               },
               {
                 q: "What makes Hidden Potential different from other coaching institutes?",
-                a: "Three things: System, Science, and Structure. We use NLP-based frameworks, emotional intelligence research, and behavioural psychology — not motivation-only sessions. Every student is assessed before and after, progress is documented, and programs follow a clear Foundation → Growth → Mastery pathway. Our founder holds a Masters in Psychology, NLP Practitioner certification, and IGNOU's NEP 2020 Implementation credential.",
+                a: "Three things: System, Science, and Structure. We use NLP-based frameworks, emotional intelligence research, and behavioural psychology - not motivation-only sessions. Every student is assessed before and after, progress is documented, and programs follow a clear Foundation → Growth → Mastery pathway. Our founder holds a Masters in Psychology, NLP Practitioner certification, and IGNOU's NEP 2020 Implementation credential.",
               },
               {
                 q: "How long do the programs run, and what is the time commitment?",
@@ -1080,16 +1115,17 @@ export default function HomePage() {
               },
               {
                 q: "Do you offer programs for schools and organisations?",
-                a: "Yes. Hidden Potential has structured institutional partnerships for schools and corporate teams. School programs include student life skills curriculum, teacher training, and parent engagement sessions — all NEP 2020 aligned. Corporate offerings include group workshops, communication training, and emotional intelligence sessions. Contact us to discuss a customised annual program.",
+                a: "Yes. Hidden Potential has structured institutional partnerships for schools and corporate teams. School programs include student life skills curriculum, teacher training, and parent engagement sessions - all NEP 2020 aligned. Corporate offerings include group workshops, communication training, and emotional intelligence sessions. Contact us to discuss a customised annual program.",
               },
-            ].map(({ q, a }) => (
-              <details
+            ].map(({ q, a }, idx) => (
+              <AccordionItem
                 key={q}
-                className="group rounded-2xl overflow-hidden"
+                value={`faq-${idx}`}
+                className="rounded-2xl overflow-hidden border-0"
                 style={{ border: "1px solid rgba(0,0,0,0.07)" }}
               >
-                <summary
-                  className="flex items-center justify-between gap-4 px-6 py-5"
+                <AccordionTrigger
+                  className="flex items-center justify-between gap-4 px-6 py-5 w-full text-left no-underline hover:no-underline hover:bg-[#F3F0FF] transition-colors rounded-t-2xl"
                   style={{ background: "#F8F6F2", fontFamily: "var(--font-body)" }}
                 >
                   <span
@@ -1098,18 +1134,8 @@ export default function HomePage() {
                   >
                     {q}
                   </span>
-                  <svg
-                    className="faq-chevron w-4 h-4 flex-shrink-0"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="#6B6B6B"
-                    strokeWidth={2.5}
-                    aria-hidden="true"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-                  </svg>
-                </summary>
-                <div
+                </AccordionTrigger>
+                <AccordionContent
                   className="px-6 py-5"
                   style={{ background: "white", borderTop: "1px solid rgba(0,0,0,0.05)" }}
                 >
@@ -1119,10 +1145,10 @@ export default function HomePage() {
                   >
                     {a}
                   </p>
-                </div>
-              </details>
+                </AccordionContent>
+              </AccordionItem>
             ))}
-          </div>
+          </Accordion>
 
           <p
             className="text-center text-sm mt-10"
@@ -1137,7 +1163,7 @@ export default function HomePage() {
       </section>
 
       {/* ═══════════════════════════════════════════
-          10. BOOKS TEASER — Author credibility
+          10. BOOKS TEASER - Author credibility
       ═══════════════════════════════════════════ */}
       <section style={{ background: "#F3F0FF" }} className="py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-6">
@@ -1198,7 +1224,7 @@ export default function HomePage() {
                   maxWidth: "420px",
                 }}
               >
-                Structured life skills wisdom distilled into books — for
+                Structured life skills wisdom distilled into books - for
                 students, parents, and lifelong learners who want a real
                 toolkit, not just inspiration.
               </p>
@@ -1239,11 +1265,19 @@ export default function HomePage() {
       </section>
 
       {/* ═══════════════════════════════════════════
-          11. FINAL CTA — Dark editorial
+          11. FINAL CTA - Dark editorial
           Credentials grid = Trust & Authority's primary signal
       ═══════════════════════════════════════════ */}
-      <section style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }} className="py-28">
-        <div className="max-w-3xl mx-auto px-6 text-center">
+      <section style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }} className="relative py-28 overflow-hidden">
+        <Particles
+          className="absolute inset-0 z-0"
+          quantity={60}
+          color="#ffffff"
+          staticity={80}
+          ease={90}
+          size={0.3}
+        />
+        <div className="relative z-10 max-w-3xl mx-auto px-6 text-center">
           <AnimateIn>
           <Label dark>Begin Your Journey</Label>
 
@@ -1269,7 +1303,7 @@ export default function HomePage() {
             }}
           >
             Take the Life Skills Assessment and receive your personalized
-            growth pathway — designed for exactly where you are today.
+            growth pathway - designed for exactly where you are today.
           </p>
           </AnimateIn>
 
@@ -1289,7 +1323,7 @@ export default function HomePage() {
             </Link>
           </div>
 
-          {/* Credential badges — Trust & Authority's key signal */}
+          {/* Credential badges - Trust & Authority's key signal */}
           <div className="flex flex-wrap justify-center gap-2.5">
             {credentials.map((badge) => (
               <span

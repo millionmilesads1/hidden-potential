@@ -124,7 +124,7 @@ const faqSchema = {
       name: "How is this different from spoken English or personality development classes?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Spoken English classes focus narrowly on language proficiency — grammar, vocabulary, and accent. Personality development classes offer broad surface-level content covering grooming, etiquette, and general communication tips. Communication skills training at Hidden Potential is fundamentally different: it is assessment-based with documented pre and post evaluations, covers the complete communication system including non-verbal and professional dimensions, uses structured pathways spanning months rather than weeks, includes live practice with recorded analysis and specific feedback, and produces measurable improvement across all communication dimensions — not just speaking fluency.",
+        text: "Spoken English classes focus narrowly on language proficiency - grammar, vocabulary, and accent. Personality development classes offer broad surface-level content covering grooming, etiquette, and general communication tips. Communication skills training at Hidden Potential is fundamentally different: it is assessment-based with documented pre and post evaluations, covers the complete communication system including non-verbal and professional dimensions, uses structured pathways spanning months rather than weeks, includes live practice with recorded analysis and specific feedback, and produces measurable improvement across all communication dimensions - not just speaking fluency.",
       },
     },
   ],
@@ -148,7 +148,7 @@ export default function CommunicationSkillsPage() {
 
       <main>
         {/* ═══════════════════════════════════════════════════════════════
-            SECTION 1 — HERO
+            SECTION 1 - HERO
         ═══════════════════════════════════════════════════════════════ */}
         <section
           className="relative overflow-hidden"
@@ -190,7 +190,7 @@ export default function CommunicationSkillsPage() {
                 textShadow: "0 1px 2px rgba(0,0,0,0.15)",
               }}
             >
-              Communication Skills Training in Delhi — Speak Clearly, Lead Confidently
+              Communication Skills Training in Delhi - Speak Clearly, Lead Confidently
             </h1>
 
             {/* Lora italic tagline */}
@@ -202,23 +202,23 @@ export default function CommunicationSkillsPage() {
                 textShadow: "0 1px 2px rgba(0,0,0,0.15)",
               }}
             >
-              Clear communication isn&apos;t a talent — it&apos;s a skill built through structured
+              Clear communication isn&apos;t a talent - it&apos;s a skill built through structured
               practice.
             </p>
 
             {/* Body paragraph */}
             <p className="text-base text-white/65 max-w-3xl mx-auto mb-10 leading-relaxed">
               Communication skills are consistently ranked as the number one soft skill demanded by
-              employers across India and globally — ahead of leadership, teamwork, and technical
+              employers across India and globally - ahead of leadership, teamwork, and technical
               expertise. Yet the vast majority of students graduate without ever receiving structured
               communication training. Professionals spend entire careers limited not by what they
               know, but by their inability to express it clearly. At Hidden Potential, communication
               skills training in Delhi is not a weekend workshop or a personality development add-on.
-              It is a structured developmental pathway — assessed at entry, developed through
+              It is a structured developmental pathway - assessed at entry, developed through
               progressive practice, reinforced through real-world application, and measured at
               completion. Whether you are a student aged 8 learning to express yourself in class, a
               professional aged 35 preparing for leadership presentations, or a corporate team needing
-              cohesive workplace communication — the methodology is the same: structured, practised,
+              cohesive workplace communication - the methodology is the same: structured, practised,
               feedback-driven, and measurable.
             </p>
 
@@ -265,7 +265,7 @@ export default function CommunicationSkillsPage() {
         </section>
 
         {/* ═══════════════════════════════════════════════════════════════
-            SECTION 2 — WHY COMMUNICATION MATTERS
+            SECTION 2 - WHY COMMUNICATION MATTERS
         ═══════════════════════════════════════════════════════════════ */}
         <section className="py-20 bg-[#F8F6F2]">
           <div className="max-w-4xl mx-auto px-6">
@@ -284,17 +284,17 @@ export default function CommunicationSkillsPage() {
                 articulate it, avoids presentations, writes vague messages, and freezes during
                 disagreements. Who gets promoted? Who leads the team? Who earns more over a 20-year
                 career? The difference is not intelligence, education, or even experience. It is
-                communication skill — and unlike IQ or background, communication is entirely
+                communication skill - and unlike IQ or background, communication is entirely
                 trainable.
               </p>
               <p>
                 For students, the impact starts even earlier. Research from the World Economic Forum
                 and National Education Policy 2020 both identify communication as a foundational life
-                skill — essential for academic success, social development, career readiness, and
+                skill - essential for academic success, social development, career readiness, and
                 mental health. A student who can express their emotions clearly is less likely to
                 develop anxiety. A student who can speak confidently in groups performs better
                 academically. A student who can listen actively builds stronger relationships. These
-                are not soft skills — they are survival skills for the modern world.
+                are not soft skills - they are survival skills for the modern world.
               </p>
               <p>
                 At Hidden Potential in Delhi, communication skills training is delivered through
@@ -308,7 +308,7 @@ export default function CommunicationSkillsPage() {
         </section>
 
         {/* ═══════════════════════════════════════════════════════════════
-            SECTION 3 — WHAT YOU'LL BUILD
+            SECTION 3 - WHAT YOU'LL BUILD
         ═══════════════════════════════════════════════════════════════ */}
         <section className="py-20 bg-white">
           <div className="max-w-6xl mx-auto px-6">
@@ -325,7 +325,7 @@ export default function CommunicationSkillsPage() {
               className="text-base text-center max-w-3xl mx-auto mb-12 leading-relaxed"
               style={{ color: "#6B6B6B" }}
             >
-              Communication is not a single ability — it is a system of interconnected skills
+              Communication is not a single ability - it is a system of interconnected skills
               spanning verbal expression, non-verbal awareness, listening, professional writing, and
               leadership influence. Weakness in any one area creates the perception of poor
               communication even if other areas are strong. Our communication skills training in
@@ -349,13 +349,13 @@ export default function CommunicationSkillsPage() {
                 </div>
                 <div className="px-5 py-5 bg-white">
                   <p className="text-sm leading-relaxed" style={{ color: "#2D2D2D" }}>
-                    Public speaking is the most visible communication skill — and the most feared. At
+                    Public speaking is the most visible communication skill - and the most feared. At
                     Hidden Potential, speaking confidence is developed through structured methodology,
                     not just exposure. You learn voice modulation techniques to control pitch, pace,
                     and volume for maximum impact. You practise projection so your voice carries
                     without strain. You develop pacing skills so your message lands clearly rather
                     than rushing through nerves. Every session includes recorded practice with
-                    specific, actionable feedback — because public speaking improves through
+                    specific, actionable feedback - because public speaking improves through
                     repetition and correction, not through tips and motivation.
                   </p>
                 </div>
@@ -378,10 +378,10 @@ export default function CommunicationSkillsPage() {
                 <div className="px-5 py-5 bg-white">
                   <p className="text-sm leading-relaxed" style={{ color: "#2D2D2D" }}>
                     Assertiveness is the ability to express your thoughts, needs, and limits clearly
-                    — without being aggressive, passive, or apologetic. It is the communication style
+                    - without being aggressive, passive, or apologetic. It is the communication style
                     that builds respect in workplaces, maintains healthy relationships, and prevents
                     the resentment that comes from consistently suppressing your own needs. Many
-                    learners in Delhi — especially women and younger professionals — default to
+                    learners in Delhi - especially women and younger professionals - default to
                     passive communication patterns learned through cultural and family conditioning.
                     Our training rebuilds these patterns through structured practice in real-world
                     scenarios: saying no without guilt, expressing disagreement without conflict,
@@ -407,7 +407,7 @@ export default function CommunicationSkillsPage() {
                 <div className="px-5 py-5 bg-white">
                   <p className="text-sm leading-relaxed" style={{ color: "#2D2D2D" }}>
                     Most people listen to respond, not to understand. Active listening is a trained
-                    skill that dramatically improves every relationship — professional, personal, and
+                    skill that dramatically improves every relationship - professional, personal, and
                     academic. At Hidden Potential, active listening training covers focused attention
                     techniques, reflective listening methods, empathetic response patterns, and the
                     ability to read emotional subtext beneath spoken words. This skill is particularly
@@ -434,7 +434,7 @@ export default function CommunicationSkillsPage() {
                 <div className="px-5 py-5 bg-white">
                   <p className="text-sm leading-relaxed" style={{ color: "#2D2D2D" }}>
                     Research by Professor Albert Mehrabian established that up to 55 percent of
-                    communication impact comes from body language — posture, eye contact, gestures,
+                    communication impact comes from body language - posture, eye contact, gestures,
                     facial expressions, and spatial awareness. Most communication training in Delhi
                     ignores this entirely. At Hidden Potential, non-verbal communication is a
                     dedicated training area. You learn to project confidence through posture, maintain
@@ -467,7 +467,7 @@ export default function CommunicationSkillsPage() {
                     the ability to communicate bad news, give feedback, and handle workplace conflict
                     professionally. For young professionals entering the workforce from colleges in
                     Delhi NCR, this training bridges the gap between academic communication and
-                    professional communication — a gap that often takes years to close through trial
+                    professional communication - a gap that often takes years to close through trial
                     and error alone.
                   </p>
                 </div>
@@ -490,7 +490,7 @@ export default function CommunicationSkillsPage() {
                 <div className="px-5 py-5 bg-white">
                   <p className="text-sm leading-relaxed" style={{ color: "#2D2D2D" }}>
                     Job interviews, client pitches, board presentations, media interactions, salary
-                    negotiations — these are high-stakes communication situations where preparation
+                    negotiations - these are high-stakes communication situations where preparation
                     and technique matter more than natural talent. Our training covers structured
                     answer frameworks for interviews, persuasion techniques for pitches, executive
                     presence for leadership presentations, and composure techniques for high-pressure
@@ -517,7 +517,7 @@ export default function CommunicationSkillsPage() {
                 <div className="px-5 py-5 bg-white">
                   <p className="text-sm leading-relaxed" style={{ color: "#2D2D2D" }}>
                     The ability to organise your thoughts and express them in a clear, logical
-                    structure — even under pressure — is what separates effective communicators from
+                    structure - even under pressure - is what separates effective communicators from
                     people who simply talk a lot. Structured thinking in speech means learning to
                     identify your core message before speaking, organise supporting points logically,
                     transition smoothly between ideas, and conclude memorably. This skill is trained
@@ -543,14 +543,14 @@ export default function CommunicationSkillsPage() {
                 </div>
                 <div className="px-5 py-5 bg-white">
                   <p className="text-sm leading-relaxed" style={{ color: "#2D2D2D" }}>
-                    The conversations most people avoid — addressing underperformance, setting
+                    The conversations most people avoid - addressing underperformance, setting
                     boundaries with family, negotiating terms, delivering bad news, handling criticism
-                    — are exactly the conversations that determine the quality of your professional
+                    - are exactly the conversations that determine the quality of your professional
                     and personal relationships. At Hidden Potential, conflict communication is not
                     about winning arguments. It is about expressing your position clearly,
                     understanding the other person&apos;s perspective accurately, and finding
                     resolution without damaging the relationship. These are structured, practicable
-                    techniques — not personality-dependent traits.
+                    techniques - not personality-dependent traits.
                   </p>
                 </div>
               </div>
@@ -559,7 +559,7 @@ export default function CommunicationSkillsPage() {
         </section>
 
         {/* ═══════════════════════════════════════════════════════════════
-            SECTION 4 — WHO IT'S FOR
+            SECTION 4 - WHO IT'S FOR
         ═══════════════════════════════════════════════════════════════ */}
         <section className="py-20 bg-[#F3F0FF]">
           <div className="max-w-6xl mx-auto px-6">
@@ -579,7 +579,7 @@ export default function CommunicationSkillsPage() {
               Communication challenges manifest differently across age groups and contexts, but the
               underlying skill gaps are predictable and trainable. Whether you are a parent looking
               for communication training for your child, a professional wanting to advance your
-              career, or a corporate HR leader seeking team development — Hidden Potential&apos;s
+              career, or a corporate HR leader seeking team development - Hidden Potential&apos;s
               structured communication training in Delhi adapts to your stage.
             </p>
 
@@ -603,7 +603,7 @@ export default function CommunicationSkillsPage() {
                 <p className="text-sm leading-relaxed mb-3" style={{ color: "#6B6B6B" }}>
                   Building the communication foundation during the years when it matters most. From
                   classroom participation and group discussions for younger students to debate skills,
-                  presentation confidence, and social communication for teenagers — structured
+                  presentation confidence, and social communication for teenagers - structured
                   training during these formative years compounds over an entire lifetime.
                   Communication skills are one of the 13 key areas developed in the An Enlightened
                   Learner student program, integrated into age-appropriate activities for 8 to 12, 13
@@ -637,7 +637,7 @@ export default function CommunicationSkillsPage() {
                   The transition from campus to career exposes communication gaps that were invisible
                   in academic settings. Interview skills, professional email etiquette, meeting
                   behaviour, workplace assertiveness, and the ability to communicate with authority
-                  figures and clients — these are trainable skills that most graduates lack. The
+                  figures and clients - these are trainable skills that most graduates lack. The
                   Communication Mastery Foundation track is designed specifically for this transition
                   stage.
                 </p>
@@ -669,7 +669,7 @@ export default function CommunicationSkillsPage() {
                   Mid-career professionals who are technically competent but plateau because they
                   cannot communicate their value effectively. If you are passed over for promotions
                   despite strong performance, if your ideas are overlooked in meetings, if you
-                  struggle with presentations or leadership conversations — these are communication
+                  struggle with presentations or leadership conversations - these are communication
                   skill gaps, not talent gaps. The Communication Mastery Growth and Mastery tracks
                   address professional and executive communication specifically.
                 </p>
@@ -696,7 +696,7 @@ export default function CommunicationSkillsPage() {
                   wanting to improve team communication, client-facing skills, leadership
                   communication, cross-functional collaboration, and conflict resolution. Corporate
                   communication training at Hidden Potential is customised based on an organisational
-                  assessment — not a generic off-the-shelf module delivered identically to every
+                  assessment - not a generic off-the-shelf module delivered identically to every
                   company.
                 </p>
                 <Link
@@ -724,7 +724,7 @@ export default function CommunicationSkillsPage() {
                   </h3>
                 </div>
                 <p className="text-sm leading-relaxed mb-3" style={{ color: "#6B6B6B" }}>
-                  Women who have spent years suppressing their communication — deferring to others in
+                  Women who have spent years suppressing their communication - deferring to others in
                   meetings, avoiding conflict, apologising before expressing opinions, using
                   qualifying language that undermines their authority. The communication dimension of
                   Self Mastery for Women specifically addresses these patterns, rebuilding assertive
@@ -773,7 +773,7 @@ export default function CommunicationSkillsPage() {
         </section>
 
         {/* ═══════════════════════════════════════════════════════════════
-            SECTION 5 — WHY DIFFERENT
+            SECTION 5 - WHY DIFFERENT
         ═══════════════════════════════════════════════════════════════ */}
         <section className="py-20 bg-[#F8F6F2]">
           <div className="max-w-6xl mx-auto px-6">
@@ -820,11 +820,11 @@ export default function CommunicationSkillsPage() {
                   Structured Progression, Not One-Time Workshops
                 </h3>
                 <p className="text-sm leading-relaxed" style={{ color: "#6B6B6B" }}>
-                  Communication skills are developed through consistent practice over months — not a
+                  Communication skills are developed through consistent practice over months - not a
                   weekend event. Our Communication Mastery pathway spans Foundation (3 months),
                   Growth (6 months), and Mastery (12 months) with progressive skill building at each
                   level. This is the same approach used by professional communication training
-                  programs globally — adapted for Indian learners and contexts.
+                  programs globally - adapted for Indian learners and contexts.
                 </p>
               </div>
 
@@ -852,7 +852,7 @@ export default function CommunicationSkillsPage() {
                 </h3>
                 <p className="text-sm leading-relaxed" style={{ color: "#6B6B6B" }}>
                   Every learner starts with a structured communication baseline evaluation that
-                  identifies specific gaps — some people need public speaking confidence, others need
+                  identifies specific gaps - some people need public speaking confidence, others need
                   assertiveness training, others need professional writing skills. Your development
                   pathway is personalised to your actual communication gaps, not a generic curriculum.
                 </p>
@@ -881,8 +881,8 @@ export default function CommunicationSkillsPage() {
                   Live Practice with Structured Feedback
                 </h3>
                 <p className="text-sm leading-relaxed" style={{ color: "#6B6B6B" }}>
-                  You do not sit in lectures about communication. You practise — speaking, presenting,
-                  asserting, listening, writing — in every session. Every practice receives
+                  You do not sit in lectures about communication. You practise - speaking, presenting,
+                  asserting, listening, writing - in every session. Every practice receives
                   structured, specific feedback. Recorded speaking analysis is used to show you
                   exactly what to improve. This practice-feedback loop is what produces real skill
                   development, not information consumption.
@@ -913,7 +913,7 @@ export default function CommunicationSkillsPage() {
                 </h3>
                 <p className="text-sm leading-relaxed" style={{ color: "#6B6B6B" }}>
                   Most communication training in Delhi focuses narrowly on public speaking or spoken
-                  English. At Hidden Potential, communication training covers the complete system —
+                  English. At Hidden Potential, communication training covers the complete system -
                   verbal, non-verbal, written, professional, interpersonal, and leadership
                   communication. Because real-world effectiveness requires competence across all
                   dimensions, not just one.
@@ -977,7 +977,7 @@ export default function CommunicationSkillsPage() {
                   You begin with a documented communication baseline. You end with a documented
                   progress report. Improvement in speaking confidence, clarity, assertiveness,
                   professional communication, and listening skills is visible, measurable, and
-                  presented as a formal assessment — not assumed based on how you feel after a
+                  presented as a formal assessment - not assumed based on how you feel after a
                   session.
                 </p>
               </div>
@@ -986,7 +986,7 @@ export default function CommunicationSkillsPage() {
         </section>
 
         {/* ═══════════════════════════════════════════════════════════════
-            SECTION 6 — FAQ
+            SECTION 6 - FAQ
         ═══════════════════════════════════════════════════════════════ */}
         <section className="py-20 bg-white">
           <div className="max-w-4xl mx-auto px-6">
@@ -1126,7 +1126,7 @@ export default function CommunicationSkillsPage() {
                 </div>
                 <div className="px-6 py-5">
                   <p className="text-sm leading-relaxed" style={{ color: "#2D2D2D" }}>
-                    Spoken English classes focus narrowly on language proficiency — grammar,
+                    Spoken English classes focus narrowly on language proficiency - grammar,
                     vocabulary, and accent. Personality development classes offer broad surface-level
                     content covering grooming, etiquette, and general communication tips.
                     Communication skills training at Hidden Potential is fundamentally different: it
@@ -1134,7 +1134,7 @@ export default function CommunicationSkillsPage() {
                     communication system including non-verbal and professional dimensions, uses
                     structured pathways spanning months rather than weeks, includes live practice with
                     recorded analysis and specific feedback, and produces measurable improvement
-                    across all communication dimensions — not just speaking fluency.
+                    across all communication dimensions - not just speaking fluency.
                   </p>
                 </div>
               </div>
@@ -1143,7 +1143,7 @@ export default function CommunicationSkillsPage() {
         </section>
 
         {/* ═══════════════════════════════════════════════════════════════
-            SECTION 7 — CTA
+            SECTION 7 - CTA
         ═══════════════════════════════════════════════════════════════ */}
         <section
           className="relative overflow-hidden py-24"
@@ -1167,12 +1167,12 @@ export default function CommunicationSkillsPage() {
               Communication Is the Skill That Multiplies Every Other Skill
             </h2>
             <p className="text-base text-white/65 mb-10 leading-relaxed">
-              Confidence, leadership, career advancement, academic performance, relationships — they
+              Confidence, leadership, career advancement, academic performance, relationships - they
               all depend on how well you communicate. And communication is the most trainable skill
               there is. At Hidden Potential in Dwarka, Delhi, every communication journey starts with
               a structured baseline assessment that identifies your specific gaps and maps a clear
               developmental pathway. Whether you choose individual training, the full Communication
-              Mastery pathway, or a corporate group program — the process is the same: assess,
+              Mastery pathway, or a corporate group program - the process is the same: assess,
               practise, get feedback, improve, and measure the results.
             </p>
 
@@ -1207,7 +1207,7 @@ export default function CommunicationSkillsPage() {
               >
                 Confidence Building in Delhi
               </Link>{" "}
-              — because clear communication starts with self-assurance
+              - because clear communication starts with self-assurance
             </p>
 
             {/* Location line */}

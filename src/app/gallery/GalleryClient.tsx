@@ -51,7 +51,7 @@ const CATEGORIES: CategoryDef[] = [
 function makeCategoryImages(cat: CategoryDef): GalleryImage[] {
   return Array.from({ length: cat.count }, (_, i) => ({
     src:        `/gallery/${cat.id}/img-${String(i + 1).padStart(3, "0")}.jpg`,
-    alt:        `${cat.label} — photo ${i + 1}`,
+    alt:        `${cat.label} - photo ${i + 1}`,
     category:   cat.label,
     categoryId: cat.id,
   }));
@@ -154,7 +154,7 @@ function Lightbox({
             </button>
           </div>
 
-          {/* Image area — plain <img> avoids Next.js Image black-box bug inside fixed overlays */}
+          {/* Image area - plain <img> avoids Next.js Image black-box bug inside fixed overlays */}
           <div
             className="relative flex-1 min-h-0 flex items-center justify-center rounded-b-2xl overflow-hidden"
             style={{ maxHeight: "calc(90vh - 56px)", background: "#09090b" }}
@@ -295,7 +295,7 @@ function BentoCell({
   onClick: () => void;
 }) {
   return (
-    // Outer wrapper: carries the visible border + rounded corners — NO overflow-hidden
+    // Outer wrapper: carries the visible border + rounded corners - NO overflow-hidden
     <motion.button
       className={cn(
         "relative group cursor-zoom-in block w-full text-left",
@@ -333,7 +333,7 @@ function BentoCell({
         {/* Gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       </div>
-      {/* Zoom icon — sits above the inner div, z-10 */}
+      {/* Zoom icon - sits above the inner div, z-10 */}
       <div
         className="absolute bottom-2.5 right-2.5 z-10 w-7 h-7 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-1 group-hover:translate-y-0"
         style={{ background: "rgba(45,27,105,0.75)", backdropFilter: "blur(6px)" }}
@@ -392,7 +392,7 @@ function CategorySection({
         <Badge variant={cat.badgeVariant}>{cat.label}</Badge>
         <span className="text-[13px] font-body" style={{ color: "#9B9B9B" }}>
           {cat.count} {cat.count === 1 ? "photo" : "photos"}
-          {cat.count > BENTO_MAX && ` — showing ${BENTO_MAX}`}
+          {cat.count > BENTO_MAX && ` - showing ${BENTO_MAX}`}
         </span>
         <div className="flex-1 h-px" style={{ background: "rgba(45,27,105,0.08)" }} />
       </motion.div>
@@ -499,7 +499,7 @@ export default function GalleryClient() {
               className="font-body text-base sm:text-lg max-w-xl mx-auto mb-10"
               style={{ color: "rgba(255,255,255,0.7)", lineHeight: 1.7 }}
             >
-              14+ years of transforming lives — captured one moment at a time across Delhi NCR and beyond.
+              14+ years of transforming lives - captured one moment at a time across Delhi NCR and beyond.
             </motion.p>
 
             {/* Stats row */}
@@ -529,12 +529,12 @@ export default function GalleryClient() {
           </h2>
         </AnimatedSection>
 
-        {/* Row 1 — scrolls left */}
+        {/* Row 1 - scrolls left */}
         <div className="mb-3">
           <MarqueeRow images={MARQUEE_ROW1} onImageClick={openLightbox} />
         </div>
 
-        {/* Row 2 — scrolls right */}
+        {/* Row 2 - scrolls right */}
         <MarqueeRow images={MARQUEE_ROW2} reverse onImageClick={openLightbox} />
 
         {/* Fade edges */}
@@ -554,7 +554,7 @@ export default function GalleryClient() {
               Explore Our Journey
             </h2>
             <p className="font-body text-base max-w-lg mx-auto" style={{ color: "#6B6B6B" }}>
-              From school workshops to corporate trainings, art therapy to certification programs — every photograph tells a story of growth.
+              From school workshops to corporate trainings, art therapy to certification programs - every photograph tells a story of growth.
             </p>
           </AnimatedSection>
 

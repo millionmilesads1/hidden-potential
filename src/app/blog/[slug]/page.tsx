@@ -37,50 +37,50 @@ const posts: Post[] = [
     dateISO: '2026-02-18',
     readTime: '6 min read',
     excerpt:
-      'Life skills are the foundation of everything we do — how we communicate, how we handle stress, how we make decisions. Yet most school curricula still treat them as optional.',
+      'Life skills are the foundation of everything we do - how we communicate, how we handle stress, how we make decisions. Yet most school curricula still treat them as optional.',
     metaTitle: 'What Are Life Skills? Definition, Types & Why They Matter | Hidden Potential',
     metaDescription:
-      'Life skills are core abilities that help you navigate real life — from communication to emotional resilience. Learn the WHO framework and how to develop them.',
+      'Life skills are core abilities that help you navigate real life - from communication to emotional resilience. Learn the WHO framework and how to develop them.',
     primaryProgram: { href: '/programs/enlightened-learner', label: 'An Enlightened Learner' },
     sections: [
       {
         type: 'p',
-        text: 'Every student leaves school knowing the periodic table, the laws of thermodynamics, and how to solve quadratic equations. Yet most leave without knowing how to manage stress, communicate clearly under pressure, or make confident decisions. This is the gap that life skills education was designed to fill — and in 2026, that gap has never been wider or more consequential.',
+        text: 'Every student leaves school knowing the periodic table, the laws of thermodynamics, and how to solve quadratic equations. Yet most leave without knowing how to manage stress, communicate clearly under pressure, or make confident decisions. This is the gap that life skills education was designed to fill - and in 2026, that gap has never been wider or more consequential.',
       },
       { type: 'h2', text: 'The WHO Definition of Life Skills' },
       {
         type: 'p',
-        text: 'The World Health Organisation defines life skills as "abilities for adaptive and positive behaviour that enable individuals to deal effectively with the demands and challenges of everyday life." In plain terms, these are the inner tools that help you function — at work, in relationships, under pressure, and during periods of change and uncertainty.',
+        text: 'The World Health Organisation defines life skills as "abilities for adaptive and positive behaviour that enable individuals to deal effectively with the demands and challenges of everyday life." In plain terms, these are the inner tools that help you function - at work, in relationships, under pressure, and during periods of change and uncertainty.',
       },
       { type: 'h2', text: 'The 10 Core Life Skills Every Person Needs' },
       {
         type: 'ul',
         items: [
-          'Self-awareness — knowing your values, strengths, and emotional patterns',
-          'Empathy — understanding others beyond surface behaviour',
-          'Critical thinking — analysing information without cognitive bias',
-          'Creative thinking — generating solutions beyond the obvious',
-          'Decision making — choosing well under uncertainty',
-          'Problem solving — working through challenges systematically',
-          'Effective communication — expressing yourself clearly in all contexts',
-          'Interpersonal relationship skills — building and sustaining healthy connections',
-          'Coping with stress — regulating your response to pressure',
-          'Coping with emotions — processing difficult feelings constructively',
+          'Self-awareness - knowing your values, strengths, and emotional patterns',
+          'Empathy - understanding others beyond surface behaviour',
+          'Critical thinking - analysing information without cognitive bias',
+          'Creative thinking - generating solutions beyond the obvious',
+          'Decision making - choosing well under uncertainty',
+          'Problem solving - working through challenges systematically',
+          'Effective communication - expressing yourself clearly in all contexts',
+          'Interpersonal relationship skills - building and sustaining healthy connections',
+          'Coping with stress - regulating your response to pressure',
+          'Coping with emotions - processing difficult feelings constructively',
         ],
       },
       { type: 'h2', text: 'Why the Education System Misses What Matters Most' },
       {
         type: 'p',
-        text: 'Academic curricula were designed for the industrial era — to produce workers with specific knowledge and reproducible skills. That model rewarded memorisation, compliance, and performance on standardised measures. It was never designed to develop emotional resilience, communication mastery, or self-directed thinking. The result is a generation of educated young people who are academically capable but emotionally unprepared for the complexity of real adult life.',
+        text: 'Academic curricula were designed for the industrial era - to produce workers with specific knowledge and reproducible skills. That model rewarded memorisation, compliance, and performance on standardised measures. It was never designed to develop emotional resilience, communication mastery, or self-directed thinking. The result is a generation of educated young people who are academically capable but emotionally unprepared for the complexity of real adult life.',
       },
-      { type: 'h2', text: 'Life Skills vs Academic Skills — What the Research Says' },
+      { type: 'h2', text: 'Life Skills vs Academic Skills - What the Research Says' },
       {
         type: 'p',
         text: 'A landmark 20-year study by the Robert Wood Johnson Foundation found that children with strong social and emotional skills in kindergarten were significantly more likely to graduate from college, maintain full-time employment, and report positive mental health by age 25. Academic achievement was a weaker predictor of these outcomes than SEL (Social and Emotional Learning) competencies. The research is clear: life skills are not supplementary to education. They are foundational to it.',
       },
       {
         type: 'blockquote',
-        text: 'Transformation is not a moment. It is a structured journey. — Supreet Kaur, Founder, Hidden Potential',
+        text: 'Transformation is not a moment. It is a structured journey. - Supreet Kaur, Founder, Hidden Potential',
       },
       { type: 'h2', text: 'The Hidden Cost of Skipping Life Skills Development' },
       {
@@ -97,20 +97,20 @@ const posts: Post[] = [
       {
         type: 'related',
         href: '/programs/enlightened-learner',
-        label: 'An Enlightened Learner — Life Skills for Students (Ages 8–21)',
+        label: 'An Enlightened Learner - Life Skills for Students (Ages 8–21)',
         description:
           'A structured programme that builds all 10 core life skills through systematic development across three progression levels.',
       },
       { type: 'h2', text: 'How a Structured Life Skills Programme Works' },
       {
         type: 'p',
-        text: 'Most life skills initiatives fail because they deliver information without structure. A workshop teaches you what confidence is. A structured programme teaches you how to build it — through layered practice, personalised feedback, and graduated challenges designed around your specific gaps. At Hidden Potential, every learner begins with an assessment that identifies their current developmental stage. The curriculum is then aligned to their specific needs, not delivered uniformly.',
+        text: 'Most life skills initiatives fail because they deliver information without structure. A workshop teaches you what confidence is. A structured programme teaches you how to build it - through layered practice, personalised feedback, and graduated challenges designed around your specific gaps. At Hidden Potential, every learner begins with an assessment that identifies their current developmental stage. The curriculum is then aligned to their specific needs, not delivered uniformly.',
       },
       { type: 'h2', text: 'The Three Pillars of Effective Life Skills Development' },
       { type: 'h3', text: 'System' },
       {
         type: 'p',
-        text: 'A defined pathway from starting point to mastery. Not random workshops — a sequenced developmental arc that builds progressively on each previous stage.',
+        text: 'A defined pathway from starting point to mastery. Not random workshops - a sequenced developmental arc that builds progressively on each previous stage.',
       },
       { type: 'h3', text: 'Science' },
       {
@@ -125,14 +125,14 @@ const posts: Post[] = [
       {
         type: 'related',
         href: '/for/schools',
-        label: 'Life Skills Programmes for Schools — NEP 2020 Aligned',
+        label: 'Life Skills Programmes for Schools - NEP 2020 Aligned',
         description:
           'Structured life skills curricula for school administrators who want to embed real-world readiness into their institution.',
       },
       { type: 'h2', text: 'The First Step: Understanding Where You Are' },
       {
         type: 'p',
-        text: 'Before you can develop life skills, you need to know where your gaps are — not based on gut feeling or general impressions, but on a structured, validated assessment that gives you a clear developmental baseline. Hidden Potential\'s assessment covers the full spectrum of life skills domains and produces a personalised pathway recommendation aligned to your specific starting point.',
+        text: 'Before you can develop life skills, you need to know where your gaps are - not based on gut feeling or general impressions, but on a structured, validated assessment that gives you a clear developmental baseline. Hidden Potential\'s assessment covers the full spectrum of life skills domains and produces a personalised pathway recommendation aligned to your specific starting point.',
       },
       {
         type: 'related',
@@ -153,7 +153,7 @@ const posts: Post[] = [
     dateISO: '2026-02-10',
     readTime: '8 min read',
     excerpt:
-      'Most people believe communication is a personality trait — you either have it or you do not. This is wrong. Communication is a skill set that can be systematically built.',
+      'Most people believe communication is a personality trait - you either have it or you do not. This is wrong. Communication is a skill set that can be systematically built.',
     metaTitle: 'How to Improve Communication Skills: A Structured Guide | Hidden Potential',
     metaDescription:
       'Communication is a learnable skill, not a personality trait. This guide covers the 4 pillars, common barriers, and a structured approach to lasting improvement.',
@@ -161,7 +161,7 @@ const posts: Post[] = [
     sections: [
       {
         type: 'p',
-        text: 'Most people believe their communication style is fixed — a product of personality, upbringing, or natural confidence. This belief is one of the most limiting ideas in personal development. Communication is a skill set, not a personality trait. It can be broken down, practised, measured, and systematically improved by anyone, at any age, with the right structured support.',
+        text: 'Most people believe their communication style is fixed - a product of personality, upbringing, or natural confidence. This belief is one of the most limiting ideas in personal development. Communication is a skill set, not a personality trait. It can be broken down, practised, measured, and systematically improved by anyone, at any age, with the right structured support.',
       },
       { type: 'h2', text: 'Communication Is a Skill Set, Not a Personality Trait' },
       {
@@ -172,22 +172,22 @@ const posts: Post[] = [
       { type: 'h3', text: 'Verbal Clarity' },
       {
         type: 'p',
-        text: 'The words you choose, how you structure your sentences, your vocabulary precision, and your ability to adapt your language register to different audiences. Verbal clarity is the foundation — without it, every other communication component is undermined. Improving verbal clarity involves expanding vocabulary, practising structured speaking, and developing the habit of organising thoughts before expressing them.',
+        text: 'The words you choose, how you structure your sentences, your vocabulary precision, and your ability to adapt your language register to different audiences. Verbal clarity is the foundation - without it, every other communication component is undermined. Improving verbal clarity involves expanding vocabulary, practising structured speaking, and developing the habit of organising thoughts before expressing them.',
       },
       { type: 'h3', text: 'Non-Verbal Presence' },
       {
         type: 'p',
-        text: 'Research in communication psychology shows that a significant portion of communication impact comes from non-verbal channels — posture, eye contact, gesture, facial expression, and vocal tone. A message delivered with poor body language is not just weaker — it is often actively contradicted. Non-verbal training is frequently the fastest route to noticeable communication improvement, particularly for students and professionals who have strong content but weak delivery.',
+        text: 'Research in communication psychology shows that a significant portion of communication impact comes from non-verbal channels - posture, eye contact, gesture, facial expression, and vocal tone. A message delivered with poor body language is not just weaker - it is often actively contradicted. Non-verbal training is frequently the fastest route to noticeable communication improvement, particularly for students and professionals who have strong content but weak delivery.',
       },
       { type: 'h3', text: 'Active Listening' },
       {
         type: 'p',
-        text: 'Communication is not speaking — it is the exchange of meaning. Active listening means being fully present to what another person is saying, processing it without interruption or internal agenda, and responding to the actual content of their message. It is a discipline, not a passive state. People who listen actively are consistently rated as better communicators than those who simply speak well.',
+        text: 'Communication is not speaking - it is the exchange of meaning. Active listening means being fully present to what another person is saying, processing it without interruption or internal agenda, and responding to the actual content of their message. It is a discipline, not a passive state. People who listen actively are consistently rated as better communicators than those who simply speak well.',
       },
       { type: 'h3', text: 'Assertiveness' },
       {
         type: 'p',
-        text: 'Assertiveness is the ability to express your needs, perspectives, and boundaries clearly — without aggression and without passive withdrawal. It is the middle ground between dominance and submission in communication. Many people confuse assertiveness with confrontation and avoid it as a result. Learning to communicate assertively is one of the highest-leverage improvements available, particularly in professional, academic, and interpersonal contexts.',
+        text: 'Assertiveness is the ability to express your needs, perspectives, and boundaries clearly - without aggression and without passive withdrawal. It is the middle ground between dominance and submission in communication. Many people confuse assertiveness with confrontation and avoid it as a result. Learning to communicate assertively is one of the highest-leverage improvements available, particularly in professional, academic, and interpersonal contexts.',
       },
       { type: 'h2', text: 'The Most Common Communication Barriers' },
       {
@@ -206,7 +206,7 @@ const posts: Post[] = [
       { type: 'h2', text: 'A Structured Progression Path for Communication Mastery' },
       {
         type: 'p',
-        text: 'At Hidden Potential, communication development is structured across three progression levels. At Foundation level, learners work on verbal clarity, listening, and basic confidence — the raw ingredients of effective expression. At Growth level, the focus shifts to non-verbal presence, assertiveness, and structured delivery in social and professional contexts. At Mastery level, learners develop leadership communication — the ability to inspire, persuade, facilitate, and navigate high-stakes interactions with poise.',
+        text: 'At Hidden Potential, communication development is structured across three progression levels. At Foundation level, learners work on verbal clarity, listening, and basic confidence - the raw ingredients of effective expression. At Growth level, the focus shifts to non-verbal presence, assertiveness, and structured delivery in social and professional contexts. At Mastery level, learners develop leadership communication - the ability to inspire, persuade, facilitate, and navigate high-stakes interactions with poise.',
       },
       {
         type: 'related',
@@ -218,7 +218,7 @@ const posts: Post[] = [
       { type: 'h2', text: 'Communication Development at Different Life Stages' },
       {
         type: 'p',
-        text: 'For students aged 8–16, communication training focuses on self-expression, listening skills, and presentation confidence in academic and social settings. For young adults (17–25), the focus moves toward professional communication, interview readiness, and leadership presence. For working professionals, communication development addresses executive presence, difficult conversations, and high-stakes presentation skills. Each stage requires different content and methods — which is why effective communication training must be developmentally calibrated, not delivered as a one-size-fits-all course.',
+        text: 'For students aged 8–16, communication training focuses on self-expression, listening skills, and presentation confidence in academic and social settings. For young adults (17–25), the focus moves toward professional communication, interview readiness, and leadership presence. For working professionals, communication development addresses executive presence, difficult conversations, and high-stakes presentation skills. Each stage requires different content and methods - which is why effective communication training must be developmentally calibrated, not delivered as a one-size-fits-all course.',
       },
       {
         type: 'related',
@@ -230,7 +230,7 @@ const posts: Post[] = [
       { type: 'h2', text: 'Start with an Honest Assessment' },
       {
         type: 'p',
-        text: 'Before you can improve your communication, you need to understand which of the four pillars is your current weakest link. A structured assessment will tell you precisely this — not through a generic personality quiz, but through an observed, structured evaluation of your current communication patterns. This gives you a clear starting point and a personalised development plan rather than a generic course that addresses everyone equally and therefore helps no one specifically.',
+        text: 'Before you can improve your communication, you need to understand which of the four pillars is your current weakest link. A structured assessment will tell you precisely this - not through a generic personality quiz, but through an observed, structured evaluation of your current communication patterns. This gives you a clear starting point and a personalised development plan rather than a generic course that addresses everyone equally and therefore helps no one specifically.',
       },
       {
         type: 'related',
@@ -251,27 +251,27 @@ const posts: Post[] = [
     dateISO: '2026-01-28',
     readTime: '7 min read',
     excerpt:
-      'Confidence is not about feeling fearless. It is about developing a trust in yourself — your ability to handle situations, make decisions, and recover from setbacks.',
+      'Confidence is not about feeling fearless. It is about developing a trust in yourself - your ability to handle situations, make decisions, and recover from setbacks.',
     metaTitle: 'How to Build Self-Confidence: A Structured 5-Step Guide | Hidden Potential',
     metaDescription:
-      'Confidence is not a personality trait — it is a learnable skill. This guide gives you a structured 5-step path from self-doubt to lasting self-assurance.',
+      'Confidence is not a personality trait - it is a learnable skill. This guide gives you a structured 5-step path from self-doubt to lasting self-assurance.',
     primaryProgram: { href: '/services/confidence-building', label: 'Confidence Building Programme' },
     sections: [
       {
         type: 'p',
-        text: 'Confidence is one of the most misunderstood concepts in personal development. Most people believe it is either something you have or you do not — a fixed trait determined by personality, upbringing, or circumstance. This is incorrect. Confidence is a developable skill, grounded in specific psychological mechanisms that can be identified, targeted, and built systematically. The path from self-doubt to self-assurance is not a mystery. It is a structured process.',
+        text: 'Confidence is one of the most misunderstood concepts in personal development. Most people believe it is either something you have or you do not - a fixed trait determined by personality, upbringing, or circumstance. This is incorrect. Confidence is a developable skill, grounded in specific psychological mechanisms that can be identified, targeted, and built systematically. The path from self-doubt to self-assurance is not a mystery. It is a structured process.',
       },
       { type: 'h2', text: 'What Self-Confidence Really Is' },
       {
         type: 'p',
-        text: 'True self-confidence is not the absence of fear or the certainty of success. It is a consistent trust in your own ability to handle situations, make decisions, and recover from setbacks — regardless of outcome guarantees. The person who walks into a difficult conversation without knowing exactly how it will end, but trusting their ability to navigate whatever happens, is genuinely confident. The person who only speaks when guaranteed a positive reception is performing confidence, not expressing it.',
+        text: 'True self-confidence is not the absence of fear or the certainty of success. It is a consistent trust in your own ability to handle situations, make decisions, and recover from setbacks - regardless of outcome guarantees. The person who walks into a difficult conversation without knowing exactly how it will end, but trusting their ability to navigate whatever happens, is genuinely confident. The person who only speaks when guaranteed a positive reception is performing confidence, not expressing it.',
       },
       { type: 'h2', text: 'The Root Causes of Low Self-Confidence' },
       {
         type: 'ul',
         items: [
           'Accumulated negative experiences with performance or judgment, often from childhood or school',
-          'Chronic comparison to others — particularly amplified by social media exposure',
+          'Chronic comparison to others - particularly amplified by social media exposure',
           'Limiting beliefs installed through repeated negative feedback from authority figures',
           'Lack of developed competence in areas that are personally meaningful',
           'Unresolved emotional patterns that trigger self-doubt in specific contexts',
@@ -279,30 +279,30 @@ const posts: Post[] = [
         ],
       },
       { type: 'h2', text: 'Five Structured Steps to Build Lasting Self-Confidence' },
-      { type: 'h3', text: 'Step 1 — Build Accurate Self-Awareness' },
+      { type: 'h3', text: 'Step 1 - Build Accurate Self-Awareness' },
       {
         type: 'p',
-        text: 'Before you can build confidence, you need an honest picture of where you stand — not an overly critical view, and not an inflated one, but an accurate one. This means identifying your genuine strengths, understanding the specific contexts in which your confidence drops, and recognising the internal narrative that runs when self-doubt appears. Without this foundation, confidence-building efforts target symptoms rather than causes.',
+        text: 'Before you can build confidence, you need an honest picture of where you stand - not an overly critical view, and not an inflated one, but an accurate one. This means identifying your genuine strengths, understanding the specific contexts in which your confidence drops, and recognising the internal narrative that runs when self-doubt appears. Without this foundation, confidence-building efforts target symptoms rather than causes.',
       },
-      { type: 'h3', text: 'Step 2 — Identify and Reframe Limiting Beliefs' },
+      { type: 'h3', text: 'Step 2 - Identify and Reframe Limiting Beliefs' },
       {
         type: 'p',
-        text: 'NLP (Neuro-Linguistic Programming) offers specific, structured techniques for identifying the belief patterns that undermine confidence — and systematically replacing them with more functional alternatives. Common limiting beliefs include "I am not capable enough," "People will judge me negatively if I speak up," and "I do not deserve this success." These beliefs are not facts. They are programmes installed through experience, and they can be reprogrammed through targeted professional intervention.',
+        text: 'NLP (Neuro-Linguistic Programming) offers specific, structured techniques for identifying the belief patterns that undermine confidence - and systematically replacing them with more functional alternatives. Common limiting beliefs include "I am not capable enough," "People will judge me negatively if I speak up," and "I do not deserve this success." These beliefs are not facts. They are programmes installed through experience, and they can be reprogrammed through targeted professional intervention.',
       },
-      { type: 'h3', text: 'Step 3 — Build Competence Through Structured Practice' },
+      { type: 'h3', text: 'Step 3 - Build Competence Through Structured Practice' },
       {
         type: 'p',
-        text: 'Confidence follows competence. The most reliable way to build genuine confidence in any domain — public speaking, decision-making, assertive communication — is to develop real skill in that area through structured, graduated practice. This does not happen through a single workshop or one motivational talk. It happens through consistent, supported practice with feedback at every stage, in an environment where experimentation is safe.',
+        text: 'Confidence follows competence. The most reliable way to build genuine confidence in any domain - public speaking, decision-making, assertive communication - is to develop real skill in that area through structured, graduated practice. This does not happen through a single workshop or one motivational talk. It happens through consistent, supported practice with feedback at every stage, in an environment where experimentation is safe.',
       },
-      { type: 'h3', text: 'Step 4 — Develop Communication Skills in Parallel' },
+      { type: 'h3', text: 'Step 4 - Develop Communication Skills in Parallel' },
       {
         type: 'p',
-        text: 'Low confidence and weak communication skills almost always co-occur. The person who cannot express themselves clearly experiences more social friction, receives less positive feedback, and has their confidence further undermined by the experience. Building communication skills — particularly assertiveness and verbal clarity — simultaneously with confidence work accelerates both domains significantly faster than addressing either in isolation.',
+        text: 'Low confidence and weak communication skills almost always co-occur. The person who cannot express themselves clearly experiences more social friction, receives less positive feedback, and has their confidence further undermined by the experience. Building communication skills - particularly assertiveness and verbal clarity - simultaneously with confidence work accelerates both domains significantly faster than addressing either in isolation.',
       },
-      { type: 'h3', text: 'Step 5 — Install an Accountability Structure' },
+      { type: 'h3', text: 'Step 5 - Install an Accountability Structure' },
       {
         type: 'p',
-        text: 'Confidence-building without accountability is like training without a coach — intentions fade and old patterns return. A structured accountability system — whether through a professional coach, a peer group, or a formal programme — ensures that practice is consistent, progress is visible, and setbacks are treated as data rather than as evidence of fundamental inadequacy.',
+        text: 'Confidence-building without accountability is like training without a coach - intentions fade and old patterns return. A structured accountability system - whether through a professional coach, a peer group, or a formal programme - ensures that practice is consistent, progress is visible, and setbacks are treated as data rather than as evidence of fundamental inadequacy.',
       },
       {
         type: 'related',
@@ -319,14 +319,14 @@ const posts: Post[] = [
       {
         type: 'related',
         href: '/programs/enlightened-learner',
-        label: 'An Enlightened Learner — Life Skills for Students (Ages 8–21)',
+        label: 'An Enlightened Learner - Life Skills for Students (Ages 8–21)',
         description:
           'Includes dedicated confidence and self-mastery modules within a full developmental programme for students.',
       },
       { type: 'h2', text: 'Your Confidence Assessment Starts Here' },
       {
         type: 'p',
-        text: 'The most important first step in building confidence is understanding where your current gaps are — not based on introspection alone, but on a structured, validated assessment that identifies your specific patterns, limiting beliefs, and communication gaps. Hidden Potential\'s assessment produces a personalised pathway recommendation. Confidence is not built by inspiration. It is built by structured work in the right areas, with the right support.',
+        text: 'The most important first step in building confidence is understanding where your current gaps are - not based on introspection alone, but on a structured, validated assessment that identifies your specific patterns, limiting beliefs, and communication gaps. Hidden Potential\'s assessment produces a personalised pathway recommendation. Confidence is not built by inspiration. It is built by structured work in the right areas, with the right support.',
       },
       {
         type: 'related',
@@ -356,7 +356,7 @@ const posts: Post[] = [
     sections: [
       {
         type: 'p',
-        text: 'Schools measure intelligence through grades, test scores, and academic rankings. But research consistently shows that emotional intelligence — the ability to understand, manage, and work effectively with emotions — predicts life outcomes more reliably than academic achievement alone. Students with high emotional intelligence perform better academically, build stronger relationships, navigate peer pressure more effectively, and enter adult life with significantly greater resilience.',
+        text: 'Schools measure intelligence through grades, test scores, and academic rankings. But research consistently shows that emotional intelligence - the ability to understand, manage, and work effectively with emotions - predicts life outcomes more reliably than academic achievement alone. Students with high emotional intelligence perform better academically, build stronger relationships, navigate peer pressure more effectively, and enter adult life with significantly greater resilience.',
       },
       { type: 'h2', text: 'What Is Emotional Intelligence?' },
       {
@@ -366,11 +366,11 @@ const posts: Post[] = [
       {
         type: 'ul',
         items: [
-          'Self-awareness — the ability to recognise your own emotions accurately, in real time',
-          'Self-regulation — the ability to manage emotional responses rather than reacting impulsively',
-          'Motivation — intrinsic drive that persists beyond external reward or pressure',
-          "Empathy — the ability to understand others' emotional states and respond appropriately",
-          'Social skills — the capacity to build and navigate relationships effectively',
+          'Self-awareness - the ability to recognise your own emotions accurately, in real time',
+          'Self-regulation - the ability to manage emotional responses rather than reacting impulsively',
+          'Motivation - intrinsic drive that persists beyond external reward or pressure',
+          "Empathy - the ability to understand others' emotional states and respond appropriately",
+          'Social skills - the capacity to build and navigate relationships effectively',
         ],
       },
       { type: 'h2', text: 'Why Emotional Intelligence Predicts Success Better Than IQ' },
@@ -390,7 +390,7 @@ const posts: Post[] = [
           'Difficulty recovering from failures, setbacks, or criticism',
           'Persistent social isolation or inability to maintain friendships',
           'Extreme sensitivity to judgment from teachers or peers',
-          'Black-and-white thinking — everything is either a complete success or a catastrophe',
+          'Black-and-white thinking - everything is either a complete success or a catastrophe',
           'Inability to identify what they are feeling beyond "fine" or "upset"',
           'Consistent blaming of others without self-reflection',
           'Avoidance of challenging situations due to fear of emotional discomfort',
@@ -400,17 +400,17 @@ const posts: Post[] = [
       { type: 'h3', text: 'Building Self-Awareness' },
       {
         type: 'p',
-        text: 'The first step is giving students a vocabulary for their inner world. Many children and adolescents experience intense emotional states but cannot name them beyond "angry" or "sad." Introducing an expanded emotional vocabulary — alongside reflective practices like structured journaling or self-assessment exercises — builds the self-awareness foundation that all other EI skills rest on. Without this foundation, every subsequent EI skill is operating on an inaccurate information base.',
+        text: 'The first step is giving students a vocabulary for their inner world. Many children and adolescents experience intense emotional states but cannot name them beyond "angry" or "sad." Introducing an expanded emotional vocabulary - alongside reflective practices like structured journaling or self-assessment exercises - builds the self-awareness foundation that all other EI skills rest on. Without this foundation, every subsequent EI skill is operating on an inaccurate information base.',
       },
       { type: 'h3', text: 'Teaching Self-Regulation' },
       {
         type: 'p',
-        text: 'Self-regulation is not suppression — it is management. The goal is not to eliminate strong emotions but to give students structured tools for responding to them effectively. Breathing techniques, cognitive reframing, NLP-based state management, and practised pause-and-respond sequences are all teachable skills. They require practice in a safe, structured environment before they can be reliably applied under real academic or social pressure.',
+        text: 'Self-regulation is not suppression - it is management. The goal is not to eliminate strong emotions but to give students structured tools for responding to them effectively. Breathing techniques, cognitive reframing, NLP-based state management, and practised pause-and-respond sequences are all teachable skills. They require practice in a safe, structured environment before they can be reliably applied under real academic or social pressure.',
       },
       { type: 'h3', text: 'Developing Empathy' },
       {
         type: 'p',
-        text: 'Empathy in students is developed through structured perspective-taking exercises, role-play scenarios, and guided group interactions that create real opportunities to practise understanding others. Literature and reflective discussion also play important roles. The key is that empathy cannot be lectured into existence — it must be practised in social contexts where the emotional stakes are real and the feedback is honest.',
+        text: 'Empathy in students is developed through structured perspective-taking exercises, role-play scenarios, and guided group interactions that create real opportunities to practise understanding others. Literature and reflective discussion also play important roles. The key is that empathy cannot be lectured into existence - it must be practised in social contexts where the emotional stakes are real and the feedback is honest.',
       },
       {
         type: 'related',
@@ -422,17 +422,17 @@ const posts: Post[] = [
       { type: 'h2', text: 'The Role of Parents and Teachers' },
       {
         type: 'p',
-        text: "Emotional intelligence development does not happen only in formal training settings. Parents and teachers are the primary environment in which EI is either nurtured or undermined. Parents who respond to their child's difficult emotions with curiosity rather than dismissal, who model emotional regulation in their own behaviour, and who create space for the child to name and explore what they feel — these are the conditions under which EI grows. Teachers who create psychologically safe classrooms, acknowledge the emotional dimension of learning, and recognise stress without shaming it are EI educators even without a formal curriculum.",
+        text: "Emotional intelligence development does not happen only in formal training settings. Parents and teachers are the primary environment in which EI is either nurtured or undermined. Parents who respond to their child's difficult emotions with curiosity rather than dismissal, who model emotional regulation in their own behaviour, and who create space for the child to name and explore what they feel - these are the conditions under which EI grows. Teachers who create psychologically safe classrooms, acknowledge the emotional dimension of learning, and recognise stress without shaming it are EI educators even without a formal curriculum.",
       },
       { type: 'h2', text: 'Structured EI Development at Hidden Potential' },
       {
         type: 'p',
-        text: 'The An Enlightened Learner programme includes dedicated emotional intelligence modules across all three developmental levels. Foundation level builds emotional vocabulary, self-awareness, and basic regulation skills. Growth level develops empathy, interpersonal effectiveness, and applied self-regulation under social pressure. Mastery level focuses on emotional leadership — the ability to support others\' emotional development and navigate group dynamics with skill. Progress is measured through pre and post assessments, 360-degree feedback, and structured self-reflection reviews.',
+        text: 'The An Enlightened Learner programme includes dedicated emotional intelligence modules across all three developmental levels. Foundation level builds emotional vocabulary, self-awareness, and basic regulation skills. Growth level develops empathy, interpersonal effectiveness, and applied self-regulation under social pressure. Mastery level focuses on emotional leadership - the ability to support others\' emotional development and navigate group dynamics with skill. Progress is measured through pre and post assessments, 360-degree feedback, and structured self-reflection reviews.',
       },
       {
         type: 'related',
         href: '/programs/enlightened-learner',
-        label: 'An Enlightened Learner — Life Skills for Students (Ages 8–21)',
+        label: 'An Enlightened Learner - Life Skills for Students (Ages 8–21)',
         description:
           'Includes comprehensive emotional intelligence development as a core programme domain across all three levels.',
       },
@@ -460,7 +460,7 @@ const posts: Post[] = [
     dateISO: '2026-01-05',
     readTime: '7 min read',
     excerpt:
-      'Exam stress, peer pressure, academic expectations — students today face immense psychological load. This article explores structured, evidence-backed stress management techniques.',
+      'Exam stress, peer pressure, academic expectations - students today face immense psychological load. This article explores structured, evidence-backed stress management techniques.',
     metaTitle:
       'Stress Management for Students: 7 Evidence-Backed Techniques | Hidden Potential',
     metaDescription:
@@ -469,35 +469,35 @@ const posts: Post[] = [
     sections: [
       {
         type: 'p',
-        text: 'Student stress in 2026 is not what it was a decade ago. Academic pressure has intensified, social media has created a permanent comparison environment, and the gap between educational demands and actual life skills preparation has widened significantly. Exam anxiety, peer pressure, parental expectations, and an uncertain future — students today carry a psychological load that most adults would find challenging. Yet they are given almost no structured tools for managing it.',
+        text: 'Student stress in 2026 is not what it was a decade ago. Academic pressure has intensified, social media has created a permanent comparison environment, and the gap between educational demands and actual life skills preparation has widened significantly. Exam anxiety, peer pressure, parental expectations, and an uncertain future - students today carry a psychological load that most adults would find challenging. Yet they are given almost no structured tools for managing it.',
       },
       { type: 'h2', text: 'Understanding Student Stress in 2026' },
       {
         type: 'p',
-        text: "Stress is not inherently harmful. A manageable level of pressure activates focus, drives performance, and builds resilience over time. The problem arises when the stress load consistently exceeds the student's coping resources. When that happens — and when no structured support exists — chronic stress creates cognitive impairment, emotional volatility, physical health issues, and eventually, academic collapse. The solution is not to eliminate pressure. It is to systematically build the internal tools that make pressure manageable and productive.",
+        text: "Stress is not inherently harmful. A manageable level of pressure activates focus, drives performance, and builds resilience over time. The problem arises when the stress load consistently exceeds the student's coping resources. When that happens - and when no structured support exists - chronic stress creates cognitive impairment, emotional volatility, physical health issues, and eventually, academic collapse. The solution is not to eliminate pressure. It is to systematically build the internal tools that make pressure manageable and productive.",
       },
       { type: 'h2', text: 'The Difference Between Stress and Productive Pressure' },
       {
         type: 'p',
-        text: 'Stress becomes harmful when it is uncontrolled, persistent, and unaccompanied by adequate coping skills. Productive pressure — the kind that sharpens focus and drives effort — is the same neurological activation experienced by a student who has the tools to direct it. The goal of stress management is not relaxation or the absence of challenge. It is developing the capacity to use activation productively rather than being overwhelmed by it. This is a teachable skill, not a personality trait.',
+        text: 'Stress becomes harmful when it is uncontrolled, persistent, and unaccompanied by adequate coping skills. Productive pressure - the kind that sharpens focus and drives effort - is the same neurological activation experienced by a student who has the tools to direct it. The goal of stress management is not relaxation or the absence of challenge. It is developing the capacity to use activation productively rather than being overwhelmed by it. This is a teachable skill, not a personality trait.',
       },
       { type: 'h2', text: 'Seven Evidence-Backed Stress Management Techniques for Students' },
       {
         type: 'ol',
         items: [
-          'Structured time management: Uncertainty about workload is a primary stress amplifier. A clear weekly plan — broken into specific, manageable tasks with realistic deadlines — reduces the cognitive burden of ambiguity. Block scheduling, priority hierarchies, and consistent review sessions all reduce academic anxiety by replacing vague dread with concrete, actionable structure.',
-          'Diaphragmatic breathing: The physiological stress response — elevated heart rate, shallow breathing, cortisol release — can be interrupted through controlled breathing. Box breathing (4 counts in, 4 hold, 4 out, 4 hold) and extended exhale breathing (5 counts in, 7 out) activate the parasympathetic nervous system within 90 seconds. These are learnable skills that work reliably in exam halls, before presentations, and during difficult social situations.',
-          'Physical exercise as stress regulation: Exercise metabolises the cortisol produced by stress. Even 20 minutes of moderate physical activity significantly reduces reported stress levels and improves sleep quality. The mechanism is biochemical, not motivational — movement is one of the most reliably effective stress interventions available to students.',
-          'Reflective journaling: Writing about stressful experiences — structured reflection rather than venting — reduces emotional activation around those experiences. Processing through writing helps students identify patterns in their stress triggers, separate facts from interpretations, and develop more effective responses. Ten minutes of daily structured journaling has measurable effects on stress levels within four weeks.',
-          'Social connection and support seeking: Isolation amplifies stress significantly. Structured social connection — genuine, supported interaction rather than passive coexistence — buffers the effects of academic pressure. Research consistently shows that students with one strong, supportive friendship are measurably more resilient under academic pressure than those without.',
-          'Cognitive reframing through NLP: NLP techniques allow students to consciously reframe their interpretation of stressful situations. The exam is not a judgment of personal worth — it is a measurement of preparation at a specific point in time. Failure is not evidence of inadequacy — it is data for adjustment. These reframes are not mere positive thinking. They are deliberately installed through specific NLP processes that change the neurological response to the original trigger.',
-          'Sleep discipline: Sleep deprivation is both a cause and a consequence of chronic stress. Establishing a consistent sleep schedule — with a wind-down routine that excludes screens for 60 minutes before bed — is one of the highest-leverage stress management interventions available. Most students who report high stress levels are also chronically sleep-deprived, creating a cycle that worsens both problems simultaneously.',
+          'Structured time management: Uncertainty about workload is a primary stress amplifier. A clear weekly plan - broken into specific, manageable tasks with realistic deadlines - reduces the cognitive burden of ambiguity. Block scheduling, priority hierarchies, and consistent review sessions all reduce academic anxiety by replacing vague dread with concrete, actionable structure.',
+          'Diaphragmatic breathing: The physiological stress response - elevated heart rate, shallow breathing, cortisol release - can be interrupted through controlled breathing. Box breathing (4 counts in, 4 hold, 4 out, 4 hold) and extended exhale breathing (5 counts in, 7 out) activate the parasympathetic nervous system within 90 seconds. These are learnable skills that work reliably in exam halls, before presentations, and during difficult social situations.',
+          'Physical exercise as stress regulation: Exercise metabolises the cortisol produced by stress. Even 20 minutes of moderate physical activity significantly reduces reported stress levels and improves sleep quality. The mechanism is biochemical, not motivational - movement is one of the most reliably effective stress interventions available to students.',
+          'Reflective journaling: Writing about stressful experiences - structured reflection rather than venting - reduces emotional activation around those experiences. Processing through writing helps students identify patterns in their stress triggers, separate facts from interpretations, and develop more effective responses. Ten minutes of daily structured journaling has measurable effects on stress levels within four weeks.',
+          'Social connection and support seeking: Isolation amplifies stress significantly. Structured social connection - genuine, supported interaction rather than passive coexistence - buffers the effects of academic pressure. Research consistently shows that students with one strong, supportive friendship are measurably more resilient under academic pressure than those without.',
+          'Cognitive reframing through NLP: NLP techniques allow students to consciously reframe their interpretation of stressful situations. The exam is not a judgment of personal worth - it is a measurement of preparation at a specific point in time. Failure is not evidence of inadequacy - it is data for adjustment. These reframes are not mere positive thinking. They are deliberately installed through specific NLP processes that change the neurological response to the original trigger.',
+          'Sleep discipline: Sleep deprivation is both a cause and a consequence of chronic stress. Establishing a consistent sleep schedule - with a wind-down routine that excludes screens for 60 minutes before bed - is one of the highest-leverage stress management interventions available. Most students who report high stress levels are also chronically sleep-deprived, creating a cycle that worsens both problems simultaneously.',
         ],
       },
       { type: 'h2', text: 'The NLP Approach to Stress Management' },
       {
         type: 'p',
-        text: 'Neuro-Linguistic Programming offers specific, structured techniques for changing the internal representation of stressful situations at a neurological level. Anchoring techniques can install a calm emotional state that can be triggered before high-pressure events like exams or presentations. Belief restructuring work can address catastrophic thinking patterns ("If I fail this exam, my future is ruined") that amplify normal academic stress into paralyzing anxiety. These are practical, teachable processes — not abstract concepts — and they produce measurable changes in a student\'s emotional response to stress triggers.',
+        text: 'Neuro-Linguistic Programming offers specific, structured techniques for changing the internal representation of stressful situations at a neurological level. Anchoring techniques can install a calm emotional state that can be triggered before high-pressure events like exams or presentations. Belief restructuring work can address catastrophic thinking patterns ("If I fail this exam, my future is ruined") that amplify normal academic stress into paralyzing anxiety. These are practical, teachable processes - not abstract concepts - and they produce measurable changes in a student\'s emotional response to stress triggers.',
       },
       {
         type: 'related',
@@ -509,31 +509,31 @@ const posts: Post[] = [
       { type: 'h2', text: 'When to Seek Professional Support' },
       {
         type: 'p',
-        text: 'Not all student stress is manageable through self-directed techniques alone. If a student is showing signs of persistent anxiety, complete avoidance of school or academic work, significant changes in sleep or eating patterns, social withdrawal, or expressions of hopelessness or worthlessness — professional support is warranted, not optional. Early intervention consistently produces better outcomes than waiting for a crisis to develop.',
+        text: 'Not all student stress is manageable through self-directed techniques alone. If a student is showing signs of persistent anxiety, complete avoidance of school or academic work, significant changes in sleep or eating patterns, social withdrawal, or expressions of hopelessness or worthlessness - professional support is warranted, not optional. Early intervention consistently produces better outcomes than waiting for a crisis to develop.',
       },
       { type: 'h2', text: 'Structured Stress Management at Hidden Potential' },
       {
         type: 'p',
-        text: "Hidden Potential's programmes integrate stress management as a core domain, not an afterthought. Within the An Enlightened Learner programme, students develop stress awareness, regulated breathing techniques, cognitive reframing skills, and structured coping practices across all three programme levels. The Art Therapy for Healing programme specifically addresses chronic stress through expressive therapeutic practices including mindfulness, reflective journaling, and art-based emotional processing — approaches validated in clinical and educational research for their effectiveness with adolescent stress and anxiety.",
+        text: "Hidden Potential's programmes integrate stress management as a core domain, not an afterthought. Within the An Enlightened Learner programme, students develop stress awareness, regulated breathing techniques, cognitive reframing skills, and structured coping practices across all three programme levels. The Art Therapy for Healing programme specifically addresses chronic stress through expressive therapeutic practices including mindfulness, reflective journaling, and art-based emotional processing - approaches validated in clinical and educational research for their effectiveness with adolescent stress and anxiety.",
       },
       {
         type: 'related',
         href: '/programs/art-therapy',
-        label: 'Art Therapy for Healing — Creative Pathway for Clarity',
+        label: 'Art Therapy for Healing - Creative Pathway for Clarity',
         description:
           'A structured therapeutic programme using mindfulness, journaling, and art-based expression for stress and emotional clarity.',
       },
       {
         type: 'related',
         href: '/programs/enlightened-learner',
-        label: 'An Enlightened Learner — Life Skills for Students (Ages 8–21)',
+        label: 'An Enlightened Learner - Life Skills for Students (Ages 8–21)',
         description:
           'Includes stress management as a core domain, with structured techniques taught across Foundation, Growth, and Mastery levels.',
       },
       { type: 'h2', text: 'Begin with an Assessment' },
       {
         type: 'p',
-        text: "Effective stress management starts with understanding your specific stress patterns — the triggers, the physical responses, the thought patterns, and the coping mechanisms you currently use. Hidden Potential's structured assessment includes stress management evaluation as one of its core domains, producing a personalised pathway recommendation based on your specific profile rather than a generic course.",
+        text: "Effective stress management starts with understanding your specific stress patterns - the triggers, the physical responses, the thought patterns, and the coping mechanisms you currently use. Hidden Potential's structured assessment includes stress management evaluation as one of its core domains, producing a personalised pathway recommendation based on your specific profile rather than a generic course.",
       },
       {
         type: 'related',
@@ -899,7 +899,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           </h2>
           <p className="text-white/60 text-base leading-relaxed mb-8 max-w-xl mx-auto">
             Take the free life skills assessment. Receive a personalised pathway. Begin structured
-            development with a certified professional — in Delhi, or online across India.
+            development with a certified professional - in Delhi, or online across India.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link

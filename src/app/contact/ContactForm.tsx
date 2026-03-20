@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 /**
- * ContactForm — Client Component
+ * ContactForm - Client Component
  * Submits to Web3Forms for email capture, then opens a pre-filled WhatsApp
  * message. Shows a success or error state after submission.
  */
@@ -28,7 +28,7 @@ export default function ContactForm() {
     try {
       const payload = new FormData();
       payload.append("access_key", process.env.NEXT_PUBLIC_WEB3FORMS_KEY ?? "");
-      payload.append("subject", `New Contact Enquiry — ${interest}`);
+      payload.append("subject", `New Contact Enquiry - ${interest}`);
       payload.append("name", name);
       payload.append("phone", phone);
       payload.append("email", email);
@@ -79,7 +79,7 @@ export default function ContactForm() {
           Something Went Wrong
         </h3>
         <p className="text-sm text-charcoal/70 leading-relaxed mb-6 max-w-md mx-auto">
-          We couldn&apos;t send your message right now. Please reach us directly on WhatsApp or by phone — we respond within a few hours.
+          We couldn&apos;t send your message right now. Please reach us directly on WhatsApp or by phone - we respond within a few hours.
         </p>
         <div className="flex flex-col sm:flex-row gap-3 justify-center mb-6">
           <a

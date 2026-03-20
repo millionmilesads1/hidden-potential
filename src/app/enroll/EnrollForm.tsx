@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 /**
- * EnrollForm — Client Component
+ * EnrollForm - Client Component
  * Submits to Web3Forms for email capture, then opens a pre-filled WhatsApp
  * message. Shows a success or error state after submission.
  */
@@ -31,7 +31,7 @@ export default function EnrollForm() {
     try {
       const payload = new FormData();
       payload.append("access_key", process.env.NEXT_PUBLIC_WEB3FORMS_KEY ?? "");
-      payload.append("subject", `New Enrollment Request — ${program}`);
+      payload.append("subject", `New Enrollment Request - ${program}`);
       payload.append("name", name);
       payload.append("phone", phone);
       payload.append("email", email);
@@ -131,7 +131,7 @@ export default function EnrollForm() {
           A WhatsApp window has opened with your enrollment details pre-filled. Send the message to connect with the Hidden Potential team directly.
         </p>
         <p className="text-sm text-charcoal/70 leading-relaxed mb-6 max-w-md mx-auto">
-          We will confirm your enrollment, share program schedule details, and answer any questions — typically within 24 hours.
+          We will confirm your enrollment, share program schedule details, and answer any questions - typically within 24 hours.
         </p>
         <div className="flex flex-col sm:flex-row gap-3 justify-center mb-6">
           <a
@@ -277,7 +277,7 @@ export default function EnrollForm() {
             <option value="Corporate Workshop">Corporate Workshop Package</option>
             <option value="School Program">School Partnership Program</option>
             <option value="Individual Service">Individual Service Sessions</option>
-            <option value="Not Sure Yet">Not Sure Yet — Help Me Choose</option>
+            <option value="Not Sure Yet">Not Sure Yet - Help Me Choose</option>
           </select>
         </div>
 

@@ -4,19 +4,19 @@ import { NextRequest, NextResponse } from 'next/server';
  * IndexNow API Route
  *
  * Notifies Bing, Yandex, and other IndexNow-supporting search engines about
- * new or updated URLs immediately — no waiting for the next crawl.
+ * new or updated URLs immediately - no waiting for the next crawl.
  *
  * HOW TO TRIGGER:
  *
- * 1. Manually — POST to /api/indexnow with a list of relative paths:
+ * 1. Manually - POST to /api/indexnow with a list of relative paths:
  *      curl -X POST https://hiddenpotentialskills.com/api/indexnow \
  *        -H "Content-Type: application/json" \
  *        -d '{"urls": ["/blog/new-post", "/services/new-service"]}'
  *
- * 2. Via CMS webhook — connect your CMS (e.g. Sanity, Contentful) to fire
+ * 2. Via CMS webhook - connect your CMS (e.g. Sanity, Contentful) to fire
  *    a POST to this endpoint whenever content is published or updated.
  *
- * 3. Via Vercel deploy hook — add a postDeploy script or Vercel webhook that
+ * 3. Via Vercel deploy hook - add a postDeploy script or Vercel webhook that
  *    calls this endpoint after each production deployment to ping all
  *    important URLs at once (see the IMPORTANT_URLS list in this file).
  *
@@ -70,7 +70,7 @@ export async function POST(request: NextRequest) {
       urlPaths = body.urls;
     }
   } catch {
-    // No body or invalid JSON — fall through to use IMPORTANT_URLS
+    // No body or invalid JSON - fall through to use IMPORTANT_URLS
   }
 
   // Convert relative paths to absolute URLs

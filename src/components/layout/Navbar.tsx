@@ -37,7 +37,7 @@ const navLinks = [
   { label: "Blog",    href: "/blog" },
 ];
 
-// Desktop nav omits "Home" — the logo already links to "/" (standard UX)
+// Desktop nav omits "Home" - the logo already links to "/" (standard UX)
 const desktopNavLinks = navLinks.filter(l => l.href !== "/");
 
 export default function Navbar() {
@@ -115,10 +115,10 @@ export default function Navbar() {
       >
         <div style={pillStyle} className="flex items-center justify-between">
 
-          {/* Logo — Playfair Display, editorial weight */}
+          {/* Logo - Playfair Display, editorial weight */}
           <Link
             href="/"
-            aria-label="Hidden Potential — home"
+            aria-label="Hidden Potential - home"
             className="flex items-center shrink-0 select-none cursor-pointer"
             style={{ fontFamily: "var(--font-display)" }}
           >
@@ -136,7 +136,7 @@ export default function Navbar() {
             </span>
           </Link>
 
-          {/* Desktop nav — centered via absolute trick */}
+          {/* Desktop nav - centered via absolute trick */}
           <nav
             aria-label="Main navigation"
             className="hidden lg:flex flex-1 justify-center min-w-0"
@@ -166,7 +166,7 @@ export default function Navbar() {
                     >
                       {link.label}
                     </Link>
-                    {/* Animated underline — scaleX grows from left on hover, stays for active */}
+                    {/* Animated underline - scaleX grows from left on hover, stays for active */}
                     <motion.span
                       className="absolute bottom-0.5 left-3 right-3 h-[2px] rounded-full pointer-events-none"
                       style={{ background: "#7C3AED", originX: 0 }}
@@ -180,7 +180,7 @@ export default function Navbar() {
                 );
               })}
 
-              {/* Assessment dropdown — disclosure pattern */}
+              {/* Assessment dropdown - disclosure pattern */}
               <li
                 className="relative group"
                 ref={assessmentRef}
@@ -241,7 +241,7 @@ export default function Navbar() {
                 </div>
               </li>
 
-              {/* Pathways dropdown — disclosure pattern */}
+              {/* Pathways dropdown - disclosure pattern */}
               <li
                 className="relative group"
                 ref={pathwaysRef}
@@ -302,7 +302,7 @@ export default function Navbar() {
                 </div>
               </li>
 
-              {/* For dropdown — disclosure pattern */}
+              {/* For dropdown - disclosure pattern */}
               <li
                 className="relative group"
                 ref={forRef}
@@ -381,7 +381,7 @@ export default function Navbar() {
               </Link>
             </motion.div>
 
-            {/* Hamburger — mobile only */}
+            {/* Hamburger - mobile only */}
             <button
               className="lg:hidden p-2 min-h-[44px] min-w-[44px] rounded-full hover:bg-gray-100 transition-colors cursor-pointer flex items-center justify-center"
               aria-label={mobileOpen ? "Close navigation menu" : "Open navigation menu"}

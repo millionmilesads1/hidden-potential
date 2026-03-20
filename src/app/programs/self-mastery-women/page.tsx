@@ -1,17 +1,17 @@
 /**
- * PROGRAM PAGE — SELF MASTERY FOR WOMEN
+ * PROGRAM PAGE - SELF MASTERY FOR WOMEN
  * ─────────────────────────────────────────────────────────────────────────────
  * Route: /programs/self-mastery-women
  *
  * 7-section structure (identical template to AEL & Communication Mastery):
- *   Section 1  — HERO             (navy gradient, H1, Lora tagline, age badge, 2 CTAs)
- *   Section 2  — WHAT IT DELIVERS (off-white, 5 outcomes, gold callout, framework)
- *   Section 3  — WHO IT'S FOR     (white, 5 audience cards + program reach callout)
- *   Section 4  — KEY AREAS        (off-white, 10 skill chips + 4 domain cards)
- *   Section 5  — PATHWAY          (navy dark, 3 stage cards + connectors)
- *   Section 6  — ASSESSMENT       (white, 5-step timeline + quote callout)
- *   Section 7a — OUTCOMES+FORMAT  (off-white, outcome bullets + format badges)
- *   Section 7b — FINAL CTA        (<ProgramCTASection> shared component)
+ *   Section 1  - HERO             (navy gradient, H1, Lora tagline, age badge, 2 CTAs)
+ *   Section 2  - WHAT IT DELIVERS (off-white, 5 outcomes, gold callout, framework)
+ *   Section 3  - WHO IT'S FOR     (white, 5 audience cards + program reach callout)
+ *   Section 4  - KEY AREAS        (off-white, 10 skill chips + 4 domain cards)
+ *   Section 5  - PATHWAY          (navy dark, 3 stage cards + connectors)
+ *   Section 6  - ASSESSMENT       (white, 5-step timeline + quote callout)
+ *   Section 7a - OUTCOMES+FORMAT  (off-white, outcome bullets + format badges)
+ *   Section 7b - FINAL CTA        (<ProgramCTASection> shared component)
  *
  * Spec notes vs AEL/CM:
  *   • Learning framework ends in "Integration" (not "Mastery") per CLAUDE.md
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   description:
     "A structured growth journey for women 28+. Rebuild identity, emotional resilience, personal independence & inner clarity. Group & 1:1 sessions. Delhi NCR & Online.",
   openGraph: {
-    title: "Self Mastery for Women — Holistic Growth & Emotional Leadership Program (28+)",
+    title: "Self Mastery for Women - Holistic Growth & Emotional Leadership Program (28+)",
     description:
       "Structured women's growth program for identity, emotional resilience, independence & self-expression. Three development stages. Group & 1:1. Delhi NCR & Online.",
     type: "website",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
 const schema = {
   "@context": "https://schema.org",
   "@type": "Course",
-  name: "Self Mastery for Women — Holistic Growth & Emotional Leadership Program",
+  name: "Self Mastery for Women - Holistic Growth & Emotional Leadership Program",
   description:
     "A structured personal development journey for women 28+. Covers inner identity, emotional regulation, navigating societal expectations, financial independence, self-respect, and confident self-expression.",
   url: "https://hiddenpotentialskills.com/programs/self-mastery-women",
@@ -85,7 +85,7 @@ const schema = {
   hasCourseInstance: [
     {
       "@type": "CourseInstance",
-      name: "Foundation Stage — Inner Clarity & Emotional Grounding",
+      name: "Foundation Stage - Inner Clarity & Emotional Grounding",
       courseMode: ["onsite", "online", "blended"],
       locationCreated: {
         "@type": "Place",
@@ -98,12 +98,12 @@ const schema = {
     },
     {
       "@type": "CourseInstance",
-      name: "Growth Stage — Strength in Relationships & Society",
+      name: "Growth Stage - Strength in Relationships & Society",
       courseMode: ["onsite", "online", "blended"],
     },
     {
       "@type": "CourseInstance",
-      name: "Mastery Stage — Independence, Leadership & Life Design",
+      name: "Mastery Stage - Independence, Leadership & Life Design",
       courseMode: ["onsite", "online", "blended"],
     },
   ],
@@ -127,13 +127,13 @@ const coreDeliverables = [
   },
   {
     title: "Strengthening Emotional Resilience",
-    desc: "Building the capacity to regulate emotions, recover from setbacks, and respond to life's challenges from a place of grounded calm — not reaction.",
+    desc: "Building the capacity to regulate emotions, recover from setbacks, and respond to life's challenges from a place of grounded calm - not reaction.",
     serviceLink: "/services/stress-management",
     serviceLinkLabel: "Explore Stress Management",
   },
   {
     title: "Navigating Societal Expectations Confidently",
-    desc: "Developing the clarity and courage to set healthy boundaries, handle social pressure, and live in alignment with your own values — not others' timelines.",
+    desc: "Developing the clarity and courage to set healthy boundaries, handle social pressure, and live in alignment with your own values - not others' timelines.",
   },
   {
     title: "Building Personal & Financial Independence",
@@ -149,29 +149,29 @@ const audiences = [
   {
     icon: "🌱",
     title: "Women Feeling Emotionally Stuck or Overwhelmed",
-    desc: "Caught in patterns of overthinking, emotional exhaustion, or a persistent sense that something essential is missing — and ready for a structured path forward.",
+    desc: "Caught in patterns of overthinking, emotional exhaustion, or a persistent sense that something essential is missing - and ready for a structured path forward.",
     serviceLink: "/services/stress-management",
     serviceLinkLabel: "Stress Management",
   },
   {
     icon: "🔄",
     title: "Women Navigating Major Life Transitions",
-    desc: "Moving through career changes, relationship shifts, divorce, motherhood, or identity re-evaluation — and needing structured support through the in-between.",
+    desc: "Moving through career changes, relationship shifts, divorce, motherhood, or identity re-evaluation - and needing structured support through the in-between.",
   },
   {
     icon: "💼",
     title: "Working Women Seeking Clarity & Leadership",
-    desc: "Professionally accomplished but personally unfulfilled — ready to develop emotional leadership, assert boundaries, and lead with authentic presence.",
+    desc: "Professionally accomplished but personally unfulfilled - ready to develop emotional leadership, assert boundaries, and lead with authentic presence.",
   },
   {
     icon: "🌸",
     title: "Women Rebuilding After Loss or Change",
-    desc: "Recovering identity and confidence after grief, a difficult relationship, relocation, or any significant life disruption — and ready to begin again with structure.",
+    desc: "Recovering identity and confidence after grief, a difficult relationship, relocation, or any significant life disruption - and ready to begin again with structure.",
   },
   {
     icon: "✨",
     title: "Women Ready for Guided Personal Growth",
-    desc: "Already doing the inner work informally — reading, journaling, reflecting — and ready for a guided, measurable framework to deepen and accelerate their growth.",
+    desc: "Already doing the inner work informally - reading, journaling, reflecting - and ready for a guided, measurable framework to deepen and accelerate their growth.",
     serviceLink: "/services/goal-setting",
     serviceLinkLabel: "Goal Setting & Accountability",
   },
@@ -194,28 +194,28 @@ const domains: DomainCardData[] = [
   {
     num: "01",
     title: "Inner Self & Identity",
-    desc: "Reconnecting with your authentic self — exploring core values, personal beliefs, and the narrative you hold about who you are and who you are becoming.",
+    desc: "Reconnecting with your authentic self - exploring core values, personal beliefs, and the narrative you hold about who you are and who you are becoming.",
     skills: ["Core Values Clarification", "Personal Narrative Work", "Identity Reconstruction", "Self-Awareness"],
     accent: "teal",
   },
   {
     num: "02",
     title: "Emotional Strength",
-    desc: "Developing the capacity to sit with, understand, and regulate your emotions — building resilience, emotional stamina, and the ability to respond rather than react.",
+    desc: "Developing the capacity to sit with, understand, and regulate your emotions - building resilience, emotional stamina, and the ability to respond rather than react.",
     skills: ["Emotional Regulation", "Resilience Building", "Managing Anxiety & Stress", "Grief & Transition Work"],
     accent: "gold",
   },
   {
     num: "03",
     title: "Relationships & Society",
-    desc: "Navigating the complex web of relationships, social expectations, and family dynamics — learning to honour yourself without abandoning others.",
+    desc: "Navigating the complex web of relationships, social expectations, and family dynamics - learning to honour yourself without abandoning others.",
     skills: ["Boundary Setting", "Social Confidence", "Family & Relationship Dynamics", "Handling Expectations"],
     accent: "navy",
   },
   {
     num: "04",
     title: "Independence & Personal Growth",
-    desc: "Building the practical foundations of a self-directed life — financial awareness, clear decision-making, personal goal-setting, and a vision that belongs to you.",
+    desc: "Building the practical foundations of a self-directed life - financial awareness, clear decision-making, personal goal-setting, and a vision that belongs to you.",
     skills: ["Financial Awareness", "Decision-Making Frameworks", "Life Vision Planning", "Self-Reliance"],
     accent: "teal",
   },
@@ -261,12 +261,12 @@ const assessmentSteps: AssessmentStepData[] = [
   {
     num: "04",
     title: "Group Facilitation & Peer Reflection",
-    desc: "Guided group sessions that combine shared learning, peer accountability, and structured reflection — creating a safe community of growth without comparison.",
+    desc: "Guided group sessions that combine shared learning, peer accountability, and structured reflection - creating a safe community of growth without comparison.",
   },
   {
     num: "05",
     title: "Post-Journey Review (Personal Progress Report)",
-    desc: "A documented review of your growth from baseline to completion — capturing shifts in identity, emotional regulation, confidence, and life clarity.",
+    desc: "A documented review of your growth from baseline to completion - capturing shifts in identity, emotional regulation, confidence, and life clarity.",
   },
 ];
 
@@ -277,7 +277,7 @@ const expectedOutcomes = [
     linkLabel: "Emotional Intelligence Coaching",
   },
   {
-    text: "Emotional regulation — calm, grounded, and resilient in difficult situations",
+    text: "Emotional regulation - calm, grounded, and resilient in difficult situations",
     linkHref: "/services/stress-management",
     linkLabel: "Stress Management",
   },
@@ -300,14 +300,14 @@ const expectedOutcomes = [
 const ctaData: ProgramCtaData = {
   headline: "Begin Your Journey. Own Your Growth.",
   subtext:
-    "Start with a personal discovery session. Understand where you are, clarify where you want to go, and begin a structured path that puts you — your identity, your clarity, your life — at the centre.",
+    "Start with a personal discovery session. Understand where you are, clarify where you want to go, and begin a structured path that puts you - your identity, your clarity, your life - at the centre.",
   cta1Label: "Book a Discovery Session",
   cta1Href: "/contact",
   cta2Label: "Take the Life Skills Assessment",
   cta2Href: "/assessment",
   crossSellText: "Also explore:",
   crossSellHref: "/programs/art-therapy",
-  crossSellLabel: "Art Therapy for Healing — for emotional clarity through creative expression",
+  crossSellLabel: "Art Therapy for Healing - for emotional clarity through creative expression",
 };
 
 // ── Page ─────────────────────────────────────────────────────────────────────
@@ -320,7 +320,7 @@ export default function SelfMasteryWomenPage() {
       />
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 1 — HERO
+          SECTION 1 - HERO
           Background: Dark navy-to-teal gradient
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
@@ -348,10 +348,10 @@ export default function SelfMasteryWomenPage() {
           {/* Label badges */}
           <div className="flex items-center justify-center gap-3 mb-5">
             <span
-              className="inline-flex items-center px-4 py-1.5 text-[11px] font-bold uppercase tracking-widest text-primary-teal rounded-full"
+              className="inline-flex items-center px-4 py-1.5 text-[11px] font-bold uppercase tracking-widest text-primary-gold rounded-full"
               style={{
-                background: "rgba(124,58,237,0.12)",
-                border: "1px solid rgba(124,58,237,0.25)",
+                background: "rgba(200,169,81,0.12)",
+                border: "1px solid rgba(200,169,81,0.25)",
               }}
             >
               Women&apos;s Empowerment
@@ -369,7 +369,7 @@ export default function SelfMasteryWomenPage() {
 
           {/* H1 */}
           <h1 className="text-3xl md:text-4xl lg:text-[2.75rem] font-extrabold text-white leading-tight mb-6 max-w-4xl mx-auto" style={{ textShadow: "0 1px 2px rgba(0,0,0,0.15)" }}>
-            Self Mastery for Women — Holistic Growth &amp; Emotional Leadership Program (28+)
+            Self Mastery for Women - Holistic Growth &amp; Emotional Leadership Program (28+)
           </h1>
 
           {/* Lora italic transformation tagline */}
@@ -385,9 +385,9 @@ export default function SelfMasteryWomenPage() {
             Available in-person in Delhi and online across India
           </p>
 
-          {/* Differentiator note — unique to this program */}
+          {/* Differentiator note - unique to this program */}
           <p className="text-sm text-white/50 mb-8 max-w-xl mx-auto leading-relaxed">
-            This is not a motivational circle — it is a guided growth journey with practical tools.
+            This is not a motivational circle - it is a guided growth journey with practical tools.
           </p>
 
           {/* CTAs */}
@@ -427,7 +427,7 @@ export default function SelfMasteryWomenPage() {
       <LearnYourWaySelector />
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 2 — WHAT THIS PROGRAM DELIVERS
+          SECTION 2 - WHAT THIS PROGRAM DELIVERS
           Background: Off-white
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-off-white py-20">
@@ -438,12 +438,12 @@ export default function SelfMasteryWomenPage() {
               Five Pillars of Women&apos;s Growth
             </h2>
             <p className="text-lg text-charcoal max-w-2xl mx-auto leading-relaxed">
-              Each area is explored with depth and structure — not surface inspiration. Real tools,
+              Each area is explored with depth and structure - not surface inspiration. Real tools,
               real practice, and real support for lasting, measurable transformation.
             </p>
           </div>
 
-          {/* 5 deliverable cards — 3 + 2 grid */}
+          {/* 5 deliverable cards - 3 + 2 grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-6">
             {coreDeliverables.slice(0, 3).map((item) => (
               <div
@@ -495,7 +495,7 @@ export default function SelfMasteryWomenPage() {
             ))}
           </div>
 
-          {/* Gold callout — program differentiator */}
+          {/* Gold callout - program differentiator */}
           <div
             className="rounded-lg p-6 border-l-4 max-w-3xl mx-auto mb-12"
             style={{ borderColor: "#C8A951", background: "#FBF7EE" }}
@@ -519,19 +519,19 @@ export default function SelfMasteryWomenPage() {
               </div>
               <div>
                 <p className="text-sm font-bold text-primary-navy mb-1">
-                  Not a Motivational Program — A Structured Transformation Framework
+                  Not a Motivational Program - A Structured Transformation Framework
                 </p>
                 <p className="text-sm text-charcoal/70 leading-relaxed">
                   Self Mastery for Women combines psychological frameworks, NLP techniques, and
                   structured reflection to create measurable, evidence-based personal growth. Every
-                  stage is assessed, every insight is applied, and every outcome is documented — so
+                  stage is assessed, every insight is applied, and every outcome is documented - so
                   you can see exactly how far you&apos;ve come.
                 </p>
               </div>
             </div>
           </div>
 
-          {/* Learning Framework — Awareness → Practice → Application → Integration */}
+          {/* Learning Framework - Awareness → Practice → Application → Integration */}
           <div className="text-center">
             <p className="text-xs font-bold uppercase tracking-widest text-primary-teal mb-5">
               Learning Framework
@@ -563,7 +563,7 @@ export default function SelfMasteryWomenPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 3 — WHO IT IS DESIGNED FOR
+          SECTION 3 - WHO IT IS DESIGNED FOR
           Background: White
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-white py-20">
@@ -650,7 +650,7 @@ export default function SelfMasteryWomenPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 4 — KEY AREAS & SKILL DOMAINS
+          SECTION 4 - KEY AREAS & SKILL DOMAINS
           Background: Off-white
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-off-white py-20">
@@ -661,7 +661,7 @@ export default function SelfMasteryWomenPage() {
               10 Key Areas Across 4 Growth Domains
             </h2>
             <p className="text-lg text-charcoal max-w-2xl mx-auto leading-relaxed">
-              A complete women&apos;s growth curriculum — addressing the inner world and the outer
+              A complete women&apos;s growth curriculum - addressing the inner world and the outer
               life, in structured, progressive stages.
             </p>
           </div>
@@ -702,7 +702,7 @@ export default function SelfMasteryWomenPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 5 — DEVELOPMENT PATHWAY
+          SECTION 5 - DEVELOPMENT PATHWAY
           Background: Dark navy gradient
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
@@ -718,7 +718,7 @@ export default function SelfMasteryWomenPage() {
               Three Stages. One Continuous Journey.
             </h2>
             <p className="text-lg text-white/60 max-w-2xl mx-auto leading-relaxed">
-              Each stage builds naturally on the last — from inner clarity, to relational strength,
+              Each stage builds naturally on the last - from inner clarity, to relational strength,
               to full personal independence. Progress is guided, never rushed.
             </p>
           </div>
@@ -763,14 +763,14 @@ export default function SelfMasteryWomenPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 6 — ASSESSMENT & MEASUREMENT
+          SECTION 6 - ASSESSMENT & MEASUREMENT
           Background: White
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-white py-20">
         <div className="max-w-5xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12 items-start">
 
-            {/* Left — Section header + quote */}
+            {/* Left - Section header + quote */}
             <div>
               <ProgramSectionLabel>Assessment Process</ProgramSectionLabel>
               <h2 className="text-3xl md:text-4xl font-bold text-primary-navy mb-6 leading-tight">
@@ -778,7 +778,7 @@ export default function SelfMasteryWomenPage() {
               </h2>
               <p className="text-base text-charcoal/80 leading-relaxed mb-8">
                 Every stage of Self Mastery for Women is supported by structured evaluation and
-                intentional reflection. Growth isn&apos;t left to chance or feeling alone — it is
+                intentional reflection. Growth isn&apos;t left to chance or feeling alone - it is
                 documented, discussed, and made visible.
               </p>
 
@@ -791,10 +791,10 @@ export default function SelfMasteryWomenPage() {
                   className="text-lg text-primary-navy leading-relaxed"
                   style={{ fontFamily: "var(--font-accent)", fontStyle: "italic" }}
                 >
-                  &ldquo;Every woman deserves to see how much she has grown — not just feel it.&rdquo;
+                  &ldquo;Every woman deserves to see how much she has grown - not just feel it.&rdquo;
                 </p>
                 <p className="text-xs font-semibold text-primary-teal mt-3">
-                  — Supreet Kaur, Founder, Hidden Potential
+                  - Supreet Kaur, Founder, Hidden Potential
                 </p>
               </div>
 
@@ -811,7 +811,7 @@ export default function SelfMasteryWomenPage() {
               </p>
             </div>
 
-            {/* Right — 5-step assessment timeline */}
+            {/* Right - 5-step assessment timeline */}
             <div className="pt-2">
               {assessmentSteps.map((step, i) => (
                 <AssessmentStep
@@ -826,14 +826,14 @@ export default function SelfMasteryWomenPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 7a — EXPECTED OUTCOMES + FORMAT
+          SECTION 7a - EXPECTED OUTCOMES + FORMAT
           Background: Off-white
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-off-white py-20">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12 items-start">
 
-            {/* Left — Expected outcomes */}
+            {/* Left - Expected outcomes */}
             <div>
               <ProgramSectionLabel>Expected Outcomes</ProgramSectionLabel>
               <h2 className="text-3xl font-bold text-primary-navy mb-6 leading-tight">
@@ -851,7 +851,7 @@ export default function SelfMasteryWomenPage() {
               </div>
             </div>
 
-            {/* Right — Format + enroll + cross-sell */}
+            {/* Right - Format + enroll + cross-sell */}
             <div className="flex flex-col gap-6">
               {/* Format */}
               <div className="bg-white rounded-lg p-7 border border-gray-200 shadow-sm">
@@ -940,7 +940,7 @@ export default function SelfMasteryWomenPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 7b — FINAL CTA
+          SECTION 7b - FINAL CTA
           Uses the shared <ProgramCTASection> component
       ═══════════════════════════════════════════════════════════════════════ */}
       <ProgramCTASection data={ctaData} />

@@ -4,13 +4,13 @@
  * Route: /contact
  *
  * 7-section structure:
- *   Section 1  — HERO                (dark gradient, H1, Lora italic, body para, 2 CTAs, trust signals)
- *   Section 2  — HOW TO REACH US     (off-white, 4 contact method cards + service-area paragraph)
- *   Section 3  — FIND YOUR PROGRAM   (white, 8 service guide cards in audience style)
- *   Section 4  — WHY PEOPLE TRUST US (navy-light, 6 trust signal cards in differentiator style)
- *   Section 5  — CONTACT FORM        (off-white, 120-word intro + styled frontend form)
- *   Section 6  — FAQ                 (white, 6 Q&As with FAQPage schema)
- *   Section 7  — CTA                 (dark gradient, para, 2 CTAs, cross-sell, location line)
+ *   Section 1  - HERO                (dark gradient, H1, Lora italic, body para, 2 CTAs, trust signals)
+ *   Section 2  - HOW TO REACH US     (off-white, 4 contact method cards + service-area paragraph)
+ *   Section 3  - FIND YOUR PROGRAM   (white, 8 service guide cards in audience style)
+ *   Section 4  - WHY PEOPLE TRUST US (navy-light, 6 trust signal cards in differentiator style)
+ *   Section 5  - CONTACT FORM        (off-white, 120-word intro + styled frontend form)
+ *   Section 6  - FAQ                 (white, 6 Q&As with FAQPage schema)
+ *   Section 7  - CTA                 (dark gradient, para, 2 CTAs, cross-sell, location line)
  *
  * Schemas: LocalBusiness + FAQPage (both embedded as JSON-LD)
  */
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   description:
     "Schedule a free 30-minute life skills evaluation. WhatsApp, phone, or online. Serving Delhi, Noida, Gurgaon, Faridabad & pan-India. 14+ years. 5000+ trained.",
   openGraph: {
-    title: "Contact Hidden Potential — Life Skills Training in Delhi NCR",
+    title: "Contact Hidden Potential - Life Skills Training in Delhi NCR",
     description:
       "Get in touch for NLP coaching, school programs, corporate workshops. Free consultation. Dwarka, Noida, Gurgaon, Faridabad. 14+ years. 5000+ trained.",
     type: "website",
@@ -111,7 +111,7 @@ const faqSchema = {
       name: "Can I attend life skills training online if I am not in Delhi?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Absolutely. While our primary training centre is at Dwarka, Delhi, we offer comprehensive online life skills training sessions for individuals and groups across India. Our online programs cover NLP coaching, confidence building, communication skills, stress management, and all other services. The online sessions are live and interactive — not pre-recorded — using the same structured methodology and assessment process as in-person coaching. Many clients from Noida, Gurgaon, Faridabad, and other states attend online and report excellent results.",
+        text: "Absolutely. While our primary training centre is at Dwarka, Delhi, we offer comprehensive online life skills training sessions for individuals and groups across India. Our online programs cover NLP coaching, confidence building, communication skills, stress management, and all other services. The online sessions are live and interactive - not pre-recorded - using the same structured methodology and assessment process as in-person coaching. Many clients from Noida, Gurgaon, Faridabad, and other states attend online and report excellent results.",
       },
     },
     {
@@ -321,7 +321,7 @@ export default function ContactPage() {
       />
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 1 — HERO
+          SECTION 1 - HERO
           Background: Dark navy-to-deep gradient
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
@@ -382,7 +382,7 @@ export default function ContactPage() {
             Whether you are a parent in Dwarka seeking life skills training for your child, a
             school administrator in Noida evaluating NEP 2020 program providers, a corporate HR
             team in Gurgaon looking for structured employee development workshops, or an individual
-            in Delhi ready to begin your own transformational journey — Hidden Potential is here
+            in Delhi ready to begin your own transformational journey - Hidden Potential is here
             to help. Founded by{" "}
             <Link
               href="/about"
@@ -393,7 +393,7 @@ export default function ContactPage() {
             , our life skills
             training in Delhi serves clients across Delhi, Dwarka, Noida, Gurgaon, Faridabad, and
             online across India. Reaching out is the first step. A free 15-minute consultation is
-            available for all new inquiries — no obligation, no pressure.
+            available for all new inquiries - no obligation, no pressure.
           </p>
 
           {/* CTAs */}
@@ -415,7 +415,7 @@ export default function ContactPage() {
             </a>
           </div>
 
-          {/* Trust signals — 5 items */}
+          {/* Trust signals - 5 items */}
           <div className="flex flex-wrap justify-center gap-x-5 gap-y-2 text-xs text-white/40">
             {[
               "14+ Years Experience",
@@ -434,7 +434,7 @@ export default function ContactPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 2 — HOW TO REACH US
+          SECTION 2 - HOW TO REACH US
           Background: Off-white
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-off-white py-20">
@@ -444,7 +444,7 @@ export default function ContactPage() {
             How to Get in Touch with Our Life Skills Training Team in Delhi
           </h2>
 
-          {/* 4 contact method cards — clean simple style */}
+          {/* 4 contact method cards - clean simple style */}
           <div className="grid md:grid-cols-2 gap-5 mb-10">
             {contactMethods.map((m) => (
               <div
@@ -474,14 +474,14 @@ export default function ContactPage() {
             >
               corporate workshops
             </Link>{" "}
-            are conducted at your office location in Gurgaon, Noida, Delhi, or Faridabad — we
+            are conducted at your office location in Gurgaon, Noida, Delhi, or Faridabad - we
             come to you.
           </p>
         </div>
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 3 — FIND YOUR PROGRAM
+          SECTION 3 - FIND YOUR PROGRAM
           Background: White
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-white py-20">
@@ -497,7 +497,7 @@ export default function ContactPage() {
             </p>
           </div>
 
-          {/* 8 service guide cards — numbered audience style, 2-column grid */}
+          {/* 8 service guide cards - numbered audience style, 2-column grid */}
           <div className="grid md:grid-cols-2 gap-5">
             {serviceGuide.map((s) => (
               <div
@@ -530,7 +530,7 @@ export default function ContactPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 4 — WHY PEOPLE TRUST US
+          SECTION 4 - WHY PEOPLE TRUST US
           Background: Navy-light (#F3F0FF)
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-navy-light py-20">
@@ -547,7 +547,7 @@ export default function ContactPage() {
             </p>
           </div>
 
-          {/* 6 trust signal cards — differentiator style, 3-column grid */}
+          {/* 6 trust signal cards - differentiator style, 3-column grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {trustSignals.map((t) => (
               <div
@@ -583,7 +583,7 @@ export default function ContactPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 5 — CONTACT FORM
+          SECTION 5 - CONTACT FORM
           Background: Off-white
           NOTE: This is a frontend-only form. The form submission handler needs
           to be connected to a server action or API route (e.g., /api/contact)
@@ -593,28 +593,28 @@ export default function ContactPage() {
         <div className="max-w-4xl mx-auto px-6">
           <SectionLabel>Send a Message</SectionLabel>
           <h2 className="text-3xl md:text-4xl font-bold text-primary-navy mb-6 leading-tight max-w-2xl">
-            Contact Us — We Respond Within 24 Hours
+            Contact Us - We Respond Within 24 Hours
           </h2>
 
           {/* Intro paragraph */}
           <p className="text-base text-charcoal leading-relaxed mb-10 max-w-3xl">
             Use the form below to reach our life skills training team in Delhi. Please share your
-            name, contact details, location, and the type of program you are interested in — this
+            name, contact details, location, and the type of program you are interested in - this
             helps us respond with the most relevant information immediately. All inquiries are
             treated with complete confidentiality. Supreet Kaur personally reviews new program
             inquiries and ensures every response is tailored to your specific situation. Whether
             you are in Dwarka, Noida, Gurgaon, Faridabad, or anywhere in India, we will respond
-            within 24 hours — typically much sooner. For urgent matters, WhatsApp is the fastest
+            within 24 hours - typically much sooner. For urgent matters, WhatsApp is the fastest
             channel.
           </p>
 
-          {/* Contact Form — Client Component (handles onSubmit) */}
+          {/* Contact Form - Client Component (handles onSubmit) */}
           <ContactForm />
         </div>
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 6 — FAQ
+          SECTION 6 - FAQ
           Background: White
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-white py-20">
@@ -632,7 +632,7 @@ export default function ContactPage() {
                 key={i}
                 className="rounded-lg border border-gray-200 bg-white shadow-sm overflow-hidden"
               >
-                {/* Question — teal left bar */}
+                {/* Question - teal left bar */}
                 <div
                   className="px-6 py-4 border-l-4 border-primary-teal"
                   style={{ background: "#F8F6F2" }}
@@ -670,7 +670,7 @@ export default function ContactPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 7 — FINAL CTA
+          SECTION 7 - FINAL CTA
           Background: Dark navy gradient
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
@@ -732,7 +732,7 @@ export default function ContactPage() {
             >
               Skip straight to enrollment
             </Link>{" "}
-            — select your program and get started today.
+            - select your program and get started today.
           </p>
 
           {/* Location line */}

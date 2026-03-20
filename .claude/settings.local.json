@@ -40,7 +40,8 @@
       "Bash(__NEW_LINE_70086f92d1f899b7__ grep -n \"ShineBorder\" /Users/me/Desktop/hidden-potential-site/src/app/for/$f/page.tsx)",
       "Bash(__NEW_LINE_70086f92d1f899b7__ done)",
       "Bash(test:*)",
-      "Bash(npx shadcn@latest init:*)"
+      "Bash(npx shadcn@latest init:*)",
+      "Bash(npx shadcn@latest add:*)"
     ],
     "additionalDirectories": [
       "/Users/me/Desktop/Supreet Project/hidden-potential-site/brand_assets/supreet_client_images"

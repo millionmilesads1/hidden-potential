@@ -4,13 +4,13 @@
  * Route: /enroll
  *
  * 7-section structure:
- *   Section 1  — HERO                 (dark gradient, H1, Lora italic, body para, 2 CTAs, trust signals)
- *   Section 2  — CHOOSE YOUR PROGRAM  (off-white, id="programs", 10 numbered teal-header cards w/ individual CTAs)
- *   Section 3  — HOW ENROLLMENT WORKS (white, 5 numbered step cards — single column)
- *   Section 4  — ENROLLMENT FORM      (navy-light, id="enroll-form", EnrollForm client component)
- *   Section 5  — TRUST BUILDERS       (off-white, 6 differentiator-style cards)
- *   Section 6  — FAQ                  (white, 6 Q&As with FAQPage schema)
- *   Section 7  — CTA                  (dark gradient, body, 2 CTAs, cross-sell, location line)
+ *   Section 1  - HERO                 (dark gradient, H1, Lora italic, body para, 2 CTAs, trust signals)
+ *   Section 2  - CHOOSE YOUR PROGRAM  (off-white, id="programs", 10 numbered teal-header cards w/ individual CTAs)
+ *   Section 3  - HOW ENROLLMENT WORKS (white, 5 numbered step cards - single column)
+ *   Section 4  - ENROLLMENT FORM      (navy-light, id="enroll-form", EnrollForm client component)
+ *   Section 5  - TRUST BUILDERS       (off-white, 6 differentiator-style cards)
+ *   Section 6  - FAQ                  (white, 6 Q&As with FAQPage schema)
+ *   Section 7  - CTA                  (dark gradient, body, 2 CTAs, cross-sell, location line)
  *
  * Schemas: Service + FAQPage (both embedded as JSON-LD)
  * Keywords: "enroll in life skills training in Delhi" × 10+
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   description:
     "Enroll in life skills training in Delhi with Hidden Potential. NLP coaching, confidence building, communication mastery, trainer certification. 14+ years. 5000+ trained. Dwarka, Noida, Gurgaon. Limited batch sizes.",
   openGraph: {
-    title: "Enroll in Life Skills Training in Delhi — Start Your Transformation",
+    title: "Enroll in Life Skills Training in Delhi - Start Your Transformation",
     description:
       "Join 5000+ individuals across Delhi NCR. NLP coaching, student programs, women's empowerment, trainer certification. Dwarka, Noida, Gurgaon, Faridabad.",
     type: "website",
@@ -117,7 +117,7 @@ const faqSchema = {
       name: "Can I enroll in life skills training online if I am outside Delhi?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. While our primary training centre is in Dwarka, Delhi, we offer comprehensive online life skills training programs that deliver the same curriculum, engagement, and results as in-person sessions. All online batches include live interactive sessions — not pre-recorded content — with assignments, feedback, and direct access to Supreet Kaur and her team. Clients from Noida, Gurgaon, Faridabad, and cities across India regularly enroll in our online programs.",
+        text: "Yes. While our primary training centre is in Dwarka, Delhi, we offer comprehensive online life skills training programs that deliver the same curriculum, engagement, and results as in-person sessions. All online batches include live interactive sessions - not pre-recorded content - with assignments, feedback, and direct access to Supreet Kaur and her team. Clients from Noida, Gurgaon, Faridabad, and cities across India regularly enroll in our online programs.",
       },
     },
     {
@@ -160,7 +160,7 @@ const faqSchema = {
 const programs = [
   {
     num: "01",
-    title: "An Enlightened Learner — Student Program",
+    title: "An Enlightened Learner - Student Program",
     desc: "For students aged 10 to 18. A 12 to 16 week structured program covering confidence building, communication skills, emotional intelligence, study techniques, goal setting, and exam resilience. Uses NLP-based tools for lasting behavioural change. Available in-person at Dwarka, Delhi and online for students across Noida, Gurgaon, and Faridabad.",
     linkHref: "/programs/enlightened-learner",
     linkLabel: "View Full Program Details \u2192",
@@ -197,7 +197,7 @@ const programs = [
   {
     num: "05",
     title: "Art Therapy for Healing",
-    desc: "For individuals dealing with stress, anxiety, emotional blocks, or life transitions. Flexible duration — individual and group formats. Uses creative expression as a therapeutic tool for emotional processing and resilience building.",
+    desc: "For individuals dealing with stress, anxiety, emotional blocks, or life transitions. Flexible duration - individual and group formats. Uses creative expression as a therapeutic tool for emotional processing and resilience building.",
     linkHref: "/programs/art-therapy",
     linkLabel: "View Full Program Details \u2192",
     ctaLabel: "Enroll Now",
@@ -205,7 +205,7 @@ const programs = [
   },
   {
     num: "06",
-    title: "NLP Coaching — Individual Sessions",
+    title: "NLP Coaching - Individual Sessions",
     desc: "Personalised one-on-one NLP coaching with Supreet Kaur. For professionals, entrepreneurs, and individuals seeking deep behavioural transformation. Sessions focus on belief restructuring, confidence anchoring, and emotional state management. In-person at Dwarka, Delhi or online.",
     linkHref: "/services/nlp-coaching",
     linkLabel: "View Full Details \u2192",
@@ -257,7 +257,7 @@ const steps = [
   {
     num: "02",
     title: "Fill the Enrollment Form",
-    desc: "Share your details and program preference using the form below. It takes less than 2 minutes. This does not commit you to anything — it simply starts the conversation.",
+    desc: "Share your details and program preference using the form below. It takes less than 2 minutes. This does not commit you to anything - it simply starts the conversation.",
   },
   {
     num: "03",
@@ -267,7 +267,7 @@ const steps = [
   {
     num: "04",
     title: "Confirm Your Batch and Schedule",
-    desc: "Choose from available batches — weekday morning, weekday evening, weekend, or flexible scheduling. In-person batches run at our Dwarka, Delhi centre. Online batches serve Noida, Gurgaon, Faridabad, and pan-India.",
+    desc: "Choose from available batches - weekday morning, weekday evening, weekend, or flexible scheduling. In-person batches run at our Dwarka, Delhi centre. Online batches serve Noida, Gurgaon, Faridabad, and pan-India.",
   },
   {
     num: "05",
@@ -310,7 +310,7 @@ const faqs = [
   },
   {
     q: "Can I enroll in life skills training online if I am outside Delhi?",
-    a: "Yes. While our primary training centre is in Dwarka, Delhi, we offer comprehensive online life skills training programs that deliver the same curriculum, engagement, and results as in-person sessions. All online batches include live interactive sessions — not pre-recorded content — with assignments, feedback, and direct access to Supreet Kaur and her team. Clients from Noida, Gurgaon, Faridabad, and cities across India regularly enroll in our online programs.",
+    a: "Yes. While our primary training centre is in Dwarka, Delhi, we offer comprehensive online life skills training programs that deliver the same curriculum, engagement, and results as in-person sessions. All online batches include live interactive sessions - not pre-recorded content - with assignments, feedback, and direct access to Supreet Kaur and her team. Clients from Noida, Gurgaon, Faridabad, and cities across India regularly enroll in our online programs.",
   },
   {
     q: "What is the fee structure for life skills training programs?",
@@ -408,7 +408,7 @@ export default function EnrollPage() {
       />
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 1 — HERO
+          SECTION 1 - HERO
           Background: Dark navy-to-deep gradient
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
@@ -449,7 +449,7 @@ export default function EnrollPage() {
             className="text-3xl md:text-4xl lg:text-[2.75rem] font-extrabold text-white leading-tight mb-6 max-w-4xl mx-auto"
             style={{ textShadow: "0 1px 2px rgba(0,0,0,0.15)" }}
           >
-            Enroll in Life Skills Training in Delhi — Your Transformation Starts Today
+            Enroll in Life Skills Training in Delhi - Your Transformation Starts Today
           </h1>
 
           {/* Lora italic tagline */}
@@ -470,7 +470,7 @@ export default function EnrollPage() {
             you are a parent in Dwarka seeking life skills training for your child, a professional
             in Gurgaon looking to upgrade communication and leadership skills, a woman in Delhi
             ready to reclaim confidence and identity, or an aspiring trainer in Noida seeking
-            professional certification — enroll in life skills training in Delhi through Hidden
+            professional certification - enroll in life skills training in Delhi through Hidden
             Potential and access structured, assessment-based programs designed by{" "}
             <Link
               href="/about"
@@ -478,8 +478,8 @@ export default function EnrollPage() {
             >
               Supreet Kaur
             </Link>{" "}
-            — NLP practitioner, Masters in Psychology, Josh Talks speaker with 14+ years of
-            experience. Batches are intentionally small — 15 to 20 participants maximum — to
+            - NLP practitioner, Masters in Psychology, Josh Talks speaker with 14+ years of
+            experience. Batches are intentionally small - 15 to 20 participants maximum - to
             ensure personalised attention. The next batch starts soon. Secure your spot today.
           </p>
 
@@ -519,7 +519,7 @@ export default function EnrollPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 2 — CHOOSE YOUR PROGRAM
+          SECTION 2 - CHOOSE YOUR PROGRAM
           Background: Off-white | id="programs" (anchor target from hero CTA)
       ═══════════════════════════════════════════════════════════════════════ */}
       <section id="programs" className="bg-off-white py-20">
@@ -530,7 +530,7 @@ export default function EnrollPage() {
               Choose the Right Life Skills Training Program to Enroll In
             </h2>
             <p className="text-base text-charcoal/75 leading-relaxed max-w-3xl">
-              Each program at Hidden Potential is a structured, assessment-based pathway — not a
+              Each program at Hidden Potential is a structured, assessment-based pathway - not a
               one-time workshop. Whether you want to enroll in life skills training in Delhi for
               your child, yourself, your team, or your school, there is a program designed
               specifically for your situation. Review the options below and select the one that
@@ -539,7 +539,7 @@ export default function EnrollPage() {
             </p>
           </div>
 
-          {/* 10 program cards — 2-column grid */}
+          {/* 10 program cards - 2-column grid */}
           <div className="grid md:grid-cols-2 gap-5">
             {programs.map((p) => (
               <div
@@ -577,7 +577,7 @@ export default function EnrollPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 3 — HOW ENROLLMENT WORKS
+          SECTION 3 - HOW ENROLLMENT WORKS
           Background: White
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-white py-20">
@@ -585,7 +585,7 @@ export default function EnrollPage() {
           <div className="mb-12">
             <SectionLabel>How It Works</SectionLabel>
             <h2 className="text-3xl md:text-4xl font-bold text-primary-navy mb-4 leading-tight">
-              Your Enrollment Process — Simple, Transparent, and Personal
+              Your Enrollment Process - Simple, Transparent, and Personal
             </h2>
             <p className="text-base text-charcoal/75 leading-relaxed">
               From your first interaction to your first session, every step of enrolling in life
@@ -595,7 +595,7 @@ export default function EnrollPage() {
             </p>
           </div>
 
-          {/* 5 step cards — single column */}
+          {/* 5 step cards - single column */}
           <div className="flex flex-col gap-5">
             {steps.map((s) => (
               <div
@@ -616,18 +616,18 @@ export default function EnrollPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 4 — ENROLLMENT FORM
+          SECTION 4 - ENROLLMENT FORM
           Background: Navy-light (#F3F0FF) | id="enroll-form" (anchor target from program card CTAs)
       ═══════════════════════════════════════════════════════════════════════ */}
       <section id="enroll-form" className="bg-navy-light py-20">
         <div className="max-w-3xl mx-auto px-6">
           <SectionLabel>Enroll Now</SectionLabel>
           <h2 className="text-3xl md:text-4xl font-bold text-primary-navy mb-4 leading-tight max-w-2xl">
-            Start Your Life Skills Training Journey — Fill This Form
+            Start Your Life Skills Training Journey - Fill This Form
           </h2>
           <p className="text-base text-charcoal/75 leading-relaxed mb-8">
             Filling this form does not commit you to any payment or program. It simply starts the
-            conversation. Once you submit, a member of the Hidden Potential team — and in most
+            conversation. Once you submit, a member of the Hidden Potential team - and in most
             cases{" "}
             <Link
               href="/about"
@@ -635,7 +635,7 @@ export default function EnrollPage() {
             >
               Supreet Kaur
             </Link>{" "}
-            personally — will contact you within 24 hours to understand your goals, answer your
+            personally - will contact you within 24 hours to understand your goals, answer your
             questions, and recommend the right pathway. Your information is held in complete
             confidence and never shared with third parties. Whether you are in Delhi, Noida,
             Gurgaon, Faridabad, or joining online from anywhere across India, this form is your
@@ -648,7 +648,7 @@ export default function EnrollPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 5 — TRUST BUILDERS
+          SECTION 5 - TRUST BUILDERS
           Background: Off-white
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-off-white py-20">
@@ -659,13 +659,13 @@ export default function EnrollPage() {
               Why 5000+ People Across Delhi NCR Enrolled with Confidence
             </h2>
             <p className="text-base text-charcoal/75 leading-relaxed max-w-3xl">
-              Making the decision to enroll in life skills training in Delhi is an investment —
+              Making the decision to enroll in life skills training in Delhi is an investment -
               of time, focus, and trust. Here is what makes that investment feel secure when you
               choose Hidden Potential over the alternatives.
             </p>
           </div>
 
-          {/* 6 trust builder cards — 3-column grid */}
+          {/* 6 trust builder cards - 3-column grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {trustBuilders.map((t) => (
               <div
@@ -701,7 +701,7 @@ export default function EnrollPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 6 — FAQ
+          SECTION 6 - FAQ
           Background: White
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-white py-20">
@@ -719,7 +719,7 @@ export default function EnrollPage() {
                 key={i}
                 className="rounded-lg border border-gray-200 bg-white shadow-sm overflow-hidden"
               >
-                {/* Question — teal left bar */}
+                {/* Question - teal left bar */}
                 <div
                   className="px-6 py-4 border-l-4 border-primary-teal"
                   style={{ background: "#F8F6F2" }}
@@ -757,7 +757,7 @@ export default function EnrollPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 7 — FINAL CTA
+          SECTION 7 - FINAL CTA
           Background: Dark navy gradient
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
@@ -786,7 +786,7 @@ export default function EnrollPage() {
             5000+ individuals across Delhi NCR have already enrolled in life skills training and
             built measurable, lasting change in their confidence, communication, and clarity
             through Hidden Potential. Whether you are a student in Dwarka, a professional in
-            Gurgaon, a parent in Noida, or a woman seeking empowerment in Faridabad — the right
+            Gurgaon, a parent in Noida, or a woman seeking empowerment in Faridabad - the right
             program is waiting for you. No more putting it off. The best investment you will ever
             make is in yourself. Enroll in life skills training in Delhi today and begin the most
             important journey of your life.

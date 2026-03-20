@@ -7,7 +7,7 @@ import CertificateLightbox from "@/components/ui/CertificateLightbox";
 export const metadata: Metadata = {
   title: { absolute: "About Supreet Kaur | Life Skills Coach in Delhi | Hidden Potential" },
   description:
-    "Meet Supreet Kaur — Masters in Psychology, NLP practitioner, Josh Talks speaker. 14+ years training 5000+ individuals. Award-winning life skills educator in Delhi.",
+    "Meet Supreet Kaur - Masters in Psychology, NLP practitioner, Josh Talks speaker. 14+ years training 5000+ individuals. Award-winning life skills educator in Delhi.",
   openGraph: {
     title: "About Supreet Kaur | Life Skills Coach in Delhi",
     description:
@@ -47,7 +47,7 @@ const schema = {
     {
       "@type": "EducationalOccupationalCredential",
       credentialCategory: "certificate",
-      name: "NEP 2020 Implementation — IGNOU UGC Approved",
+      name: "NEP 2020 Implementation - IGNOU UGC Approved",
       recognizedBy: {
         "@type": "Organization",
         name: "Indira Gandhi National Open University (IGNOU)",
@@ -104,12 +104,12 @@ const expertise = [
   {
     num: "01",
     title: "Emotional Intelligence & Behavioural Development",
-    desc: "Designing and facilitating programs that build self-awareness, empathy, and emotional regulation — grounded in EI research and practical frameworks.",
+    desc: "Designing and facilitating programs that build self-awareness, empathy, and emotional regulation - grounded in EI research and practical frameworks.",
   },
   {
     num: "02",
     title: "Communication & Leadership Skills",
-    desc: "Structured development for confident expression, professional presence, and leadership communication at every level — from students to executives.",
+    desc: "Structured development for confident expression, professional presence, and leadership communication at every level - from students to executives.",
   },
   {
     num: "03",
@@ -119,12 +119,12 @@ const expertise = [
   {
     num: "04",
     title: "Structured Life Skills Curriculum Design",
-    desc: "Building multi-level curricula for schools, training programs, and individual development — assessment-based, progressive, and outcome-driven.",
+    desc: "Building multi-level curricula for schools, training programs, and individual development - assessment-based, progressive, and outcome-driven.",
   },
   {
     num: "05",
     title: "Art Therapy & Reflective Practices",
-    desc: "Integrating art, journaling, and mindfulness as structured tools for emotional expression, self-discovery, and inner healing — no artistic skill required.",
+    desc: "Integrating art, journaling, and mindfulness as structured tools for emotional expression, self-discovery, and inner healing - no artistic skill required.",
   },
   {
     num: "06",
@@ -139,21 +139,21 @@ const approachCards = [
     letter: "S",
     bg: "bg-primary-teal",
     letterColor: "text-white",
-    desc: "A defined developmental pathway — from where you are to where you need to be. Every learner follows a clear, structured sequence. No fragmented sessions, no one-time workshops. One clear journey.",
+    desc: "A defined developmental pathway - from where you are to where you need to be. Every learner follows a clear, structured sequence. No fragmented sessions, no one-time workshops. One clear journey.",
   },
   {
     title: "Science",
     letter: "Sc",
     bg: "bg-primary-navy",
     letterColor: "text-white",
-    desc: "Emotional intelligence research, behavioural psychology, and NLP frameworks underpin every single module and interaction — making growth predictable rather than accidental.",
+    desc: "Emotional intelligence research, behavioural psychology, and NLP frameworks underpin every single module and interaction - making growth predictable rather than accidental.",
   },
   {
     title: "Structure",
     letter: "St",
     bg: "bg-primary-gold",
     letterColor: "text-primary-navy",
-    desc: "Guided practice, real-life application, and continuous feedback at every level ensure that skills are not just taught — they are embedded, practised, and integrated.",
+    desc: "Guided practice, real-life application, and continuous feedback at every level ensure that skills are not just taught - they are embedded, practised, and integrated.",
   },
 ];
 
@@ -205,7 +205,7 @@ const books = [
   {
     title: "An Enlightened Learner",
     subtitle: "A Toolkit To Become A Better Learner",
-    desc: "A structured guide to developing the essential learning skills that formal education overlooks — from emotional resilience and self-awareness to confident communication and purposeful growth.",
+    desc: "A structured guide to developing the essential learning skills that formal education overlooks - from emotional resilience and self-awareness to confident communication and purposeful growth.",
     imageSrc: "/images/books/book-1.jpg",
     objectPosition: "object-bottom",
     gradientFrom: "#7C3AED",
@@ -214,7 +214,7 @@ const books = [
   {
     title: "Discover Your Hidden Potential",
     subtitle: "Self Help Book",
-    desc: "A practitioner's guide to lasting personal transformation through structured pathways, evidence-based assessment, and intentional daily practice — written for learners and educators alike.",
+    desc: "A practitioner's guide to lasting personal transformation through structured pathways, evidence-based assessment, and intentional daily practice - written for learners and educators alike.",
     imageSrc: "/images/books/book-2.jpg",
     objectPosition: "object-center",
     gradientFrom: "#7C3AED",
@@ -242,7 +242,7 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
 
-            {/* Left — Portrait photo */}
+            {/* Left - Portrait photo */}
             <div className="relative w-full flex-shrink-0 overflow-hidden rounded-lg">
             <div
               className="relative w-full"
@@ -300,7 +300,7 @@ export default function AboutPage() {
             </div>
             </div>
 
-            {/* Right — Bio content */}
+            {/* Right - Bio content */}
             <div>
               <p className="text-xs font-bold uppercase tracking-widest text-primary-teal mb-4">
                 Founder & Director
@@ -309,19 +309,19 @@ export default function AboutPage() {
                 className="text-3xl md:text-4xl font-extrabold text-primary-navy leading-tight mb-6"
                 style={{ fontFamily: "var(--font-display)" }}
               >
-                Supreet Kaur — Life Skills Coach &amp; Transformational Educator in Delhi
+                Supreet Kaur - Life Skills Coach &amp; Transformational Educator in Delhi
               </h1>
 
               <p className="text-lg text-charcoal leading-relaxed mb-5">
                 Supreet Kaur is the founder of{" "}
-                <strong className="text-primary-navy">Hidden Potential</strong> — a structured
+                <strong className="text-primary-navy">Hidden Potential</strong> - a structured
                 life skills academy in Delhi NCR that has trained over 5,000 individuals since
                 2010. Her work spans students aged 8 to 21, women navigating personal and
                 professional transitions, working professionals, and aspiring trainers across
                 Delhi, Noida, Gurgaon, and Faridabad.
               </p>
 
-              {/* Pull quote — Lora italic */}
+              {/* Pull quote - Lora italic */}
               <p
                 className="text-lg text-charcoal leading-relaxed mb-5 pl-5"
                 style={{
@@ -330,14 +330,14 @@ export default function AboutPage() {
                   borderLeft: "3px solid #C8A951",
                 }}
               >
-                &ldquo;Transformation is not a moment. It is a structured journey — with the
+                &ldquo;Transformation is not a moment. It is a structured journey - with the
                 right pathway, the right science, and someone who walks every stage with you.&rdquo;
               </p>
 
               <p className="text-base text-charcoal/80 leading-relaxed mb-4">
                 With a Master&rsquo;s degree in Psychology and certifications spanning NLP, Art
                 Therapy, Graphology, and Train-the-Trainer facilitation, Supreet has built one
-                of Delhi&rsquo;s most methodical approaches to personal development — grounded
+                of Delhi&rsquo;s most methodical approaches to personal development - grounded
                 in science, guided by system, and made measurable through structured pre and
                 post assessments.
               </p>
@@ -384,7 +384,7 @@ export default function AboutPage() {
               Professional Expertise
             </h2>
             <p className="text-lg text-charcoal max-w-2xl mx-auto leading-relaxed">
-              Fourteen years of focused practice across six interconnected disciplines — each
+              Fourteen years of focused practice across six interconnected disciplines - each
               reinforcing the others in every program, every session, and every learner journey.
             </p>
           </div>
@@ -423,7 +423,7 @@ export default function AboutPage() {
         <div className="max-w-5xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12 items-start">
 
-            {/* Left — Story */}
+            {/* Left - Story */}
             <div>
               <p className="text-xs font-bold uppercase tracking-widest text-primary-teal mb-3">
                 The Origin
@@ -434,20 +434,20 @@ export default function AboutPage() {
               <p className="text-base text-charcoal leading-relaxed mb-5">
                 After years of working within formal education systems, Supreet observed the same
                 pattern repeating itself. Students were graduating with academic knowledge but
-                without the inner tools needed to navigate real life — no emotional regulation,
+                without the inner tools needed to navigate real life - no emotional regulation,
                 no communication confidence, no clarity of identity.
               </p>
               <p className="text-base text-charcoal leading-relaxed mb-5">
                 Professionals were advancing in careers while silently struggling with stress,
                 strained relationships, and the absence of purpose. Women were expected to manage
-                everything — and were given no structured support to grow on their own terms.
+                everything - and were given no structured support to grow on their own terms.
               </p>
               <p className="text-base text-charcoal leading-relaxed mb-8">
                 <strong className="text-primary-navy">
                   Hidden Potential was built to fill that gap.
                 </strong>{" "}
                 Not as a motivational program. Not as a one-time workshop. But as a structured
-                transformational academy — where every learner enters with an assessment, follows
+                transformational academy - where every learner enters with an assessment, follows
                 a defined pathway, and exits with measurable, documented growth.
               </p>
               <Link
@@ -469,7 +469,7 @@ export default function AboutPage() {
               </Link>
             </div>
 
-            {/* Right — Quote + Model */}
+            {/* Right - Quote + Model */}
             <div className="flex flex-col gap-5">
               {/* Lora italic quote block */}
               <div className="bg-navy-light rounded-lg p-7">
@@ -478,11 +478,11 @@ export default function AboutPage() {
                   style={{ fontFamily: "var(--font-accent)", fontStyle: "italic" }}
                 >
                   &ldquo;For years, academic systems focused on grades, performance, and
-                  achievement. But something essential was missing — emotional resilience,
+                  achievement. But something essential was missing - emotional resilience,
                   self-awareness, communication mastery, clarity of identity.&rdquo;
                 </p>
                 <p className="text-sm font-semibold text-primary-teal mt-5">
-                  — Supreet Kaur, Founder of Hidden Potential
+                  - Supreet Kaur, Founder of Hidden Potential
                 </p>
               </div>
 
@@ -545,7 +545,7 @@ export default function AboutPage() {
             </h2>
             <p className="text-lg text-charcoal max-w-2xl mx-auto leading-relaxed">
               Three non-negotiable principles that make every Hidden Potential program reliable,
-              repeatable, and genuinely transformational — not motivational, but methodical.
+              repeatable, and genuinely transformational - not motivational, but methodical.
             </p>
           </div>
 
@@ -613,7 +613,7 @@ export default function AboutPage() {
               border: "2px solid rgba(124,58,237,0.15)",
             }}
           >
-            {/* Left — Credential info */}
+            {/* Left - Credential info */}
             <div className="flex-1 min-w-0">
               {/* Badges row */}
               <div className="flex flex-wrap items-center gap-2 mb-4">
@@ -681,11 +681,11 @@ export default function AboutPage() {
               </p>
             </div>
 
-            {/* Right — Certificate thumbnail + lightbox link */}
+            {/* Right - Certificate thumbnail + lightbox link */}
             <div className="flex flex-col items-center md:items-center flex-shrink-0">
               <CertificateLightbox
                 imageSrc="/certificates/nep-2020-ignou.jpeg"
-                imageAlt="NEP 2020 Implementation Certificate — Supreet Kaur, IGNOU, November 2022"
+                imageAlt="NEP 2020 Implementation Certificate - Supreet Kaur, IGNOU, November 2022"
               />
             </div>
           </div>
@@ -757,7 +757,7 @@ export default function AboutPage() {
             ))}
           </div>
 
-          {/* Photo strip — Josh Talks + Media */}
+          {/* Photo strip - Josh Talks + Media */}
           <div className="grid grid-cols-2 gap-4 mt-14 max-w-2xl mx-auto">
             <div className="relative overflow-hidden rounded-xl">
               <div className="relative h-80">

@@ -1,19 +1,19 @@
 /**
- * PROGRAM PAGE — ART THERAPY FOR HEALING
+ * PROGRAM PAGE - ART THERAPY FOR HEALING
  * ─────────────────────────────────────────────────────────────────────────────
  * Route: /programs/art-therapy
  *
  * 7-section structure:
- *   Section 1  — HERO             (dark gradient, H1, dual Lora taglines, "All Age Groups" badge,
+ *   Section 1  - HERO             (dark gradient, H1, dual Lora taglines, "All Age Groups" badge,
  *                                   "no artistic skill" note, 2 CTAs)
- *   Section 2  — WHAT IT DELIVERS (off-white, 6 outcome cards, gold callout, integration note,
+ *   Section 2  - WHAT IT DELIVERS (off-white, 6 outcome cards, gold callout, integration note,
  *                                   healing framework)
- *   Section 3  — WHO IT'S FOR     (white, 6 audience cards + sidebar callout)
- *   Section 4  — THREE CORE PILLARS (off-white, 12 skill chips + 3 pillar cards)
- *   Section 5  — PROGRAM STRUCTURE (navy dark, 3 pathway levels + framework note)
- *   Section 6  — ASSESSMENT       (white, 5-step timeline + quote callout)
- *   Section 7a — OUTCOMES+FORMAT  (off-white, 6 outcomes + format badges + cross-sell)
- *   Section 7b — FINAL CTA        (<ProgramCTASection> shared component)
+ *   Section 3  - WHO IT'S FOR     (white, 6 audience cards + sidebar callout)
+ *   Section 4  - THREE CORE PILLARS (off-white, 12 skill chips + 3 pillar cards)
+ *   Section 5  - PROGRAM STRUCTURE (navy dark, 3 pathway levels + framework note)
+ *   Section 6  - ASSESSMENT       (white, 5-step timeline + quote callout)
+ *   Section 7a - OUTCOMES+FORMAT  (off-white, 6 outcomes + format badges + cross-sell)
+ *   Section 7b - FINAL CTA        (<ProgramCTASection> shared component)
  */
 
 import type { Metadata } from "next";
@@ -33,6 +33,7 @@ import {
   AssessmentStep,
   ProgramCTASection,
 } from "@/components/program/shared";
+import LearnYourWaySelector from "@/components/program/LearnYourWaySelector";
 
 // ── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -40,7 +41,7 @@ export const metadata: Metadata = {
   description:
     "Guided healing through mindfulness, therapeutic journaling & expressive art. No artistic skill required. 1, 3, or 6-month programs. Delhi NCR & Online.",
   openGraph: {
-    title: "Art Therapy for Healing — Creative Pathway for Clarity & Self-Discovery in Delhi",
+    title: "Art Therapy for Healing - Creative Pathway for Clarity & Self-Discovery in Delhi",
     description:
       "Heal through mindfulness, reflective journaling & art-based expression. No artistic skill required. 1-Month Reset, 3-Month Clarity, 6-Month Integration programs.",
     type: "website",
@@ -55,7 +56,7 @@ export const metadata: Metadata = {
 const schema = {
   "@context": "https://schema.org",
   "@type": "Course",
-  name: "Art Therapy for Healing — Creative Pathway for Clarity & Self-Discovery in Delhi",
+  name: "Art Therapy for Healing - Creative Pathway for Clarity & Self-Discovery in Delhi",
   description:
     "A structured healing program combining mindfulness, reflective journaling, and art-based therapeutic expression. Designed for all age groups seeking emotional clarity, stress relief, and inner growth. No artistic skill required.",
   url: "https://hiddenpotentialskills.com/programs/art-therapy",
@@ -122,13 +123,13 @@ const coreDeliverables = [
   },
   {
     title: "Stress Reduction",
-    desc: "Release accumulated emotional tension through guided creative expression — an evidence-based approach that reduces cortisol and restores a sense of internal calm.",
+    desc: "Release accumulated emotional tension through guided creative expression - an evidence-based approach that reduces cortisol and restores a sense of internal calm.",
     serviceLink: "/services/stress-management",
     serviceLinkLabel: "Explore Stress Management",
   },
   {
     title: "Improved Focus & Concentration",
-    desc: "Mindfulness practices and structured journaling clear mental noise and train the mind to return to the present — improving focus in academic, professional, and personal life.",
+    desc: "Mindfulness practices and structured journaling clear mental noise and train the mind to return to the present - improving focus in academic, professional, and personal life.",
   },
   {
     title: "Mindfulness & Inner Calm",
@@ -136,11 +137,11 @@ const coreDeliverables = [
   },
   {
     title: "Self-Awareness & Pattern Recognition",
-    desc: "Structured reflection reveals recurring emotional patterns, habitual responses, and unconscious beliefs — giving you the self-knowledge needed to make meaningful change.",
+    desc: "Structured reflection reveals recurring emotional patterns, habitual responses, and unconscious beliefs - giving you the self-knowledge needed to make meaningful change.",
   },
   {
     title: "Healthier Emotional Responses",
-    desc: "Move from reactive emotional patterns to conscious, considered responses. Develop the capacity to pause, feel, and choose — rather than react without awareness.",
+    desc: "Move from reactive emotional patterns to conscious, considered responses. Develop the capacity to pause, feel, and choose - rather than react without awareness.",
   },
 ];
 
@@ -160,14 +161,14 @@ const audiences = [
   {
     icon: "🏠",
     title: "Homemakers Managing Emotional Overload",
-    desc: "Those who give consistently to others but rarely have a safe space for their own emotional processing — to be seen, heard, and supported in their inner experience.",
+    desc: "Those who give consistently to others but rarely have a safe space for their own emotional processing - to be seen, heard, and supported in their inner experience.",
     serviceLink: "/programs/self-mastery-women",
     serviceLinkLabel: "Self Mastery for Women",
   },
   {
     icon: "🔄",
     title: "Women Navigating Life Transitions",
-    desc: "Women processing major changes — relationship shifts, career pivots, identity evolution, loss — who need a reflective, embodied space to move through these with clarity.",
+    desc: "Women processing major changes - relationship shifts, career pivots, identity evolution, loss - who need a reflective, embodied space to move through these with clarity.",
   },
   {
     icon: "🌀",
@@ -210,14 +211,14 @@ const pillars: DomainCardData[] = [
   {
     num: "02",
     title: "Reflective Journaling",
-    desc: "Structured journaling practices for pattern identification, trigger mapping, belief exploration, and emotional writing — tools that build lasting self-knowledge through consistent reflection.",
+    desc: "Structured journaling practices for pattern identification, trigger mapping, belief exploration, and emotional writing - tools that build lasting self-knowledge through consistent reflection.",
     skills: ["Pattern Identification", "Trigger Mapping", "Belief Exploration", "Emotional Writing"],
     accent: "gold",
   },
   {
     num: "03",
     title: "Art-Based Therapeutic Expression",
-    desc: "Non-verbal emotional release through visual reflection exercises, symbol and colour awareness, and creative processing of emotions. No artistic skill required — only willingness to express.",
+    desc: "Non-verbal emotional release through visual reflection exercises, symbol and colour awareness, and creative processing of emotions. No artistic skill required - only willingness to express.",
     skills: ["Non-Verbal Release", "Visual Reflection", "Symbol & Colour", "Creative Processing"],
     accent: "teal",
   },
@@ -258,17 +259,17 @@ const assessmentSteps: AssessmentStepData[] = [
   {
     num: "03",
     title: "Structured Journaling Worksheets",
-    desc: "Purpose-built reflection prompts and worksheets guide each stage of the journaling practice — providing structure without restriction, and depth without overwhelm.",
+    desc: "Purpose-built reflection prompts and worksheets guide each stage of the journaling practice - providing structure without restriction, and depth without overwhelm.",
   },
   {
     num: "04",
     title: "Facilitated Sharing (Optional)",
-    desc: "In group formats, optional facilitated sharing creates space for witnessed reflection — a powerful part of healing that is always voluntary and held with complete safety and confidentiality.",
+    desc: "In group formats, optional facilitated sharing creates space for witnessed reflection - a powerful part of healing that is always voluntary and held with complete safety and confidentiality.",
   },
   {
     num: "05",
     title: "End-of-Program Growth Reflection",
-    desc: "A structured closing review that maps emotional shifts, behavioural changes, and personal insights from the program — helping you see clearly how far you have come.",
+    desc: "A structured closing review that maps emotional shifts, behavioural changes, and personal insights from the program - helping you see clearly how far you have come.",
   },
 ];
 
@@ -282,7 +283,7 @@ const expectedOutcomes = [
     text: "Increased focus and mental clarity as emotional clutter is released and processed",
   },
   {
-    text: "Improved emotional regulation — the ability to feel without being overwhelmed",
+    text: "Improved emotional regulation - the ability to feel without being overwhelmed",
     linkHref: "/services/emotional-intelligence",
     linkLabel: "Emotional Intelligence",
   },
@@ -293,7 +294,7 @@ const expectedOutcomes = [
     text: "Greater inner balance and a stable, accessible sense of calm in daily life",
   },
   {
-    text: "Stronger connection to self — your values, voice, and inner direction",
+    text: "Stronger connection to self - your values, voice, and inner direction",
   },
 ];
 
@@ -307,7 +308,7 @@ const ctaData: ProgramCtaData = {
   cta2Href: "/assessment",
   crossSellText: "Also explore:",
   crossSellHref: "/programs/self-mastery-women",
-  crossSellLabel: "Self Mastery for Women — a complete empowerment journey for deeper identity growth",
+  crossSellLabel: "Self Mastery for Women - a complete empowerment journey for deeper identity growth",
 };
 
 // ── Page ─────────────────────────────────────────────────────────────────────
@@ -320,7 +321,7 @@ export default function ArtTherapyPage() {
       />
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 1 — HERO
+          SECTION 1 - HERO
           Background: Dark navy-to-deep gradient
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
@@ -347,10 +348,10 @@ export default function ArtTherapyPage() {
 
           {/* Label badge */}
             <span
-              className="inline-flex items-center px-4 py-1.5 text-[11px] font-bold uppercase tracking-widest text-primary-teal rounded-full mb-5"
+              className="inline-flex items-center px-4 py-1.5 text-[11px] font-bold uppercase tracking-widest text-primary-gold rounded-full mb-5"
               style={{
-                background: "rgba(124,58,237,0.12)",
-                border: "1px solid rgba(124,58,237,0.25)",
+                background: "rgba(200,169,81,0.12)",
+                border: "1px solid rgba(200,169,81,0.25)",
               }}
             >
               Healing &amp; Self-Discovery
@@ -361,12 +362,12 @@ export default function ArtTherapyPage() {
             className="text-3xl md:text-4xl lg:text-[2.75rem] font-extrabold text-white leading-tight mb-6 max-w-4xl mx-auto"
             style={{ textShadow: "0 1px 2px rgba(0,0,0,0.15)" }}
           >
-            Art Therapy for Healing — Creative Pathway for Clarity &amp; Self-Discovery in Delhi
+            Art Therapy for Healing - Creative Pathway for Clarity &amp; Self-Discovery in Delhi
           </h1>
 
           {/* Lora italic primary tagline */}
           <p
-            className="text-xl md:text-2xl text-white/75 leading-relaxed mb-3 max-w-2xl mx-auto"
+            className="text-xl md:text-2xl text-white/75 leading-relaxed mb-2 max-w-2xl mx-auto"
             style={{
               fontFamily: "var(--font-accent)",
               fontStyle: "italic",
@@ -374,6 +375,11 @@ export default function ArtTherapyPage() {
             }}
           >
             From mental clutter to emotional clarity. From suppressed emotions to mindful expression.
+          </p>
+
+          {/* Hybrid availability */}
+          <p className="text-sm text-white/45 mb-3 max-w-xl mx-auto leading-relaxed">
+            Available in-person in Delhi and online across India
           </p>
 
           {/* Secondary tagline */}
@@ -436,8 +442,10 @@ export default function ArtTherapyPage() {
         </div>
       </section>
 
+      <LearnYourWaySelector />
+
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 2 — WHAT THIS PROGRAM DELIVERS
+          SECTION 2 - WHAT THIS PROGRAM DELIVERS
           Background: Off-white
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-off-white py-20">
@@ -454,7 +462,7 @@ export default function ArtTherapyPage() {
             </p>
           </div>
 
-          {/* 6 deliverable cards — 3 + 3 grid */}
+          {/* 6 deliverable cards - 3 + 3 grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-12">
             {coreDeliverables.map((item) => (
               <div
@@ -505,7 +513,7 @@ export default function ArtTherapyPage() {
               </div>
               <div>
                 <p className="text-sm font-bold text-primary-navy mb-1">
-                  Art is Used as a Healing Tool — No Drawing Skills Required
+                  Art is Used as a Healing Tool - No Drawing Skills Required
                 </p>
                 <p className="text-sm text-charcoal/70 leading-relaxed">
                   The focus is emotional growth, not artistic ability. What you create matters far
@@ -553,7 +561,7 @@ export default function ArtTherapyPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 3 — WHO IT IS DESIGNED FOR
+          SECTION 3 - WHO IT IS DESIGNED FOR
           Background: White
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-white py-20">
@@ -567,7 +575,7 @@ export default function ArtTherapyPage() {
               </h2>
               <p className="text-lg text-charcoal leading-relaxed">
                 Emotions that cannot be put into words can often be released through colour, image, and
-                reflection. This program is open to all ages — and requires no prior experience of
+                reflection. This program is open to all ages - and requires no prior experience of
                 any kind.
               </p>
             </div>
@@ -642,7 +650,7 @@ export default function ArtTherapyPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 4 — THREE CORE PILLARS
+          SECTION 4 - THREE CORE PILLARS
           Background: Off-white
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-off-white py-20">
@@ -653,7 +661,7 @@ export default function ArtTherapyPage() {
               Three Pillars of Healing
             </h2>
             <p className="text-lg text-charcoal max-w-2xl mx-auto leading-relaxed">
-              Every session draws from three interconnected practices — each one building the next,
+              Every session draws from three interconnected practices - each one building the next,
               creating a complete and self-reinforcing pathway toward emotional clarity and growth.
             </p>
           </div>
@@ -665,7 +673,7 @@ export default function ArtTherapyPage() {
             ))}
           </div>
 
-          {/* 3 pillar cards — full-width grid */}
+          {/* 3 pillar cards - full-width grid */}
           <div className="grid md:grid-cols-3 gap-5">
             {pillars.map((p) => (
               <DomainCard key={p.num} data={p} />
@@ -693,7 +701,7 @@ export default function ArtTherapyPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 5 — PROGRAM STRUCTURE
+          SECTION 5 - PROGRAM STRUCTURE
           Background: Dark navy gradient
       ═══════════════════════════════════════════════════════════════════════ */}
       <section
@@ -708,7 +716,7 @@ export default function ArtTherapyPage() {
             </h2>
             <p className="text-lg text-white/60 max-w-2xl mx-auto leading-relaxed">
               Choose the pathway that matches where you are right now. Each builds on the
-              previous — and you can deepen your practice by continuing across all three.
+              previous - and you can deepen your practice by continuing across all three.
             </p>
           </div>
 
@@ -766,14 +774,14 @@ export default function ArtTherapyPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 6 — ASSESSMENT & MEASUREMENT
+          SECTION 6 - ASSESSMENT & MEASUREMENT
           Background: White
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-white py-20">
         <div className="max-w-5xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12 items-start">
 
-            {/* Left — Section header + quote */}
+            {/* Left - Section header + quote */}
             <div>
               <ProgramSectionLabel>The Process</ProgramSectionLabel>
               <h2 className="text-3xl md:text-4xl font-bold text-primary-navy mb-6 leading-tight">
@@ -781,7 +789,7 @@ export default function ArtTherapyPage() {
               </h2>
               <p className="text-base text-charcoal/80 leading-relaxed mb-8">
                 Every stage of this program is held within a clear, compassionate structure.
-                Progress is not measured by what you create — it is measured by what shifts
+                Progress is not measured by what you create - it is measured by what shifts
                 within you. The process is always led by the participant, gently guided by the
                 facilitator.
               </p>
@@ -802,7 +810,7 @@ export default function ArtTherapyPage() {
                   grading.&rdquo;
                 </p>
                 <p className="text-xs font-semibold text-primary-teal mt-3">
-                  — Hidden Potential Art Therapy Approach
+                  - Hidden Potential Art Therapy Approach
                 </p>
               </div>
 
@@ -819,7 +827,7 @@ export default function ArtTherapyPage() {
               </p>
             </div>
 
-            {/* Right — 5-step process timeline */}
+            {/* Right - 5-step process timeline */}
             <div className="pt-2">
               {assessmentSteps.map((step, i) => (
                 <AssessmentStep
@@ -834,14 +842,14 @@ export default function ArtTherapyPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 7a — EXPECTED OUTCOMES + FORMAT
+          SECTION 7a - EXPECTED OUTCOMES + FORMAT
           Background: Off-white
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="bg-off-white py-20">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12 items-start">
 
-            {/* Left — Expected outcomes */}
+            {/* Left - Expected outcomes */}
             <div>
               <ProgramSectionLabel>Expected Outcomes</ProgramSectionLabel>
               <h2 className="text-3xl font-bold text-primary-navy mb-6 leading-tight">
@@ -859,7 +867,7 @@ export default function ArtTherapyPage() {
               </div>
             </div>
 
-            {/* Right — Format + cross-sell */}
+            {/* Right - Format + cross-sell */}
             <div className="flex flex-col gap-6">
 
               {/* Format */}
@@ -893,7 +901,7 @@ export default function ArtTherapyPage() {
                 </p>
                 <p className="text-sm text-charcoal/70 leading-relaxed">
                   A structured emotional wellbeing reflection is conducted at the start and close
-                  of each program phase — giving you a clear, compassionate picture of the
+                  of each program phase - giving you a clear, compassionate picture of the
                   emotional shifts you have experienced through the process.
                 </p>
               </div>
@@ -941,7 +949,7 @@ export default function ArtTherapyPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 7b — FINAL CTA
+          SECTION 7b - FINAL CTA
           Uses the shared <ProgramCTASection> component
       ═══════════════════════════════════════════════════════════════════════ */}
       <ProgramCTASection data={ctaData} />
