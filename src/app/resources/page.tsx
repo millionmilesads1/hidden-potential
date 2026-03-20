@@ -17,6 +17,7 @@
  */
 
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 // ── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -84,11 +85,44 @@ const breadcrumbSchema = {
 // ── Data: Books by Supreet Kaur (Section 2) ───────────────────────────────────
 const supreetBooks = [
   {
+    id: "enlightened-learner",
     title: "An Enlightened Learner",
+    subtitle: "A Toolkit To Become A Better Learner",
+    image: "/gallery/08_Book/img-001.jpg",
+    imageAlt: "An Enlightened Learner by Supreet Kaur on a bookshelf",
     description:
-      "Supreet Kaur's guide to structured life skills development for students and young learners. Covers emotional intelligence, communication, self-awareness, and the Foundation → Growth → Mastery framework that underpins Hidden Potential's flagship program.",
-    availability: "https://amzn.in/d/08Ijy89H",
-    availabilityLabel: "Available on Amazon India",
+      "A practical, structured toolkit that bridges the gap between conventional academics and the life skills every young person truly needs. Built from 14+ years of hands-on experience with students, parents, and educators across India.",
+    themes: [
+      "Self-Awareness & Emotional Regulation",
+      "Structured Study Skills & Learning Habits",
+      "Communication & Confident Expression",
+      "Managing Stress & Academic Pressure",
+      "Identity Clarity & Purpose-Driven Motivation",
+      "Parent–Child Growth Partnership",
+    ],
+    amazonUrl: "https://amzn.in/d/08Ijy89H",
+    programHref: "/programs/enlightened-learner",
+    programLabel: "See the Program",
+  },
+  {
+    id: "discover-your-potential",
+    title: "Discover Your Potential Book",
+    subtitle: "A Self-Development Workbook",
+    image: "/gallery/08_Book/img-002.jpg",
+    imageAlt: "Discover Your Potential Book and An Enlightened Learner by Supreet Kaur",
+    description:
+      "An interactive workbook designed to help you uncover hidden strengths and build a life of intentional growth. Covering physical wellness, mental fitness, goal-setting, and mindfulness — this hands-on guide turns self-discovery into daily structured action.",
+    themes: [
+      "Physical Wellness & Body Confidence",
+      "Mental Fitness & Brain Health",
+      "Goal-Setting & Achievement Frameworks",
+      "Mindfulness & Stress Management",
+      "Self-Discovery & Core Values",
+      "Turning Insights Into Consistent Action",
+    ],
+    amazonUrl: "https://www.amazon.in/stores/author/B08HPKX6PW",
+    programHref: "/programs/self-mastery-women",
+    programLabel: "See Self Mastery Program",
   },
 ];
 
@@ -421,63 +455,143 @@ export default function ResourcesPage() {
             </p>
           </div>
 
-          {/* PLACEHOLDER — 2 book cards. Replace with real data from client. */}
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="flex flex-col gap-10">
             {supreetBooks.map((book, idx) => (
-              <div
-                key={idx}
-                className="bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden flex flex-col"
+              <article
+                key={book.id}
+                className="rounded-2xl overflow-hidden bg-white"
+                style={{
+                  boxShadow: "0 2px 24px rgba(45,27,105,0.07)",
+                  border: "1px solid rgba(45,27,105,0.07)",
+                }}
+                aria-labelledby={`title-${book.id}`}
               >
-                {/* PLACEHOLDER — Book cover image area */}
-                {/* Replace this div with next/image when real cover is available */}
-                <div
-                  className="flex items-center justify-center h-52 border-b border-gray-100"
-                  style={{ background: "#F3F0FF" }}
-                >
-                  <div className="text-center">
-                    {/* PLACEHOLDER: Replace with <Image> of actual book cover */}
-                    <div className="w-24 h-32 bg-navy-light border-2 border-primary-teal/20 rounded-sm mx-auto mb-3 flex items-center justify-center">
-                      <span className="text-[10px] font-bold uppercase tracking-wider text-primary-teal/60 text-center px-1 leading-tight">
-                        Book Cover
-                      </span>
-                    </div>
-                    <p className="text-[10px] text-charcoal/35 uppercase tracking-wider">
-                      {/* PLACEHOLDER */}
-                      Cover image to be added
+                <div className="grid md:grid-cols-[380px_1fr]">
+
+                  {/* Book cover image */}
+                  <div className="relative min-h-[280px] md:min-h-0 overflow-hidden">
+                    <Image
+                      src={book.image}
+                      alt={book.imageAlt}
+                      fill
+                      className="object-cover object-center"
+                      sizes="(max-width: 768px) 100vw, 380px"
+                      priority={idx === 0}
+                    />
+                  </div>
+
+                  {/* Content */}
+                  <div className="p-8 md:p-10 lg:p-12 flex flex-col justify-center">
+                    <span
+                      className="inline-block w-fit text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full mb-5"
+                      style={{
+                        background: "#EDE9FE",
+                        color: "#7C3AED",
+                        fontFamily: "var(--font-body)",
+                      }}
+                    >
+                      By Supreet Kaur
+                    </span>
+
+                    <h3
+                      id={`title-${book.id}`}
+                      className="font-bold leading-tight mb-1"
+                      style={{
+                        fontFamily: "var(--font-display)",
+                        fontSize: "clamp(1.6rem, 2.5vw, 2.1rem)",
+                        color: "#2D1B69",
+                      }}
+                    >
+                      {book.title}
+                    </h3>
+
+                    <p
+                      className="font-medium mb-5 text-sm"
+                      style={{ color: "#7C3AED", fontFamily: "var(--font-body)" }}
+                    >
+                      {book.subtitle}
                     </p>
+
+                    <p
+                      className="leading-relaxed mb-7 text-sm"
+                      style={{
+                        color: "#2D2D2D",
+                        opacity: 0.75,
+                        fontFamily: "var(--font-body)",
+                      }}
+                    >
+                      {book.description}
+                    </p>
+
+                    {/* Themes */}
+                    <div className="mb-8">
+                      <p
+                        className="text-[10px] font-bold tracking-widest uppercase mb-3"
+                        style={{ color: "#C8A951", fontFamily: "var(--font-body)" }}
+                      >
+                        Key Themes
+                      </p>
+                      <ul className="grid sm:grid-cols-2 gap-x-4 gap-y-2" role="list">
+                        {book.themes.map((t) => (
+                          <li
+                            key={t}
+                            className="flex items-start gap-2 text-sm"
+                            style={{ color: "#2D2D2D", fontFamily: "var(--font-body)" }}
+                          >
+                            <svg
+                              className="w-3.5 h-3.5 shrink-0 mt-0.5"
+                              viewBox="0 0 14 14"
+                              fill="none"
+                              aria-hidden="true"
+                            >
+                              <circle cx="7" cy="7" r="7" fill="#EDE9FE" />
+                              <path
+                                d="M4.5 7l1.75 1.75 3.25-3.5"
+                                stroke="#7C3AED"
+                                strokeWidth="1.5"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                              />
+                            </svg>
+                            {t}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    {/* CTAs */}
+                    <div className="flex flex-wrap gap-3">
+                      <a
+                        href={book.amazonUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold text-white transition-all hover:opacity-90 hover:scale-[1.02]"
+                        style={{
+                          background: "#7C3AED",
+                          fontFamily: "var(--font-body)",
+                          boxShadow: "0 4px 16px rgba(124,58,237,0.3)",
+                        }}
+                      >
+                        Buy on Amazon
+                        <svg className="w-3.5 h-3.5 opacity-80" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                          <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                      </a>
+                      <Link
+                        href={book.programHref}
+                        className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold transition-all hover:scale-[1.02]"
+                        style={{
+                          background: "#F3F0FF",
+                          color: "#7C3AED",
+                          fontFamily: "var(--font-body)",
+                        }}
+                      >
+                        {book.programLabel}
+                      </Link>
+                    </div>
                   </div>
                 </div>
-
-                {/* Card body */}
-                <div className="p-6 flex flex-col flex-1">
-                  {/* PLACEHOLDER — Replace title with real book title */}
-                  <h3 className="text-lg font-bold text-primary-navy mb-2 leading-snug">
-                    {book.title}
-                  </h3>
-                  {/* PLACEHOLDER — Replace description with real book description */}
-                  <p className="text-sm text-charcoal/70 leading-relaxed flex-1 mb-4">
-                    {book.description}
-                  </p>
-                  {/* PLACEHOLDER — Replace # href with real purchase/info link */}
-                  <a
-                    href={book.availability}
-                    className="inline-flex items-center gap-1.5 text-xs font-bold text-primary-teal hover:text-teal-dark transition-colors"
-                  >
-                    {book.availabilityLabel}
-                    <svg
-                      className="w-3 h-3"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth={2.5}
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M9 5l7 7-7 7" />
-                    </svg>
-                  </a>
-                </div>
-              </div>
+              </article>
             ))}
           </div>
 
