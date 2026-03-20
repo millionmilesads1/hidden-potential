@@ -181,7 +181,7 @@ export default function AnimatedHeroContent() {
           }}
           whileTap={{ scale: 0.96, transition: { duration: 0.05 } }}
         >
-          Explore Pathways
+          Explore Courses
           <span className="btn-icon-circle" aria-hidden="true"><Chevron /></span>
         </MotionLink>
       </motion.div>

@@ -184,7 +184,7 @@ export default function HeroSection() {
                   minHeight: "52px",
                 }}
               >
-                Explore Pathways
+                Explore Courses
               </Link>
             </motion.div>
 
