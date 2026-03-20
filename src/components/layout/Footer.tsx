@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
 
 const programs = [
   { label: "An Enlightened Learner", href: "/programs/enlightened-learner" },
@@ -77,25 +78,43 @@ export default function Footer() {
           </p>
 
           {/* Social links */}
-          <div className="flex items-center gap-5 mt-1">
-            {[
-              { abbr: "FB", label: "Facebook",  href: "https://www.facebook.com/hiddenpotentialskills" },
-              { abbr: "IG", label: "Instagram", href: "https://www.instagram.com/hiddenpotentialskills" },
-              { abbr: "LI", label: "LinkedIn",  href: "https://www.linkedin.com/in/supreetkaur-hiddenpotential" },
-              { abbr: "YT", label: "YouTube",   href: "https://www.youtube.com/@hiddenpotentialskills" },
-            ].map(({ abbr, label, href }) => (
-              <a
-                key={abbr}
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`Hidden Potential on ${label} (opens in new tab)`}
-                className="footer-social text-xs font-semibold cursor-pointer"
-                style={{ fontFamily: "var(--font-body)", letterSpacing: "0.04em" }}
-              >
-                {abbr}
-              </a>
-            ))}
+          <div className="flex items-center gap-4 mt-1">
+            <a
+              href="https://www.facebook.com/hiddenpotentialskills"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Hidden Potential on Facebook (opens in new tab)"
+              className="footer-social cursor-pointer"
+            >
+              <Facebook size={20} strokeWidth={1.5} />
+            </a>
+            <a
+              href="https://www.instagram.com/hiddenpotentialskills"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Hidden Potential on Instagram (opens in new tab)"
+              className="footer-social cursor-pointer"
+            >
+              <Instagram size={20} strokeWidth={1.5} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/supreetkaur-hiddenpotential"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Hidden Potential on LinkedIn (opens in new tab)"
+              className="footer-social cursor-pointer"
+            >
+              <Linkedin size={20} strokeWidth={1.5} />
+            </a>
+            <a
+              href="https://www.youtube.com/@hiddenpotentialskills"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Hidden Potential on YouTube (opens in new tab)"
+              className="footer-social cursor-pointer"
+            >
+              <Youtube size={20} strokeWidth={1.5} />
+            </a>
           </div>
 
           {/* Credential pills */}
