@@ -81,7 +81,7 @@ export default function AnimatedProgramsGrid({
       {/* AEL — Featured, 4/6 cols, taller */}
       <MotionLink
         href={programs[0].href}
-        className={`group md:col-span-4 rounded-2xl p-8 flex flex-col justify-between ${programs[0].hoverClass}`}
+        className={`group relative md:col-span-4 rounded-2xl p-8 flex flex-col justify-between ${programs[0].hoverClass}`}
         style={{
           background: programs[0].lightBg,
           border: `1px solid ${programs[0].borderBase}`,
@@ -92,6 +92,18 @@ export default function AnimatedProgramsGrid({
         variants={cardVariant(0)}
         {...hoverProps}
       >
+        {/* Hybrid badge */}
+        <span
+          className="absolute top-3 right-3 text-[10px] font-semibold px-2.5 py-1 rounded-full"
+          style={{
+            border: "1px solid rgba(124,58,237,0.35)",
+            color: "#7C3AED",
+            fontFamily: "var(--font-body)",
+            background: "rgba(124,58,237,0.05)",
+          }}
+        >
+          🔄 Hybrid
+        </span>
         <div>
           <div className="flex items-center gap-3 mb-5">
             <span
