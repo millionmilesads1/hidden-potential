@@ -169,7 +169,7 @@ export default function AnimatedProgramsGrid({
       {/* Communication — 2/6 cols */}
       <MotionLink
         href={programs[1].href}
-        className={`group md:col-span-2 rounded-2xl p-7 flex flex-col justify-between ${programs[1].hoverClass}`}
+        className={`group relative md:col-span-2 rounded-2xl p-7 flex flex-col justify-between ${programs[1].hoverClass}`}
         style={{
           background: programs[1].lightBg,
           border: `1px solid ${programs[1].borderBase}`,
@@ -180,6 +180,18 @@ export default function AnimatedProgramsGrid({
         variants={cardVariant(1)}
         {...hoverProps}
       >
+        {/* Hybrid badge */}
+        <span
+          className="absolute top-3 right-3 text-[10px] font-semibold px-2.5 py-1 rounded-full"
+          style={{
+            border: "1px solid rgba(124,58,237,0.35)",
+            color: "#7C3AED",
+            fontFamily: "var(--font-body)",
+            background: "rgba(124,58,237,0.05)",
+          }}
+        >
+          🔄 Hybrid
+        </span>
         <div>
           <span
             className="text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4 inline-block"
@@ -225,7 +237,7 @@ export default function AnimatedProgramsGrid({
         <MotionLink
           key={prog.name}
           href={prog.href}
-          className={`group md:col-span-2 rounded-2xl p-7 flex flex-col justify-between ${prog.hoverClass}`}
+          className={`group relative md:col-span-2 rounded-2xl p-7 flex flex-col justify-between ${prog.hoverClass}`}
           style={{
             background: prog.lightBg,
             border: `1px solid ${prog.borderBase}`,
@@ -236,6 +248,18 @@ export default function AnimatedProgramsGrid({
           variants={cardVariant(idx + 2)}
           {...hoverProps}
         >
+          {/* Hybrid badge */}
+          <span
+            className="absolute top-3 right-3 text-[10px] font-semibold px-2.5 py-1 rounded-full"
+            style={{
+              border: "1px solid rgba(124,58,237,0.35)",
+              color: "#7C3AED",
+              fontFamily: "var(--font-body)",
+              background: "rgba(124,58,237,0.05)",
+            }}
+          >
+            🔄 Hybrid
+          </span>
           <div>
             <span
               className="text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4 inline-block"

@@ -36,6 +36,7 @@ import {
   AssessmentStep,
   ProgramCTASection,
 } from "@/components/program/shared";
+import LearnYourWaySelector from "@/components/program/LearnYourWaySelector";
 
 // ── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -391,11 +392,16 @@ export default function AELPage() {
 
           {/* Lora italic transformation tagline */}
           <p
-            className="text-xl md:text-2xl text-white/75 leading-relaxed mb-8 max-w-2xl mx-auto"
+            className="text-xl md:text-2xl text-white/75 leading-relaxed mb-2 max-w-2xl mx-auto"
             style={{ fontFamily: "var(--font-accent)", fontStyle: "italic", textShadow: "0 1px 2px rgba(0,0,0,0.15)" }}
           >
             From hesitation to confidence. From emotional confusion to clarity. From academic
             pressure to resilient growth.
+          </p>
+
+          {/* Hybrid availability */}
+          <p className="text-sm text-white/45 mb-8 max-w-xl mx-auto leading-relaxed">
+            Available in-person in Delhi and online across India
           </p>
 
           {/* Age sub-group tags */}
@@ -447,6 +453,8 @@ export default function AELPage() {
           </div>
         </div>
       </section>
+
+      <LearnYourWaySelector />
 
       {/* ═══════════════════════════════════════════════════════════════════════
           SECTION 2 — WHAT THIS PROGRAM DELIVERS
