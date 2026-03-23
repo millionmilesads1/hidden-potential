@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
@@ -115,25 +116,20 @@ export default function Navbar() {
       >
         <div style={pillStyle} className="flex items-center justify-between">
 
-          {/* Logo - Playfair Display, editorial weight */}
+          {/* Logo */}
           <Link
             href="/"
             aria-label="Hidden Potential - home"
             className="flex items-center shrink-0 select-none cursor-pointer"
-            style={{ fontFamily: "var(--font-display)" }}
           >
-            <span
-              className="text-[17px] font-bold tracking-tight"
-              style={{ color: "#C8A951" }}
-            >
-              Hidden
-            </span>
-            <span
-              className="text-[17px] font-bold tracking-tight"
-              style={{ color: "#7C3AED" }}
-            >
-              {" "}Potential
-            </span>
+            <Image
+              src="/logo_2.png"
+              alt="Hidden Potential"
+              width={340}
+              height={170}
+              className="h-[51px] w-auto object-contain"
+              priority
+            />
           </Link>
 
           {/* Desktop nav - centered via absolute trick */}

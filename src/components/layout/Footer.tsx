@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
 
 const programs = [
@@ -36,17 +37,14 @@ export default function Footer() {
       <div style={{ borderBottom: "1px solid rgba(255,255,255,0.06)" }}>
         <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <Link href="/" className="inline-flex items-center cursor-pointer shrink-0">
-            <span
-              className="text-xl font-bold tracking-tight"
-              style={{ fontFamily: "var(--font-display)", color: "#C8A951" }}
-            >
-              Hidden
-            </span>
-            <span
-              className="text-xl font-bold tracking-tight"
-              style={{ fontFamily: "var(--font-display)", color: "rgba(255,255,255,0.9)" }}
-            >
-              {" "}Potential
+            <span className="inline-flex items-center bg-white rounded-lg px-3 py-1.5">
+              <Image
+                src="/logo_2.png"
+                alt="Hidden Potential"
+                width={260}
+                height={130}
+                className="h-[38px] w-auto object-contain"
+              />
             </span>
           </Link>
 
@@ -80,7 +78,7 @@ export default function Footer() {
           {/* Social links */}
           <div className="flex items-center gap-4 mt-1">
             <a
-              href="https://www.facebook.com/hiddenpotentialskills"
+              href="https://www.facebook.com/supriiyaas?mibextid=ZbWKwL"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Hidden Potential on Facebook (opens in new tab)"
@@ -89,7 +87,7 @@ export default function Footer() {
               <Facebook size={20} strokeWidth={1.5} />
             </a>
             <a
-              href="https://www.instagram.com/hiddenpotentialskills"
+              href="https://www.instagram.com/lifeskillspecialistsupreet"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Hidden Potential on Instagram (opens in new tab)"
@@ -98,7 +96,7 @@ export default function Footer() {
               <Instagram size={20} strokeWidth={1.5} />
             </a>
             <a
-              href="https://www.linkedin.com/in/supreetkaur-hiddenpotential"
+              href="https://www.linkedin.com/in/supreet-kaur-a73415239/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Hidden Potential on LinkedIn (opens in new tab)"

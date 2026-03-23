@@ -41,7 +41,9 @@
       "Bash(__NEW_LINE_70086f92d1f899b7__ done)",
       "Bash(test:*)",
       "Bash(npx shadcn@latest init:*)",
-      "Bash(npx shadcn@latest add:*)"
+      "Bash(npx shadcn@latest add:*)",
+      "Read(//opt/homebrew/bin/**)",
+      "Bash(export PATH=\"/usr/local/bin:/opt/homebrew/bin:$PATH\")"
     ],
     "additionalDirectories": [
       "/Users/me/Desktop/Supreet Project/hidden-potential-site/brand_assets/supreet_client_images"
