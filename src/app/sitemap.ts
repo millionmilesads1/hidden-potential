@@ -4,6 +4,8 @@
  *
  * When blog posts are added via CMS or MDX, dynamically fetch all blog post
  * slugs and add them to this sitemap with priority 0.5 and changeFrequency weekly.
+ *
+ * lastModified dates are static - update them only when content substantively changes.
  */
 
 import { MetadataRoute } from "next";
@@ -11,13 +13,11 @@ import { MetadataRoute } from "next";
 const BASE_URL = "https://hiddenpotentialskills.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
-
   // ── Homepage ──────────────────────────────────────────────────────────────
   const homepage: MetadataRoute.Sitemap = [
     {
       url: BASE_URL,
-      lastModified: now,
+      lastModified: new Date("2025-11-01"),
       changeFrequency: "weekly",
       priority: 1.0,
     },
@@ -32,7 +32,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/programs/art-therapy",
   ].map((path) => ({
     url: `${BASE_URL}${path}`,
-    lastModified: now,
+    lastModified: new Date("2025-11-01"),
     changeFrequency: "monthly",
     priority: 0.9,
   }));
@@ -50,7 +50,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/services/workshops",
   ].map((path) => ({
     url: `${BASE_URL}${path}`,
-    lastModified: now,
+    lastModified: new Date("2025-11-01"),
     changeFrequency: "monthly",
     priority: 0.7,
   }));
@@ -63,7 +63,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/locations/faridabad",
   ].map((path) => ({
     url: `${BASE_URL}${path}`,
-    lastModified: now,
+    lastModified: new Date("2025-11-01"),
     changeFrequency: "monthly",
     priority: 0.8,
   }));
@@ -79,7 +79,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/for/parents",
   ].map((path) => ({
     url: `${BASE_URL}${path}`,
-    lastModified: now,
+    lastModified: new Date("2025-11-01"),
     changeFrequency: "monthly",
     priority: 0.8,
   }));
@@ -92,7 +92,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/assessment/adults",
   ].map((path) => ({
     url: `${BASE_URL}${path}`,
-    lastModified: now,
+    lastModified: new Date("2025-11-01"),
     changeFrequency: "monthly",
     priority: 0.8,
   }));
@@ -101,7 +101,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const about: MetadataRoute.Sitemap = [
     {
       url: `${BASE_URL}/about`,
-      lastModified: now,
+      lastModified: new Date("2025-11-01"),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+  ];
+
+  // ── Success stories ───────────────────────────────────────────────────────
+  const successStories: MetadataRoute.Sitemap = [
+    {
+      url: `${BASE_URL}/success-stories`,
+      lastModified: new Date("2026-01-01"),
       changeFrequency: "monthly",
       priority: 0.7,
     },
@@ -111,7 +121,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const blog: MetadataRoute.Sitemap = [
     {
       url: `${BASE_URL}/blog`,
-      lastModified: now,
+      lastModified: new Date("2026-02-18"),
       changeFrequency: "weekly",
       priority: 0.7,
     },
@@ -123,7 +133,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       "/blog/stress-management-techniques-for-students",
     ].map((path) => ({
       url: `${BASE_URL}${path}`,
-      lastModified: now,
+      lastModified: new Date("2026-02-18"),
       changeFrequency: "weekly" as const,
       priority: 0.6,
     })),
@@ -136,7 +146,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/gallery",
   ].map((path) => ({
     url: `${BASE_URL}${path}`,
-    lastModified: now,
+    lastModified: new Date("2025-11-01"),
     changeFrequency: "monthly",
     priority: 0.6,
   }));
@@ -147,7 +157,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/terms",
   ].map((path) => ({
     url: `${BASE_URL}${path}`,
-    lastModified: now,
+    lastModified: new Date("2025-01-01"),
     changeFrequency: "yearly",
     priority: 0.3,
   }));
@@ -160,6 +170,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...audience,
     ...highPriority,
     ...about,
+    ...successStories,
     ...blog,
     ...medium,
     ...legal,
