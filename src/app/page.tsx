@@ -861,7 +861,46 @@ export default function HomePage() {
       </section>
 
       {/* ═══════════════════════════════════════════
-          6. CREDENTIALS STRIP
+          6. CLIENT LOGOS SLIDER
+          Social proof: institutional partnerships
+      ═══════════════════════════════════════════ */}
+      {(() => {
+        const clients = Array.from({ length: 13 }, (_, i) =>
+          `/images/clients/client-${String(i + 1).padStart(2, "0")}.jpg`
+        );
+        return (
+          <section className="py-14 bg-off-white overflow-hidden">
+            <div className="max-w-6xl mx-auto px-4 mb-10 text-center">
+              <p className="text-[11px] font-bold uppercase tracking-widest mb-2" style={{ color: "#7C3AED", fontFamily: "var(--font-body)" }}>
+                Our Clients
+              </p>
+              <h2 className="text-2xl font-semibold" style={{ color: "#2D2D2D", fontFamily: "var(--font-display)" }}>
+                Trusted by these companies
+              </h2>
+            </div>
+            <Marquee pauseOnHover repeat={3} className="[--duration:40s] [--gap:1.5rem]">
+              {clients.map((src, i) => (
+                <div
+                  key={i}
+                  className="flex items-center justify-center bg-white rounded-xl px-6 py-3 shadow-sm mx-2"
+                  style={{ border: "1px solid #EDE9FE" }}
+                >
+                  <Image
+                    src={src}
+                    alt={`Client ${i + 1}`}
+                    width={120}
+                    height={56}
+                    className="object-contain h-14 w-auto"
+                  />
+                </div>
+              ))}
+            </Marquee>
+          </section>
+        );
+      })()}
+
+      {/* ═══════════════════════════════════════════
+          7. CREDENTIALS STRIP
           Trust & Authority: certifications prominently displayed
       ═══════════════════════════════════════════ */}
       <section style={{ background: "#F8F6F2" }} className="py-14">
