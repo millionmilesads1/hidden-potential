@@ -25,7 +25,7 @@ export type ProgramCard = {
   hoverClass: string;
 };
 
-const MotionLink = motion(Link);
+const MotionLink = motion.create(Link);
 
 const hoverProps = {
   whileHover: {

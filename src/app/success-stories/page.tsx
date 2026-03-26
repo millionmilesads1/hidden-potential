@@ -115,159 +115,173 @@ const stats = [
   },
 ];
 
-// ── Story Categories (Section 3) ──────────────────────────────────────────────
-//
-// Each category has: label, intro text, and an array of story objects.
-// Each story has: name, meta (role/age/location), program, challenge,
-// transformation, quote (optional), linkHref, linkLabel.
-//
-// ⚠️  PLACEHOLDER - Replace all story fields with real client-provided content.
-//     Search for "PLACEHOLDER" in this file to find every field to update.
-//
-const storyCategories = [
+// ── Expert Endorsements (Section 2.5) ────────────────────────────────────────
+const expertTestimonials = [
   {
-    id: "students",
-    label: "Student Transformations",
-    labelColor: "text-primary-teal" as const,
-    intro:
-      "Students aged 10 to 21 who developed confidence, communication, and academic resilience through the An Enlightened Learner program and related services.",
-    stories: [
-      {
-        name: "Arjun M.",
-        meta: "Age 16 · Dwarka, Delhi",
-        program: "An Enlightened Learner",
-        challenge:
-          "Struggled with extreme exam anxiety and inability to speak in class despite strong academic knowledge. Avoided group discussions and refused to participate in school events.",
-        transformation:
-          "After 12 weeks, participated in school debate competition and placed in the top three. Exam scores improved by 15%. Now mentors younger students in confidence building sessions organised by the school.",
-        quote: "I didn't think I could ever speak in front of a crowd. The program didn't just teach me skills - it changed how I see myself.",
-        linkHref: "/programs/enlightened-learner",
-        linkLabel: "Explore An Enlightened Learner →",
-      },
-      {
-        name: "Priya S.",
-        meta: "Age 17 · Gurgaon",
-        program: "Study Skills + Stress Management",
-        challenge:
-          "Board exam pressure leading to recurrent panic attacks and significant academic underperformance despite consistent home study. Parents noticed withdrawal and loss of sleep.",
-        transformation:
-          "Learned NLP-based anchoring and state management techniques across an 8-week intensive. Board exam results exceeded both student and family expectations. Now manages competitive exam pressure independently using tools learned at Hidden Potential.",
-        quote: "My parents noticed the change before I did. I was calmer, more focused, and actually sleeping again before exams.",
-        linkHref: "/services/study-skills",
-        linkLabel: "Explore Study Skills Training →",
-      },
-      {
-        name: "Rahul T.",
-        meta: "Age 20 · South Delhi",
-        program: "Communication Mastery",
-        challenge:
-          "Social anxiety preventing participation in group discussions and campus placement interviews despite a strong academic record. Multiple interview rejections had compounded self-doubt.",
-        transformation:
-          "Completed the Communication Mastery program with focus on assertiveness, public speaking, and confidence anchoring. Successfully cleared campus placements at a top company. Attributes success directly to state management and communication frameworks learned at Hidden Potential.",
-        quote: "Three rejections taught me nothing. Three months with Supreet Kaur taught me everything I needed for that fourth interview - and I got the offer.",
-        linkHref: "/programs/communication-mastery",
-        linkLabel: "Explore Communication Mastery →",
-      },
-    ],
+    name: "Dr. Subodh Kumar",
+    title: "Psychotechnologist, Cognitive Psychologist, Author",
+    initials: "SK",
+    photo: "/images/testimonials/expert-1-dr-subodh-kumar.jpg",
+    quote:
+      "Ms. Supreet Kaur has an exceptional proficiency in communication, team building, life skills training, counseling, time management, and goal setting. Her life skills training sessions and she herself is a valuable asset in any professional environment. Supreet's expertise in counseling and time management underscores her commitment to both personal and professional development.",
   },
   {
-    id: "professionals",
-    label: "Professional Breakthroughs",
-    labelColor: "text-primary-teal" as const,
-    intro:
-      "Working professionals in Delhi NCR who broke through career plateaus, developed leadership presence, and transformed workplace effectiveness.",
-    stories: [
-      {
-        name: "Vikram R.",
-        meta: "Senior Analyst · IT · Gurgaon",
-        program: "NLP Coaching (Individual)",
-        challenge:
-          "Five-plus years in the same role with strong technical skills but an inability to command leadership conversations. Passed over for promotion twice. Colleagues with fewer qualifications were being promoted ahead.",
-        transformation:
-          "After three months of structured NLP coaching with Supreet Kaur at Hidden Potential, received promotion to senior leadership. Attributes the change specifically to belief restructuring and communication pattern rewiring - not additional technical training.",
-        quote: "My manager told me she noticed a different energy in my meetings. I wasn't just smarter - I was finally present, confident, and leading.",
-        linkHref: "/services/nlp-coaching",
-        linkLabel: "Explore NLP Coaching →",
-      },
-      {
-        name: "Aisha K.",
-        meta: "Project Manager · Noida",
-        program: "Communication Mastery + Stress Management",
-        challenge:
-          "Chronic workplace stress affecting daily performance and personal relationships. Communication breakdowns with team members leading to repeated project delays and loss of confidence in leadership ability.",
-        transformation:
-          "Developed emotional state management tools and assertive communication frameworks over a structured 12-week pathway. Team feedback improved significantly in the next quarterly review. Reports feeling in control for the first time in years.",
-        quote: "I stopped surviving my workday and started leading it. That shift came from understanding my own patterns - something no corporate training had ever taught me.",
-        linkHref: "/programs/communication-mastery",
-        linkLabel: "Explore Communication Mastery →",
-      },
-    ],
+    name: "Amitabh S Karmakar",
+    title: "Psychologist, Psychotherapy Healer, NLP Coach - 9 Awards in Human Psychology",
+    initials: "AK",
+    photo: "/images/testimonials/expert-2-amitabh-karmakar.jpg",
+    quote:
+      "I really loved Supreet's memory recalling technique and smart study skills. By which I have got tremendous benefit and my students also got a huge amount of benefits. I strongly recommend Supreet's life skills program to all the kids. It's need of the hour. God bless you, Supreet, continue doing the best work.",
   },
   {
-    id: "women",
-    label: "Women's Empowerment Journeys",
-    labelColor: "text-primary-teal" as const,
-    intro:
-      "Women aged 28 and above who rebuilt confidence, reclaimed identity, and transformed personal and professional trajectories through Self Mastery for Women.",
-    stories: [
-      {
-        name: "Meena D.",
-        meta: "Age 38 · Dwarka, Delhi",
-        program: "Self Mastery for Women",
-        challenge:
-          "After fifteen years of prioritising family responsibilities, had completely lost her sense of personal identity and professional confidence. Described feeling invisible in social situations and unable to make simple decisions without seeking external approval.",
-        transformation:
-          "Through twelve weeks of NLP-based self-mastery at Hidden Potential in Dwarka, started a home business, rebuilt social connections, and regained decision-making confidence. Reports feeling like herself again for the first time in years.",
-        quote: "Somewhere between being a wife, a mother, and a daughter-in-law, I had disappeared. This program helped me find myself again - and that changed everything.",
-        linkHref: "/programs/self-mastery-women",
-        linkLabel: "Explore Self Mastery for Women →",
-      },
-      {
-        name: "Sunita P.",
-        meta: "Age 33 · Noida",
-        program: "Self Mastery + Confidence Building",
-        challenge:
-          "Sustained workplace bullying over two years had severely eroded self-worth. Developed anxiety around speaking in meetings and avoided professional interactions wherever possible.",
-        transformation:
-          "NLP confidence anchoring and belief restructuring through Hidden Potential transformed workplace presence within eight weeks. Now leads team meetings independently and mentors junior colleagues.",
-        quote: "I used to rehearse what I would say in meetings and still go blank. Now I walk in knowing I have something valuable to contribute - and I say it.",
-        linkHref: "/services/confidence-building",
-        linkLabel: "Explore Confidence Building →",
-      },
-    ],
+    name: "Kaushik Mahapatraasia",
+    title: "Leading Leadership Coach, International Speaker, Founder - Indian Leadership Academy",
+    initials: "KM",
+    photo: "/images/testimonials/expert-3-kaushik-mahapatra.jpg",
+    quote:
+      "Supreet's mastery on life skills is truly commendable. I am sure her ability to navigate challenges with resilience and adaptability will help her excel in every aspect of life. Thank you for being a role model of wisdom and integrity. Keep training and coaching, and thanks for supporting Indian Leadership Academy as always.",
   },
   {
-    id: "trainers",
-    label: "Trainer Certification Success",
-    labelColor: "text-primary-teal" as const,
-    intro:
-      "Aspiring trainers and educators who completed the Train the Trainer Certification and now deliver life skills programs across Delhi NCR.",
-    stories: [
-      {
-        name: "Deepak S.",
-        meta: "Former HR Manager · Delhi",
-        program: "Train the Trainer Certification (3-Month)",
-        challenge:
-          "Wanted to transition from a corporate career into training and facilitation but had no structured methodology, curriculum design experience, or formal certification to attract school and institutional clients.",
-        transformation:
-          "Completed the 3-month Train the Trainer Certification at Hidden Potential. Now delivers life skills workshops at three schools across Delhi NCR. Has independently trained over 200 students and is in partnership discussions with two additional schools.",
-        quote: "The certification gave me the framework I was missing. I didn't just learn what to teach - I learned how to transform a room full of teenagers into engaged, reflective learners.",
-        linkHref: "/programs/train-the-trainer",
-        linkLabel: "Explore Train the Trainer Certification →",
-      },
-      {
-        name: "Kavita M.",
-        meta: "Former School Teacher · Gurgaon",
-        program: "Train the Trainer Certification",
-        challenge:
-          "School teacher wanting to go beyond traditional classroom instruction and engage students through life skills facilitation. Felt constrained by conventional pedagogy and wanted structured methodology to deliver meaningful change.",
-        transformation:
-          "NLP integration and curriculum design training from Hidden Potential transformed classroom engagement measurably. School administration reports improved student participation across all assessed metrics. Now independently certified to deliver life skills sessions with a dedicated slot in the school timetable.",
-        quote: "I became a teacher because I wanted to change lives. This certification finally gave me the tools to actually do that - not just deliver content, but facilitate real growth.",
-        linkHref: "/programs/train-the-trainer",
-        linkLabel: "Explore Train the Trainer Certification →",
-      },
-    ],
+    name: "Nita Arora",
+    title: "Principal and Director, SVIS",
+    initials: "NA",
+    photo: "/images/testimonials/expert-4-nita-arora.jpg",
+    quote:
+      "Supreet understands child, adolescent and adults psychology. Her degree of empathy is very high. She brings out the hidden potential of her clients and helps them develop it further. I have seen her work selflessly during the COVID times, grooming many youngsters. Her book is a gem of a book worth prescribing as a life skills book.",
+  },
+  {
+    name: "Brig Arun Gupta",
+    title: "Corporate Trainer, Coach and Author",
+    initials: "AG",
+    photo: "/images/testimonials/expert-5-brig-arun-gupta.jpg",
+    quote:
+      "I have known Supreet for quite some time. She is a wonderful trainer and a coach who possesses the ability to tackle various problems faced by clients with the most effective skills. Supreet's clients have all the praise for her: she first understands the challenges faced by them and then finds the most effective way to deal with it. I very strongly recommend Supreet for coaching on life skills.",
+  },
+];
+
+// ── Community Reviews (Section 3) ────────────────────────────────────────────
+// Real Google reviews from Hidden Potential participants.
+const communityReviews = [
+  {
+    name: "SarabjitMadan",
+    initials: "SM",
+    stars: 5,
+    quote:
+      "We connected with Supreet Mam (Hidden Potential) last year for our son who was studying in 7th standard. We had been researching ways to improve memory retention and effective learning techniques. We have gained immensely from these sessions. She introduced us to techniques such as focussing on the concept, marking the key words, and active recall. The effect has been nothing short of amazing. Our son has even become self reliant in implementing them. Her passion to bring the best potential out of people is a noble initiative.",
+  },
+  {
+    name: "Amrita Kaur",
+    initials: "AK",
+    stars: 5,
+    quote:
+      "It has been a fantabulous experience. Supreet ma'am is not only an awesome life skill coach but also one of the best humans I've come across till today. My 13 year old boy loved her lessons and is trying to implement them in his personal as well as student life. Such kind of life skill training is not going to be less than a blessing.",
+  },
+  {
+    name: "Lalit Sharma",
+    initials: "LS",
+    stars: 5,
+    quote:
+      "I approached Supreet Ma'am for the career counselling of my son and the results are unbelievable. A few weeks ago my son had no clarity about his vision; today he is clear about his goals and what he has to achieve in his life. My family is really thankful to Supreet ma'am for helping my kid in career counselling and making his life vision clear.",
+  },
+  {
+    name: "Suhani Bhardwaj",
+    initials: "SB",
+    stars: 5,
+    quote:
+      "Supreet Ma'am's Hidden Potential counselling session with the school students was extremely impactful. She connects in a friendly and motivating way, helping us to understand our strengths, weaknesses, and career possibilities. Her explanations were clear, relatable, and filled with real-life examples. We walked out feeling more confident, focused, and aware of our goals.",
+  },
+  {
+    name: "Balquise Banu",
+    initials: "BB",
+    stars: 5,
+    quote:
+      "Supreet Kaur is an empathetic person who understands our needs in the journey of self mastery and creates modules accordingly. Her authenticity and making herself available makes Hidden Potential stand out. I personally believe she is excellent in her mentoring approach and hand holds till we reach our goals. Anyone who is interested to enrich their life can approach Hidden Potential to achieve their aspirations.",
+  },
+  {
+    name: "Sanjeev Srivastava",
+    initials: "SS",
+    stars: 5,
+    quote:
+      "My niece underwent career counselling and a detailed analysis on her personality traits for the right career by Supreet Ma'am. I must say that this analysis was done so diligently and professionally. It has helped her a lot and there is a clear sense of direction now. Highly appreciate Supreet Ma'am.",
+  },
+  {
+    name: "Anita Chitkara",
+    role: "Mentor Teacher",
+    initials: "AC",
+    stars: 5,
+    quote:
+      "The destressing and growth mindset workshop by Hidden Potential, led by Ms. Supreet Kaur at Government Coed Sarvodaya School, Dwarka, was transformative. Teachers learned the Power of Yet, fostering a growth mindset, and the importance of setting small, achievable goals. Ms. Kaur's engaging approach and practical insights left a lasting impact, inspiring educators to embrace challenges with resilience.",
+  },
+  {
+    name: "Jyotsna Chambel",
+    initials: "JC",
+    stars: 5,
+    quote:
+      "Just attended an amazing session by Ms. Supreet Kaur from Hidden Potential. She was engaging, knowledgeable, and inspiring. We loved how she shared real-life examples and success stories, making it relatable and motivating. The session was super informative, and the students gained valuable insights into various life skills. The Q&A session was super helpful too!",
+  },
+  {
+    name: "Smita Bhatnagar",
+    role: "Local Guide",
+    initials: "SB",
+    stars: 5,
+    quote:
+      "Supreet led a session at NEEEV's Special Skill Workshop with topics on Digital Transformation, AI and Financial Literacy. These were so apt for our Startup Stormers that they really enjoyed the session. She has command over the language and her topics. She made it so easy to understand for girls. It was a great session.",
+  },
+  {
+    name: "Saumya Srivastava",
+    initials: "SS",
+    stars: 5,
+    quote:
+      "I enrolled my kids in a 10-day life skills camp. They learned about goal setting and time management. The best part of this camp was digital literacy, which is essential in today's environment. Thank you, Supreet Kaur, for your efforts.",
+  },
+  {
+    name: "Garima Pandey",
+    initials: "GP",
+    stars: 5,
+    quote:
+      "Today, I had the privilege of attending a session with Mrs. Supreet Kaur, and it was truly remarkable. The session offered valuable learnings and meaningful life lessons. Her programs provide an excellent platform for gaining new insights and inspiration. Thank you, ma'am, for conducting such an enriching and impactful session.",
+  },
+  {
+    name: "Priya B",
+    initials: "PB",
+    stars: 5,
+    quote:
+      "Thank you for the great session. Nurturing life skill sessions clearly help us understand the significance of life skills that has to be taught to students appropriately. Very happy to listen and the discussions we had throughout the session were productive. Thanks Supreet ma'am for her presentation. You nailed it!",
+  },
+  {
+    name: "Tanuja Sharma",
+    initials: "TS",
+    stars: 5,
+    quote:
+      "It is a great initiation by the mentor. It helped kids enhance their speaking and listening skills. They have become more interactive and clear in thoughts. This session also emphasised developing a healthy lifestyle among the children. We really appreciate your vision and experience.",
+  },
+  {
+    name: "Abhilasha Dagar",
+    initials: "AD",
+    stars: 4,
+    quote:
+      "I must appreciate Supreet ma'am for the guidance she provided in the Train the Trainer Course. This one-month course gave practical knowledge on how life skills could be applied in a professional field as well as help you grow as a person. I was able to take a session for teachers under Supreet ma'am's guidance, which boosted my morale. I am grateful for a mentor like her.",
+  },
+  {
+    name: "Bhavna Bhagel",
+    initials: "BB",
+    stars: 5,
+    quote:
+      "It was the best experience with Supreet Kaur ma'am. I feel really blessed to get this opportunity. The session was full of knowledge and fun. The importance of life skills was taught in a very innovative way. Really loved it. It would be a pleasure to attend more sessions.",
+  },
+  {
+    name: "Anu Sandhu",
+    initials: "AS",
+    stars: 5,
+    quote:
+      "Thank you for sharing your vast knowledge and wealth of experiences. We thoroughly enjoyed your book and recommend it to every parent and teacher in our life. Absolutely love your work!",
+  },
+  {
+    name: "Neelam Agarwal",
+    initials: "NA",
+    stars: 4,
+    quote:
+      "Hidden Potential is a great platform for individuals who are looking for self improvement and to learn important life skills. I am part of this from a month and I am seeing a good change in me already.",
   },
 ];
 
@@ -453,133 +467,209 @@ export default function SuccessStoriesPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 3 - SUCCESS STORIES BY CATEGORY
-          Background: White
+          SECTION 2.5 - EXPERT ENDORSEMENTS
+          Background: Dark navy gradient
       ═══════════════════════════════════════════════════════════════════════ */}
-      <section className="bg-white py-20">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="mb-14">
-            <SectionLabel>Their Stories</SectionLabel>
-            <h2 className="text-3xl md:text-4xl font-bold text-primary-navy mb-4 leading-tight max-w-3xl">
-              Transformations Across Every Age, Stage, and Challenge
+      <section
+        className="relative overflow-hidden py-20"
+        style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }}
+      >
+        {/* Ambient glow accents */}
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background:
+              "radial-gradient(circle at 10% 60%, rgba(200,169,81,0.06) 0%, transparent 45%), radial-gradient(circle at 90% 25%, rgba(109,40,217,0.10) 0%, transparent 50%)",
+          }}
+        />
+
+        <div className="relative max-w-7xl mx-auto px-6">
+          {/* Section header */}
+          <div className="text-center mb-14">
+            <p className="text-xs font-bold uppercase tracking-widest text-primary-gold mb-3">
+              Endorsed by Industry Leaders
+            </p>
+            <h2
+              className="text-3xl md:text-4xl font-bold text-white leading-tight mb-4"
+              style={{ textShadow: "0 1px 2px rgba(0,0,0,0.15)" }}
+            >
+              What India&apos;s Top Professionals Say
             </h2>
-            <p className="text-base text-charcoal/75 leading-relaxed max-w-3xl">
-              From students finding their voice to professionals commanding boardrooms, from women
-              reclaiming their identity to teachers becoming certified trainers - life skills
-              training at Hidden Potential produces transformation that is visible, measurable, and
-              lasting. Stories below are organised by audience group. Participant names have been
-              abbreviated or anonymised to protect privacy.
+            <p className="text-base text-white/55 leading-relaxed max-w-2xl mx-auto">
+              Psychologists, educators, corporate trainers, and leadership coaches from across
+              India endorse Supreet Kaur&apos;s life skills methodology and training impact.
             </p>
           </div>
 
-          {/* ── 4 story categories ── */}
-          <div className="flex flex-col gap-20">
-            {storyCategories.map((category) => (
-              <div key={category.id}>
+          {/* Cards grid: 3 on top, 2 centered below at xl */}
+          {/* xl uses a 6-col grid with each card spanning 2; card 4 starts at col 2 to center the bottom pair */}
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-6 gap-6">
+            {expertTestimonials.map((t, idx) => (
+              <div
+                key={t.name}
+                className={`card-glass-border flex flex-col rounded-2xl p-7 border border-white/10
+                  ${idx === 3 ? "xl:col-start-2 xl:col-span-2" : "xl:col-span-2"}
+                  ${idx === 4 ? "md:col-span-2 xl:col-span-2" : ""}
+                `}
+              >
+                {/* Opening quote mark */}
+                <div
+                  className="text-5xl leading-none mb-3 select-none"
+                  style={{ color: "#C8A951", fontFamily: "Georgia, serif" }}
+                  aria-hidden="true"
+                >
+                  &ldquo;
+                </div>
 
-                {/* Category header */}
-                <div className="border-l-4 border-primary-gold pl-5 mb-8">
-                  <p className="text-xs font-bold uppercase tracking-widest text-primary-gold mb-1">
-                    {category.label}
-                  </p>
-                  <p className="text-sm text-charcoal/70 leading-relaxed max-w-2xl">
-                    {category.intro}
+                {/* Quote body */}
+                <blockquote
+                  className="flex-1 text-[15px] text-white/80 leading-relaxed mb-6"
+                  style={{ fontFamily: "var(--font-accent)", fontStyle: "italic" }}
+                >
+                  {t.quote}
+                </blockquote>
+
+                {/* Gold divider */}
+                <div
+                  className="w-full h-px mb-5"
+                  style={{ background: "linear-gradient(90deg, transparent 0%, rgba(200,169,81,0.4) 30%, rgba(200,169,81,0.4) 70%, transparent 100%)" }}
+                />
+
+                {/* Author */}
+                <div className="mb-4">
+                  <p className="text-sm font-bold text-white leading-snug">{t.name}</p>
+                  <p
+                    className="text-xs text-white/50 leading-relaxed mt-0.5"
+                    title={t.title}
+                    style={{
+                      display: "-webkit-box",
+                      WebkitLineClamp: 2,
+                      WebkitBoxOrient: "vertical" as const,
+                      overflow: "hidden",
+                    }}
+                  >
+                    {t.title}
                   </p>
                 </div>
 
-                {/* Story cards grid */}
-                {/* PLACEHOLDER - Replace story data in the storyCategories array above */}
-                <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
-                  {category.stories.map((story, idx) => (
-                    <div
-                      key={idx}
-                      className="bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow flex flex-col overflow-hidden"
+                {/* 5-star rating */}
+                <div className="flex gap-1" aria-label="5 out of 5 stars">
+                  {[1, 2, 3, 4, 5].map((n) => (
+                    <svg
+                      key={n}
+                      className="w-4 h-4 flex-shrink-0"
+                      viewBox="0 0 20 20"
+                      fill="#C8A951"
+                      aria-hidden="true"
                     >
-                      {/* Card top - gold accent bar */}
-                      <div
-                        className="h-1 w-full"
-                        style={{ background: "#C8A951" }}
-                      />
-
-                      <div className="p-6 flex flex-col flex-1">
-                        {/* Name + meta */}
-                        {/* PLACEHOLDER - Replace name and meta with real participant details */}
-                        <div className="mb-4">
-                          <p className="font-bold text-primary-navy text-[15px] leading-snug">
-                            {story.name}
-                          </p>
-                          <p className="text-xs text-charcoal/50 mt-0.5 leading-relaxed">
-                            {story.meta}
-                          </p>
-                          <span
-                            className="inline-block mt-2 text-[10px] font-bold uppercase tracking-wider text-primary-teal bg-teal-light px-2 py-0.5 rounded-full"
-                          >
-                            {story.program}
-                          </span>
-                        </div>
-
-                        {/* The Challenge */}
-                        {/* PLACEHOLDER - Replace challenge text with real participant's challenge */}
-                        <div className="mb-4">
-                          <p className="text-[11px] font-bold uppercase tracking-wider text-primary-navy mb-1.5">
-                            The Challenge
-                          </p>
-                          <p className="text-sm text-charcoal/70 leading-relaxed">
-                            {story.challenge}
-                          </p>
-                        </div>
-
-                        {/* The Transformation */}
-                        {/* PLACEHOLDER - Replace transformation text with real outcome details */}
-                        <div className="mb-4 flex-1">
-                          <p className="text-[11px] font-bold uppercase tracking-wider text-primary-teal mb-1.5">
-                            The Transformation
-                          </p>
-                          <p className="text-sm text-charcoal/70 leading-relaxed">
-                            {story.transformation}
-                          </p>
-                        </div>
-
-                        {/* Quote - Lora italic (only shown if quote is provided) */}
-                        {/* PLACEHOLDER - Replace empty string with actual participant quote, or remove this block if no quote */}
-                        {story.quote && (
-                          <blockquote
-                            className="border-l-2 border-primary-gold pl-3 mb-4"
-                            style={{
-                              fontFamily: "var(--font-accent)",
-                              fontStyle: "italic",
-                            }}
-                          >
-                            <p className="text-sm text-charcoal/80 leading-relaxed">
-                              &ldquo;{story.quote}&rdquo;
-                            </p>
-                          </blockquote>
-                        )}
-
-                        {/* Program link */}
-                        <Link
-                          href={story.linkHref}
-                          className="mt-auto text-xs font-semibold text-primary-teal hover:text-teal-dark transition-colors"
-                        >
-                          {story.linkLabel}
-                        </Link>
-                      </div>
-                    </div>
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
                   ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════════════════
+          SECTION 3 - COMMUNITY REVIEWS
+          Background: off-white
+      ═══════════════════════════════════════════════════════════════════════ */}
+      <section className="bg-off-white py-20">
+        <div className="max-w-7xl mx-auto px-6">
+
+          {/* Section header */}
+          <div className="mb-12">
+            <div className="flex items-center gap-3 mb-3">
+              <SectionLabel>Voices from Our Community</SectionLabel>
+              {/* Google Reviews badge */}
+              <span
+                className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full border mb-3"
+                style={{
+                  color: "#2D1B69",
+                  borderColor: "rgba(45,27,105,0.2)",
+                  background: "rgba(45,27,105,0.05)",
+                }}
+              >
+                <svg className="w-3 h-3" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                  <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                  <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/>
+                  <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                </svg>
+                Google Reviews
+              </span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary-navy mb-4 leading-tight max-w-3xl">
+              Real Experiences from Real Participants
+            </h2>
+            <p className="text-base text-charcoal/70 leading-relaxed max-w-2xl">
+              Students, parents, educators, and professionals share what changed after working
+              with Supreet Kaur and the Hidden Potential team.
+            </p>
+          </div>
+
+          {/* Masonry columns layout */}
+          <div className="columns-1 md:columns-2 xl:columns-3 gap-5">
+            {communityReviews.map((review) => (
+              <div
+                key={review.name + review.quote.slice(0, 20)}
+                className="break-inside-avoid mb-5 bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow p-5 flex flex-col"
+              >
+                {/* Stars */}
+                <div
+                  className="flex gap-0.5 mb-3"
+                  aria-label={`${review.stars} out of 5 stars`}
+                >
+                  {[1, 2, 3, 4, 5].map((n) => (
+                    <svg
+                      key={n}
+                      className="w-3.5 h-3.5 flex-shrink-0"
+                      viewBox="0 0 20 20"
+                      fill={n <= review.stars ? "#C8A951" : "#E5E7EB"}
+                      aria-hidden="true"
+                    >
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  ))}
+                </div>
+
+                {/* Quote */}
+                <p className="text-sm text-charcoal/80 leading-relaxed flex-1 mb-4">
+                  &ldquo;{review.quote}&rdquo;
+                </p>
+
+                {/* Author row */}
+                <div className="flex items-center gap-3 pt-3 border-t border-gray-100">
+                  <div
+                    className="w-9 h-9 rounded-full flex-shrink-0 flex items-center justify-center text-xs font-bold text-white"
+                    style={{ background: "#7C3AED" }}
+                  >
+                    {review.initials}
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold text-primary-navy leading-snug">
+                      {review.name}
+                    </p>
+                    {review.role && (
+                      <p className="text-xs text-charcoal/50 leading-relaxed">{review.role}</p>
+                    )}
+                  </div>
                 </div>
               </div>
             ))}
           </div>
 
           {/* Internal link nudge */}
-          <div className="mt-16 text-center">
+          <div className="mt-10 text-center">
             <p className="text-sm text-charcoal/50">
-              Want to read more?{" "}
+              Want to connect with past participants?{" "}
               <Link
                 href="/contact"
                 className="font-semibold text-primary-teal hover:text-teal-dark transition-colors"
               >
-                Contact us to speak with a past participant →
+                Reach out to us →
               </Link>
             </p>
           </div>

@@ -59,7 +59,7 @@ function Chevron() {
 }
 
 // ── Motion-enhanced Link ──────────────────────────────────────────────────────
-const MotionLink = motion(Link);
+const MotionLink = motion.create(Link);
 
 // ── Main component ────────────────────────────────────────────────────────────
 export default function AnimatedHeroContent() {
@@ -122,7 +122,7 @@ export default function AnimatedHeroContent() {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.4, delay: headlineDelay }}
       >
-        &mdash; Mark Twain
+        - Mark Twain
       </motion.p>
 
       {/* Subtitle - slides from left */}
