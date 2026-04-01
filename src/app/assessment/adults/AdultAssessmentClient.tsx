@@ -498,8 +498,40 @@ export default function AdultAssessmentClient() {
     }
 
     setResults({ totalScore, overallPercent, band, bandColor, bandBg, bandEmoji, bandDesc, sectionScores });
+    try {
+      const webhookUrl = process.env.NEXT_PUBLIC_SHEETS_WEBHOOK_URL;
+      if (webhookUrl) {
+        fetch(webhookUrl, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            type: 'adult',
+            name: personInfo.name,
+            age: personInfo.age,
+            profession: personInfo.profession,
+            city: personInfo.city,
+            email: personInfo.email,
+            phone: personInfo.phone,
+            totalScore,
+            resultLevel: band,
+            sections: {
+              healthPhysical: sectionScores.health.score,
+              emotionalAwareness: sectionScores.emotional.score,
+              spiritualConnection: sectionScores.spiritual.score,
+              loveIntimacy: sectionScores.love.score,
+              socialLife: sectionScores.social.score,
+              careerProfessional: sectionScores.career.score,
+              moneyFinancial: sectionScores.financial.score,
+              qualityOfLife: sectionScores.quality.score,
+              purposeMeaning: sectionScores.purpose.score,
+              personalGrowth: sectionScores.growth.score,
+            },
+          }),
+        }).catch(() => {});
+      }
+    } catch (_) {}
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, [answers, validateSection]);
+  }, [answers, validateSection, personInfo]);
 
   if (results) {
     return (

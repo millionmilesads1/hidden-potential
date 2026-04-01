@@ -402,8 +402,39 @@ export default function AssessmentClient() {
     }
 
     setResults({ overallPercent: overall, band, bandColor, bandBg, bandEmoji, bandDesc, sectionScores });
+    try {
+      const webhookUrl = process.env.NEXT_PUBLIC_SHEETS_WEBHOOK_URL;
+      if (webhookUrl) {
+        fetch(webhookUrl, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            type: 'student',
+            name: studentInfo.studentName,
+            age: studentInfo.studentAge,
+            school: studentInfo.schoolName,
+            email: '',
+            phone: studentInfo.parentPhone,
+            totalScore,
+            resultLevel: band,
+            sections: {
+              selfAwareness: sectionScores.section1.score,
+              emotionalIntelligence: sectionScores.section3.score,
+              communication: 0,
+              socialSkills: sectionScores.section5.score,
+              responsibility: sectionScores.section2.score,
+              criticalThinking: 0,
+              creativity: 0,
+              digitalLiteracy: sectionScores.section4.score,
+              healthWellness: 0,
+              goalSetting: 0,
+            },
+          }),
+        }).catch(() => {});
+      }
+    } catch (_) {}
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, [answers]);
+  }, [answers, studentInfo]);
 
   if (results) {
     return (
