@@ -407,6 +407,7 @@ export default function AssessmentClient() {
       if (webhookUrl) {
         fetch(webhookUrl, {
           method: 'POST',
+          mode: 'no-cors',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
             type: 'student',
