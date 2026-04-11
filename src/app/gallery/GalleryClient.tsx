@@ -441,7 +441,7 @@ function MarqueeRow({
               src={img.src}
               alt={img.alt}
               fill
-              className="object-cover transition-transform duration-500 group-hover:scale-110"
+              className="object-cover object-top transition-transform duration-500 group-hover:scale-110"
               sizes="224px"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -471,7 +471,7 @@ function BentoGrid({
     return (
       <div className={cn("grid gap-3", display.length === 1 ? "grid-cols-1" : "grid-cols-2")}>
         {display.map((img, i) => (
-          <BentoCell key={i} img={img} spanClass="col-span-1" heightClass="h-56" index={i} onClick={() => onImageClick(i)} />
+          <BentoCell key={i} img={img} spanClass="col-span-1" heightClass="h-64" index={i} onClick={() => onImageClick(i)} />
         ))}
       </div>
     );
@@ -485,7 +485,7 @@ function BentoGrid({
         // Re-apply wide at index 5 for visual rhythm in 8-image grids.
         const isWide   = i === 0 || i === 5;
         const spanCls  = isWide ? "col-span-2 sm:col-span-2" : "col-span-1";
-        const heightCls = isWide ? "h-64 sm:h-72" : "h-44 sm:h-48";
+        const heightCls = isWide ? "h-80 sm:h-96" : "h-64 sm:h-72";
         return (
           <BentoCell key={i} img={img} spanClass={spanCls} heightClass={heightCls} index={i} onClick={() => onImageClick(i)} />
         );
@@ -540,7 +540,7 @@ function BentoCell({
           src={img.src}
           alt={img.alt}
           fill
-          className="object-cover transition-transform duration-500 group-hover:scale-105"
+          className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
           sizes={spanClass.includes("col-span-2") ? "(max-width: 640px) 100vw, 66vw" : "(max-width: 640px) 50vw, 33vw"}
         />
         {/* Gradient overlay */}
