@@ -190,8 +190,8 @@ const CATEGORIES: CategoryDef[] = [
       "Supreet Kaur receiving an award for excellence in life skills training",
       "Hidden Potential certification and recognition award",
     ],
-    // img-002: office meeting photo - top of frame is ceiling, center shows subjects
-    objectPositions: [undefined, "object-center"],
+    // img-002: two people at desk - use top to show faces
+    objectPositions: [undefined, "object-top"],
   },
   {
     id: "07_Media_Press",
@@ -202,9 +202,9 @@ const CATEGORIES: CategoryDef[] = [
       "Supreet Kaur featured in a media interview about life skills education",
       "Hidden Potential press coverage on life skills training in Delhi",
     ],
-    // img-001: phone screenshot with black status bar at top, center shows bookstore photo
+    // img-001: woman with book - use top to show face
     // img-002: selfie photo with subject at bottom of frame
-    objectPositions: ["object-center", "object-bottom"],
+    objectPositions: ["object-top", "object-bottom"],
   },
   {
     id: "08_Book",
