@@ -15,6 +15,7 @@ interface GalleryImage {
   alt: string;
   category: string;
   categoryId: string;
+  objectPosition?: string;
 }
 
 interface CategoryDef {
@@ -23,6 +24,7 @@ interface CategoryDef {
   count: number;
   badgeVariant: "purple" | "gold" | "teal";
   altTexts: string[];
+  objectPositions?: (string | undefined)[];
 }
 
 interface LightboxState {
@@ -188,6 +190,8 @@ const CATEGORIES: CategoryDef[] = [
       "Supreet Kaur receiving an award for excellence in life skills training",
       "Hidden Potential certification and recognition award",
     ],
+    // img-002: office meeting photo - top of frame is ceiling, center shows subjects
+    objectPositions: [undefined, "object-center"],
   },
   {
     id: "07_Media_Press",
@@ -198,6 +202,9 @@ const CATEGORIES: CategoryDef[] = [
       "Supreet Kaur featured in a media interview about life skills education",
       "Hidden Potential press coverage on life skills training in Delhi",
     ],
+    // img-001: phone screenshot with black status bar at top, center shows bookstore photo
+    // img-002: selfie photo with subject at bottom of frame
+    objectPositions: ["object-center", "object-bottom"],
   },
   {
     id: "08_Book",
@@ -263,10 +270,11 @@ const CATEGORIES: CategoryDef[] = [
 
 function makeCategoryImages(cat: CategoryDef): GalleryImage[] {
   return Array.from({ length: cat.count }, (_, i) => ({
-    src:        `/gallery/${cat.id}/img-${String(i + 1).padStart(3, "0")}.jpg`,
-    alt:        cat.altTexts[i] ?? `${cat.label} - Hidden Potential life skills training in Delhi`,
-    category:   cat.label,
-    categoryId: cat.id,
+    src:            `/gallery/${cat.id}/img-${String(i + 1).padStart(3, "0")}.jpg`,
+    alt:            cat.altTexts[i] ?? `${cat.label} - Hidden Potential life skills training in Delhi`,
+    category:       cat.label,
+    categoryId:     cat.id,
+    objectPosition: cat.objectPositions?.[i],
   }));
 }
 
@@ -540,7 +548,7 @@ function BentoCell({
           src={img.src}
           alt={img.alt}
           fill
-          className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+          className={cn("object-cover transition-transform duration-500 group-hover:scale-105", img.objectPosition ?? "object-top")}
           sizes={spanClass.includes("col-span-2") ? "(max-width: 640px) 100vw, 66vw" : "(max-width: 640px) 50vw, 33vw"}
         />
         {/* Gradient overlay */}
