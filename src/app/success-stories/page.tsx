@@ -25,6 +25,7 @@
  */
 
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 // ── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -121,7 +122,7 @@ const expertTestimonials = [
     name: "Dr. Subodh Kumar",
     title: "Psychotechnologist, Cognitive Psychologist, Author",
     initials: "SK",
-    photo: "/images/testimonials/expert-1-dr-subodh-kumar.jpg",
+    photo: "/Dr Subodh Kumar.jpeg",
     quote:
       "Ms. Supreet Kaur has an exceptional proficiency in communication, team building, life skills training, counseling, time management, and goal setting. Her life skills training sessions and she herself is a valuable asset in any professional environment. Supreet's expertise in counseling and time management underscores her commitment to both personal and professional development.",
   },
@@ -129,15 +130,15 @@ const expertTestimonials = [
     name: "Amitabh S Karmakar",
     title: "Psychologist, Psychotherapy Healer, NLP Coach - 9 Awards in Human Psychology",
     initials: "AK",
-    photo: "/images/testimonials/expert-2-amitabh-karmakar.jpg",
+    photo: "/Amitabh S Karmakar.webp",
     quote:
       "I really loved Supreet's memory recalling technique and smart study skills. By which I have got tremendous benefit and my students also got a huge amount of benefits. I strongly recommend Supreet's life skills program to all the kids. It's need of the hour. God bless you, Supreet, continue doing the best work.",
   },
   {
-    name: "Kaushik Mahapatraasia",
+    name: "Kaushik Mahapatra",
     title: "Leading Leadership Coach, International Speaker, Founder - Indian Leadership Academy",
     initials: "KM",
-    photo: "/images/testimonials/expert-3-kaushik-mahapatra.jpg",
+    photo: "/Mr Kaushik Mahapatra.jpeg",
     quote:
       "Supreet's mastery on life skills is truly commendable. I am sure her ability to navigate challenges with resilience and adaptability will help her excel in every aspect of life. Thank you for being a role model of wisdom and integrity. Keep training and coaching, and thanks for supporting Indian Leadership Academy as always.",
   },
@@ -145,7 +146,7 @@ const expertTestimonials = [
     name: "Nita Arora",
     title: "Principal and Director, SVIS",
     initials: "NA",
-    photo: "/images/testimonials/expert-4-nita-arora.jpg",
+    photo: "/Mrs. Nita Arora.jpeg",
     quote:
       "Supreet understands child, adolescent and adults psychology. Her degree of empathy is very high. She brings out the hidden potential of her clients and helps them develop it further. I have seen her work selflessly during the COVID times, grooming many youngsters. Her book is a gem of a book worth prescribing as a life skills book.",
   },
@@ -153,9 +154,17 @@ const expertTestimonials = [
     name: "Brig Arun Gupta",
     title: "Corporate Trainer, Coach and Author",
     initials: "AG",
-    photo: "/images/testimonials/expert-5-brig-arun-gupta.jpg",
+    photo: "/Brig Arun Gupta.jpeg",
     quote:
       "I have known Supreet for quite some time. She is a wonderful trainer and a coach who possesses the ability to tackle various problems faced by clients with the most effective skills. Supreet's clients have all the praise for her: she first understands the challenges faced by them and then finds the most effective way to deal with it. I very strongly recommend Supreet for coaching on life skills.",
+  },
+  {
+    name: "Anita Chitkara",
+    title: "Mentor Teacher",
+    initials: "AC",
+    photo: "/Ankita Chitkara.jpeg",
+    quote:
+      "The destressing and growth mindset workshop by Hidden Potential, led by Ms. Supreet Kaur at Government Coed Sarvodaya School, Sector 17, Dwarka, was transformative. Teachers learned the Power of Yet, fostering a growth mindset, and the importance of setting small, achievable goals. The session emphasized the Mood Meter for emotional awareness and managing stress effectively. Practical destressing techniques were shared, empowering teachers to create a positive learning environment. Ms. Kaur's engaging approach and practical insights left a lasting impact, inspiring educators to embrace challenges with resilience and guide their students toward continuous growth.",
   },
 ];
 
@@ -501,16 +510,12 @@ export default function SuccessStoriesPage() {
             </p>
           </div>
 
-          {/* Cards grid: 3 on top, 2 centered below at xl */}
-          {/* xl uses a 6-col grid with each card spanning 2; card 4 starts at col 2 to center the bottom pair */}
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-6 gap-6">
-            {expertTestimonials.map((t, idx) => (
+          {/* Cards grid: 3 per row at xl (6 cards total = 2 rows of 3) */}
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+            {expertTestimonials.map((t) => (
               <div
                 key={t.name}
-                className={`card-glass-border flex flex-col rounded-2xl p-7 border border-white/10
-                  ${idx === 3 ? "xl:col-start-2 xl:col-span-2" : "xl:col-span-2"}
-                  ${idx === 4 ? "md:col-span-2 xl:col-span-2" : ""}
-                `}
+                className="card-glass-border flex flex-col rounded-2xl p-7 border border-white/10"
               >
                 {/* Opening quote mark */}
                 <div
@@ -536,20 +541,39 @@ export default function SuccessStoriesPage() {
                 />
 
                 {/* Author */}
-                <div className="mb-4">
-                  <p className="text-sm font-bold text-white leading-snug">{t.name}</p>
-                  <p
-                    className="text-xs text-white/50 leading-relaxed mt-0.5"
-                    title={t.title}
-                    style={{
-                      display: "-webkit-box",
-                      WebkitLineClamp: 2,
-                      WebkitBoxOrient: "vertical" as const,
-                      overflow: "hidden",
-                    }}
-                  >
-                    {t.title}
-                  </p>
+                <div className="flex items-center gap-3 mb-4">
+                  {/* Circular profile photo */}
+                  <div className="relative w-16 h-16 rounded-full overflow-hidden flex-shrink-0 border-2 border-[#7C3AED]">
+                    {t.photo ? (
+                      <Image
+                        src={t.photo}
+                        alt={t.name}
+                        fill
+                        className="object-cover object-top"
+                        sizes="64px"
+                      />
+                    ) : (
+                      <div className="w-full h-full bg-[#7C3AED] flex items-center justify-center text-white text-sm font-bold">
+                        {t.initials}
+                      </div>
+                    )}
+                  </div>
+                  {/* Name and title */}
+                  <div className="min-w-0">
+                    <p className="text-sm font-bold text-white leading-snug">{t.name}</p>
+                    <p
+                      className="text-xs text-white/50 leading-relaxed mt-0.5"
+                      title={t.title}
+                      style={{
+                        display: "-webkit-box",
+                        WebkitLineClamp: 2,
+                        WebkitBoxOrient: "vertical" as const,
+                        overflow: "hidden",
+                      }}
+                    >
+                      {t.title}
+                    </p>
+                  </div>
                 </div>
 
                 {/* 5-star rating */}
