@@ -28,6 +28,7 @@ const lora = Lora({
 import Footer from "@/components/layout/Footer";
 import MobileBottomNav from "@/components/ui/mobile-bottom-nav";
 import LayoutClient from "@/components/layout/LayoutClient";
+import WhatsAppButton from "@/components/ui/WhatsAppButton";
 import { cn } from "@/lib/utils";
 
 
@@ -123,6 +124,8 @@ export default function RootLayout({
         <div className="md:hidden">
           <MobileBottomNav />
         </div>
+
+        <WhatsAppButton />
       </body>
     </html>
   );
