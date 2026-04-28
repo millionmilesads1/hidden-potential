@@ -579,8 +579,8 @@ export default function HomePage() {
             <div className="relative w-full overflow-hidden rounded-2xl">
               <div className="relative w-full" style={{ height: "440px" }}>
                 <Image
-                  src="/images/media/media-2.jpg"
-                  alt="Hidden Potential life skills training session in Delhi - real transformation in action"
+                  src="/gallery/04_Online_Sessions/img-007.jpg"
+                  alt="Hidden Potential online life skills training session - real transformation in action"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover object-center"
