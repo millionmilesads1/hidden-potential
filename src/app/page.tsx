@@ -579,8 +579,8 @@ export default function HomePage() {
             <div className="relative w-full overflow-hidden rounded-2xl">
               <div className="relative w-full" style={{ height: "440px" }}>
                 <Image
-                  src="/gallery/04_Online_Sessions/img-007.jpg"
-                  alt="Hidden Potential online life skills training session - real transformation in action"
+                  src="/gallery/01_Personal_Professional/img-001.jpg"
+                  alt="Supreet Kaur, founder of Hidden Potential, at a book signing event with her book An Enlightened Learner"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover object-center"
