@@ -816,6 +816,14 @@ export default function ForProfessionalsPage() {
             </Link>
           </div>
 
+          {/* Assessment micro-CTA */}
+          <p className="text-sm text-white/50 mb-6">
+            Not sure which program fits?{" "}
+            <Link href="/assessment" className="text-white/75 hover:text-white font-semibold underline underline-offset-2 transition-colors">
+              Take the free Life Skills Assessment
+            </Link>
+          </p>
+
           {/* Hybrid trust signal */}
           <p className="text-sm text-white/50 mb-6">
             All programs available online and in-person - choose what works for you.
