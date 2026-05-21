@@ -1185,7 +1185,7 @@ export default function AboutPage() {
                     src="/images/founder/nishchay-sharma.jpg"
                     alt="Nishchay Sharma, Co-Founder of Hidden Potential and UNESCO-certified Art Therapy Practitioner"
                     fill
-                    className="object-cover object-center"
+                    className="object-cover object-top"
                   />
                   {/* Floating name card at bottom */}
                   <div className="absolute bottom-0 left-0 right-0 p-6">
