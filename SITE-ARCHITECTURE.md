@@ -39,7 +39,7 @@
 | # | Page | Route | Type |
 |---|------|-------|------|
 | 1 | Homepage | / | Landing |
-| 2 | About Supreet Kaur | /about | About |
+| 2 | Meet Our Founders (Supreet Kaur + Nishchay Sharma) | /about | About |
 | 3 | An Enlightened Learner | /programs/enlightened-learner | Program |
 | 4 | Communication Mastery | /programs/communication-mastery | Program |
 | 5 | Self Mastery for Women | /programs/self-mastery-women | Program |

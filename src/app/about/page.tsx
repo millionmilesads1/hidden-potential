@@ -5,13 +5,13 @@ import CertificateLightbox from "@/components/ui/CertificateLightbox";
 
 // ── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: { absolute: "About Supreet Kaur | Life Skills Coach in Delhi | Hidden Potential" },
+  title: { absolute: "Meet Our Founders | Supreet Kaur & Nishchay Sharma | Hidden Potential" },
   description:
-    "Meet Supreet Kaur - Masters in Psychology, NLP practitioner, Josh Talks speaker. 14+ years training 5000+ individuals. Award-winning life skills educator in Delhi.",
+    "Meet the founding team of Hidden Potential - Supreet Kaur (life skills educator, 14+ years, NLP practitioner) and Nishchay Sharma (UNESCO Art Therapy Practitioner, Co-Founder). Life skills training in Delhi NCR.",
   openGraph: {
-    title: "About Supreet Kaur | Life Skills Coach in Delhi",
+    title: "Our Founders | Hidden Potential - Life Skills Academy in Delhi",
     description:
-      "Masters in Psychology, NLP practitioner, Josh Talks speaker. 14+ years training 5000+ individuals across Delhi NCR.",
+      "Supreet Kaur (Founder, 14+ years, NLP, Josh Talks) and Nishchay Sharma (Co-Founder, UNESCO Art Therapist). Structured life skills training across Delhi NCR.",
     type: "profile",
     url: "https://hiddenpotentialskills.com/about",
   },
@@ -19,14 +19,15 @@ export const metadata: Metadata = {
 };
 
 // ── Schema.org JSON-LD ───────────────────────────────────────────────────────
-const schema = {
+const supreetSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
+  "@id": "https://hiddenpotentialskills.com/about#supreet-kaur",
   name: "Supreet Kaur",
   jobTitle: "Founder & Director, Hidden Potential",
   description:
     "Life skills educator with 14+ years experience, Masters in Psychology, NLP Practitioner, Josh Talks Speaker, award-winning educator in Delhi NCR.",
-  url: "https://hiddenpotentialskills.com/about",
+  url: "https://hiddenpotentialskills.com/about#supreet-kaur",
   worksFor: {
     "@type": "Organization",
     name: "Hidden Potential",
@@ -90,12 +91,113 @@ const schema = {
   ],
 };
 
+const nishchaySchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://hiddenpotentialskills.com/about#nishchay-sharma",
+  name: "Nishchay Sharma",
+  jobTitle: "Co-Founder, Hidden Potential",
+  description:
+    "UNESCO-Certified Art Therapy Practitioner and Clinical Psychology student at Amity University. Co-Founder of Hidden Potential, leading art therapy sessions for life skills education in Delhi.",
+  url: "https://hiddenpotentialskills.com/about#nishchay-sharma",
+  image: "https://hiddenpotentialskills.com/images/founder/nishchay-sharma.jpg",
+  worksFor: {
+    "@type": "Organization",
+    name: "Hidden Potential",
+    url: "https://hiddenpotentialskills.com",
+  },
+  alumniOf: [
+    {
+      "@type": "CollegeOrUniversity",
+      name: "Amity University",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Noida",
+        addressCountry: "IN",
+      },
+    },
+  ],
+  hasCredential: [
+    {
+      "@type": "EducationalOccupationalCredential",
+      credentialCategory: "license",
+      name: "Art Therapy License",
+      recognizedBy: {
+        "@type": "Organization",
+        name: "UNESCO (United Nations Educational, Scientific and Cultural Organization)",
+      },
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      credentialCategory: "certificate",
+      name: "Cognitive Behavioural Therapy Training",
+      recognizedBy: {
+        "@type": "Organization",
+        name: "BBRFI",
+      },
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      credentialCategory: "certificate",
+      name: "Access Bars Practitioner",
+      recognizedBy: {
+        "@type": "Organization",
+        name: "Access Consciousness",
+      },
+    },
+  ],
+  knowsAbout: [
+    "Art Therapy",
+    "Clinical Psychology",
+    "Mental Health",
+    "Life Skills Education",
+    "Cognitive Behavioural Therapy",
+    "Youth Mental Health",
+  ],
+  award: [
+    "Global Rank 2 - International Life Skills Olympiad",
+    "Global Rank 3 - International Leadership Olympiad",
+    "Lifology Global Fellow - Top 1,000 from 30,000+ Applicants",
+  ],
+  affiliation: [
+    {
+      "@type": "Organization",
+      name: "Modern Angels",
+      description: "Youth mental health and life skills organisation",
+    },
+    {
+      "@type": "Organization",
+      name: "MyndNest",
+    },
+  ],
+  sameAs: ["https://www.linkedin.com/in/nishchay-sharma"],
+};
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Hidden Potential",
+  url: "https://hiddenpotentialskills.com",
+  description:
+    "A structured life skills training academy in Delhi NCR offering programs in emotional intelligence, communication, NLP, and art therapy for students, professionals, and women.",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Delhi",
+    addressRegion: "Delhi",
+    addressCountry: "IN",
+  },
+  founder: [
+    { "@id": "https://hiddenpotentialskills.com/about#supreet-kaur" },
+    { "@id": "https://hiddenpotentialskills.com/about#nishchay-sharma" },
+  ],
+};
+
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: "https://hiddenpotentialskills.com" },
-    { "@type": "ListItem", position: 2, name: "About", item: "https://hiddenpotentialskills.com/about" },
+    { "@type": "ListItem", position: 2, name: "Meet Our Founders", item: "https://hiddenpotentialskills.com/about" },
   ],
 };
 
@@ -222,13 +324,34 @@ const books = [
   },
 ];
 
+const nishchayCredentials = [
+  { name: "UNESCO Art Therapy License", issuer: "UNESCO Certified" },
+  { name: "CBT Training", issuer: "BBRFI Certified" },
+  { name: "Access Bars Practitioner", issuer: "Access Consciousness" },
+  { name: "B.Sc. Clinical Psychology", issuer: "Amity University" },
+];
+
+const nishchayStats = [
+  { value: "Global #2", label: "Life Skills Olympiad" },
+  { value: "Global #3", label: "Leadership Olympiad" },
+  { value: "Top 1,000", label: "from 30,000+ Lifology Fellows" },
+];
+
 // ── Page ─────────────────────────────────────────────────────────────────────
 export default function AboutPage() {
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(supreetSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(nishchaySchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
       />
       <script
         type="application/ld+json"
@@ -236,9 +359,109 @@ export default function AboutPage() {
       />
 
       {/* ═══════════════════════════════════════════
-          1. HERO
+          0. TEAM INTRO
       ═══════════════════════════════════════════ */}
-      <section className="bg-white py-20">
+      <section
+        className="relative overflow-hidden py-20"
+        style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }}
+      >
+        {/* Ambient glow */}
+        <div
+          className="absolute pointer-events-none"
+          style={{
+            background: "radial-gradient(circle at center, rgba(124,58,237,0.18) 0%, transparent 65%)",
+            width: "48rem",
+            height: "48rem",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+          }}
+        />
+
+        <div className="relative max-w-5xl mx-auto px-6 text-center">
+          <p className="text-xs font-bold uppercase tracking-widest text-primary-gold mb-4">
+            Leadership Team
+          </p>
+          <h1
+            className="text-3xl md:text-5xl font-extrabold text-white leading-tight mb-5"
+            style={{ fontFamily: "var(--font-display)" }}
+          >
+            The Founders of Hidden Potential
+          </h1>
+          <p className="text-lg text-white/65 leading-relaxed max-w-2xl mx-auto mb-14">
+            Two practitioners. One mission: to make life skills education structured,
+            science-backed, and accessible to every learner across Delhi NCR.
+          </p>
+
+          {/* Founder anchor cards */}
+          <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+            {/* Supreet card */}
+            <a
+              href="#supreet-kaur"
+              className="group rounded-xl p-6 text-left transition-all hover:-translate-y-0.5"
+              style={{
+                background: "rgba(255,255,255,0.06)",
+                border: "1px solid rgba(255,255,255,0.12)",
+                backdropFilter: "blur(6px)",
+              }}
+            >
+              <p className="text-[11px] font-bold uppercase tracking-widest text-primary-gold mb-2">
+                Founder &amp; Director
+              </p>
+              <p
+                className="text-xl font-extrabold text-white mb-1"
+                style={{ fontFamily: "var(--font-display)" }}
+              >
+                Supreet Kaur
+              </p>
+              <p className="text-sm text-white/55 mb-4">
+                Life Skills Coach - 14+ years - NLP Practitioner - Josh Talks Speaker
+              </p>
+              <span className="inline-flex items-center gap-1.5 text-xs font-bold text-primary-gold group-hover:gap-2.5 transition-all">
+                View Full Profile
+                <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M9 5l7 7-7 7" />
+                </svg>
+              </span>
+            </a>
+
+            {/* Nishchay card */}
+            <a
+              href="#nishchay-sharma"
+              className="group rounded-xl p-6 text-left transition-all hover:-translate-y-0.5"
+              style={{
+                background: "rgba(255,255,255,0.06)",
+                border: "1px solid rgba(255,255,255,0.12)",
+                backdropFilter: "blur(6px)",
+              }}
+            >
+              <p className="text-[11px] font-bold uppercase tracking-widest text-primary-gold mb-2">
+                Co-Founder
+              </p>
+              <p
+                className="text-xl font-extrabold text-white mb-1"
+                style={{ fontFamily: "var(--font-display)" }}
+              >
+                Nishchay Sharma
+              </p>
+              <p className="text-sm text-white/55 mb-4">
+                UNESCO Art Therapy Practitioner - Clinical Psychology - Global Olympiad Ranker
+              </p>
+              <span className="inline-flex items-center gap-1.5 text-xs font-bold text-primary-gold group-hover:gap-2.5 transition-all">
+                View Full Profile
+                <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M9 5l7 7-7 7" />
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════
+          1. HERO - SUPREET KAUR
+      ═══════════════════════════════════════════ */}
+      <section id="supreet-kaur" className="bg-white py-20">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
 
@@ -305,12 +528,12 @@ export default function AboutPage() {
               <p className="text-xs font-bold uppercase tracking-widest text-primary-teal mb-4">
                 Founder & Director
               </p>
-              <h1
+              <h2
                 className="text-3xl md:text-4xl font-extrabold text-primary-navy leading-tight mb-6"
                 style={{ fontFamily: "var(--font-display)" }}
               >
                 Supreet Kaur - Life Skills Coach &amp; Transformational Educator in Delhi
-              </h1>
+              </h2>
 
               <p className="text-lg text-charcoal leading-relaxed mb-5">
                 Supreet Kaur is the founder of{" "}
@@ -866,7 +1089,203 @@ export default function AboutPage() {
       </section>
 
       {/* ═══════════════════════════════════════════
-          8. FINAL CTA
+          8. NISHCHAY SHARMA - CO-FOUNDER
+      ═══════════════════════════════════════════ */}
+      <section id="nishchay-sharma" className="py-20" style={{ backgroundColor: "#F3F0FF" }}>
+        <div className="max-w-6xl mx-auto px-6">
+
+          {/* Section header */}
+          <div className="text-center mb-14">
+            <p className="text-xs font-bold uppercase tracking-widest text-primary-teal mb-3">
+              Co-Founder
+            </p>
+            <div
+              className="w-10 h-0.5 rounded-full mx-auto"
+              style={{ backgroundColor: "#C8A951" }}
+            />
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+            {/* Left - Bio content */}
+            <div>
+              <p className="text-xs font-bold uppercase tracking-widest text-primary-teal mb-4">
+                Co-Founder &amp; Art Therapy Lead
+              </p>
+              <h2
+                className="text-3xl md:text-4xl font-extrabold text-primary-navy leading-tight mb-6"
+                style={{ fontFamily: "var(--font-display)" }}
+              >
+                Nishchay Sharma - Art Therapy Practitioner and Co-Founder of Hidden Potential
+              </h2>
+
+              <p className="text-base text-charcoal leading-relaxed mb-5">
+                Nishchay Sharma is the Co-Founder of Hidden Potential and a licensed Art Therapy
+                Practitioner, certified by{" "}
+                <strong className="text-primary-navy">UNESCO</strong> - the United Nations&apos;
+                cultural body. He leads art therapy sessions at Hidden Potential that integrate
+                creative expression with psychological principles, helping learners build emotional
+                resilience and self-awareness. He also contributes to curriculum design, program
+                delivery, and organisational initiatives across the Hidden Potential learning
+                experience.
+              </p>
+
+              <p className="text-base text-charcoal/80 leading-relaxed mb-5">
+                Currently pursuing a B.Sc. (Research and Honours) in Clinical Psychology at Amity
+                University, Nishchay has built exceptional clinical exposure alongside his studies -
+                completing hospital internships at Fortis Hospital under Dr. Sameer Parikh and ISIC
+                Multispeciality Hospital, as well as clinic-based training at Psyche and Beyond.
+                His experience spans psychological assessment, case documentation, clinical
+                interviews, and evidence-based therapeutic processes in supervised settings.
+              </p>
+
+              <p className="text-base text-charcoal/80 leading-relaxed mb-5">
+                His work in life skills and leadership has earned him international recognition:
+                Global Rank 2 at the International Life Skills Olympiad and Global Rank 3 at the
+                International Leadership Olympiad. He was also selected as a Lifology Global
+                Fellow, placing in the top 1,000 from over 30,000 applicants across more than 30
+                countries - a distinction that reflects his early commitment to
+                psychology-informed personal development.
+              </p>
+
+              <p className="text-base text-charcoal/80 leading-relaxed mb-8">
+                Beyond Hidden Potential, Nishchay founded{" "}
+                <strong className="text-primary-navy">Modern Angels</strong> - an organisation
+                focused on youth mental health awareness and life skills development - and{" "}
+                <strong className="text-primary-navy">MyndNest</strong>, extending his commitment
+                to accessible psychological support for communities. He is also a published poet
+                whose work explores themes of emotion, introspection, and psychological
+                resilience.
+              </p>
+
+              {/* Credential chips */}
+              <div className="flex flex-wrap gap-2">
+                {nishchayCredentials.map((c) => (
+                  <span
+                    key={c.name}
+                    className="px-3 py-1.5 text-xs font-semibold text-primary-navy bg-white rounded-full border border-primary-navy/10 shadow-sm"
+                  >
+                    {c.name}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Right - Portrait photo */}
+            <div className="flex flex-col gap-6">
+              <div className="relative w-full flex-shrink-0 overflow-hidden rounded-lg">
+                <div
+                  className="relative w-full"
+                  style={{
+                    aspectRatio: "3 / 4",
+                    maxHeight: "520px",
+                  }}
+                >
+                  <Image
+                    src="/images/founder/nishchay-sharma.jpg"
+                    alt="Nishchay Sharma, Co-Founder of Hidden Potential and UNESCO-certified Art Therapy Practitioner"
+                    fill
+                    className="object-cover object-center"
+                  />
+                  {/* Floating name card at bottom */}
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <div
+                      className="rounded-md px-4 py-3 w-full"
+                      style={{
+                        background: "rgba(0,0,0,0.52)",
+                        border: "1px solid rgba(255,255,255,0.14)",
+                        backdropFilter: "blur(6px)",
+                      }}
+                    >
+                      <p
+                        className="text-white font-bold text-base leading-tight"
+                        style={{ fontFamily: "var(--font-display)" }}
+                      >
+                        Nishchay Sharma
+                      </p>
+                      <p
+                        className="text-white/60 text-xs mt-1"
+                        style={{ fontFamily: "var(--font-body)" }}
+                      >
+                        Co-Founder, Hidden Potential
+                      </p>
+                      <div className="flex flex-wrap gap-1.5 mt-2.5">
+                        {["UNESCO Art Therapist", "Clinical Psychology", "Global Olympiad Ranker", "Published Poet"].map((tag) => (
+                          <span
+                            key={tag}
+                            className="text-[10px] font-semibold px-2 py-0.5 rounded-full"
+                            style={{
+                              background: "rgba(200,169,81,0.18)",
+                              color: "#C8A951",
+                              border: "1px solid rgba(200,169,81,0.25)",
+                            }}
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Achievement stats */}
+              <div className="grid grid-cols-3 gap-3">
+                {nishchayStats.map((stat) => (
+                  <div
+                    key={stat.label}
+                    className="rounded-lg p-4 text-center bg-white border border-primary-navy/10 shadow-sm"
+                  >
+                    <p
+                      className="text-lg font-extrabold text-primary-navy leading-none mb-1"
+                      style={{ fontFamily: "var(--font-display)" }}
+                    >
+                      {stat.value}
+                    </p>
+                    <p className="text-[10px] font-semibold text-charcoal/60 leading-tight uppercase tracking-wide">
+                      {stat.label}
+                    </p>
+                  </div>
+                ))}
+              </div>
+
+              {/* Founded organisations */}
+              <div
+                className="rounded-lg p-5 bg-white border border-primary-navy/10 shadow-sm"
+              >
+                <p className="text-xs font-bold uppercase tracking-widest text-primary-teal mb-3">
+                  Organisations Founded
+                </p>
+                <div className="flex flex-col gap-3">
+                  <div className="flex items-start gap-3">
+                    <div
+                      className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0"
+                      style={{ backgroundColor: "#C8A951" }}
+                    />
+                    <div>
+                      <p className="text-sm font-bold text-primary-navy">Modern Angels</p>
+                      <p className="text-xs text-charcoal/60 mt-0.5">Youth mental health awareness and life skills</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div
+                      className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0"
+                      style={{ backgroundColor: "#C8A951" }}
+                    />
+                    <div>
+                      <p className="text-sm font-bold text-primary-navy">MyndNest</p>
+                      <p className="text-xs text-charcoal/60 mt-0.5">Accessible psychological support for communities</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════
+          9. FINAL CTA
       ═══════════════════════════════════════════ */}
       <section
         className="relative overflow-hidden py-24"
