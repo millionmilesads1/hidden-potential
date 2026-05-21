@@ -16,15 +16,15 @@ import { letterDrop, headlineContainer } from "@/lib/animations";
 import { NumberTicker } from "@/components/magicui/number-ticker";
 
 // ── Headline words ────────────────────────────────────────────────────────────
-// Mirrors the exact text rendered in page.tsx with glow styling on key words
+// Word-drop animation - key words get white glow treatment
 const headlineWords: Array<{ word: string; glow: boolean }> = [
-  { word: "Don\u2019t",  glow: false },
-  { word: "let",         glow: false },
-  { word: "Schooling",   glow: true  },
-  { word: "interfere",   glow: false },
-  { word: "with",        glow: false },
-  { word: "your",        glow: false },
-  { word: "education",   glow: true  },
+  { word: "Life",    glow: false },
+  { word: "Skills",  glow: true  },
+  { word: "That",    glow: false },
+  { word: "Shape",   glow: false },
+  { word: "Who",     glow: false },
+  { word: "You",     glow: false },
+  { word: "Become",  glow: true  },
 ];
 
 // ── Stats ─────────────────────────────────────────────────────────────────────
@@ -80,7 +80,7 @@ export default function AnimatedHeroContent() {
 
       {/* H1 - word-by-word drop from y: -80 */}
       <motion.h1
-        className="font-bold text-white leading-[1.1] mb-4"
+        className="font-bold text-white leading-[1.1] mb-7"
         style={{
           fontFamily: "var(--font-accent)",
           fontStyle: "italic",
@@ -89,7 +89,7 @@ export default function AnimatedHeroContent() {
         variants={headlineContainer}
         initial="hidden"
         animate="visible"
-        aria-label="Don't let Schooling interfere with your education"
+        aria-label="Life Skills That Shape Who You Become"
       >
         {headlineWords.map(({ word, glow }, i) => (
           <React.Fragment key={i}>
@@ -113,17 +113,6 @@ export default function AnimatedHeroContent() {
           </React.Fragment>
         ))}
       </motion.h1>
-
-      {/* Attribution */}
-      <motion.p
-        className="mb-8 text-white/70 font-semibold tracking-widest uppercase"
-        style={{ fontFamily: "var(--font-display)", fontSize: "0.85rem" }}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.4, delay: headlineDelay }}
-      >
-        - Mark Twain
-      </motion.p>
 
       {/* Subtitle - slides from left */}
       <motion.p

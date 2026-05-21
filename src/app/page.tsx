@@ -384,6 +384,64 @@ const credentials = [
   "Award-Winning Educator",
 ];
 
+// ── Audience Segments ─────────────────────────────────────────────────────────
+const audienceSegments = [
+  {
+    icon: (
+      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.75} strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 14l9-5-9-5-9 5 9 5z" />
+        <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+      </svg>
+    ),
+    label: "Students",
+    audience: "Ages 8 to 21",
+    headline: "For Young Learners",
+    problem: "Academic pressure, social anxiety, and low confidence are holding them back.",
+    cta: "Explore AEL Program",
+    href: "/programs/enlightened-learner",
+  },
+  {
+    icon: (
+      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.75} strokeLinecap="round" strokeLinejoin="round">
+        <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+      </svg>
+    ),
+    label: "Women",
+    audience: "Ages 28 and above",
+    headline: "For Women",
+    problem: "Identity confusion, emotional overwhelm, and a longing for clarity and independence.",
+    cta: "Explore Self Mastery",
+    href: "/programs/self-mastery-women",
+  },
+  {
+    icon: (
+      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.75} strokeLinecap="round" strokeLinejoin="round">
+        <path d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+      </svg>
+    ),
+    label: "Professionals",
+    audience: "Working adults, all levels",
+    headline: "For Professionals",
+    problem: "Communication gaps, leadership gaps, and career growth that feels stuck.",
+    cta: "Explore Programs",
+    href: "/for/professionals",
+  },
+  {
+    icon: (
+      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.75} strokeLinecap="round" strokeLinejoin="round">
+        <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+      </svg>
+    ),
+    label: "Trainers",
+    audience: "Aspiring and practising educators",
+    headline: "For Future Trainers",
+    problem: "Passion for teaching life skills with no structured certification path.",
+    cta: "Explore Train the Trainer",
+    href: "/programs/train-the-trainer",
+  },
+];
+
+
 // ── Helpers ───────────────────────────────────────────────────────────────────
 function Label({ children, dark = false }: { children: ReactNode; dark?: boolean }) {
   return (
@@ -571,6 +629,23 @@ export default function HomePage() {
                   Meet Supreet Kaur, Founder <Chevron />
                 </Link>
               </div>
+              {/* Top 4 founder credentials - trust signal in Brand Story */}
+              <div className="flex flex-wrap gap-2 mt-7 pl-9">
+                {["Masters in Psychology", "NLP Practitioner", "Josh Talks Speaker", "NEP 2020 Certified"].map((c) => (
+                  <span
+                    key={c}
+                    className="px-3 py-1 rounded-full text-xs font-medium"
+                    style={{
+                      fontFamily: "var(--font-body)",
+                      background: "#F3F0FF",
+                      color: "#7C3AED",
+                      border: "1px solid rgba(200,169,81,0.25)",
+                    }}
+                  >
+                    {c}
+                  </span>
+                ))}
+              </div>
             </div>
             </AnimateIn>
 
@@ -590,6 +665,89 @@ export default function HomePage() {
             </AnimateIn>
 
           </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════
+          2b. AUDIENCE SEGMENTATION
+          4 audience cards: Students, Women, Professionals, Trainers
+      ═══════════════════════════════════════════ */}
+      <section style={{ background: "#F8F6F2" }} className="py-20">
+        <div className="max-w-6xl mx-auto px-6">
+          <AnimateIn className="mb-12 text-center">
+            <Label>Who We Serve</Label>
+            <h2
+              className="font-bold leading-tight mb-4"
+              style={{
+                fontFamily: "var(--font-display)",
+                fontSize: "clamp(1.75rem, 3vw, 2.5rem)",
+                color: "#2D1B69",
+              }}
+            >
+              Find Your Path
+            </h2>
+            <p
+              className="leading-relaxed mx-auto"
+              style={{ color: "#6B6B6B", maxWidth: "500px", fontFamily: "var(--font-body)", fontSize: "1.0625rem" }}
+            >
+              Whether you are a student, a woman on a journey of growth, a professional, or an aspiring trainer, there is a structured program designed for exactly where you are.
+            </p>
+          </AnimateIn>
+
+          <AnimateGroup className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {audienceSegments.map((seg) => (
+              <div
+                key={seg.label}
+                className="rounded-2xl flex flex-col"
+                style={{
+                  background: "white",
+                  border: "1px solid rgba(124,58,237,0.09)",
+                  boxShadow: "0 2px 12px rgba(45,27,105,0.05)",
+                  padding: "28px 24px",
+                }}
+              >
+                {/* Icon */}
+                <div
+                  className="w-12 h-12 rounded-xl flex items-center justify-center mb-5"
+                  style={{ background: "#F3F0FF", color: "#7C3AED" }}
+                >
+                  {seg.icon}
+                </div>
+
+                {/* Label + audience tag */}
+                <p
+                  className="text-[10px] font-bold uppercase tracking-widest mb-1"
+                  style={{ color: "#C8A951", fontFamily: "var(--font-body)" }}
+                >
+                  {seg.audience}
+                </p>
+                <h3
+                  className="font-bold mb-3 leading-snug"
+                  style={{ fontFamily: "var(--font-display)", color: "#2D1B69", fontSize: "1.1rem" }}
+                >
+                  {seg.headline}
+                </h3>
+
+                {/* Problem statement */}
+                <p
+                  className="text-sm leading-relaxed mb-6 flex-1"
+                  style={{ color: "#6B6B6B", fontFamily: "var(--font-body)" }}
+                >
+                  {seg.problem}
+                </p>
+
+                {/* CTA */}
+                <Link
+                  href={seg.href}
+                  className="inline-flex items-center gap-1.5 text-sm font-semibold"
+                  style={{ color: "#7C3AED", fontFamily: "var(--font-body)" }}
+                >
+                  {seg.cta}
+                  <Chevron className="w-3.5 h-3.5" />
+                </Link>
+              </div>
+            ))}
+          </AnimateGroup>
         </div>
       </section>
 
@@ -779,6 +937,87 @@ export default function HomePage() {
               <span className="btn-icon-circle" aria-hidden="true"><Chevron /></span>
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════
+          5a. HOW IT WORKS
+      ═══════════════════════════════════════════ */}
+      <section style={{ background: "#F3F0FF" }} className="py-24">
+        <div className="max-w-6xl mx-auto px-6">
+          <AnimateIn className="text-center mb-14">
+            <Label>How It Works</Label>
+            <h2
+              className="font-bold leading-tight mb-4"
+              style={{
+                fontFamily: "var(--font-display)",
+                fontSize: "clamp(1.75rem, 3vw, 2.5rem)",
+                color: "#2D1B69",
+              }}
+            >
+              Your Path to Transformation
+            </h2>
+            <p
+              className="leading-relaxed mx-auto"
+              style={{ color: "#6B6B6B", maxWidth: "500px", fontFamily: "var(--font-body)", fontSize: "1.0625rem" }}
+            >
+              No guesswork. No generic advice. Only guided evolution.
+            </p>
+          </AnimateIn>
+
+          <AnimateGroup className="grid md:grid-cols-4 gap-5">
+            {enrollmentSteps.map((s, i) => (
+              <div key={s.step} className="relative">
+                {i < enrollmentSteps.length - 1 && (
+                  <div
+                    className="hidden md:block absolute top-7 z-10"
+                    style={{
+                      left: "calc(50% + 28px + 8px)",
+                      right: "-16px",
+                      height: "2px",
+                      background: "rgba(124,58,237,0.15)",
+                    }}
+                    aria-hidden="true"
+                  />
+                )}
+                <div
+                  className="rounded-2xl p-6 h-full"
+                  style={{ background: "white", border: "1px solid rgba(124,58,237,0.08)" }}
+                >
+                  <div
+                    className="w-14 h-14 rounded-2xl flex items-center justify-center mb-5"
+                    style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }}
+                  >
+                    <span
+                      className="text-lg font-bold tabular-nums"
+                      style={{ fontFamily: "var(--font-display)", color: "#C8A951" }}
+                    >
+                      {s.step}
+                    </span>
+                  </div>
+                  <h3
+                    className="font-bold mb-2 leading-snug"
+                    style={{ fontFamily: "var(--font-display)", color: "#2D1B69", fontSize: "1rem" }}
+                  >
+                    {s.title}
+                  </h3>
+                  <p
+                    className="text-sm leading-relaxed"
+                    style={{ color: "#6B6B6B", fontFamily: "var(--font-body)" }}
+                  >
+                    {s.desc}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </AnimateGroup>
+
+          <p
+            className="text-center text-base mt-10"
+            style={{ fontFamily: "var(--font-display)", fontStyle: "italic", color: "rgba(0,0,0,0.35)" }}
+          >
+            &ldquo;No guesswork. Only guided evolution.&rdquo;
+          </p>
         </div>
       </section>
 
@@ -1027,86 +1266,36 @@ export default function HomePage() {
             Read More Success Stories <Chevron />
           </Link>
         </div>
-      </section>
 
-      {/* ═══════════════════════════════════════════
-          8. HOW IT WORKS
-      ═══════════════════════════════════════════ */}
-      <section style={{ background: "#F3F0FF" }} className="py-24">
-        <div className="max-w-6xl mx-auto px-6">
-          <AnimateIn className="text-center mb-14">
-            <Label>How It Works</Label>
-            <h2
-              className="font-bold leading-tight mb-4"
-              style={{
-                fontFamily: "var(--font-display)",
-                fontSize: "clamp(1.75rem, 3vw, 2.5rem)",
-                color: "#2D1B69",
-              }}
-            >
-              Your Path to Transformation
-            </h2>
-            <p
-              className="leading-relaxed mx-auto"
-              style={{ color: "#6B6B6B", maxWidth: "500px", fontFamily: "var(--font-body)", fontSize: "1.0625rem" }}
-            >
-              No guesswork. No generic advice. Only guided evolution.
-            </p>
-          </AnimateIn>
-
-          <AnimateGroup className="grid md:grid-cols-4 gap-5">
-            {enrollmentSteps.map((s, i) => (
-              <div key={s.step} className="relative">
-                {i < enrollmentSteps.length - 1 && (
-                  <div
-                    className="hidden md:block absolute top-7 z-10"
-                    style={{
-                      left: "calc(50% + 28px + 8px)",
-                      right: "-16px",
-                      height: "2px",
-                      background: "rgba(124,58,237,0.15)",
-                    }}
-                    aria-hidden="true"
-                  />
-                )}
-                <div
-                  className="rounded-2xl p-6 h-full"
-                  style={{ background: "white", border: "1px solid rgba(124,58,237,0.08)" }}
-                >
-                  <div
-                    className="w-14 h-14 rounded-2xl flex items-center justify-center mb-5"
-                    style={{ background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)" }}
-                  >
-                    <span
-                      className="text-lg font-bold tabular-nums"
-                      style={{ fontFamily: "var(--font-display)", color: "#C8A951" }}
-                    >
-                      {s.step}
-                    </span>
-                  </div>
-                  <h3
-                    className="font-bold mb-2 leading-snug"
-                    style={{ fontFamily: "var(--font-display)", color: "#2D1B69", fontSize: "1rem" }}
-                  >
-                    {s.title}
-                  </h3>
-                  <p
-                    className="text-sm leading-relaxed"
-                    style={{ color: "#6B6B6B", fontFamily: "var(--font-body)" }}
-                  >
-                    {s.desc}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </AnimateGroup>
-
+        {/* CTA after testimonials - highest trust moment */}
+        <div
+          className="max-w-2xl mx-auto mt-14 rounded-2xl px-8 py-10 text-center"
+          style={{
+            background: "linear-gradient(180deg, #2D1B69 0%, #1A0F3C 100%)",
+            boxShadow: "0 8px 32px rgba(45,27,105,0.18)",
+          }}
+        >
           <p
-            className="text-center text-base mt-10"
-            style={{ fontFamily: "var(--font-display)", fontStyle: "italic", color: "rgba(0,0,0,0.35)" }}
+            className="font-bold mb-2 text-white"
+            style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.25rem, 2.5vw, 1.6rem)" }}
           >
-            &ldquo;No guesswork. Only guided evolution.&rdquo;
+            Ready to begin your transformation?
           </p>
+          <p
+            className="mb-7 text-sm leading-relaxed"
+            style={{ color: "rgba(255,255,255,0.65)", fontFamily: "var(--font-body)", maxWidth: "380px", margin: "0 auto 1.75rem" }}
+          >
+            Take the free Life Skills Assessment and receive a personalised pathway.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <Link href="/assessment" className="btn-premium-fill">
+              Take Free Assessment
+              <span className="btn-icon-circle" aria-hidden="true"><Chevron /></span>
+            </Link>
+            <Link href="/contact" className="btn-premium-ghost-plain">
+              Book Discovery Call
+            </Link>
+          </div>
         </div>
       </section>
 
