@@ -114,6 +114,29 @@ export default function AnimatedHeroContent() {
         ))}
       </motion.h1>
 
+      {/* Mark Twain subheadline */}
+      <motion.p
+        className="mb-7"
+        style={{
+          fontFamily: "var(--font-accent)",
+          fontStyle: "italic",
+          fontSize: "clamp(0.95rem, 1.6vw, 1.15rem)",
+          color: "rgba(255,255,255,0.55)",
+          letterSpacing: "0.01em",
+        }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: headlineDelay + 0.05 }}
+      >
+        &ldquo;Don&rsquo;t let Schooling interfere with your education.&rdquo;
+        <span
+          className="block mt-1 text-xs font-semibold uppercase tracking-widest not-italic"
+          style={{ color: "#C8A951", fontFamily: "var(--font-body)" }}
+        >
+          — Mark Twain
+        </span>
+      </motion.p>
+
       {/* Subtitle - slides from left */}
       <motion.p
         className="mb-10 leading-relaxed"
