@@ -33,6 +33,25 @@ const serviceSchema = {
   serviceType: 'Career Guidance & Planning',
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://hiddenpotentialskills.com",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Career Guidance & Planning",
+      item: "https://hiddenpotentialskills.com/services/career-guidance",
+    },
+  ],
+};
+
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -156,6 +175,7 @@ export default function CareerGuidancePage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <main>
 
         {/* ── SECTION 1: HERO ── */}

@@ -14,6 +14,11 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://hiddenpotentialskills.com/gallery",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Gallery | Hidden Potential Skills Training Sessions in Delhi",
+    description: "Photos from Hidden Potential workshops, training sessions, certifications and events across Delhi NCR. Real moments from our life skills programs.",
+  },
   alternates: {
     canonical: "https://hiddenpotentialskills.com/gallery",
   },

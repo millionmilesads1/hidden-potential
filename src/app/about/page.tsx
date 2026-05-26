@@ -15,6 +15,11 @@ export const metadata: Metadata = {
     type: "profile",
     url: "https://hiddenpotentialskills.com/about",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Meet Our Founders | Supreet Kaur & Nishchay Sharma | Hidden Potential",
+    description: "Meet Supreet Kaur (NLP Practitioner, Harvard-Affiliated) and Nishchay Sharma (UNESCO Certified), co-founders of Hidden Potential Skills in Delhi.",
+  },
   alternates: { canonical: "https://hiddenpotentialskills.com/about" },
 };
 
@@ -27,6 +32,7 @@ const supreetSchema = {
   jobTitle: "Founder & Director, Hidden Potential",
   description:
     "Life skills educator with 14+ years experience, Masters in Psychology, NLP Practitioner, Josh Talks Speaker, award-winning educator in Delhi NCR.",
+  image: "https://hiddenpotentialskills.com/images/founder/supreet-hp-banner.jpg",
   url: "https://hiddenpotentialskills.com/about#supreet-kaur",
   worksFor: {
     "@type": "Organization",
@@ -186,6 +192,14 @@ const organizationSchema = {
     addressRegion: "Delhi",
     addressCountry: "IN",
   },
+  telephone: "+919899209335",
+  logo: "https://hiddenpotentialskills.com/images/logo_2.png",
+  sameAs: [
+    "https://www.facebook.com/supriiyaas",
+    "https://www.instagram.com/lifeskillspecialistsupreet",
+    "https://www.linkedin.com/in/supreet-kaur-a73415239/",
+    "https://www.youtube.com/@hiddenpotentialskills",
+  ],
   founder: [
     { "@id": "https://hiddenpotentialskills.com/about#supreet-kaur" },
     { "@id": "https://hiddenpotentialskills.com/about#nishchay-sharma" },
@@ -1064,7 +1078,7 @@ export default function AboutPage() {
                     {book.desc}
                   </p>
                   <Link
-                    href="/books"
+                    href="/resources"
                     className="inline-flex items-center gap-1.5 text-sm font-bold text-primary-teal hover:text-teal-dark transition-colors"
                   >
                     View Book Details
@@ -1362,7 +1376,7 @@ export default function AboutPage() {
               Train the Trainer
             </Link>
             <span className="text-white/20">·</span>
-            <Link href="/books" className="hover:text-white/65 transition-colors">
+            <Link href="/resources" className="hover:text-white/65 transition-colors">
               Published Books
             </Link>
           </div>

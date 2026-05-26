@@ -110,12 +110,23 @@ const schema = {
     },
   ],
   isAccessibleForFree: false,
+  inLanguage: ["en", "hi"],
+  coursePrerequisites: "No prior experience required",
   instructor: {
     "@type": "Person",
     name: "Supreet Kaur",
     jobTitle: "Founder & Director, Hidden Potential",
     url: "https://hiddenpotentialskills.com/about",
   },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://hiddenpotentialskills.com" },
+    { "@type": "ListItem", position: 2, name: "Communication Mastery", item: "https://hiddenpotentialskills.com/programs/communication-mastery" },
+  ],
 };
 
 // ── Page Content Data ─────────────────────────────────────────────────────────
@@ -315,6 +326,10 @@ export default function CommunicationMasteryPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       {/* ═══════════════════════════════════════════════════════════════════════

@@ -687,16 +687,15 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 
   const articleSchema = {
     '@context': 'https://schema.org',
-    '@type': 'Article',
+    '@type': 'BlogPosting',
     headline: post.title,
     description: post.excerpt,
     datePublished: post.dateISO,
     dateModified: post.dateISO,
     author: {
       '@type': 'Person',
+      '@id': 'https://hiddenpotentialskills.com/about#supreet-kaur',
       name: 'Supreet Kaur',
-      url: 'https://hiddenpotentialskills.com/about',
-      jobTitle: 'Founder & Director, Hidden Potential',
     },
     publisher: {
       '@type': 'Organization',

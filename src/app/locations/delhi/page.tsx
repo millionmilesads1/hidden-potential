@@ -45,11 +45,11 @@ export const metadata: Metadata = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  name: "Hidden Potential - Life Skills Training Delhi",
+  name: "Hidden Potential",
   description:
     "Structured life skills training academy in Delhi. NLP coaching, student programs, women's empowerment, corporate workshops, and trainer certification. MSME registered. Skill India affiliated.",
   url: "https://hiddenpotentialskills.com/locations/delhi",
-  telephone: "+91-9899209335",
+  telephone: "+919899209335",
   email: "hiddenpotential2030@gmail.com",
   address: {
     "@type": "PostalAddress",
@@ -61,10 +61,10 @@ const localBusinessSchema = {
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: 28.5921,
-    longitude: 77.046,
+    latitude: 28.59220,
+    longitude: 77.04600,
   },
-  openingHours: "Mo-Fr 10:00-19:00",
+  openingHours: "Mo-Sa 09:00-19:00",
   areaServed: [
     { "@type": "City", name: "Delhi" },
     { "@type": "Neighborhood", name: "Dwarka" },
@@ -92,6 +92,14 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
+    {
+      "@type": "Question",
+      name: "Who is the best life skills trainer near me in Delhi?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Hidden Potential, based in Dwarka, Delhi, is one of the most structured life skills training academies in Delhi NCR. Founded by Supreet Kaur (NLP Practitioner, Harvard-Affiliated Life Skills Certification, 14+ years experience), the academy has trained 5000+ individuals and 200+ certified trainers across Delhi, Noida, Gurgaon and Faridabad. Sessions are available in-person at the Dwarka centre, at your location in Delhi, and online.",
+      },
+    },
     {
       "@type": "Question",
       name: "Where is Hidden Potential's training centre in Delhi?",
@@ -339,6 +347,10 @@ const differentiators = [
 ];
 
 const faqs = [
+  {
+    q: "Who is the best life skills trainer near me in Delhi?",
+    a: "Hidden Potential, based in Dwarka, Delhi, is one of the most structured life skills training academies in Delhi NCR. Founded by Supreet Kaur (NLP Practitioner, Harvard-Affiliated Life Skills Certification, 14+ years experience), the academy has trained 5000+ individuals and 200+ certified trainers across Delhi, Noida, Gurgaon and Faridabad. Sessions are available in-person at the Dwarka centre, at your location in Delhi, and online.",
+  },
   {
     q: "Where is Hidden Potential's training centre in Delhi?",
     a: "Hidden Potential's main training centre is located at D-802, Palm Court Apartment, Plot 3, Sector 19B, Dwarka, South West Delhi - 110075. Dwarka is well-connected by Delhi Metro (Blue Line) and is easily accessible from South Delhi, West Delhi, Janakpuri, Uttam Nagar, and Dwarka Expressway. Sessions are available weekdays from 10 AM to 7 PM, with weekend and evening batches by appointment.",

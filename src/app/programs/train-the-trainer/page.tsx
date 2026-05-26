@@ -45,6 +45,11 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://hiddenpotentialskills.com/programs/train-the-trainer",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Train the Trainer Certification | Become a Certified Life Skills Facilitator | Hidden Potential",
+    description: "Earn a nationally recognised Train the Trainer certification. Two tracks: 1-month intensive or 3-month comprehensive. 200+ certified trainers graduated. Delhi NCR.",
+  },
   alternates: {
     canonical: "https://hiddenpotentialskills.com/programs/train-the-trainer",
   },
@@ -97,12 +102,23 @@ const schema = {
     },
   ],
   isAccessibleForFree: false,
+  inLanguage: ["en", "hi"],
+  coursePrerequisites: "No prior experience required",
   instructor: {
     "@type": "Person",
     name: "Supreet Kaur",
     jobTitle: "Founder & Director, Hidden Potential",
     url: "https://hiddenpotentialskills.com/about",
   },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://hiddenpotentialskills.com" },
+    { "@type": "ListItem", position: 2, name: "Train the Trainer Certification", item: "https://hiddenpotentialskills.com/programs/train-the-trainer" },
+  ],
 };
 
 // ── Page Content Data ─────────────────────────────────────────────────────────
@@ -314,6 +330,10 @@ export default function TrainTheTrainerPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       {/* ═══════════════════════════════════════════════════════════════════════

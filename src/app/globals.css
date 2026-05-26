@@ -58,7 +58,6 @@
   height: 100%;
   border-radius: var(--border-radius);
   padding: var(--border-width);
-  will-change: background-position;
   background-image: var(--background-radial-gradient);
   background-size: 300% 300%;
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -650,9 +649,6 @@ details > summary:hover { background: #F3F0FF !important; }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .animate-marquee {
-    animation: marquee-scroll 40s linear infinite;
-  }
   .animate-marquee-vertical {
     animation: marquee-vertical 40s linear infinite;
   }

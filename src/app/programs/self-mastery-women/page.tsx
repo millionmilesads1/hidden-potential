@@ -51,6 +51,11 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://hiddenpotentialskills.com/programs/self-mastery-women",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Self Mastery for Women | Holistic Growth Program | Hidden Potential Delhi",
+    description: "A structured emotional intelligence and self-mastery program designed for women 28+ in Delhi NCR. NLP-based, evidence-backed, delivered by certified trainer Supreet Kaur.",
+  },
   alternates: {
     canonical: "https://hiddenpotentialskills.com/programs/self-mastery-women",
   },
@@ -108,12 +113,23 @@ const schema = {
     },
   ],
   isAccessibleForFree: false,
+  inLanguage: ["en", "hi"],
+  coursePrerequisites: "No prior experience required",
   instructor: {
     "@type": "Person",
     name: "Supreet Kaur",
     jobTitle: "Founder & Director, Hidden Potential",
     url: "https://hiddenpotentialskills.com/about",
   },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://hiddenpotentialskills.com" },
+    { "@type": "ListItem", position: 2, name: "Self Mastery for Women", item: "https://hiddenpotentialskills.com/programs/self-mastery-women" },
+  ],
 };
 
 // ── Page Content Data ─────────────────────────────────────────────────────────
@@ -317,6 +333,10 @@ export default function SelfMasteryWomenPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       {/* ═══════════════════════════════════════════════════════════════════════

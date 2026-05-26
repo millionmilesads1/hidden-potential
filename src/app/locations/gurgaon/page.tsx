@@ -47,11 +47,11 @@ export const metadata: Metadata = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  name: "Hidden Potential - Life Skills Training Gurgaon",
+  name: "Hidden Potential",
   description:
     "Structured life skills training for Gurgaon professionals and organisations. Online individual sessions, on-site corporate workshops at Cyber City, DLF, Golf Course Road, and school programs across Gurugram. MSME registered.",
   url: "https://hiddenpotentialskills.com/locations/gurgaon",
-  telephone: "+91-9899209335",
+  telephone: "+919899209335",
   email: "hiddenpotential2030@gmail.com",
   address: {
     "@type": "PostalAddress",
@@ -61,7 +61,12 @@ const localBusinessSchema = {
     postalCode: "110075",
     addressCountry: "IN",
   },
-  openingHours: "Mo-Fr 10:00-19:00",
+  geo: { "@type": "GeoCoordinates", latitude: 28.45950, longitude: 77.02660 },
+  openingHours: "Mo-Sa 09:00-19:00",
+  serviceArea: {
+    "@type": "AdministrativeArea",
+    name: "Gurgaon",
+  },
   areaServed: [
     { "@type": "City", name: "Gurgaon" },
     { "@type": "City", name: "Gurugram" },
@@ -89,6 +94,14 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
+    {
+      "@type": "Question",
+      name: "Where can I find life skills training near me in Gurgaon?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Hidden Potential provides life skills training in Gurgaon through on-site corporate workshops, group programs at your premises, and online one-on-one coaching. Programs cover NLP coaching, communication mastery, stress management, and emotional intelligence for professionals. Based in Dwarka Delhi, serving clients across DLF Cyber City, MG Road, and Sohna Road areas. Contact us at +91 98992 09335.",
+      },
+    },
     {
       "@type": "Question",
       name: "Do you have a training centre in Gurgaon?",
@@ -340,6 +353,10 @@ const differentiators = [
 ];
 
 const faqs = [
+  {
+    q: "Where can I find life skills training near me in Gurgaon?",
+    a: "Hidden Potential provides life skills training in Gurgaon through on-site corporate workshops, group programs at your premises, and online one-on-one coaching. Programs cover NLP coaching, communication mastery, stress management, and emotional intelligence for professionals. Based in Dwarka Delhi, serving clients across DLF Cyber City, MG Road, and Sohna Road areas. Contact us at +91 98992 09335.",
+  },
   {
     q: "Do you have a training centre in Gurgaon?",
     a: "Our centre is at Dwarka, Delhi - approximately 30 minutes from Gurgaon via NH-48. Most Gurgaon clients use our online sessions or book corporate and school on-site delivery. Corporate workshops are regularly delivered at offices across Gurgaon including Cyber City, Udyog Vihar, Golf Course Road, and Sohna Road.",

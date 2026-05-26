@@ -33,6 +33,25 @@ const serviceSchema = {
   serviceType: 'Goal Setting & Achievement Coaching',
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://hiddenpotentialskills.com",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Goal Setting & Achievement",
+      item: "https://hiddenpotentialskills.com/services/goal-setting",
+    },
+  ],
+};
+
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -156,6 +175,7 @@ export default function GoalSettingPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <main>
 
         {/* ── SECTION 1: HERO ── */}

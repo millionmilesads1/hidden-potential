@@ -1,11 +1,11 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Plus_Jakarta_Sans, DM_Sans, Lora } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
+  weight: ["400", "700"],
   variable: "--font-jakarta-sans",
   display: "swap",
 });
@@ -31,6 +31,12 @@ import LayoutClient from "@/components/layout/LayoutClient";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
 import { cn } from "@/lib/utils";
 
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#2D1B69",
+};
 
 export const metadata: Metadata = {
   title: {
@@ -68,7 +74,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={cn(plusJakartaSans.variable, dmSans.variable, lora.variable, "font-sans")}>
+    <html lang="en-IN" className={cn(plusJakartaSans.variable, dmSans.variable, lora.variable, "font-sans")}>
       <body className="min-h-screen flex flex-col overflow-x-hidden">
         {/* ── Desktop + tablet sticky header nav ──────────────────────── */}
         {/* ── Skip navigation - keyboard accessibility (WCAG 2.4.1 SC) ─────

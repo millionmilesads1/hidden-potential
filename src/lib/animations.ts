@@ -56,9 +56,11 @@ export const letterDrop: Variants = {
 };
 
 // Stagger container for headline words (0.08s between words)
+// hidden opacity is 1 so the h1 text is immediately visible for LCP measurement,
+// while child letterDrop spans still animate in individually.
 export const headlineContainer: Variants = {
-  hidden:  {},
-  visible: { transition: { staggerChildren: 0.08, delayChildren: 0.1 } },
+  hidden:  { opacity: 1 },
+  visible: { opacity: 1, transition: { staggerChildren: 0.08, delayChildren: 0.1 } },
 };
 
 // ── Stagger containers - 0.15s between children ───────────────────────────────

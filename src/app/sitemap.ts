@@ -151,17 +151,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  // ── Legal pages ───────────────────────────────────────────────────────────
-  const legal: MetadataRoute.Sitemap = [
-    "/privacy",
-    "/terms",
-  ].map((path) => ({
-    url: `${BASE_URL}${path}`,
-    lastModified: new Date("2025-01-01"),
-    changeFrequency: "yearly",
-    priority: 0.3,
-  }));
-
   return [
     ...homepage,
     ...programs,
@@ -173,6 +162,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...successStories,
     ...blog,
     ...medium,
-    ...legal,
   ];
 }

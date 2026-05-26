@@ -39,21 +39,21 @@ export function MagicCard({
   );
 
   const handleMouseOut = useCallback(() => {
-    document.removeEventListener("mousemove", handleMouseMove);
     mouseX.set(-gradientSize);
     mouseY.set(-gradientSize);
-  }, [handleMouseMove, mouseX, mouseY, gradientSize]);
+  }, [mouseX, mouseY, gradientSize]);
 
   const handleMouseEnter = useCallback(() => {
-    document.addEventListener("mousemove", handleMouseMove);
     mouseX.set(-gradientSize);
     mouseY.set(-gradientSize);
-  }, [handleMouseMove, mouseX, mouseY, gradientSize]);
+  }, [mouseX, mouseY, gradientSize]);
 
   useEffect(() => {
-    document.addEventListener("mousemove", handleMouseMove);
+    const element = cardRef.current;
+    if (!element) return;
+    element.addEventListener("mousemove", handleMouseMove, { passive: true });
     return () => {
-      document.removeEventListener("mousemove", handleMouseMove);
+      element.removeEventListener("mousemove", handleMouseMove);
     };
   }, [handleMouseMove]);
 

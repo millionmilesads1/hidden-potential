@@ -47,6 +47,11 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://hiddenpotentialskills.com/programs/art-therapy",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Art Therapy for Healing | Creative Self-Discovery Program | Hidden Potential Delhi",
+    description: "Art therapy program for emotional clarity, self-discovery and stress relief in Delhi. No artistic skill required. Led by certified art therapist Nishchay Sharma.",
+  },
   alternates: {
     canonical: "https://hiddenpotentialskills.com/programs/art-therapy",
   },
@@ -104,12 +109,29 @@ const schema = {
     },
   ],
   isAccessibleForFree: false,
-  instructor: {
-    "@type": "Person",
-    name: "Supreet Kaur",
-    jobTitle: "Founder & Director, Hidden Potential",
-    url: "https://hiddenpotentialskills.com/about",
-  },
+  inLanguage: ["en", "hi"],
+  coursePrerequisites: "No prior experience required. No artistic skill needed.",
+  instructor: [
+    {
+      "@type": "Person",
+      name: "Supreet Kaur",
+      url: "https://hiddenpotentialskills.com/about",
+    },
+    {
+      "@type": "Person",
+      name: "Nishchay Sharma",
+      url: "https://hiddenpotentialskills.com/about",
+    },
+  ],
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://hiddenpotentialskills.com" },
+    { "@type": "ListItem", position: 2, name: "Art Therapy for Healing", item: "https://hiddenpotentialskills.com/programs/art-therapy" },
+  ],
 };
 
 // ── Page Content Data ─────────────────────────────────────────────────────────
@@ -318,6 +340,10 @@ export default function ArtTherapyPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       {/* ═══════════════════════════════════════════════════════════════════════

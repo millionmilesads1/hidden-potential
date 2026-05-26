@@ -47,11 +47,11 @@ export const metadata: Metadata = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  name: "Hidden Potential - Life Skills Training Faridabad",
+  name: "Hidden Potential",
   description:
     "Structured life skills training for Faridabad students, women, and professionals. Online individual sessions, on-site school programs, and corporate workshops across NIT, Sector 14–21, Ballabgarh, and Greater Faridabad. MSME registered.",
   url: "https://hiddenpotentialskills.com/locations/faridabad",
-  telephone: "+91-9899209335",
+  telephone: "+919899209335",
   email: "hiddenpotential2030@gmail.com",
   address: {
     "@type": "PostalAddress",
@@ -61,7 +61,12 @@ const localBusinessSchema = {
     postalCode: "110075",
     addressCountry: "IN",
   },
-  openingHours: "Mo-Fr 10:00-19:00",
+  geo: { "@type": "GeoCoordinates", latitude: 28.40890, longitude: 77.31780 },
+  openingHours: "Mo-Sa 09:00-19:00",
+  serviceArea: {
+    "@type": "AdministrativeArea",
+    name: "Faridabad",
+  },
   areaServed: [
     { "@type": "City", name: "Faridabad" },
     { "@type": "Neighborhood", name: "NIT Faridabad" },
@@ -88,6 +93,14 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
+    {
+      "@type": "Question",
+      name: "Who offers structured life skills programs near me in Faridabad?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Hidden Potential delivers structured life skills programs in Faridabad including student programs, professional development workshops, and NLP coaching sessions. Programs are conducted at client schools, corporate offices, and community centres across Faridabad, as well as online. Certified by MSME, Skill India, and IGNOU (NEP 2020 Grade A). Book a free consultation at hiddenpotentialskills.com/contact.",
+      },
+    },
     {
       "@type": "Question",
       name: "Do you have a training centre in Faridabad?",
@@ -339,6 +352,10 @@ const differentiators = [
 ];
 
 const faqs = [
+  {
+    q: "Who offers structured life skills programs near me in Faridabad?",
+    a: "Hidden Potential delivers structured life skills programs in Faridabad including student programs, professional development workshops, and NLP coaching sessions. Programs are conducted at client schools, corporate offices, and community centres across Faridabad, as well as online. Certified by MSME, Skill India, and IGNOU (NEP 2020 Grade A). Book a free consultation at hiddenpotentialskills.com/contact.",
+  },
   {
     q: "Do you have a training centre in Faridabad?",
     a: "Our centre is at Dwarka, Delhi. Faridabad residents can access all programs via online sessions, which most Faridabad clients prefer. Corporate workshops and school programs are delivered on-site at Faridabad locations. The Dwarka centre is also accessible via the Faridabad–Gurugram Expressway.",

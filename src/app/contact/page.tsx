@@ -68,7 +68,7 @@ const localBusinessSchema = {
     { "@type": "City", name: "Gurgaon" },
     { "@type": "City", name: "Faridabad" },
   ],
-  telephone: "+91-9899209335",
+  telephone: "+919899209335",
   email: "hiddenpotential2030@gmail.com",
   openingHours: "Mo-Sa 09:00-19:00",
 };
@@ -477,6 +477,20 @@ export default function ContactPage() {
             are conducted at your office location in Gurgaon, Noida, Delhi, or Faridabad - we
             come to you.
           </p>
+
+          {/* Google Maps embed - replace src with actual GBP embed URL once Place ID is confirmed */}
+          <div className="w-full h-64 rounded-2xl overflow-hidden border border-[#EDE9FE] mt-8">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.5!2d77.046!3d28.5922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDM1JzMxLjkiTiA3N8KwMDInNDUuNiJF!5e0!3m2!1sen!2sin!4v1"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Hidden Potential Skills location in Dwarka, Delhi"
+            />
+          </div>
         </div>
       </section>
 

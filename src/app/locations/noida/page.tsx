@@ -45,11 +45,11 @@ export const metadata: Metadata = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  name: "Hidden Potential - Life Skills Training Noida",
+  name: "Hidden Potential",
   description:
     "Structured life skills training for Noida residents and organisations. Online individual sessions, on-site corporate workshops, and school programs across Noida and Greater Noida. MSME registered.",
   url: "https://hiddenpotentialskills.com/locations/noida",
-  telephone: "+91-9899209335",
+  telephone: "+919899209335",
   email: "hiddenpotential2030@gmail.com",
   address: {
     "@type": "PostalAddress",
@@ -59,7 +59,12 @@ const localBusinessSchema = {
     postalCode: "110075",
     addressCountry: "IN",
   },
-  openingHours: "Mo-Fr 10:00-19:00",
+  geo: { "@type": "GeoCoordinates", latitude: 28.53550, longitude: 77.39100 },
+  openingHours: "Mo-Sa 09:00-19:00",
+  serviceArea: {
+    "@type": "AdministrativeArea",
+    name: "Noida",
+  },
   areaServed: [
     { "@type": "City", name: "Noida" },
     { "@type": "City", name: "Greater Noida" },
@@ -86,6 +91,14 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
+    {
+      "@type": "Question",
+      name: "Is there a certified life skills coach near me in Noida?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Hidden Potential offers certified life skills coaching in Noida through in-person sessions at client locations across Sector 62, Sector 18, and other Noida areas, as well as online programs. Founder Supreet Kaur holds an NLP Practitioner certification, Harvard-Affiliated Life Skills Certification, and has 14+ years of experience. Call +91 98992 09335 to book a free evaluation.",
+      },
+    },
     {
       "@type": "Question",
       name: "Do you have a training centre in Noida?",
@@ -337,6 +350,10 @@ const differentiators = [
 ];
 
 const faqs = [
+  {
+    q: "Is there a certified life skills coach near me in Noida?",
+    a: "Hidden Potential offers certified life skills coaching in Noida through in-person sessions at client locations across Sector 62, Sector 18, and other Noida areas, as well as online programs. Founder Supreet Kaur holds an NLP Practitioner certification, Harvard-Affiliated Life Skills Certification, and has 14+ years of experience. Call +91 98992 09335 to book a free evaluation.",
+  },
   {
     q: "Do you have a training centre in Noida?",
     a: "Hidden Potential's primary training centre is at Dwarka, Delhi - accessible from Noida via the Dwarka Expressway and Delhi Metro. However, most Noida clients prefer our comprehensive online sessions which deliver the same curriculum, NLP techniques, and assessment process as in-person training. Corporate workshops and school programs in Noida are delivered on-site at your location.",

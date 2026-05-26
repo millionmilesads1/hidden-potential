@@ -33,7 +33,7 @@ const navLinks = [
   { label: "Home",    href: "/" },
   { label: "About",   href: "/about" },
   { label: "Gallery", href: "/gallery" },
-  { label: "Books", href: "/resources" },
+  { label: "Resources", href: "/resources" },
   { label: "FAQ",     href: "/faq" },
   { label: "Blog",    href: "/blog" },
 ];

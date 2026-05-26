@@ -6,7 +6,8 @@ import AnimateIn from "@/components/ui/AnimateIn";
 import AnimateGroup from "@/components/ui/AnimateGroup";
 import AnimatedHeroContent from "@/components/ui/AnimatedHeroContent";
 import AnimatedProgramsGrid from "@/components/ui/AnimatedProgramsGrid";
-import { Particles } from "@/components/magicui/particles";
+import dynamic from "next/dynamic";
+const Particles = dynamic(() => import("@/components/magicui/particles").then(m => m.Particles), { ssr: false });
 import { BorderBeam } from "@/components/magicui/border-beam";
 import { MagicCard } from "@/components/magicui/magic-card";
 import { Marquee } from "@/components/magicui/marquee";
@@ -27,6 +28,11 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://hiddenpotentialskills.com",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hidden Potential - Life Skills Training Academy in Delhi",
+    description: "Structured life skills programs for students, women & professionals in Delhi. Assessment-based placement. 14+ years experience. 5000+ trained.",
+  },
   alternates: {
     canonical: "https://hiddenpotentialskills.com",
   },
@@ -45,9 +51,9 @@ const schema = {
       email: "hiddenpotential2030@gmail.com",
       founder: { "@type": "Person", name: "Supreet Kaur" },
       sameAs: [
-        "https://www.facebook.com/hiddenpotentialskills",
-        "https://www.instagram.com/hiddenpotentialskills",
-        "https://www.linkedin.com/in/supreetkaur-hiddenpotential",
+        "https://www.facebook.com/supriiyaas",
+        "https://www.instagram.com/lifeskillspecialistsupreet",
+        "https://www.linkedin.com/in/supreet-kaur-a73415239/",
         "https://www.youtube.com/@hiddenpotentialskills",
       ],
     },
@@ -62,12 +68,28 @@ const schema = {
       address: {
         "@type": "PostalAddress",
         streetAddress: "D-802, Palm Court Apartment, Plot 3, Sector 19B, Dwarka",
-        addressLocality: "South West Delhi",
+        addressLocality: "Delhi",
         addressRegion: "Delhi",
         postalCode: "110075",
         addressCountry: "IN",
       },
-      openingHours: ["Mo-Fr 10:00-19:00"],
+      openingHours: ["Mo-Sa 09:00-19:00"],
+      url: "https://hiddenpotentialskills.com",
+      image: "https://hiddenpotentialskills.com/images/founder/supreet-hp-banner.jpg",
+      logo: "https://hiddenpotentialskills.com/images/logo_2.png",
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: 28.59220,
+        longitude: 77.04600,
+      },
+      priceRange: "₹₹",
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "4.9",
+        reviewCount: "17",
+        bestRating: "5",
+        worstRating: "1",
+      },
       areaServed: ["Delhi", "Noida", "Gurgaon", "Faridabad"],
     },
     {
@@ -83,7 +105,7 @@ const schema = {
       address: {
         "@type": "PostalAddress",
         streetAddress: "D-802, Palm Court Apartment, Plot 3, Sector 19B, Dwarka",
-        addressLocality: "South West Delhi",
+        addressLocality: "Delhi",
         addressRegion: "Delhi",
         postalCode: "110075",
         addressCountry: "IN",
@@ -158,6 +180,23 @@ const faqSchema = {
       },
     },
   ],
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://hiddenpotentialskills.com/#website",
+  url: "https://hiddenpotentialskills.com",
+  name: "Hidden Potential",
+  description: "Structured life skills training academy in Delhi NCR",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate: "https://hiddenpotentialskills.com/?s={search_term_string}",
+    },
+    "query-input": "required name=search_term_string",
+  },
 };
 
 // ── Data ─────────────────────────────────────────────────────────────────────
@@ -518,6 +557,10 @@ export default function HomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
       />
 
       {/* ═══════════════════════════════════════════
@@ -1605,7 +1648,7 @@ export default function HomePage() {
 
               <div className="flex flex-wrap gap-3">
                 <Link
-                  href="/books"
+                  href="/resources"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold text-white transition-all hover:opacity-90"
                   style={{
                     background: "#7C3AED",
